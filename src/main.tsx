@@ -10,10 +10,10 @@ if (typeof window !== "undefined") {
 }
 
 export async function prerender(data: JSX.IntrinsicAttributes) {
-  const { renderToString } = await import("react-dom/server");
+  const { renderToStaticMarkup } = await import("react-dom/server");
   const { parseLinks } = await import("vite-prerender-plugin/parse");
 
-  const html = await renderToString(<App {...data} />);
+  const html = await renderToStaticMarkup(<App {...data} />);
   const links = parseLinks(html);
 
   return { html, links: new Set(links) };

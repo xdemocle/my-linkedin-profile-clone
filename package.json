@@ -24,7 +24,7 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "wrangler pages dev",
+    "preview": "bun run build && wrangler pages dev",
     "deploy": "bun run build && wrangler pages deploy",
     "cf-typegen": "wrangler types"
   },
