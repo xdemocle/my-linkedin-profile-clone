@@ -4,7 +4,7 @@ import "./index.css";
 import type { JSX } from "react/jsx-runtime";
 
 if (typeof window !== "undefined") {
-  const target = document.getElementById("app")!;
+  const target = document.getElementById("root")!;
 
   createRoot(target).render(<App />);
 }
@@ -16,5 +16,5 @@ export async function prerender(data: JSX.IntrinsicAttributes) {
   const html = await renderToString(<App {...data} />);
   const links = parseLinks(html);
 
-  return { html, links };
+  return { html, links: new Set(links) };
 }
