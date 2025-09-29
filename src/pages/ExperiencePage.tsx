@@ -61,90 +61,153 @@ export function ExperiencePage() {
 
   return (
     <div className='min-h-screen bg-background'>
-      <div className='max-w-4xl mx-auto px-4 py-6'>
-        {/* Header */}
-        <div className='mb-6'>
-          <Button variant='ghost' size='sm' className='mb-4' asChild>
-            <Link href='/'>
-              <ArrowLeftIcon className='h-4 w-4 mr-2' />
-              {t('backToProfile')}
-            </Link>
-          </Button>
-          <div className='flex items-center justify-between'>
-            <div>
-              <h1 className='text-3xl font-bold'>{t('title')}</h1>
-              <p className='text-muted-foreground mt-1'>Rocco Russo</p>
-            </div>
-            <div className='flex gap-2'>
-              <Button variant='outline' size='sm'>
-                <PlusIcon className='h-4 w-4 mr-2' />
-                {t('addExperience')}
+      <div className='max-w-7xl mx-auto px-4 py-6'>
+        <div className='grid grid-cols-1 lg:grid-cols-3 gap-6'>
+          {/* Main Content */}
+          <div className='lg:col-span-2'>
+            {/* Header */}
+            <div className='mb-6'>
+              <Button variant='ghost' size='sm' className='mb-4' asChild>
+                <Link href='/'>
+                  <ArrowLeftIcon className='h-4 w-4 mr-2' />
+                  {t('backToProfile')}
+                </Link>
               </Button>
-              <Button variant='outline' size='sm'>
-                <Pencil1Icon className='h-4 w-4 mr-2' />
-                {t('edit')}
-              </Button>
-            </div>
-          </div>
-        </div>
-
-        {/* Experience List */}
-        <Card className='shadow-xs'>
-          <CardContent className='p-6'>
-            {experiences.map((exp, index) => (
-              <div key={index} className='mb-8'>
-                {index > 0 && <Separator className='my-8' />}
-                <div className='flex gap-4'>
-                  <Avatar className='w-16 h-16 flex-shrink-0'>
-                    <AvatarImage src={exp.logo} />
-                    <AvatarFallback>{t(exp.companyKey)[0]}</AvatarFallback>
-                  </Avatar>
-                  <div className='flex-1'>
-                    <div className='flex justify-between items-start mb-2'>
-                      <div>
-                        <h3 className='text-xl font-semibold'>{t(exp.titleKey)}</h3>
-                        <p className='text-lg text-muted-foreground'>{t(exp.companyKey)}</p>
-                        <p className='text-sm text-muted-foreground mt-1'>
-                          {t(exp.durationKey)} • {t(exp.locationKey)}
-                        </p>
-                      </div>
-                      <Button variant='ghost' size='icon' className='h-8 w-8'>
-                        <Pencil1Icon className='h-4 w-4' />
-                      </Button>
-                    </div>
-
-                    <p className='text-sm leading-relaxed mb-4'>{t(exp.descriptionKey)}</p>
-
-                    {exp.skills && (
-                      <div>
-                        <h4 className='text-sm font-medium mb-2'>{t('skills')}:</h4>
-                        <div className='flex flex-wrap gap-2'>
-                          {exp.skills.map((skill, skillIndex) => (
-                            <Badge key={skillIndex} variant='secondary' className='text-xs'>
-                              {skill}
-                            </Badge>
-                          ))}
-                        </div>
-                      </div>
-                    )}
-                  </div>
+              <div className='flex items-center justify-between'>
+                <div>
+                  <h1 className='text-3xl font-bold'>{t('title')}</h1>
+                  <p className='text-muted-foreground mt-1'>Rocco Russo</p>
+                </div>
+                <div className='flex gap-2'>
+                  <Button variant='outline' size='sm'>
+                    <PlusIcon className='h-4 w-4 mr-2' />
+                    {t('addExperience')}
+                  </Button>
+                  <Button variant='outline' size='sm'>
+                    <Pencil1Icon className='h-4 w-4 mr-2' />
+                    {t('edit')}
+                  </Button>
                 </div>
               </div>
-            ))}
-          </CardContent>
-        </Card>
+            </div>
 
-        {/* Add Experience CTA */}
-        <Card className='mt-6 shadow-xs'>
-          <CardContent className='p-6 text-center'>
-            <h3 className='font-semibold mb-2'>{t('showYourExperience')}</h3>
-            <p className='text-sm text-muted-foreground mb-4'>{t('addYourWorkExperience')}</p>
-            <Button>
-              <PlusIcon className='h-4 w-4 mr-2' />
-              {t('addExperience')}
-            </Button>
-          </CardContent>
-        </Card>
+            {/* Experience List */}
+            <Card className='shadow-xs'>
+              <CardContent className='p-6'>
+                {experiences.map((exp, index) => (
+                  <div key={index} className='mb-8'>
+                    {index > 0 && <Separator className='my-8' />}
+                    <div className='flex gap-4'>
+                      <Avatar className='w-16 h-16 flex-shrink-0'>
+                        <AvatarImage src={exp.logo} />
+                        <AvatarFallback>{t(exp.companyKey)[0]}</AvatarFallback>
+                      </Avatar>
+                      <div className='flex-1'>
+                        <div className='flex justify-between items-start mb-2'>
+                          <div>
+                            <h3 className='text-xl font-semibold'>{t(exp.titleKey)}</h3>
+                            <p className='text-lg text-muted-foreground'>{t(exp.companyKey)}</p>
+                            <p className='text-sm text-muted-foreground mt-1'>
+                              {t(exp.durationKey)} • {t(exp.locationKey)}
+                            </p>
+                          </div>
+                          <Button variant='ghost' size='icon' className='h-8 w-8'>
+                            <Pencil1Icon className='h-4 w-4' />
+                          </Button>
+                        </div>
+
+                        <p className='text-sm leading-relaxed mb-4'>{t(exp.descriptionKey)}</p>
+
+                        {exp.skills && (
+                          <div>
+                            <h4 className='text-sm font-medium mb-2'>{t('skills')}:</h4>
+                            <div className='flex flex-wrap gap-2'>
+                              {exp.skills.map((skill, skillIndex) => (
+                                <Badge key={skillIndex} variant='secondary' className='text-xs'>
+                                  {skill}
+                                </Badge>
+                              ))}
+                            </div>
+                          </div>
+                        )}
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </CardContent>
+            </Card>
+
+            {/* Add Experience CTA */}
+            <Card className='mt-6 shadow-xs'>
+              <CardContent className='p-6 text-center'>
+                <h3 className='font-semibold mb-2'>{t('showYourExperience')}</h3>
+                <p className='text-sm text-muted-foreground mb-4'>{t('addYourWorkExperience')}</p>
+                <Button>
+                  <PlusIcon className='h-4 w-4 mr-2' />
+                  {t('addExperience')}
+                </Button>
+              </CardContent>
+            </Card>
+          </div>
+
+          {/* Sidebar */}
+          <div className='lg:col-span-1'>
+            <Card className='shadow-xs'>
+              <CardContent className='p-6'>
+                <h2 className='text-xl font-semibold mb-4'>{t('keyAchievements')}</h2>
+                <div className='space-y-6'>
+                  <div className='flex gap-3'>
+                    <div className='w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0'></div>
+                    <div>
+                      <h3 className='font-medium text-sm mb-1'>{t('highUserEngagement')}</h3>
+                      <p className='text-xs text-muted-foreground leading-relaxed'>{t('highUserEngagementDesc')}</p>
+                    </div>
+                  </div>
+
+                  <div className='flex gap-3'>
+                    <div className='w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0'></div>
+                    <div>
+                      <h3 className='font-medium text-sm mb-1'>{t('majorRefactoring')}</h3>
+                      <p className='text-xs text-muted-foreground leading-relaxed'>{t('majorRefactoringDesc')}</p>
+                    </div>
+                  </div>
+
+                  <div className='flex gap-3'>
+                    <div className='w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0'></div>
+                    <div>
+                      <h3 className='font-medium text-sm mb-1'>{t('defiDappLaunch')}</h3>
+                      <p className='text-xs text-muted-foreground leading-relaxed'>{t('defiDappLaunchDesc')}</p>
+                    </div>
+                  </div>
+
+                  <div className='flex gap-3'>
+                    <div className='w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0'></div>
+                    <div>
+                      <h3 className='font-medium text-sm mb-1'>{t('improvedCodeQuality')}</h3>
+                      <p className='text-xs text-muted-foreground leading-relaxed'>{t('improvedCodeQualityDesc')}</p>
+                    </div>
+                  </div>
+
+                  <div className='flex gap-3'>
+                    <div className='w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0'></div>
+                    <div>
+                      <h3 className='font-medium text-sm mb-1'>{t('boostedProductivity')}</h3>
+                      <p className='text-xs text-muted-foreground leading-relaxed'>{t('boostedProductivityDesc')}</p>
+                    </div>
+                  </div>
+
+                  <div className='flex gap-3'>
+                    <div className='w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0'></div>
+                    <div>
+                      <h3 className='font-medium text-sm mb-1'>{t('designConsistency')}</h3>
+                      <p className='text-xs text-muted-foreground leading-relaxed'>{t('designConsistencyDesc')}</p>
+                    </div>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
       </div>
     </div>
   );

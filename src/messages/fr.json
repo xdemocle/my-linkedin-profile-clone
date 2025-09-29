@@ -119,7 +119,20 @@
     "ledFrontendDevelopmentFull": "J'ai dirigé le développement frontend pour plusieurs projets clients. Implémenté des designs UI responsives et optimisé les performances web. Formé des développeurs juniors et établi des standards de codage. Collaboré avec des équipes transfonctionnelles pour livrer des solutions logicielles de haute qualité.",
     "developedInteractiveUIFull": "J'ai développé des interfaces utilisateur interactives en utilisant React et des frameworks CSS modernes. Collaboré avec l'équipe de design pour implémenter des composants pixel-perfect et des animations. Construit des bibliothèques de composants réutilisables et maintenu des systèmes de design.",
     "createdDashboardInterfacesFull": "J'ai créé des interfaces de tableau de bord pour des outils de surveillance de sécurité. Travaillé avec l'équipe backend pour intégrer des APIs et des composants de visualisation de données en temps réel. Implémenté les meilleures pratiques de sécurité dans le développement frontend.",
-    "providedWebDevelopmentServices": "J'ai fourni des services de développement web aux petites et moyennes entreprises. Construit des sites web et applications web personnalisés en utilisant des technologies modernes. Géré les relations clients et les délais de projet."
+    "providedWebDevelopmentServices": "J'ai fourni des services de développement web aux petites et moyennes entreprises. Construit des sites web et applications web personnalisés en utilisant des technologies modernes. Géré les relations clients et les délais de projet.",
+    "keyAchievements": "Réalisations Clés",
+    "highUserEngagement": "Forte Engagement Utilisateur",
+    "highUserEngagementDesc": "J'ai dirigé une équipe fournissant un logiciel utilisé par 5 millions d'utilisateurs mensuellement.",
+    "majorRefactoring": "Refactorisation Majeure de SPA à Grande Échelle",
+    "majorRefactoringDesc": "Chez iControlApp, j'ai réduit la dette technique économisant ~€50,000 à l'entreprise.",
+    "defiDappLaunch": "Lancement Réussi de DApp DeFi",
+    "defiDappLaunchDesc": "Lancée DApp avec augmentation de 20% de l'engagement utilisateur.",
+    "improvedCodeQuality": "Amélioration Qualité du Code",
+    "improvedCodeQualityDesc": "Augmenté qualité du code de 40% et réduit bugs de 25%.",
+    "boostedProductivity": "Augmentation Productivité Équipe",
+    "boostedProductivityDesc": "Atteint augmentation de 30% de productivité avec techniques de mentorat.",
+    "designConsistency": "Cohérence Design Rationalisée",
+    "designConsistencyDesc": "Livraison réussie de guides de style pour plusieurs entreprises réduisant les incohérences de design."
   },
   "Skills": {
     "title": "Compétences",

@@ -119,7 +119,20 @@
     "ledFrontendDevelopmentFull": "Ho guidato lo sviluppo frontend per progetti multi-cliente. Implementato design UI responsive e ottimizzato le prestazioni web. Formato sviluppatori junior e stabilito standard di codifica. Collaborato con team interfunzionali per fornire soluzioni software di alta qualità.",
     "developedInteractiveUIFull": "Ho sviluppato interfacce utente interattive utilizzando React e framework CSS moderni. Collaborato con il team di design per implementare componenti pixel-perfect e animazioni. Costruito librerie di componenti riutilizzabili e mantenuto design system.",
     "createdDashboardInterfacesFull": "Ho creato interfacce dashboard per strumenti di monitoraggio della sicurezza. Collaborato con il team backend per integrare API e componenti di visualizzazione dati in tempo reale. Implementato best practice di sicurezza nello sviluppo frontend.",
-    "providedWebDevelopmentServices": "Ho fornito servizi di sviluppo web a piccole e medie imprese. Costruito siti web personalizzati e applicazioni web utilizzando tecnologie moderne. Gestito relazioni con i clienti e tempistiche dei progetti."
+    "providedWebDevelopmentServices": "Ho fornito servizi di sviluppo web a piccole e medie imprese. Costruito siti web personalizzati e applicazioni web utilizzando tecnologie moderne. Gestito relazioni con i clienti e tempistiche dei progetti.",
+    "keyAchievements": "Risultati Chiave",
+    "highUserEngagement": "Elevato Coinvolgimento Utenti",
+    "highUserEngagementDesc": "Ho guidato un team che ha fornito software utilizzato da 5 milioni di utenti mensilmente.",
+    "majorRefactoring": "Refactoring Maggiore di SPA su Larga Scala",
+    "majorRefactoringDesc": "Presso iControlApp, ho ridotto il debito tecnico facendo risparmiare all'azienda ~€50.000.",
+    "defiDappLaunch": "Lancio di successo di DApp DeFi",
+    "defiDappLaunchDesc": "Lanciata DApp con aumento del 20% nel coinvolgimento degli utenti.",
+    "improvedCodeQuality": "Miglioramento Qualità del Codice",
+    "improvedCodeQualityDesc": "Aumentata qualità del codice del 40% e ridotti bug del 25%.",
+    "boostedProductivity": "Aumento Produttività del Team",
+    "boostedProductivityDesc": "Raggiunto aumento del 30% della produttività con tecniche di mentoring.",
+    "designConsistency": "Uniformità Design Semplificata",
+    "designConsistencyDesc": "Consegna con successo di guide di stile per più aziende riducendo le incoerenze di design."
   },
   "Skills": {
     "title": "Competenze",
