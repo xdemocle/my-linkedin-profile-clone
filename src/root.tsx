@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { IntlProvider } from 'use-intl';
 import { Router } from './components/Router';
+import { ThemeProvider } from './contexts/ThemeContext';
 import { type Locale, getDirection, getMessages } from './lib/i18n';
 
 type Messages = Record<string, unknown>;
@@ -20,10 +21,12 @@ export function Root() {
   const direction = getDirection(locale);
 
   return (
-    <div dir={direction} className={direction === 'rtl' ? 'rtl' : 'ltr'}>
-      <IntlProvider messages={messages} locale={locale}>
-        <Router locale={locale} onLocaleChange={setLocale} />
-      </IntlProvider>
-    </div>
+    <ThemeProvider>
+      <div dir={direction} className={direction === 'rtl' ? 'rtl' : 'ltr'}>
+        <IntlProvider messages={messages} locale={locale}>
+          <Router locale={locale} onLocaleChange={setLocale} />
+        </IntlProvider>
+      </div>
+    </ThemeProvider>
   );
 }
