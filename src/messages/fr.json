@@ -1,10 +1,194 @@
 {
+  "Navigation": {
+    "search": "Rechercher",
+    "home": "Accueil",
+    "myNetwork": "Mon réseau",
+    "jobs": "Emplois",
+    "messaging": "Messages",
+    "notifications": "Notifications",
+    "me": "Moi",
+    "forBusiness": "Pour les entreprises",
+    "advertise": "Publicité"
+  },
+  "ProfileHeader": {
+    "connections": "relations",
+    "contactInfo": "Informations de contact",
+    "connect": "Se connecter",
+    "message": "Message",
+    "more": "Plus",
+    "openToWork": "Ouvert au travail",
+    "seeAllDetails": "Voir tous les détails",
+    "following": "Suivre"
+  },
   "ProfileLayout": {
     "hello": "Bonjour {firstName}!",
     "welcome": "Bienvenue sur le Profil LinkedIn",
-    "about": "À Propos",
+    "about": "À propos",
     "experience": "Expérience",
     "education": "Formation",
-    "skills": "Compétences"
+    "skills": "Compétences",
+    "activity": "Activité",
+    "recommendations": "Recommandations",
+    "volunteering": "Bénévolat",
+    "languages": "Langues",
+    "interests": "Intérêts",
+    "courses": "Cours"
+  },
+  "About": {
+    "title": "À propos",
+    "fullStackDeveloper": "Développeur full stack avec une expérience en JavaScript, TypeScript et React. Passionné par la création d'expériences utilisateur intuitives et l'optimisation des performances web. Spécialisé dans les frameworks frontend modernes et les systèmes de design.",
+    "currentlyWorking": "Je travaille actuellement en tant que développeur freelance, aidant les entreprises à créer des applications web responsives et accessibles. Compétent dans les principes de design UI/UX et l'implémentation d'interfaces interactives complexes."
+  },
+  "Analytics": {
+    "title": "Analyses",
+    "profileViews": "vues du profil",
+    "postImpressions": "impressions des publications",
+    "searchAppearances": "apparitions dans les recherches",
+    "showAll": "Afficher toutes les analyses"
+  },
+  "Resources": {
+    "title": "Ressources",
+    "private": "Privé pour vous",
+    "creatorMode": "Mode créateur",
+    "myNetwork": "Mon réseau",
+    "showAll": "Afficher toutes les ressources"
+  },
+  "Activity": {
+    "title": "Activité",
+    "posts": "Publications",
+    "comments": "Commentaires",
+    "images": "Images",
+    "articles": "Articles",
+    "startPost": "Commencer une publication",
+    "showAllActivity": "Afficher toute l'activité",
+    "noCommentsToShow": "Aucun commentaire à afficher",
+    "noImagesToShow": "Aucune image à afficher",
+    "noArticlesToShow": "Aucun article à afficher"
+  },
+  "Experience": {
+    "title": "Expérience",
+    "technicalLead": "Responsable technique",
+    "frontendDeveloper": "Développeur Frontend",
+    "seniorSolutionsEngineer": "Ingénieur Solutions Senior",
+    "cyberSecurityOperations": "Opérations de Cybersécurité",
+    "present": "Présent",
+    "years": "ans",
+    "months": "mois",
+    "milano": "Milan, Italie",
+    "ledFrontendDevelopment": "J'ai dirigé le développement frontend pour plusieurs projets clients. Implémenté des designs UI responsives et optimisé les performances web. Formé des développeurs juniors et établi des standards de codage.",
+    "developedInteractiveUI": "J'ai développé des interfaces utilisateur interactives en utilisant React et des frameworks CSS modernes. Collaboré avec l'équipe de design pour implémenter des composants pixel-perfect et des animations.",
+    "createdDashboardInterfaces": "J'ai créé des interfaces de tableau de bord pour des outils de surveillance de sécurité. Travaillé avec l'équipe backend pour intégrer des APIs et des composants de visualisation de données en temps réel."
+  },
+  "Skills": {
+    "title": "Compétences",
+    "takeSkillQuiz": "Passer le quiz de compétences",
+    "frontendDevelopment": "Développement Frontend",
+    "reactJs": "React.js",
+    "javascript": "JavaScript",
+    "endorsements": "recommandations",
+    "endorsedBy": "Recommandé par {name} et {count} autres",
+    "showAllSkills": "Afficher toutes les compétences"
+  },
+  "Recommendations": {
+    "title": "Recommandations",
+    "showAllRecommendations": "Afficher toutes les recommandations",
+    "workedWith": "{name} a travaillé avec {person} dans la même équipe",
+    "managed": "{name} a géré {person} directement",
+    "exceptionalDeveloper": "Rocco est un développeur frontend exceptionnel avec un œil attentif aux détails et un talent pour créer des interfaces utilisateur élégantes. Sa capacité à traduire des exigences complexes en designs intuitifs est remarquable. Il a constamment livré du code de haute qualité sur nos projets partagés et a toujours été prêt à aider les autres dans l'équipe.",
+    "impressiveSkills": "J'ai eu le plaisir de gérer Rocco sur plusieurs projets critiques. Ses compétences techniques en développement frontend sont vraiment impressionnantes, particulièrement en React et JavaScript moderne. Il est proactif, fiable et a une capacité exceptionnelle à résoudre des problèmes complexes. Son travail a constamment dépassé les attentes des clients et il a été un atout précieux pour notre équipe."
+  },
+  "Volunteering": {
+    "title": "Bénévolat",
+    "peerMentor": "Mentor entre pairs",
+    "theWeb3Ninja": "The Web3 Ninja",
+    "fundraisingManager": "Gestionnaire de collecte de fonds",
+    "steunactie": "Steunactie",
+    "memberConsultingStaff": "Membre du personnel de conseil",
+    "cyberGrandpa": "CyberGrandpa",
+    "economicEmpowerment": "Autonomisation économique",
+    "disasterHumanitarianRelief": "Secours humanitaire et catastrophes",
+    "education": "Éducation",
+    "helpingPeers": "Jusqu'à présent, j'ai aidé environ ~12 pairs, 5 ont obtenu un poste dans les premiers 1~4 mois.",
+    "helpedCareerSwitch": "J'ai même aidé un homme de 32 ans dans son changement de carrière.",
+    "positionedInterns": "Et j'ai placé 2 stagiaires, l'année dernière (mi-2023), dans leurs premiers postes juniors.",
+    "gettingBetter": "Donc je m'améliore dans ce domaine. Mais cela dépend souvent aussi de la personne et de sa motivation.",
+    "dedicatingTime": "Je dédie une partie de ma journée à aider les personnes dans le besoin en Afrique et au Moyen-Orient avec des initiatives de crowdfunding/collecte de fonds.",
+    "campaignsBelowAre": "Voici quelques-unes des campagnes.",
+    "helpAbdulKarim": "Aidez Abdul Karim à guérir : Le combat d'un enfant de guerre pour la vie",
+    "bornUnderBombs": "Né sous les bombes, maintenant il se bat à chaque pas : Soutenez le voyage médical urgent du bébé Abdul Karim",
+    "saveEliasFamily": "Sauvez Elias et sa famille : De la tente à la sécurité",
+    "helpGazaFamily": "Aidez une famille de Gaza à survivre à la famine, la maladie et l'itinérance. Votre soutien les rapproche de la nourriture, d'un abri et d'un avenir plus sûr.",
+    "trustedGuide": "Votre guide de confiance pour la sécurité en ligne et la protection contre les arnaques, le phishing et les malwares. Services de cybersécurité experts sur abonnement."
+  },
+  "Languages": {
+    "title": "Langues",
+    "english": "Anglais",
+    "italian": "Italien",
+    "nativeOrBilingual": "Compétence native ou bilingue",
+    "fullProfessional": "Compétence professionnelle complète",
+    "showAllLanguages": "Afficher toutes les langues"
+  },
+  "PeopleAlsoViewed": {
+    "title": "Personnes également consultées",
+    "seeWhoElse": "Voyez qui d'autre est souvent consulté avec vous",
+    "unlockFullList": "Débloquer la liste complète",
+    "reactivatePremium": "Réactiver Premium",
+    "cancelAnytime": "Annuler à tout moment. Aucun frais caché.",
+    "solutionsPartner": "Partenaire de solutions et consultant en développement commercial",
+    "vicePresident": "Vice-président, Contenu et Créativité"
+  },
+  "Connections": {
+    "title": "Relations",
+    "seeAll": "Voir tout ({count}+)",
+    "allConnections": "Toutes les relations",
+    "pending": "En attente",
+    "mutualConnections": "{count} relations mutuelles",
+    "accept": "Accepter",
+    "ignore": "Ignorer"
+  },
+  "ProfileLanguage": {
+    "title": "Langue du profil",
+    "whoViewersAlsoViewed": "Qui vos visiteurs ont également consulté",
+    "privateToYou": "Privé pour vous"
+  },
+  "Footer": {
+    "about": "À propos",
+    "accessibility": "Accessibilité",
+    "careers": "Carrières",
+    "adChoices": "Choix publicitaires",
+    "mobile": "Mobile",
+    "talentSolutions": "Solutions talents",
+    "marketingSolutions": "Solutions marketing",
+    "advertising": "Publicité",
+    "smallBusiness": "Petites entreprises",
+    "salesSolutions": "Solutions de vente",
+    "safetyCenter": "Centre de sécurité",
+    "questions": "Questions ?",
+    "visitHelpCenter": "Visitez notre centre d'aide.",
+    "manageAccount": "Gérez votre compte et votre confidentialité",
+    "goToSettings": "Allez à vos paramètres.",
+    "recommendationTransparency": "Transparence des recommandations",
+    "learnMore": "En savoir plus sur le contenu recommandé.",
+    "selectLanguage": "Sélectionner la langue",
+    "linkedinCorporation": "LinkedIn Corporation © 2025"
+  },
+  "Common": {
+    "showMore": "Afficher plus",
+    "showLess": "Afficher moins",
+    "seeAll": "Voir tout",
+    "edit": "Modifier",
+    "add": "Ajouter",
+    "save": "Enregistrer",
+    "cancel": "Annuler",
+    "delete": "Supprimer",
+    "share": "Partager",
+    "like": "J'aime",
+    "comment": "Commenter",
+    "send": "Envoyer",
+    "follow": "Suivre",
+    "unfollow": "Ne plus suivre",
+    "loading": "Chargement...",
+    "error": "Erreur",
+    "success": "Succès"
   }
 }

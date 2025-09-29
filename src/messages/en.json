@@ -1,10 +1,194 @@
 {
+  "Navigation": {
+    "search": "Search",
+    "home": "Home",
+    "myNetwork": "My Network",
+    "jobs": "Jobs",
+    "messaging": "Messaging",
+    "notifications": "Notifications",
+    "me": "Me",
+    "forBusiness": "For Business",
+    "advertise": "Advertise"
+  },
+  "ProfileHeader": {
+    "connections": "connections",
+    "contactInfo": "Contact info",
+    "connect": "Connect",
+    "message": "Message",
+    "more": "More",
+    "openToWork": "Open to work",
+    "seeAllDetails": "See all details",
+    "following": "Following"
+  },
   "ProfileLayout": {
     "hello": "Hello {firstName}!",
     "welcome": "Welcome to LinkedIn Profile",
     "about": "About",
     "experience": "Experience",
     "education": "Education",
-    "skills": "Skills"
+    "skills": "Skills",
+    "activity": "Activity",
+    "recommendations": "Recommendations",
+    "volunteering": "Volunteering",
+    "languages": "Languages",
+    "interests": "Interests",
+    "courses": "Courses"
+  },
+  "About": {
+    "title": "About",
+    "fullStackDeveloper": "Full stack developer with experience in JavaScript, TypeScript, and React. Passionate about creating intuitive user experiences and optimizing web performance. Specialized in modern frontend frameworks and design systems.",
+    "currentlyWorking": "Currently working as a freelance developer helping businesses build responsive and accessible web applications. Skilled in UI/UX design principles and implementing complex interactive interfaces."
+  },
+  "Analytics": {
+    "title": "Analytics",
+    "profileViews": "profile views",
+    "postImpressions": "post impressions",
+    "searchAppearances": "search appearances",
+    "showAll": "Show all analytics"
+  },
+  "Resources": {
+    "title": "Resources",
+    "private": "Private to you",
+    "creatorMode": "Creator mode",
+    "myNetwork": "My network",
+    "showAll": "Show all resources"
+  },
+  "Activity": {
+    "title": "Activity",
+    "posts": "Posts",
+    "comments": "Comments",
+    "images": "Images",
+    "articles": "Articles",
+    "startPost": "Start a post",
+    "showAllActivity": "Show all activity",
+    "noCommentsToShow": "No comments to show",
+    "noImagesToShow": "No images to show",
+    "noArticlesToShow": "No articles to show"
+  },
+  "Experience": {
+    "title": "Experience",
+    "technicalLead": "Technical Lead",
+    "frontendDeveloper": "Frontend Developer",
+    "seniorSolutionsEngineer": "Senior Solutions Engineer",
+    "cyberSecurityOperations": "Cyber Security Operations",
+    "present": "Present",
+    "years": "yrs",
+    "months": "mos",
+    "milano": "Milano, Italy",
+    "ledFrontendDevelopment": "Led frontend development for multiple client projects. Implemented responsive UI designs and optimized web performance. Mentored junior developers and established coding standards.",
+    "developedInteractiveUI": "Developed interactive user interfaces using React and modern CSS frameworks. Collaborated with design team to implement pixel-perfect components and animations.",
+    "createdDashboardInterfaces": "Created dashboard interfaces for security monitoring tools. Worked with backend team to integrate APIs and real-time data visualization components."
+  },
+  "Skills": {
+    "title": "Skills",
+    "takeSkillQuiz": "Take skill quiz",
+    "frontendDevelopment": "Frontend Development",
+    "reactJs": "React.js",
+    "javascript": "JavaScript",
+    "endorsements": "endorsements",
+    "endorsedBy": "Endorsed by {name} and {count} others",
+    "showAllSkills": "Show all skills"
+  },
+  "Recommendations": {
+    "title": "Recommendations",
+    "showAllRecommendations": "Show all recommendations",
+    "workedWith": "{name} worked with {person} in the same team",
+    "managed": "{name} managed {person} directly",
+    "exceptionalDeveloper": "Rocco is an exceptional frontend developer with a keen eye for detail and a talent for creating elegant user interfaces. His ability to translate complex requirements into intuitive designs is remarkable. He consistently delivered high-quality code on our shared projects and was always willing to help others on the team.",
+    "impressiveSkills": "I had the pleasure of managing Rocco on several critical projects. His technical skills in frontend development are truly impressive, particularly in React and modern JavaScript. He's proactive, reliable, and has an exceptional ability to solve complex problems. His work consistently exceeded client expectations, and he was a valuable asset to our team."
+  },
+  "Volunteering": {
+    "title": "Volunteering",
+    "peerMentor": "Peer Mentor",
+    "theWeb3Ninja": "The Web3 Ninja",
+    "fundraisingManager": "Fundraising Manager",
+    "steunactie": "Steunactie",
+    "memberConsultingStaff": "Member of Consulting Staff",
+    "cyberGrandpa": "CyberGrandpa",
+    "economicEmpowerment": "Economic Empowerment",
+    "disasterHumanitarianRelief": "Disaster and Humanitarian Relief",
+    "education": "Education",
+    "helpingPeers": "So far I have been helping around ~12 peers, 5 got a position in first 1~4 months.",
+    "helpedCareerSwitch": "I even helped a 32 yrs old in his job switch career.",
+    "positionedInterns": "And I positioned 2 interns, last year (middle 2023), to their first junior positions.",
+    "gettingBetter": "So I'm getting better at it. But oftentimes it also depends on the person and how much motivated is.",
+    "dedicatingTime": "I'm dedicating part of my day to help people in need around Africa and the Middle East with crowdfunding/fundraisings initiatives.",
+    "campaignsBelowAre": "Below are some of the campaigns.",
+    "helpAbdulKarim": "Help Abdul Karim Heal: A War Child's Fight for Life",
+    "bornUnderBombs": "Born Under Bombs, Now Fighting for Every Step: Support Baby Abdul Karim's Urgent Medical Journey",
+    "saveEliasFamily": "Save Elias & His Family: From Tent to Safety",
+    "helpGazaFamily": "Help a Gaza family survive famine, illness & homelessness. Your support brings them closer to food, shelter & a safer future.",
+    "trustedGuide": "Your Trusted Guide to Online Safety and Protection from Scams, Phishing, and Malware. Expert Cybersecurity Services on subscription."
+  },
+  "Languages": {
+    "title": "Languages",
+    "english": "English",
+    "italian": "Italian",
+    "nativeOrBilingual": "Native or bilingual proficiency",
+    "fullProfessional": "Full professional proficiency",
+    "showAllLanguages": "Show all languages"
+  },
+  "PeopleAlsoViewed": {
+    "title": "People also viewed",
+    "seeWhoElse": "See who else is often viewed alongside you",
+    "unlockFullList": "Unlock the full list",
+    "reactivatePremium": "Reactivate Premium",
+    "cancelAnytime": "Cancel anytime. No hidden fees.",
+    "solutionsPartner": "Solutions Partner & Business Development Consultant",
+    "vicePresident": "Vice President, Content & Creative"
+  },
+  "Connections": {
+    "title": "Connections",
+    "seeAll": "See all ({count}+)",
+    "allConnections": "All Connections",
+    "pending": "Pending",
+    "mutualConnections": "{count} mutual connections",
+    "accept": "Accept",
+    "ignore": "Ignore"
+  },
+  "ProfileLanguage": {
+    "title": "Profile language",
+    "whoViewersAlsoViewed": "Who your viewers also viewed",
+    "privateToYou": "Private to you"
+  },
+  "Footer": {
+    "about": "About",
+    "accessibility": "Accessibility",
+    "careers": "Careers",
+    "adChoices": "Ad Choices",
+    "mobile": "Mobile",
+    "talentSolutions": "Talent Solutions",
+    "marketingSolutions": "Marketing Solutions",
+    "advertising": "Advertising",
+    "smallBusiness": "Small Business",
+    "salesSolutions": "Sales Solutions",
+    "safetyCenter": "Safety Center",
+    "questions": "Questions?",
+    "visitHelpCenter": "Visit our Help Center.",
+    "manageAccount": "Manage your account and privacy",
+    "goToSettings": "Go to your Settings.",
+    "recommendationTransparency": "Recommendation transparency",
+    "learnMore": "Learn more about Recommended Content.",
+    "selectLanguage": "Select Language",
+    "linkedinCorporation": "LinkedIn Corporation © 2025"
+  },
+  "Common": {
+    "showMore": "Show more",
+    "showLess": "Show less",
+    "seeAll": "See all",
+    "edit": "Edit",
+    "add": "Add",
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "share": "Share",
+    "like": "Like",
+    "comment": "Comment",
+    "send": "Send",
+    "follow": "Follow",
+    "unfollow": "Unfollow",
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success"
   }
 }

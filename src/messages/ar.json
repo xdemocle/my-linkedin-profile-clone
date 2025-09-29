@@ -1,10 +1,194 @@
 {
+  "Navigation": {
+    "search": "البحث",
+    "home": "الصفحة الرئيسية",
+    "myNetwork": "شبكتي",
+    "jobs": "الوظائف",
+    "messaging": "المراسلة",
+    "notifications": "الإشعارات",
+    "me": "أنا",
+    "forBusiness": "للشركات",
+    "advertise": "الإعلان"
+  },
+  "ProfileHeader": {
+    "connections": "الاتصالات",
+    "contactInfo": "معلومات الاتصال",
+    "connect": "اتصل",
+    "message": "رسالة",
+    "more": "المزيد",
+    "openToWork": "متاح للعمل",
+    "seeAllDetails": "عرض جميع التفاصيل",
+    "following": "متابعة"
+  },
   "ProfileLayout": {
-    "hello": "مرحبا {firstName}!",
+    "hello": "مرحباً {firstName}!",
     "welcome": "مرحباً بك في ملف لينكدإن",
     "about": "نبذة",
     "experience": "الخبرة",
     "education": "التعليم",
-    "skills": "المهارات"
+    "skills": "المهارات",
+    "activity": "النشاط",
+    "recommendations": "التوصيات",
+    "volunteering": "العمل التطوعي",
+    "languages": "اللغات",
+    "interests": "الاهتمامات",
+    "courses": "الدورات"
+  },
+  "About": {
+    "title": "نبذة",
+    "fullStackDeveloper": "مطور full stack مع خبرة في JavaScript و TypeScript و React. شغوف بإنشاء تجارب مستخدم بديهية وتحسين أداء الويب. متخصص في أطر العمل الأمامية الحديثة وأنظمة التصميم.",
+    "currentlyWorking": "أعمل حالياً كمطور مستقل مساعداً الشركات في بناء تطبيقات ويب متجاوبة ويمكن الوصول إليها. ماهر في مبادئ تصميم واجهة المستخدم/تجربة المستخدم وتطبيق واجهات تفاعلية معقدة."
+  },
+  "Analytics": {
+    "title": "التحليلات",
+    "profileViews": "مشاهدات الملف الشخصي",
+    "postImpressions": "انطباعات المنشورات",
+    "searchAppearances": "ظهور في البحث",
+    "showAll": "إظهار جميع التحليلات"
+  },
+  "Resources": {
+    "title": "الموارد",
+    "private": "خاص بك",
+    "creatorMode": "وضع المنشئ",
+    "myNetwork": "شبكتي",
+    "showAll": "إظهار جميع الموارد"
+  },
+  "Activity": {
+    "title": "النشاط",
+    "posts": "المنشورات",
+    "comments": "التعليقات",
+    "images": "الصور",
+    "articles": "المقالات",
+    "startPost": "بدء منشور",
+    "showAllActivity": "إظهار جميع الأنشطة",
+    "noCommentsToShow": "لا توجد تعليقات لإظهارها",
+    "noImagesToShow": "لا توجد صور لإظهارها",
+    "noArticlesToShow": "لا توجد مقالات لإظهارها"
+  },
+  "Experience": {
+    "title": "الخبرة",
+    "technicalLead": "قائد تقني",
+    "frontendDeveloper": "مطور الواجهة الأمامية",
+    "seniorSolutionsEngineer": "مهندس حلول أول",
+    "cyberSecurityOperations": "عمليات الأمن السيبراني",
+    "present": "الحاضر",
+    "years": "سنوات",
+    "months": "أشهر",
+    "milano": "ميلانو، إيطاليا",
+    "ledFrontendDevelopment": "قدت تطوير الواجهة الأمامية لمشاريع عملاء متعددة. نفذت تصاميم واجهة مستخدم متجاوبة وحسنت أداء الويب. دربت مطورين مبتدئين ووضعت معايير الترميز.",
+    "developedInteractiveUI": "طورت واجهات مستخدم تفاعلية باستخدام React وأطر عمل CSS حديثة. تعاونت مع فريق التصميم لتنفيذ مكونات مثالية بكسل وحركات.",
+    "createdDashboardInterfaces": "أنشأت واجهات لوحة القيادة لأدوات مراقبة الأمان. عملت مع فريق الخلفية لدمج واجهات برمجة التطبيقات ومكونات تصور البيانات في الوقت الفعلي."
+  },
+  "Skills": {
+    "title": "المهارات",
+    "takeSkillQuiz": "خذ اختبار المهارات",
+    "frontendDevelopment": "تطوير الواجهة الأمامية",
+    "reactJs": "React.js",
+    "javascript": "JavaScript",
+    "endorsements": "التوصيات",
+    "endorsedBy": "موصى به من {name} و {count} آخرين",
+    "showAllSkills": "إظهار جميع المهارات"
+  },
+  "Recommendations": {
+    "title": "التوصيات",
+    "showAllRecommendations": "إظهار جميع التوصيات",
+    "workedWith": "عمل {name} مع {person} في نفس الفريق",
+    "managed": "أدار {name} {person} مباشرة",
+    "exceptionalDeveloper": "روكو هو مطور واجهة أمامية استثنائي مع عين حادة للتفاصيل وموهبة في إنشاء واجهات مستخدم أنيقة. قدرته على ترجمة المتطلبات المعقدة إلى تصاميم بديهية رائعة. لقد قدم باستمرار كود عالي الجودة في مشاريعنا المشتركة وكان دائماً مستعداً لمساعدة الآخرين في الفريق.",
+    "impressiveSkills": "كان لي متعة إدارة روكو في عدة مشاريع حرجة. مهاراته التقنية في تطوير الواجهة الأمامية مثيرة للإعجاب حقاً، خاصة في React و JavaScript الحديث. إنه استباقي وموثوق ولديه قدرة استثنائية على حل المشاكل المعقدة. عمله تجاوز باستمرار توقعات العملاء وكان أصلاً قيماً لفريقنا."
+  },
+  "Volunteering": {
+    "title": "العمل التطوعي",
+    "peerMentor": "موجه أقران",
+    "theWeb3Ninja": "The Web3 Ninja",
+    "fundraisingManager": "مدير جمع التبرعات",
+    "steunactie": "Steunactie",
+    "memberConsultingStaff": "عضو في فريق الاستشارات",
+    "cyberGrandpa": "CyberGrandpa",
+    "economicEmpowerment": "التمكين الاقتصادي",
+    "disasterHumanitarianRelief": "الإغاثة الإنسانية والكوارث",
+    "education": "التعليم",
+    "helpingPeers": "حتى الآن ساعدت حوالي ~12 زميل، 5 حصلوا على منصب في أول 1~4 أشهر.",
+    "helpedCareerSwitch": "حتى ساعدت رجلاً عمره 32 سنة في تغيير مسيرته المهنية.",
+    "positionedInterns": "ووضعت 2 متدربين، العام الماضي (منتصف 2023)، في مناصبهم الأولى المبتدئة.",
+    "gettingBetter": "لذلك أتحسن في هذا الأمر. لكن في كثير من الأحيان يعتمد أيضاً على الشخص ومدى دافعيته.",
+    "dedicatingTime": "أخصص جزءاً من يومي لمساعدة الأشخاص المحتاجين في أفريقيا والشرق الأوسط بمبادرات التمويل الجماعي/جمع التبرعات.",
+    "campaignsBelowAre": "فيما يلي بعض الحملات.",
+    "helpAbdulKarim": "ساعد عبد الكريم على الشفاء: معركة طفل حرب من أجل الحياة",
+    "bornUnderBombs": "ولد تحت القنابل، يقاتل الآن من أجل كل خطوة: ادعم الرحلة الطبية العاجلة للطفل عبد الكريم",
+    "saveEliasFamily": "أنقذ إلياس وعائلته: من الخيمة إلى الأمان",
+    "helpGazaFamily": "ساعد عائلة من غزة على النجاة من المجاعة والمرض والتشرد. دعمك يقربهم من الطعام والمأوى ومستقبل أكثر أماناً.",
+    "trustedGuide": "دليلك الموثوق للأمان عبر الإنترنت والحماية من عمليات الاحتيال والتصيد والبرامج الضارة. خدمات الأمن السيبراني المتخصصة بالاشتراك."
+  },
+  "Languages": {
+    "title": "اللغات",
+    "english": "الإنجليزية",
+    "italian": "الإيطالية",
+    "nativeOrBilingual": "إتقان أصلي أو ثنائي اللغة",
+    "fullProfessional": "إتقان مهني كامل",
+    "showAllLanguages": "إظهار جميع اللغات"
+  },
+  "PeopleAlsoViewed": {
+    "title": "الأشخاص الذين تم عرضهم أيضاً",
+    "seeWhoElse": "اطلع على من يتم عرضه كثيراً معك",
+    "unlockFullList": "فتح القائمة الكاملة",
+    "reactivatePremium": "إعادة تفعيل البريميوم",
+    "cancelAnytime": "إلغاء في أي وقت. بدون رسوم مخفية.",
+    "solutionsPartner": "شريك حلول ومستشار تطوير الأعمال",
+    "vicePresident": "نائب الرئيس، المحتوى والإبداع"
+  },
+  "Connections": {
+    "title": "الاتصالات",
+    "seeAll": "عرض الكل ({count}+)",
+    "allConnections": "جميع الاتصالات",
+    "pending": "في الانتظار",
+    "mutualConnections": "{count} اتصالات مشتركة",
+    "accept": "قبول",
+    "ignore": "تجاهل"
+  },
+  "ProfileLanguage": {
+    "title": "لغة الملف الشخصي",
+    "whoViewersAlsoViewed": "من شاهد زوارك أيضاً",
+    "privateToYou": "خاص بك"
+  },
+  "Footer": {
+    "about": "حول",
+    "accessibility": "إمكانية الوصول",
+    "careers": "الوظائف",
+    "adChoices": "خيارات الإعلان",
+    "mobile": "المحمول",
+    "talentSolutions": "حلول المواهب",
+    "marketingSolutions": "حلول التسويق",
+    "advertising": "الإعلان",
+    "smallBusiness": "الأعمال الصغيرة",
+    "salesSolutions": "حلول المبيعات",
+    "safetyCenter": "مركز الأمان",
+    "questions": "أسئلة؟",
+    "visitHelpCenter": "زر مركز المساعدة الخاص بنا.",
+    "manageAccount": "إدارة حسابك وخصوصيتك",
+    "goToSettings": "اذهب إلى إعداداتك.",
+    "recommendationTransparency": "شفافية التوصيات",
+    "learnMore": "تعرف على المزيد حول المحتوى الموصى به.",
+    "selectLanguage": "اختر اللغة",
+    "linkedinCorporation": "شركة لينكدإن © 2025"
+  },
+  "Common": {
+    "showMore": "إظهار المزيد",
+    "showLess": "إظهار أقل",
+    "seeAll": "عرض الكل",
+    "edit": "تحرير",
+    "add": "إضافة",
+    "save": "حفظ",
+    "cancel": "إلغاء",
+    "delete": "حذف",
+    "share": "مشاركة",
+    "like": "إعجاب",
+    "comment": "تعليق",
+    "send": "إرسال",
+    "follow": "متابعة",
+    "unfollow": "إلغاء المتابعة",
+    "loading": "جاري التحميل...",
+    "error": "خطأ",
+    "success": "نجح"
   }
 }
