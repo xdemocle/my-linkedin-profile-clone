@@ -7,8 +7,6 @@ const cssFiles = readdirSync(cssDir)
   .filter(file => file.endsWith('.css'))
   .map(file => join(cssDir, file));
 
-console.log(cssFiles);
-
 await Bun.build({
   entrypoints: cssFiles,
   outdir: './build',
