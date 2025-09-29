@@ -2,13 +2,14 @@ import {
   BackpackIcon,
   BellIcon,
   ChatBubbleIcon,
+  FileTextIcon,
+  GearIcon,
   HomeIcon,
+  Link2Icon,
   MagnifyingGlassIcon,
-  PersonIcon,
-  ReaderIcon,
 } from '@radix-ui/react-icons';
-import { Link } from 'wouter';
 import { useTranslations } from 'use-intl';
+import { Link } from 'wouter';
 import type { Locale } from '../../lib/i18n';
 import { Avatar, AvatarFallback, AvatarImage } from '../ui/avatar';
 import { Button } from '../ui/button';
@@ -30,9 +31,9 @@ interface NavbarProps {
 
 export function Navbar({ currentLocale, onLocaleChange }: NavbarProps) {
   const t = useTranslations('Navigation');
-  
+
   return (
-    <header className="border-b bg-card/95 backdrop-blur-sm fixed top-0 left-0 right-0 z-50 shadow-xs">
+    <header className='border-b bg-card/95 backdrop-blur-sm fixed top-0 left-0 right-0 z-50 shadow-xs'>
       {/* Scroll progress indicator */}
       <ScrollProgress color='var(--linkedin-blue-bright)' height={2} />
       <div className='max-w-6xl mx-auto px-2 sm:px-4 flex items-center h-12 sm:h-14'>
@@ -51,48 +52,68 @@ export function Navbar({ currentLocale, onLocaleChange }: NavbarProps) {
 
         {/* Navigation */}
         <nav className='ml-auto flex items-center gap-0.5 sm:gap-1'>
+          {/* Core navigation - always visible with larger touch targets on mobile */}
+          <Button variant='ghost' size='icon' className='h-10 w-10 sm:h-9 sm:w-9' asChild>
+            <Link href='/' aria-label='Home'>
+              <HomeIcon className='h-5! w-5!' />
+            </Link>
+          </Button>
+
+          <Button variant='ghost' size='icon' className='h-10 w-10 sm:h-9 sm:w-9' asChild>
+            <Link href='/experience' aria-label='Experience'>
+              <BackpackIcon className='h-5! w-5!' />
+            </Link>
+          </Button>
+
+          <Button variant='ghost' size='icon' className='h-10 w-10 sm:h-9 sm:w-9' asChild>
+            <Link href='/projects' aria-label='Projects'>
+              <FileTextIcon className='h-5! w-5!' />
+            </Link>
+          </Button>
+
+          {/* Secondary navigation - hidden on small mobile */}
+          <Button variant='ghost' size='icon' className='h-10 w-10 sm:h-9 sm:w-9 hidden xs:flex' asChild>
+            <Link href='/skills' aria-label='Skills'>
+              <FileTextIcon className='h-5! w-5!' />
+            </Link>
+          </Button>
+
+          <Button variant='ghost' size='icon' className='h-10 w-10 sm:h-9 sm:w-9 hidden sm:flex' asChild>
+            <Link href='/network' aria-label='Network'>
+              <Link2Icon className='h-5! w-5!' />
+            </Link>
+          </Button>
+
+          <Button variant='ghost' size='icon' className='h-10 w-10 sm:h-9 sm:w-9 hidden sm:flex' asChild>
+            <Link href='/messages' aria-label='Messages'>
+              <ChatBubbleIcon className='h-5! w-5!' />
+            </Link>
+          </Button>
+
+          <Button variant='ghost' size='icon' className='h-10 w-10 sm:h-9 sm:w-9 hidden xs:flex' asChild>
+            <Link href='/notifications' aria-label='Notifications'>
+              <BellIcon className='h-5! w-5!' />
+            </Link>
+          </Button>
+
+          <Button variant='ghost' size='icon' className='h-10 w-10 sm:h-9 sm:w-9 hidden xs:flex' asChild>
+            <Link href='/settings' aria-label='Settings'>
+              <GearIcon className='h-5! w-5!' />
+            </Link>
+          </Button>
+
+          <Button variant='ghost' size='icon' className='rounded-full h-10 w-10 sm:h-9 sm:w-9' aria-label='User menu'>
+            <Avatar className='h-5! w-5!'>
+              <AvatarImage src='https://github.com/shadcn.png' alt='User' />
+              <AvatarFallback>RR</AvatarFallback>
+            </Avatar>
+          </Button>
+
           {/* Language and Theme - hidden on mobile */}
           <div className='hidden md:flex items-center gap-1'>
             <LanguageSwitcher currentLocale={currentLocale} onChange={onLocaleChange} />
             <ThemeToggle />
           </div>
-
-          {/* Core navigation - always visible with larger touch targets on mobile */}
-          <Button variant='ghost' size='icon' className='h-10 w-10 sm:h-9 sm:w-9' asChild>
-            <Link href="/" aria-label="Home">
-              <HomeIcon className='h-5 w-5' />
-            </Link>
-          </Button>
-
-          <Button variant='ghost' size='icon' className='h-10 w-10 sm:h-9 sm:w-9' asChild>
-            <Link href="/blog" aria-label="Blog">
-              <ReaderIcon className='h-5 w-5' />
-            </Link>
-          </Button>
-
-          {/* Secondary navigation - hidden on small mobile */}
-          <Button variant='ghost' size='icon' className='h-10 w-10 sm:h-9 sm:w-9 hidden xs:flex' aria-label="Profile">
-            <PersonIcon className='h-5 w-5' />
-          </Button>
-
-          <Button variant='ghost' size='icon' className='h-10 w-10 sm:h-9 sm:w-9 hidden sm:flex' aria-label="Jobs">
-            <BackpackIcon className='h-5 w-5' />
-          </Button>
-
-          <Button variant='ghost' size='icon' className='h-10 w-10 sm:h-9 sm:w-9 hidden sm:flex' aria-label="Messages">
-            <ChatBubbleIcon className='h-5 w-5' />
-          </Button>
-
-          <Button variant='ghost' size='icon' className='h-10 w-10 sm:h-9 sm:w-9 hidden xs:flex' aria-label="Notifications">
-            <BellIcon className='h-5 w-5' />
-          </Button>
-
-          <Button variant='ghost' size='icon' className='rounded-full h-10 w-10 sm:h-9 sm:w-9' aria-label="User menu">
-            <Avatar className='h-7 w-7'>
-              <AvatarImage src='https://github.com/shadcn.png' alt='User' />
-              <AvatarFallback>RR</AvatarFallback>
-            </Avatar>
-          </Button>
         </nav>
       </div>
     </header>

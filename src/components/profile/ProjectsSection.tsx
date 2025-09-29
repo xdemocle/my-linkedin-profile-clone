@@ -94,7 +94,7 @@ export function ProjectsSection() {
                     {project.links.website && (
                       <Button variant="ghost" size="sm" className="h-7 px-2 text-xs" asChild>
                         <a href={project.links.website} target="_blank" rel="noopener noreferrer">
-                          Website
+                          {t('viewProject')}
                           <ExternalLinkIcon className="ml-1 h-3 w-3" />
                         </a>
                       </Button>
@@ -102,7 +102,7 @@ export function ProjectsSection() {
                     {project.links.marketing && (
                       <Button variant="ghost" size="sm" className="h-7 px-2 text-xs" asChild>
                         <a href={project.links.marketing} target="_blank" rel="noopener noreferrer">
-                          Marketing
+                          {t('viewDemo')}
                           <ExternalLinkIcon className="ml-1 h-3 w-3" />
                         </a>
                       </Button>
