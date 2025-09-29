@@ -11,7 +11,8 @@ echo "/* Combined CSS files - $(date) */" > ./public/linkedin.css
 echo "" >> ./public/linkedin.css
 
 # Loop through each CSS file and append to output
-for file in ./public/assets/css/*.css; do
+# for file in ./public/assets/css/*.css; do
+for file in ./build/public/assets/css/*.css; do
   if [ -f "$file" ]; then
     echo "/* File: $(basename $file) */" >> ./public/linkedin.css
     cat "$file" >> ./public/linkedin.css
