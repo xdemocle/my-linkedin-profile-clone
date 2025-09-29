@@ -1,4 +1,4 @@
-import { ChatBubbleIcon, Cross2Icon, ImageIcon, Pencil2Icon, PlusIcon } from '@radix-ui/react-icons';
+import { ChatBubbleIcon, Cross2Icon, ImageIcon } from '@radix-ui/react-icons';
 import { useState } from 'react';
 import { Avatar, AvatarFallback, AvatarImage } from '../ui/avatar';
 import { Button } from '../ui/button';
@@ -123,16 +123,12 @@ export function MessagingPopup() {
           <CardHeader className='py-3 px-4 flex flex-row items-center justify-between'>
             <div className='flex items-center gap-2'>
               <CardTitle className='text-base'>Messaging</CardTitle>
-              {!activeChat && (
-                <Button variant='ghost' size='icon' className='h-7 w-7'>
-                  <Pencil2Icon className='h-4 w-4' />
-                </Button>
-              )}
+              {/* Edit button removed - read-only mode */}
             </div>
             <div className='flex items-center gap-1'>
               {activeChat && (
                 <Button variant='ghost' size='icon' className='h-7 w-7' onClick={() => setActiveChat(null)}>
-                  <PlusIcon className='h-4 w-4 rotate-45' />
+                  <Cross2Icon className='h-4 w-4' />
                 </Button>
               )}
               <Button variant='ghost' size='icon' className='h-7 w-7' onClick={() => setIsExpanded(false)}>

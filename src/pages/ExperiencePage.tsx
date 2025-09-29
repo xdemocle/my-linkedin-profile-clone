@@ -1,4 +1,4 @@
-import { ArrowLeftIcon, Pencil1Icon, PlusIcon } from '@radix-ui/react-icons';
+import { ArrowLeftIcon } from '@radix-ui/react-icons';
 import { useTranslations } from 'use-intl';
 import { Link } from 'wouter';
 import { Avatar, AvatarFallback, AvatarImage } from '../components/ui/avatar';
@@ -78,16 +78,7 @@ export function ExperiencePage() {
                   <h1 className='text-3xl font-bold'>{t('title')}</h1>
                   <p className='text-muted-foreground mt-1'>Rocco Russo</p>
                 </div>
-                <div className='flex gap-2'>
-                  <Button variant='outline' size='sm'>
-                    <PlusIcon className='h-4 w-4 mr-2' />
-                    {t('addExperience')}
-                  </Button>
-                  <Button variant='outline' size='sm'>
-                    <Pencil1Icon className='h-4 w-4 mr-2' />
-                    {t('edit')}
-                  </Button>
-                </div>
+                {/* Edit buttons removed - read-only mode */}
               </div>
             </div>
 
@@ -111,9 +102,7 @@ export function ExperiencePage() {
                               {t(exp.durationKey)} • {t(exp.locationKey)}
                             </p>
                           </div>
-                          <Button variant='ghost' size='icon' className='h-8 w-8'>
-                            <Pencil1Icon className='h-4 w-4' />
-                          </Button>
+                          {/* Edit button removed - read-only mode */}
                         </div>
 
                         <p className='text-sm leading-relaxed mb-4'>{t(exp.descriptionKey)}</p>

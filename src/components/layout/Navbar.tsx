@@ -8,6 +8,7 @@ import {
   Link2Icon,
   MagnifyingGlassIcon,
 } from '@radix-ui/react-icons';
+import { Separator } from '@radix-ui/react-separator';
 import { useTranslations } from 'use-intl';
 import { useLocation } from 'wouter';
 import type { Locale } from '../../lib/i18n';
@@ -43,7 +44,7 @@ export function Navbar({ currentLocale, onLocaleChange }: NavbarProps) {
     <header className='border-b bg-card/95 backdrop-blur-sm fixed top-0 left-0 right-0 z-50 shadow-xs'>
       {/* Scroll progress indicator */}
       <ScrollProgress color='var(--linkedin-blue-bright)' height={2} />
-      <div className='max-w-6xl mx-auto px-2 sm:px-4 flex items-center h-12 sm:h-14'>
+      <div className='max-w-7xl mx-auto px-2 sm:px-4 flex items-center h-12 sm:h-14'>
         {/* Logo */}
         <div className='mr-2 sm:mr-4'>
           <LinkedInLogo />
@@ -147,6 +148,8 @@ export function Navbar({ currentLocale, onLocaleChange }: NavbarProps) {
           >
             <GearIcon className='h-5.5! w-5.5!' />
           </Button>
+
+          <Separator color='accent' />
 
           {/* Language and Theme - hidden on mobile */}
           <div className='hidden md:flex items-center gap-1'>

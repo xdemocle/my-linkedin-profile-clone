@@ -1,5 +1,6 @@
-// import { Pencil1Icon } from '@radix-ui/react-icons';
+// No edit icons needed - read-only mode
 import { useTranslations } from 'use-intl';
+import { OnlineStatusIcon, StealthStartupIcon } from '../../utils/iconComponents';
 import { ShareProfile } from '../ShareProfile';
 import { Avatar, AvatarFallback, AvatarImage } from '../ui/avatar';
 import { Button } from '../ui/button';
@@ -16,30 +17,23 @@ export function ProfileHeader() {
           alt='Cover'
           className='w-full h-full object-cover'
         />
-        {/* <Button
-          variant='ghost'
-          size='icon'
-          className='absolute top-4 right-4 bg-background/80 backdrop-blur-sm hover:bg-background/90'
-        >
-          <Pencil1Icon className='h-4 w-4' />
-        </Button> */}
       </div>
 
       {/* Profile Info */}
       <div className='p-6 relative'>
         {/* Avatar - positioned to overlap the cover photo */}
-        <Avatar className='w-24 h-24 border-4 border-background absolute -top-12 left-6'>
-          <AvatarImage src='https://github.com/shadcn.png' alt='Rocco Russo' />
+        <Avatar className='w-44 h-44 border-4 border-background absolute -top-24 left-6 shadow-xl'>
+          <AvatarImage src='/assets/png/rocco-me-nft.png' alt='Rocco Russo' />
           <AvatarFallback>RR</AvatarFallback>
         </Avatar>
 
-        <div className='ml-32 pt-2'>
+        <div className='ml-48 pt-2'>
           <div className='flex justify-between items-start'>
             <div className='flex-1'>
               <div className='flex items-center gap-2'>
                 <h1 className='text-2xl font-bold'>Rocco Russo</h1>
                 <div className='flex items-center gap-1'>
-                  <span className='text-muted-foreground'>🟢</span>
+                  <OnlineStatusIcon className='text-green-500 h-3 w-3' />
                   <span className='text-xs text-muted-foreground'>EMEA</span>
                 </div>
               </div>
@@ -79,7 +73,7 @@ export function ProfileHeader() {
             <div className='flex flex-col items-end gap-2'>
               <div className='flex items-center gap-2 text-sm'>
                 <div className='w-6 h-6 bg-black rounded-full flex items-center justify-center'>
-                  <span className='text-white text-xs'>⚡</span>
+                  <StealthStartupIcon />
                 </div>
                 <span className='font-medium'>{t('stealthStartup')}</span>
               </div>
@@ -87,10 +81,12 @@ export function ProfileHeader() {
           </div>
 
           <div className='flex flex-wrap gap-2 mt-6'>
-            <Button className='bg-blue-600 text-white hover:bg-blue-700 rounded-full px-6'>{t('openToWork')}</Button>
+            <Button className='bg-primary text-white hover:bg-blue-700 rounded-full px-6'>{t('openToWork')}</Button>
+
             <Button variant='outline' className='rounded-full px-4'>
               {t('resources')}
             </Button>
+
             <ShareProfile className='rounded-full' />
           </div>
         </div>

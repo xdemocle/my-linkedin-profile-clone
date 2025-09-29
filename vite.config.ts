@@ -1,8 +1,9 @@
+import mdx from '@mdx-js/rollup';
 import tailwindcss from '@tailwindcss/vite';
 import react from '@vitejs/plugin-react-swc';
+import path from 'path';
 import { defineConfig } from 'vite';
 import { vitePrerenderPlugin } from 'vite-prerender-plugin';
-import mdx from '@mdx-js/rollup';
 
 // https://vite.dev/config/
 export default defineConfig({
@@ -35,9 +36,10 @@ export default defineConfig({
       },
     },
   ],
+
   resolve: {
     alias: {
-      '@': '/src',
+      '@': path.resolve(__dirname, './src'),
     },
   },
   build: {

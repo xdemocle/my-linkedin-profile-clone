@@ -1,6 +1,5 @@
 import { ChatBubbleIcon, HeartIcon, ReloadIcon, Share1Icon } from '@radix-ui/react-icons';
 import { Avatar, AvatarFallback, AvatarImage } from '../ui/avatar';
-import { Button } from '../ui/button';
 import { Card, CardContent, CardFooter, CardHeader } from '../ui/card';
 import { Separator } from '../ui/separator';
 
@@ -67,22 +66,22 @@ export function Post({ author, content, imageUrl, likes, comments, shares }: Pos
       <Separator className='my-1' />
 
       <CardFooter className='p-1 px-2 flex justify-between'>
-        <Button variant='ghost' size='sm' className='flex-1 text-xs gap-2 text-muted-foreground'>
-          <HeartIcon className='h-4 w-4' />
+        <div className='flex-1 text-xs gap-2 text-muted-foreground flex items-center justify-center'>
+          <HeartIcon className='h-4 w-4 mr-1' />
           Like
-        </Button>
-        <Button variant='ghost' size='sm' className='flex-1 text-xs gap-2 text-muted-foreground'>
-          <ChatBubbleIcon className='h-4 w-4' />
+        </div>
+        <div className='flex-1 text-xs gap-2 text-muted-foreground flex items-center justify-center'>
+          <ChatBubbleIcon className='h-4 w-4 mr-1' />
           Comment
-        </Button>
-        <Button variant='ghost' size='sm' className='flex-1 text-xs gap-2 text-muted-foreground'>
-          <ReloadIcon className='h-4 w-4' />
+        </div>
+        <div className='flex-1 text-xs gap-2 text-muted-foreground flex items-center justify-center'>
+          <ReloadIcon className='h-4 w-4 mr-1' />
           Repost
-        </Button>
-        <Button variant='ghost' size='sm' className='flex-1 text-xs gap-2 text-muted-foreground'>
-          <Share1Icon className='h-4 w-4' />
+        </div>
+        <div className='flex-1 text-xs gap-2 text-muted-foreground flex items-center justify-center'>
+          <Share1Icon className='h-4 w-4 mr-1' />
           Send
-        </Button>
+        </div>
       </CardFooter>
     </Card>
   );

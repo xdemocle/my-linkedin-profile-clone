@@ -270,6 +270,7 @@ The project follows a structured development plan outlined in `DEVELOPMENT_PLAN.
   - Complete French language key (`"french"`) added to all 5 translation files
 
 **⚠️ CRITICAL REMINDER**: When adding new translation keys to `en.json`, **ALWAYS** update all 5 language files simultaneously:
+
 - `src/messages/en.json` (English - base)
 - `src/messages/it.json` (Italian)
 - `src/messages/es.json` (Spanish)
@@ -277,6 +278,7 @@ The project follows a structured development plan outlined in `DEVELOPMENT_PLAN.
 - `src/messages/ar.json` (Arabic)
 
 **Translation Update Process**:
+
 1. Add keys to English (`en.json`) first
 2. Immediately update all other language files with appropriate translations
 3. Use culturally appropriate terminology for each language

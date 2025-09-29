@@ -5,6 +5,7 @@ import { Badge } from '../components/ui/badge';
 import { Button } from '../components/ui/button';
 import { Card, CardContent } from '../components/ui/card';
 import { scrollToTop } from '../utils/scrollUtils';
+import { ProjectIconWrapper } from '../utils/iconComponents';
 
 interface Project {
   id: string;
@@ -45,7 +46,7 @@ export function ProjectsPage() {
         marketing: 'https://www.ajna.finance',
       },
       technologies: ['React', 'TypeScript', 'Solidity', 'Web3.js', 'Ethers.js'],
-      icon: '🔵',
+      icon: 'blue-circle',
       featured: true,
     },
     {
@@ -57,7 +58,7 @@ export function ProjectsPage() {
         website: 'https://www.mode.network',
       },
       technologies: ['Next.js', 'React Hooks', 'TailwindCSS', 'TypeScript'],
-      icon: '⚡',
+      icon: 'lightning',
       featured: true,
     },
     {
@@ -70,7 +71,7 @@ export function ProjectsPage() {
         screenshots: ['Link1', 'Link2', 'Link3'],
       },
       technologies: ['JavaScript', 'HTML5', 'CSS3', 'Canvas API', 'WebGL'],
-      icon: '🎮',
+      icon: 'game',
       featured: true,
     },
     {
@@ -84,7 +85,7 @@ export function ProjectsPage() {
         screenshots: ['Link1'],
       },
       technologies: ['React', 'TypeScript', 'Web3', 'Solidity', 'GraphQL'],
-      icon: '🏙️',
+      icon: 'building',
       featured: true,
     },
     {
@@ -96,7 +97,7 @@ export function ProjectsPage() {
         screenshots: ['Link1'],
       },
       technologies: ['Node.js', 'React.js', 'Next.js', 'Python', 'Django', 'Flask', 'Ethereum'],
-      icon: '🏠',
+      icon: 'home',
       featured: true,
     },
     {
@@ -108,7 +109,7 @@ export function ProjectsPage() {
         screenshots: ['Link1'],
       },
       technologies: ['Next.js', 'CSS3 Animations', 'Performance Optimization'],
-      icon: '📬',
+      icon: 'mail',
       featured: false,
     },
     {
@@ -121,7 +122,7 @@ export function ProjectsPage() {
         github: ['https://github.com/altcash-frontend', 'https://github.com/altcash-backend'],
       },
       technologies: ['React', 'Node.js', 'Crypto APIs', 'Fiat Onramp'],
-      icon: '😺',
+      icon: 'github',
       featured: false,
     },
     {
@@ -133,7 +134,7 @@ export function ProjectsPage() {
         github: ['https://github.com/cybergrandpa-web-extension-antifraud'],
       },
       technologies: ['JavaScript', 'Browser Extensions', 'Security', 'Anti-Fraud'],
-      icon: '😺',
+      icon: 'github',
       featured: false,
     },
     {
@@ -145,7 +146,7 @@ export function ProjectsPage() {
         demo: 'https://chrome.google.com/webstore/detail/linkedin-full-width',
       },
       technologies: ['JavaScript', 'Browser Extensions', 'CSS'],
-      icon: '💎',
+      icon: 'code',
       featured: false,
     },
     {
@@ -156,7 +157,7 @@ export function ProjectsPage() {
         github: ['https://github.com/tetris-mini-app'],
       },
       technologies: ['JavaScript', 'Telegram Mini Apps', 'TON Blockchain', 'Canvas API'],
-      icon: '💎',
+      icon: 'code',
       featured: false,
     },
   ];
@@ -193,9 +194,13 @@ export function ProjectsPage() {
               <Card key={project.id} className='overflow-hidden shadow-md hover:shadow-lg transition-shadow'>
                 <CardContent className='p-6'>
                   <div className='flex items-start gap-4'>
-                    <div className='text-4xl'>{project.icon}</div>
                     <div className='flex-1'>
-                      <h3 className='text-xl font-semibold mb-2'>{project.title}</h3>
+                      <div className='flex items-center gap-3 mb-2'>
+                        <div className='flex items-center justify-center h-8 w-8'>
+                          <ProjectIconWrapper iconKey={project.icon} />
+                        </div>
+                        <h3 className='text-xl font-semibold'>{project.title}</h3>
+                      </div>
                       <p className='text-sm text-muted-foreground mb-4'>{project.description}</p>
 
                       {/* Links */}
@@ -253,9 +258,13 @@ export function ProjectsPage() {
               <Card key={project.id} className='shadow-sm hover:shadow-md transition-shadow'>
                 <CardContent className='p-4'>
                   <div className='flex items-start gap-3'>
-                    <div className='text-3xl'>{project.icon}</div>
                     <div className='flex-1'>
-                      <h3 className='text-lg font-medium mb-2'>{project.title}</h3>
+                      <div className='flex items-center gap-2 mb-2'>
+                        <div className='flex items-center justify-center h-6 w-6'>
+                          <ProjectIconWrapper iconKey={project.icon} className='h-6 w-6' />
+                        </div>
+                        <h3 className='text-lg font-medium'>{project.title}</h3>
+                      </div>
                       <p className='text-xs text-muted-foreground mb-3 line-clamp-2'>{project.description}</p>
 
                       {/* Links - Simplified for smaller cards */}

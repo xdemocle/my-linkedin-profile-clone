@@ -1,4 +1,4 @@
-import { ArrowLeftIcon, PlusIcon } from '@radix-ui/react-icons';
+import { ArrowLeftIcon } from '@radix-ui/react-icons';
 import { Link } from 'wouter';
 import { useTranslations } from 'use-intl';
 import { Button } from '../components/ui/button';
@@ -57,10 +57,7 @@ export function ActivityPage() {
               <h1 className='text-3xl font-bold'>{t('title')}</h1>
               <p className='text-muted-foreground mt-1'>Rocco Russo • 1,247 {t('followers')}</p>
             </div>
-            <Button>
-              <PlusIcon className='h-4 w-4 mr-2' />
-              {t('createPost')}
-            </Button>
+            {/* Create post button removed - read-only mode */}
           </div>
         </div>
 
