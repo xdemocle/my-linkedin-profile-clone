@@ -29,3 +29,4 @@ dist-ssr
 !.dev.vars.example
 .env*
 !.env.example
+.github/chatmodes/rok.chatmode.md
