@@ -288,6 +288,19 @@
     "selectLanguage": "Select Language",
     "linkedinCorporation": "LinkedIn Corporation © 2025"
   },
+  "Projects": {
+    "title": "Projects",
+    "featuredProjects": "Featured Projects",
+    "otherProjects": "Other Projects",
+    "seeAll": "See all projects",
+    "backToProfile": "Back to profile",
+    "viewProject": "View project",
+    "viewCode": "View code",
+    "viewDemo": "View demo",
+    "technologies": "Technologies",
+    "role": "Role",
+    "company": "Company"
+  },
   "Common": {
     "showMore": "Show more",
     "showLess": "Show less",

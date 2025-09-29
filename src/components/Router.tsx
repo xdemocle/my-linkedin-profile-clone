@@ -4,6 +4,7 @@ import { ProfileLayout } from './layout/ProfileLayout';
 import { ExperiencePage } from '../pages/ExperiencePage';
 import { ActivityPage } from '../pages/ActivityPage';
 import { BlogPage } from '../pages/BlogPage';
+import { ProjectsPage } from '../pages/ProjectsPage';
 import { Navbar } from './layout/Navbar';
 
 interface RouterProps {
@@ -40,6 +41,15 @@ export function Router({ locale, onLocaleChange }: RouterProps) {
             <Navbar currentLocale={locale} onLocaleChange={onLocaleChange} />
             <div className="pt-16">
               <BlogPage />
+            </div>
+          </div>
+        </Route>
+
+        <Route path="/projects">
+          <div className='min-h-screen bg-background'>
+            <Navbar currentLocale={locale} onLocaleChange={onLocaleChange} />
+            <div className="pt-16">
+              <ProjectsPage />
             </div>
           </div>
         </Route>
