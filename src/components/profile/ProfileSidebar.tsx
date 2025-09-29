@@ -1,7 +1,5 @@
 import { Badge } from '../ui/badge';
-import { Button } from '../ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '../ui/card';
-import { PeopleAlsoViewed } from './PeopleAlsoViewed';
 
 const profileLanguages = [
   { name: 'Italian', level: 'Native' },
@@ -49,67 +47,55 @@ export function ProfileSidebar() {
         </CardContent>
       </Card>
 
-      {/* People Also Viewed */}
-      <PeopleAlsoViewed />
-
-      {/* LinkedIn Premium Ad */}
-      <Card className='shadow-xs'>
-        <CardContent className='p-4 text-center'>
-          <div className='mb-3'>
-            <div className='w-12 h-12 bg-gradient-to-br from-yellow-400 to-yellow-600 rounded-lg mx-auto mb-3 flex items-center justify-center'>
-              <span className='text-white font-bold text-lg'>P</span>
-            </div>
-            <h3 className='font-medium text-sm mb-1'>Unlock Your Career Potential</h3>
-            <p className='text-xs text-muted-foreground mb-3'>Get exclusive insights with LinkedIn Premium</p>
-          </div>
-          <img
-            src='https://media.licdn.com/media/AAYQAgTPAAgAAQAAAAAAADVuOvKzTF-3RD6j-qFPqhubBQ.png'
-            alt='LinkedIn Premium'
-            className='w-full h-24 object-cover rounded-md mb-3'
-          />
-          <Button variant='outline' size='sm' className='w-full text-xs'>
-            Try for free
-          </Button>
-        </CardContent>
-      </Card>
-
       {/* Footer Links */}
       <Card className='shadow-xs'>
         <CardContent className='p-4'>
-          <div className='text-xs text-muted-foreground space-y-2'>
+          <div className='text-xs text-muted-foreground space-y-3'>
             <div className='flex flex-wrap gap-2'>
-              <a href='#' className='hover:text-primary'>
-                About
+              <a
+                href='https://www.linkedin.com/in/roccorusso/'
+                target='_blank'
+                rel='noopener noreferrer'
+                className='hover:text-primary flex items-center gap-1'
+              >
+                LinkedIn Profile
+                <svg
+                  className='w-3 h-3'
+                  viewBox='0 0 24 24'
+                  fill='none'
+                  stroke='currentColor'
+                  strokeWidth='2'
+                  strokeLinecap='round'
+                  strokeLinejoin='round'
+                >
+                  <path d='m7 7 10 10-5 0 0-5' />
+                  <path d='m17 7-5 0 0 5' />
+                </svg>
               </a>
               <span>•</span>
-              <a href='#' className='hover:text-primary'>
-                Accessibility
-              </a>
-              <span>•</span>
-              <a href='#' className='hover:text-primary'>
-                Help Center
-              </a>
-            </div>
-            <div className='flex flex-wrap gap-2'>
-              <a href='#' className='hover:text-primary'>
-                Privacy & Terms
-              </a>
-              <span>•</span>
-              <a href='#' className='hover:text-primary'>
-                Ad Choices
-              </a>
-            </div>
-            <div className='flex flex-wrap gap-2'>
-              <a href='#' className='hover:text-primary'>
-                Advertising
-              </a>
-              <span>•</span>
-              <a href='#' className='hover:text-primary'>
-                Business Services
+              <a
+                href='https://rocco.me'
+                target='_blank'
+                rel='noopener noreferrer'
+                className='hover:text-primary flex items-center gap-1'
+              >
+                Personal Website
+                <svg
+                  className='w-3 h-3'
+                  viewBox='0 0 24 24'
+                  fill='none'
+                  stroke='currentColor'
+                  strokeWidth='2'
+                  strokeLinecap='round'
+                  strokeLinejoin='round'
+                >
+                  <path d='m7 7 10 10-5 0 0-5' />
+                  <path d='m17 7-5 0 0 5' />
+                </svg>
               </a>
             </div>
             <div className='pt-2 border-t'>
-              <p>LinkedIn Corporation © 2024</p>
+              <p>© 2024 Rocco Russo</p>
             </div>
           </div>
         </CardContent>
