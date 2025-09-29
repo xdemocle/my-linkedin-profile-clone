@@ -306,7 +306,11 @@
   "ProfileLanguageUrl": {
     "profileLanguage": "Langue du profil",
     "selectLanguage": "Sélectionner la langue",
-    "publicProfile": "Profil public et URL"
+    "publicProfile": "Profil public et URL",
+    "editUrl": "Modifier l'URL",
+    "copyUrl": "Copier l'URL",
+    "urlCopied": "URL copiée dans le presse-papiers",
+    "languageInfo": "C'est la langue dans laquelle votre profil apparaît"
   },
   "Common": {
     "showMore": "Afficher plus",

@@ -285,7 +285,11 @@
   "ProfileLanguageUrl": {
     "profileLanguage": "لغة الملف الشخصي",
     "selectLanguage": "اختر اللغة",
-    "publicProfile": "الملف الشخصي العام والرابط"
+    "publicProfile": "الملف الشخصي العام والرابط",
+    "editUrl": "تحرير الرابط",
+    "copyUrl": "نسخ الرابط",
+    "urlCopied": "تم نسخ الرابط إلى الحافظة",
+    "languageInfo": "هذه هي اللغة التي يظهر بها ملفك الشخصي"
   },
   "Footer": {
     "about": "حول",

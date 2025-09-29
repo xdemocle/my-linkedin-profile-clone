@@ -285,7 +285,11 @@
   "ProfileLanguageUrl": {
     "profileLanguage": "Lingua del profilo",
     "selectLanguage": "Seleziona lingua",
-    "publicProfile": "Profilo pubblico e URL"
+    "publicProfile": "Profilo pubblico e URL",
+    "editUrl": "Modifica URL",
+    "copyUrl": "Copia URL",
+    "urlCopied": "URL copiato negli appunti",
+    "languageInfo": "Questa è la lingua in cui appare il tuo profilo"
   },
   "Footer": {
     "about": "Informazioni",

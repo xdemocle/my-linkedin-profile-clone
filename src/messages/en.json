@@ -44,8 +44,11 @@
   },
   "About": {
     "title": "About",
+    "firstParagraph": "More active on substack.com/@xdemocle",
+    "disclaimer": "DISCLAIMER: my profile here ain't a CV online anymore. If you are thinking of offering me a long-term contract, please send a request here or via email at hello@rocco.me",
     "fullStackDeveloper": "Full stack developer with experience in JavaScript, TypeScript, and React. Passionate about creating intuitive user experiences and optimizing web performance. Specialized in modern frontend frameworks and design systems.",
-    "currentlyWorking": "Currently working as a freelance developer helping businesses build responsive and accessible web applications. Skilled in UI/UX design principles and implementing complex interactive interfaces."
+    "currentlyWorking": "Currently working as a freelance developer helping businesses build responsive and accessible web applications. Skilled in UI/UX design principles and implementing complex interactive interfaces.",
+    "lastParagraph": "I write code. I build systems.\nI work in Web3, AI, and Cybersecurity. I mentor junior devs and career changers. But none of that matters if we forget what people carry under the surface. I don’t do fake connections. I don’t chase clout. I don’t trust any process that treats humans like data rows.\nI'm a software engineer with two decades of experience. As a Lead Full-Stack Engineer, I define the direction for blockchain and Web3. From South Italy to the globe, I assist in developing decentralized applications (DApps) that redefine user experiences: tokenized assets, DeFi platforms, and smart contract integrations. My recent projects have delivered millions in liquidity, a 20% boost in user engagement, and peak concurrency milestones, including 5 M++ visitors on initiatives like SHIBA INU."
   },
   "Analytics": {
     "title": "Analytics",
@@ -319,7 +322,11 @@
   "ProfileLanguageUrl": {
     "profileLanguage": "Profile language",
     "selectLanguage": "Select language",
-    "publicProfile": "Public profile & URL"
+    "publicProfile": "Public profile & URL",
+    "editUrl": "Edit URL",
+    "copyUrl": "Copy URL",
+    "urlCopied": "URL copied to clipboard",
+    "languageInfo": "This is the language your profile appears in"
   },
   "Common": {
     "showMore": "Show more",
