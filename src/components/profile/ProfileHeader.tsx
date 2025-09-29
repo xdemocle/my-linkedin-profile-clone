@@ -2,6 +2,7 @@
 import { useTranslations } from 'use-intl';
 import { Avatar, AvatarFallback, AvatarImage } from '../ui/avatar';
 import { Button } from '../ui/button';
+import { ShareProfile } from '../ShareProfile';
 
 export function ProfileHeader() {
   const t = useTranslations('ProfileHeader');
@@ -79,7 +80,7 @@ export function ProfileHeader() {
             </div>
           </div>
 
-          <div className='flex gap-2 mt-6'>
+          <div className='flex flex-wrap gap-2 mt-6'>
             <Button className='bg-blue-600 text-white hover:bg-blue-700 rounded-full px-6'>
               {t('openToWork')}
             </Button>
@@ -92,6 +93,7 @@ export function ProfileHeader() {
             <Button variant='outline' className='rounded-full px-4'>
               {t('resources')}
             </Button>
+            <ShareProfile className='rounded-full' />
           </div>
         </div>
       </div>

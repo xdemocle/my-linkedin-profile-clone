@@ -1,5 +1,6 @@
 // Removed unused import: import { useTranslations } from 'use-intl';
 import type { Locale } from '../../lib/i18n';
+import { ErrorBoundary } from '../ErrorBoundary';
 import { ProfileMainContent } from '../profile/ProfileMainContent';
 import { ProfileSidebar } from '../profile/ProfileSidebar';
 import { Navbar } from './Navbar';
@@ -19,12 +20,16 @@ export function ProfileLayout({ locale, onLocaleChange }: ProfileLayoutProps) {
         <div className='grid grid-cols-1 lg:grid-cols-3 gap-3 sm:gap-4'>
           {/* Main content - 2/3 width on large screens, full width on mobile */}
           <div className='lg:col-span-2 order-1'>
-            <ProfileMainContent />
+            <ErrorBoundary>
+              <ProfileMainContent />
+            </ErrorBoundary>
           </div>
 
           {/* Sidebar - 1/3 width on large screens, full width on mobile, appears after main content */}
           <div className='lg:col-span-1 order-2'>
-            <ProfileSidebar />
+            <ErrorBoundary>
+              <ProfileSidebar />
+            </ErrorBoundary>
           </div>
         </div>
       </main>
