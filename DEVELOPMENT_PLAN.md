@@ -7,7 +7,7 @@
 - [x] **ExperienceSection**: Add translations for job titles, descriptions, and "Show all experience" ✅
 - [x] **SkillsSection**: Translate skill names and endorsement text ✅
 - [x] **ProfileSidebar**: Languages, Interests, and Footer sections ✅
-- [ ] **ActivityPage & ExperiencePage**: Full page translations
+- [x] **ActivityPage & ExperiencePage**: Full page translations ✅
 - [x] **BlogPage**: Add translations for the new blog functionality ✅
 
 ### **2. UX & Accessibility Improvements**

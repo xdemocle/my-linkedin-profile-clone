@@ -1,12 +1,12 @@
 // import { Pencil1Icon } from '@radix-ui/react-icons';
 import { useTranslations } from 'use-intl';
+import { ShareProfile } from '../ShareProfile';
 import { Avatar, AvatarFallback, AvatarImage } from '../ui/avatar';
 import { Button } from '../ui/button';
-import { ShareProfile } from '../ShareProfile';
 
 export function ProfileHeader() {
   const t = useTranslations('ProfileHeader');
-  
+
   return (
     <div className='bg-card rounded-md overflow-hidden shadow-xs border'>
       {/* Cover Photo */}
@@ -43,9 +43,7 @@ export function ProfileHeader() {
                   <span className='text-xs text-muted-foreground'>EMEA</span>
                 </div>
               </div>
-              <p className='text-muted-foreground leading-tight mt-1'>
-                {t('fullStackEngineer')}
-              </p>
+              <p className='text-muted-foreground leading-tight mt-1'>{t('fullStackEngineer')}</p>
               <div className='flex items-center gap-2 mt-2 text-sm'>
                 <span className='text-muted-foreground'>{t('location')}</span>
                 <span className='text-muted-foreground'>•</span>
@@ -56,9 +54,17 @@ export function ProfileHeader() {
               <div className='mt-2'>
                 <a href='#' className='text-primary hover:underline text-sm font-medium flex items-center gap-1'>
                   {t('myWebsite')}
-                  <svg className='w-3 h-3' viewBox='0 0 24 24' fill='none' stroke='currentColor' strokeWidth='2' strokeLinecap='round' strokeLinejoin='round'>
-                    <path d='m7 7 10 10-5 0 0-5'/>
-                    <path d='m17 7-5 0 0 5'/>
+                  <svg
+                    className='w-3 h-3'
+                    viewBox='0 0 24 24'
+                    fill='none'
+                    stroke='currentColor'
+                    strokeWidth='2'
+                    strokeLinecap='round'
+                    strokeLinejoin='round'
+                  >
+                    <path d='m7 7 10 10-5 0 0-5' />
+                    <path d='m17 7-5 0 0 5' />
                   </svg>
                 </a>
               </div>
@@ -81,15 +87,7 @@ export function ProfileHeader() {
           </div>
 
           <div className='flex flex-wrap gap-2 mt-6'>
-            <Button className='bg-blue-600 text-white hover:bg-blue-700 rounded-full px-6'>
-              {t('openToWork')}
-            </Button>
-            <Button variant='outline' className='rounded-full px-6'>
-              {t('addProfileSection')}
-            </Button>
-            <Button variant='outline' className='rounded-full px-6'>
-              {t('enhanceProfile')}
-            </Button>
+            <Button className='bg-blue-600 text-white hover:bg-blue-700 rounded-full px-6'>{t('openToWork')}</Button>
             <Button variant='outline' className='rounded-full px-4'>
               {t('resources')}
             </Button>

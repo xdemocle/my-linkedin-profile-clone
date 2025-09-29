@@ -1,5 +1,6 @@
 import { ArrowLeftIcon, Pencil1Icon, PlusIcon } from '@radix-ui/react-icons';
 import { Link } from 'wouter';
+import { useTranslations } from 'use-intl';
 import { Avatar, AvatarFallback, AvatarImage } from '../components/ui/avatar';
 import { Button } from '../components/ui/button';
 import { Card, CardContent } from '../components/ui/card';
@@ -7,59 +8,58 @@ import { Separator } from '../components/ui/separator';
 import { Badge } from '../components/ui/badge';
 
 interface Experience {
-  company: string;
+  companyKey: string;
   logo: string;
-  title: string;
-  duration: string;
-  location: string;
-  description: string;
+  titleKey: string;
+  durationKey: string;
+  locationKey: string;
+  descriptionKey: string;
   skills?: string[];
 }
 
 const experiences: Experience[] = [
   {
-    company: 'Technical Lead',
+    companyKey: 'technicalLead',
     logo: 'https://github.com/shadcn.png',
-    title: 'Frontend Developer',
-    duration: 'Apr 2022 - Present · 1 yr 6 mos',
-    location: 'Milano, Italy',
-    description:
-      'Led frontend development for multiple client projects. Implemented responsive UI designs and optimized web performance. Mentored junior developers and established coding standards. Collaborated with cross-functional teams to deliver high-quality software solutions.',
+    titleKey: 'frontendDeveloper',
+    durationKey: 'duration1',
+    locationKey: 'milano',
+    descriptionKey: 'ledFrontendDevelopmentFull',
     skills: ['React', 'TypeScript', 'Next.js', 'Tailwind CSS', 'Team Leadership'],
   },
   {
-    company: 'Senior Solutions Engineer',
+    companyKey: 'seniorSolutionsEngineer',
     logo: 'https://github.com/shadcn.png',
-    title: 'Frontend Developer',
-    duration: 'Sep 2020 - Mar 2022 · 1 yr 7 mos',
-    location: 'Milano, Italy',
-    description:
-      'Developed interactive user interfaces using React and modern CSS frameworks. Collaborated with design team to implement pixel-perfect components and animations. Built reusable component libraries and maintained design systems.',
+    titleKey: 'frontendDeveloper',
+    durationKey: 'duration2',
+    locationKey: 'milano',
+    descriptionKey: 'developedInteractiveUIFull',
     skills: ['React', 'JavaScript', 'CSS3', 'SASS', 'Figma'],
   },
   {
-    company: 'Cyber Security Operations',
+    companyKey: 'cyberSecurityOperations',
     logo: 'https://github.com/shadcn.png',
-    title: 'Frontend Developer',
-    duration: 'Jun 2018 - Aug 2020 · 2 yrs 3 mos',
-    location: 'Milano, Italy',
-    description:
-      'Created dashboard interfaces for security monitoring tools. Worked with backend team to integrate APIs and real-time data visualization components. Implemented security best practices in frontend development.',
+    titleKey: 'frontendDeveloper',
+    durationKey: 'duration3',
+    locationKey: 'milano',
+    descriptionKey: 'createdDashboardInterfacesFull',
     skills: ['Vue.js', 'JavaScript', 'D3.js', 'REST APIs', 'Security'],
   },
   {
-    company: 'Freelance Web Developer',
+    companyKey: 'freelanceWebDeveloper',
     logo: 'https://github.com/shadcn.png',
-    title: 'Full Stack Developer',
-    duration: 'Jan 2017 - May 2018 · 1 yr 5 mos',
-    location: 'Milano, Italy',
-    description:
-      'Provided web development services to small and medium businesses. Built custom websites and web applications using modern technologies. Managed client relationships and project timelines.',
+    titleKey: 'fullStackDeveloper',
+    durationKey: 'duration4',
+    locationKey: 'milano',
+    descriptionKey: 'providedWebDevelopmentServices',
     skills: ['HTML5', 'CSS3', 'JavaScript', 'PHP', 'WordPress'],
   },
 ];
 
 export function ExperiencePage() {
+  const t = useTranslations('Experience');
+  const tCommon = useTranslations('Common');
+
   return (
     <div className='min-h-screen bg-background'>
       <div className='max-w-4xl mx-auto px-4 py-6'>
@@ -68,22 +68,22 @@ export function ExperiencePage() {
           <Button variant='ghost' size='sm' className='mb-4' asChild>
             <Link href="/">
               <ArrowLeftIcon className='h-4 w-4 mr-2' />
-              Back to profile
+              {t('backToProfile')}
             </Link>
           </Button>
           <div className='flex items-center justify-between'>
             <div>
-              <h1 className='text-3xl font-bold'>Experience</h1>
+              <h1 className='text-3xl font-bold'>{t('title')}</h1>
               <p className='text-muted-foreground mt-1'>Rocco Russo</p>
             </div>
             <div className='flex gap-2'>
               <Button variant='outline' size='sm'>
                 <PlusIcon className='h-4 w-4 mr-2' />
-                Add experience
+                {t('addExperience')}
               </Button>
               <Button variant='outline' size='sm'>
                 <Pencil1Icon className='h-4 w-4 mr-2' />
-                Edit
+                {t('edit')}
               </Button>
             </div>
           </div>
@@ -103,10 +103,10 @@ export function ExperiencePage() {
                   <div className='flex-1'>
                     <div className='flex justify-between items-start mb-2'>
                       <div>
-                        <h3 className='text-xl font-semibold'>{exp.title}</h3>
-                        <p className='text-lg text-muted-foreground'>{exp.company}</p>
+                        <h3 className='text-xl font-semibold'>{t(exp.titleKey)}</h3>
+                        <p className='text-lg text-muted-foreground'>{t(exp.companyKey)}</p>
                         <p className='text-sm text-muted-foreground mt-1'>
-                          {exp.duration} • {exp.location}
+                          {t(exp.durationKey)} • {t(exp.locationKey)}
                         </p>
                       </div>
                       <Button variant='ghost' size='icon' className='h-8 w-8'>
@@ -114,11 +114,11 @@ export function ExperiencePage() {
                       </Button>
                     </div>
 
-                    <p className='text-sm leading-relaxed mb-4'>{exp.description}</p>
+                    <p className='text-sm leading-relaxed mb-4'>{t(exp.descriptionKey)}</p>
 
                     {exp.skills && (
                       <div>
-                        <h4 className='text-sm font-medium mb-2'>Skills:</h4>
+                        <h4 className='text-sm font-medium mb-2'>{t('skills')}:</h4>
                         <div className='flex flex-wrap gap-2'>
                           {exp.skills.map((skill, skillIndex) => (
                             <Badge key={skillIndex} variant='secondary' className='text-xs'>
@@ -138,13 +138,13 @@ export function ExperiencePage() {
         {/* Add Experience CTA */}
         <Card className='mt-6 shadow-xs'>
           <CardContent className='p-6 text-center'>
-            <h3 className='font-semibold mb-2'>Show your experience</h3>
+            <h3 className='font-semibold mb-2'>{t('showYourExperience')}</h3>
             <p className='text-sm text-muted-foreground mb-4'>
-              Add your work experience to help others get to know you better.
+              {t('addYourWorkExperience')}
             </p>
             <Button>
               <PlusIcon className='h-4 w-4 mr-2' />
-              Add experience
+              {t('addExperience')}
             </Button>
           </CardContent>
         </Card>

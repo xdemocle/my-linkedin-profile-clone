@@ -1,5 +1,6 @@
 import { ArrowLeftIcon, PlusIcon } from '@radix-ui/react-icons';
 import { Link } from 'wouter';
+import { useTranslations } from 'use-intl';
 import { Button } from '../components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '../components/ui/card';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '../components/ui/tabs';
@@ -37,6 +38,9 @@ const recentActivity = [
 ];
 
 export function ActivityPage() {
+  const t = useTranslations('Activity');
+  const tProfileHeader = useTranslations('ProfileHeader');
+
   return (
     <div className='min-h-screen bg-background'>
       <div className='max-w-4xl mx-auto px-4 py-6'>
@@ -45,17 +49,17 @@ export function ActivityPage() {
           <Button variant='ghost' size='sm' className='mb-4' asChild>
             <Link href="/">
               <ArrowLeftIcon className='h-4 w-4 mr-2' />
-              Back to profile
+              {t('backToProfile')}
             </Link>
           </Button>
           <div className='flex items-center justify-between'>
             <div>
-              <h1 className='text-3xl font-bold'>Activity</h1>
-              <p className='text-muted-foreground mt-1'>Rocco Russo • 1,247 followers</p>
+              <h1 className='text-3xl font-bold'>{t('title')}</h1>
+              <p className='text-muted-foreground mt-1'>Rocco Russo • 1,247 {t('followers')}</p>
             </div>
             <Button>
               <PlusIcon className='h-4 w-4 mr-2' />
-              Create a post
+              {t('createPost')}
             </Button>
           </div>
         </div>
@@ -63,25 +67,25 @@ export function ActivityPage() {
         {/* Activity Stats */}
         <Card className='mb-6 shadow-xs'>
           <CardHeader>
-            <CardTitle>Activity Overview</CardTitle>
+            <CardTitle>{t('activityOverview')}</CardTitle>
           </CardHeader>
           <CardContent>
             <div className='grid grid-cols-2 md:grid-cols-4 gap-4'>
               <div className='text-center'>
                 <div className='text-2xl font-bold text-primary'>{activityStats.posts}</div>
-                <div className='text-sm text-muted-foreground'>Posts</div>
+                <div className='text-sm text-muted-foreground'>{t('posts')}</div>
               </div>
               <div className='text-center'>
                 <div className='text-2xl font-bold text-primary'>{activityStats.comments}</div>
-                <div className='text-sm text-muted-foreground'>Comments</div>
+                <div className='text-sm text-muted-foreground'>{t('comments')}</div>
               </div>
               <div className='text-center'>
                 <div className='text-2xl font-bold text-primary'>{activityStats.reactions}</div>
-                <div className='text-sm text-muted-foreground'>Reactions</div>
+                <div className='text-sm text-muted-foreground'>{t('reactions')}</div>
               </div>
               <div className='text-center'>
                 <div className='text-2xl font-bold text-primary'>{activityStats.followers}</div>
-                <div className='text-sm text-muted-foreground'>Followers</div>
+                <div className='text-sm text-muted-foreground'>{tProfileHeader('followers')}</div>
               </div>
             </div>
           </CardContent>
@@ -92,11 +96,11 @@ export function ActivityPage() {
           <Tabs defaultValue='all' className='w-full'>
             <div className='px-6 pt-6'>
               <TabsList className='grid w-full grid-cols-5'>
-                <TabsTrigger value='all'>All</TabsTrigger>
-                <TabsTrigger value='posts'>Posts</TabsTrigger>
-                <TabsTrigger value='comments'>Comments</TabsTrigger>
-                <TabsTrigger value='images'>Images</TabsTrigger>
-                <TabsTrigger value='articles'>Articles</TabsTrigger>
+                <TabsTrigger value='all'>{t('all')}</TabsTrigger>
+                <TabsTrigger value='posts'>{t('posts')}</TabsTrigger>
+                <TabsTrigger value='comments'>{t('comments')}</TabsTrigger>
+                <TabsTrigger value='images'>{t('images')}</TabsTrigger>
+                <TabsTrigger value='articles'>{t('articles')}</TabsTrigger>
               </TabsList>
             </div>
 
@@ -114,9 +118,9 @@ export function ActivityPage() {
                           <div className='flex items-center gap-2 mb-1'>
                             <span className='font-medium'>Rocco Russo</span>
                             <span className='text-sm text-muted-foreground'>
-                              {activity.type === 'post' && 'posted'}
-                              {activity.type === 'comment' && 'commented on'}
-                              {activity.type === 'share' && 'shared'}
+                              {activity.type === 'post' && t('posted')}
+                              {activity.type === 'comment' && t('commentedOn')}
+                              {activity.type === 'share' && t('shared')}
                             </span>
                             <span className='text-sm text-muted-foreground'>• {activity.date}</span>
                           </div>
@@ -127,9 +131,9 @@ export function ActivityPage() {
                             </p>
                           )}
                           <div className='flex items-center gap-4 text-xs text-muted-foreground'>
-                            <span>{activity.engagement.likes} likes</span>
-                            <span>{activity.engagement.comments || activity.engagement.replies || 0} comments</span>
-                            {activity.engagement.shares && <span>{activity.engagement.shares} shares</span>}
+                            <span>{activity.engagement.likes} {t('likes')}</span>
+                            <span>{activity.engagement.comments || activity.engagement.replies || 0} {t('comments')}</span>
+                            {activity.engagement.shares && <span>{activity.engagement.shares} {t('shares')}</span>}
                           </div>
                         </div>
                       </div>
@@ -144,22 +148,22 @@ export function ActivityPage() {
 
               <TabsContent value='comments' className='mt-0'>
                 <div className='text-center py-12'>
-                  <p className='text-muted-foreground mb-4'>Your comments will appear here</p>
-                  <Button variant='outline'>Start engaging with posts</Button>
+                  <p className='text-muted-foreground mb-4'>{t('yourCommentsWillAppear')}</p>
+                  <Button variant='outline'>{t('startEngagingWithPosts')}</Button>
                 </div>
               </TabsContent>
 
               <TabsContent value='images' className='mt-0'>
                 <div className='text-center py-12'>
-                  <p className='text-muted-foreground mb-4'>Images from your posts will appear here</p>
-                  <Button variant='outline'>Create a post with images</Button>
+                  <p className='text-muted-foreground mb-4'>{t('imagesFromPostsWillAppear')}</p>
+                  <Button variant='outline'>{t('createPostWithImages')}</Button>
                 </div>
               </TabsContent>
 
               <TabsContent value='articles' className='mt-0'>
                 <div className='text-center py-12'>
-                  <p className='text-muted-foreground mb-4'>Your articles will appear here</p>
-                  <Button variant='outline'>Write an article</Button>
+                  <p className='text-muted-foreground mb-4'>{t('yourArticlesWillAppear')}</p>
+                  <Button variant='outline'>{t('writeAnArticle')}</Button>
                 </div>
               </TabsContent>
             </CardContent>
