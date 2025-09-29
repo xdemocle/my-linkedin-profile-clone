@@ -1,9 +1,7 @@
 import { ProfileLayout } from './components/layout/ProfileLayout';
 
 function App() {
-  return (
-    <ProfileLayout />
-  );
+  return <ProfileLayout />;
 }
 
 export default App;
