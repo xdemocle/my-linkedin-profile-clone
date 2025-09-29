@@ -310,7 +310,7 @@ select {
   --artdeco-reset-forms-select-background-transparent: transparent;
   --artdeco-reset-forms-select-position-relative: relative;
   --artdeco-reset-forms-select-zindex-two: 2;
-  --artdeco-reset-forms-select-background-image: url(/assets/svg/cwn0a0e7hog2i33c88ucrvot5.svg);
+  --artdeco-reset-forms-select-background-image: url(/assets/svg/cwn0a0e7hog2i33c88ucrvot5.svg.svg.svg);
   --artdeco-reset-forms-select-border-box: border-box;
   --artdeco-reset-forms-select-border-zero: 0;
   --artdeco-reset-forms-select-width-100-percent: 100%;
@@ -926,7 +926,7 @@ input[type='checkbox'] + label:after {
   display: none;
   height: 1.6rem;
   width: 1.6rem;
-  background-image: url(/assets/svg/cwn0a0e7hog2i33c88ucrvot5.svg);
+  background-image: url(/assets/svg/cwn0a0e7hog2i33c88ucrvot5.svg.svg.svg);
   background-size: 2.4rem;
   overflow: hidden;
   margin: 0.3rem;
@@ -1564,7 +1564,7 @@ linkedin-logo.vertical[size='48dp'] .logo-text {
   --artdeco-reset-typography-font-family-inherit: inherit;
   --artdeco-reset-typography-font-style-italic: italic;
   --artdeco-reset-typography-font-style-normal: normal;
-  --artdeco-reset-typography-font-style-normal-important: normal important !;
+  --artdeco-reset-typography-font-style-normal-important: normal !important;
   --artdeco-reset-link-text-decoration-none: none;
   --artdeco-reset-link-font-weight-bold: 600;
   --artdeco-reset-link-background-color-transparent: transparent;
@@ -5051,736 +5051,736 @@ a.artdeco-button.artdeco-button--tertiary.artdeco-button--muted:visited {
   padding-top: 96px;
 }
 .artdeco-empty-state__headline--add-attachment {
-  background-image: url(/assets/svg/abe0fp5dhbl8919oagnu4uxjb.svg);
+  background-image: url(/assets/svg/abe0fp5dhbl8919oagnu4uxjb.svg.svg.svg);
 }
 .artdeco-empty-state__headline--add-feed {
-  background-image: url(/assets/svg/8cdn538hu6qciitlwzd8cya4m.svg);
+  background-image: url(/assets/svg/8cdn538hu6qciitlwzd8cya4m.svg.svg.svg);
 }
 .artdeco-empty-state__headline--add-media {
-  background-image: url(/assets/svg/9umi21lvbdkhlz1fzfto0ks1p.svg);
+  background-image: url(/assets/svg/9umi21lvbdkhlz1fzfto0ks1p.svg.svg.svg);
 }
 .artdeco-empty-state__headline--add-school {
-  background-image: url(/assets/svg/bbpf1n62uffiial5boptd5yw6.svg);
+  background-image: url(/assets/svg/bbpf1n62uffiial5boptd5yw6.svg.svg.svg);
 }
 .artdeco-empty-state__headline--address-book-import {
-  background-image: url(/assets/svg/8bc0uk8qzlremwne4qppqjj3u.svg);
+  background-image: url(/assets/svg/8bc0uk8qzlremwne4qppqjj3u.svg.svg.svg);
 }
 .artdeco-empty-state__headline--blank-page {
-  background-image: url(/assets/svg/2vu3kvq1wnizsjnxgwvu3im33.svg);
+  background-image: url(/assets/svg/2vu3kvq1wnizsjnxgwvu3im33.svg.svg.svg);
 }
 .artdeco-empty-state__headline--calendar-import {
-  background-image: url(/assets/svg/dq3i3uamx5v5nitthjiugxfkx.svg);
+  background-image: url(/assets/svg/dq3i3uamx5v5nitthjiugxfkx.svg.svg.svg);
 }
 .artdeco-empty-state__headline--camera-lens {
-  background-image: url(/assets/svg/bw3c74nd8er9smpu1jxuq6ova.svg);
+  background-image: url(/assets/svg/bw3c74nd8er9smpu1jxuq6ova.svg.svg.svg);
 }
 .artdeco-empty-state__headline--clipboard-check {
-  background-image: url(/assets/svg/eltv3s205d26utpkkitmr2gz9.svg);
+  background-image: url(/assets/svg/eltv3s205d26utpkkitmr2gz9.svg.svg.svg);
 }
 .artdeco-empty-state__headline--contacts-sync {
-  background-image: url(/assets/svg/bno7k063gacupedo872vlvn1m.svg);
+  background-image: url(/assets/svg/bno7k063gacupedo872vlvn1m.svg.svg.svg);
 }
 .artdeco-empty-state__headline--deserted-island {
-  background-image: url(/assets/svg/d94t0fnl8dzup7zqg9mlqp5q2.svg);
+  background-image: url(/assets/svg/d94t0fnl8dzup7zqg9mlqp5q2.svg.svg.svg);
 }
 .artdeco-empty-state__headline--desktop-mobile-screens {
-  background-image: url(/assets/svg/3fmuie7sjtzl07s1okjslwbc4.svg);
+  background-image: url(/assets/svg/3fmuie7sjtzl07s1okjslwbc4.svg.svg.svg);
 }
 .artdeco-empty-state__headline--desktop-text-ads {
-  background-image: url(/assets/svg/6y5sygpne604vgclt6hzx8963.svg);
+  background-image: url(/assets/svg/6y5sygpne604vgclt6hzx8963.svg.svg.svg);
 }
 .artdeco-empty-state__headline--edit-pipeline {
-  background-image: url(/assets/svg/1uk889irz774zkasz4t78a89t.svg);
+  background-image: url(/assets/svg/1uk889irz774zkasz4t78a89t.svg.svg.svg);
 }
 .artdeco-empty-state__headline--empty-clipboard {
-  background-image: url(/assets/svg/vv67nwqd0b9hm6s2un9mqwbo.svg);
+  background-image: url(/assets/svg/vv67nwqd0b9hm6s2un9mqwbo.svg.svg.svg);
 }
 .artdeco-empty-state__headline--empty-course-bookmark {
-  background-image: url(/assets/svg/11dg31ij2t6sxtu51ahm8k9x8.svg);
+  background-image: url(/assets/svg/11dg31ij2t6sxtu51ahm8k9x8.svg.svg.svg);
 }
 .artdeco-empty-state__headline--empty-globe-search {
-  background-image: url(/assets/svg/5ujfpewgjnrowiain9mqlpjh6.svg);
+  background-image: url(/assets/svg/5ujfpewgjnrowiain9mqlpjh6.svg.svg.svg);
 }
 .artdeco-empty-state__headline--empty-monitor-unfollow {
-  background-image: url(/assets/svg/ejjlr2zawvqutlu8gt8l98s3b.svg);
+  background-image: url(/assets/svg/ejjlr2zawvqutlu8gt8l98s3b.svg.svg.svg);
 }
 .artdeco-empty-state__headline--empty-pencil-paper {
-  background-image: url(/assets/svg/8annbzjijpdk1khc64bsmo5zu.svg);
+  background-image: url(/assets/svg/8annbzjijpdk1khc64bsmo5zu.svg.svg.svg);
 }
 .artdeco-empty-state__headline--empty-rocket-launch {
-  background-image: url(/assets/svg/7s7bzkqclr4tb5nieppk7r12n.svg);
+  background-image: url(/assets/svg/7s7bzkqclr4tb5nieppk7r12n.svg.svg.svg);
 }
 .artdeco-empty-state__headline--empty-search-company {
-  background-image: url(/assets/svg/2f486u42ajtrg16uigfpuymqy.svg);
+  background-image: url(/assets/svg/2f486u42ajtrg16uigfpuymqy.svg.svg.svg);
 }
 .artdeco-empty-state__headline--empty-search-groups {
-  background-image: url(/assets/svg/4ee1g9hldgw5e1foaoldx7u7i.svg);
+  background-image: url(/assets/svg/4ee1g9hldgw5e1foaoldx7u7i.svg.svg.svg);
 }
 .artdeco-empty-state__headline--empty-search-jobs {
-  background-image: url(/assets/svg/7v9u6s5kims49cu5wpq3l39gk.svg);
+  background-image: url(/assets/svg/7v9u6s5kims49cu5wpq3l39gk.svg.svg.svg);
 }
 .artdeco-empty-state__headline--empty-search-people {
-  background-image: url(/assets/svg/800jljamxqss0em8ksf24imsy.svg);
+  background-image: url(/assets/svg/800jljamxqss0em8ksf24imsy.svg.svg.svg);
 }
 .artdeco-empty-state__headline--empty-search-results {
-  background-image: url(/assets/svg/870wf8b6qul2o42u3mdb1hrw6.svg);
+  background-image: url(/assets/svg/870wf8b6qul2o42u3mdb1hrw6.svg.svg.svg);
 }
 .artdeco-empty-state__headline--empty-search-school {
-  background-image: url(/assets/svg/ad0zcr3qo4st3yx16mxgs4sie.svg);
+  background-image: url(/assets/svg/ad0zcr3qo4st3yx16mxgs4sie.svg.svg.svg);
 }
 .artdeco-empty-state__headline--empty-trophy {
-  background-image: url(/assets/svg/26o5pp8sen1yfimc12x2vuta0.svg);
+  background-image: url(/assets/svg/26o5pp8sen1yfimc12x2vuta0.svg.svg.svg);
 }
 .artdeco-empty-state__headline--empty-video-bookmark {
-  background-image: url(/assets/svg/9ygicub77zui3bxinzh8vybln.svg);
+  background-image: url(/assets/svg/9ygicub77zui3bxinzh8vybln.svg.svg.svg);
 }
 .artdeco-empty-state__headline--empty-video-course {
-  background-image: url(/assets/svg/4r85qj4yu8efbnwfxpqw94i7y.svg);
+  background-image: url(/assets/svg/4r85qj4yu8efbnwfxpqw94i7y.svg.svg.svg);
 }
 .artdeco-empty-state__headline--empty-video-single {
-  background-image: url(/assets/svg/jn7hzyaz10umgh104duct7h3.svg);
+  background-image: url(/assets/svg/jn7hzyaz10umgh104duct7h3.svg.svg.svg);
 }
 .artdeco-empty-state__headline--folder-data-transfer {
-  background-image: url(/assets/svg/5vshmv4da9el89yj3w8z9wx7a.svg);
+  background-image: url(/assets/svg/5vshmv4da9el89yj3w8z9wx7a.svg.svg.svg);
 }
 .artdeco-empty-state__headline--gray-missing-profile {
-  background-image: url(/assets/svg/9kicqzxp1udwy1uocnfhibchv.svg);
+  background-image: url(/assets/svg/9kicqzxp1udwy1uocnfhibchv.svg.svg.svg);
 }
 .artdeco-empty-state__headline--inmail-personalized {
-  background-image: url(/assets/svg/f3f2kjfwuhhq32faf1su1eysb.svg);
+  background-image: url(/assets/svg/f3f2kjfwuhhq32faf1su1eysb.svg.svg.svg);
 }
 .artdeco-empty-state__headline--laptop-personal-ads {
-  background-image: url(/assets/svg/3uzcotxy1p9zfbxbpj3hgvkar.svg);
+  background-image: url(/assets/svg/3uzcotxy1p9zfbxbpj3hgvkar.svg.svg.svg);
 }
 .artdeco-empty-state__headline--missing-piece {
-  background-image: url(/assets/svg/5mujnpa9nonoa19ef1rjbkpd6.svg);
+  background-image: url(/assets/svg/5mujnpa9nonoa19ef1rjbkpd6.svg.svg.svg);
 }
 .artdeco-empty-state__headline--no-connection {
-  background-image: url(/assets/svg/4ykfkvu7yoilgrhd88dmeju6v.svg);
+  background-image: url(/assets/svg/4ykfkvu7yoilgrhd88dmeju6v.svg.svg.svg);
 }
 .artdeco-empty-state__headline--no-entities {
-  background-image: url(/assets/svg/s3pzsbadxpaq0dxpylxxxrvp.svg);
+  background-image: url(/assets/svg/s3pzsbadxpaq0dxpylxxxrvp.svg.svg.svg);
 }
 .artdeco-empty-state__headline--no-invites {
-  background-image: url(/assets/svg/c340229xlu24jwkodbi31buia.svg);
+  background-image: url(/assets/svg/c340229xlu24jwkodbi31buia.svg.svg.svg);
 }
 .artdeco-empty-state__headline--no-jobs {
-  background-image: url(/assets/svg/b4ifcgbt89hsn6ayttvjhjzlm.svg);
+  background-image: url(/assets/svg/b4ifcgbt89hsn6ayttvjhjzlm.svg.svg.svg);
 }
 .artdeco-empty-state__headline--no-likers {
-  background-image: url(/assets/svg/b983koi9aphvrxs6jotiipa7n.svg);
+  background-image: url(/assets/svg/b983koi9aphvrxs6jotiipa7n.svg.svg.svg);
 }
 .artdeco-empty-state__headline--no-messages {
-  background-image: url(/assets/svg/c5akho2diwp7tegivxhw4qh5k.svg);
+  background-image: url(/assets/svg/c5akho2diwp7tegivxhw4qh5k.svg.svg.svg);
 }
 .artdeco-empty-state__headline--no-profile-views {
-  background-image: url(/assets/svg/41xk6wkw2tk5bntnzru2w2xvs.svg);
+  background-image: url(/assets/svg/41xk6wkw2tk5bntnzru2w2xvs.svg.svg.svg);
 }
 .artdeco-empty-state__headline--paper-move-folder {
-  background-image: url(/assets/svg/d3hdtbl6p28t1rqn84m158umo.svg);
+  background-image: url(/assets/svg/d3hdtbl6p28t1rqn84m158umo.svg.svg.svg);
 }
 .artdeco-empty-state__headline--people-comment {
-  background-image: url(/assets/svg/bsz4kg3jl77yfuikbo6mmwf4x.svg);
+  background-image: url(/assets/svg/bsz4kg3jl77yfuikbo6mmwf4x.svg.svg.svg);
 }
 .artdeco-empty-state__headline--sad-browser {
-  background-image: url(/assets/svg/7yo99765vovzn6ph64gjqjixw.svg);
+  background-image: url(/assets/svg/7yo99765vovzn6ph64gjqjixw.svg.svg.svg);
 }
 .artdeco-empty-state__headline--saved-articles {
-  background-image: url(/assets/svg/67m79ws8xfzf5wz4w1qrfimsb.svg);
+  background-image: url(/assets/svg/67m79ws8xfzf5wz4w1qrfimsb.svg.svg.svg);
 }
 .artdeco-empty-state__headline--shooting-star {
-  background-image: url(/assets/svg/bahf3aqop0v6lk4zlkpvs7fj1.svg);
+  background-image: url(/assets/svg/bahf3aqop0v6lk4zlkpvs7fj1.svg.svg.svg);
 }
 .artdeco-empty-state__headline--star-empty {
-  background-image: url(/assets/svg/1vxitwwegcg6wwvt13j1xy6w0.svg);
+  background-image: url(/assets/svg/1vxitwwegcg6wwvt13j1xy6w0.svg.svg.svg);
 }
 .artdeco-empty-state__headline--star {
-  background-image: url(/assets/svg/5ztdvroe2o0rok8c5po5j4igk.svg);
+  background-image: url(/assets/svg/5ztdvroe2o0rok8c5po5j4igk.svg.svg.svg);
 }
 .artdeco-empty-state__headline--success-award {
-  background-image: url(/assets/svg/c4s09hmy2iohx5vuv7neikqke.svg);
+  background-image: url(/assets/svg/c4s09hmy2iohx5vuv7neikqke.svg.svg.svg);
 }
 .artdeco-empty-state__headline--success-check {
-  background-image: url(/assets/svg/6muvnzlijyedh10l5azauukq8.svg);
+  background-image: url(/assets/svg/6muvnzlijyedh10l5azauukq8.svg.svg.svg);
 }
 .artdeco-empty-state__headline--success-inbug {
-  background-image: url(/assets/svg/7ff8lugz8er7tehof5nifl7un.svg);
+  background-image: url(/assets/svg/7ff8lugz8er7tehof5nifl7un.svg.svg.svg);
 }
 .artdeco-empty-state__headline--upload-media {
-  background-image: url(/assets/svg/64f7bt0fdgao7qpp4snitrcox.svg);
+  background-image: url(/assets/svg/64f7bt0fdgao7qpp4snitrcox.svg.svg.svg);
 }
 .artdeco-empty-state__headline--add-connection-inverse {
-  background-image: url(/assets/svg/4jb4q144l5glrekeccakjpuh7.svg);
+  background-image: url(/assets/svg/4jb4q144l5glrekeccakjpuh7.svg.svg.svg);
 }
 .artdeco-empty-state__headline--blank-page-muted {
-  background-image: url(/assets/svg/f03od54ktp41488hhf01mpwuq.svg);
+  background-image: url(/assets/svg/f03od54ktp41488hhf01mpwuq.svg.svg.svg);
 }
 .artdeco-empty-state__headline--camera-lens-muted {
-  background-image: url(/assets/svg/1c2s4agl5iy5l7o4exiybs147.svg);
+  background-image: url(/assets/svg/1c2s4agl5iy5l7o4exiybs147.svg.svg.svg);
 }
 .artdeco-empty-state__headline--clipboard-muted {
-  background-image: url(/assets/svg/14i6x0v2brpd7ce3g838gsrym.svg);
+  background-image: url(/assets/svg/14i6x0v2brpd7ce3g838gsrym.svg.svg.svg);
 }
 .artdeco-empty-state__headline--missing-piece-muted {
-  background-image: url(/assets/svg/2fbe2ald9bhvgc19z2ldsboiz.svg);
+  background-image: url(/assets/svg/2fbe2ald9bhvgc19z2ldsboiz.svg.svg.svg);
 }
 .artdeco-empty-state__headline--missing-profile-muted {
-  background-image: url(/assets/svg/8kyi94ynbhf1se6nllh8fhf31.svg);
+  background-image: url(/assets/svg/8kyi94ynbhf1se6nllh8fhf31.svg.svg.svg);
 }
 .artdeco-empty-state__headline--no-connection-muted {
-  background-image: url(/assets/svg/er707syck6vgj3oocpk7qowjc.svg);
+  background-image: url(/assets/svg/er707syck6vgj3oocpk7qowjc.svg.svg.svg);
 }
 .artdeco-empty-state__headline--no-entities-muted {
-  background-image: url(/assets/svg/aje24nw1etbe5ph9gi1z8ovuk.svg);
+  background-image: url(/assets/svg/aje24nw1etbe5ph9gi1z8ovuk.svg.svg.svg);
 }
 .artdeco-empty-state__headline--no-invites-muted {
-  background-image: url(/assets/svg/15uwm4owsydmw18kr8kszhep.svg);
+  background-image: url(/assets/svg/15uwm4owsydmw18kr8kszhep.svg.svg.svg);
 }
 .artdeco-empty-state__headline--no-jobs-muted {
-  background-image: url(/assets/svg/b2zfnughu7teox0wv4fpctmb9.svg);
+  background-image: url(/assets/svg/b2zfnughu7teox0wv4fpctmb9.svg.svg.svg);
 }
 .artdeco-empty-state__headline--no-likers-muted {
-  background-image: url(/assets/svg/ltt5fyicps955hput6b53ufh.svg);
+  background-image: url(/assets/svg/ltt5fyicps955hput6b53ufh.svg.svg.svg);
 }
 .artdeco-empty-state__headline--no-messages-muted {
-  background-image: url(/assets/svg/arfduxtu89e6ms0klx860qso1.svg);
+  background-image: url(/assets/svg/arfduxtu89e6ms0klx860qso1.svg.svg.svg);
 }
 .artdeco-empty-state__headline--no-profile-views-muted {
-  background-image: url(/assets/svg/70hmk0cfspr58c1ugwx570zy1.svg);
+  background-image: url(/assets/svg/70hmk0cfspr58c1ugwx570zy1.svg.svg.svg);
 }
 .artdeco-empty-state__headline--people-nearby-muted {
-  background-image: url(/assets/svg/2rscv373jh9ip7acskro2tvlz.svg);
+  background-image: url(/assets/svg/2rscv373jh9ip7acskro2tvlz.svg.svg.svg);
 }
 .artdeco-empty-state__headline--sad-browser-muted {
-  background-image: url(/assets/svg/5eaaldh4q68te5kgdjmno7bfe.svg);
+  background-image: url(/assets/svg/5eaaldh4q68te5kgdjmno7bfe.svg.svg.svg);
 }
 .artdeco-empty-state__headline--search-companies-muted {
-  background-image: url(/assets/svg/56u7sjmzvrqhckjubodo05j2q.svg);
+  background-image: url(/assets/svg/56u7sjmzvrqhckjubodo05j2q.svg.svg.svg);
 }
 .artdeco-empty-state__headline--search-groups-muted {
-  background-image: url(/assets/svg/dhdzh0dh5niio4xjqahdo6e6o.svg);
+  background-image: url(/assets/svg/dhdzh0dh5niio4xjqahdo6e6o.svg.svg.svg);
 }
 .artdeco-empty-state__headline--search-jobs-muted {
-  background-image: url(/assets/svg/ndc6pztx1685rq1c8bx1tksx.svg);
+  background-image: url(/assets/svg/ndc6pztx1685rq1c8bx1tksx.svg.svg.svg);
 }
 .artdeco-empty-state__headline--search-people-muted {
-  background-image: url(/assets/svg/5qz06o6ndl7qydp8g8vp7ho0w.svg);
+  background-image: url(/assets/svg/5qz06o6ndl7qydp8g8vp7ho0w.svg.svg.svg);
 }
 .artdeco-empty-state__headline--search-results-muted {
-  background-image: url(/assets/svg/88zouqsh5y5h1gfecoz204bps.svg);
+  background-image: url(/assets/svg/88zouqsh5y5h1gfecoz204bps.svg.svg.svg);
 }
 .artdeco-empty-state__headline--search-schools-muted {
-  background-image: url(/assets/svg/6jg7we5hd4tftod24r9xfuey3.svg);
+  background-image: url(/assets/svg/6jg7we5hd4tftod24r9xfuey3.svg.svg.svg);
 }
 .artdeco-empty-state__headline--shooting-star-muted {
-  background-image: url(/assets/svg/5dw15qyywwpova0exc4rladvg.svg);
+  background-image: url(/assets/svg/5dw15qyywwpova0exc4rladvg.svg.svg.svg);
 }
 .artdeco-empty-state__headline--star-empty-muted {
-  background-image: url(/assets/svg/cp0b0etsvmde59gw0bcugx1h7.svg);
+  background-image: url(/assets/svg/cp0b0etsvmde59gw0bcugx1h7.svg.svg.svg);
 }
 .artdeco-empty-state__headline--star-muted {
-  background-image: url(/assets/svg/8ddw4pwkwja6w0ryfbnzbzv7v.svg);
+  background-image: url(/assets/svg/8ddw4pwkwja6w0ryfbnzbzv7v.svg.svg.svg);
 }
 .artdeco-empty-state__headline--upload-media-muted {
-  background-image: url(/assets/svg/2q0xe5dvscvkveobolghna3ln.svg);
+  background-image: url(/assets/svg/2q0xe5dvscvkveobolghna3ln.svg.svg.svg);
 }
 .artdeco-empty-state__headline--mercado-empty-leaving-large {
-  background-image: url(/assets/svg/94uwnfdql5f1il4c6bowonpd2.svg);
+  background-image: url(/assets/svg/94uwnfdql5f1il4c6bowonpd2.svg.svg.svg);
 }
 .artdeco-empty-state__headline--mercado-empty-leaving-small {
-  background-image: url(/assets/svg/3ggbqks4oh7irvgrgu4lvvudi.svg);
+  background-image: url(/assets/svg/3ggbqks4oh7irvgrgu4lvvudi.svg.svg.svg);
 }
 .artdeco-empty-state__headline--mercado-error-construction-large {
-  background-image: url(/assets/svg/3hyml9do3cyvs6ehj31cmygd6.svg);
+  background-image: url(/assets/svg/3hyml9do3cyvs6ehj31cmygd6.svg.svg.svg);
 }
 .artdeco-empty-state__headline--mercado-error-construction-small {
-  background-image: url(/assets/svg/bpw4x301sj2509tdlfz1oojut.svg);
+  background-image: url(/assets/svg/bpw4x301sj2509tdlfz1oojut.svg.svg.svg);
 }
 .artdeco-empty-state__headline--mercado-main-broadcast-large {
-  background-image: url(/assets/svg/57r2jki3shbkyetajobq6bqcx.svg);
+  background-image: url(/assets/svg/57r2jki3shbkyetajobq6bqcx.svg.svg.svg);
 }
 .artdeco-empty-state__headline--mercado-main-broadcast-small {
-  background-image: url(/assets/svg/73hg693mowoj4e23phyhy7zyc.svg);
+  background-image: url(/assets/svg/73hg693mowoj4e23phyhy7zyc.svg.svg.svg);
 }
 .artdeco-empty-state__headline--mercado-main-coworkers-2-large {
-  background-image: url(/assets/svg/9j2yx29beni5re5hcsu7hd58y.svg);
+  background-image: url(/assets/svg/9j2yx29beni5re5hcsu7hd58y.svg.svg.svg);
 }
 .artdeco-empty-state__headline--mercado-main-coworkers-2-small {
-  background-image: url(/assets/svg/rn9obfqh70pb7776ajlqlb8.svg);
+  background-image: url(/assets/svg/rn9obfqh70pb7776ajlqlb8.svg.svg.svg);
 }
 .artdeco-empty-state__headline--mercado-main-presentation-large {
-  background-image: url(/assets/svg/b64enp7ybpnyltqz0i3k4sjk0.svg);
+  background-image: url(/assets/svg/b64enp7ybpnyltqz0i3k4sjk0.svg.svg.svg);
 }
 .artdeco-empty-state__headline--mercado-main-presentation-small {
-  background-image: url(/assets/svg/6vau5c5nq24iu4uh5g70yc8y1.svg);
+  background-image: url(/assets/svg/6vau5c5nq24iu4uh5g70yc8y1.svg.svg.svg);
 }
 .artdeco-empty-state__headline--mercado-empty-no-mail-large {
-  background-image: url(/assets/svg/eeaz4pxo41dwponbz8xm17a6f.svg);
+  background-image: url(/assets/svg/eeaz4pxo41dwponbz8xm17a6f.svg.svg.svg);
 }
 .artdeco-empty-state__headline--mercado-empty-no-mail-small {
-  background-image: url(/assets/svg/a7ifaypxl4xqge2siol4oz8jf.svg);
+  background-image: url(/assets/svg/a7ifaypxl4xqge2siol4oz8jf.svg.svg.svg);
 }
 .artdeco-empty-state__headline--mercado-error-crossing-large {
-  background-image: url(/assets/svg/8i98g2soac4ux8gzeedm8uxod.svg);
+  background-image: url(/assets/svg/8i98g2soac4ux8gzeedm8uxod.svg.svg.svg);
 }
 .artdeco-empty-state__headline--mercado-error-crossing-small {
-  background-image: url(/assets/svg/69gnpmrt6ip05vc2ltpfhx663.svg);
+  background-image: url(/assets/svg/69gnpmrt6ip05vc2ltpfhx663.svg.svg.svg);
 }
 .artdeco-empty-state__headline--mercado-main-collaboration-large {
-  background-image: url(/assets/svg/54rbceijpjz41pl79m9tbrw0k.svg);
+  background-image: url(/assets/svg/54rbceijpjz41pl79m9tbrw0k.svg.svg.svg);
 }
 .artdeco-empty-state__headline--mercado-main-collaboration-small {
-  background-image: url(/assets/svg/4bet5qswki7f8kp8jfmemsa7j.svg);
+  background-image: url(/assets/svg/4bet5qswki7f8kp8jfmemsa7j.svg.svg.svg);
 }
 .artdeco-empty-state__headline--mercado-main-coworkers-3-large {
-  background-image: url(/assets/svg/19uchd64y05us1qm28anl8gma.svg);
+  background-image: url(/assets/svg/19uchd64y05us1qm28anl8gma.svg.svg.svg);
 }
 .artdeco-empty-state__headline--mercado-main-coworkers-3-small {
-  background-image: url(/assets/svg/1g0i2391xf7f5nchlw6k672v5.svg);
+  background-image: url(/assets/svg/1g0i2391xf7f5nchlw6k672v5.svg.svg.svg);
 }
 .artdeco-empty-state__headline--mercado-main-relax-large {
-  background-image: url(/assets/svg/bc4ch6770wc6clh8rhqfyemjo.svg);
+  background-image: url(/assets/svg/bc4ch6770wc6clh8rhqfyemjo.svg.svg.svg);
 }
 .artdeco-empty-state__headline--mercado-main-relax-small {
-  background-image: url(/assets/svg/8svsx2hvtzdlwqedt21iaa17e.svg);
+  background-image: url(/assets/svg/8svsx2hvtzdlwqedt21iaa17e.svg.svg.svg);
 }
 .artdeco-empty-state__headline--mercado-empty-room-large {
-  background-image: url(/assets/svg/60v3z2w447yzbb0noj907w634.svg);
+  background-image: url(/assets/svg/60v3z2w447yzbb0noj907w634.svg.svg.svg);
 }
 .artdeco-empty-state__headline--mercado-empty-room-small {
-  background-image: url(/assets/svg/8ho1mw83gfmgiq4yr8f8wkjmh.svg);
+  background-image: url(/assets/svg/8ho1mw83gfmgiq4yr8f8wkjmh.svg.svg.svg);
 }
 .artdeco-empty-state__headline--mercado-error-fail-large {
-  background-image: url(/assets/svg/1o8878ioi0n0oejl0qs2wm78v.svg);
+  background-image: url(/assets/svg/1o8878ioi0n0oejl0qs2wm78v.svg.svg.svg);
 }
 .artdeco-empty-state__headline--mercado-error-fail-small {
-  background-image: url(/assets/svg/8kbilx26winmlrx3vpmj0pvkz.svg);
+  background-image: url(/assets/svg/8kbilx26winmlrx3vpmj0pvkz.svg.svg.svg);
 }
 .artdeco-empty-state__headline--mercado-main-commute-large {
-  background-image: url(/assets/svg/bgjzeyr8zfdaxq7lihevrd652.svg);
+  background-image: url(/assets/svg/bgjzeyr8zfdaxq7lihevrd652.svg.svg.svg);
 }
 .artdeco-empty-state__headline--mercado-main-commute-small {
-  background-image: url(/assets/svg/8neleqqf8suqptjnbfrmww1v3.svg);
+  background-image: url(/assets/svg/8neleqqf8suqptjnbfrmww1v3.svg.svg.svg);
 }
 .artdeco-empty-state__headline--mercado-main-coworkers-4-large {
-  background-image: url(/assets/svg/5idncmqew71ebp4jsarv3oiq9.svg);
+  background-image: url(/assets/svg/5idncmqew71ebp4jsarv3oiq9.svg.svg.svg);
 }
 .artdeco-empty-state__headline--mercado-main-coworkers-4-small {
-  background-image: url(/assets/svg/4jvhod4eq7jffh8i9km2gz9w0.svg);
+  background-image: url(/assets/svg/4jvhod4eq7jffh8i9km2gz9w0.svg.svg.svg);
 }
 .artdeco-empty-state__headline--mercado-success-individual-large {
-  background-image: url(/assets/svg/b1bzd30tu2eoxlexybcabfd5q.svg);
+  background-image: url(/assets/svg/b1bzd30tu2eoxlexybcabfd5q.svg.svg.svg);
 }
 .artdeco-empty-state__headline--mercado-success-individual-small {
-  background-image: url(/assets/svg/2bzqs373a54t0txoddnaif5yb.svg);
+  background-image: url(/assets/svg/2bzqs373a54t0txoddnaif5yb.svg.svg.svg);
 }
 .artdeco-empty-state__headline--mercado-empty-waiting-large {
-  background-image: url(/assets/svg/bjy51nb1zfbdz51kyu3wo1lis.svg);
+  background-image: url(/assets/svg/bjy51nb1zfbdz51kyu3wo1lis.svg.svg.svg);
 }
 .artdeco-empty-state__headline--mercado-empty-waiting-small {
-  background-image: url(/assets/svg/awfqc67t42p28qr5oetysabdg.svg);
+  background-image: url(/assets/svg/awfqc67t42p28qr5oetysabdg.svg.svg.svg);
 }
 .artdeco-empty-state__headline--mercado-error-pit-crew-large {
-  background-image: url(/assets/svg/8m9p3sk7tsj5u05ssjcyobaay.svg);
+  background-image: url(/assets/svg/8m9p3sk7tsj5u05ssjcyobaay.svg.svg.svg);
 }
 .artdeco-empty-state__headline--mercado-error-pit-crew-small {
-  background-image: url(/assets/svg/6x6j7pqndbcgmleqrmp546vow.svg);
+  background-image: url(/assets/svg/6x6j7pqndbcgmleqrmp546vow.svg.svg.svg);
 }
 .artdeco-empty-state__headline--mercado-main-conversation-large {
-  background-image: url(/assets/svg/8wkc25ga18trec0wmc1f3x2sf.svg);
+  background-image: url(/assets/svg/8wkc25ga18trec0wmc1f3x2sf.svg.svg.svg);
 }
 .artdeco-empty-state__headline--mercado-main-conversation-small {
-  background-image: url(/assets/svg/1o9e66lkp405mld4h1iwmmkkr.svg);
+  background-image: url(/assets/svg/1o9e66lkp405mld4h1iwmmkkr.svg.svg.svg);
 }
 .artdeco-empty-state__headline--mercado-main-coworkers-5-large {
-  background-image: url(/assets/svg/e6d8pqfft0d4qnql1eygjkhug.svg);
+  background-image: url(/assets/svg/e6d8pqfft0d4qnql1eygjkhug.svg.svg.svg);
 }
 .artdeco-empty-state__headline--mercado-main-coworkers-5-small {
-  background-image: url(/assets/svg/tx3x7xynlkzfxwrz7dd9znrr.svg);
+  background-image: url(/assets/svg/tx3x7xynlkzfxwrz7dd9znrr.svg.svg.svg);
 }
 .artdeco-empty-state__headline--mercado-success-individual-2-large {
-  background-image: url(/assets/svg/e4otsuam9qjp5zdzu6gow66wf.svg);
+  background-image: url(/assets/svg/e4otsuam9qjp5zdzu6gow66wf.svg.svg.svg);
 }
 .artdeco-empty-state__headline--mercado-success-individual-2-small {
-  background-image: url(/assets/svg/88zo2hoeuh39huiif78nybdgz.svg);
+  background-image: url(/assets/svg/88zo2hoeuh39huiif78nybdgz.svg.svg.svg);
 }
 .artdeco-empty-state__headline--mercado-error-connection-large {
-  background-image: url(/assets/svg/3qwd8xp56jeql1bdr2h136i16.svg);
+  background-image: url(/assets/svg/3qwd8xp56jeql1bdr2h136i16.svg.svg.svg);
 }
 .artdeco-empty-state__headline--mercado-error-connection-small {
-  background-image: url(/assets/svg/eeonurm6djfuhvlyhkx4a2qz2.svg);
+  background-image: url(/assets/svg/eeonurm6djfuhvlyhkx4a2qz2.svg.svg.svg);
 }
 .artdeco-empty-state__headline--mercado-error-server-large {
-  background-image: url(/assets/svg/3p7p6a7q99wymlzghijta8d3p.svg);
+  background-image: url(/assets/svg/3p7p6a7q99wymlzghijta8d3p.svg.svg.svg);
 }
 .artdeco-empty-state__headline--mercado-error-server-small {
-  background-image: url(/assets/svg/35g21lbobq614u53uejo9treo.svg);
+  background-image: url(/assets/svg/35g21lbobq614u53uejo9treo.svg.svg.svg);
 }
 .artdeco-empty-state__headline--mercado-main-coworkers-large {
-  background-image: url(/assets/svg/acq3qqdo5efui5ruti3za15s1.svg);
+  background-image: url(/assets/svg/acq3qqdo5efui5ruti3za15s1.svg.svg.svg);
 }
 .artdeco-empty-state__headline--mercado-main-coworkers-small {
-  background-image: url(/assets/svg/axgduq35g9cjimgrc6383gx61.svg);
+  background-image: url(/assets/svg/axgduq35g9cjimgrc6383gx61.svg.svg.svg);
 }
 .artdeco-empty-state__headline--mercado-main-person-large {
-  background-image: url(/assets/svg/5lhfihank7tk7v3ij0ideeex9.svg);
+  background-image: url(/assets/svg/5lhfihank7tk7v3ij0ideeex9.svg.svg.svg);
 }
 .artdeco-empty-state__headline--mercado-main-person-small {
-  background-image: url(/assets/svg/6cgv7suj4518uqu9zolh4dmom.svg);
+  background-image: url(/assets/svg/6cgv7suj4518uqu9zolh4dmom.svg.svg.svg);
 }
 .artdeco-empty-state__headline--mercado-main-person-2-large {
-  background-image: url(/assets/svg/69rgy8n2tij96s455ydn2zqca.svg);
+  background-image: url(/assets/svg/69rgy8n2tij96s455ydn2zqca.svg.svg.svg);
 }
 .artdeco-empty-state__headline--mercado-main-person-2-small {
-  background-image: url(/assets/svg/9750rb8sf2qxwlapv61wmppns.svg);
+  background-image: url(/assets/svg/9750rb8sf2qxwlapv61wmppns.svg.svg.svg);
 }
 .artdeco-empty-state__headline--mercado-success-team-large {
-  background-image: url(/assets/svg/a2pyfi1l1b4ztjwd0zbbtrmfw.svg);
+  background-image: url(/assets/svg/a2pyfi1l1b4ztjwd0zbbtrmfw.svg.svg.svg);
 }
 .artdeco-empty-state__headline--mercado-success-team-small {
-  background-image: url(/assets/svg/dtt2wfjcwbg783erhf9s5qgwx.svg);
+  background-image: url(/assets/svg/dtt2wfjcwbg783erhf9s5qgwx.svg.svg.svg);
 }
 .artdeco-empty-state__headline--mercado-address-book-large {
-  background-image: url(/assets/svg/d8ozdadxr86jd8lzqryw0ed0a.svg);
+  background-image: url(/assets/svg/d8ozdadxr86jd8lzqryw0ed0a.svg.svg.svg);
 }
 .artdeco-empty-state__headline--mercado-address-book-small {
-  background-image: url(/assets/svg/2gesja6oaiut9092hlcf9folq.svg);
+  background-image: url(/assets/svg/2gesja6oaiut9092hlcf9folq.svg.svg.svg);
 }
 .artdeco-empty-state__headline--mercado-company-large {
-  background-image: url(/assets/svg/awchc0rh1msj8zy3w7mwdrlvg.svg);
+  background-image: url(/assets/svg/awchc0rh1msj8zy3w7mwdrlvg.svg.svg.svg);
 }
 .artdeco-empty-state__headline--mercado-company-small {
-  background-image: url(/assets/svg/8j7g1qg4ygqnysr4hplvebpx7.svg);
+  background-image: url(/assets/svg/8j7g1qg4ygqnysr4hplvebpx7.svg.svg.svg);
 }
 .artdeco-empty-state__headline--mercado-gift-large {
-  background-image: url(/assets/svg/35omcvhr015yq1izs08suq7n4.svg);
+  background-image: url(/assets/svg/35omcvhr015yq1izs08suq7n4.svg.svg.svg);
 }
 .artdeco-empty-state__headline--mercado-gift-small {
-  background-image: url(/assets/svg/6z1ib58raepv1en7l3gq8fdjq.svg);
+  background-image: url(/assets/svg/6z1ib58raepv1en7l3gq8fdjq.svg.svg.svg);
 }
 .artdeco-empty-state__headline--mercado-mail-large {
-  background-image: url(/assets/svg/2efz9zl9evxhi93a348c0miu6.svg);
+  background-image: url(/assets/svg/2efz9zl9evxhi93a348c0miu6.svg.svg.svg);
 }
 .artdeco-empty-state__headline--mercado-mail-small {
-  background-image: url(/assets/svg/9wstsyhok0eztdb17fnl7id27.svg);
+  background-image: url(/assets/svg/9wstsyhok0eztdb17fnl7id27.svg.svg.svg);
 }
 .artdeco-empty-state__headline--mercado-salary-large {
-  background-image: url(/assets/svg/aqy8l20l3w5ew9ir3tca68hss.svg);
+  background-image: url(/assets/svg/aqy8l20l3w5ew9ir3tca68hss.svg.svg.svg);
 }
 .artdeco-empty-state__headline--mercado-salary-small {
-  background-image: url(/assets/svg/6z0jkwl7jtxo832agimeu3rzu.svg);
+  background-image: url(/assets/svg/6z0jkwl7jtxo832agimeu3rzu.svg.svg.svg);
 }
 .artdeco-empty-state__headline--mercado-ui-chart-large {
-  background-image: url(/assets/svg/991lxm66zvskb4b0oqiv6xv5g.svg);
+  background-image: url(/assets/svg/991lxm66zvskb4b0oqiv6xv5g.svg.svg.svg);
 }
 .artdeco-empty-state__headline--mercado-ui-chart-small {
-  background-image: url(/assets/svg/1u3pos2bx4lyf62u2asd2zpej.svg);
+  background-image: url(/assets/svg/1u3pos2bx4lyf62u2asd2zpej.svg.svg.svg);
 }
 .artdeco-empty-state__headline--mercado-article-large {
-  background-image: url(/assets/svg/6x5fknk8aw01lsn6othvh3x6.svg);
+  background-image: url(/assets/svg/6x5fknk8aw01lsn6othvh3x6.svg.svg.svg);
 }
 .artdeco-empty-state__headline--mercado-article-small {
-  background-image: url(/assets/svg/ob1kf016vuxdwngitvgyd4qo.svg);
+  background-image: url(/assets/svg/ob1kf016vuxdwngitvgyd4qo.svg.svg.svg);
 }
 .artdeco-empty-state__headline--mercado-compass-large {
-  background-image: url(/assets/svg/6ket5ufv5f5yqa01ty9w8yopz.svg);
+  background-image: url(/assets/svg/6ket5ufv5f5yqa01ty9w8yopz.svg.svg.svg);
 }
 .artdeco-empty-state__headline--mercado-compass-small {
-  background-image: url(/assets/svg/8qiomz142bw4aog6vudglq8rq.svg);
+  background-image: url(/assets/svg/8qiomz142bw4aog6vudglq8rq.svg.svg.svg);
 }
 .artdeco-empty-state__headline--mercado-glasses-large {
-  background-image: url(/assets/svg/395sxe7s63tjcv9nrqtmh832c.svg);
+  background-image: url(/assets/svg/395sxe7s63tjcv9nrqtmh832c.svg.svg.svg);
 }
 .artdeco-empty-state__headline--mercado-glasses-small {
-  background-image: url(/assets/svg/25wf7qj61f3qw2at8ruktsoe5.svg);
+  background-image: url(/assets/svg/25wf7qj61f3qw2at8ruktsoe5.svg.svg.svg);
 }
 .artdeco-empty-state__headline--mercado-mail-open-large {
-  background-image: url(/assets/svg/9skgt60lcdy5cpesypn3dk0jo.svg);
+  background-image: url(/assets/svg/9skgt60lcdy5cpesypn3dk0jo.svg.svg.svg);
 }
 .artdeco-empty-state__headline--mercado-mail-open-small {
-  background-image: url(/assets/svg/by25qalc5r0mj0xgtyvct77mm.svg);
+  background-image: url(/assets/svg/by25qalc5r0mj0xgtyvct77mm.svg.svg.svg);
 }
 .artdeco-empty-state__headline--mercado-school-large {
-  background-image: url(/assets/svg/e28lwgugizrkiw19t33qcdw5n.svg);
+  background-image: url(/assets/svg/e28lwgugizrkiw19t33qcdw5n.svg.svg.svg);
 }
 .artdeco-empty-state__headline--mercado-school-small {
-  background-image: url(/assets/svg/5c9e0v28ilvp9ocpnqbfm7ll2.svg);
+  background-image: url(/assets/svg/5c9e0v28ilvp9ocpnqbfm7ll2.svg.svg.svg);
 }
 .artdeco-empty-state__headline--mercado-ui-dashboard-large {
-  background-image: url(/assets/svg/iv9zspfl6eqxv15ovfn2t358.svg);
+  background-image: url(/assets/svg/iv9zspfl6eqxv15ovfn2t358.svg.svg.svg);
 }
 .artdeco-empty-state__headline--mercado-ui-dashboard-small {
-  background-image: url(/assets/svg/2nozouqfl4dxqy8iv6mergx0v.svg);
+  background-image: url(/assets/svg/2nozouqfl4dxqy8iv6mergx0v.svg.svg.svg);
 }
 .artdeco-empty-state__headline--mercado-article-stack-large {
-  background-image: url(/assets/svg/f11v1qjrri2wv7j3p61nisjwy.svg);
+  background-image: url(/assets/svg/f11v1qjrri2wv7j3p61nisjwy.svg.svg.svg);
 }
 .artdeco-empty-state__headline--mercado-article-stack-small {
-  background-image: url(/assets/svg/eh9l4y2y9egq255icdj73ap53.svg);
+  background-image: url(/assets/svg/eh9l4y2y9egq255icdj73ap53.svg.svg.svg);
 }
 .artdeco-empty-state__headline--mercado-dartboard-large {
-  background-image: url(/assets/svg/49v9h35mq49shqan9ly966fk0.svg);
+  background-image: url(/assets/svg/49v9h35mq49shqan9ly966fk0.svg.svg.svg);
 }
 .artdeco-empty-state__headline--mercado-dartboard-small {
-  background-image: url(/assets/svg/blxmpdkilc2ew7i6rzywpp6ix.svg);
+  background-image: url(/assets/svg/blxmpdkilc2ew7i6rzywpp6ix.svg.svg.svg);
 }
 .artdeco-empty-state__headline--mercado-globe-large {
-  background-image: url(/assets/svg/3nasbr3sfph9nk8vf9z7hhyyl.svg);
+  background-image: url(/assets/svg/3nasbr3sfph9nk8vf9z7hhyyl.svg.svg.svg);
 }
 .artdeco-empty-state__headline--mercado-globe-small {
-  background-image: url(/assets/svg/7o1j81vgoptxe97tbdydvvgd4.svg);
+  background-image: url(/assets/svg/7o1j81vgoptxe97tbdydvvgd4.svg.svg.svg);
 }
 .artdeco-empty-state__headline--mercado-megaphone-large {
-  background-image: url(/assets/svg/thodlizq3n5cnwncfr913800.svg);
+  background-image: url(/assets/svg/thodlizq3n5cnwncfr913800.svg.svg.svg);
 }
 .artdeco-empty-state__headline--mercado-megaphone-small {
-  background-image: url(/assets/svg/c1o7l42lkcj5pkt5zsh0qfg3p.svg);
+  background-image: url(/assets/svg/c1o7l42lkcj5pkt5zsh0qfg3p.svg.svg.svg);
 }
 .artdeco-empty-state__headline--mercado-search-large {
-  background-image: url(/assets/svg/ebfndg6cj8v96c34j90he7a8n.svg);
+  background-image: url(/assets/svg/ebfndg6cj8v96c34j90he7a8n.svg.svg.svg);
 }
 .artdeco-empty-state__headline--mercado-search-small {
-  background-image: url(/assets/svg/mt1w2flx0k71hccryykgc380.svg);
+  background-image: url(/assets/svg/mt1w2flx0k71hccryykgc380.svg.svg.svg);
 }
 .artdeco-empty-state__headline--mercado-ui-feed-profile-large {
-  background-image: url(/assets/svg/6z802sdc4gk9gjfpicuymg00f.svg);
+  background-image: url(/assets/svg/6z802sdc4gk9gjfpicuymg00f.svg.svg.svg);
 }
 .artdeco-empty-state__headline--mercado-ui-feed-profile-small {
-  background-image: url(/assets/svg/e3wsczd1kagrx4moj5r5cbijl.svg);
+  background-image: url(/assets/svg/e3wsczd1kagrx4moj5r5cbijl.svg.svg.svg);
 }
 .artdeco-empty-state__headline--mercado-award-large {
-  background-image: url(/assets/svg/fbb14fisovfwyywab84807dv.svg);
+  background-image: url(/assets/svg/fbb14fisovfwyywab84807dv.svg.svg.svg);
 }
 .artdeco-empty-state__headline--mercado-award-small {
-  background-image: url(/assets/svg/bsk70m6veu0ebq46me6wu9irc.svg);
+  background-image: url(/assets/svg/bsk70m6veu0ebq46me6wu9irc.svg.svg.svg);
 }
 .artdeco-empty-state__headline--mercado-dashboard-large {
-  background-image: url(/assets/svg/2yc2nnycvnm0m88axs7z4doab.svg);
+  background-image: url(/assets/svg/2yc2nnycvnm0m88axs7z4doab.svg.svg.svg);
 }
 .artdeco-empty-state__headline--mercado-dashboard-small {
-  background-image: url(/assets/svg/78y5n2bzd4sivgvzx7tjab9uk.svg);
+  background-image: url(/assets/svg/78y5n2bzd4sivgvzx7tjab9uk.svg.svg.svg);
 }
 .artdeco-empty-state__headline--mercado-id-badge-large {
-  background-image: url(/assets/svg/dvseklwrqghkt6ztuw2ju21bt.svg);
+  background-image: url(/assets/svg/dvseklwrqghkt6ztuw2ju21bt.svg.svg.svg);
 }
 .artdeco-empty-state__headline--mercado-id-badge-small {
-  background-image: url(/assets/svg/74yh6g7i047cvp9us08bq9zq9.svg);
+  background-image: url(/assets/svg/74yh6g7i047cvp9us08bq9zq9.svg.svg.svg);
 }
 .artdeco-empty-state__headline--mercado-messages-large {
-  background-image: url(/assets/svg/9be6yapu60eewxr7yyjoz7gcg.svg);
+  background-image: url(/assets/svg/9be6yapu60eewxr7yyjoz7gcg.svg.svg.svg);
 }
 .artdeco-empty-state__headline--mercado-messages-small {
-  background-image: url(/assets/svg/4xgz1lodolnobqbdwahc5lcok.svg);
+  background-image: url(/assets/svg/4xgz1lodolnobqbdwahc5lcok.svg.svg.svg);
 }
 .artdeco-empty-state__headline--mercado-shield-large {
-  background-image: url(/assets/svg/8dx5fjtegswqxm3yhouuqxlfv.svg);
+  background-image: url(/assets/svg/8dx5fjtegswqxm3yhouuqxlfv.svg.svg.svg);
 }
 .artdeco-empty-state__headline--mercado-shield-small {
-  background-image: url(/assets/svg/1cwlostwxtkvwljfkxaytmqjq.svg);
+  background-image: url(/assets/svg/1cwlostwxtkvwljfkxaytmqjq.svg.svg.svg);
 }
 .artdeco-empty-state__headline--mercado-unlocked-large {
-  background-image: url(/assets/svg/8mw55rgt3lv9efjq25zldedi2.svg);
+  background-image: url(/assets/svg/8mw55rgt3lv9efjq25zldedi2.svg.svg.svg);
 }
 .artdeco-empty-state__headline--mercado-unlocked-small {
-  background-image: url(/assets/svg/boe5l15yh3n4z8ift2aqsn02u.svg);
+  background-image: url(/assets/svg/boe5l15yh3n4z8ift2aqsn02u.svg.svg.svg);
 }
 .artdeco-empty-state__headline--mercado-binders-large {
-  background-image: url(/assets/svg/bs0yhoi6n0p0pjorxeodj5d3w.svg);
+  background-image: url(/assets/svg/bs0yhoi6n0p0pjorxeodj5d3w.svg.svg.svg);
 }
 .artdeco-empty-state__headline--mercado-binders-small {
-  background-image: url(/assets/svg/194rztseb7jqvnc8cpnx4r6zo.svg);
+  background-image: url(/assets/svg/194rztseb7jqvnc8cpnx4r6zo.svg.svg.svg);
 }
 .artdeco-empty-state__headline--mercado-document-large {
-  background-image: url(/assets/svg/eoc15amc0655v05wpqt4e1uo2.svg);
+  background-image: url(/assets/svg/eoc15amc0655v05wpqt4e1uo2.svg.svg.svg);
 }
 .artdeco-empty-state__headline--mercado-document-small {
-  background-image: url(/assets/svg/e8pln9y7iwbg43fvpt2txv4bo.svg);
+  background-image: url(/assets/svg/e8pln9y7iwbg43fvpt2txv4bo.svg.svg.svg);
 }
 .artdeco-empty-state__headline--mercado-image-large {
-  background-image: url(/assets/svg/cjvkdn7ksnohjev0ubt69ihl.svg);
+  background-image: url(/assets/svg/cjvkdn7ksnohjev0ubt69ihl.svg.svg.svg);
 }
 .artdeco-empty-state__headline--mercado-image-small {
-  background-image: url(/assets/svg/2jgp12jkw69qzxpu3r0rvbw01.svg);
+  background-image: url(/assets/svg/2jgp12jkw69qzxpu3r0rvbw01.svg.svg.svg);
 }
 .artdeco-empty-state__headline--mercado-notebook-large {
-  background-image: url(/assets/svg/ejg1wyz810puid7jjzdayxkuz.svg);
+  background-image: url(/assets/svg/ejg1wyz810puid7jjzdayxkuz.svg.svg.svg);
 }
 .artdeco-empty-state__headline--mercado-notebook-small {
-  background-image: url(/assets/svg/72fipmuyd9k09e7jd65mt620z.svg);
+  background-image: url(/assets/svg/72fipmuyd9k09e7jd65mt620z.svg.svg.svg);
 }
 .artdeco-empty-state__headline--mercado-signal-caution-large {
-  background-image: url(/assets/svg/dsgrrynbfmlyzxdj2olh71uzi.svg);
+  background-image: url(/assets/svg/dsgrrynbfmlyzxdj2olh71uzi.svg.svg.svg);
 }
 .artdeco-empty-state__headline--mercado-signal-caution-small {
-  background-image: url(/assets/svg/eyaewtc1hlhyhnoc15qlxj8oz.svg);
+  background-image: url(/assets/svg/eyaewtc1hlhyhnoc15qlxj8oz.svg.svg.svg);
 }
 .artdeco-empty-state__headline--mercado-video-large {
-  background-image: url(/assets/svg/f33a4mwlx1kto0k1ocuxdi7x3.svg);
+  background-image: url(/assets/svg/f33a4mwlx1kto0k1ocuxdi7x3.svg.svg.svg);
 }
 .artdeco-empty-state__headline--mercado-video-small {
-  background-image: url(/assets/svg/du2j1l9egswicx210ns4cls0n.svg);
+  background-image: url(/assets/svg/du2j1l9egswicx210ns4cls0n.svg.svg.svg);
 }
 .artdeco-empty-state__headline--mercado-birthday-large {
-  background-image: url(/assets/svg/af3v61b9m3c8naty2py4wm77r.svg);
+  background-image: url(/assets/svg/af3v61b9m3c8naty2py4wm77r.svg.svg.svg);
 }
 .artdeco-empty-state__headline--mercado-birthday-small {
-  background-image: url(/assets/svg/998lfczwj3ve57ye3ehucwavx.svg);
+  background-image: url(/assets/svg/998lfczwj3ve57ye3ehucwavx.svg.svg.svg);
 }
 .artdeco-empty-state__headline--mercado-document-comment-large {
-  background-image: url(/assets/svg/9um2v5eapgrhksz97ye2hddxw.svg);
+  background-image: url(/assets/svg/9um2v5eapgrhksz97ye2hddxw.svg.svg.svg);
 }
 .artdeco-empty-state__headline--mercado-document-comment-small {
-  background-image: url(/assets/svg/8dmlga3la3ygqx6l5lwdluv2r.svg);
+  background-image: url(/assets/svg/8dmlga3la3ygqx6l5lwdluv2r.svg.svg.svg);
 }
 .artdeco-empty-state__headline--mercado-image-stack-large {
-  background-image: url(/assets/svg/7dlzkmhb2dckvymvqoyuvwwri.svg);
+  background-image: url(/assets/svg/7dlzkmhb2dckvymvqoyuvwwri.svg.svg.svg);
 }
 .artdeco-empty-state__headline--mercado-image-stack-small {
-  background-image: url(/assets/svg/bwnxgpwtmrrnt8q7edbfyyz73.svg);
+  background-image: url(/assets/svg/bwnxgpwtmrrnt8q7edbfyyz73.svg.svg.svg);
 }
 .artdeco-empty-state__headline--mercado-notepad-large {
-  background-image: url(/assets/svg/uxrni9bban47a616u5r9wles.svg);
+  background-image: url(/assets/svg/uxrni9bban47a616u5r9wles.svg.svg.svg);
 }
 .artdeco-empty-state__headline--mercado-notepad-small {
-  background-image: url(/assets/svg/ae7rcl1e4k3763p3girmgon60.svg);
+  background-image: url(/assets/svg/ae7rcl1e4k3763p3girmgon60.svg.svg.svg);
 }
 .artdeco-empty-state__headline--mercado-signal-error-large {
-  background-image: url(/assets/svg/5p6xr5jd1gq5lprg8py94rcqc.svg);
+  background-image: url(/assets/svg/5p6xr5jd1gq5lprg8py94rcqc.svg.svg.svg);
 }
 .artdeco-empty-state__headline--mercado-signal-error-small {
-  background-image: url(/assets/svg/3ezp0azfj3frbhbvjm410zg3o.svg);
+  background-image: url(/assets/svg/3ezp0azfj3frbhbvjm410zg3o.svg.svg.svg);
 }
 .artdeco-empty-state__headline--mercado-video-course-large {
-  background-image: url(/assets/svg/be0qvs4zumessk8zui24p4ol6.svg);
+  background-image: url(/assets/svg/be0qvs4zumessk8zui24p4ol6.svg.svg.svg);
 }
 .artdeco-empty-state__headline--mercado-video-course-small {
-  background-image: url(/assets/svg/yroopzlq3zyu06lwnn3mlnne.svg);
+  background-image: url(/assets/svg/yroopzlq3zyu06lwnn3mlnne.svg.svg.svg);
 }
 .artdeco-empty-state__headline--mercado-briefcase-jobs-large {
-  background-image: url(/assets/svg/453fxzefqctfzqpp1whfuqmes.svg);
+  background-image: url(/assets/svg/453fxzefqctfzqpp1whfuqmes.svg.svg.svg);
 }
 .artdeco-empty-state__headline--mercado-briefcase-jobs-small {
-  background-image: url(/assets/svg/7kdt0x9c7x5fpi05dgp7bpj1h.svg);
+  background-image: url(/assets/svg/7kdt0x9c7x5fpi05dgp7bpj1h.svg.svg.svg);
 }
 .artdeco-empty-state__headline--mercado-document-folder-large {
-  background-image: url(/assets/svg/eg6thjg3ylpjc78l2c8aek9hz.svg);
+  background-image: url(/assets/svg/eg6thjg3ylpjc78l2c8aek9hz.svg.svg.svg);
 }
 .artdeco-empty-state__headline--mercado-document-folder-small {
-  background-image: url(/assets/svg/10f0z1iipiocksc0dcsjvmzu2.svg);
+  background-image: url(/assets/svg/10f0z1iipiocksc0dcsjvmzu2.svg.svg.svg);
 }
 .artdeco-empty-state__headline--mercado-industry-large {
-  background-image: url(/assets/svg/dbog2z2tz78iudo1tal77aoue.svg);
+  background-image: url(/assets/svg/dbog2z2tz78iudo1tal77aoue.svg.svg.svg);
 }
 .artdeco-empty-state__headline--mercado-industry-small {
-  background-image: url(/assets/svg/2eqhs5s2227xlfo0ef57a65gz.svg);
+  background-image: url(/assets/svg/2eqhs5s2227xlfo0ef57a65gz.svg.svg.svg);
 }
 .artdeco-empty-state__headline--mercado-patent-large {
-  background-image: url(/assets/svg/e1ipnnv67bjaflo7cfnk3fex2.svg);
+  background-image: url(/assets/svg/e1ipnnv67bjaflo7cfnk3fex2.svg.svg.svg);
 }
 .artdeco-empty-state__headline--mercado-patent-small {
-  background-image: url(/assets/svg/9vztihtsda1yp0ymmky7vh76.svg);
+  background-image: url(/assets/svg/9vztihtsda1yp0ymmky7vh76.svg.svg.svg);
 }
 .artdeco-empty-state__headline--mercado-signal-success-large {
-  background-image: url(/assets/svg/6k4hbk2lzws8uhnc9yjchhzdq.svg);
+  background-image: url(/assets/svg/6k4hbk2lzws8uhnc9yjchhzdq.svg.svg.svg);
 }
 .artdeco-empty-state__headline--mercado-signal-success-small {
-  background-image: url(/assets/svg/eq5upsoyhik1xp7wxey4vxx99.svg);
+  background-image: url(/assets/svg/eq5upsoyhik1xp7wxey4vxx99.svg.svg.svg);
 }
 .artdeco-empty-state__headline--mercado-calendar-large {
-  background-image: url(/assets/svg/8bllydfsob2rj0bb6tjapbtwc.svg);
+  background-image: url(/assets/svg/8bllydfsob2rj0bb6tjapbtwc.svg.svg.svg);
 }
 .artdeco-empty-state__headline--mercado-calendar-small {
-  background-image: url(/assets/svg/ezxn6qry476i27vd1gmg4zu13.svg);
+  background-image: url(/assets/svg/ezxn6qry476i27vd1gmg4zu13.svg.svg.svg);
 }
 .artdeco-empty-state__headline--mercado-document-report-large {
-  background-image: url(/assets/svg/y6arcqx4howzfovu9h8j5rqf.svg);
+  background-image: url(/assets/svg/y6arcqx4howzfovu9h8j5rqf.svg.svg.svg);
 }
 .artdeco-empty-state__headline--mercado-document-report-small {
-  background-image: url(/assets/svg/7ef0vb5sdpu2k272yzyslvglw.svg);
+  background-image: url(/assets/svg/7ef0vb5sdpu2k272yzyslvglw.svg.svg.svg);
 }
 .artdeco-empty-state__headline--mercado-location-marker-large {
-  background-image: url(/assets/svg/61b8abmtp6ykr7dx9urt5djit.svg);
+  background-image: url(/assets/svg/61b8abmtp6ykr7dx9urt5djit.svg.svg.svg);
 }
 .artdeco-empty-state__headline--mercado-location-marker-small {
-  background-image: url(/assets/svg/7lphf50k5fz0ryidvum0k4ej1.svg);
+  background-image: url(/assets/svg/7lphf50k5fz0ryidvum0k4ej1.svg.svg.svg);
 }
 .artdeco-empty-state__headline--mercado-pencil-ruler-large {
-  background-image: url(/assets/svg/bagy21yuohuw9upte0iyjkwnf.svg);
+  background-image: url(/assets/svg/bagy21yuohuw9upte0iyjkwnf.svg.svg.svg);
 }
 .artdeco-empty-state__headline--mercado-pencil-ruler-small {
-  background-image: url(/assets/svg/dqusxrvz5xy0ffkawdzpcng0e.svg);
+  background-image: url(/assets/svg/dqusxrvz5xy0ffkawdzpcng0e.svg.svg.svg);
 }
 .artdeco-empty-state__headline--mercado-slides-stack-large {
-  background-image: url(/assets/svg/46gpniex8043a3j9c0rvl4goa.svg);
+  background-image: url(/assets/svg/46gpniex8043a3j9c0rvl4goa.svg.svg.svg);
 }
 .artdeco-empty-state__headline--mercado-slides-stack-small {
-  background-image: url(/assets/svg/cnpfrl0ovcq08l5x684cwbegg.svg);
+  background-image: url(/assets/svg/cnpfrl0ovcq08l5x684cwbegg.svg.svg.svg);
 }
 .artdeco-empty-state__headline--mercado-camera-large {
-  background-image: url(/assets/svg/e9nby9wq8ivibcq50g0xohkx6.svg);
+  background-image: url(/assets/svg/e9nby9wq8ivibcq50g0xohkx6.svg.svg.svg);
 }
 .artdeco-empty-state__headline--mercado-camera-small {
-  background-image: url(/assets/svg/3h0vrtch1zepjr4p54aja8i9x.svg);
+  background-image: url(/assets/svg/3h0vrtch1zepjr4p54aja8i9x.svg.svg.svg);
 }
 .artdeco-empty-state__headline--mercado-flowers-large {
-  background-image: url(/assets/svg/1f6av72ez8ppbk5t7bv0phg2s.svg);
+  background-image: url(/assets/svg/1f6av72ez8ppbk5t7bv0phg2s.svg.svg.svg);
 }
 .artdeco-empty-state__headline--mercado-flowers-small {
-  background-image: url(/assets/svg/cai1hcdk4996rg1eb4ibe9v63.svg);
+  background-image: url(/assets/svg/cai1hcdk4996rg1eb4ibe9v63.svg.svg.svg);
 }
 .artdeco-empty-state__headline--mercado-locked-large {
-  background-image: url(/assets/svg/2y9nqxqwwensts5chxdtbbryl.svg);
+  background-image: url(/assets/svg/2y9nqxqwwensts5chxdtbbryl.svg.svg.svg);
 }
 .artdeco-empty-state__headline--mercado-locked-small {
-  background-image: url(/assets/svg/i93f52dd53ubd4bxuojkwdal.svg);
+  background-image: url(/assets/svg/i93f52dd53ubd4bxuojkwdal.svg.svg.svg);
 }
 .artdeco-empty-state__headline--mercado-phone-large {
-  background-image: url(/assets/svg/3h2dwz26xcial9r4matf619qh.svg);
+  background-image: url(/assets/svg/3h2dwz26xcial9r4matf619qh.svg.svg.svg);
 }
 .artdeco-empty-state__headline--mercado-phone-small {
-  background-image: url(/assets/svg/3iswmjqb4cgrcjrwun2yy1xve.svg);
+  background-image: url(/assets/svg/3iswmjqb4cgrcjrwun2yy1xve.svg.svg.svg);
 }
 .artdeco-empty-state__headline--mercado-toolbox-large {
-  background-image: url(/assets/svg/dtsd51ai7tql6mtsazq4s1x8x.svg);
+  background-image: url(/assets/svg/dtsd51ai7tql6mtsazq4s1x8x.svg.svg.svg);
 }
 .artdeco-empty-state__headline--mercado-toolbox-small {
-  background-image: url(/assets/svg/1jsj36kpizr74p7cg1nluxao9.svg);
+  background-image: url(/assets/svg/1jsj36kpizr74p7cg1nluxao9.svg.svg.svg);
 }
 .artdeco-empty-state__headline--mercado-certificate-large {
-  background-image: url(/assets/svg/aeeyejibnqlccu5ax3s3dr1wk.svg);
+  background-image: url(/assets/svg/aeeyejibnqlccu5ax3s3dr1wk.svg.svg.svg);
 }
 .artdeco-empty-state__headline--mercado-certificate-small {
-  background-image: url(/assets/svg/cbkh7flqwu3c4op5s4evgbce6.svg);
+  background-image: url(/assets/svg/cbkh7flqwu3c4op5s4evgbce6.svg.svg.svg);
 }
 .artdeco-empty-state__headline--mercado-folder-large {
-  background-image: url(/assets/svg/d1o2sfsgs9diqicjf67ff8pbj.svg);
+  background-image: url(/assets/svg/d1o2sfsgs9diqicjf67ff8pbj.svg.svg.svg);
 }
 .artdeco-empty-state__headline--mercado-folder-small {
-  background-image: url(/assets/svg/cexonatmgw0023ih8eiepu5dc.svg);
+  background-image: url(/assets/svg/cexonatmgw0023ih8eiepu5dc.svg.svg.svg);
 }
 .artdeco-empty-state__headline--mercado-magnet-large {
-  background-image: url(/assets/svg/48i3p8rhwfua3rkfsevkkn7e6.svg);
+  background-image: url(/assets/svg/48i3p8rhwfua3rkfsevkkn7e6.svg.svg.svg);
 }
 .artdeco-empty-state__headline--mercado-magnet-small {
-  background-image: url(/assets/svg/5jgwzc0w6rb4cenqdap5jau21.svg);
+  background-image: url(/assets/svg/5jgwzc0w6rb4cenqdap5jau21.svg.svg.svg);
 }
 .artdeco-empty-state__headline--mercado-rocket-large {
-  background-image: url(/assets/svg/7izadu8b2iscoyubl1fv0f2rr.svg);
+  background-image: url(/assets/svg/7izadu8b2iscoyubl1fv0f2rr.svg.svg.svg);
 }
 .artdeco-empty-state__headline--mercado-rocket-small {
-  background-image: url(/assets/svg/8v6vj4ynjtrf4p8gqybbtdt1e.svg);
+  background-image: url(/assets/svg/8v6vj4ynjtrf4p8gqybbtdt1e.svg.svg.svg);
 }
 .artdeco-empty-state__headline--mercado-trophy-large {
-  background-image: url(/assets/svg/qfqsvknd3eqkbctcr6ind2it.svg);
+  background-image: url(/assets/svg/qfqsvknd3eqkbctcr6ind2it.svg.svg.svg);
 }
 .artdeco-empty-state__headline--mercado-trophy-small {
-  background-image: url(/assets/svg/64fnhrjqilkkiipbdmtq6cysv.svg);
+  background-image: url(/assets/svg/64fnhrjqilkkiipbdmtq6cysv.svg.svg.svg);
 }
 .artdeco-empty-state__headline--mercado-bell-large {
-  background-image: url(/assets/svg/c9r9ot9vo5rylto280glbfb0b.svg);
+  background-image: url(/assets/svg/c9r9ot9vo5rylto280glbfb0b.svg.svg.svg);
 }
 .artdeco-empty-state__headline--mercado-bell-small {
-  background-image: url(/assets/svg/4r72pa8enjd0dwsi4brylzj2.svg);
+  background-image: url(/assets/svg/4r72pa8enjd0dwsi4brylzj2.svg.svg.svg);
 }
 .artdeco-empty-state__message {
   color: rgba(0, 0, 0, 0.6);
@@ -7485,7 +7485,7 @@ body.artdeco-modal-is-open {
   border: 1px solid rgba(0, 0, 0, 0.15);
   padding-left: 3.3rem;
   background-color: var(--warm-gray-20, #f3f6f8);
-  background-image: url(/assets/svg/cwn0a0e7hog2i33c88ucrvot5.svg);
+  background-image: url(/assets/svg/cwn0a0e7hog2i33c88ucrvot5.svg.svg.svg);
   background-size: 2.4rem;
   background-position: 0.8rem -26.1rem;
   background-repeat: no-repeat;
@@ -14741,12 +14741,12 @@ artdeco-tabs.vertical-tabs artdeco-tablist[role='tablist'] artdeco-tabpanel[role
   height: 220px;
 }
 .success-check-premium-74 {
-  background-image: url(/assets/svg/68vnb8fn0e5qg7pn5kzrjyft2.svg);
+  background-image: url(/assets/svg/68vnb8fn0e5qg7pn5kzrjyft2.svg.svg.svg);
   height: 74px;
   width: 74px;
 }
 .empty-pencil-paper-premium {
-  background-image: url(/assets/svg/bq5egsjwh4myfe5y343g9wwo8.svg);
+  background-image: url(/assets/svg/bq5egsjwh4myfe5y343g9wwo8.svg.svg.svg);
   height: 102px;
   width: 76px;
 }
@@ -14759,7 +14759,7 @@ artdeco-tabs.vertical-tabs artdeco-tablist[role='tablist'] artdeco-tabpanel[role
   width: 56px;
 }
 .missing-piece-muted-230 {
-  background-image: url(/assets/svg/2fbe2ald9bhvgc19z2ldsboiz.svg);
+  background-image: url(/assets/svg/2fbe2ald9bhvgc19z2ldsboiz.svg.svg.svg);
 }
 .label,
 .label-16dp,
@@ -16372,10 +16372,10 @@ a.inverse-link:visited:active {
   background-image: var(--entity-ghost-company-accent-4);
 }
 .ghost-company-experience {
-  background-image: url(/assets/svg/8ajgymri1bfhjjmcxpf5nnp1i.svg);
+  background-image: url(/assets/svg/8ajgymri1bfhjjmcxpf5nnp1i.svg.svg.svg);
 }
 .ghost-freelance-experience {
-  background-image: url(/assets/svg/f19y7s0e417a5wbkya24tth3h.svg);
+  background-image: url(/assets/svg/f19y7s0e417a5wbkya24tth3h.svg.svg.svg);
 }
 .ghost-school {
   background-image: var(--entity-ghost-school-accent-4);
@@ -16524,7 +16524,7 @@ a.inverse-link:visited:active {
   overflow: hidden;
 }
 .bg-img__show-default {
-  background-image: url(/assets/svg/5qi38njir9vsm46ync2qjvrrs.svg);
+  background-image: url(/assets/svg/5qi38njir9vsm46ync2qjvrrs.svg.svg.svg);
   background-position: 50%;
   background-size: cover;
   margin-top: -1px;
@@ -17437,12 +17437,12 @@ a.inverse-link:visited:active {
   }
 }
 :root {
-  --ghost-article: url(/assets/svg/ob1kf016vuxdwngitvgyd4qo.svg);
-  --ghost-image: url(/assets/svg/2jgp12jkw69qzxpu3r0rvbw01.svg);
+  --ghost-article: url(/assets/svg/ob1kf016vuxdwngitvgyd4qo.svg.svg.svg);
+  --ghost-image: url(/assets/svg/2jgp12jkw69qzxpu3r0rvbw01.svg.svg.svg);
 }
 .theme--dark {
-  --ghost-article: url(/assets/svg/6j4kt03ptvrywn607bg6cx9mz.svg);
-  --ghost-image: url(/assets/svg/b2731mwxbafnh7cdovvncgau6.svg);
+  --ghost-article: url(/assets/svg/6j4kt03ptvrywn607bg6cx9mz.svg.svg.svg);
+  --ghost-image: url(/assets/svg/b2731mwxbafnh7cdovvncgau6.svg.svg.svg);
 }
 .artdeco-entity-lockup [class*='artdeco-entity-lockup__image--type-circle'] img,
 .artdeco-entity-lockup [class*='artdeco-entity-lockup__image--type-square'] img,

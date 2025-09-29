@@ -1,8 +1,8 @@
 :root {
-  --msg-reactions-emoji-plus-icon: url(/assets/svg/dr1b79i84eh8czy2ijk7i9z7c);
+  --msg-reactions-emoji-plus-icon: url(/assets/svg/dr1b79i84eh8czy2ijk7i9z7c.svg.svg);
 }
 .theme--dark {
-  --msg-reactions-emoji-plus-icon: url(/assets/svg/$1.svg);
+  --msg-reactions-emoji-plus-icon: url(/assets/svg/$1.svg.svg.svg);
 }
 .emoji-popular-list__container {
   list-style: none;
@@ -93,7 +93,7 @@
 }
 @media (-ms-high-contrast: active), (forced-colors: active) {
   .msg-reactions__entry-point .artdeco-button__icon {
-    background-image: url(/assets/svg/$1.svg);
+    background-image: url(/assets/svg/$1.svg.svg.svg);
   }
 }
 @media (-ms-high-contrast: white-on-black), (forced-colors: active) and (prefers-color-scheme: dark) {
@@ -254,7 +254,7 @@
 }
 @media (-ms-high-contrast: active), (forced-colors: active) {
   .msg-reactions-reaction-summary-presenter__entry-point .artdeco-button__icon {
-    background-image: url(/assets/svg/$1.svg);
+    background-image: url(/assets/svg/$1.svg.svg.svg);
   }
 }
 @media (-ms-high-contrast: white-on-black), (forced-colors: active) and (prefers-color-scheme: dark) {
