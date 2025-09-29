@@ -15,6 +15,15 @@ This is a LinkedIn profile clone built with React, TypeScript, and Vite. The pro
 - `bun run deploy` - Build and deploy to Cloudflare Pages
 - `bun run cf-typegen` - Generate Cloudflare worker types
 
+## Adding shadcn/ui Components
+
+Use this command pattern to add new shadcn/ui components:
+```bash
+bunx --bun shadcn@latest add [component-name]
+```
+
+Example: `bunx --bun shadcn@latest add button`
+
 ## Project Structure
 
 - **src/** - Main source code directory
@@ -64,9 +73,10 @@ This is a LinkedIn profile clone built with React, TypeScript, and Vite. The pro
 
 ## Key Configuration Files
 
-- **vite.config.ts** - Vite configuration with React SWC, prerender plugin, and custom exit plugin
+- **vite.config.ts** - Vite configuration with React SWC, Tailwind CSS, prerender plugin, and custom exit plugin
+- **components.json** - shadcn/ui configuration for component generation and aliases
 - **wrangler.jsonc** - Cloudflare Pages deployment configuration
-- **tsconfig.json** - Root TypeScript configuration with project references
+- **tsconfig.json** - Root TypeScript configuration with path aliases (`@/*` maps to `./src/*`)
 - **tsconfig.app.json** - App-specific TypeScript config (ES2022, strict mode)
 - **tsconfig.node.json** - Node-specific TypeScript config (ES2023)
 - **eslint.config.js** - Modern flat ESLint configuration
@@ -77,13 +87,45 @@ This is a LinkedIn profile clone built with React, TypeScript, and Vite. The pro
 - **React 19.1.1** with React DOM
 - **TypeScript 5.9.2** with strict mode enabled
 - **Vite 7.1.2** with React SWC plugin for fast builds
+- **Tailwind CSS 4.1.13** for utility-first styling
+- **shadcn/ui** component system with Radix UI primitives
+- **Class Variance Authority** for component variant management
+- **React Hook Form 7.63.0** with Zod validation for form handling
+- **Embla Carousel** for carousel/slider components
+- **Lucide React** for iconography
 - **ESLint 9.36.0** with modern flat configuration
 - **Wrangler 4.40.2** for Cloudflare deployment
 - **vite-prerender-plugin** for static site generation
 
+## Component Architecture
+
+The project uses **shadcn/ui** component architecture with extensive Radix UI integration:
+- Components are built with **Radix UI** primitives for accessibility and interaction patterns
+- **Class Variance Authority (CVA)** manages component variants and styling
+- **Tailwind CSS** provides utility classes with custom design tokens
+- Path aliases (`@/components`, `@/lib/utils`) simplify imports
+- The `cn()` utility function merges Tailwind classes using `clsx` and `tailwind-merge`
+
+### Installed shadcn/ui Components
+Current components available (based on Radix UI dependencies):
+- Aspect Ratio, Avatar, Button, Collapsible, Dialog
+- Dropdown Menu, Hover Card, Label, Navigation Menu
+- Popover, Scroll Area, Separator, Slot (for composition)
+- Tabs, Toggle, Tooltip
+- Carousel (with Embla Carousel integration)
+- Form components (with React Hook Form + Zod integration)
+
+### LinkedIn Profile Components Needed
+For the LinkedIn profile clone, key component categories include:
+- **Layout**: Card, Avatar, Separator
+- **Navigation**: Navigation Menu, Tabs
+- **Interactive**: Button, Dialog, Dropdown Menu, Hover Card
+- **Content**: Collapsible, Scroll Area, Badge
+- **Forms**: Input, Textarea, Search
+
 ## Notes
 
-- The project is in early development (App.tsx still contains Vite template code)
-- Modern setup using React 19, latest TypeScript, and Vite 7
+- The project is in early development (app.tsx still contains Vite template code)
+- Modern setup using React 19, Tailwind CSS v4, and Vite 7
 - Configured for Cloudflare Pages deployment with prerendering
-- Asset organization system in place under public/assets/
+- shadcn/ui component system is configured with "new-york" style and Lucide icons
