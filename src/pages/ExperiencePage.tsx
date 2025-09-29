@@ -20,7 +20,7 @@ interface Experience {
 const experiences: Experience[] = [
   {
     companyKey: 'technicalLead',
-    logo: 'https://github.com/shadcn.png',
+    logo: '/assets/png/ibm_logo.png',
     titleKey: 'frontendDeveloper',
     durationKey: 'duration1',
     locationKey: 'milano',
@@ -29,7 +29,7 @@ const experiences: Experience[] = [
   },
   {
     companyKey: 'seniorSolutionsEngineer',
-    logo: 'https://github.com/shadcn.png',
+    logo: '/assets/png/oracle_logo.png',
     titleKey: 'frontendDeveloper',
     durationKey: 'duration2',
     locationKey: 'milano',
@@ -38,7 +38,7 @@ const experiences: Experience[] = [
   },
   {
     companyKey: 'cyberSecurityOperations',
-    logo: 'https://github.com/shadcn.png',
+    logo: '/assets/png/metana_logo.png',
     titleKey: 'frontendDeveloper',
     durationKey: 'duration3',
     locationKey: 'milano',
@@ -47,7 +47,7 @@ const experiences: Experience[] = [
   },
   {
     companyKey: 'freelanceWebDeveloper',
-    logo: 'https://github.com/shadcn.png',
+    logo: '/assets/png/avatar.png',
     titleKey: 'fullStackDeveloper',
     durationKey: 'duration4',
     locationKey: 'milano',
