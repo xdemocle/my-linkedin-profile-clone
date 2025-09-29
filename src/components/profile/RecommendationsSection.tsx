@@ -1,6 +1,6 @@
-import { PlusIcon } from '@radix-ui/react-icons';
+// import { PlusIcon } from '@radix-ui/react-icons';
 import { Avatar, AvatarFallback, AvatarImage } from '../ui/avatar';
-import { Button } from '../ui/button';
+// import { Button } from '../ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '../ui/card';
 import { Separator } from '../ui/separator';
 
@@ -57,9 +57,9 @@ export function RecommendationsSection() {
     <Card className='mt-4 shadow-sm'>
       <CardHeader className='flex flex-row items-center justify-between'>
         <CardTitle>Recommendations</CardTitle>
-        <Button variant='ghost' size='icon'>
+        {/* <Button variant='ghost' size='icon'>
           <PlusIcon className='h-4 w-4' />
-        </Button>
+        </Button> */}
       </CardHeader>
       <CardContent>
         {recommendations.map((rec, index) => (
