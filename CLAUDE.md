@@ -19,14 +19,13 @@ This is a LinkedIn profile clone built with React, TypeScript, and Vite. The pro
 
 - **src/** - Main source code directory
   - **App.tsx** - Main React component (currently basic Vite template)
-  - **main.tsx** - Application entry point
-  - **assets/** - Static assets like images and icons
+  - **main.tsx** - Application entry point with prerender function
+  - **assets/** - Directory for static assets (currently empty)
+  - **index.css** - Global CSS styles
+  - **App.css** - Component-specific CSS
 - **public/** - Public static files served directly
-  - Contains large HTML files (old.html, old-v1.html) likely for reference
-  - **linkedin.css** - Large CSS file (3MB+) containing styling
-  - **assets/** - Additional public assets
+  - **assets/** - Organized assets with ico/, png/, css/, images/ subdirectories
 - **dist/client/** - Build output directory for Vite
-- **build/** - Additional build artifacts
 
 ## Build System
 
@@ -43,14 +42,15 @@ This is a LinkedIn profile clone built with React, TypeScript, and Vite. The pro
 - Observability enabled for monitoring
 - Uses compatibility date: 2025-09-15
 
-## Code Style (from .cursorrules/.copilot)
+## Code Style (from .vscode/settings.json)
 
 - **Indentation**: 2 spaces
-- **Quotes**: Single quotes
+- **Quotes**: Single quotes (Prettier configuration)
+- **Line width**: 120 characters
 - **Naming conventions**:
   - Components: PascalCase
   - Functions/variables: camelCase
-- **Architecture**: Atomic design pattern with React hooks for state management
+- **ESLint**: Modern flat configuration format
 
 ## Package Manager
 
@@ -58,15 +58,28 @@ This is a LinkedIn profile clone built with React, TypeScript, and Vite. The pro
 - Node.js requirement: >=22.19.0
 - All package operations should use `bun` instead of `npm`
 
-## Key Files
+## Key Configuration Files
 
-- **transforms.ts** - Build transformation configurations
-- **combine-css.sh** - Shell script for CSS processing
-- **wrangler.jsonc** - Cloudflare Pages configuration
-- **.cursorrules/.copilot** - AI assistant configuration with project context
+- **vite.config.ts** - Vite configuration with React SWC, prerender plugin, and custom exit plugin
+- **wrangler.jsonc** - Cloudflare Pages deployment configuration
+- **tsconfig.json** - Root TypeScript configuration with project references
+- **tsconfig.app.json** - App-specific TypeScript config (ES2022, strict mode)
+- **tsconfig.node.json** - Node-specific TypeScript config (ES2023)
+- **eslint.config.js** - Modern flat ESLint configuration
+- **worker-configuration.d.ts** - Generated Cloudflare worker types
+
+## Technology Stack
+
+- **React 19.1.1** with React DOM
+- **TypeScript 5.9.2** with strict mode enabled
+- **Vite 7.1.2** with React SWC plugin for fast builds
+- **ESLint 9.36.0** with modern flat configuration
+- **Wrangler 4.40.2** for Cloudflare deployment
+- **vite-prerender-plugin** for static site generation
 
 ## Notes
 
-- The project appears to be in early development (App.tsx still contains Vite template code)
-- Large CSS file in public/ suggests this may be a reference implementation or migration from existing LinkedIn styling
-- ESLint configuration uses modern flat config format
+- The project is in early development (App.tsx still contains Vite template code)
+- Modern setup using React 19, latest TypeScript, and Vite 7
+- Configured for Cloudflare Pages deployment with prerendering
+- Asset organization system in place under public/assets/
