@@ -1,15 +1,17 @@
-import { useTranslations } from 'use-intl';
+// Removed unused import: import { useTranslations } from 'use-intl';
 import { AboutSection } from '../profile/AboutSection';
+import { ActivitySection } from '../profile/ActivitySection';
+import { ConnectionsSection } from '../profile/ConnectionsSection';
 import { ExperienceSection } from '../profile/ExperienceSection';
 import { PeopleAlsoViewed } from '../profile/PeopleAlsoViewed';
 import { ProfileHeader } from '../profile/ProfileHeader';
 import { RecommendationsSection } from '../profile/RecommendationsSection';
 import { SkillsSection } from '../profile/SkillsSection';
 import { Navbar } from './Navbar';
+import { MessagingPopup } from '../messaging/MessagingPopup';
 import { useScrollDirection } from '../../hooks/useScrollDirection';
 
 export function ProfileLayout() {
-  const t = useTranslations('ProfileLayout');
   const { visible } = useScrollDirection();
 
   return (
@@ -26,6 +28,7 @@ export function ProfileLayout() {
           <div className='lg:col-span-2 space-y-4'>
             <ProfileHeader />
             <AboutSection />
+            <ActivitySection />
             <ExperienceSection />
             <SkillsSection />
             <RecommendationsSection />
@@ -34,6 +37,7 @@ export function ProfileLayout() {
           {/* Sidebar - 1/3 width on large screens */}
           <div className='lg:col-span-1 space-y-4'>
             <PeopleAlsoViewed />
+            <ConnectionsSection />
 
             {/* Ad section */}
             <div className='bg-card p-4 rounded-md shadow-sm text-center'>
@@ -50,8 +54,9 @@ export function ProfileLayout() {
           </div>
         </div>
       </main>
-      {/* Remove semicolon from the end of this JSX element */}
-      <h1>{t('hello', { firstName: 'Ciro' })}</h1>
+      
+      {/* Messaging popup fixed at the bottom right */}
+      <MessagingPopup />
     </div>
   );
 }
