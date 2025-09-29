@@ -1,6 +1,7 @@
 // Removed unused import: import { useTranslations } from 'use-intl';
 import type { Locale } from '../../lib/i18n';
 import { ErrorBoundary } from '../ErrorBoundary';
+import { InstallPWA } from '../InstallPWA';
 import { ProfileMainContent } from '../profile/ProfileMainContent';
 import { ProfileSidebar } from '../profile/ProfileSidebar';
 import { Navbar } from './Navbar';
@@ -36,6 +37,9 @@ export function ProfileLayout({ locale, onLocaleChange }: ProfileLayoutProps) {
 
       {/* Messaging popup fixed at the bottom right */}
       {/* <MessagingPopup /> */}
+      
+      {/* PWA Install Prompt */}
+      <InstallPWA />
     </div>
   );
 }

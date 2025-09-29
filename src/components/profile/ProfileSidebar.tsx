@@ -7,10 +7,6 @@ interface Language {
   levelKey: string;
 }
 
-interface Interest {
-  key: string;
-}
-
 export function ProfileSidebar() {
   const tLanguages = useTranslations('Languages');
   const tInterests = useTranslations('Interests');
@@ -20,15 +16,26 @@ export function ProfileSidebar() {
     { nameKey: 'italian', levelKey: 'native' },
     { nameKey: 'english', levelKey: 'professional' },
     { nameKey: 'spanish', levelKey: 'conversational' },
+    { nameKey: 'french', levelKey: 'conversational' },
   ];
 
-  const interests: Interest[] = [
-    { key: 'webDevelopment' },
-    { key: 'uiUxDesign' },
-    { key: 'react' },
-    { key: 'typeScript' },
-    { key: 'openSource' },
-    { key: 'techInnovation' },
+  const interestCategories = [
+    {
+      category: 'techProfession',
+      items: ['blockchain', 'web3', 'cybersecurity', 'react', 'typeScript', 'openSource', 'ai', 'cleanCode', 'scalability', 'architecture', 'problemSolving']
+    },
+    {
+      category: 'collaborationLeadership',
+      items: ['mentorship', 'leadership', 'remoteWork', 'collaboration', 'community', 'teaching', 'education']
+    },
+    {
+      category: 'mindsetValues',
+      items: ['innovation', 'strategy', 'systemsThinking', 'adaptability', 'growth', 'ethics', 'empathy', 'continuousLearning']
+    },
+    {
+      category: 'cultureExpression',
+      items: ['globalMindset', 'languages', 'research', 'writing', 'creativity']
+    }
   ];
 
   return (
@@ -57,14 +64,21 @@ export function ProfileSidebar() {
         <CardHeader>
           <CardTitle className='text-base'>{tInterests('title')}</CardTitle>
         </CardHeader>
-        <CardContent className='pt-0'>
-          <div className='flex flex-wrap gap-2'>
-            {interests.map((interest, index) => (
-              <Badge key={index} variant='outline' className='text-xs'>
-                {tInterests(interest.key)}
-              </Badge>
-            ))}
-          </div>
+        <CardContent className='pt-0 space-y-4'>
+          {interestCategories.map((category, catIndex) => (
+            <div key={catIndex}>
+              <h4 className='text-xs font-semibold text-muted-foreground mb-2'>
+                {tInterests(category.category)}
+              </h4>
+              <div className='flex flex-wrap gap-1.5'>
+                {category.items.map((item, itemIndex) => (
+                  <Badge key={itemIndex} variant='outline' className='text-xs'>
+                    {tInterests(item)}
+                  </Badge>
+                ))}
+              </div>
+            </div>
+          ))}
         </CardContent>
       </Card>
 
