@@ -44,8 +44,11 @@
   },
   "About": {
     "title": "Acerca de",
+    "firstParagraph": "Más activo en substack.com/@xdemocle",
+    "disclaimer": "AVISO: mi perfil aquí ya no es un CV en línea. Si estás pensando en ofrecerme un contrato a largo plazo, envía una solicitud aquí o por email a hello@rocco.me",
     "fullStackDeveloper": "Desarrollador full stack con experiencia en JavaScript, TypeScript y React. Apasionado por crear experiencias de usuario intuitivas y optimizar el rendimiento web. Especializado en frameworks frontend modernos y sistemas de diseño.",
-    "currentlyWorking": "Actualmente trabajo como desarrollador freelance ayudando a empresas a construir aplicaciones web responsivas y accesibles. Hábil en principios de diseño UI/UX e implementación de interfaces interactivas complejas."
+    "currentlyWorking": "Actualmente trabajo como desarrollador freelance ayudando a empresas a construir aplicaciones web responsivas y accesibles. Hábil en principios de diseño UI/UX e implementación de interfaces interactivas complejas.",
+    "lastParagraph": "Escribo código. Construyo sistemas.\nTrabajo en Web3, IA y Ciberseguridad. Mentorío a desarrolladores junior y a personas que cambian de carrera. Pero nada de eso importa si olvidamos lo que las personas llevan bajo la superficie. No hago conexiones falsas. No persigo la fama. No confío en ningún proceso que trate a los humanos como filas de datos.\nSoy un ingeniero de software con dos décadas de experiencia. Como Ingeniero Full-Stack Líder, defino la dirección para blockchain y Web3. Desde el sur de Italia hasta el mundo, ayudo en el desarrollo de aplicaciones descentralizadas (DApps) que redefinen las experiencias de usuario: activos tokenizados, plataformas DeFi e integraciones de contratos inteligentes. Mis proyectos recientes han entregado millones en liquidez, un aumento del 20% en la participación de usuarios y hitos de concurrencia máxima, incluyendo 5 M++ visitantes en iniciativas como SHIBA INU."
   },
   "Analytics": {
     "title": "Analíticas",

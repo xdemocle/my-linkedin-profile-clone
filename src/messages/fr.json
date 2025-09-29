@@ -44,8 +44,11 @@
   },
   "About": {
     "title": "À propos",
+    "firstParagraph": "Plus actif sur substack.com/@xdemocle",
+    "disclaimer": "AVERTISSEMENT: mon profil ici n'est plus un CV en ligne. Si vous pensez m'offrir un contrat à long terme, veuillez envoyer une demande ici ou par e-mail à hello@rocco.me",
     "fullStackDeveloper": "Développeur full stack avec une expérience en JavaScript, TypeScript et React. Passionné par la création d'expériences utilisateur intuitives et l'optimisation des performances web. Spécialisé dans les frameworks frontend modernes et les systèmes de design.",
-    "currentlyWorking": "Je travaille actuellement en tant que développeur freelance, aidant les entreprises à créer des applications web responsives et accessibles. Compétent dans les principes de design UI/UX et l'implémentation d'interfaces interactives complexes."
+    "currentlyWorking": "Je travaille actuellement en tant que développeur freelance, aidant les entreprises à créer des applications web responsives et accessibles. Compétent dans les principes de design UI/UX et l'implémentation d'interfaces interactives complexes.",
+    "lastParagraph": "J'écris du code. Je construis des systèmes.\nJe travaille dans le Web3, l'IA et la Cybersecurité. Je guide des développeurs juniors et des personnes en reconversion professionnelle. Mais rien de tout cela n'a d'importance si nous oublions ce que les gens portent sous la surface. Je ne fais pas de connexions factices. Je ne cours pas après la notoriété. Je ne fais pas confiance à un processus qui traite les humains comme des lignes de données.\nJe suis un ingénieur logiciel avec deux décennies d'expérience. En tant qu'Ingénieur Full-Stack Lead, je définis la direction pour la blockchain et le Web3. Du sud de l'Italie au monde entier, j'aide au développement d'applications décentralisées (DApps) qui redéfinissent les expériences utilisateur: actifs tokenisés, plateformes DeFi et intégrations de contrats intelligents. Mes projets récents ont apporté des millions en liquidité, une augmentation de 20% de l'engagement des utilisateurs et des jalons de concurrence maximale, y compris 5 M++ visiteurs sur des initiatives comme SHIBA INU."
   },
   "Analytics": {
     "title": "Analyses",

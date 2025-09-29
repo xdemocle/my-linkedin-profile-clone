@@ -44,8 +44,11 @@
   },
   "About": {
     "title": "Informazioni",
+    "firstParagraph": "Più attivo su substack.com/@xdemocle",
+    "disclaimer": "DISCLAIMER: il mio profilo qui non è più un CV online. Se stai pensando di offrirmi un contratto a lungo termine, invia una richiesta qui o via email a hello@rocco.me",
     "fullStackDeveloper": "Sviluppatore full stack con esperienza in JavaScript, TypeScript e React. Appassionato di creare esperienze utente intuitive e ottimizzare le prestazioni web. Specializzato in framework frontend moderni e sistemi di design.",
-    "currentlyWorking": "Attualmente lavoro come sviluppatore freelance aiutando le aziende a costruire applicazioni web responsive e accessibili. Esperto nei principi di design UI/UX e nell'implementazione di interfacce interattive complesse."
+    "currentlyWorking": "Attualmente lavoro come sviluppatore freelance aiutando le aziende a costruire applicazioni web responsive e accessibili. Esperto nei principi di design UI/UX e nell'implementazione di interfacce interattive complesse.",
+    "lastParagraph": "Scrivo codice. Costruisco sistemi.\nLavoro in Web3, AI e Cybersecurity. Faccio da mentore a sviluppatori junior e a chi cambia carriera. Ma niente di tutto ciò conta se dimentichiamo ciò che le persone portano sotto la superficie. Non faccio connessioni false. Non inseguo la notorietà. Non mi fido di alcun processo che tratta gli umani come righe di dati.\nSono un ingegnere del software con due decenni di esperienza. Come Lead Full-Stack Engineer, definisco la direzione per blockchain e Web3. Dal Sud Italia al mondo, assisto nello sviluppo di applicazioni decentralizzate (DApps) che ridefiniscono le esperienze utente: asset tokenizzati, piattaforme DeFi e integrazioni di smart contract. I miei progetti recenti hanno fornito milioni in liquidità, un aumento del 20% nel coinvolgimento degli utenti e traguardi di concorrenza di picco, inclusi 5 M++ visitatori su iniziative come SHIBA INU."
   },
   "Analytics": {
     "title": "Analisi",
