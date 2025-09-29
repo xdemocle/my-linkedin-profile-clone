@@ -31,3 +31,4 @@ dist-ssr
 !.env.example
 .github/chatmodes/rok.chatmode.md
 output.css
+build/linkedin.css
