@@ -159,6 +159,20 @@
     "whoViewersAlsoViewed": "Who your viewers also viewed",
     "privateToYou": "Private to you"
   },
+  "Blog": {
+    "title": "Tech Blog",
+    "subtitle": "Thoughts on frontend development, Web3, and modern technology. Sharing insights from building scalable applications and exploring emerging tech trends.",
+    "featured": "Featured",
+    "recentPosts": "Recent Posts",
+    "readFullArticle": "Read Full Article",
+    "readMore": "Read More",
+    "stayUpdated": "Stay Updated",
+    "subscribeDescription": "Subscribe to get notified about new posts on frontend development, Web3, and tech insights.",
+    "enterEmail": "Enter your email",
+    "subscribe": "Subscribe",
+    "minRead": "min read",
+    "publishedOn": "Published on"
+  },
   "Footer": {
     "about": "About",
     "accessibility": "Accessibility",

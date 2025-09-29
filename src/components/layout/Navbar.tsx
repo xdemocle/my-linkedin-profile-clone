@@ -5,7 +5,9 @@ import {
   HomeIcon,
   MagnifyingGlassIcon,
   PersonIcon,
+  ReaderIcon,
 } from '@radix-ui/react-icons';
+import { Link } from 'wouter';
 import { useTranslations } from 'use-intl';
 import type { Locale } from '../../lib/i18n';
 import { Avatar, AvatarFallback, AvatarImage } from '../ui/avatar';
@@ -53,8 +55,16 @@ export function Navbar({ currentLocale, onLocaleChange }: NavbarProps) {
           
           <ThemeToggle />
 
-          <Button variant='ghost' size='icon'>
-            <HomeIcon className='h-5 w-5' />
+          <Button variant='ghost' size='icon' asChild>
+            <Link href="/">
+              <HomeIcon className='h-5 w-5' />
+            </Link>
+          </Button>
+
+          <Button variant='ghost' size='icon' asChild>
+            <Link href="/blog">
+              <ReaderIcon className='h-5 w-5' />
+            </Link>
           </Button>
 
           <Button variant='ghost' size='icon'>

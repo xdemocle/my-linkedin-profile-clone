@@ -3,6 +3,7 @@ import type { Locale } from '../lib/i18n';
 import { ProfileLayout } from './layout/ProfileLayout';
 import { ExperiencePage } from '../pages/ExperiencePage';
 import { ActivityPage } from '../pages/ActivityPage';
+import { BlogPage } from '../pages/BlogPage';
 import { Navbar } from './layout/Navbar';
 
 interface RouterProps {
@@ -33,7 +34,16 @@ export function Router({ locale, onLocaleChange }: RouterProps) {
             </div>
           </div>
         </Route>
-        
+
+        <Route path="/blog">
+          <div className='min-h-screen bg-background'>
+            <Navbar currentLocale={locale} onLocaleChange={onLocaleChange} />
+            <div className="pt-16">
+              <BlogPage />
+            </div>
+          </div>
+        </Route>
+
         {/* Default route */}
         <Route component={() => <ProfileLayout locale={locale} onLocaleChange={onLocaleChange} />} />
       </Switch>
