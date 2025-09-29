@@ -36,22 +36,6 @@ const featuredSection = {
   ]
 };
 
-const licenses = [
-  {
-    name: 'AWS Certified Solutions Architect',
-    issuer: 'Amazon Web Services',
-    date: 'Issued Dec 2023',
-    credentialId: 'AWS-CSA-2023-001',
-    image: 'https://images.unsplash.com/photo-1523474253046-8cd2748b5fd2?w=100&h=100&fit=crop',
-  },
-  {
-    name: 'Google Cloud Professional Developer',
-    issuer: 'Google Cloud',
-    date: 'Issued Oct 2023',
-    credentialId: 'GCP-PD-2023-002',
-    image: 'https://images.unsplash.com/photo-1573804633927-bfcbcd909acd?w=100&h=100&fit=crop',
-  },
-];
 
 const projects = [
   {
@@ -139,36 +123,6 @@ export function ProfileMainContent() {
       </Card>
 
       <SkillsSection />
-
-      {/* Licenses & Certifications */}
-      <Card className='shadow-xs'>
-        <CardHeader className='flex flex-row items-center justify-between'>
-          <CardTitle>Licenses & Certifications</CardTitle>
-          <Button variant='ghost' size='sm'>
-            Show all
-            <ArrowRightIcon className='h-4 w-4 ml-1' />
-          </Button>
-        </CardHeader>
-        <CardContent>
-          <div className='space-y-4'>
-            {licenses.map((license, index) => (
-              <div key={index} className='flex gap-4'>
-                <img
-                  src={license.image}
-                  alt={license.issuer}
-                  className='w-12 h-12 object-cover rounded-md flex-shrink-0'
-                />
-                <div className='flex-1'>
-                  <h4 className='font-medium text-sm'>{license.name}</h4>
-                  <p className='text-sm text-muted-foreground'>{license.issuer}</p>
-                  <p className='text-xs text-muted-foreground mt-1'>{license.date}</p>
-                  <p className='text-xs text-muted-foreground'>Credential ID: {license.credentialId}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </CardContent>
-      </Card>
 
       <RecommendationsSection />
     </div>

@@ -20,7 +20,7 @@ const connections: Connection[] = [
     role: 'Senior Software Engineer at Amazon',
     avatar: 'https://github.com/shadcn.png',
     mutualConnections: 12,
-    status: 'connected'
+    status: 'connected',
   },
   {
     id: '2',
@@ -28,7 +28,7 @@ const connections: Connection[] = [
     role: 'UI Designer at Apple',
     avatar: 'https://github.com/shadcn.png',
     mutualConnections: 8,
-    status: 'connected'
+    status: 'connected',
   },
   {
     id: '3',
@@ -36,7 +36,7 @@ const connections: Connection[] = [
     role: 'Product Manager at Google',
     avatar: 'https://github.com/shadcn.png',
     mutualConnections: 15,
-    status: 'connected'
+    status: 'connected',
   },
   {
     id: '4',
@@ -44,7 +44,7 @@ const connections: Connection[] = [
     role: 'Frontend Developer at Meta',
     avatar: 'https://github.com/shadcn.png',
     mutualConnections: 5,
-    status: 'pending'
+    status: 'pending',
   },
   {
     id: '5',
@@ -52,72 +52,75 @@ const connections: Connection[] = [
     role: 'UX Researcher at Microsoft',
     avatar: 'https://github.com/shadcn.png',
     mutualConnections: 3,
-    status: 'pending'
-  }
+    status: 'pending',
+  },
 ];
 
 export function ConnectionsSection() {
   return (
-    <Card className="shadow-xs">
-      <CardHeader className="flex flex-row items-center justify-between">
+    <Card className='shadow-xs'>
+      <CardHeader className='flex flex-row items-center justify-between'>
         <CardTitle>Connections</CardTitle>
-        {/* <Button variant="outline" size="sm">See all (500+)</Button> */
       </CardHeader>
 
-      <Tabs defaultValue="all" className="w-full">
-        <div className="px-6">
-          <TabsList className="grid w-full grid-cols-2">
-            <TabsTrigger value="all">All Connections</TabsTrigger>
-            <TabsTrigger value="pending">
+      <Tabs defaultValue='all' className='w-full'>
+        <div className='px-6'>
+          <TabsList className='grid w-full grid-cols-2'>
+            <TabsTrigger value='all'>All Connections</TabsTrigger>
+            <TabsTrigger value='pending'>
               Pending
-              <span className="ml-1.5 rounded-full bg-primary text-primary-foreground h-5 w-5 flex items-center justify-center text-xs">
+              <span className='ml-1.5 rounded-full bg-primary text-primary-foreground h-5 w-5 flex items-center justify-center text-xs'>
                 2
               </span>
             </TabsTrigger>
           </TabsList>
         </div>
-        
-        <CardContent className="pt-6">
-          <TabsContent value="all" className="mt-0">
-            <ScrollArea className="h-[350px] pr-4">
-              <div className="space-y-4">
+
+        <CardContent className='pt-6'>
+          <TabsContent value='all' className='mt-0'>
+            <ScrollArea className='h-[350px] pr-4'>
+              <div className='space-y-4'>
                 {connections
                   .filter(conn => conn.status === 'connected')
                   .map(connection => (
-                    <div key={connection.id} className="flex items-center gap-3">
-                      <Avatar className="h-12 w-12">
+                    <div key={connection.id} className='flex items-center gap-3'>
+                      <Avatar className='h-12 w-12'>
                         <AvatarImage src={connection.avatar} alt={connection.name} />
                         <AvatarFallback>{connection.name[0]}</AvatarFallback>
                       </Avatar>
-                      <div className="flex-1 min-w-0">
-                        <h3 className="font-medium text-sm truncate">{connection.name}</h3>
-                        <p className="text-xs text-muted-foreground line-clamp-2">{connection.role}</p>
-                        <p className="text-xs text-muted-foreground mt-1">{connection.mutualConnections} mutual connections</p>
+                      <div className='flex-1 min-w-0'>
+                        <h3 className='font-medium text-sm truncate'>{connection.name}</h3>
+                        <p className='text-xs text-muted-foreground line-clamp-2'>{connection.role}</p>
+                        <p className='text-xs text-muted-foreground mt-1'>
+                          {connection.mutualConnections} mutual connections
+                        </p>
                       </div>
                       {/* <Button variant="ghost" size="sm" className="text-xs">
                         Message
-                      </Button> */
+                      </Button> */}
                     </div>
-                ))}
+                  ))}
               </div>
             </ScrollArea>
           </TabsContent>
-          
-          <TabsContent value="pending" className="mt-0">
-            <ScrollArea className="h-[350px] pr-4">
-              <div className="space-y-4">
+
+          <TabsContent value='pending' className='mt-0'>
+            <ScrollArea className='h-[350px] pr-4'>
+              <div className='space-y-4'>
                 {connections
                   .filter(conn => conn.status === 'pending')
                   .map(connection => (
-                    <div key={connection.id} className="flex items-center gap-3">
-                      <Avatar className="h-12 w-12">
+                    <div key={connection.id} className='flex items-center gap-3'>
+                      <Avatar className='h-12 w-12'>
                         <AvatarImage src={connection.avatar} alt={connection.name} />
                         <AvatarFallback>{connection.name[0]}</AvatarFallback>
                       </Avatar>
-                      <div className="flex-1 min-w-0">
-                        <h3 className="font-medium text-sm truncate">{connection.name}</h3>
-                        <p className="text-xs text-muted-foreground line-clamp-2">{connection.role}</p>
-                        <p className="text-xs text-muted-foreground mt-1">{connection.mutualConnections} mutual connections</p>
+                      <div className='flex-1 min-w-0'>
+                        <h3 className='font-medium text-sm truncate'>{connection.name}</h3>
+                        <p className='text-xs text-muted-foreground line-clamp-2'>{connection.role}</p>
+                        <p className='text-xs text-muted-foreground mt-1'>
+                          {connection.mutualConnections} mutual connections
+                        </p>
                       </div>
                       {/* <div className="flex flex-col gap-2">
                         <Button variant="default" size="sm" className="text-xs">
@@ -128,7 +131,7 @@ export function ConnectionsSection() {
                         </Button>
                       </div> */}
                     </div>
-                ))}
+                  ))}
               </div>
             </ScrollArea>
           </TabsContent>
