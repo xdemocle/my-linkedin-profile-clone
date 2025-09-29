@@ -27,7 +27,7 @@ interface NavbarProps {
 
 export function Navbar({ currentLocale, onLocaleChange }: NavbarProps) {
   return (
-    <header className="border-b border-border bg-card fixed top-0 left-0 right-0 z-50 shadow-xs">
+    <header className="border-b bg-card/95 backdrop-blur-sm fixed top-0 left-0 right-0 z-50 shadow-xs">
       {/* Scroll progress indicator */}
       <ScrollProgress color='var(--linkedin-blue-bright)' height={2} />
       <div className='max-w-6xl mx-auto px-4 flex items-center h-14'>
