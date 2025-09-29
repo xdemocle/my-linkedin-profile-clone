@@ -6,12 +6,14 @@ import {
   MagnifyingGlassIcon,
   PersonIcon,
 } from '@radix-ui/react-icons';
-import { useScrollDirection } from '../../hooks/useScrollDirection';
+import { useScrollDirection } from "../../hooks/useScrollDirection";
 import { Avatar, AvatarFallback, AvatarImage } from '../ui/avatar';
 import { ScrollProgress } from '../ui/scroll-progress';
 import { Button } from '../ui/button';
 import { Input } from '../ui/input';
 import { NavigationMenu, NavigationMenuItem, NavigationMenuLink, NavigationMenuList } from '../ui/navigation-menu';
+import { LanguageSwitcher } from '../ui/language-switcher';
+import type { Locale } from '../../lib/i18n';
 
 const LinkedInLogo = () => (
   <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' className='h-8 w-8 text-primary' fill='currentColor'>
@@ -19,7 +21,12 @@ const LinkedInLogo = () => (
   </svg>
 );
 
-export function Navbar() {
+interface NavbarProps {
+  currentLocale: Locale;
+  onLocaleChange: (locale: Locale) => void;
+}
+
+export function Navbar({ currentLocale, onLocaleChange }: NavbarProps) {
   const { visible, isScrolling } = useScrollDirection({
     threshold: 15,          // Slightly higher threshold to avoid too-sensitive toggling
     idleHideDelay: 2500,    // Hide after 2.5 seconds of idle time
@@ -52,6 +59,13 @@ export function Navbar() {
         {/* Navigation */}
         <NavigationMenu className='ml-auto'>
           <NavigationMenuList className='flex items-center gap-1'>
+            <NavigationMenuItem>
+              <LanguageSwitcher 
+                currentLocale={currentLocale} 
+                onChange={onLocaleChange} 
+              />
+            </NavigationMenuItem>
+            
             <NavigationMenuItem>
               <Button variant='ghost' size='icon' asChild>
                 <NavigationMenuLink>

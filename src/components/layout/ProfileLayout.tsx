@@ -9,14 +9,20 @@ import { RecommendationsSection } from '../profile/RecommendationsSection';
 import { SkillsSection } from '../profile/SkillsSection';
 import { Navbar } from './Navbar';
 import { MessagingPopup } from '../messaging/MessagingPopup';
-import { useScrollDirection } from '../../hooks/useScrollDirection';
+import { useScrollDirection } from "../../hooks/useScrollDirection";
+import type { Locale } from "../../lib/i18n";
 
-export function ProfileLayout() {
+interface ProfileLayoutProps {
+  locale: Locale;
+  onLocaleChange: (locale: Locale) => void;
+}
+
+export function ProfileLayout({ locale, onLocaleChange }: ProfileLayoutProps) {
   const { visible } = useScrollDirection();
 
   return (
     <div className='min-h-screen bg-background'>
-      <Navbar />
+      <Navbar currentLocale={locale} onLocaleChange={onLocaleChange} />
       {/* Dynamic padding based on navbar visibility */}
       <main className={`
         max-w-6xl mx-auto px-4 py-6 
