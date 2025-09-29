@@ -34,12 +34,14 @@ export function Navbar({ currentLocale, onLocaleChange }: NavbarProps) {
   });
   
   return (
-    <header className={`
-      border-b border-border sticky top-0 z-50
-      transition-all duration-300 ease-in-out
-      ${visible ? 'translate-y-0' : '-translate-y-full'}
-      ${isScrolling && visible ? 'shadow-md bg-background/95 backdrop-blur-sm' : 'bg-background'}
-    `}>
+    <header 
+      className={`
+        border-b border-border sticky top-0 z-50
+        transition-all duration-300 ease-in-out
+        ${visible ? 'translate-y-0' : '-translate-y-full'}
+        ${isScrolling && visible ? 'bg-background/95 backdrop-blur-sm shadow-sm' : 'bg-background'}
+      `}
+    >
       {/* Scroll progress indicator */}
       <ScrollProgress color="var(--linkedin-blue-bright)" height={2} />
       <div className='max-w-6xl mx-auto px-4 flex items-center h-14'>

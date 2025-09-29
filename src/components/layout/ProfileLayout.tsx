@@ -2,11 +2,15 @@
 import { useScrollDirection } from '../../hooks/useScrollDirection';
 import type { Locale } from '../../lib/i18n';
 import { AboutSection } from '../profile/AboutSection';
+// import { ActivitySection } from '../profile/ActivitySection';
+// import { ConnectionsSection } from '../profile/ConnectionsSection';
 import { ExperienceSection } from '../profile/ExperienceSection';
+// import { PeopleAlsoViewed } from '../profile/PeopleAlsoViewed';
 import { ProfileHeader } from '../profile/ProfileHeader';
 import { RecommendationsSection } from '../profile/RecommendationsSection';
 import { SkillsSection } from '../profile/SkillsSection';
 import { Navbar } from './Navbar';
+// import { MessagingPopup } from '../messaging/MessagingPopup';
 
 interface ProfileLayoutProps {
   locale: Locale;
