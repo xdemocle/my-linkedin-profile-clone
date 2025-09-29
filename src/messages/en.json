@@ -299,7 +299,22 @@
     "viewDemo": "View demo",
     "technologies": "Technologies",
     "role": "Role",
-    "company": "Company"
+    "company": "Company",
+    "projectDetails": "Project Details",
+    "projectDescription": "Description",
+    "projectTechnologies": "Technologies Used",
+    "projectLinks": "Project Links",
+    "projectScreenshots": "Screenshots",
+    "projectContributions": "My Contributions",
+    "projectChallenges": "Challenges",
+    "projectOutcomes": "Outcomes",
+    "projectDuration": "Duration",
+    "projectTeam": "Team Size",
+    "projectType": "Project Type",
+    "openSource": "Open Source",
+    "clientProject": "Client Project",
+    "personalProject": "Personal Project",
+    "hackathonProject": "Hackathon Project"
   },
   "Common": {
     "showMore": "Show more",

@@ -193,7 +193,7 @@ export function ProjectsPage() {
                           {project.links.website && (
                             <Button variant='outline' size='sm' className='h-8' asChild>
                               <a href={project.links.website} target='_blank' rel='noopener noreferrer'>
-                                Website
+                                {t('viewProject')}
                                 <ExternalLinkIcon className='ml-1 h-3 w-3' />
                               </a>
                             </Button>
@@ -201,7 +201,7 @@ export function ProjectsPage() {
                           {project.links.marketing && (
                             <Button variant='outline' size='sm' className='h-8' asChild>
                               <a href={project.links.marketing} target='_blank' rel='noopener noreferrer'>
-                                Marketing
+                                {t('viewDemo')}
                                 <ExternalLinkIcon className='ml-1 h-3 w-3' />
                               </a>
                             </Button>
@@ -211,7 +211,7 @@ export function ProjectsPage() {
                               <Button key={i} variant='outline' size='sm' className='h-8' asChild>
                                 <a href={link} target='_blank' rel='noopener noreferrer'>
                                   <GitHubLogoIcon className='mr-1 h-3 w-3' />
-                                  GitHub {Array.isArray(project.links?.github) && project.links?.github.length > 1 ? i + 1 : ''}
+                                  {t('viewCode')} {Array.isArray(project.links?.github) && project.links?.github.length > 1 ? i + 1 : ''}
                                 </a>
                               </Button>
                             ))}
@@ -260,14 +260,14 @@ export function ProjectsPage() {
                                 rel='noopener noreferrer'
                               >
                                 <GitHubLogoIcon className='mr-1 h-3 w-3' />
-                                Source
+                                {t('viewCode')}
                               </a>
                             </Button>
                           )}
                           {project.links.demo && (
                             <Button variant='outline' size='sm' className='h-7 text-xs px-2' asChild>
                               <a href={project.links.demo} target='_blank' rel='noopener noreferrer'>
-                                Demo
+                                {t('viewDemo')}
                                 <ExternalLinkIcon className='ml-1 h-3 w-3' />
                               </a>
                             </Button>
