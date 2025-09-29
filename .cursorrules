@@ -1,0 +1,32 @@
+{
+  "projectContext": {
+    "description": "LinkedIn profile clone project",
+    "framework": "React",
+    "patterns": {
+      "components": "src/components/**/*.{tsx,jsx}",
+      "styles": "src/styles/**/*.{css,scss}",
+      "utils": "src/utils/**/*.{ts,js}"
+    }
+  },
+  "guidelines": {
+    "codeStyle": {
+      "indentation": "spaces",
+      "spacesPerIndent": 2,
+      "quotes": "single"
+    },
+    "naming": {
+      "components": "PascalCase",
+      "functions": "camelCase",
+      "variables": "camelCase"
+    },
+    "architecture": {
+      "componentStructure": "atomic-design",
+      "stateManagement": "react-hooks"
+    }
+  },
+  "suggestions": {
+    "enabled": true,
+    "autoImport": true,
+    "completions": true
+  }
+}

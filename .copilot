@@ -1,0 +1,32 @@
+{
+  "project": {
+    "description": "LinkedIn profile clone using React",
+    "version": "1.0.0"
+  },
+  "suggestions": {
+    "language": {
+      "typescript": true,
+      "javascript": true,
+      "css": true,
+      "scss": true
+    },
+    "patterns": {
+      "components": "src/components/**/*",
+      "styles": "src/styles/**/*",
+      "utils": "src/utils/**/*"
+    }
+  },
+  "conventions": {
+    "componentNaming": "PascalCase",
+    "functionNaming": "camelCase",
+    "variableNaming": "camelCase",
+    "indentation": 2,
+    "quoteStyle": "single"
+  },
+  "contextAwareness": {
+    "typeChecking": true,
+    "imports": true,
+    "reactHooks": true,
+    "stateManagement": true
+  }
+}
