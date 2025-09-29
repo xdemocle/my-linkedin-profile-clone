@@ -30,3 +30,4 @@ dist-ssr
 .env*
 !.env.example
 .github/chatmodes/rok.chatmode.md
+output.css

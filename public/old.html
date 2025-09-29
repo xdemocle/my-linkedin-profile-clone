@@ -17,172 +17,80 @@
   <meta name="i18nDefaultLocale" content="en" />
   <meta name="i18nLang" content="en" />
 
-
-
-  <meta name="asset-url" id="artdeco-icons/static/images/icons.svg" />
-
-  <link id="ui-theme" rel="stylesheet" href="raw/assets/css/ev3prx6qwul6j3me07vap4ui1.css" />
-  <link id="ui-theme-dark" rel="stylesheet" href="raw/assets/css/aukoz4odnf7kc6nk7ds8gowwm.css" disabled />
-
-  <style type="text/css">
-    .immersive-reader-button {
-      cursor: pointer;
-      display: inline-block;
-      padding: 5px;
+  <link rel="stylesheet" href="linkedin.css" />
+  <style id="linkedin-full-width-style">
+    :root {
+      --scaffold-layout-xl-max-width: 100% !important;
+      --scaffold-layout-lg-max-width: 100% !important;
+      --scaffold-layout-md-max-width: 100% !important;
+      --scaffold-layout-sidebar-narrow-width: minmax(0, 300px) !important
     }
 
-    .immersive-reader-button:hover {
-      background: rgba(0, 0, 0, .05);
-      border-radius: 2px
-    }
-  </style>
-  <style type="text/css">
-    ;
-
-    @-webkit-keyframes rotate {
-      from {
-        -webkit-transform: rotate(0deg);
-      }
-
-      to {
-        -webkit-transform: rotate(360deg);
-      }
+    .global-nav__content {
+      width: 100%
     }
 
-    @keyframes rotate {
-      from {
-        transform: rotate(0deg);
-      }
-
-      to {
-        transform: rotate(360deg);
-      }
+    #root header div {
+      max-width: unset !important
     }
 
-    .dropbox-dropin-btn,
-    .dropbox-dropin-btn:link,
-    .dropbox-dropin-btn:hover {
-      display: inline-block;
-      height: 14px;
-      font-family: "Lucida Grande", "Segoe UI", "Tahoma", "Helvetica Neue",
-        "Helvetica", sans-serif;
-      font-size: 11px;
-      font-weight: 600;
-      color: #636363;
-      text-decoration: none;
-      padding: 1px 7px 5px 3px;
-      border: 1px solid #ebebeb;
-      border-radius: 2px;
-      border-bottom-color: #d4d4d4;
-      background: #fcfcfc;
-      background: -moz-linear-gradient(top, #fcfcfc 0%, #f5f5f5 100%);
-      background: -webkit-linear-gradient(top, #fcfcfc 0%, #f5f5f5 100%);
-      background: linear-gradient(to bottom, #fcfcfc 0%, #f5f5f5 100%);
-      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fcfcfc', endColorstr='#f5f5f5', GradientType=0);
+    #root header>div {
+      padding-left: 2rem !important;
+      padding-right: 2rem !important
     }
 
-    .dropbox-dropin-default:hover,
-    .dropbox-dropin-error:hover {
-      border-color: #dedede;
-      border-bottom-color: #cacaca;
-      background: #fdfdfd;
-      background: -moz-linear-gradient(top, #fdfdfd 0%, #f5f5f5 100%);
-      background: -webkit-linear-gradient(top, #fdfdfd 0%, #f5f5f5 100%);
-      background: linear-gradient(to bottom, #fdfdfd 0%, #f5f5f5 100%);
-      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fdfdfd', endColorstr='#f5f5f5', GradientType=0);
+    .scaffold-layout-container {
+      max-width: unset !important
     }
 
-    .dropbox-dropin-default:active,
-    .dropbox-dropin-error:active {
-      border-color: #d1d1d1;
-      box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.1);
+    .scaffold-layout-container.scaffold-layout-container--reflow {
+      width: 100% !important;
+      padding-left: 2rem !important;
+      padding-right: 2rem !important
     }
 
-    .dropbox-dropin-btn .dropin-btn-status {
-      display: inline-block;
-      width: 15px;
-      height: 14px;
-      vertical-align: bottom;
-      margin: 0 5px 0 2px;
-      background: transparent url("https://www.dropbox.com/static/images/widgets/dbx-saver-status.png") no-repeat;
-      position: relative;
-      top: 2px;
+    .scaffold-layout-container.scaffold-layout-container--reflow>div {
+      max-width: unset !important;
+      width: 100% !important;
+      margin-left: auto;
+      margin-right: auto
     }
 
-    .dropbox-dropin-default .dropin-btn-status {
-      background-position: 0px 0px;
+    .scaffold-layout__main {
+      max-width: none !important;
+      padding: 0 !important
     }
 
-    .dropbox-dropin-progress .dropin-btn-status {
-      width: 18px;
-      margin: 0 4px 0 0;
-      background: url("https://www.dropbox.com/static/images/widgets/dbx-progress.png") no-repeat center center;
-      -webkit-animation-name: rotate;
-      -webkit-animation-duration: 1.7s;
-      -webkit-animation-iteration-count: infinite;
-      -webkit-animation-timing-function: linear;
-      animation-name: rotate;
-      animation-duration: 1.7s;
-      animation-iteration-count: infinite;
-      animation-timing-function: linear;
+    .feed-shared-update-v2__content,
+    .scaffold-finite-scroll__content>div {
+      max-width: none !important
     }
 
-    .dropbox-dropin-success .dropin-btn-status {
-      background-position: -15px 0px;
+    .pv-profile-section,
+    .artdeco-card,
+    .search-results-container {
+      max-width: none !important
     }
 
-    .dropbox-dropin-disabled {
-      background: #e0e0e0;
-      border: 1px #dadada solid;
-      border-bottom: 1px solid #ccc;
-      box-shadow: none;
+    #root>div>div>main>div {
+      max-width: none !important;
+      padding-left: 2rem !important;
+      padding-right: 2rem !important
     }
 
-    .dropbox-dropin-disabled .dropin-btn-status {
-      background-position: -30px 0px;
+    .workflow__left-rail {
+      padding-left: 12px !important
     }
 
-    .dropbox-dropin-error .dropin-btn-status {
-      background-position: -45px 0px;
-    }
-
-    @media only screen and (-webkit-min-device-pixel-ratio: 1.4) {
-      .dropbox-dropin-btn .dropin-btn-status {
-        background-image: url("https://www.dropbox.com/static/images/widgets/dbx-saver-status-2x.png");
-        background-size: 60px 14px;
-        -webkit-background-size: 60px 14px;
-      }
-
-      .dropbox-dropin-progress .dropin-btn-status {
-        background: url("https://www.dropbox.com/static/images/widgets/dbx-progress-2x.png") no-repeat center center;
-        background-size: 20px 20px;
-        -webkit-background-size: 20px 20px;
-      }
-    }
-
-    .dropbox-saver:hover,
-    .dropbox-chooser:hover {
-      text-decoration: none;
-      cursor: pointer;
-    }
-
-    .dropbox-chooser,
-    .dropbox-dropin-btn {
-      line-height: 11px !important;
-      text-decoration: none !important;
-      box-sizing: content-box !important;
-      -webkit-box-sizing: content-box !important;
-      -moz-box-sizing: content-box !important;
+    .grid {
+      max-width: none !important;
+      width: 100% !important
     }
   </style>
 </head>
 
 <body dir="ltr"
-  class="render-mode-BIGPIPE nav-v2 ember-application payment-failure-global-alert-lix-enabled-class icons-loaded boot-complete"
-  data-t-link-to-event-attached="true" cz-shortcut-listen="true">
-  <!-- PMBR-7487 -->
-
-  <!-- HUED-11420 -->
+  class="render-mode-BIGPIPE nav-v2 ember-application payment-failure-global-alert-lix-enabled-class icons-loaded boot-complete">
   <div id="artdeco-toasts__wormhole">
     <section id="artdeco-toasts" class="artdeco-toasts" aria-label="Toast message">
       <header class="artdeco-toasts__header">
@@ -1030,7 +938,7 @@
                 <button aria-expanded="false" id="ember21"
                   class="global-nav__primary-link global-nav__primary-link-me-menu-trigger artdeco-dropdown__trigger artdeco-dropdown__trigger--placement-bottom ember-view"
                   type="button" tabindex="0">
-                  <img width="24" src="" height="24" alt="Rocco Russo" id="ember22"
+                  <img width="24" height="24" alt="Rocco Russo" id="ember22" src="/assets/img/1744692256752.jpeg"
                     class="global-nav__me-photo evi-image ember-view" />
 
                   <span class="t-12 global-nav__primary-link-text">
@@ -1155,15 +1063,15 @@
                   <section class="artdeco-card ExQtzmfweNrJGPrlczEHgdYbsxrnCGZkSGIZo" data-member-id="62695238">
                     <!---->
 
-                    <div class="top-card-background-hero-image" style="min-height: 201px; max-height: 201px">
+                    <div class="top-card-background-hero-image">
                       <div class="top-card-background-hero-image__bg-image">
                         <div class="profile-topcard-background-image-edit">
                           <div tabindex="0" role="button" aria-label="Background Image"
                             class="profile-background-image">
                             <div class="profile-background-image__image-container">
                               <img class="profile-background-image__image relative full-width full-height"
-                                id="profile-background-image-target-image" alt="Background Image" src=""
-                                style="left: 0px; top: 0px" fetchpriority="high" />
+                                id="profile-background-image-target-image" alt="Background Image"
+                                src="/assets/img/1758487961243.jpeg" style="left: 0px; top: 0px" fetchpriority="high" />
                             </div>
                           </div>
 
@@ -1188,8 +1096,8 @@
                             <div class="pv-top-card__photo-wrapper ml0">
                               <div class="profile-photo-edit pv-top-card__edit-photo">
                                 <button class="profile-photo-edit__edit-btn" type="button">
-                                  <img width="200" src="" height="200" alt="Rocco Russo" id="ember8341"
-                                    class="evi-image ember-view profile-photo-edit__preview" />
+                                  <img width="200" src="/assets/img/1744692256752.jpeg" height="200" alt="Rocco Russo"
+                                    id="ember8341" class="evi-image ember-view profile-photo-edit__preview" />
                                   <div class="profile-photo-edit__edit-icon-container">
                                     <svg role="none" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="16"
                                       height="16" viewBox="0 0 16 16" data-supported-dps="16x16"
@@ -1789,7 +1697,7 @@
                                   <div class="ivm-view-attr__img-wrapper">
                                     <!---->
                                     <!---->
-                                    <img width="48" src="/raw/images/png/theweb3_ninja_logo.png" height="48"
+                                    <img width="48" src="/images/png/theweb3_ninja_logo.png" height="48"
                                       alt="The Web3 Ninja logo" id="ember8446"
                                       class="ivm-view-attr__img--centered EntityPhoto-square-3 evi-image lazy-image ember-view" />
                                   </div>
@@ -2326,7 +2234,7 @@
                                   <div class="ivm-view-attr__img-wrapper">
                                     <!---->
                                     <!---->
-                                    <img width="48" src="/raw/images/png/steunactie_logo.png" loading="lazy" height="48"
+                                    <img width="48" src="/images/png/steunactie_logo.png" loading="lazy" height="48"
                                       alt="Steunactie logo" id="ember8467"
                                       class="ivm-view-attr__img--centered EntityPhoto-square-3 evi-image lazy-image ember-view" />
                                   </div>
