@@ -19,14 +19,18 @@ export function Router({ locale, onLocaleChange }: RouterProps) {
         <Route path="/experience">
           <div className='min-h-screen bg-background'>
             <Navbar currentLocale={locale} onLocaleChange={onLocaleChange} />
-            <ExperiencePage />
+            <div className="pt-16">
+              <ExperiencePage />
+            </div>
           </div>
         </Route>
         
         <Route path="/activity">
           <div className='min-h-screen bg-background'>
             <Navbar currentLocale={locale} onLocaleChange={onLocaleChange} />
-            <ActivityPage />
+            <div className="pt-16">
+              <ActivityPage />
+            </div>
           </div>
         </Route>
         
