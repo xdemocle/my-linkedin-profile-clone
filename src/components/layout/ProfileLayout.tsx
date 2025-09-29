@@ -29,7 +29,7 @@ export function ProfileLayout({ locale, onLocaleChange }: ProfileLayoutProps) {
           {/* Sidebar - 1/3 width on large screens, full width on mobile, appears after main content */}
           <div className='lg:col-span-1 order-2'>
             <ErrorBoundary>
-              <ProfileSidebar />
+              <ProfileSidebar locale={locale} onLocaleChange={onLocaleChange} />
             </ErrorBoundary>
           </div>
         </div>

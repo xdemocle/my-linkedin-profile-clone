@@ -1,6 +1,5 @@
 import { ClipboardCopyIcon } from '@radix-ui/react-icons';
 import { useTranslations } from 'use-intl';
-import { useLocale } from '../../hooks/useLocale';
 import type { Locale } from '../../lib/i18n';
 import { locales } from '../../lib/i18n';
 import { Button } from '../ui/button';
@@ -18,15 +17,19 @@ const languageNames: Record<Locale, string> = {
   ar: 'العربية',
 };
 
-export function ProfileLanguageUrl() {
+interface ProfileLanguageUrlProps {
+  locale: Locale;
+  onLocaleChange: (locale: Locale) => void;
+}
+
+export function ProfileLanguageUrl({ locale, onLocaleChange }: ProfileLanguageUrlProps) {
   const t = useTranslations('ProfileLanguageUrl');
-  const { locale, setLocale } = useLocale();
   const { toast } = useToast();
 
   const profileUrl = 'www.linkedin.com/in/roccorusso';
 
   const handleLocaleChange = (newLocale: Locale) => {
-    setLocale(newLocale);
+    onLocaleChange(newLocale);
   };
 
   const copyToClipboard = () => {
