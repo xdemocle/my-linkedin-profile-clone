@@ -18,6 +18,7 @@ This is a LinkedIn profile clone built with React, TypeScript, and Vite. The pro
 ## Adding shadcn/ui Components
 
 Use this command pattern to add new shadcn/ui components:
+
 ```bash
 bunx --bun shadcn@latest add [component-name]
 ```
@@ -65,6 +66,17 @@ Example: `bunx --bun shadcn@latest add button`
   - Functions/variables: camelCase
 - **ESLint**: Modern flat configuration format
 
+## Styling Guidelines
+
+**IMPORTANT**: Follow these strict styling guidelines:
+
+- **Never add CSS to style attribute** - Always use Tailwind CSS classes
+- **Use Tailwind CSS for styling only** - No custom CSS or inline styles
+- **Always follow latest v4 guidelines for Tailwind CSS** - Use modern Tailwind v4 syntax and features
+- **Never use inline styles** - All styling must be done through Tailwind classes
+- **Use shadcn/ui components** - Prefer shadcn/ui components for consistent design system
+- **Use Bun as package manager** - Always use `bun` commands instead of `npm` or `yarn`
+
 ## Package Manager
 
 - Uses **Bun** (v1.2.15) as the primary package manager
@@ -100,6 +112,7 @@ Example: `bunx --bun shadcn@latest add button`
 ## Component Architecture
 
 The project uses **shadcn/ui** component architecture with extensive Radix UI integration:
+
 - Components are built with **Radix UI** primitives for accessibility and interaction patterns
 - **Class Variance Authority (CVA)** manages component variants and styling
 - **Tailwind CSS** provides utility classes with custom design tokens
@@ -107,7 +120,9 @@ The project uses **shadcn/ui** component architecture with extensive Radix UI in
 - The `cn()` utility function merges Tailwind classes using `clsx` and `tailwind-merge`
 
 ### Installed shadcn/ui Components
+
 Current components available (based on Radix UI dependencies):
+
 - Aspect Ratio, Avatar, Button, Collapsible, Dialog
 - Dropdown Menu, Hover Card, Label, Navigation Menu
 - Popover, Scroll Area, Separator, Slot (for composition)
@@ -116,7 +131,9 @@ Current components available (based on Radix UI dependencies):
 - Form components (with React Hook Form + Zod integration)
 
 ### LinkedIn Profile Components Needed
+
 For the LinkedIn profile clone, key component categories include:
+
 - **Layout**: Card, Avatar, Separator
 - **Navigation**: Navigation Menu, Tabs
 - **Interactive**: Button, Dialog, Dropdown Menu, Hover Card
