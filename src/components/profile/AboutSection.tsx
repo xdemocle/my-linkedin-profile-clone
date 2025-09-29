@@ -1,15 +1,15 @@
-import { Pencil1Icon } from '@radix-ui/react-icons';
-import { Button } from '../ui/button';
+// import { Pencil1Icon } from '@radix-ui/react-icons';
+// import { Button } from '../ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '../ui/card';
 
 export function AboutSection() {
   return (
-    <Card className='mt-4 shadow-sm'>
+    <Card className='mt-4 shadow-xs'>
       <CardHeader className='flex flex-row items-center justify-between'>
         <CardTitle>About</CardTitle>
-        <Button variant='ghost' size='sm'>
+        {/* <Button variant='ghost' size='sm'>
           <Pencil1Icon className='h-4 w-4' />
-        </Button>
+        </Button> */}
       </CardHeader>
       <CardContent>
         <p className='text-foreground leading-relaxed'>

@@ -1,5 +1,5 @@
 import { Avatar, AvatarFallback, AvatarImage } from '../ui/avatar';
-import { Button } from '../ui/button';
+// import { Button } from '../ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '../ui/card';
 import { ScrollArea } from '../ui/scroll-area';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '../ui/tabs';
@@ -58,10 +58,10 @@ const connections: Connection[] = [
 
 export function ConnectionsSection() {
   return (
-    <Card className="shadow-sm">
+    <Card className="shadow-xs">
       <CardHeader className="flex flex-row items-center justify-between">
         <CardTitle>Connections</CardTitle>
-        <Button variant="outline" size="sm">See all (500+)</Button>
+        {/* <Button variant="outline" size="sm">See all (500+)</Button> */
       </CardHeader>
 
       <Tabs defaultValue="all" className="w-full">
@@ -94,9 +94,9 @@ export function ConnectionsSection() {
                         <p className="text-xs text-muted-foreground line-clamp-2">{connection.role}</p>
                         <p className="text-xs text-muted-foreground mt-1">{connection.mutualConnections} mutual connections</p>
                       </div>
-                      <Button variant="ghost" size="sm" className="text-xs">
+                      {/* <Button variant="ghost" size="sm" className="text-xs">
                         Message
-                      </Button>
+                      </Button> */
                     </div>
                 ))}
               </div>
@@ -119,14 +119,14 @@ export function ConnectionsSection() {
                         <p className="text-xs text-muted-foreground line-clamp-2">{connection.role}</p>
                         <p className="text-xs text-muted-foreground mt-1">{connection.mutualConnections} mutual connections</p>
                       </div>
-                      <div className="flex flex-col gap-2">
+                      {/* <div className="flex flex-col gap-2">
                         <Button variant="default" size="sm" className="text-xs">
                           Accept
                         </Button>
                         <Button variant="outline" size="sm" className="text-xs">
                           Ignore
                         </Button>
-                      </div>
+                      </div> */}
                     </div>
                 ))}
               </div>

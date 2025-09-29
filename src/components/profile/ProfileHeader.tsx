@@ -1,10 +1,10 @@
-import { Pencil1Icon } from '@radix-ui/react-icons';
+// import { Pencil1Icon } from '@radix-ui/react-icons';
 import { Avatar, AvatarFallback, AvatarImage } from '../ui/avatar';
 import { Button } from '../ui/button';
 
 export function ProfileHeader() {
   return (
-    <div className='bg-card rounded-md overflow-hidden shadow-sm'>
+    <div className='bg-card rounded-md overflow-hidden shadow-xs'>
       {/* Cover Photo */}
       <div className='h-32 md:h-48 bg-muted relative'>
         <img
@@ -12,13 +12,13 @@ export function ProfileHeader() {
           alt='Cover'
           className='w-full h-full object-cover'
         />
-        <Button
+        {/* <Button
           variant='ghost'
           size='icon'
           className='absolute top-4 right-4 bg-background/80 backdrop-blur-sm hover:bg-background/90'
         >
           <Pencil1Icon className='h-4 w-4' />
-        </Button>
+        </Button> */}
       </div>
 
       {/* Profile Info */}
@@ -46,10 +46,10 @@ export function ProfileHeader() {
                 </a>
               </div>
             </div>
-            <Button variant='ghost' size='sm'>
+            {/* <Button variant='ghost' size='sm'>
               <Pencil1Icon className='h-4 w-4 mr-2' />
               Edit profile
-            </Button>
+            </Button> */}
           </div>
 
           <div className='flex gap-2 mt-4'>

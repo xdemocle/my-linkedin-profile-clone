@@ -6,14 +6,14 @@ import {
   MagnifyingGlassIcon,
   PersonIcon,
 } from '@radix-ui/react-icons';
-import { useScrollDirection } from "../../hooks/useScrollDirection";
+import { useScrollDirection } from '../../hooks/useScrollDirection';
+import type { Locale } from '../../lib/i18n';
 import { Avatar, AvatarFallback, AvatarImage } from '../ui/avatar';
-import { ScrollProgress } from '../ui/scroll-progress';
 import { Button } from '../ui/button';
 import { Input } from '../ui/input';
-import { NavigationMenu, NavigationMenuItem, NavigationMenuLink, NavigationMenuList } from '../ui/navigation-menu';
 import { LanguageSwitcher } from '../ui/language-switcher';
-import type { Locale } from '../../lib/i18n';
+import { NavigationMenu, NavigationMenuItem, NavigationMenuLink, NavigationMenuList } from '../ui/navigation-menu';
+import { ScrollProgress } from '../ui/scroll-progress';
 
 const LinkedInLogo = () => (
   <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' className='h-8 w-8 text-primary' fill='currentColor'>
@@ -28,22 +28,22 @@ interface NavbarProps {
 
 export function Navbar({ currentLocale, onLocaleChange }: NavbarProps) {
   const { visible, isScrolling } = useScrollDirection({
-    threshold: 15,          // Slightly higher threshold to avoid too-sensitive toggling
-    idleHideDelay: 2500,    // Hide after 2.5 seconds of idle time
-    initiallyVisible: true
+    threshold: 15, // Slightly higher threshold to avoid too-sensitive toggling
+    idleHideDelay: 2500, // Hide after 2.5 seconds of idle time
+    initiallyVisible: true,
   });
-  
+
   return (
-    <header 
+    <header
       className={`
         border-b border-border sticky top-0 z-50
         transition-all duration-300 ease-in-out
         ${visible ? 'translate-y-0' : '-translate-y-full'}
-        ${isScrolling && visible ? 'bg-background/95 backdrop-blur-sm shadow-sm' : 'bg-background'}
+        ${isScrolling && visible ? 'bg-background/95 backdrop-blur-sm shadow-xs' : 'bg-background'}
       `}
     >
       {/* Scroll progress indicator */}
-      <ScrollProgress color="var(--linkedin-blue-bright)" height={2} />
+      <ScrollProgress color='var(--linkedin-blue-bright)' height={2} />
       <div className='max-w-6xl mx-auto px-4 flex items-center h-14'>
         {/* Logo */}
         <div className='mr-4'>
@@ -62,12 +62,9 @@ export function Navbar({ currentLocale, onLocaleChange }: NavbarProps) {
         <NavigationMenu className='ml-auto'>
           <NavigationMenuList className='flex items-center gap-1'>
             <NavigationMenuItem>
-              <LanguageSwitcher 
-                currentLocale={currentLocale} 
-                onChange={onLocaleChange} 
-              />
+              <LanguageSwitcher currentLocale={currentLocale} onChange={onLocaleChange} />
             </NavigationMenuItem>
-            
+
             <NavigationMenuItem>
               <Button variant='ghost' size='icon' asChild>
                 <NavigationMenuLink>

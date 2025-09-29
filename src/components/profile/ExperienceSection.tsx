@@ -1,6 +1,6 @@
-import { Pencil1Icon, PlusIcon } from '@radix-ui/react-icons';
+// import { Pencil1Icon, PlusIcon } from '@radix-ui/react-icons';
 import { Avatar, AvatarFallback, AvatarImage } from '../ui/avatar';
-import { Button } from '../ui/button';
+// import { Button } from '../ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '../ui/card';
 import { Separator } from '../ui/separator';
 
@@ -45,17 +45,17 @@ const experiences: Experience[] = [
 
 export function ExperienceSection() {
   return (
-    <Card className='mt-4 shadow-sm'>
+    <Card className='mt-4 shadow-xs'>
       <CardHeader className='flex flex-row items-center justify-between'>
         <CardTitle>Experience</CardTitle>
-        <div className='flex gap-2'>
+        {/* <div className='flex gap-2'>
           <Button variant='ghost' size='icon'>
             <PlusIcon className='h-4 w-4' />
           </Button>
           <Button variant='ghost' size='icon'>
             <Pencil1Icon className='h-4 w-4' />
           </Button>
-        </div>
+        </div> */}
       </CardHeader>
       <CardContent>
         {experiences.map((exp, index) => (
@@ -69,9 +69,9 @@ export function ExperienceSection() {
               <div className='flex-1'>
                 <div className='flex justify-between'>
                   <h3 className='font-medium'>{exp.title}</h3>
-                  <Button variant='ghost' size='icon' className='h-8 w-8'>
+                  {/* <Button variant='ghost' size='icon' className='h-8 w-8'>
                     <Pencil1Icon className='h-4 w-4' />
-                  </Button>
+                  </Button> */}
                 </div>
                 <p className='text-sm text-muted-foreground'>{exp.company}</p>
                 <p className='text-sm text-muted-foreground'>

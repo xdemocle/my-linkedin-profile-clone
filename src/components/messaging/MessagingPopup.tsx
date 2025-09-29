@@ -114,12 +114,12 @@ export function MessagingPopup() {
   return (
     <div className='fixed bottom-0 right-6'>
       {!isExpanded ? (
-        <Button className='rounded-t-lg rounded-b-none gap-2 h-12 px-6 shadow-sm' onClick={() => setIsExpanded(true)}>
+        <Button className='rounded-t-lg rounded-b-none gap-2 h-12 px-6 shadow-xs' onClick={() => setIsExpanded(true)}>
           <ChatBubbleIcon className='h-5 w-5' />
           Messaging
         </Button>
       ) : (
-        <Card className='w-[360px] shadow-sm'>
+        <Card className='w-[360px] shadow-xs'>
           <CardHeader className='py-3 px-4 flex flex-row items-center justify-between'>
             <div className='flex items-center gap-2'>
               <CardTitle className='text-base'>Messaging</CardTitle>

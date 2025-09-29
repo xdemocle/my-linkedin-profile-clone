@@ -54,7 +54,7 @@ const recommendations: Recommendation[] = [
 
 export function RecommendationsSection() {
   return (
-    <Card className='mt-4 shadow-sm'>
+    <Card className='mt-4 shadow-xs'>
       <CardHeader className='flex flex-row items-center justify-between'>
         <CardTitle>Recommendations</CardTitle>
         {/* <Button variant='ghost' size='icon'>

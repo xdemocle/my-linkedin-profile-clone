@@ -1,5 +1,5 @@
 import { Avatar, AvatarFallback, AvatarImage } from '../ui/avatar';
-import { Button } from '../ui/button';
+// import { Button } from '../ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '../ui/card';
 import { ScrollArea } from '../ui/scroll-area';
 
@@ -51,7 +51,7 @@ const people: Person[] = [
 
 export function PeopleAlsoViewed() {
   return (
-    <Card className='shadow-sm'>
+    <Card className='shadow-xs'>
       <CardHeader>
         <CardTitle className='text-base'>People also viewed</CardTitle>
       </CardHeader>
@@ -67,9 +67,9 @@ export function PeopleAlsoViewed() {
                 <h3 className='font-medium text-sm truncate'>{person.name}</h3>
                 <p className='text-xs text-muted-foreground line-clamp-2'>{person.title}</p>
                 <p className='text-xs text-muted-foreground mt-1'>{person.connections}+ connections</p>
-                <Button variant='outline' size='sm' className='mt-2 w-full text-xs h-7'>
+                {/* <Button variant='outline' size='sm' className='mt-2 w-full text-xs h-7'>
                   Connect
-                </Button>
+                </Button> */}
               </div>
             </div>
           ))}

@@ -1,7 +1,7 @@
-import { Pencil1Icon, PlusIcon } from '@radix-ui/react-icons';
+// import { Pencil1Icon, PlusIcon } from '@radix-ui/react-icons';
 import { Avatar, AvatarFallback, AvatarImage } from '../ui/avatar';
 import { Badge } from '../ui/badge';
-import { Button } from '../ui/button';
+// import { Button } from '../ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '../ui/card';
 import { Separator } from '../ui/separator';
 
@@ -46,10 +46,10 @@ const skills: Skill[] = [
 
 export function SkillsSection() {
   return (
-    <Card className='mt-4 shadow-sm'>
+    <Card className='mt-4 shadow-xs'>
       <CardHeader className='flex flex-row items-center justify-between'>
         <CardTitle>Skills</CardTitle>
-        <div className='flex gap-2'>
+        {/* <div className='flex gap-2'>
           <Button variant='ghost' size='sm'>
             Take skill quiz
           </Button>
@@ -59,7 +59,7 @@ export function SkillsSection() {
           <Button variant='ghost' size='icon'>
             <Pencil1Icon className='h-4 w-4' />
           </Button>
-        </div>
+        </div> */}
       </CardHeader>
       <CardContent>
         {skills.map((skill, index) => (

@@ -48,7 +48,7 @@ export function ProfileLayout({ locale, onLocaleChange }: ProfileLayoutProps) {
             {/* <ConnectionsSection /> */}
 
             {/* Ad section */}
-            {/* <div className='bg-card p-4 rounded-md shadow-sm text-center'>
+            {/* <div className='bg-card p-4 rounded-md shadow-xs text-center'>
               <p className='text-xs text-muted-foreground mb-2'>Ad</p>
               <h3 className='font-medium text-sm'>Unlock Your Career Potential</h3>
               <p className='text-xs text-muted-foreground mt-1 mb-3'>Get exclusive insights with LinkedIn Premium</p>
