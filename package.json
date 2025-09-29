@@ -9,7 +9,6 @@
     "type": "git",
     "url": "https://github.com/xdemocle/my-linkedin-profile-clone.git"
   },
-  "main": "index.js",
   "type": "module",
   "engines": {
     "node": ">=22.19.0"
@@ -22,7 +21,7 @@
   },
   "scripts": {
     "dev": "vite",
-    "build": "bunx vite build",
+    "build": "vite build",
     "lint": "eslint .",
     "preview": "bun run build && wrangler pages dev",
     "deploy": "bun run build && wrangler pages deploy",
