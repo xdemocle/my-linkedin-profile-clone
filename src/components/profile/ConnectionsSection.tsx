@@ -58,7 +58,7 @@ const connections: Connection[] = [
 
 export function ConnectionsSection() {
   return (
-    <Card className="shadow-sm">
+    <Card className="connections-section">
       <CardHeader className="flex flex-row items-center justify-between">
         <CardTitle>Connections</CardTitle>
         <Button variant="outline" size="sm">See all (500+)</Button>

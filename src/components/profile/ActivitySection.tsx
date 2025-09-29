@@ -5,7 +5,7 @@ import { PostFeed } from '../feed/PostFeed';
 
 export function ActivitySection() {
   return (
-    <Card className="shadow-sm">
+    <Card className="activity-section">
       <CardHeader className="flex flex-row items-center justify-between">
         <CardTitle>Activity</CardTitle>
         <Button variant="outline" size="sm">Create a post</Button>

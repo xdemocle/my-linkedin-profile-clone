@@ -4,7 +4,7 @@ import { Button } from '../ui/button';
 
 export function ProfileHeader() {
   return (
-    <div className='bg-card rounded-md overflow-hidden shadow-sm'>
+    <div className='bg-card rounded-md overflow-hidden profile-header'>
       {/* Cover Photo */}
       <div className='h-32 md:h-48 bg-muted relative'>
         <img
