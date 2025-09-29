@@ -2,7 +2,7 @@ import Bun from "bun";
 
 await Bun.build({
   entrypoints: [
-    "./public/linkedin.css",
+    "./public/example.css",
   ],
   outdir: "./build",
   minify: true,
@@ -15,3 +15,4 @@ await Bun.build({
   // },
   // --css-chunking
 });
+
