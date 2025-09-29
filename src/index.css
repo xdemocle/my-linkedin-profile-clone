@@ -2,7 +2,10 @@
 @import 'tw-animate-css';
 @import './theme.css';
 
-@custom-variant dark (&:is(.dark *));
+/* Ensure smooth theme transitions */
+* {
+  transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
 
 /* RTL Support */
 .rtl {

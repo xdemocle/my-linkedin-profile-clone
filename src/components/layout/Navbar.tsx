@@ -12,6 +12,7 @@ import { Button } from '../ui/button';
 import { Input } from '../ui/input';
 import { LanguageSwitcher } from '../ui/language-switcher';
 import { ScrollProgress } from '../ui/scroll-progress';
+import { ThemeToggle } from '../ui/theme-toggle';
 
 const LinkedInLogo = () => (
   <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' className='h-8 w-8 text-primary' fill='currentColor'>
@@ -26,7 +27,7 @@ interface NavbarProps {
 
 export function Navbar({ currentLocale, onLocaleChange }: NavbarProps) {
   return (
-    <header className="border-b border-border fixed top-0 left-0 right-0 z-50 bg-background shadow-xs">
+    <header className="border-b border-border bg-card fixed top-0 left-0 right-0 z-50 shadow-xs">
       {/* Scroll progress indicator */}
       <ScrollProgress color='var(--linkedin-blue-bright)' height={2} />
       <div className='max-w-6xl mx-auto px-4 flex items-center h-14'>
@@ -46,6 +47,8 @@ export function Navbar({ currentLocale, onLocaleChange }: NavbarProps) {
         {/* Navigation */}
         <nav className='ml-auto flex items-center gap-1'>
           <LanguageSwitcher currentLocale={currentLocale} onChange={onLocaleChange} />
+          
+          <ThemeToggle />
 
           <Button variant='ghost' size='icon'>
             <HomeIcon className='h-5 w-5' />

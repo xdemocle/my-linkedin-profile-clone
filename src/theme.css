@@ -43,7 +43,6 @@
   
   --card: var(--linkedin-gray-50);
   --card-foreground: var(--linkedin-gray-900);
-  --card-border: rgba(0, 0, 0, 0.02); /* Ultra subtle border color */
   
   --popover: var(--linkedin-gray-50);
   --popover-foreground: var(--linkedin-gray-900);
