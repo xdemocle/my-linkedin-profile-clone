@@ -141,7 +141,6 @@
     "endorsedBy": "Endorsed by {name} and {count} others",
     "showAllSkills": "Show all skills"
   },
-  },
   "Recommendations": {
     "title": "Recommendations",
     "showAllRecommendations": "Show all recommendations",
