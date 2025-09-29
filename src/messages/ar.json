@@ -1,5 +1,10 @@
 {
   "ProfileLayout": {
-    "hello": "مرحبا {firstName}!"
+    "hello": "مرحبا {firstName}!",
+    "welcome": "مرحباً بك في ملف لينكدإن",
+    "about": "نبذة",
+    "experience": "الخبرة",
+    "education": "التعليم",
+    "skills": "المهارات"
   }
 }

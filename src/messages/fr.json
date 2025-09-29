@@ -1,5 +1,10 @@
 {
   "ProfileLayout": {
-    "hello": "Bonjour {firstName}!"
+    "hello": "Bonjour {firstName}!",
+    "welcome": "Bienvenue sur le Profil LinkedIn",
+    "about": "À Propos",
+    "experience": "Expérience",
+    "education": "Formation",
+    "skills": "Compétences"
   }
 }
