@@ -6,7 +6,7 @@ import {
   MagnifyingGlassIcon,
   PersonIcon,
 } from '@radix-ui/react-icons';
-import { Avatar } from '../ui/avatar';
+import { Avatar, AvatarFallback, AvatarImage } from '../ui/avatar';
 import { Button } from '../ui/button';
 import { Input } from '../ui/input';
 import { NavigationMenu, NavigationMenuItem, NavigationMenuLink, NavigationMenuList } from '../ui/navigation-menu';
@@ -81,8 +81,8 @@ export function Navbar() {
               <Button variant='ghost' size='icon' className='rounded-full' asChild>
                 <NavigationMenuLink>
                   <Avatar className='h-7 w-7'>
-                    <Avatar.Image src='https://github.com/shadcn.png' alt='User' />
-                    <Avatar.Fallback>RR</Avatar.Fallback>
+                    <AvatarImage src='https://github.com/shadcn.png' alt='User' />
+                    <AvatarFallback>RR</AvatarFallback>
                   </Avatar>
                 </NavigationMenuLink>
               </Button>

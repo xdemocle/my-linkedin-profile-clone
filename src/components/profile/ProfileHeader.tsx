@@ -32,6 +32,7 @@ export function ProfileHeader() {
         <div className='ml-32 pt-2'>
           <div className='flex justify-between items-start'>
             <div>
+              <h1 className='text-2xl font-bold'>Rocco Russo</h1>
               <p className='text-muted-foreground'>Full Stack Frontend Web Developer</p>
               <div className='flex items-center gap-2 mt-1 text-sm'>
                 <span>Milano, Italia</span>

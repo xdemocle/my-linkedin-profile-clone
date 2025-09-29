@@ -1,5 +1,5 @@
 import { Pencil1Icon, PlusIcon } from '@radix-ui/react-icons';
-import { Avatar } from '../ui/avatar';
+import { Avatar, AvatarFallback, AvatarImage } from '../ui/avatar';
 import { Badge } from '../ui/badge';
 import { Button } from '../ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '../ui/card';
@@ -76,8 +76,8 @@ export function SkillsSection() {
                 <div className='flex -space-x-2'>
                   {skill.endorsedBy.map((person, i) => (
                     <Avatar key={i} className='w-7 h-7 border-2 border-background'>
-                      <Avatar.Image src={person.avatar} />
-                      <Avatar.Fallback>{person.name[0]}</Avatar.Fallback>
+                      <AvatarImage src={person.avatar} />
+                      <AvatarFallback>{person.name[0]}</AvatarFallback>
                     </Avatar>
                   ))}
                 </div>

@@ -1,5 +1,5 @@
 import { Pencil1Icon, PlusIcon } from '@radix-ui/react-icons';
-import { Avatar } from '../ui/avatar';
+import { Avatar, AvatarFallback, AvatarImage } from '../ui/avatar';
 import { Button } from '../ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '../ui/card';
 import { Separator } from '../ui/separator';
@@ -63,8 +63,8 @@ export function ExperienceSection() {
             {index > 0 && <Separator className='my-6' />}
             <div className='flex gap-4'>
               <Avatar className='w-12 h-12'>
-                <Avatar.Image src={exp.logo} />
-                <Avatar.Fallback>{exp.company[0]}</Avatar.Fallback>
+                <AvatarImage src={exp.logo} />
+                <AvatarFallback>{exp.company[0]}</AvatarFallback>
               </Avatar>
               <div className='flex-1'>
                 <div className='flex justify-between'>
