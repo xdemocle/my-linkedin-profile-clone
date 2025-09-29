@@ -2,10 +2,12 @@ import tailwindcss from '@tailwindcss/vite';
 import react from '@vitejs/plugin-react-swc';
 import { defineConfig } from 'vite';
 import { vitePrerenderPlugin } from 'vite-prerender-plugin';
+import mdx from '@mdx-js/rollup';
 
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [
+    { enforce: 'pre', ...mdx() },
     react(),
     tailwindcss(),
     vitePrerenderPlugin({
@@ -33,6 +35,11 @@ export default defineConfig({
       },
     },
   ],
+  resolve: {
+    alias: {
+      '@': '/src',
+    },
+  },
   build: {
     outDir: 'dist/client',
     sourcemap: true,

@@ -108,6 +108,7 @@ Example: `bunx --bun shadcn@latest add button`
 - **ESLint 9.36.0** with modern flat configuration
 - **Wrangler 4.40.2** for Cloudflare deployment
 - **vite-prerender-plugin** for static site generation
+- **MDX 3.1.1** with @mdx-js/rollup and @mdx-js/react for MDX content support
 
 ## Component Architecture
 
@@ -139,6 +140,31 @@ For the LinkedIn profile clone, key component categories include:
 - **Interactive**: Button, Dialog, Dropdown Menu, Hover Card
 - **Content**: Collapsible, Scroll Area, Badge
 - **Forms**: Input, Textarea, Search
+
+## MDX Support
+
+The project includes **MDX** support for writing content with React components embedded in Markdown:
+
+- **@mdx-js/rollup 3.1.1** - Rollup plugin for processing MDX files
+- **@mdx-js/react 3.1.1** - React runtime for MDX components
+- **Configuration**: MDX plugin configured with `enforce: 'pre'` in Vite
+- **TypeScript**: Full TypeScript support with type declarations in `src/mdx.d.ts`
+- **Usage**: Import and use `.mdx` files as React components
+- **File Extension**: Use `.mdx` extension for files containing JSX/React components in Markdown
+
+### MDX Example Usage
+
+```tsx
+import MyContent from './content/example.mdx';
+
+function Page() {
+  return (
+    <div>
+      <MyContent />
+    </div>
+  );
+}
+```
 
 ## Notes
 
