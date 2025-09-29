@@ -1,8 +1,8 @@
 :root {
-  --tenor-gif-logo: url(/assets/svg/d2kkhofmuuxleioyci47pssdd.svg.svg.svg);
+  --tenor-gif-logo: url(../svg/a.svg);
 }
 .theme--dark {
-  --tenor-gif-logo: url(/assets/svg/4ug4kljhcojrav5cwfgdoypp1.svg.svg.svg);
+  --tenor-gif-logo: url(../svg/a.svg);
 }
 .tenor-gif__search-popover {
   position: absolute;

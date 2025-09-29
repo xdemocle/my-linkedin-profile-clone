@@ -1,8 +1,8 @@
 :root {
-  --msg-reactions-emoji-plus-icon: url(/assets/svg/dr1b79i84eh8czy2ijk7i9z7c.svg.svg);
+  --msg-reactions-emoji-plus-icon: url(../svg/a.svg);
 }
 .theme--dark {
-  --msg-reactions-emoji-plus-icon: url(/assets/svg/$1.svg.svg.svg);
+  --msg-reactions-emoji-plus-icon: url(../svg/a.svg);
 }
 .emoji-popular-list__container {
   list-style: none;
@@ -93,7 +93,7 @@
 }
 @media (-ms-high-contrast: active), (forced-colors: active) {
   .msg-reactions__entry-point .artdeco-button__icon {
-    background-image: url(/assets/svg/$1.svg.svg.svg);
+    background-image: url(../svg/a.svg);
   }
 }
 @media (-ms-high-contrast: white-on-black), (forced-colors: active) and (prefers-color-scheme: dark) {
@@ -254,7 +254,7 @@
 }
 @media (-ms-high-contrast: active), (forced-colors: active) {
   .msg-reactions-reaction-summary-presenter__entry-point .artdeco-button__icon {
-    background-image: url(/assets/svg/$1.svg.svg.svg);
+    background-image: url(../svg/a.svg);
   }
 }
 @media (-ms-high-contrast: white-on-black), (forced-colors: active) and (prefers-color-scheme: dark) {
@@ -333,5 +333,5 @@
 }
 .msg-reactions-reaction-summary-presenter__entry-point:hover .artdeco-button__icon {
   background-color: var(--color-background-brand-accent-4);
-  border: 1px solid var(--color-brand-accent-4.svg);
+  border: 1px solid var(--color-brand-accent-4);
 }
