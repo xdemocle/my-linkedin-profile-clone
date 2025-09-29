@@ -32,3 +32,4 @@ dist-ssr
 .github/chatmodes/rok.chatmode.md
 output.css
 build/linkedin.css
+build/
