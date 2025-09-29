@@ -34,7 +34,7 @@ export function Post({
   shares
 }: PostProps) {
   return (
-    <Card className="mb-4 overflow-hidden post-card">
+    <Card className="mb-4 overflow-hidden shadow-sm">
       <CardHeader className="p-4 pb-0">
         <div className="flex items-start gap-3">
           <Avatar className="h-12 w-12">
