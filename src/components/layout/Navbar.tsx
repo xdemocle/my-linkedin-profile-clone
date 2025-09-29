@@ -6,7 +6,9 @@ import {
   MagnifyingGlassIcon,
   PersonIcon,
 } from '@radix-ui/react-icons';
+import { useScrollDirection } from '../../hooks/useScrollDirection';
 import { Avatar, AvatarFallback, AvatarImage } from '../ui/avatar';
+import { ScrollProgress } from '../ui/scroll-progress';
 import { Button } from '../ui/button';
 import { Input } from '../ui/input';
 import { NavigationMenu, NavigationMenuItem, NavigationMenuLink, NavigationMenuList } from '../ui/navigation-menu';
@@ -18,8 +20,21 @@ const LinkedInLogo = () => (
 );
 
 export function Navbar() {
+  const { visible, isScrolling } = useScrollDirection({
+    threshold: 15,          // Slightly higher threshold to avoid too-sensitive toggling
+    idleHideDelay: 2500,    // Hide after 2.5 seconds of idle time
+    initiallyVisible: true
+  });
+  
   return (
-    <header className='border-b border-border bg-background sticky top-0 z-50'>
+    <header className={`
+      border-b border-border sticky top-0 z-50
+      transition-all duration-300 ease-in-out
+      ${visible ? 'translate-y-0' : '-translate-y-full'}
+      ${isScrolling && visible ? 'shadow-md bg-background/95 backdrop-blur-sm' : 'bg-background'}
+    `}>
+      {/* Scroll progress indicator */}
+      <ScrollProgress color="var(--linkedin-blue-bright)" height={2} />
       <div className='max-w-6xl mx-auto px-4 flex items-center h-14'>
         {/* Logo */}
         <div className='mr-4'>
