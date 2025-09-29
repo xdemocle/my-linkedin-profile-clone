@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { IntlProvider } from 'use-intl';
-import { ProfileLayout } from './components/layout/ProfileLayout';
+import { Router } from './components/Router';
 import { type Locale, getDirection, getMessages } from './lib/i18n';
 
 type Messages = Record<string, unknown>;
@@ -22,7 +22,7 @@ export function Root() {
   return (
     <div dir={direction} className={direction === 'rtl' ? 'rtl' : 'ltr'}>
       <IntlProvider messages={messages} locale={locale}>
-        <ProfileLayout locale={locale} onLocaleChange={setLocale} />
+        <Router locale={locale} onLocaleChange={setLocale} />
       </IntlProvider>
     </div>
   );

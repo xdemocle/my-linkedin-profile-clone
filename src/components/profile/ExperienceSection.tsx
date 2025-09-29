@@ -1,6 +1,7 @@
 // import { Pencil1Icon, PlusIcon } from '@radix-ui/react-icons';
+import { Link } from 'wouter';
 import { Avatar, AvatarFallback, AvatarImage } from '../ui/avatar';
-// import { Button } from '../ui/button';
+import { Button } from '../ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '../ui/card';
 import { Separator } from '../ui/separator';
 
@@ -48,14 +49,11 @@ export function ExperienceSection() {
     <Card className='mt-4 shadow-xs'>
       <CardHeader className='flex flex-row items-center justify-between'>
         <CardTitle>Experience</CardTitle>
-        {/* <div className='flex gap-2'>
-          <Button variant='ghost' size='icon'>
-            <PlusIcon className='h-4 w-4' />
-          </Button>
-          <Button variant='ghost' size='icon'>
-            <Pencil1Icon className='h-4 w-4' />
-          </Button>
-        </div> */}
+        <Button variant='ghost' size='sm' asChild>
+          <Link href="/experience">
+            Show all experiences
+          </Link>
+        </Button>
       </CardHeader>
       <CardContent>
         {experiences.map((exp, index) => (
