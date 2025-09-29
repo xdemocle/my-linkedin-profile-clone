@@ -18,11 +18,14 @@ This is a LinkedIn profile clone built with React, TypeScript, and Vite. The pro
 ## Project Structure
 
 - **src/** - Main source code directory
-  - **App.tsx** - Main React component (currently basic Vite template)
+  - **app.tsx** - Main React component (currently basic Vite template)
   - **main.tsx** - Application entry point with prerender function
-  - **assets/** - Directory for static assets (currently empty)
-  - **index.css** - Global CSS styles
-  - **App.css** - Component-specific CSS
+  - **components/ui/** - shadcn/ui component library
+    - **button.tsx** - Reusable button component with Radix UI Slot
+    - **button.variants.ts** - Button variant definitions using CVA
+  - **lib/utils.ts** - Utility functions including `cn` for class merging
+  - **index.css** - Global CSS styles with Tailwind CSS
+  - **vite-env.d.ts** - Vite environment type definitions
 - **public/** - Public static files served directly
   - **assets/** - Organized assets with ico/, png/, css/, images/ subdirectories
 - **dist/client/** - Build output directory for Vite
@@ -30,6 +33,7 @@ This is a LinkedIn profile clone built with React, TypeScript, and Vite. The pro
 ## Build System
 
 - **Vite** with React SWC for fast builds and HMR
+- **Tailwind CSS v4** with @tailwindcss/vite plugin for styling
 - **vite-prerender-plugin** for static site generation
 - Custom build plugin that exits process on completion
 - Sourcemaps enabled for debugging
