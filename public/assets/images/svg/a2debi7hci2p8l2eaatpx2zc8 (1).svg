@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" id="image-small-on-dark" aria-hidden="true" role="none" data-supported-dps="48x48" width="48" height="48">
+  <path fill="#38434f" d="M3 5h42v32H3z"/>
+  <path d="M0 2v44h48V2zm45 35H3V5h42z" fill="#788fa5"/>
+  <path d="M45 35L27 17l-6 6-10-10-8 8v16h42z" fill="#56687a"/>
+  <path d="M45 22.55a8.53 8.53 0 00-8 1.06c-4.45 2.91-4.1 5.64-7.42 7.77-3.64 2.35-5.31 1.46-8.2 3.09A8.6 8.6 0 0018.61 37H45z" fill="#9db3c8"/>
+  <path d="M38.83 15.83a4 4 0 01-5.66 0l5.66-5.66a4 4 0 010 5.66z" fill="#f8c77e"/>
+</svg>
