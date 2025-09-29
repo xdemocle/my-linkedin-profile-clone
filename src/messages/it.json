@@ -75,6 +75,7 @@
   },
   "Experience": {
     "title": "Esperienza",
+    "showAllExperiences": "Mostra tutte le esperienze",
     "technicalLead": "Technical Lead",
     "frontendDeveloper": "Sviluppatore Frontend",
     "seniorSolutionsEngineer": "Senior Solutions Engineer",
@@ -85,7 +86,10 @@
     "milano": "Milano, Italia",
     "ledFrontendDevelopment": "Ho guidato lo sviluppo frontend per progetti multi-cliente. Implementato design UI responsive e ottimizzato le prestazioni web. Formato sviluppatori junior e stabilito standard di codifica.",
     "developedInteractiveUI": "Ho sviluppato interfacce utente interattive utilizzando React e framework CSS moderni. Collaborato con il team di design per implementare componenti pixel-perfect e animazioni.",
-    "createdDashboardInterfaces": "Ho creato interfacce dashboard per strumenti di monitoraggio della sicurezza. Collaborato con il team backend per integrare API e componenti di visualizzazione dati in tempo reale."
+    "createdDashboardInterfaces": "Ho creato interfacce dashboard per strumenti di monitoraggio della sicurezza. Collaborato con il team backend per integrare API e componenti di visualizzazione dati in tempo reale.",
+    "duration1": "Apr 2022 - Presente · 1 anno 6 mesi",
+    "duration2": "Set 2020 - Mar 2022 · 1 anno 7 mesi",
+    "duration3": "Giu 2018 - Ago 2020 · 2 anni 3 mesi"
   },
   "Skills": {
     "title": "Competenze",

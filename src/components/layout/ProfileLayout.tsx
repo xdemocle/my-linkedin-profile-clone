@@ -14,16 +14,16 @@ export function ProfileLayout({ locale, onLocaleChange }: ProfileLayoutProps) {
   return (
     <div className='min-h-screen bg-background'>
       <Navbar currentLocale={locale} onLocaleChange={onLocaleChange} />
-      {/* Fixed padding for fixed navbar */}
-      <main className="max-w-6xl mx-auto px-4 py-6 pt-20">
-        <div className='grid grid-cols-1 lg:grid-cols-3 gap-4'>
-          {/* Main content - 2/3 width on large screens */}
-          <div className='lg:col-span-2'>
+      {/* Fixed padding for fixed navbar with improved mobile spacing */}
+      <main className="max-w-6xl mx-auto px-2 sm:px-4 py-4 sm:py-6 pt-16 sm:pt-20">
+        <div className='grid grid-cols-1 lg:grid-cols-3 gap-3 sm:gap-4'>
+          {/* Main content - 2/3 width on large screens, full width on mobile */}
+          <div className='lg:col-span-2 order-1'>
             <ProfileMainContent />
           </div>
 
-          {/* Sidebar - 1/3 width on large screens */}
-          <div className='lg:col-span-1'>
+          {/* Sidebar - 1/3 width on large screens, full width on mobile, appears after main content */}
+          <div className='lg:col-span-1 order-2'>
             <ProfileSidebar />
           </div>
         </div>

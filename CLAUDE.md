@@ -166,6 +166,90 @@ function Page() {
 }
 ```
 
+## Blog Setup
+
+The project includes a **blog page** at the `/blog` route:
+
+- **BlogPage Component**: Located at `src/pages/BlogPage.tsx`
+- **Route Configuration**: Configured in `src/components/Router.tsx` with `/blog` path
+- **Navigation**: Blog link added to Navbar with ReaderIcon from Lucide React
+- **Content**: Features blog posts with author information, publish dates, read times, and tags
+- **Layout**: Uses shadcn/ui Card components for post display and responsive grid layout
+- **Internationalization**: Fully integrated with use-intl for multi-language support
+- **Features**:
+  - Featured post section highlighting the latest blog post
+  - Recent posts grid with hover effects
+  - Newsletter signup section for user engagement
+  - Responsive design with mobile-first approach
+  - Blog post metadata including author, date, read time, and tags
+
+### Blog Structure
+
+```tsx
+// Blog posts are defined as TypeScript interfaces
+interface BlogPost {
+  id: string;
+  title: string;
+  description: string;
+  content: string;
+  author: { name: string; avatar: string };
+  publishedAt: string;
+  readTime: number;
+  tags: string[];
+  slug: string;
+}
+```
+
+### Translation Keys
+
+Blog translations are organized under the `"Blog"` section in translation files:
+
+- `title`, `subtitle`, `featured`, `recentPosts`
+- `readFullArticle`, `readMore`, `minRead`
+- `stayUpdated`, `subscribeDescription`, `enterEmail`, `subscribe`
+
+## Development Plan & Priorities
+
+The project follows a structured development plan outlined in `DEVELOPMENT_PLAN.md`:
+
+### **High Priority Tasks**
+
+1. **Complete Translation Implementation**:
+   - ExperienceSection job titles and descriptions (✅ **COMPLETED**)
+   - SkillsSection skill names and endorsements (✅ **COMPLETED**)
+   - ProfileSidebar languages, interests, and footer (✅ **COMPLETED**)
+   - ActivityPage & ExperiencePage full translations
+   - BlogPage translations (✅ **COMPLETED**)
+
+2. **UX & Accessibility Improvements**:
+   - Error boundaries for translation/data loading
+   - Mobile-first responsive design completion (✅ **COMPLETED**)
+   - ARIA labels and keyboard navigation (✅ **COMPLETED**)
+
+3. **Advanced Features**:
+   - Social sharing functionality
+   - Print-optimized styles
+   - PWA capabilities with offline support
+
+4. **Content Management**:
+   - Dynamic profile data layer
+   - Inline editing capabilities
+
+### **Medium Priority Tasks**
+
+- Functional navbar search
+- Real profile analytics data
+- Enhanced mobile navigation patterns
+- Optimized touch interactions
+
+### **Explicitly Excluded (Low Priority)**
+
+❌ **Do not implement**: Interactive elements (likes/comments), loading states, image upload, PDF export, testing, performance monitoring
+
+### **Current Development Phase**
+
+**Phase 1**: Translation completion and mobile accessibility improvements are the immediate priorities.
+
 ## Notes
 
 - The project is in early development (app.tsx still contains Vite template code)

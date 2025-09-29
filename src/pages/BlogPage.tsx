@@ -115,7 +115,7 @@ export function BlogPage() {
               </div>
               <div className="flex items-center gap-1">
                 <ClockIcon className="w-4 h-4" />
-                <span>{blogPosts[0].readTime} min read</span>
+                <span>{blogPosts[0].readTime} {t('minRead')}</span>
               </div>
             </div>
             <div className="flex flex-wrap gap-2 mb-4">
@@ -126,7 +126,7 @@ export function BlogPage() {
               ))}
             </div>
             <Button size="lg" className="w-full sm:w-auto">
-              Read Full Article
+              {t('readFullArticle')}
             </Button>
           </CardContent>
         </Card>
@@ -134,7 +134,7 @@ export function BlogPage() {
 
       {/* Recent Posts */}
       <div className="mb-8">
-        <h2 className="text-2xl font-bold mb-6">Recent Posts</h2>
+        <h2 className="text-2xl font-bold mb-6">{t('recentPosts')}</h2>
         <div className="grid gap-6">
           {blogPosts.slice(1).map((post) => (
             <Card key={post.id} className="hover:shadow-md transition-shadow">
@@ -159,7 +159,7 @@ export function BlogPage() {
                   </div>
                   <div className="flex items-center gap-1">
                     <ClockIcon className="w-4 h-4" />
-                    <span>{post.readTime} min read</span>
+                    <span>{post.readTime} {t('minRead')}</span>
                   </div>
                 </div>
                 <div className="flex flex-wrap gap-2 mb-4">
@@ -169,7 +169,7 @@ export function BlogPage() {
                     </Badge>
                   ))}
                 </div>
-                <Button variant="outline">Read More</Button>
+                <Button variant="outline">{t('readMore')}</Button>
               </CardContent>
             </Card>
           ))}
@@ -179,19 +179,19 @@ export function BlogPage() {
       {/* Newsletter Signup */}
       <Card className="bg-muted/50">
         <CardHeader className="text-center">
-          <CardTitle>Stay Updated</CardTitle>
+          <CardTitle>{t('stayUpdated')}</CardTitle>
           <CardDescription>
-            Subscribe to get notified about new posts on frontend development, Web3, and tech insights.
+            {t('subscribeDescription')}
           </CardDescription>
         </CardHeader>
         <CardContent className="flex flex-col sm:flex-row gap-4 items-center justify-center">
           <div className="flex w-full max-w-sm gap-2">
             <input
               type="email"
-              placeholder="Enter your email"
+              placeholder={t('enterEmail')}
               className="flex-1 px-3 py-2 rounded-md border border-input bg-background text-sm ring-offset-background placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2"
             />
-            <Button>Subscribe</Button>
+            <Button>{t('subscribe')}</Button>
           </div>
         </CardContent>
       </Card>

@@ -1,29 +1,50 @@
+import { useTranslations } from 'use-intl';
 import { Badge } from '../ui/badge';
 import { Card, CardContent, CardHeader, CardTitle } from '../ui/card';
 
-const profileLanguages = [
-  { name: 'Italian', level: 'Native' },
-  { name: 'English', level: 'Professional' },
-  { name: 'Spanish', level: 'Conversational' },
-];
+interface Language {
+  nameKey: string;
+  levelKey: string;
+}
 
-const interests = ['Web Development', 'UI/UX Design', 'React', 'TypeScript', 'Open Source', 'Tech Innovation'];
+interface Interest {
+  key: string;
+}
 
 export function ProfileSidebar() {
+  const tLanguages = useTranslations('Languages');
+  const tInterests = useTranslations('Interests');
+  const tFooter = useTranslations('ProfileFooter');
+
+  const profileLanguages: Language[] = [
+    { nameKey: 'italian', levelKey: 'native' },
+    { nameKey: 'english', levelKey: 'professional' },
+    { nameKey: 'spanish', levelKey: 'conversational' },
+  ];
+
+  const interests: Interest[] = [
+    { key: 'webDevelopment' },
+    { key: 'uiUxDesign' },
+    { key: 'react' },
+    { key: 'typeScript' },
+    { key: 'openSource' },
+    { key: 'techInnovation' },
+  ];
+
   return (
     <div className='space-y-4'>
       {/* Languages */}
       <Card className='shadow-xs'>
         <CardHeader>
-          <CardTitle className='text-base'>Languages</CardTitle>
+          <CardTitle className='text-base'>{tLanguages('title')}</CardTitle>
         </CardHeader>
         <CardContent className='pt-0'>
           <div className='space-y-3'>
             {profileLanguages.map((lang, index) => (
               <div key={index} className='flex justify-between items-center'>
-                <span className='font-medium text-sm'>{lang.name}</span>
+                <span className='font-medium text-sm'>{tLanguages(lang.nameKey)}</span>
                 <Badge variant='secondary' className='text-xs'>
-                  {lang.level}
+                  {tLanguages(lang.levelKey)}
                 </Badge>
               </div>
             ))}
@@ -34,13 +55,13 @@ export function ProfileSidebar() {
       {/* Interests */}
       <Card className='shadow-xs'>
         <CardHeader>
-          <CardTitle className='text-base'>Interests</CardTitle>
+          <CardTitle className='text-base'>{tInterests('title')}</CardTitle>
         </CardHeader>
         <CardContent className='pt-0'>
           <div className='flex flex-wrap gap-2'>
             {interests.map((interest, index) => (
               <Badge key={index} variant='outline' className='text-xs'>
-                {interest}
+                {tInterests(interest.key)}
               </Badge>
             ))}
           </div>
@@ -58,7 +79,7 @@ export function ProfileSidebar() {
                 rel='noopener noreferrer'
                 className='hover:text-primary flex items-center gap-1'
               >
-                LinkedIn Profile
+                {tFooter('linkedinProfile')}
                 <svg
                   className='w-3 h-3'
                   viewBox='0 0 24 24'
@@ -79,7 +100,7 @@ export function ProfileSidebar() {
                 rel='noopener noreferrer'
                 className='hover:text-primary flex items-center gap-1'
               >
-                Personal Website
+                {tFooter('personalWebsite')}
                 <svg
                   className='w-3 h-3'
                   viewBox='0 0 24 24'
@@ -95,7 +116,7 @@ export function ProfileSidebar() {
               </a>
             </div>
             <div className='pt-2 border-t'>
-              <p>© 2024 Rocco Russo</p>
+              <p>{tFooter('copyright')}</p>
             </div>
           </div>
         </CardContent>

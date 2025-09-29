@@ -75,6 +75,7 @@
   },
   "Experience": {
     "title": "Experience",
+    "showAllExperiences": "Show all experiences",
     "technicalLead": "Technical Lead",
     "frontendDeveloper": "Frontend Developer",
     "seniorSolutionsEngineer": "Senior Solutions Engineer",
@@ -85,7 +86,10 @@
     "milano": "Milano, Italy",
     "ledFrontendDevelopment": "Led frontend development for multiple client projects. Implemented responsive UI designs and optimized web performance. Mentored junior developers and established coding standards.",
     "developedInteractiveUI": "Developed interactive user interfaces using React and modern CSS frameworks. Collaborated with design team to implement pixel-perfect components and animations.",
-    "createdDashboardInterfaces": "Created dashboard interfaces for security monitoring tools. Worked with backend team to integrate APIs and real-time data visualization components."
+    "createdDashboardInterfaces": "Created dashboard interfaces for security monitoring tools. Worked with backend team to integrate APIs and real-time data visualization components.",
+    "duration1": "Apr 2022 - Present · 1 yr 6 mos",
+    "duration2": "Sep 2020 - Mar 2022 · 1 yr 7 mos", 
+    "duration3": "Jun 2018 - Aug 2020 · 2 yrs 3 mos"
   },
   "Skills": {
     "title": "Skills",
@@ -132,9 +136,27 @@
     "title": "Languages",
     "english": "English",
     "italian": "Italian",
+    "spanish": "Spanish",
+    "native": "Native",
+    "professional": "Professional", 
+    "conversational": "Conversational",
     "nativeOrBilingual": "Native or bilingual proficiency",
     "fullProfessional": "Full professional proficiency",
     "showAllLanguages": "Show all languages"
+  },
+  "Interests": {
+    "title": "Interests",
+    "webDevelopment": "Web Development",
+    "uiUxDesign": "UI/UX Design",
+    "react": "React",
+    "typeScript": "TypeScript",
+    "openSource": "Open Source",
+    "techInnovation": "Tech Innovation"
+  },
+  "ProfileFooter": {
+    "linkedinProfile": "LinkedIn Profile",
+    "personalWebsite": "Personal Website",
+    "copyright": "© 2024 Rocco Russo"
   },
   "PeopleAlsoViewed": {
     "title": "People also viewed",

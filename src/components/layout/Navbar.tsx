@@ -35,14 +35,14 @@ export function Navbar({ currentLocale, onLocaleChange }: NavbarProps) {
     <header className="border-b bg-card/95 backdrop-blur-sm fixed top-0 left-0 right-0 z-50 shadow-xs">
       {/* Scroll progress indicator */}
       <ScrollProgress color='var(--linkedin-blue-bright)' height={2} />
-      <div className='max-w-6xl mx-auto px-4 flex items-center h-14'>
+      <div className='max-w-6xl mx-auto px-2 sm:px-4 flex items-center h-12 sm:h-14'>
         {/* Logo */}
-        <div className='mr-4'>
+        <div className='mr-2 sm:mr-4'>
           <LinkedInLogo />
         </div>
 
-        {/* Search */}
-        <div className='relative flex-1 max-w-md'>
+        {/* Search - hidden on mobile, shown on sm+ */}
+        <div className='relative flex-1 max-w-md hidden sm:block'>
           <div className='absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none'>
             <MagnifyingGlassIcon className='h-4 w-4 text-muted-foreground' />
           </div>
@@ -50,40 +50,44 @@ export function Navbar({ currentLocale, onLocaleChange }: NavbarProps) {
         </div>
 
         {/* Navigation */}
-        <nav className='ml-auto flex items-center gap-1'>
-          <LanguageSwitcher currentLocale={currentLocale} onChange={onLocaleChange} />
-          
-          <ThemeToggle />
+        <nav className='ml-auto flex items-center gap-0.5 sm:gap-1'>
+          {/* Language and Theme - hidden on mobile */}
+          <div className='hidden md:flex items-center gap-1'>
+            <LanguageSwitcher currentLocale={currentLocale} onChange={onLocaleChange} />
+            <ThemeToggle />
+          </div>
 
-          <Button variant='ghost' size='icon' asChild>
-            <Link href="/">
+          {/* Core navigation - always visible with larger touch targets on mobile */}
+          <Button variant='ghost' size='icon' className='h-10 w-10 sm:h-9 sm:w-9' asChild>
+            <Link href="/" aria-label="Home">
               <HomeIcon className='h-5 w-5' />
             </Link>
           </Button>
 
-          <Button variant='ghost' size='icon' asChild>
-            <Link href="/blog">
+          <Button variant='ghost' size='icon' className='h-10 w-10 sm:h-9 sm:w-9' asChild>
+            <Link href="/blog" aria-label="Blog">
               <ReaderIcon className='h-5 w-5' />
             </Link>
           </Button>
 
-          <Button variant='ghost' size='icon'>
+          {/* Secondary navigation - hidden on small mobile */}
+          <Button variant='ghost' size='icon' className='h-10 w-10 sm:h-9 sm:w-9 hidden xs:flex' aria-label="Profile">
             <PersonIcon className='h-5 w-5' />
           </Button>
 
-          <Button variant='ghost' size='icon'>
+          <Button variant='ghost' size='icon' className='h-10 w-10 sm:h-9 sm:w-9 hidden sm:flex' aria-label="Jobs">
             <BackpackIcon className='h-5 w-5' />
           </Button>
 
-          <Button variant='ghost' size='icon'>
+          <Button variant='ghost' size='icon' className='h-10 w-10 sm:h-9 sm:w-9 hidden sm:flex' aria-label="Messages">
             <ChatBubbleIcon className='h-5 w-5' />
           </Button>
 
-          <Button variant='ghost' size='icon'>
+          <Button variant='ghost' size='icon' className='h-10 w-10 sm:h-9 sm:w-9 hidden xs:flex' aria-label="Notifications">
             <BellIcon className='h-5 w-5' />
           </Button>
 
-          <Button variant='ghost' size='icon' className='rounded-full'>
+          <Button variant='ghost' size='icon' className='rounded-full h-10 w-10 sm:h-9 sm:w-9' aria-label="User menu">
             <Avatar className='h-7 w-7'>
               <AvatarImage src='https://github.com/shadcn.png' alt='User' />
               <AvatarFallback>RR</AvatarFallback>
