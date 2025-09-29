@@ -26,12 +26,13 @@ bun index.html
 
 ### File Structure
 
-```
+```plain
 ├── raw/
-│   ├── assets/    # Raw CSS assets
-│   ├── build/     # Built/processed assets
-│   └── index.html # Main entry point
-├── transforms.ts  # Build configuration
+│ ├── assets/ # Raw CSS assets
+│ ├── build/ # Built/processed assets
+│ └── index.html # Main entry point
+├── transforms.ts # Build configuration
+
 ```
 
 ## Development Workflows
@@ -59,3 +60,7 @@ bun index.html
 1. Requires Bun runtime
 2. Assets must be present in correct directory structure
 3. Relative path resolution is critical for asset loading
+
+```
+
+```
