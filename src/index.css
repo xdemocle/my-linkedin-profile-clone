@@ -1,6 +1,6 @@
 @import 'tailwindcss';
 @import 'tw-animate-css';
-/* @import './styles/theme.css'; */
+/* @import './styles/theme-v1.css'; */
 @import './styles/theme-v2.css';
 @import './styles/rtl.css';
 @import './styles/print.css';
@@ -43,3 +43,17 @@
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
 }
+
+@layer base {
+  * {
+    border-color: var(--border);
+    outline-color: color-mix(in srgb, var(--ring) 50%, transparent);
+  }
+
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+  }
+}
+
+/* Using Tailwind shadow utility classes directly */
