@@ -8,7 +8,7 @@ import { SkillsSection } from '../profile/SkillsSection';
 import { Navbar } from './Navbar';
 
 export function ProfileLayout() {
-  const t = useTranslations('App');
+  const t = useTranslations('ProfileLayout');
 
   return (
     <div className='min-h-screen bg-background'>
