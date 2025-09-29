@@ -2,7 +2,9 @@ import { useEffect, useState } from 'react';
 import { IntlProvider } from 'use-intl';
 import { Router } from './components/Router';
 import { ThemeProvider } from './contexts/ThemeContext';
+import { LocaleProvider } from './contexts/LocaleProvider';
 import { type Locale, getDirection, getMessages } from './lib/i18n';
+import { Toaster } from './components/ui/toaster';
 
 type Messages = Record<string, unknown>;
 
@@ -22,11 +24,14 @@ export function Root() {
 
   return (
     <ThemeProvider>
-      <div dir={direction} className={direction === 'rtl' ? 'rtl' : 'ltr'}>
-        <IntlProvider messages={messages} locale={locale}>
-          <Router locale={locale} onLocaleChange={setLocale} />
-        </IntlProvider>
-      </div>
+      <LocaleProvider initialLocale={locale}>
+        <div dir={direction} className={direction === 'rtl' ? 'rtl' : 'ltr'}>
+          <IntlProvider messages={messages} locale={locale}>
+            <Router locale={locale} onLocaleChange={setLocale} />
+            <Toaster />
+          </IntlProvider>
+        </div>
+      </LocaleProvider>
     </ThemeProvider>
   );
 }
