@@ -1,6 +1,7 @@
 import { useTranslations } from 'use-intl';
 import { Badge } from '../ui/badge';
 import { Card, CardContent, CardHeader, CardTitle } from '../ui/card';
+import { ProfileLanguageUrl } from './ProfileLanguageUrl';
 
 interface Language {
   nameKey: string;
@@ -40,6 +41,9 @@ export function ProfileSidebar() {
 
   return (
     <div className='space-y-4'>
+      {/* Profile Language & URL */}
+      <ProfileLanguageUrl />
+      
       {/* Languages */}
       <Card className='shadow-xs'>
         <CardHeader>

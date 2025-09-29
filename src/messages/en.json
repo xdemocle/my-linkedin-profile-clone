@@ -316,6 +316,11 @@
     "personalProject": "Personal Project",
     "hackathonProject": "Hackathon Project"
   },
+  "ProfileLanguageUrl": {
+    "profileLanguage": "Profile language",
+    "selectLanguage": "Select language",
+    "publicProfile": "Public profile & URL"
+  },
   "Common": {
     "showMore": "Show more",
     "showLess": "Show less",

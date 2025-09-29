@@ -303,6 +303,11 @@
     "personalProject": "Proyecto personal",
     "hackathonProject": "Proyecto de hackathon"
   },
+  "ProfileLanguageUrl": {
+    "profileLanguage": "Idioma del perfil",
+    "selectLanguage": "Seleccionar idioma",
+    "publicProfile": "Perfil público y URL"
+  },
   "Common": {
     "showMore": "Mostrar más",
     "showLess": "Mostrar menos",
