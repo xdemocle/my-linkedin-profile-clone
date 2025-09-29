@@ -3,3 +3,49 @@
 @import './theme.css';
 
 @custom-variant dark (&:is(.dark *));
+
+/* RTL Support */
+.rtl {
+  direction: rtl;
+}
+
+.ltr {
+  direction: ltr;
+}
+
+/* RTL-aware utilities */
+.rtl .text-left {
+  text-align: right;
+}
+
+.rtl .text-right {
+  text-align: left;
+}
+
+.rtl .float-left {
+  float: right;
+}
+
+.rtl .float-right {
+  float: left;
+}
+
+/* RTL margin and padding utilities */
+.rtl .ml-auto {
+  margin-left: unset;
+  margin-right: auto;
+}
+
+.rtl .mr-auto {
+  margin-right: unset;
+  margin-left: auto;
+}
+
+/* RTL flex utilities */
+.rtl .justify-start {
+  justify-content: flex-end;
+}
+
+.rtl .justify-end {
+  justify-content: flex-start;
+}
