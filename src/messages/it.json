@@ -16,9 +16,17 @@
     "connect": "Collegati",
     "message": "Messaggio",
     "more": "Altro",
-    "openToWork": "Disponibile al lavoro",
+    "openToWork": "Disponibile per",
     "seeAllDetails": "Vedi tutti i dettagli",
-    "following": "Segui"
+    "following": "Segui",
+    "followers": "follower",
+    "myWebsite": "Il mio sito web",
+    "addProfileSection": "Aggiungi sezione profilo",
+    "enhanceProfile": "Migliora profilo",
+    "resources": "Risorse",
+    "fullStackEngineer": "Ingegnere full-stack specializzato in architettura frontend e integrazioni blockchain | Leadership Tecnologica | Web3 | React, React-Router, Preact, Next.js, Typescript, Tailwind, IPFS, Ether, EVM, Wagmi, Viem | Sistemo il codice che vibra",
+    "location": "Málaga, Andalusia, Spagna",
+    "stealthStartup": "Startup AI in Stealth Mode"
   },
   "ProfileLayout": {
     "hello": "Ciao {firstName}!",

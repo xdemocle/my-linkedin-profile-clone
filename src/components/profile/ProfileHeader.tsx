@@ -1,8 +1,11 @@
 // import { Pencil1Icon } from '@radix-ui/react-icons';
+import { useTranslations } from 'use-intl';
 import { Avatar, AvatarFallback, AvatarImage } from '../ui/avatar';
 import { Button } from '../ui/button';
 
 export function ProfileHeader() {
+  const t = useTranslations('ProfileHeader');
+  
   return (
     <div className='bg-card rounded-md overflow-hidden shadow-xs border'>
       {/* Cover Photo */}
@@ -40,18 +43,18 @@ export function ProfileHeader() {
                 </div>
               </div>
               <p className='text-muted-foreground leading-tight mt-1'>
-                Full-stack Engineer specializing in frontend architecture and blockchain integrations | Tech Leadership | Web3 | React, React-Router, Preact, Next.js, Typescript, Tailwind, IPFS, Ether, EVM, Wagmi, Viem | I fix vibe code
+                {t('fullStackEngineer')}
               </p>
               <div className='flex items-center gap-2 mt-2 text-sm'>
-                <span className='text-muted-foreground'>Málaga, Andalusia, Spain</span>
+                <span className='text-muted-foreground'>{t('location')}</span>
                 <span className='text-muted-foreground'>•</span>
                 <a href='#' className='text-primary hover:underline font-medium'>
-                  Contact info
+                  {t('contactInfo')}
                 </a>
               </div>
               <div className='mt-2'>
                 <a href='#' className='text-primary hover:underline text-sm font-medium flex items-center gap-1'>
-                  My website
+                  {t('myWebsite')}
                   <svg className='w-3 h-3' viewBox='0 0 24 24' fill='none' stroke='currentColor' strokeWidth='2' strokeLinecap='round' strokeLinejoin='round'>
                     <path d='m7 7 10 10-5 0 0-5'/>
                     <path d='m17 7-5 0 0 5'/>
@@ -59,10 +62,10 @@ export function ProfileHeader() {
                 </a>
               </div>
               <div className='flex items-center gap-4 mt-2 text-sm'>
-                <span className='text-primary font-medium'>5,984 followers</span>
+                <span className='text-primary font-medium'>5,984 {t('followers')}</span>
                 <span className='text-muted-foreground'>•</span>
                 <a href='#' className='text-primary hover:underline font-medium'>
-                  500+ connections
+                  500+ {t('connections')}
                 </a>
               </div>
             </div>
@@ -71,23 +74,23 @@ export function ProfileHeader() {
                 <div className='w-6 h-6 bg-black rounded-full flex items-center justify-center'>
                   <span className='text-white text-xs'>⚡</span>
                 </div>
-                <span className='font-medium'>Stealth AI Startup</span>
+                <span className='font-medium'>{t('stealthStartup')}</span>
               </div>
             </div>
           </div>
 
           <div className='flex gap-2 mt-6'>
             <Button className='bg-blue-600 text-white hover:bg-blue-700 rounded-full px-6'>
-              Open to
+              {t('openToWork')}
             </Button>
             <Button variant='outline' className='rounded-full px-6'>
-              Add profile section
+              {t('addProfileSection')}
             </Button>
             <Button variant='outline' className='rounded-full px-6'>
-              Enhance profile
+              {t('enhanceProfile')}
             </Button>
             <Button variant='outline' className='rounded-full px-4'>
-              Resources
+              {t('resources')}
             </Button>
           </div>
         </div>

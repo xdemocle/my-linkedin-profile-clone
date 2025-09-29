@@ -16,9 +16,17 @@
     "connect": "Connect",
     "message": "Message",
     "more": "More",
-    "openToWork": "Open to work",
+    "openToWork": "Open to",
     "seeAllDetails": "See all details",
-    "following": "Following"
+    "following": "Following",
+    "followers": "followers",
+    "myWebsite": "My website",
+    "addProfileSection": "Add profile section",
+    "enhanceProfile": "Enhance profile",
+    "resources": "Resources",
+    "fullStackEngineer": "Full-stack Engineer specializing in frontend architecture and blockchain integrations | Tech Leadership | Web3 | React, React-Router, Preact, Next.js, Typescript, Tailwind, IPFS, Ether, EVM, Wagmi, Viem | I fix vibe code",
+    "location": "Málaga, Andalusia, Spain",
+    "stealthStartup": "Stealth AI Startup"
   },
   "ProfileLayout": {
     "hello": "Hello {firstName}!",

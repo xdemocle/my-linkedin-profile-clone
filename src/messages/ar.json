@@ -16,9 +16,17 @@
     "connect": "اتصل",
     "message": "رسالة",
     "more": "المزيد",
-    "openToWork": "متاح للعمل",
+    "openToWork": "متاح للعمل في",
     "seeAllDetails": "عرض جميع التفاصيل",
-    "following": "متابعة"
+    "following": "متابعة",
+    "followers": "متابع",
+    "myWebsite": "موقعي الإلكتروني",
+    "addProfileSection": "إضافة قسم للملف الشخصي",
+    "enhanceProfile": "تحسين الملف الشخصي",
+    "resources": "الموارد",
+    "fullStackEngineer": "مهندس full-stack متخصص في هندسة الواجهة الأمامية وتكاملات البلوك تشين | القيادة التقنية | Web3 | React, React-Router, Preact, Next.js, Typescript, Tailwind, IPFS, Ether, EVM, Wagmi, Viem | أصلح الكود اللي مش شغال",
+    "location": "مالقة، الأندلس، إسبانيا",
+    "stealthStartup": "شركة ناشئة للذكاء الاصطناعي في الوضع الخفي"
   },
   "ProfileLayout": {
     "hello": "مرحباً {firstName}!",

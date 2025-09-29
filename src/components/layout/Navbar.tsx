@@ -6,6 +6,7 @@ import {
   MagnifyingGlassIcon,
   PersonIcon,
 } from '@radix-ui/react-icons';
+import { useTranslations } from 'use-intl';
 import type { Locale } from '../../lib/i18n';
 import { Avatar, AvatarFallback, AvatarImage } from '../ui/avatar';
 import { Button } from '../ui/button';
@@ -26,6 +27,8 @@ interface NavbarProps {
 }
 
 export function Navbar({ currentLocale, onLocaleChange }: NavbarProps) {
+  const t = useTranslations('Navigation');
+  
   return (
     <header className="border-b bg-card/95 backdrop-blur-sm fixed top-0 left-0 right-0 z-50 shadow-xs">
       {/* Scroll progress indicator */}
@@ -41,7 +44,7 @@ export function Navbar({ currentLocale, onLocaleChange }: NavbarProps) {
           <div className='absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none'>
             <MagnifyingGlassIcon className='h-4 w-4 text-muted-foreground' />
           </div>
-          <Input placeholder='Search' className='bg-muted pl-10' />
+          <Input placeholder={t('search')} className='bg-muted pl-10' />
         </div>
 
         {/* Navigation */}
