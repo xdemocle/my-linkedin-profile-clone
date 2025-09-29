@@ -6,13 +6,11 @@ import {
   MagnifyingGlassIcon,
   PersonIcon,
 } from '@radix-ui/react-icons';
-import { useScrollDirection } from '../../hooks/useScrollDirection';
 import type { Locale } from '../../lib/i18n';
 import { Avatar, AvatarFallback, AvatarImage } from '../ui/avatar';
 import { Button } from '../ui/button';
 import { Input } from '../ui/input';
 import { LanguageSwitcher } from '../ui/language-switcher';
-import { NavigationMenu, NavigationMenuItem, NavigationMenuLink, NavigationMenuList } from '../ui/navigation-menu';
 import { ScrollProgress } from '../ui/scroll-progress';
 
 const LinkedInLogo = () => (
@@ -27,21 +25,8 @@ interface NavbarProps {
 }
 
 export function Navbar({ currentLocale, onLocaleChange }: NavbarProps) {
-  const { visible, isScrolling } = useScrollDirection({
-    threshold: 15, // Slightly higher threshold to avoid too-sensitive toggling
-    idleHideDelay: 2500, // Hide after 2.5 seconds of idle time
-    initiallyVisible: true,
-  });
-
   return (
-    <header
-      className={`
-        border-b border-border sticky top-0 z-50
-        transition-all duration-300 ease-in-out
-        ${visible ? 'translate-y-0' : '-translate-y-full'}
-        ${isScrolling && visible ? 'bg-background/95 backdrop-blur-sm shadow-xs' : 'bg-background'}
-      `}
-    >
+    <header className="border-b border-border fixed top-0 left-0 right-0 z-50 bg-background shadow-xs">
       {/* Scroll progress indicator */}
       <ScrollProgress color='var(--linkedin-blue-bright)' height={2} />
       <div className='max-w-6xl mx-auto px-4 flex items-center h-14'>
@@ -59,64 +44,36 @@ export function Navbar({ currentLocale, onLocaleChange }: NavbarProps) {
         </div>
 
         {/* Navigation */}
-        <NavigationMenu className='ml-auto'>
-          <NavigationMenuList className='flex items-center gap-1'>
-            <NavigationMenuItem>
-              <LanguageSwitcher currentLocale={currentLocale} onChange={onLocaleChange} />
-            </NavigationMenuItem>
+        <nav className='ml-auto flex items-center gap-1'>
+          <LanguageSwitcher currentLocale={currentLocale} onChange={onLocaleChange} />
 
-            <NavigationMenuItem>
-              <Button variant='ghost' size='icon' asChild>
-                <NavigationMenuLink>
-                  <HomeIcon className='h-5 w-5' />
-                </NavigationMenuLink>
-              </Button>
-            </NavigationMenuItem>
+          <Button variant='ghost' size='icon'>
+            <HomeIcon className='h-5 w-5' />
+          </Button>
 
-            <NavigationMenuItem>
-              <Button variant='ghost' size='icon' asChild>
-                <NavigationMenuLink>
-                  <PersonIcon className='h-5 w-5' />
-                </NavigationMenuLink>
-              </Button>
-            </NavigationMenuItem>
+          <Button variant='ghost' size='icon'>
+            <PersonIcon className='h-5 w-5' />
+          </Button>
 
-            <NavigationMenuItem>
-              <Button variant='ghost' size='icon' asChild>
-                <NavigationMenuLink>
-                  <BackpackIcon className='h-5 w-5' />
-                </NavigationMenuLink>
-              </Button>
-            </NavigationMenuItem>
+          <Button variant='ghost' size='icon'>
+            <BackpackIcon className='h-5 w-5' />
+          </Button>
 
-            <NavigationMenuItem>
-              <Button variant='ghost' size='icon' asChild>
-                <NavigationMenuLink>
-                  <ChatBubbleIcon className='h-5 w-5' />
-                </NavigationMenuLink>
-              </Button>
-            </NavigationMenuItem>
+          <Button variant='ghost' size='icon'>
+            <ChatBubbleIcon className='h-5 w-5' />
+          </Button>
 
-            <NavigationMenuItem>
-              <Button variant='ghost' size='icon' asChild>
-                <NavigationMenuLink>
-                  <BellIcon className='h-5 w-5' />
-                </NavigationMenuLink>
-              </Button>
-            </NavigationMenuItem>
+          <Button variant='ghost' size='icon'>
+            <BellIcon className='h-5 w-5' />
+          </Button>
 
-            <NavigationMenuItem>
-              <Button variant='ghost' size='icon' className='rounded-full' asChild>
-                <NavigationMenuLink>
-                  <Avatar className='h-7 w-7'>
-                    <AvatarImage src='https://github.com/shadcn.png' alt='User' />
-                    <AvatarFallback>RR</AvatarFallback>
-                  </Avatar>
-                </NavigationMenuLink>
-              </Button>
-            </NavigationMenuItem>
-          </NavigationMenuList>
-        </NavigationMenu>
+          <Button variant='ghost' size='icon' className='rounded-full'>
+            <Avatar className='h-7 w-7'>
+              <AvatarImage src='https://github.com/shadcn.png' alt='User' />
+              <AvatarFallback>RR</AvatarFallback>
+            </Avatar>
+          </Button>
+        </nav>
       </div>
     </header>
   );
