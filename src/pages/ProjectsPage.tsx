@@ -1,9 +1,10 @@
 import { ArrowLeftIcon, ExternalLinkIcon, GitHubLogoIcon } from '@radix-ui/react-icons';
 import { useTranslations } from 'use-intl';
-import { Link } from 'wouter';
+import { useLocation } from 'wouter';
 import { Badge } from '../components/ui/badge';
 import { Button } from '../components/ui/button';
 import { Card, CardContent } from '../components/ui/card';
+import { scrollToTop } from '../utils/scrollUtils';
 
 interface Project {
   id: string;
@@ -25,6 +26,13 @@ interface Project {
 
 export function ProjectsPage() {
   const t = useTranslations('Projects');
+  const [, setLocation] = useLocation();
+  
+  // Navigate back to profile with scroll restoration
+  const handleBackToProfile = () => {
+    setLocation('/');
+    scrollToTop(true);
+  };
 
   const projects: Project[] = [
     {
@@ -160,11 +168,14 @@ export function ProjectsPage() {
     <div className='min-h-screen bg-background'>
       <div className='max-w-7xl mx-auto px-4 py-6'>
         <div className='mb-6'>
-          <Button variant='ghost' size='sm' className='mb-4' asChild>
-            <Link href='/'>
-              <ArrowLeftIcon className='h-4 w-4 mr-2' />
-              {t('backToProfile')}
-            </Link>
+          <Button 
+            variant='ghost' 
+            size='sm' 
+            className='mb-4'
+            onClick={handleBackToProfile}
+          >
+            <ArrowLeftIcon className='h-4 w-4 mr-2' />
+            {t('backToProfile')}
           </Button>
           <div className='flex items-center justify-between'>
             <div>

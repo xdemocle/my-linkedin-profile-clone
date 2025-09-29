@@ -6,6 +6,7 @@ import { ActivityPage } from '../pages/ActivityPage';
 import { BlogPage } from '../pages/BlogPage';
 import { ProjectsPage } from '../pages/ProjectsPage';
 import { Navbar } from './layout/Navbar';
+import { ScrollToTop } from './ScrollToTop';
 
 interface RouterProps {
   locale: Locale;
@@ -15,6 +16,7 @@ interface RouterProps {
 export function Router({ locale, onLocaleChange }: RouterProps) {
   return (
     <WouterRouter>
+      <ScrollToTop smooth={true} delay={100} />
       <Switch>
         <Route path="/" component={() => <ProfileLayout locale={locale} onLocaleChange={onLocaleChange} />} />
         

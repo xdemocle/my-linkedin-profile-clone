@@ -137,17 +137,7 @@ export function ExperiencePage() {
               </CardContent>
             </Card>
 
-            {/* Add Experience CTA */}
-            <Card className='mt-6 shadow-xs'>
-              <CardContent className='p-6 text-center'>
-                <h3 className='font-semibold mb-2'>{t('showYourExperience')}</h3>
-                <p className='text-sm text-muted-foreground mb-4'>{t('addYourWorkExperience')}</p>
-                <Button>
-                  <PlusIcon className='h-4 w-4 mr-2' />
-                  {t('addExperience')}
-                </Button>
-              </CardContent>
-            </Card>
+            {/* Add Experience CTA removed as requested */}
           </div>
 
           {/* Sidebar */}

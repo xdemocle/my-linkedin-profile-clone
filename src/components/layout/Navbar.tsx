@@ -9,11 +9,11 @@ import {
   MagnifyingGlassIcon,
 } from '@radix-ui/react-icons';
 import { useTranslations } from 'use-intl';
-import { Link } from 'wouter';
+import { useLocation } from 'wouter';
 import type { Locale } from '../../lib/i18n';
+import { scrollToTop } from '../../utils/scrollUtils';
 import { Avatar, AvatarFallback, AvatarImage } from '../ui/avatar';
 import { Button } from '../ui/button';
-import { Input } from '../ui/input';
 import { LanguageSwitcher } from '../ui/language-switcher';
 import { ScrollProgress } from '../ui/scroll-progress';
 import { ThemeToggle } from '../ui/theme-toggle';
@@ -31,6 +31,13 @@ interface NavbarProps {
 
 export function Navbar({ currentLocale, onLocaleChange }: NavbarProps) {
   const t = useTranslations('Navigation');
+  const [, setLocation] = useLocation();
+
+  // Custom navigation handler that scrolls to top
+  const handleNavigation = (path: string) => {
+    setLocation(path);
+    scrollToTop(true);
+  };
 
   return (
     <header className='border-b bg-card/95 backdrop-blur-sm fixed top-0 left-0 right-0 z-50 shadow-xs'>
@@ -47,59 +54,81 @@ export function Navbar({ currentLocale, onLocaleChange }: NavbarProps) {
           <div className='absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none'>
             <MagnifyingGlassIcon className='h-4 w-4 text-muted-foreground' />
           </div>
-          <Input placeholder={t('search')} className='bg-muted pl-10' />
+          <input type='text' placeholder={t('search')} className='w-full bg-muted pl-10 h-8 rounded-md text-sm' />
         </div>
 
         {/* Navigation */}
         <nav className='ml-auto flex items-center gap-0.5 sm:gap-1'>
           {/* Core navigation - always visible with larger touch targets on mobile */}
-          <Button variant='ghost' size='icon' className='h-10 w-10 sm:h-9 sm:w-9' asChild>
-            <Link href='/' aria-label='Home'>
-              <HomeIcon className='h-5! w-5!' />
-            </Link>
+          <Button
+            variant='ghost'
+            size='icon'
+            className='h-10 w-10 sm:h-9 sm:w-9'
+            onClick={() => handleNavigation('/')}
+            aria-label='Home'
+          >
+            <HomeIcon className='h-5.5! w-5.5!' />
           </Button>
 
-          <Button variant='ghost' size='icon' className='h-10 w-10 sm:h-9 sm:w-9' asChild>
-            <Link href='/experience' aria-label='Experience'>
-              <BackpackIcon className='h-5! w-5!' />
-            </Link>
+          <Button
+            variant='ghost'
+            size='icon'
+            className='h-10 w-10 sm:h-9 sm:w-9'
+            onClick={() => handleNavigation('/experience')}
+            aria-label='Experience'
+          >
+            <BackpackIcon className='h-5.5! w-5.5!' />
           </Button>
 
-          <Button variant='ghost' size='icon' className='h-10 w-10 sm:h-9 sm:w-9' asChild>
-            <Link href='/projects' aria-label='Projects'>
-              <FileTextIcon className='h-5! w-5!' />
-            </Link>
+          <Button
+            variant='ghost'
+            size='icon'
+            className='h-10 w-10 sm:h-9 sm:w-9'
+            onClick={() => handleNavigation('/projects')}
+            aria-label='Projects'
+          >
+            <FileTextIcon className='h-5.5! w-5.5!' />
           </Button>
 
           {/* Secondary navigation - hidden on small mobile */}
-          <Button variant='ghost' size='icon' className='h-10 w-10 sm:h-9 sm:w-9 hidden xs:flex' asChild>
-            <Link href='/skills' aria-label='Skills'>
-              <FileTextIcon className='h-5! w-5!' />
-            </Link>
+          <Button
+            variant='ghost'
+            size='icon'
+            className='h-10 w-10 sm:h-9 sm:w-9 hidden xs:flex'
+            onClick={() => handleNavigation('/skills')}
+            aria-label='Skills'
+          >
+            <FileTextIcon className='h-5.5! w-5.5!' />
           </Button>
 
-          <Button variant='ghost' size='icon' className='h-10 w-10 sm:h-9 sm:w-9 hidden sm:flex' asChild>
-            <Link href='/network' aria-label='Network'>
-              <Link2Icon className='h-5! w-5!' />
-            </Link>
+          <Button
+            variant='ghost'
+            size='icon'
+            className='h-10 w-10 sm:h-9 sm:w-9 hidden sm:flex'
+            onClick={() => handleNavigation('/network')}
+            aria-label='Network'
+          >
+            <Link2Icon className='h-5.5! w-5.5!' />
           </Button>
 
-          <Button variant='ghost' size='icon' className='h-10 w-10 sm:h-9 sm:w-9 hidden sm:flex' asChild>
-            <Link href='/messages' aria-label='Messages'>
-              <ChatBubbleIcon className='h-5! w-5!' />
-            </Link>
+          <Button
+            variant='ghost'
+            size='icon'
+            className='h-10 w-10 sm:h-9 sm:w-9 hidden sm:flex'
+            onClick={() => handleNavigation('/messages')}
+            aria-label='Messages'
+          >
+            <ChatBubbleIcon className='h-5.5! w-5.5!' />
           </Button>
 
-          <Button variant='ghost' size='icon' className='h-10 w-10 sm:h-9 sm:w-9 hidden xs:flex' asChild>
-            <Link href='/notifications' aria-label='Notifications'>
-              <BellIcon className='h-5! w-5!' />
-            </Link>
-          </Button>
-
-          <Button variant='ghost' size='icon' className='h-10 w-10 sm:h-9 sm:w-9 hidden xs:flex' asChild>
-            <Link href='/settings' aria-label='Settings'>
-              <GearIcon className='h-5! w-5!' />
-            </Link>
+          <Button
+            variant='ghost'
+            size='icon'
+            className='h-10 w-10 sm:h-9 sm:w-9 hidden xs:flex'
+            onClick={() => handleNavigation('/notifications')}
+            aria-label='Notifications'
+          >
+            <BellIcon className='h-5.5! w-5.5!' />
           </Button>
 
           <Button variant='ghost' size='icon' className='rounded-full h-10 w-10 sm:h-9 sm:w-9' aria-label='User menu'>
@@ -109,10 +138,20 @@ export function Navbar({ currentLocale, onLocaleChange }: NavbarProps) {
             </Avatar>
           </Button>
 
+          <Button
+            variant='ghost'
+            size='icon'
+            className='h-10 w-10 sm:h-9 sm:w-9 hidden xs:flex'
+            onClick={() => handleNavigation('/settings')}
+            aria-label='Settings'
+          >
+            <GearIcon className='h-5.5! w-5.5!' />
+          </Button>
+
           {/* Language and Theme - hidden on mobile */}
           <div className='hidden md:flex items-center gap-1'>
-            <LanguageSwitcher currentLocale={currentLocale} onChange={onLocaleChange} />
             <ThemeToggle />
+            <LanguageSwitcher currentLocale={currentLocale} onChange={onLocaleChange} />
           </div>
         </nav>
       </div>
