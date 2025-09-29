@@ -86892,9 +86892,6 @@ form.inverse-form textarea:focus {
 }
 form.inverse-form select {
   background-position: top -335px left 7px;
-  /*!rtl:remove:start*/
-  background-position: top -335px right 0;
-  /*!rtl:remove:end*/
   border-color: hsla(0, 0%, 100%, 0.7);
 }
 form.inverse-form select:disabled {
