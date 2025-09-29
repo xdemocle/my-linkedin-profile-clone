@@ -131,7 +131,9 @@
     "ledFrontendDevelopmentFull": "Led frontend development for multiple client projects. Implemented responsive UI designs and optimized web performance. Mentored junior developers and established coding standards. Collaborated with cross-functional teams to deliver high-quality software solutions.",
     "developedInteractiveUIFull": "Developed interactive user interfaces using React and modern CSS frameworks. Collaborated with design team to implement pixel-perfect components and animations. Built reusable component libraries and maintained design systems.",
     "createdDashboardInterfacesFull": "Created dashboard interfaces for security monitoring tools. Worked with backend team to integrate APIs and real-time data visualization components. Implemented security best practices in frontend development.",
-    "providedWebDevelopmentServices": "Provided web development services to small and medium businesses. Built custom websites and web applications using modern technologies. Managed client relationships and project timelines.",
+    "providedWebDevelopmentServices": "Provided web development services to small and medium businesses. Built custom websites and web applications using modern technologies. Managed client relationships and project timelines."
+  },
+  "Skills": {
     "title": "Skills",
     "takeSkillQuiz": "Take skill quiz",
     "frontendDevelopment": "Frontend Development",
