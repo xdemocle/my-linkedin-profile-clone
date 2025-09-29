@@ -1,11 +1,11 @@
 import { ArrowLeftIcon, Pencil1Icon, PlusIcon } from '@radix-ui/react-icons';
-import { Link } from 'wouter';
 import { useTranslations } from 'use-intl';
+import { Link } from 'wouter';
 import { Avatar, AvatarFallback, AvatarImage } from '../components/ui/avatar';
+import { Badge } from '../components/ui/badge';
 import { Button } from '../components/ui/button';
 import { Card, CardContent } from '../components/ui/card';
 import { Separator } from '../components/ui/separator';
-import { Badge } from '../components/ui/badge';
 
 interface Experience {
   companyKey: string;
@@ -58,7 +58,6 @@ const experiences: Experience[] = [
 
 export function ExperiencePage() {
   const t = useTranslations('Experience');
-  const tCommon = useTranslations('Common');
 
   return (
     <div className='min-h-screen bg-background'>
@@ -66,7 +65,7 @@ export function ExperiencePage() {
         {/* Header */}
         <div className='mb-6'>
           <Button variant='ghost' size='sm' className='mb-4' asChild>
-            <Link href="/">
+            <Link href='/'>
               <ArrowLeftIcon className='h-4 w-4 mr-2' />
               {t('backToProfile')}
             </Link>
@@ -98,7 +97,7 @@ export function ExperiencePage() {
                 <div className='flex gap-4'>
                   <Avatar className='w-16 h-16 flex-shrink-0'>
                     <AvatarImage src={exp.logo} />
-                    <AvatarFallback>{exp.company[0]}</AvatarFallback>
+                    <AvatarFallback>{t(exp.companyKey)[0]}</AvatarFallback>
                   </Avatar>
                   <div className='flex-1'>
                     <div className='flex justify-between items-start mb-2'>
@@ -139,9 +138,7 @@ export function ExperiencePage() {
         <Card className='mt-6 shadow-xs'>
           <CardContent className='p-6 text-center'>
             <h3 className='font-semibold mb-2'>{t('showYourExperience')}</h3>
-            <p className='text-sm text-muted-foreground mb-4'>
-              {t('addYourWorkExperience')}
-            </p>
+            <p className='text-sm text-muted-foreground mb-4'>{t('addYourWorkExperience')}</p>
             <Button>
               <PlusIcon className='h-4 w-4 mr-2' />
               {t('addExperience')}
