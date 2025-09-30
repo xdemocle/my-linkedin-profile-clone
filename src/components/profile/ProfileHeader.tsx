@@ -1,4 +1,5 @@
 // No edit icons needed - read-only mode
+import { cn } from '@/lib/utils';
 import { useTranslations } from 'use-intl';
 import { OnlineStatusIcon, StealthStartupIcon } from '../../utils/iconComponents';
 import { ShareProfile } from '../ShareProfile';
@@ -11,7 +12,7 @@ export function ProfileHeader() {
   return (
     <div className="bg-card rounded-md overflow-hidden shadow-xs border">
       {/* Cover Photo */}
-      <div className="h-32 md:h-48 bg-muted relative">
+      <div className="h-36 md:h-48 bg-muted relative">
         <img
           src="https://images.unsplash.com/photo-1542435503-956c469947f6?q=80&w=1974&auto=format&fit=crop"
           alt="Cover"
@@ -22,7 +23,12 @@ export function ProfileHeader() {
       {/* Profile Info */}
       <div className="p-6 relative">
         {/* Avatar - positioned to overlap the cover photo */}
-        <Avatar className="w-44 h-44 border-4 border-secondary absolute -top-31 left-6 shadow-md hover:shadow-xl transition-all duration-300">
+        <Avatar
+          className={cn(
+            'w-32 h-32 md:w-44 md:h-44 border-4 border-secondary shadow-md hover:shadow-xl transition-all duration-300',
+            'absolute -top-16 left-6 md:-top-31 md:left-6'
+          )}
+        >
           <AvatarImage src="/assets/png/rocco-me-nft.png" alt="Rocco Russo" />
           <AvatarFallback>RR</AvatarFallback>
         </Avatar>
