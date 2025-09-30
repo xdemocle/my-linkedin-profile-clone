@@ -1,3 +1,4 @@
+import { languageNames } from '@/constants';
 import { ClipboardCopyIcon } from '@radix-ui/react-icons';
 import { useTranslations } from 'use-intl';
 import { useLocation } from 'wouter';
@@ -8,15 +9,6 @@ import { Card, CardContent } from '../ui/card';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '../ui/select';
 import { Separator } from '../ui/separator';
 import { useToast } from '../ui/use-toast';
-
-// Map of language names in their native language
-const languageNames: Record<Locale, string> = {
-  en: 'English',
-  it: 'Italiano',
-  fr: 'Français',
-  es: 'Español',
-  ar: 'العربية',
-};
 
 interface ProfileLanguageUrlProps {
   locale: Locale;
