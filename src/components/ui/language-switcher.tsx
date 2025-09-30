@@ -1,5 +1,6 @@
 import { GlobeIcon } from '@radix-ui/react-icons';
-import { useState } from 'react';
+import { useState, useCallback } from 'react';
+import { useLocation } from 'wouter';
 import type { Locale } from '../../lib/i18n';
 import { locales } from '../../lib/i18n';
 import { Button } from './button';
@@ -29,6 +30,27 @@ interface LanguageSwitcherProps {
 
 export function LanguageSwitcher({ currentLocale, onChange }: LanguageSwitcherProps) {
   const [isOpen, setIsOpen] = useState(false);
+  const [location, setLocation] = useLocation();
+  
+  // Update URL when changing language
+  const handleLanguageChange = useCallback((newLocale: Locale) => {
+    // First, call the onChange handler to update the app state
+    onChange(newLocale);
+    
+    // Then, update the URL to reflect the new locale
+    const pathSegments = location.split('/').filter(Boolean);
+    
+    // If the current path already has a locale prefix, replace it
+    if (pathSegments.length > 0 && locales.includes(pathSegments[0] as Locale)) {
+      pathSegments[0] = newLocale;
+      setLocation(`/${pathSegments.join('/')}`);
+    } else {
+      // If there's no locale prefix, add it
+      setLocation(`/${newLocale}${location}`);
+    }
+    
+    setIsOpen(false);
+  }, [location, onChange, setLocation]);
 
   return (
     <DropdownMenu open={isOpen} onOpenChange={setIsOpen}>
@@ -42,10 +64,7 @@ export function LanguageSwitcher({ currentLocale, onChange }: LanguageSwitcherPr
         {locales.map(locale => (
           <DropdownMenuItem
             key={locale}
-            onClick={() => {
-              onChange(locale);
-              setIsOpen(false);
-            }}
+            onClick={() => handleLanguageChange(locale)}
             className='flex items-center gap-2'
           >
             <span>{languageFlags[locale]}</span>
