@@ -4,8 +4,8 @@ import { useLocation } from 'wouter';
 import { Badge } from '../components/ui/badge';
 import { Button } from '../components/ui/button';
 import { Card, CardContent } from '../components/ui/card';
-import { scrollToTop } from '../utils/scrollUtils';
 import { ProjectIconWrapper } from '../utils/iconComponents';
+import { scrollToTop } from '../utils/scrollUtils';
 
 interface Project {
   id: string;
@@ -28,7 +28,7 @@ interface Project {
 export function ProjectsPage() {
   const t = useTranslations('Projects');
   const [, setLocation] = useLocation();
-  
+
   // Navigate back to profile with scroll restoration
   const handleBackToProfile = () => {
     setLocation('/');
@@ -166,68 +166,67 @@ export function ProjectsPage() {
   const otherProjects = projects.filter(project => !project.featured);
 
   return (
-    <div className='min-h-screen bg-background'>
-      <div className='max-w-7xl mx-auto px-4 py-6'>
-        <div className='mb-6'>
-          <Button 
-            variant='ghost' 
-            size='sm' 
-            className='mb-4'
-            onClick={handleBackToProfile}
-          >
-            <ArrowLeftIcon className='h-4 w-4 mr-2' />
+    <div className="min-h-screen bg-background">
+      <div className="max-w-7xl mx-auto px-4 py-6">
+        <div className="mb-6">
+          <Button variant="ghost" size="sm" className="mb-4" onClick={handleBackToProfile}>
+            <ArrowLeftIcon className="h-4 w-4 mr-2" />
             {t('backToProfile')}
           </Button>
-          <div className='flex items-center justify-between'>
+          <div className="flex items-center justify-between">
             <div>
-              <h1 className='text-3xl font-bold'>{t('title')}</h1>
-              <p className='text-muted-foreground mt-1'>Rocco Russo</p>
+              <h1 className="text-3xl font-bold">{t('title')}</h1>
+              <p className="text-muted-foreground mt-1">Rocco Russo</p>
             </div>
           </div>
         </div>
 
         {/* Featured Projects */}
-        <section className='mb-12'>
-          <h2 className='text-2xl font-semibold mb-6'>{t('featuredProjects')}</h2>
-          <div className='grid grid-cols-1 md:grid-cols-2 gap-6'>
+        <section className="mb-12">
+          <h2 className="text-2xl font-semibold mb-6">{t('featuredProjects')}</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {featuredProjects.map(project => (
-              <Card key={project.id} className='overflow-hidden shadow-md hover:shadow-lg transition-shadow'>
-                <CardContent className='p-6'>
-                  <div className='flex items-start gap-4'>
-                    <div className='flex-1'>
-                      <div className='flex items-center gap-3 mb-2'>
-                        <div className='flex items-center justify-center h-8 w-8'>
+              <Card key={project.id} className="overflow-hidden shadow-md hover:shadow-lg transition-shadow">
+                <CardContent className="p-6">
+                  <div className="flex items-start gap-4">
+                    <div className="flex-1">
+                      <div className="flex items-center gap-3 mb-2">
+                        <div className="flex items-center justify-center h-8 w-8">
                           <ProjectIconWrapper iconKey={project.icon} />
                         </div>
-                        <h3 className='text-xl font-semibold'>{project.title}</h3>
+                        <h3 className="text-xl font-semibold">{project.title}</h3>
                       </div>
-                      <p className='text-sm text-muted-foreground mb-4'>{project.description}</p>
+                      <p className="text-sm text-muted-foreground mb-4">{project.description}</p>
 
                       {/* Links */}
                       {project.links && (
-                        <div className='flex flex-wrap gap-2 mb-4'>
+                        <div className="flex flex-wrap gap-2 mb-4">
                           {project.links.website && (
-                            <Button variant='outline' size='sm' className='h-8' asChild>
-                              <a href={project.links.website} target='_blank' rel='noopener noreferrer'>
+                            <Button variant="outline" size="sm" className="h-8" asChild>
+                              <a href={project.links.website} target="_blank" rel="noopener noreferrer">
                                 {t('viewProject')}
-                                <ExternalLinkIcon className='ml-1 h-3 w-3' />
+                                <ExternalLinkIcon className="ml-1 h-3 w-3" />
                               </a>
                             </Button>
                           )}
                           {project.links.marketing && (
-                            <Button variant='outline' size='sm' className='h-8' asChild>
-                              <a href={project.links.marketing} target='_blank' rel='noopener noreferrer'>
+                            <Button variant="outline" size="sm" className="h-8" asChild>
+                              <a href={project.links.marketing} target="_blank" rel="noopener noreferrer">
                                 {t('viewDemo')}
-                                <ExternalLinkIcon className='ml-1 h-3 w-3' />
+                                <ExternalLinkIcon className="ml-1 h-3 w-3" />
                               </a>
                             </Button>
                           )}
-                          {project.links.github && Array.isArray(project.links.github) &&
+                          {project.links.github &&
+                            Array.isArray(project.links.github) &&
                             project.links.github.map((link: string, i: number) => (
-                              <Button key={i} variant='outline' size='sm' className='h-8' asChild>
-                                <a href={link} target='_blank' rel='noopener noreferrer'>
-                                  <GitHubLogoIcon className='mr-1 h-3 w-3' />
-                                  {t('viewCode')} {Array.isArray(project.links?.github) && project.links?.github.length > 1 ? i + 1 : ''}
+                              <Button key={i} variant="outline" size="sm" className="h-8" asChild>
+                                <a href={link} target="_blank" rel="noopener noreferrer">
+                                  <GitHubLogoIcon className="mr-1 h-3 w-3" />
+                                  {t('viewCode')}{' '}
+                                  {Array.isArray(project.links?.github) && project.links?.github.length > 1
+                                    ? i + 1
+                                    : ''}
                                 </a>
                               </Button>
                             ))}
@@ -235,9 +234,9 @@ export function ProjectsPage() {
                       )}
 
                       {/* Technologies */}
-                      <div className='flex flex-wrap gap-1'>
+                      <div className="flex flex-wrap gap-1">
                         {project.technologies.map((tech, index) => (
-                          <Badge key={index} variant='secondary' className='text-xs'>
+                          <Badge key={index} variant="secondary" className="text-xs">
                             {tech}
                           </Badge>
                         ))}
@@ -252,43 +251,43 @@ export function ProjectsPage() {
 
         {/* Other Projects */}
         <section>
-          <h2 className='text-2xl font-semibold mb-6'>{t('otherProjects')}</h2>
-          <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4'>
+          <h2 className="text-2xl font-semibold mb-6">{t('otherProjects')}</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {otherProjects.map(project => (
-              <Card key={project.id} className='shadow-sm hover:shadow-md transition-shadow'>
-                <CardContent className='p-4'>
-                  <div className='flex items-start gap-3'>
-                    <div className='flex-1'>
-                      <div className='flex items-center gap-2 mb-2'>
-                        <div className='flex items-center justify-center h-6 w-6'>
-                          <ProjectIconWrapper iconKey={project.icon} className='h-6 w-6' />
+              <Card key={project.id} className="shadow-sm hover:shadow-md transition-shadow">
+                <CardContent className="p-4">
+                  <div className="flex items-start gap-3">
+                    <div className="flex-1">
+                      <div className="flex items-center gap-2 mb-2">
+                        <div className="flex items-center justify-center h-6 w-6">
+                          <ProjectIconWrapper iconKey={project.icon} className="h-6 w-6" />
                         </div>
-                        <h3 className='text-lg font-medium'>{project.title}</h3>
+                        <h3 className="text-lg font-medium">{project.title}</h3>
                       </div>
-                      <p className='text-xs text-muted-foreground mb-3 line-clamp-2'>{project.description}</p>
+                      <p className="text-xs text-muted-foreground mb-6 line-clamp-2">{project.description}</p>
 
                       {/* Links - Simplified for smaller cards */}
                       {project.links && (
-                        <div className='flex flex-wrap gap-2 mb-3'>
+                        <div className="flex flex-wrap gap-2 mb-6">
                           {project.links.github && (
-                            <Button variant='outline' size='sm' className='h-7 text-xs px-2' asChild>
+                            <Button variant="outline" size="sm" className="h-7 text-xs px-2" asChild>
                               <a
                                 href={
                                   Array.isArray(project.links.github) ? project.links.github[0] : project.links.github
                                 }
-                                target='_blank'
-                                rel='noopener noreferrer'
+                                target="_blank"
+                                rel="noopener noreferrer"
                               >
-                                <GitHubLogoIcon className='mr-1 h-3 w-3' />
+                                <GitHubLogoIcon className="mr-1 h-3 w-3" />
                                 {t('viewCode')}
                               </a>
                             </Button>
                           )}
                           {project.links.demo && (
-                            <Button variant='outline' size='sm' className='h-7 text-xs px-2' asChild>
-                              <a href={project.links.demo} target='_blank' rel='noopener noreferrer'>
+                            <Button variant="outline" size="sm" className="h-7 text-xs px-2" asChild>
+                              <a href={project.links.demo} target="_blank" rel="noopener noreferrer">
                                 {t('viewDemo')}
-                                <ExternalLinkIcon className='ml-1 h-3 w-3' />
+                                <ExternalLinkIcon className="ml-1 h-3 w-3" />
                               </a>
                             </Button>
                           )}
@@ -296,14 +295,14 @@ export function ProjectsPage() {
                       )}
 
                       {/* Technologies - Limited to save space */}
-                      <div className='flex flex-wrap gap-1'>
+                      <div className="flex flex-wrap gap-1">
                         {project.technologies.slice(0, 3).map((tech, index) => (
-                          <Badge key={index} variant='secondary' className='text-xs'>
+                          <Badge key={index} variant="secondary" className="text-xs">
                             {tech}
                           </Badge>
                         ))}
                         {project.technologies.length > 3 && (
-                          <Badge variant='outline' className='text-xs'>
+                          <Badge variant="outline" className="text-xs">
                             +{project.technologies.length - 3}
                           </Badge>
                         )}

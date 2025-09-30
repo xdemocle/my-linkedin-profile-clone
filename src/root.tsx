@@ -1,17 +1,42 @@
 import { useEffect, useState } from 'react';
 import { IntlProvider } from 'use-intl';
+import { useLocation } from 'wouter';
 import { Router } from './components/Router';
 import { ThemeProvider } from './contexts/ThemeContext';
 import { LocaleProvider } from './contexts/LocaleProvider';
-import { type Locale, getDirection, getMessages } from './lib/i18n';
+import { type Locale, getDirection, getMessages, locales } from './lib/i18n';
 import { Toaster } from './components/ui/toaster';
 
 type Messages = Record<string, unknown>;
 
+// Function to detect locale from URL path
+function getLocaleFromPath(path: string): Locale | null {
+  const pathSegments = path.split('/').filter(Boolean);
+  if (pathSegments.length > 0) {
+    const firstSegment = pathSegments[0];
+    if (locales.includes(firstSegment as Locale)) {
+      return firstSegment as Locale;
+    }
+  }
+  return null;
+}
+
 export function Root() {
+  const [location] = useLocation();
   const [locale, setLocale] = useState<Locale>('en');
   const [messages, setMessages] = useState<Messages | null>(null);
 
+  // Detect locale from URL and load messages
+  useEffect(() => {
+    const urlLocale = getLocaleFromPath(location);
+    if (urlLocale && urlLocale !== locale) {
+      setLocale(urlLocale);
+    } else {
+      getMessages(locale).then(setMessages);
+    }
+  }, [locale, location]);
+  
+  // Update messages when locale changes
   useEffect(() => {
     getMessages(locale).then(setMessages);
   }, [locale]);

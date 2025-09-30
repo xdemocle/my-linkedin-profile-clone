@@ -1,5 +1,6 @@
 import { ClipboardCopyIcon } from '@radix-ui/react-icons';
 import { useTranslations } from 'use-intl';
+import { useLocation } from 'wouter';
 import type { Locale } from '../../lib/i18n';
 import { locales } from '../../lib/i18n';
 import { Button } from '../ui/button';
@@ -28,8 +29,23 @@ export function ProfileLanguageUrl({ locale, onLocaleChange }: ProfileLanguageUr
 
   const profileUrl = 'www.linkedin.com/in/roccorusso';
 
+  const [location, setLocation] = useLocation();
+
   const handleLocaleChange = (newLocale: Locale) => {
+    // Update app state
     onLocaleChange(newLocale);
+
+    // Update URL to reflect the new locale
+    const pathSegments = location.split('/').filter(Boolean);
+
+    // If the current path already has a locale prefix, replace it
+    if (pathSegments.length > 0 && locales.includes(pathSegments[0] as Locale)) {
+      pathSegments[0] = newLocale;
+      setLocation(`/${pathSegments.join('/')}`);
+    } else {
+      // If there's no locale prefix, add it
+      setLocation(`/${newLocale}${location === '/' ? '' : location}`);
+    }
   };
 
   const copyToClipboard = () => {
@@ -42,7 +58,7 @@ export function ProfileLanguageUrl({ locale, onLocaleChange }: ProfileLanguageUr
   };
 
   return (
-    <Card className="shadow-xs mb-3">
+    <Card className="shadow-xs mb-6">
       <CardContent className="p-4">
         <div className="space-y-4">
           {/* Profile Language Section */}

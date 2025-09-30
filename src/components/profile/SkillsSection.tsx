@@ -17,7 +17,7 @@ interface Skill {
 
 export function SkillsSection() {
   const t = useTranslations('Skills');
-  
+
   const skills: Skill[] = [
     {
       nameKey: 'frontendDevelopment',
@@ -49,8 +49,8 @@ export function SkillsSection() {
   ];
 
   return (
-    <Card className='mt-4 shadow-xs'>
-      <CardHeader className='flex flex-row items-center justify-between'>
+    <Card className="mt-6 shadow-xs">
+      <CardHeader className="flex flex-row items-center justify-between">
         <CardTitle>{t('title')}</CardTitle>
         {/* <div className='flex gap-2'>
           <Button variant='ghost' size='sm'>
@@ -66,25 +66,25 @@ export function SkillsSection() {
       </CardHeader>
       <CardContent>
         {skills.map((skill, index) => (
-          <div key={index} className='mb-6'>
-            {index > 0 && <Separator className='my-6' />}
+          <div key={index} className="mb-6">
+            {index > 0 && <Separator className="my-6" />}
             <div>
-              <div className='flex justify-between items-center'>
-                <h3 className='font-medium'>{t(skill.nameKey)}</h3>
-                <Badge variant='outline' className='rounded-full'>
+              <div className="flex justify-between items-center">
+                <h3 className="font-medium">{t(skill.nameKey)}</h3>
+                <Badge variant="outline" className="rounded-full">
                   {skill.endorsements} {t('endorsements')}
                 </Badge>
               </div>
-              <div className='flex items-center gap-2 mt-3'>
-                <div className='flex -space-x-2'>
+              <div className="flex items-center gap-2 mt-6">
+                <div className="flex -space-x-2">
                   {skill.endorsedBy.map((person, i) => (
-                    <Avatar key={i} className='w-7 h-7 border-2 border-background'>
+                    <Avatar key={i} className="w-7 h-7 border-2 border-background">
                       <AvatarImage src={person.avatar} />
                       <AvatarFallback>{person.name[0]}</AvatarFallback>
                     </Avatar>
                   ))}
                 </div>
-                <p className='text-xs text-muted-foreground ml-1'>
+                <p className="text-xs text-muted-foreground ml-1">
                   {t('endorsedBy', { name: skill.endorsedBy[0].name, count: skill.endorsements - 1 })}
                 </p>
               </div>

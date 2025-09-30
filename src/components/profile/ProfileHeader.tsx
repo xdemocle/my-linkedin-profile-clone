@@ -22,12 +22,12 @@ export function ProfileHeader() {
       {/* Profile Info */}
       <div className="p-6 relative">
         {/* Avatar - positioned to overlap the cover photo */}
-        <Avatar className="w-44 h-44 border-4 border-secondary absolute -top-24 left-6 shadow-xl">
+        <Avatar className="w-44 h-44 border-4 border-secondary absolute -top-31 left-6 shadow-md hover:shadow-xl transition-all duration-300">
           <AvatarImage src="/assets/png/rocco-me-nft.png" alt="Rocco Russo" />
           <AvatarFallback>RR</AvatarFallback>
         </Avatar>
 
-        <div className="ml-48 pt-2">
+        <div className="pt-10">
           <div className="flex justify-between items-start">
             <div className="flex-1">
               <div className="flex items-center gap-2">
@@ -81,7 +81,7 @@ export function ProfileHeader() {
           </div>
 
           <div className="flex flex-wrap gap-2 mt-6">
-            <Button className="bg-primary text-white hover:bg-blue-700 rounded-full px-6">{t('openToWork')}</Button>
+            <Button className="bg-primary text-white hover:bg-primary-700 rounded-full px-6">{t('openToWork')}</Button>
 
             <Button variant="outline" className="rounded-full px-4">
               {t('resources')}

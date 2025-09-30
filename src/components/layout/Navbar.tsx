@@ -34,9 +34,10 @@ export function Navbar({ currentLocale, onLocaleChange }: NavbarProps) {
   const t = useTranslations('Navigation');
   const [, setLocation] = useLocation();
 
-  // Custom navigation handler that scrolls to top
+  // Custom navigation handler that scrolls to top and includes locale prefix
   const handleNavigation = (path: string) => {
-    setLocation(path);
+    const localizedPath = path === '/' ? `/${currentLocale}` : `/${currentLocale}${path}`;
+    setLocation(localizedPath);
     scrollToTop(true);
   };
 
@@ -66,7 +67,7 @@ export function Navbar({ currentLocale, onLocaleChange }: NavbarProps) {
             size='icon'
             className='h-10 w-10 sm:h-9 sm:w-9'
             onClick={() => handleNavigation('/')}
-            aria-label='Home'
+            aria-label={t('home')}
           >
             <HomeIcon className='h-5.5! w-5.5!' />
           </Button>
