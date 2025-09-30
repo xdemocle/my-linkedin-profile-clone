@@ -1,8 +1,8 @@
-import { useState, useEffect } from 'react';
-import { DownloadIcon, Cross2Icon } from '@radix-ui/react-icons';
+import { Cross2Icon, DownloadIcon } from '@radix-ui/react-icons';
+import { useEffect, useState } from 'react';
+import { isPWA } from '../lib/pwa';
 import { Button } from './ui/button';
 import { Card, CardContent } from './ui/card';
-import { isPWA } from '../lib/pwa';
 
 interface BeforeInstallPromptEvent extends Event {
   prompt: () => Promise<void>;
@@ -22,7 +22,7 @@ export function InstallPWA() {
     const handler = (e: Event) => {
       e.preventDefault();
       setDeferredPrompt(e as BeforeInstallPromptEvent);
-      
+
       // Check if user has dismissed the prompt before
       const dismissed = localStorage.getItem('pwa-install-dismissed');
       if (!dismissed) {
@@ -44,13 +44,13 @@ export function InstallPWA() {
 
     deferredPrompt.prompt();
     const { outcome } = await deferredPrompt.userChoice;
-    
+
     console.log(`User response to install prompt: ${outcome}`);
-    
+
     if (outcome === 'accepted') {
       setShowPrompt(false);
     }
-    
+
     setDeferredPrompt(null);
   };
 
@@ -68,33 +68,26 @@ export function InstallPWA() {
   }
 
   return (
-    <Card className='fixed bottom-4 left-4 right-4 md:left-auto md:right-4 md:w-96 shadow-lg z-50 animate-in slide-in-from-bottom-5'>
-      <CardContent className='p-4'>
-        <div className='flex items-start gap-3'>
-          <div className='flex-1'>
-            <h3 className='font-semibold text-sm mb-1'>
-              Install Profile App
-            </h3>
-            <p className='text-xs text-muted-foreground mb-3'>
+    <Card className="fixed bottom-4 left-4 right-4 md:left-auto md:right-4 md:w-96 shadow-lg z-50 animate-in slide-in-from-bottom-5">
+      <CardContent className="p-4">
+        <div className="flex items-start gap-3">
+          <div className="flex-1">
+            <h3 className="font-semibold text-sm mb-1">Install Profile App</h3>
+            <p className="text-xs text-muted-foreground mb-6">
               Add to your home screen for quick access and offline viewing
             </p>
-            <div className='flex gap-2'>
-              <Button size='sm' onClick={handleInstall} className='flex-1'>
-                <DownloadIcon className='h-4 w-4 mr-2' />
+            <div className="flex gap-2">
+              <Button size="sm" onClick={handleInstall} className="flex-1">
+                <DownloadIcon className="h-4 w-4 mr-2" />
                 Install
               </Button>
-              <Button size='sm' variant='outline' onClick={handleDismiss}>
+              <Button size="sm" variant="outline" onClick={handleDismiss}>
                 Later
               </Button>
             </div>
           </div>
-          <Button
-            variant='ghost'
-            size='icon'
-            className='h-6 w-6'
-            onClick={handleDismiss}
-          >
-            <Cross2Icon className='h-4 w-4' />
+          <Button variant="ghost" size="icon" className="h-6 w-6" onClick={handleDismiss}>
+            <Cross2Icon className="h-4 w-4" />
           </Button>
         </div>
       </CardContent>

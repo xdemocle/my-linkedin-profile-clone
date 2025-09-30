@@ -1,7 +1,7 @@
-import { Component } from 'react';
-import type { ErrorInfo, ReactNode } from 'react';
-import { useTranslations } from 'use-intl';
 import { ExclamationTriangleIcon, ReloadIcon } from '@radix-ui/react-icons';
+import type { ErrorInfo, ReactNode } from 'react';
+import { Component } from 'react';
+import { useTranslations } from 'use-intl';
 import { Button } from './ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from './ui/card';
 
@@ -68,9 +68,7 @@ function ErrorFallback({ error, onRetry }: ErrorFallbackProps) {
         {error && (
           <details className="rounded-md bg-muted p-3 text-sm">
             <summary className="cursor-pointer font-medium">Technical Details</summary>
-            <pre className="mt-2 whitespace-pre-wrap text-xs text-muted-foreground">
-              {error.message}
-            </pre>
+            <pre className="mt-2 whitespace-pre-wrap text-xs text-muted-foreground">{error.message}</pre>
           </details>
         )}
         <Button onClick={onRetry} className="w-full" variant="outline">
@@ -87,7 +85,7 @@ export function TranslationErrorBoundary({ children }: { children: ReactNode }) 
   return (
     <ErrorBoundaryClass
       fallback={
-        <Card className="mx-auto max-w-md mt-4 shadow-xs">
+        <Card className="mx-auto max-w-md mt-6 shadow-xs">
           <CardContent className="p-4 text-center">
             <ExclamationTriangleIcon className="mx-auto mb-2 h-6 w-6 text-muted-foreground" />
             <p className="text-sm text-muted-foreground">
