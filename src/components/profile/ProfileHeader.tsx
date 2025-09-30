@@ -37,7 +37,7 @@ export function ProfileHeader() {
                   <span className="text-xs text-muted-foreground">EMEA, GULF, UAE</span>
                 </div>
               </div>
-              <p className="text-muted-foreground leading-tight mt-1">{t('fullStackEngineer')}</p>
+              <p className="leading-snug mt-1">{t('fullStackEngineer')}</p>
               <div className="flex items-center gap-2 mt-2 text-sm">
                 <span className="text-muted-foreground">{t('location')}</span>
                 <span className="text-muted-foreground">•</span>
