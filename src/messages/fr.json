@@ -315,13 +315,26 @@
     "urlCopied": "URL copiée dans le presse-papiers",
     "languageInfo": "C'est la langue dans laquelle votre profil apparaît"
   },
+  "Blog": {
+    "title": "Blog Technique",
+    "subtitle": "Réflexions sur le développement frontend, Web3 et les technologies modernes. Partage d'insights sur la construction d'applications évolutives et l'exploration des tendances technologiques émergentes.",
+    "featured": "En vedette",
+    "recentPosts": "Articles récents",
+    "readFullArticle": "Lire l'article complet",
+    "readMore": "Lire plus",
+    "stayUpdated": "Restez informé",
+    "subscribeDescription": "Abonnez-vous pour être notifié des nouveaux articles sur le développement frontend, Web3 et les insights technologiques.",
+    "enterEmail": "Entrez votre email",
+    "subscribe": "S'abonner",
+    "minRead": "min de lecture",
+    "publishedOn": "Publié le"
+  },
   "Common": {
     "showMore": "Afficher plus",
     "showLess": "Afficher moins",
     "seeAll": "Voir tout",
     "edit": "Modifier",
     "add": "Ajouter",
-    "save": "Enregistrer",
     "cancel": "Annuler",
     "delete": "Supprimer",
     "share": "Partager",

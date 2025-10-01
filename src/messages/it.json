@@ -294,6 +294,20 @@
     "urlCopied": "URL copiato negli appunti",
     "languageInfo": "Questa è la lingua in cui appare il tuo profilo"
   },
+  "Blog": {
+    "title": "Blog Tecnico",
+    "subtitle": "Riflessioni sullo sviluppo frontend, Web3 e tecnologie moderne. Condivisione di approfondimenti dalla costruzione di applicazioni scalabili ed esplorazione delle tendenze tecnologiche emergenti.",
+    "featured": "In evidenza",
+    "recentPosts": "Post recenti",
+    "readFullArticle": "Leggi l'articolo completo",
+    "readMore": "Leggi di più",
+    "stayUpdated": "Resta aggiornato",
+    "subscribeDescription": "Iscriviti per ricevere notifiche sui nuovi post sullo sviluppo frontend, Web3 e approfondimenti tecnologici.",
+    "enterEmail": "Inserisci la tua email",
+    "subscribe": "Iscriviti",
+    "minRead": "min di lettura",
+    "publishedOn": "Pubblicato il"
+  },
   "Footer": {
     "about": "Informazioni",
     "accessibility": "Accessibilità",

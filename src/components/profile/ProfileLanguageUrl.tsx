@@ -1,9 +1,8 @@
-import { languageNames } from '@/constants';
 import { ClipboardCopyIcon } from '@radix-ui/react-icons';
 import { useTranslations } from 'use-intl';
 import { useLocation } from 'wouter';
 import type { Locale } from '../../lib/i18n';
-import { locales } from '../../lib/i18n';
+import { getLocaleConfig, LOCALES } from '../../lib/i18n';
 import { Button } from '../ui/button';
 import { Card, CardContent } from '../ui/card';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '../ui/select';
@@ -31,7 +30,7 @@ export function ProfileLanguageUrl({ locale, onLocaleChange }: ProfileLanguageUr
     const pathSegments = location.split('/').filter(Boolean);
 
     // If the current path already has a locale prefix, replace it
-    if (pathSegments.length > 0 && locales.includes(pathSegments[0] as Locale)) {
+    if (pathSegments.length > 0 && LOCALES.includes(pathSegments[0] as Locale)) {
       pathSegments[0] = newLocale;
       setLocation(`/${pathSegments.join('/')}`);
     } else {
@@ -61,9 +60,9 @@ export function ProfileLanguageUrl({ locale, onLocaleChange }: ProfileLanguageUr
                 <SelectValue placeholder={t('selectLanguage')} />
               </SelectTrigger>
               <SelectContent>
-                {locales.map(localeOption => (
+                {LOCALES.map(localeOption => (
                   <SelectItem key={localeOption} value={localeOption}>
-                    {languageNames[localeOption]}
+                    {getLocaleConfig(localeOption).name}
                   </SelectItem>
                 ))}
               </SelectContent>

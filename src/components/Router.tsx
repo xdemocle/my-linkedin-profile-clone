@@ -1,8 +1,7 @@
 import { Navbar } from '@/components/layout/Navbar';
 import { ProfileLayout } from '@/components/layout/ProfileLayout';
 import { ScrollToTop } from '@/components/ScrollToTop';
-import type { Locale } from '@/lib/i18n';
-import { locales } from '@/lib/i18n';
+import { LOCALES, type Locale } from '@/constants';
 // import { ActivityPage } from '@/pages/ActivityPage';
 import { BlogPage } from '@/pages/BlogPage';
 import { ExperiencePage } from '@/pages/ExperiencePage';
@@ -31,13 +30,13 @@ function RootRedirect({ locale }: { locale: Locale }) {
 export function Router({ locale, onLocaleChange }: RouterProps) {
   return (
     <WouterRouter>
-      <ScrollToTop smooth={true} delay={100} />
+      <ScrollToTop smooth={true} />
       <Switch>
         {/* Root redirect */}
         <Route path="/" component={() => <RootRedirect locale={locale} />} />
 
         {/* Localized routes */}
-        {locales.map(lang => (
+        {LOCALES.map(lang => (
           <Route
             key={`${lang}-root`}
             path={`/${lang}`}
@@ -46,7 +45,7 @@ export function Router({ locale, onLocaleChange }: RouterProps) {
         ))}
 
         {/* Experience page with locale prefixes */}
-        {locales.map(lang => (
+        {LOCALES.map(lang => (
           <Route key={`${lang}-experience`} path={`/${lang}/experience`}>
             <div className="min-h-screen bg-background">
               <Navbar currentLocale={lang} onLocaleChange={onLocaleChange} />
@@ -58,7 +57,7 @@ export function Router({ locale, onLocaleChange }: RouterProps) {
         ))}
 
         {/* Activity page with locale prefixes */}
-        {/* {locales.map(lang => (
+        {/* {LOCALES.map(lang => (
           <Route key={`${lang}-activity`} path={`/${lang}/activity`}>
             <div className="min-h-screen bg-background">
               <Navbar currentLocale={lang} onLocaleChange={onLocaleChange} />
@@ -70,10 +69,11 @@ export function Router({ locale, onLocaleChange }: RouterProps) {
         ))} */}
 
         {/* Blog page with locale prefixes */}
-        {locales.map(lang => (
+        {LOCALES.map(lang => (
           <Route key={`${lang}-blog`} path={`/${lang}/blog`}>
             <div className="min-h-screen bg-background">
               <Navbar currentLocale={lang} onLocaleChange={onLocaleChange} />
+
               <div className="pt-16">
                 <BlogPage />
               </div>
@@ -82,7 +82,7 @@ export function Router({ locale, onLocaleChange }: RouterProps) {
         ))}
 
         {/* Projects page with locale prefixes */}
-        {locales.map(lang => (
+        {LOCALES.map(lang => (
           <Route key={`${lang}-projects`} path={`/${lang}/projects`}>
             <div className="min-h-screen bg-background">
               <Navbar currentLocale={lang} onLocaleChange={onLocaleChange} />

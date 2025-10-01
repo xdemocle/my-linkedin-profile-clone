@@ -1,12 +1,6 @@
+import { CheckIcon, CopyIcon, LinkedInLogoIcon, Share1Icon, TwitterLogoIcon } from '@radix-ui/react-icons';
 import { useState } from 'react';
 import { useTranslations } from 'use-intl';
-import { 
-  Share1Icon, 
-  CopyIcon, 
-  CheckIcon,
-  TwitterLogoIcon,
-  LinkedInLogoIcon
-} from '@radix-ui/react-icons';
 import { Button } from './ui/button';
 import {
   DropdownMenu,
@@ -23,11 +17,11 @@ interface ShareProfileProps {
   className?: string;
 }
 
-export function ShareProfile({ 
-  profileUrl = window.location.href,
-  profileName = "Rocco Russo's Profile",
-  className 
-}: ShareProfileProps) {
+export function ShareProfile({ profileUrl, profileName = "Rocco Russo's Profile", className }: ShareProfileProps) {
+  if (!profileUrl && typeof window !== 'undefined') {
+    profileUrl = window.location.href;
+  }
+
   const t = useTranslations('Common');
   const [copied, setCopied] = useState(false);
 
@@ -46,7 +40,9 @@ export function ShareProfile({
   };
 
   const handleTwitterShare = () => {
-    const twitterUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(shareText)}&url=${encodeURIComponent(profileUrl)}`;
+    const twitterUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(shareText)}&url=${encodeURIComponent(
+      profileUrl
+    )}`;
     window.open(twitterUrl, '_blank', 'noopener,noreferrer');
   };
 
@@ -79,26 +75,22 @@ export function ShareProfile({
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end" className="w-48">
         <DropdownMenuItem onClick={handleCopyLink}>
-          {copied ? (
-            <CheckIcon className="h-4 w-4 mr-2 text-green-600" />
-          ) : (
-            <CopyIcon className="h-4 w-4 mr-2" />
-          )}
+          {copied ? <CheckIcon className="h-4 w-4 mr-2 text-green-600" /> : <CopyIcon className="h-4 w-4 mr-2" />}
           {copied ? 'Copied!' : 'Copy link'}
         </DropdownMenuItem>
-        
+
         <DropdownMenuSeparator />
-        
+
         <DropdownMenuItem onClick={handleLinkedInShare}>
           <LinkedInLogoIcon className="h-4 w-4 mr-2" />
           Share on LinkedIn
         </DropdownMenuItem>
-        
+
         <DropdownMenuItem onClick={handleTwitterShare}>
           <TwitterLogoIcon className="h-4 w-4 mr-2" />
           Share on Twitter
         </DropdownMenuItem>
-        
+
         {typeof navigator !== 'undefined' && 'share' in navigator && (
           <>
             <DropdownMenuSeparator />

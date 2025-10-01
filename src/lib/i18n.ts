@@ -1,30 +1,31 @@
-export const locales = ['en', 'it', 'fr', 'es', 'ar'] as const;
+import type { Locale, LocaleDirection, Messages } from '@/constants/i18n';
+import { LOCALE_CONFIGS, LOCALE_MESSAGES, LOCALES, RTL_LOCALES } from '@/constants/i18n';
 
-export type Locale = (typeof locales)[number];
+export * from '@/constants';
 
-export const rtlLocales: readonly Locale[] = ['ar'];
+export const isRTL = (locale: Locale): boolean => RTL_LOCALES.includes(locale);
 
-export function isRTL(locale: Locale): boolean {
-  return rtlLocales.includes(locale);
-}
+export const getDirection = (locale: Locale): LocaleDirection => (isRTL(locale) ? 'rtl' : 'ltr');
 
-export function getDirection(locale: Locale): 'ltr' | 'rtl' {
-  return isRTL(locale) ? 'rtl' : 'ltr';
-}
+// Function to detect locale from URL path
+export const getLocaleFromPath = (pathname: string): Locale | null => {
+  const pathSegments = pathname.split('/').filter(Boolean);
 
-export async function getMessages(locale: Locale) {
-  switch (locale) {
-    case 'en':
-      return (await import('../messages/en.json')).default;
-    case 'it':
-      return (await import('../messages/it.json')).default;
-    case 'fr':
-      return (await import('../messages/fr.json')).default;
-    case 'es':
-      return (await import('../messages/es.json')).default;
-    case 'ar':
-      return (await import('../messages/ar.json')).default;
-    default:
-      return (await import('../messages/en.json')).default;
+  if (pathSegments.length > 0) {
+    const firstSegment = pathSegments[0] as Locale;
+
+    if (LOCALES.includes(firstSegment)) {
+      return firstSegment;
+    }
   }
-}
+
+  return null;
+};
+
+export const getLocaleMessages = (locale: Locale): Messages => {
+  return LOCALE_MESSAGES[locale as keyof typeof LOCALE_MESSAGES];
+};
+
+export const getLocaleConfig = (locale: Locale) => {
+  return LOCALE_CONFIGS[locale as keyof typeof LOCALE_CONFIGS];
+};

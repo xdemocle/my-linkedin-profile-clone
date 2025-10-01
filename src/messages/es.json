@@ -315,13 +315,26 @@
     "urlCopied": "URL copiada al portapapeles",
     "languageInfo": "Este es el idioma en el que aparece tu perfil"
   },
+  "Blog": {
+    "title": "Blog Técnico",
+    "subtitle": "Reflexiones sobre desarrollo frontend, Web3 y tecnología moderna. Compartiendo insights sobre la construcción de aplicaciones escalables y explorando tendencias tecnológicas emergentes.",
+    "featured": "Destacado",
+    "recentPosts": "Publicaciones recientes",
+    "readFullArticle": "Leer artículo completo",
+    "readMore": "Leer más",
+    "stayUpdated": "Mantente actualizado",
+    "subscribeDescription": "Suscríbete para recibir notificaciones sobre nuevas publicaciones de desarrollo frontend, Web3 e insights tecnológicos.",
+    "enterEmail": "Ingresa tu email",
+    "subscribe": "Suscribirse",
+    "minRead": "min de lectura",
+    "publishedOn": "Publicado el"
+  },
   "Common": {
     "showMore": "Mostrar más",
     "showLess": "Mostrar menos",
     "seeAll": "Ver todo",
     "edit": "Editar",
     "add": "Agregar",
-    "save": "Guardar",
     "cancel": "Cancelar",
     "delete": "Eliminar",
     "share": "Compartir",
