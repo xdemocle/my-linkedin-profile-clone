@@ -1,66 +1,123 @@
-# React + TypeScript + Vite
+# 🚀 LinkedIn Profile Clone
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An open-source demo project replicating the modern LinkedIn experience with advanced internationalization, dynamic theme switching, and robust routing capabilities.
 
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+[![Built with React](https://img.shields.io/badge/Built_with-React-61DAFB?style=flat-square&logo=react)](https://reactjs.org/) [![TypeScript](https://img.shields.io/badge/TypeScript-Ready-3178C6?style=flat-square&logo=typescript)](https://www.typescriptlang.org/) [![TailwindCSS](https://img.shields.io/badge/TailwindCSS-v4-38B2AC?style=flat-square&logo=tailwind-css)](https://tailwindcss.com/) [![ShadcnUI](https://img.shields.io/badge/UI-Shadcn-000000?style=flat-square)](https://ui.shadcn.com/)  [![Tested with Vitest](https://img.shields.io/badge/Tested_with-Vitest-729B1B?style=flat-square)](https://vitest.dev/)
 
-## Expanding the ESLint configuration
+## ✨ Features
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **Multi-language Support** - Complete i18n with RTL support for 5 languages (en, it, fr, es, ar)
+- **Clean & Modern UI** - Professional LinkedIn-inspired interface built with TailwindCSS and Shadcn/UI
+- **SSG Pre-rendering** - Static generation for all language routes
+- **Dark/Light Themes** - Automatic and manual theme switching
+- **Edge Routing** - Smart routing with Cloudflare Pages integration
+- **Comprehensive Testing** - 100% test coverage for routing logic
+- **Responsive Design** - Mobile-first approach for all screen sizes
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 🏗️ Technology Stack
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+- **Frontend**: React, TypeScript, TailwindCSS v4, Shadcn/UI
+- **Build Tools**: Vite, Bun
+- **Internationalization**: use-intl
+- **Routing**: Wouter (lightweight)
+- **Testing**: Vitest, React Testing Library
+- **Deployment**: Cloudflare Pages
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## 🧠 Technical Design
+
+### Multi-language Architecture
+
+The application implements a sophisticated i18n system with:
+
+- URL-based locale detection
+- Default locale (English) without prefix (`/experience`)
+- Other languages with prefix (`/fr/experience`)
+- Automatic redirects for legacy paths
+- RTL support for Arabic
+
+### Routes & Pages
+
+```text
+/ (en)           - Profile page in English
+/it/, /fr/, etc. - Localized profile pages
+/experience      - Experience page in English
+/*/experience    - Localized experience pages
+/blog            - Blog page in English
+/*/blog          - Localized blog pages
+/projects        - Projects page in English
+/*/projects      - Localized projects pages
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### Components
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+The application follows a modular component architecture:
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+- `<ThemeProvider>` - Manages light/dark mode
+- `<LocaleProvider>` - Handles internationalization
+- `<Router>` - Smart routing with locale detection
+- `<ProfileLayout>`, `<PageLayout>` - Layout components
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- [Bun](https://bun.sh/) (package manager)
+- Node.js 18+
+
+### Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/[username]/my-linkedin-profile-clone.git
+cd my-linkedin-profile-clone
+
+# Install dependencies
+bun install
+
+# Start development server
+bun run dev
 ```
+
+### Testing
+
+```bash
+# Run all tests
+bun run test
+
+# Run specific tests
+bun run test:run src/__tests__/components/Router.test.tsx
+```
+
+## 📋 Project Structure
+
+```text
+├── public/             # Static assets
+├── src/
+│   ├── components/     # React components
+│   ├── constants/      # Configuration constants
+│   ├── contexts/       # React contexts
+│   ├── hooks/          # Custom React hooks
+│   ├── lib/            # Utility functions
+│   ├── pages/          # Page components
+│   └── __tests__/      # Test files
+```
+
+## 📝 Testing Strategy
+
+The application includes comprehensive tests focusing on:
+
+- **URL Generation & Parsing** - Core routing logic
+- **Locale Detection** - Determines initial app state
+- **Route Matching** - Ensures correct page rendering
+- **Language Switching** - Key user interaction
+
+## 🔒 License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## 🙏 Acknowledgements
+
+- [Shadcn/UI](https://ui.shadcn.com/) for the beautiful component library
+- [TailwindCSS](https://tailwindcss.com/) for the utility-first CSS framework
+- [use-intl](https://use-intl.vercel.app/) for internationalization support
+- [Wouter](https://github.com/molefrog/wouter) for lightweight routing
