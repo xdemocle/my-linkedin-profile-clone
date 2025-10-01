@@ -31,19 +31,15 @@ export async function prerender(data: PrerenderData) {
   const { renderToString } = await import('react-dom/server');
   const { parseLinks } = await import('vite-prerender-plugin/parse');
 
-  // Extract locale and page type from URL path
+  // Extract locale from URL path
   let locale: Locale = LOCALE_DEFAULT;
-  let pageType = 'profile'; // profile, experience, blog, projects
 
   if (data.url) {
     const path = data.url.toString();
     const pathSegments = path.split('/').filter(Boolean);
+
     if (pathSegments.length > 0 && LOCALES.includes(pathSegments[0] as Locale)) {
       locale = pathSegments[0] as Locale;
-
-      if (pathSegments.length > 1) {
-        pageType = pathSegments[1]; // experience, blog, projects
-      }
     }
   }
 
@@ -53,12 +49,10 @@ export async function prerender(data: PrerenderData) {
     console.log(`Loaded messages for ${locale}:`, Object.keys(messages).length);
 
     // Render the static app with error boundary
-    const html = renderToString(
-      <Root prerenderLocale={locale} />
-    );
+    const html = renderToString(<Root prerenderLocale={locale} />);
     const links = parseLinks(html);
 
-    console.log(`Successfully prerendered ${locale} ${pageType} page with static content`);
+    console.log(`Successfully prerendered ${locale} page as static.`);
 
     return {
       html,
@@ -70,7 +64,7 @@ export async function prerender(data: PrerenderData) {
     };
   } catch (error) {
     console.error(`Error prerendering ${locale} page:`, error);
-    
+
     // Log more details about the error
     if (error instanceof Error) {
       console.error('Error name:', error.name);

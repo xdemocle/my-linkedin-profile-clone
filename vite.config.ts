@@ -4,9 +4,24 @@ import react from '@vitejs/plugin-react-swc';
 import path from 'path';
 import { defineConfig } from 'vite';
 import { vitePrerenderPlugin } from 'vite-prerender-plugin';
-import { LOCALE_DEFAULT, LOCALES } from './src/constants/i18n';
+import { LOCALES } from './src/constants/i18n';
+import { getPageUrlFromPath } from './src/lib/i18n';
 
-const mainLanguageRoutes = [...LOCALES.map(locale => `/${locale}`)];
+const mainLanguageRoutes = [...LOCALES.map(locale => getPageUrlFromPath(locale, ''))];
+
+const additionalPrerenderRoutes = [
+  // Main language routes
+  ...mainLanguageRoutes,
+
+  // Experience pages
+  ...LOCALES.map(locale => getPageUrlFromPath(locale, 'experience')),
+
+  // Blog pages
+  ...LOCALES.map(locale => getPageUrlFromPath(locale, 'blog')),
+
+  // Projects pages
+  ...LOCALES.map(locale => getPageUrlFromPath(locale, 'projects')),
+];
 
 // https://vite.dev/config/
 export default defineConfig({
@@ -16,19 +31,7 @@ export default defineConfig({
     tailwindcss(),
     vitePrerenderPlugin({
       renderTarget: '#root',
-      additionalPrerenderRoutes: [
-        // Main language routes
-        ...mainLanguageRoutes,
-
-        // Experience pages
-        ...LOCALES.map(locale => `/${locale === LOCALE_DEFAULT ? '' : locale}/experience/`),
-
-        // Blog pages
-        ...LOCALES.map(locale => `/${locale === LOCALE_DEFAULT ? '' : locale}/blog/`),
-
-        // Projects pages
-        ...LOCALES.map(locale => `/${locale}/projects/`),
-      ],
+      additionalPrerenderRoutes,
     }),
 
     // Create Cloudflare Pages configuration files for proper routing
@@ -66,7 +69,7 @@ export default defineConfig({
     //         console.log('Created _headers file for Cloudflare Pages');
 
     //         // Ensure each language directory has an index.html file
-    //         const languages = ['en', 'it', 'fr', 'es', 'ar'];
+    //         const languages = LOCALES;
 
     //         for (const lang of languages) {
     //           try {
