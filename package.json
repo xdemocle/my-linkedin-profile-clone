@@ -53,8 +53,8 @@
     "@radix-ui/react-tooltip": "^1.2.8",
     "@tailwindcss/vite": "^4.1.13",
     "@types/bun": "^1.2.23",
-    "@types/node": "^24.5.2",
-    "@types/react": "^19.1.15",
+    "@types/node": "^24.6.1",
+    "@types/react": "^19.1.16",
     "@types/react-dom": "^19.1.9",
     "@vitejs/plugin-react-swc": "^4.1.0",
     "class-variance-authority": "^0.7.1",
@@ -75,16 +75,13 @@
     "tailwind-merge": "^3.3.1",
     "tailwindcss": "^4.1.13",
     "tw-animate-css": "^1.4.0",
-    "typescript": "~5.9.2",
-    "typescript-eslint": "^8.44.1",
+    "typescript": "~5.9.3",
+    "typescript-eslint": "^8.45.0",
     "use-intl": "^4.3.9",
     "vite": "^7.1.7",
     "vite-prerender-plugin": "^0.5.12",
     "wouter": "^3.7.1",
-    "wrangler": "^4.40.2",
+    "wrangler": "^4.40.3",
     "zod": "^4.1.11"
-  },
-  "devDependencies": {
-    "vite-plugin-static-copy": "^3.1.2"
   }
 }
