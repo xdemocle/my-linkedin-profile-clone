@@ -2,11 +2,11 @@
 /  /en  302
 
 # Handle direct language access without trailing slash
-/en/  /en  301
-/it/  /it  301
-/fr/  /fr  301
-/es/  /es  301
-/ar/  /ar  301
+# /en/  /en  301
+# /it/  /it  301
+# /fr/  /fr  301
+# /es/  /es  301
+# /ar/  /ar  301
 
 # Serve the correct index.html for each language path
 # /en  /en/index.html  200
