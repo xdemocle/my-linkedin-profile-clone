@@ -1,83 +1,56 @@
-/* eslint-disable react-refresh/only-export-components */
 import { useEffect, useState } from 'react';
 import { IntlProvider } from 'use-intl';
 import { useLocation } from 'wouter';
 import { Router } from './components/Router';
 import { Toaster } from './components/ui/toaster';
+import type { Locale, Messages } from './constants';
 import { LocaleProvider } from './contexts/LocaleProvider';
 import { ThemeProvider } from './contexts/ThemeContext';
-import { type Locale, getDirection, getMessages, locales } from './lib/i18n';
-
-type Messages = Record<string, unknown>;
+import { getDirection, getLocaleFromPath, getLocaleMessages } from './lib/i18n';
 
 // Define the RootProps interface
 interface RootProps {
-  prerenderLocale?: Locale;
+  prerenderLocale: Locale;
 }
 
-// Function to detect locale from URL path
-function getLocaleFromPath(path: string): Locale | null {
-  const pathSegments = path.split('/').filter(Boolean);
-  if (pathSegments.length > 0) {
-    const firstSegment = pathSegments[0];
-    if (locales.includes(firstSegment as Locale)) {
-      return firstSegment as Locale;
-    }
-  }
-  return null;
-}
+export const Root = ({ prerenderLocale }: RootProps) => {
+  const [pathname] = useLocation();
 
-const preloadedMessages: Record<string, Messages> = {};
-
-// Preload messages for SSG (called by prerender function)
-export async function preloadMessages(locale: Locale): Promise<Messages> {
-  const messages = await getMessages(locale);
-  // We're mutating the object, not reassigning the variable
-  preloadedMessages[locale] = messages;
-  return messages;
-}
-
-export function Root({ prerenderLocale }: RootProps = {}) {
-  // Always call hooks at the top level
-  const [location] = useLocation();
-  const isServer = typeof window === 'undefined';
-  
-  // Use prerenderLocale if provided (for SSR), otherwise default to 'en'
+  // Use prerenderLocale if provided (for SSG), otherwise default to 'en'
   const [locale, setLocale] = useState<Locale>(prerenderLocale || 'en');
 
-  // Initialize with preloaded messages if available (for SSG)
-  const [messages, setMessages] = useState<Messages | null>(
-    prerenderLocale && preloadedMessages[prerenderLocale] ? preloadedMessages[prerenderLocale] : null
-  );
+  // Initialize with messages for the current locale
+  const [messages, setMessages] = useState<Messages>(() => {
+    try {
+      return getLocaleMessages(prerenderLocale || locale);
+    } catch (error) {
+      console.warn('Failed to load messages for locale:', prerenderLocale || locale, error);
+      // Fallback to English messages
+      return getLocaleMessages('en');
+    }
+  });
 
   // Detect locale from URL and load messages (only in browser)
   useEffect(() => {
-    if (!isServer) {
-      const urlLocale = getLocaleFromPath(location);
+    // Skip URL detection during prerendering
+    if (prerenderLocale) return;
 
-      if (urlLocale && urlLocale !== locale) {
-        setLocale(urlLocale);
-      } else {
-        getMessages(locale).then(setMessages);
-      }
+    const urlLocale = getLocaleFromPath(pathname);
+    if (urlLocale && urlLocale !== locale) {
+      setLocale(urlLocale);
     }
-  }, [locale, location, isServer]);
-  
-  // For prerendering, immediately load messages for the specified locale
-  useEffect(() => {
-    if (prerenderLocale && isServer) {
-      getMessages(prerenderLocale).then(setMessages);
-    }
-  }, [prerenderLocale, isServer]);
+  }, [pathname, prerenderLocale, locale]);
 
   // Update messages when locale changes
   useEffect(() => {
-    getMessages(locale).then(setMessages);
+    try {
+      setMessages(getLocaleMessages(locale));
+    } catch (error) {
+      console.warn('Failed to load messages for locale:', locale, error);
+      // Fallback to English messages
+      setMessages(getLocaleMessages('en'));
+    }
   }, [locale]);
-
-  if (!messages) {
-    return <div>Loading...</div>;
-  }
 
   const direction = getDirection(locale);
 
@@ -85,7 +58,17 @@ export function Root({ prerenderLocale }: RootProps = {}) {
     <ThemeProvider>
       <LocaleProvider initialLocale={locale}>
         <div dir={direction} className={direction === 'rtl' ? 'rtl' : 'ltr'}>
-          <IntlProvider messages={messages} locale={locale}>
+          <IntlProvider
+            messages={messages}
+            locale={locale}
+            onError={error => {
+              // Suppress environment fallback errors during prerendering
+              if (error.code === 'ENVIRONMENT_FALLBACK') {
+                return;
+              }
+              console.warn('IntlProvider error:', error);
+            }}
+          >
             <Router locale={locale} onLocaleChange={setLocale} />
             <Toaster />
           </IntlProvider>
@@ -93,4 +76,4 @@ export function Root({ prerenderLocale }: RootProps = {}) {
       </LocaleProvider>
     </ThemeProvider>
   );
-}
+};
