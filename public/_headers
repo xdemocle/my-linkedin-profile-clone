@@ -9,6 +9,9 @@
   Cache-Control: public, max-age=600
 
 # Language directories
+/*
+  Cache-Control: public, max-age=600
+  Content-Language: en
 /en/*
   Cache-Control: public, max-age=600
   Content-Language: en
