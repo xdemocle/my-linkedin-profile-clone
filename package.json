@@ -22,7 +22,6 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "postbuild": "node scripts/prepare-deploy.js",
     "lint": "eslint .",
     "preview": "bun run build && wrangler pages dev",
     "deploy": "bun run build && wrangler pages deploy",
