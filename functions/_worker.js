@@ -12,7 +12,7 @@ function isLanguageRoute(path) {
 // Helper function to extract language from path
 function getLanguageFromPath(path) {
   // Extract the first segment after the leading slash
-  const match = path.match(/^\/([^\/]+)/);
+  const match = path.match(/^\/(.*?)(?:\/|$)/);
   if (match && LANGUAGES.includes(match[1])) {
     return match[1];
   }
@@ -50,7 +50,7 @@ export default {
           headers: {
             'Content-Type': 'text/html;charset=UTF-8',
             'Content-Language': language,
-            'Cache-Control': 'public, max-age=0, must-revalidate',
+            'Cache-Control': 'public, max-age=600',
           },
         });
       }

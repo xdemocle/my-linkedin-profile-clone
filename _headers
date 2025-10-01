@@ -1,0 +1,19 @@
+# Cache assets with a long TTL
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# Cache HTML files with a short TTL
+/*.html
+  Cache-Control: public, max-age=600
+
+# Language directories
+/en/*
+  Content-Language: en
+/it/*
+  Content-Language: it
+/fr/*
+  Content-Language: fr
+/es/*
+  Content-Language: es
+/ar/*
+  Content-Language: ar

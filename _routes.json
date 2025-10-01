@@ -1,23 +1,63 @@
 {
   "version": 1,
   "include": ["/*"],
-  "exclude": ["/_*", "/api/*"],
+  "exclude": [
+    "/assets/*",
+    "/_astro/*",
+    "/favicon.ico",
+    "/manifest.json",
+    "/sw.js"
+  ],
   "routes": [
-    { "src": "/", "dst": "/en/", "status": 302 },
-    { "src": "/en", "dst": "/en/", "status": 301 },
-    { "src": "/it", "dst": "/it/", "status": 301 },
-    { "src": "/fr", "dst": "/fr/", "status": 301 },
-    { "src": "/es", "dst": "/es/", "status": 301 },
-    { "src": "/ar", "dst": "/ar/", "status": 301 },
-    { "src": "/en/", "dst": "/en/index.html" },
-    { "src": "/it/", "dst": "/it/index.html" },
-    { "src": "/fr/", "dst": "/fr/index.html" },
-    { "src": "/es/", "dst": "/es/index.html" },
-    { "src": "/ar/", "dst": "/ar/index.html" },
-    { "src": "/en/*", "dst": "/en/index.html" },
-    { "src": "/it/*", "dst": "/it/index.html" },
-    { "src": "/fr/*", "dst": "/fr/index.html" },
-    { "src": "/es/*", "dst": "/es/index.html" },
-    { "src": "/ar/*", "dst": "/ar/index.html" }
+    {
+      "src": "^/$",
+      "dest": "/en/",
+      "status": 302
+    },
+    {
+      "src": "^/en$",
+      "dest": "/en/",
+      "status": 301
+    },
+    {
+      "src": "^/it$",
+      "dest": "/it/",
+      "status": 301
+    },
+    {
+      "src": "^/fr$",
+      "dest": "/fr/",
+      "status": 301
+    },
+    {
+      "src": "^/es$",
+      "dest": "/es/",
+      "status": 301
+    },
+    {
+      "src": "^/ar$",
+      "dest": "/ar/",
+      "status": 301
+    },
+    {
+      "src": "^/en/.*",
+      "dest": "/en/index.html"
+    },
+    {
+      "src": "^/it/.*",
+      "dest": "/it/index.html"
+    },
+    {
+      "src": "^/fr/.*",
+      "dest": "/fr/index.html"
+    },
+    {
+      "src": "^/es/.*",
+      "dest": "/es/index.html"
+    },
+    {
+      "src": "^/ar/.*",
+      "dest": "/ar/index.html"
+    }
   ]
 }
