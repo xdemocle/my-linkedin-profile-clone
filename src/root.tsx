@@ -1,13 +1,19 @@
+/* eslint-disable react-refresh/only-export-components */
 import { useEffect, useState } from 'react';
 import { IntlProvider } from 'use-intl';
 import { useLocation } from 'wouter';
 import { Router } from './components/Router';
-import { ThemeProvider } from './contexts/ThemeContext';
-import { LocaleProvider } from './contexts/LocaleProvider';
-import { type Locale, getDirection, getMessages, locales } from './lib/i18n';
 import { Toaster } from './components/ui/toaster';
+import { LocaleProvider } from './contexts/LocaleProvider';
+import { ThemeProvider } from './contexts/ThemeContext';
+import { type Locale, getDirection, getMessages, locales } from './lib/i18n';
 
 type Messages = Record<string, unknown>;
+
+// Define the RootProps interface
+interface RootProps {
+  prerenderLocale?: Locale;
+}
 
 // Function to detect locale from URL path
 function getLocaleFromPath(path: string): Locale | null {
@@ -21,21 +27,49 @@ function getLocaleFromPath(path: string): Locale | null {
   return null;
 }
 
-export function Root() {
-  const [location] = useLocation();
-  const [locale, setLocale] = useState<Locale>('en');
-  const [messages, setMessages] = useState<Messages | null>(null);
+const preloadedMessages: Record<string, Messages> = {};
 
-  // Detect locale from URL and load messages
-  useEffect(() => {
-    const urlLocale = getLocaleFromPath(location);
-    if (urlLocale && urlLocale !== locale) {
-      setLocale(urlLocale);
-    } else {
-      getMessages(locale).then(setMessages);
-    }
-  }, [locale, location]);
+// Preload messages for SSG (called by prerender function)
+export async function preloadMessages(locale: Locale): Promise<Messages> {
+  const messages = await getMessages(locale);
+  // We're mutating the object, not reassigning the variable
+  preloadedMessages[locale] = messages;
+  return messages;
+}
+
+export function Root({ prerenderLocale }: RootProps = {}) {
+  // Always call hooks at the top level
+  const [location] = useLocation();
+  const isServer = typeof window === 'undefined';
   
+  // Use prerenderLocale if provided (for SSR), otherwise default to 'en'
+  const [locale, setLocale] = useState<Locale>(prerenderLocale || 'en');
+
+  // Initialize with preloaded messages if available (for SSG)
+  const [messages, setMessages] = useState<Messages | null>(
+    prerenderLocale && preloadedMessages[prerenderLocale] ? preloadedMessages[prerenderLocale] : null
+  );
+
+  // Detect locale from URL and load messages (only in browser)
+  useEffect(() => {
+    if (!isServer) {
+      const urlLocale = getLocaleFromPath(location);
+
+      if (urlLocale && urlLocale !== locale) {
+        setLocale(urlLocale);
+      } else {
+        getMessages(locale).then(setMessages);
+      }
+    }
+  }, [locale, location, isServer]);
+  
+  // For prerendering, immediately load messages for the specified locale
+  useEffect(() => {
+    if (prerenderLocale && isServer) {
+      getMessages(prerenderLocale).then(setMessages);
+    }
+  }, [prerenderLocale, isServer]);
+
   // Update messages when locale changes
   useEffect(() => {
     getMessages(locale).then(setMessages);

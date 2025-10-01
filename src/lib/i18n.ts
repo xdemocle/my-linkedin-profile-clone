@@ -1,4 +1,5 @@
 export const locales = ['en', 'it', 'fr', 'es', 'ar'] as const;
+
 export type Locale = (typeof locales)[number];
 
 export const rtlLocales: readonly Locale[] = ['ar'];

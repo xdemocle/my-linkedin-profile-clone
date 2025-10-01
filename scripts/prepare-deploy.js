@@ -18,29 +18,42 @@ function prepareLanguageDirectories() {
   console.log('Preparing language directories...');
 
   try {
-    // Read the base index.html
-    const indexPath = path.join(DIST_DIR, 'index.html');
-    if (!fs.existsSync(indexPath)) {
-      console.error('Error: index.html not found in dist directory');
-      process.exit(1);
-    }
-
-    const indexContent = fs.readFileSync(indexPath, 'utf-8');
-
-    // Create language directories and copy index.html
+    // Check if language directories exist and have prerendered content
     for (const lang of LANGUAGES) {
       const langDir = path.join(DIST_DIR, lang);
+      const langIndexPath = path.join(langDir, 'index.html');
 
       // Create directory if it doesn't exist
       if (!fs.existsSync(langDir)) {
         fs.mkdirSync(langDir, { recursive: true });
         console.log(`Created directory: ${langDir}`);
-      }
 
-      // Write index.html to language directory
-      const langIndexPath = path.join(langDir, 'index.html');
-      fs.writeFileSync(langIndexPath, indexContent);
-      console.log(`Created ${langIndexPath}`);
+        // If the directory didn't exist, we need to create the index.html file
+        // Use the base index.html as a fallback
+        const indexPath = path.join(DIST_DIR, 'index.html');
+        if (fs.existsSync(indexPath)) {
+          const indexContent = fs.readFileSync(indexPath, 'utf-8');
+          fs.writeFileSync(langIndexPath, indexContent);
+          console.log(`Created ${langIndexPath} from base index.html`);
+        } else {
+          console.error('Error: index.html not found in dist directory');
+        }
+      } else {
+        // Directory exists, check if index.html exists
+        if (!fs.existsSync(langIndexPath)) {
+          // If the language index.html doesn't exist, create it from the base index.html
+          const indexPath = path.join(DIST_DIR, 'index.html');
+          if (fs.existsSync(indexPath)) {
+            const indexContent = fs.readFileSync(indexPath, 'utf-8');
+            fs.writeFileSync(langIndexPath, indexContent);
+            console.log(`Created ${langIndexPath} from base index.html`);
+          } else {
+            console.error('Error: index.html not found in dist directory');
+          }
+        } else {
+          console.log(`Preserving existing prerendered content in ${langIndexPath}`);
+        }
+      }
     }
 
     console.log('Language directories prepared successfully');

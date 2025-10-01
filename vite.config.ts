@@ -73,12 +73,23 @@ export default defineConfig({
             // Create directory if it doesn't exist
             await fs.mkdir(`dist/client/${lang}`, { recursive: true });
 
-            // Copy the main index.html to each language directory
-            const indexContent = await fs.readFile('dist/client/index.html', 'utf-8');
-            await fs.writeFile(`dist/client/${lang}/index.html`, indexContent);
-            console.log(`Copied index.html to ${lang} directory`);
+            // Check if the language index.html already exists (prerendered)
+            const langIndexPath = `dist/client/${lang}/index.html`;
+
+            try {
+              // Check if file exists by trying to access it
+              await fs.access(langIndexPath);
+              console.log(`Preserving existing prerendered content in ${lang}/index.html`);
+            } catch (e: unknown) {
+              console.error(e);
+
+              // Only copy if the file doesn't exist (to preserve prerendered content)
+              const indexContent = await fs.readFile('dist/client/index.html', 'utf-8');
+              await fs.writeFile(langIndexPath, indexContent);
+              console.log(`Copied index.html to ${lang} directory`);
+            }
           } catch (error) {
-            console.error(`Error copying index.html to ${lang} directory:`, error);
+            console.error(`Error handling index.html for ${lang} directory:`, error);
           }
         }
 
