@@ -1,6 +1,7 @@
 import { useCallback } from 'react';
 import { useLocation } from 'wouter';
-import type { Locale } from '../lib/i18n';
+import type { Locale } from '../constants/i18n';
+import { LOCALES } from '../constants/i18n';
 
 export function useLocalizedRoutes() {
   const [location, setLocation] = useLocation();
@@ -9,25 +10,29 @@ export function useLocalizedRoutes() {
   const getLocaleFromPath = useCallback((): Locale | null => {
     const pathSegments = location.split('/').filter(Boolean);
     if (pathSegments.length > 0) {
-      const firstSegment = pathSegments[0];
-      if (['en', 'it', 'fr', 'es', 'ar'].includes(firstSegment)) {
-        return firstSegment as Locale;
+      const firstSegment = pathSegments[0] as Locale;
+
+      if (LOCALES.includes(firstSegment)) {
+        return firstSegment;
       }
     }
     return null;
   }, [location]);
 
   // Navigate to a localized route
-  const navigateToLocalizedRoute = useCallback((locale: Locale, path: string) => {
-    const cleanPath = path.startsWith('/') ? path : `/${path}`;
-    const localizedPath = `/${locale}${cleanPath === '/' ? '' : cleanPath}`;
-    setLocation(localizedPath);
-  }, [setLocation]);
+  const navigateToLocalizedRoute = useCallback(
+    (locale: Locale, path: string) => {
+      const cleanPath = path.startsWith('/') ? path : `/${path}`;
+      const localizedPath = `/${locale}${cleanPath === '/' ? '' : cleanPath}`;
+      setLocation(localizedPath);
+    },
+    [setLocation]
+  );
 
   // Get the current route without the locale prefix
   const getRouteWithoutLocale = useCallback((): string => {
     const pathSegments = location.split('/').filter(Boolean);
-    if (pathSegments.length > 0 && ['en', 'it', 'fr', 'es', 'ar'].includes(pathSegments[0])) {
+    if (pathSegments.length > 0 && LOCALES.includes(pathSegments[0] as Locale)) {
       return `/${pathSegments.slice(1).join('/')}`;
     }
     return location;
@@ -36,6 +41,6 @@ export function useLocalizedRoutes() {
   return {
     getLocaleFromPath,
     navigateToLocalizedRoute,
-    getRouteWithoutLocale
+    getRouteWithoutLocale,
   };
 }

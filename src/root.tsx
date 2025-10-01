@@ -3,7 +3,7 @@ import { IntlProvider } from 'use-intl';
 import { useLocation } from 'wouter';
 import { Router } from './components/Router';
 import { Toaster } from './components/ui/toaster';
-import type { Locale, Messages } from './constants';
+import { LOCALE_DEFAULT, type Locale, type Messages } from './constants/i18n';
 import { LocaleProvider } from './contexts/LocaleProvider';
 import { ThemeProvider } from './contexts/ThemeContext';
 import { getDirection, getLocaleFromPath, getLocaleMessages } from './lib/i18n';
@@ -17,7 +17,7 @@ export const Root = ({ prerenderLocale }: RootProps) => {
   const [pathname] = useLocation();
 
   // Use prerenderLocale if provided (for SSG), otherwise default to 'en'
-  const [locale, setLocale] = useState<Locale>(prerenderLocale || 'en');
+  const [locale, setLocale] = useState<Locale>(prerenderLocale || LOCALE_DEFAULT);
 
   // Initialize with messages for the current locale
   const [messages, setMessages] = useState<Messages>(() => {
@@ -25,8 +25,9 @@ export const Root = ({ prerenderLocale }: RootProps) => {
       return getLocaleMessages(prerenderLocale || locale);
     } catch (error) {
       console.warn('Failed to load messages for locale:', prerenderLocale || locale, error);
+
       // Fallback to English messages
-      return getLocaleMessages('en');
+      return getLocaleMessages(LOCALE_DEFAULT);
     }
   });
 
@@ -36,6 +37,7 @@ export const Root = ({ prerenderLocale }: RootProps) => {
     if (prerenderLocale) return;
 
     const urlLocale = getLocaleFromPath(pathname);
+
     if (urlLocale && urlLocale !== locale) {
       setLocale(urlLocale);
     }
@@ -47,8 +49,8 @@ export const Root = ({ prerenderLocale }: RootProps) => {
       setMessages(getLocaleMessages(locale));
     } catch (error) {
       console.warn('Failed to load messages for locale:', locale, error);
-      // Fallback to English messages
-      setMessages(getLocaleMessages('en'));
+      // Fallback to default locale messages
+      setMessages(getLocaleMessages(LOCALE_DEFAULT));
     }
   }, [locale]);
 
@@ -66,6 +68,7 @@ export const Root = ({ prerenderLocale }: RootProps) => {
               if (error.code === 'ENVIRONMENT_FALLBACK') {
                 return;
               }
+
               console.warn('IntlProvider error:', error);
             }}
           >

@@ -1,5 +1,4 @@
 import type { Messages as MessagesIntl } from 'use-intl';
-// Import messages synchronously to avoid prerendering issues
 import arMessages from '../messages/ar.json';
 import enMessages from '../messages/en.json';
 import esMessages from '../messages/es.json';
@@ -30,6 +29,8 @@ export const LOCALE_DEFAULT = Object.keys(LOCALE_CONFIGS)[0] as Locale;
 
 export const LOCALES = Object.keys(LOCALE_CONFIGS) as Locale[];
 
+export const RTL_LOCALES: Locale[] = ['ar'] as const;
+
 // Locale messages
 export const LOCALE_MESSAGES = {
   en: enMessages,
@@ -38,5 +39,3 @@ export const LOCALE_MESSAGES = {
   es: esMessages,
   ar: arMessages,
 } as const;
-
-export const RTL_LOCALES: Locale[] = ['ar'] as const;

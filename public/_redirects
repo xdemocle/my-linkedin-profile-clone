@@ -1,24 +1,26 @@
-# Handle direct language access without trailing slash
-/en  /     302
-/en/ /     302
-/it  /it/  301
-/fr  /fr/  301
-/es  /es/  301
-/ar  /ar/  301
+# Handle direct language access with trailing slash
+/en   /    302
+/en/  /    302
+/it   /it/ 301
+/fr   /fr/ 301
+/es   /es/ 301
+/ar   /ar/ 301
 
 # Serve the correct index.html for each language path
-/     /en/index.html  200
-/it/  /it/index.html  200
-/fr/  /fr/index.html  200
-/es/  /es/index.html  200
-/ar/  /ar/index.html  200
+# /     /index.html     200
+# /it/  /it/index.html  200
+# /fr/  /fr/index.html  200
+# /es/  /es/index.html  200
+# /ar/  /ar/index.html  200
 
 # Handle all other language-specific routes by serving the language's index.html
-/*     /en/:splat.html  200  SPA
-/it/*  /it/:splat.html  200  SPA
-/fr/*  /fr/:splat.html  200  SPA
-/es/*  /es/:splat.html  200  SPA
-/ar/*  /ar/:splat.html  200  SPA
+/*    /:splat    200
+/en/* /:splat 302
+/it/* /it/:splat 200
+/fr/* /fr/:splat 200
+/es/* /es/:splat 200
+/ar/* /ar/:splat 200
+
 
 # /home301 / 301
 # /home302 / 302

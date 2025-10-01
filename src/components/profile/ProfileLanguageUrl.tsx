@@ -1,8 +1,9 @@
 import { ClipboardCopyIcon } from '@radix-ui/react-icons';
 import { useTranslations } from 'use-intl';
 import { useLocation } from 'wouter';
-import type { Locale } from '../../lib/i18n';
-import { getLocaleConfig, LOCALES } from '../../lib/i18n';
+import type { Locale } from '../../constants/i18n';
+import { LOCALES } from '../../constants/i18n';
+import { getLocaleConfig } from '../../lib/i18n';
 import { Button } from '../ui/button';
 import { Card, CardContent } from '../ui/card';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '../ui/select';

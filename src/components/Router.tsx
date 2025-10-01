@@ -1,13 +1,13 @@
 import { Navbar } from '@/components/layout/Navbar';
 import { ProfileLayout } from '@/components/layout/ProfileLayout';
 import { ScrollToTop } from '@/components/ScrollToTop';
-import { LOCALES, type Locale } from '@/constants';
+import { getPageUrlFromPath } from '@/lib/i18n';
+import { LOCALE_DEFAULT, LOCALES, type Locale } from '../constants/i18n';
 // import { ActivityPage } from '@/pages/ActivityPage';
 import { BlogPage } from '@/pages/BlogPage';
 import { ExperiencePage } from '@/pages/ExperiencePage';
 import { ProjectsPage } from '@/pages/ProjectsPage';
-import { useEffect } from 'react';
-import { Redirect, Route, Switch, useLocation, Router as WouterRouter } from 'wouter';
+import { Redirect, Route, Switch, Router as WouterRouter } from 'wouter';
 
 interface RouterProps {
   locale: Locale;
@@ -15,38 +15,44 @@ interface RouterProps {
 }
 
 // Helper component to redirect from root to localized route
-function RootRedirect({ locale }: { locale: Locale }) {
-  const [, setLocation] = useLocation();
+// function RootRedirect({ locale }: { locale: Locale | '' }) {
+//   const [, setLocation] = useLocation();
 
-  useEffect(() => {
-    setLocation(`/${locale}`);
-  }, [locale, setLocation]);
+//   useEffect(() => {
+//     setLocation(`/${locale}`);
+//   }, [locale, setLocation]);
 
-  return <div>Redirecting...</div>;
-}
+//   return <div>Redirecting...</div>;
+// }
 
 // Note: We're using direct Route components with inline rendering instead of a wrapper component
-
 export function Router({ locale, onLocaleChange }: RouterProps) {
   return (
     <WouterRouter>
       <ScrollToTop smooth={true} />
       <Switch>
         {/* Root redirect */}
-        <Route path="/" component={() => <RootRedirect locale={locale} />} />
+        {/* <Route path={`/${locale}`} component={() => <RootRedirect locale={''} />} />
+        <Route path={`/${locale}/`} component={() => <RootRedirect locale={''} />} /> */}
+
+        {/* <Route
+          key={`root`}
+          path={`/`}
+          component={() => <ProfileLayout locale={LOCALE_DEFAULT} onLocaleChange={onLocaleChange} />}
+        /> */}
 
         {/* Localized routes */}
         {LOCALES.map(lang => (
           <Route
             key={`${lang}-root`}
-            path={`/${lang}`}
+            path={getPageUrlFromPath(lang, lang === LOCALE_DEFAULT ? '/' : `/${lang}`)}
             component={() => <ProfileLayout locale={lang} onLocaleChange={onLocaleChange} />}
           />
         ))}
 
         {/* Experience page with locale prefixes */}
         {LOCALES.map(lang => (
-          <Route key={`${lang}-experience`} path={`/${lang}/experience`}>
+          <Route key={`${lang}-experience`} path={getPageUrlFromPath(lang, 'experience')}>
             <div className="min-h-screen bg-background">
               <Navbar currentLocale={lang} onLocaleChange={onLocaleChange} />
               <div className="pt-16">
@@ -58,7 +64,7 @@ export function Router({ locale, onLocaleChange }: RouterProps) {
 
         {/* Activity page with locale prefixes */}
         {/* {LOCALES.map(lang => (
-          <Route key={`${lang}-activity`} path={`/${lang}/activity`}>
+          <Route key={`${lang}-activity`} path={getPageUrlFromPath(lang, 'activity')}>
             <div className="min-h-screen bg-background">
               <Navbar currentLocale={lang} onLocaleChange={onLocaleChange} />
               <div className="pt-16">
@@ -70,7 +76,7 @@ export function Router({ locale, onLocaleChange }: RouterProps) {
 
         {/* Blog page with locale prefixes */}
         {LOCALES.map(lang => (
-          <Route key={`${lang}-blog`} path={`/${lang}/blog`}>
+          <Route key={`${lang}-blog`} path={getPageUrlFromPath(lang, 'blog')}>
             <div className="min-h-screen bg-background">
               <Navbar currentLocale={lang} onLocaleChange={onLocaleChange} />
 
@@ -83,7 +89,7 @@ export function Router({ locale, onLocaleChange }: RouterProps) {
 
         {/* Projects page with locale prefixes */}
         {LOCALES.map(lang => (
-          <Route key={`${lang}-projects`} path={`/${lang}/projects`}>
+          <Route key={`${lang}-projects`} path={getPageUrlFromPath(lang, 'projects')}>
             <div className="min-h-screen bg-background">
               <Navbar currentLocale={lang} onLocaleChange={onLocaleChange} />
               <div className="pt-16">
@@ -94,16 +100,16 @@ export function Router({ locale, onLocaleChange }: RouterProps) {
         ))}
 
         {/* Legacy routes - redirect to localized versions */}
-        <Route path="/experience">
+        <Route path={getPageUrlFromPath(locale, 'experience')}>
           <Redirect to={`/${locale}/experience`} />
         </Route>
-        <Route path="/activity">
+        <Route path={getPageUrlFromPath(locale, 'activity')}>
           <Redirect to={`/${locale}/activity`} />
         </Route>
-        <Route path="/blog">
+        <Route path={getPageUrlFromPath(locale, 'blog')}>
           <Redirect to={`/${locale}/blog`} />
         </Route>
-        <Route path="/projects">
+        <Route path={getPageUrlFromPath(locale, 'projects')}>
           <Redirect to={`/${locale}/projects`} />
         </Route>
 

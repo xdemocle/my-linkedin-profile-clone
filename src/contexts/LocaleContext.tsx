@@ -1,7 +1,7 @@
 /* eslint-disable react-refresh/only-export-components */
 import type { ReactNode } from 'react';
 import { createContext, useContext, useState } from 'react';
-import type { Locale } from '../lib/i18n';
+import { LOCALE_DEFAULT, type Locale } from '../constants/i18n';
 
 interface LocaleContextType {
   locale: Locale;
@@ -15,7 +15,7 @@ interface LocaleProviderProps {
   initialLocale?: Locale;
 }
 
-export function LocaleProvider({ children, initialLocale = 'en' }: LocaleProviderProps) {
+export function LocaleProvider({ children, initialLocale = LOCALE_DEFAULT }: LocaleProviderProps) {
   const [locale, setLocale] = useState<Locale>(initialLocale);
 
   return <LocaleContext.Provider value={{ locale, setLocale }}>{children}</LocaleContext.Provider>;

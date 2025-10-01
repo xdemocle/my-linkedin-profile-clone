@@ -1,7 +1,8 @@
 import { createRoot } from 'react-dom/client';
 import type { JSX } from 'react/jsx-runtime';
+import { LOCALE_DEFAULT, LOCALES, type Locale } from './constants/i18n';
 import './index.css';
-import { getLocaleFromPath, getLocaleMessages, LOCALE_DEFAULT, LOCALES, type Locale } from './lib/i18n';
+import { getLocaleFromPath, getLocaleMessages } from './lib/i18n';
 import { registerServiceWorker } from './lib/pwa';
 import { Root } from './root.tsx';
 
@@ -59,7 +60,7 @@ export async function prerender(data: PrerenderData) {
       links: new Set(links),
       head: {
         lang: locale,
-        title: locale === 'en' ? 'LinkedIn Profile' : `LinkedIn Profile (${locale})`,
+        title: locale === LOCALE_DEFAULT ? 'LinkedIn Profile' : `LinkedIn Profile (${locale})`,
       },
     };
   } catch (error) {

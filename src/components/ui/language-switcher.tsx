@@ -1,8 +1,8 @@
 import { GlobeIcon } from '@radix-ui/react-icons';
 import { useCallback, useState } from 'react';
 import { useLocation } from 'wouter';
-import type { Locale } from '../../lib/i18n';
-import { getLocaleConfig, LOCALES } from '../../lib/i18n';
+import { type Locale, LOCALES } from '../../constants/i18n';
+import { getLocaleConfig } from '../../lib/i18n';
 import { Button } from './button';
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from './dropdown-menu';
 
