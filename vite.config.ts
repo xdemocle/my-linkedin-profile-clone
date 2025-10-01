@@ -14,7 +14,16 @@ export default defineConfig({
     tailwindcss(),
     vitePrerenderPlugin({
       renderTarget: '#root',
-      additionalPrerenderRoutes: ['/en', '/it', '/fr', '/es', '/ar'],
+      additionalPrerenderRoutes: [
+        // Main language routes
+        '/en', '/it', '/fr', '/es', '/ar',
+        // Experience pages
+        '/en/experience', '/it/experience', '/fr/experience', '/es/experience', '/ar/experience',
+        // Blog pages
+        '/en/blog', '/it/blog', '/fr/blog', '/es/blog', '/ar/blog',
+        // Projects pages
+        '/en/projects', '/it/projects', '/fr/projects', '/es/projects', '/ar/projects'
+      ],
     }),
     // Create Cloudflare Pages configuration files for proper routing
     {
