@@ -2,76 +2,70 @@ name = "my-linkedin-profile-clone"
 compatibility_date = "2025-09-15"
 pages_build_output_dir = "./dist/client"
 
-# [assets]
-# directory = "./dist/client"
-# binding = "ASSETS"
-assets = { not_found_handling = "single-page-application" }
-
-[observability]
-enabled = true
+[site]
+source = "./dist/client"
 
 [build]
 command = "bun run build"
-upload.format = "directory"
-upload_source_maps = false
 
-# Configure static assets
-[site.static]
-include = ["**/*"]
-exclude = []
+[build.processing]
+entrypoint = "index.html"
+
+[build.processing.redirects]
+status_code = 200
 
 # Configure routes
 [[routes]]
 pattern = "/"
-script = ""
-dest = "/en/index.html"
+dest = "/en/"
+status_code = 302
 
 [[routes]]
 pattern = "/en"
-script = ""
-dest = "/en/index.html"
+dest = "/en/"
+status_code = 301
 
 [[routes]]
 pattern = "/it"
-script = ""
-dest = "/it/index.html"
+dest = "/it/"
+status_code = 301
 
 [[routes]]
 pattern = "/fr"
-script = ""
-dest = "/fr/index.html"
+dest = "/fr/"
+status_code = 301
 
 [[routes]]
 pattern = "/es"
-script = ""
-dest = "/es/index.html"
+dest = "/es/"
+status_code = 301
 
 [[routes]]
 pattern = "/ar"
-script = ""
-dest = "/ar/index.html"
+dest = "/ar/"
+status_code = 301
 
 [[routes]]
 pattern = "/en/*"
-script = ""
 dest = "/en/index.html"
+status_code = 200
 
 [[routes]]
 pattern = "/it/*"
-script = ""
 dest = "/it/index.html"
+status_code = 200
 
 [[routes]]
 pattern = "/fr/*"
-script = ""
 dest = "/fr/index.html"
+status_code = 200
 
 [[routes]]
 pattern = "/es/*"
-script = ""
 dest = "/es/index.html"
+status_code = 200
 
 [[routes]]
 pattern = "/ar/*"
-script = ""
 dest = "/ar/index.html"
+status_code = 200

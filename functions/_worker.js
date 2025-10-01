@@ -1,28 +1,3 @@
-// Define supported languages
-const LANGUAGES = ['en', 'it', 'fr', 'es', 'ar'];
-const DEFAULT_LANGUAGE = 'en';
-
-// Helper function to determine if a path is a language route
-function isLanguageRoute(path) {
-  // Check if the path starts with a language code
-  for (const lang of LANGUAGES) {
-    if (path === `/${lang}` || path.startsWith(`/${lang}/`)) {
-      return true;
-    }
-  }
-  return false;
-}
-
-// Helper function to extract language from path
-function getLanguageFromPath(path) {
-  // Extract the first segment after the leading slash
-  const match = path.match(/^\/([^\/]+)/);
-  if (match && LANGUAGES.includes(match[1])) {
-    return match[1];
-  }
-  return null;
-}
-
 export default {
   async fetch(request, env) {
     const url = new URL(request.url);
