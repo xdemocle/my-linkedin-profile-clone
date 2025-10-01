@@ -329,6 +329,13 @@
     "minRead": "min de lectura",
     "publishedOn": "Publicado el"
   },
+  "NotFound": {
+    "title": "¡Ups! Página No Encontrada",
+    "description": "La página que buscas parece haberse perdido en el vacío digital. ¡No te preocupes, les pasa a los mejores!",
+    "goHome": "Llévame a Casa",
+    "goBack": "Volver",
+    "funMessage": "\"En la vasta extensión de internet, incluso los mejores exploradores a veces toman un camino equivocado. ¡Pero así es como descubrimos nuevos senderos!\" 🚀"
+  },
   "Common": {
     "showMore": "Mostrar más",
     "showLess": "Mostrar menos",

@@ -329,6 +329,13 @@
     "selectLanguage": "Seleziona Lingua",
     "linkedinCorporation": "LinkedIn Corporation © 2025"
   },
+  "NotFound": {
+    "title": "Ops! Pagina Non Trovata",
+    "description": "La pagina che stai cercando sembra essere svanita nel vuoto digitale. Non preoccuparti, capita anche ai migliori!",
+    "goHome": "Portami a Casa",
+    "goBack": "Torna Indietro",
+    "funMessage": "\"Nella vasta distesa di internet, anche i migliori esploratori a volte prendono una strada sbagliata. Ma è così che scopriamo nuovi percorsi!\" 🚀"
+  },
   "Common": {
     "showMore": "Mostra di più",
     "showLess": "Mostra di meno",

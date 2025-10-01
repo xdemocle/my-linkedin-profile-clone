@@ -1,14 +1,28 @@
-import { Navbar } from '@/components/layout/Navbar';
+import { PageLayout } from '@/components/layout/PageLayout';
 import { ProfileLayout } from '@/components/layout/ProfileLayout';
 import { ScrollToTop } from '@/components/ScrollToTop';
 import { getPageUrlFromPath } from '@/lib/i18n';
-import { LOCALE_DEFAULT, LOCALES } from '../constants/i18n';
+import { LOCALE_DEFAULT, LOCALES, type Locale } from '../constants/i18n';
 // import { ActivityPage } from '@/pages/ActivityPage';
+import { ActivityPage } from '@/pages/ActivityPage';
 import { BlogPage } from '@/pages/BlogPage';
 import { ExperiencePage } from '@/pages/ExperiencePage';
+import { NotFoundPage } from '@/pages/NotFoundPage';
 import { ProjectsPage } from '@/pages/ProjectsPage';
+import { useEffect } from 'react';
+import { Redirect, Route, Switch, useLocation, Router as WouterRouter } from 'wouter';
 import { useLocale } from '../hooks/useLocale';
-import { Redirect, Route, Switch, Router as WouterRouter } from 'wouter';
+
+// Helper component to redirect from root to localized route
+const RootRedirect = ({ locale }: { locale: Locale | '' }) => {
+  const [, setLocation] = useLocation();
+
+  useEffect(() => {
+    setLocation(`/${locale}`);
+  }, [locale, setLocation]);
+
+  return <div>Redirecting...</div>;
+};
 
 // Note: We're using direct Route components with inline rendering instead of a wrapper component
 export function Router() {
@@ -18,8 +32,8 @@ export function Router() {
       <ScrollToTop smooth={true} />
       <Switch>
         {/* Root redirect */}
-        {/* <Route path={`/${locale}`} component={() => <RootRedirect locale={''} />} />
-        <Route path={`/${locale}/`} component={() => <RootRedirect locale={''} />} /> */}
+        <Route path={`/${locale}`} component={() => <RootRedirect locale={''} />} />
+        <Route path={`/${locale}/`} component={() => <RootRedirect locale={''} />} />
 
         {/* Localized routes */}
         {LOCALES.map(lang => (
@@ -33,49 +47,36 @@ export function Router() {
         {/* Experience page with locale prefixes */}
         {LOCALES.map(lang => (
           <Route key={`${lang}-experience`} path={getPageUrlFromPath(lang, 'experience')}>
-            <div className="min-h-screen bg-background">
-              <Navbar />
-              <div className="pt-16">
-                <ExperiencePage />
-              </div>
-            </div>
+            <PageLayout>
+              <ExperiencePage />
+            </PageLayout>
           </Route>
         ))}
 
         {/* Activity page with locale prefixes */}
-        {/* {LOCALES.map(lang => (
+        {LOCALES.map(lang => (
           <Route key={`${lang}-activity`} path={getPageUrlFromPath(lang, 'activity')}>
-            <div className="min-h-screen bg-background">
-              <Navbar />
-              <div className="pt-16">
-                <ActivityPage />
-              </div>
-            </div>
+            <PageLayout>
+              <ActivityPage />
+            </PageLayout>
           </Route>
-        ))} */}
+        ))}
 
         {/* Blog page with locale prefixes */}
         {LOCALES.map(lang => (
           <Route key={`${lang}-blog`} path={getPageUrlFromPath(lang, 'blog')}>
-            <div className="min-h-screen bg-background">
-              <Navbar />
-
-              <div className="pt-16">
-                <BlogPage />
-              </div>
-            </div>
+            <PageLayout>
+              <BlogPage />
+            </PageLayout>
           </Route>
         ))}
 
         {/* Projects page with locale prefixes */}
         {LOCALES.map(lang => (
           <Route key={`${lang}-projects`} path={getPageUrlFromPath(lang, 'projects')}>
-            <div className="min-h-screen bg-background">
-              <Navbar />
-              <div className="pt-16">
-                <ProjectsPage />
-              </div>
-            </div>
+            <PageLayout>
+              <ProjectsPage />
+            </PageLayout>
           </Route>
         ))}
 
@@ -93,13 +94,10 @@ export function Router() {
           <Redirect to={`/${locale}/projects`} />
         </Route>
 
-        {/* Default route in a switch */}
-        <Route>404: No such page!</Route>
-
-        {/* Default route - redirect to localized home */}
-        {/* <Route>
-          <Redirect to={`/${locale}`} />
-        </Route> */}
+        {/* Default route in a switch - 404 page */}
+        <Route>
+          <NotFoundPage />
+        </Route>
       </Switch>
     </WouterRouter>
   );

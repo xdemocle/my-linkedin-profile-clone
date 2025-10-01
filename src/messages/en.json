@@ -331,16 +331,19 @@
     "profileLanguage": "Profile language",
     "selectLanguage": "Select language",
     "publicProfile": "Public profile & URL",
-    "editUrl": "Edit URL",
+    "profileUrl": "Profile URL",
     "copyUrl": "Copy URL",
-    "urlCopied": "URL copied to clipboard",
-    "languageInfo": "This is the language your profile appears in"
+    "urlCopied": "URL copied to clipboard!",
+    "language": "Profile Language"
+  },
+  "NotFound": {
+    "title": "Oops! Page Not Found",
+    "description": "The page you're looking for seems to have wandered off into the digital void. Don't worry, it happens to the best of us!",
+    "goHome": "Take Me Home",
+    "goBack": "Go Back",
+    "funMessage": "\"In the vast expanse of the internet, even the best explorers sometimes take a wrong turn. But hey, that's how we discover new paths!\" 🚀"
   },
   "Common": {
-    "showMore": "Show more",
-    "showLess": "Show less",
-    "seeAll": "See all",
-    "edit": "Edit",
     "add": "Add",
     "save": "Save",
     "cancel": "Cancel",

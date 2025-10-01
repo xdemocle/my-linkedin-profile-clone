@@ -329,6 +329,13 @@
     "minRead": "min de lecture",
     "publishedOn": "Publié le"
   },
+  "NotFound": {
+    "title": "Oups ! Page Introuvable",
+    "description": "La page que vous recherchez semble s'être égarée dans le vide numérique. Ne vous inquiétez pas, ça arrive aux meilleurs !",
+    "goHome": "Ramenez-moi à l'Accueil",
+    "goBack": "Retour",
+    "funMessage": "\"Dans la vaste étendue d'internet, même les meilleurs explorateurs prennent parfois un mauvais virage. Mais c'est comme ça qu'on découvre de nouveaux chemins !\" 🚀"
+  },
   "Common": {
     "showMore": "Afficher plus",
     "showLess": "Afficher moins",
