@@ -20,6 +20,8 @@ interface ShareProfileProps {
 export function ShareProfile({ profileUrl, profileName = "Rocco Russo's Profile", className }: ShareProfileProps) {
   if (!profileUrl && typeof window !== 'undefined') {
     profileUrl = window.location.href;
+  } else {
+    profileUrl = 'https://rocco.me';
   }
 
   const t = useTranslations('Common');
