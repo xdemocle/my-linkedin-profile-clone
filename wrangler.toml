@@ -1,71 +1,9 @@
 name = "my-linkedin-profile-clone"
 compatibility_date = "2025-09-15"
-pages_build_output_dir = "./dist/client"
+main = "./functions/_worker.js"
 
 [site]
-source = "./dist/client"
+bucket = "./dist/client"
 
 [build]
 command = "bun run build"
-
-[build.processing]
-entrypoint = "index.html"
-
-[build.processing.redirects]
-status_code = 200
-
-# Configure routes
-[[routes]]
-pattern = "/"
-dest = "/en/"
-status_code = 302
-
-[[routes]]
-pattern = "/en"
-dest = "/en/"
-status_code = 301
-
-[[routes]]
-pattern = "/it"
-dest = "/it/"
-status_code = 301
-
-[[routes]]
-pattern = "/fr"
-dest = "/fr/"
-status_code = 301
-
-[[routes]]
-pattern = "/es"
-dest = "/es/"
-status_code = 301
-
-[[routes]]
-pattern = "/ar"
-dest = "/ar/"
-status_code = 301
-
-[[routes]]
-pattern = "/en/*"
-dest = "/en/index.html"
-status_code = 200
-
-[[routes]]
-pattern = "/it/*"
-dest = "/it/index.html"
-status_code = 200
-
-[[routes]]
-pattern = "/fr/*"
-dest = "/fr/index.html"
-status_code = 200
-
-[[routes]]
-pattern = "/es/*"
-dest = "/es/index.html"
-status_code = 200
-
-[[routes]]
-pattern = "/ar/*"
-dest = "/ar/index.html"
-status_code = 200
