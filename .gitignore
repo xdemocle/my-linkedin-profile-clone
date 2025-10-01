@@ -33,3 +33,7 @@ dist-ssr
 output.css
 build/linkedin.css
 build/
+go-shit2/rocco-beast-search.csv
+go-shit2/rocco-beast-search.json
+go-shit2/rocco-beast-search.min.json
+go-shit2/rocco.go
