@@ -4,3 +4,4 @@
 - never use inline styles
 - use shadcn/ui
 - use bun as package manager
+- no SSR, yes SSG
