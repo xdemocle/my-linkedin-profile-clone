@@ -1,5 +1,4 @@
 import { useTranslations } from 'use-intl';
-import type { Locale } from '../../constants/i18n';
 import { Badge } from '../ui/badge';
 import { Card, CardContent, CardHeader, CardTitle } from '../ui/card';
 import { ProfileLanguageUrl } from './ProfileLanguageUrl';
@@ -9,12 +8,7 @@ interface Language {
   levelKey: string;
 }
 
-interface ProfileSidebarProps {
-  locale: Locale;
-  onLocaleChange: (locale: Locale) => void;
-}
-
-export function ProfileSidebar({ locale, onLocaleChange }: ProfileSidebarProps) {
+export function ProfileSidebar() {
   const tLanguages = useTranslations('Languages');
   const tInterests = useTranslations('Interests');
   const tFooter = useTranslations('ProfileFooter');
@@ -69,7 +63,7 @@ export function ProfileSidebar({ locale, onLocaleChange }: ProfileSidebarProps) 
   return (
     <div className="space-y-4">
       {/* Profile Language & URL */}
-      <ProfileLanguageUrl locale={locale} onLocaleChange={onLocaleChange} />
+      <ProfileLanguageUrl />
 
       {/* Languages */}
       <Card className="shadow-xs mb-6">

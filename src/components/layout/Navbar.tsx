@@ -11,7 +11,7 @@ import {
 import { Separator } from '@radix-ui/react-separator';
 import { useTranslations } from 'use-intl';
 import { useLocation } from 'wouter';
-import type { Locale } from '../../constants/i18n';
+import { useLocale } from '../../hooks/useLocale';
 import { scrollToTop } from '../../utils/scrollUtils';
 import { Avatar, AvatarFallback, AvatarImage } from '../ui/avatar';
 import { Button } from '../ui/button';
@@ -25,18 +25,14 @@ const LinkedInLogo = () => (
   </svg>
 );
 
-interface NavbarProps {
-  currentLocale: Locale;
-  onLocaleChange: (locale: Locale) => void;
-}
-
-export function Navbar({ currentLocale, onLocaleChange }: NavbarProps) {
+export function Navbar() {
+  const { locale } = useLocale();
   const t = useTranslations('Navigation');
   const [, setLocation] = useLocation();
 
   // Custom navigation handler that scrolls to top and includes locale prefix
   const handleNavigation = (path: string) => {
-    const localizedPath = path === '/' ? `/${currentLocale}` : `/${currentLocale}${path}`;
+    const localizedPath = path === '/' ? `/${locale}` : `/${locale}${path}`;
     setLocation(localizedPath);
     scrollToTop(true);
   };
@@ -155,7 +151,7 @@ export function Navbar({ currentLocale, onLocaleChange }: NavbarProps) {
           {/* Language and Theme - hidden on mobile */}
           <div className="hidden md:flex items-center gap-1">
             <ThemeToggle />
-            <LanguageSwitcher currentLocale={currentLocale} onChange={onLocaleChange} />
+            <LanguageSwitcher />
           </div>
         </nav>
       </div>

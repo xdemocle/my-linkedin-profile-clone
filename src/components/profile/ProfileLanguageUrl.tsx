@@ -1,9 +1,9 @@
 import { ClipboardCopyIcon } from '@radix-ui/react-icons';
 import { useTranslations } from 'use-intl';
 import { useLocation } from 'wouter';
-import type { Locale } from '../../constants/i18n';
-import { LOCALES } from '../../constants/i18n';
+import { LOCALES, type Locale } from '../../constants/i18n';
 import { LINKEDIN_PROFILE_URL } from '../../constants/webinfo';
+import { useLocale } from '../../hooks/useLocale';
 import { getLocaleConfig } from '../../lib/i18n';
 import { Button } from '../ui/button';
 import { Card, CardContent } from '../ui/card';
@@ -11,12 +11,8 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '.
 import { Separator } from '../ui/separator';
 import { useToast } from '../ui/use-toast';
 
-interface ProfileLanguageUrlProps {
-  locale: Locale;
-  onLocaleChange: (locale: Locale) => void;
-}
-
-export function ProfileLanguageUrl({ locale, onLocaleChange }: ProfileLanguageUrlProps) {
+export function ProfileLanguageUrl() {
+  const { locale, setLocale } = useLocale();
   const t = useTranslations('ProfileLanguageUrl');
   const { toast } = useToast();
 
@@ -26,7 +22,7 @@ export function ProfileLanguageUrl({ locale, onLocaleChange }: ProfileLanguageUr
 
   const handleLocaleChange = (newLocale: Locale) => {
     // Update app state
-    onLocaleChange(newLocale);
+    setLocale(newLocale);
 
     // Update URL to reflect the new locale
     const pathSegments = location.split('/').filter(Boolean);

@@ -2,24 +2,21 @@ import { GlobeIcon } from '@radix-ui/react-icons';
 import { useCallback, useState } from 'react';
 import { useLocation } from 'wouter';
 import { type Locale, LOCALES, LOCALE_DEFAULT } from '../../constants/i18n';
+import { useLocale } from '../../hooks/useLocale';
 import { getLocaleConfig, getPageUrlFromPath } from '../../lib/i18n';
 import { Button } from './button';
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from './dropdown-menu';
 
-interface LanguageSwitcherProps {
-  currentLocale: Locale;
-  onChange: (locale: Locale) => void;
-}
-
-export function LanguageSwitcher({ currentLocale, onChange }: LanguageSwitcherProps) {
+export function LanguageSwitcher() {
+  const { locale, setLocale } = useLocale();
   const [isOpen, setIsOpen] = useState(false);
   const [location, setLocation] = useLocation();
 
   // Update URL when changing language
   const handleLanguageChange = useCallback(
     (newLocale: Locale) => {
-      // First, call the onChange handler to update the app state
-      onChange(newLocale);
+      // First, call the setLocale to update the app state
+      setLocale(newLocale);
 
       // We need a 3rd rule: if the locale is the default, redirect to '/'
       if (newLocale === LOCALE_DEFAULT) {
@@ -41,7 +38,7 @@ export function LanguageSwitcher({ currentLocale, onChange }: LanguageSwitcherPr
 
       setIsOpen(false);
     },
-    [location, onChange, setLocation]
+    [location, setLocale, setLocation]
   );
 
   return (
@@ -49,19 +46,19 @@ export function LanguageSwitcher({ currentLocale, onChange }: LanguageSwitcherPr
       <DropdownMenuTrigger asChild>
         <Button variant="ghost" size="icon" className="relative" aria-label="Select a language">
           <GlobeIcon className="h-5! w-5!" />
-          <span className="absolute bottom-0 right-0 text-[1rem]">{getLocaleConfig(currentLocale).flag}</span>
+          <span className="absolute bottom-0 right-0 text-[1rem]">{getLocaleConfig(locale).flag}</span>
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end">
-        {LOCALES.map(locale => (
+        {LOCALES.map(localeOption => (
           <DropdownMenuItem
-            key={locale}
-            onClick={() => handleLanguageChange(locale)}
+            key={localeOption}
+            onClick={() => handleLanguageChange(localeOption)}
             className="flex items-center gap-2"
           >
-            <span>{getLocaleConfig(locale).flag}</span>
-            <span>{getLocaleConfig(locale).name}</span>
-            {locale === currentLocale && <span className="ml-auto text-xs opacity-60">✓</span>}
+            <span>{getLocaleConfig(localeOption).flag}</span>
+            <span>{getLocaleConfig(localeOption).name}</span>
+            {localeOption === locale && <span className="ml-auto text-xs opacity-60">✓</span>}
           </DropdownMenuItem>
         ))}
       </DropdownMenuContent>

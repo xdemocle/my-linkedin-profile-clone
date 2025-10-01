@@ -1,19 +1,13 @@
-import type { Locale } from '../../constants/i18n';
 import { ErrorBoundary } from '../ErrorBoundary';
 import { InstallPWA } from '../InstallPWA';
 import { ProfileMainContent } from '../profile/ProfileMainContent';
 import { ProfileSidebar } from '../profile/ProfileSidebar';
 import { Navbar } from './Navbar';
 
-interface ProfileLayoutProps {
-  locale: Locale;
-  onLocaleChange: (locale: Locale) => void;
-}
-
-export function ProfileLayout({ locale, onLocaleChange }: ProfileLayoutProps) {
+export function ProfileLayout() {
   return (
     <div className="min-h-screen bg-background">
-      <Navbar currentLocale={locale} onLocaleChange={onLocaleChange} />
+      <Navbar />
 
       {/* Fixed padding for fixed navbar with improved mobile spacing */}
       <main className="max-w-7xl mx-auto px-2 sm:px-4 py-4 sm:py-6 pt-16 sm:pt-20">
@@ -28,7 +22,7 @@ export function ProfileLayout({ locale, onLocaleChange }: ProfileLayoutProps) {
           {/* Sidebar - 1/3 width on large screens, full width on mobile, appears after main content */}
           <div className="lg:col-span-1 order-2">
             <ErrorBoundary>
-              <ProfileSidebar locale={locale} onLocaleChange={onLocaleChange} />
+              <ProfileSidebar />
             </ErrorBoundary>
           </div>
         </div>
