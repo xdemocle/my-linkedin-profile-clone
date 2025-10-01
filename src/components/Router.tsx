@@ -3,7 +3,7 @@ import { ProfileLayout } from '@/components/layout/ProfileLayout';
 import { ScrollToTop } from '@/components/ScrollToTop';
 import type { Locale } from '@/lib/i18n';
 import { locales } from '@/lib/i18n';
-import { ActivityPage } from '@/pages/ActivityPage';
+// import { ActivityPage } from '@/pages/ActivityPage';
 import { BlogPage } from '@/pages/BlogPage';
 import { ExperiencePage } from '@/pages/ExperiencePage';
 import { ProjectsPage } from '@/pages/ProjectsPage';
@@ -58,7 +58,7 @@ export function Router({ locale, onLocaleChange }: RouterProps) {
         ))}
 
         {/* Activity page with locale prefixes */}
-        {locales.map(lang => (
+        {/* {locales.map(lang => (
           <Route key={`${lang}-activity`} path={`/${lang}/activity`}>
             <div className="min-h-screen bg-background">
               <Navbar currentLocale={lang} onLocaleChange={onLocaleChange} />
@@ -67,7 +67,7 @@ export function Router({ locale, onLocaleChange }: RouterProps) {
               </div>
             </div>
           </Route>
-        ))}
+        ))} */}
 
         {/* Blog page with locale prefixes */}
         {locales.map(lang => (

@@ -44,34 +44,41 @@ export async function prerender(data: PrerenderData) {
       locale = pathSegments[0] as Locale;
     }
   }
-
   try {
     // Load messages for the specific locale
     const messages = await getMessages(locale);
     console.log(`Loaded messages for ${locale}:`, Object.keys(messages).length);
 
-    // Create a simple static component for prerendering
-    const StaticApp = (
+    // Import only safe components and utilities
+    const { getDirection } = await import('./lib/i18n');
+    
+    const direction = getDirection(locale);
+
+    // Import the actual profile components that are safe for SSR
+    const { StaticProfileHeader } = await import('./components/profile/StaticProfileHeader');
+    const { StaticAboutSection } = await import('./components/profile/StaticAboutSection');
+    const { StaticExperienceSection } = await import('./components/profile/StaticExperienceSection');
+    const { StaticSkillsSection } = await import('./components/profile/StaticSkillsSection');
+
+    // Create the profile app with actual translated content
+    const StaticProfileApp = (
       <ThemeProvider>
         <LocaleProvider initialLocale={locale}>
-          <div className={locale === 'ar' ? 'rtl' : 'ltr'}>
+          <div dir={direction} className={direction === 'rtl' ? 'rtl' : 'ltr'}>
             <IntlProvider messages={messages} locale={locale}>
               <div className="min-h-screen bg-background">
-                <header className="sticky top-0 z-40 border-b bg-background/95 backdrop-blur">
-                  <div className="container flex h-14 items-center">
-                    <div className="mr-4 flex">
-                      <a className="mr-6 flex items-center space-x-2" href="/">
-                        <span className="font-bold">LinkedIn Profile</span>
-                      </a>
+                <div className="container mx-auto px-4 py-8">
+                  <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                    <div className="lg:col-span-2">
+                      <StaticProfileHeader />
+                      <StaticAboutSection />
+                      <StaticExperienceSection />
+                    </div>
+                    <div className="space-y-6">
+                      <StaticSkillsSection />
                     </div>
                   </div>
-                </header>
-                <main className="container py-6">
-                  <div className="flex flex-col space-y-4">
-                    <h1 className="text-3xl font-bold">LinkedIn Profile</h1>
-                    <p>This is a prerendered page for {locale} locale.</p>
-                  </div>
-                </main>
+                </div>
               </div>
               <Toaster />
             </IntlProvider>
@@ -80,11 +87,11 @@ export async function prerender(data: PrerenderData) {
       </ThemeProvider>
     );
 
-    // Render the static component
-    const html = await renderToString(StaticApp);
+    // Render the static profile app
+    const html = await renderToString(StaticProfileApp);
     const links = parseLinks(html);
-
-    console.log(`Successfully prerendered ${locale} page`);
+    
+    console.log(`Successfully prerendered ${locale} page with static profile content`);
 
     return {
       html,
