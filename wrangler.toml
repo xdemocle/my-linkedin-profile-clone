@@ -1,10 +1,5 @@
 name = "my-linkedin-profile-clone"
 compatibility_date = "2025-09-15"
-main = "./functions/_worker.js"
+
+# For Pages deployment
 pages_build_output_dir = "./dist/client"
-
-[site]
-bucket = "./dist/client"
-
-[build]
-command = "bun run build"
