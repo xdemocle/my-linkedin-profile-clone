@@ -1,6 +1,6 @@
 /* eslint-disable react-refresh/only-export-components */
 import type { ReactNode } from 'react';
-import { createContext, useContext, useState } from 'react';
+import { createContext, useState } from 'react';
 import { LOCALE_DEFAULT, type Locale } from '../constants/i18n';
 
 interface LocaleContextType {
@@ -19,12 +19,4 @@ export function LocaleProvider({ children, initialLocale = LOCALE_DEFAULT }: Loc
   const [locale, setLocale] = useState<Locale>(initialLocale);
 
   return <LocaleContext.Provider value={{ locale, setLocale }}>{children}</LocaleContext.Provider>;
-}
-
-export function useLocale() {
-  const context = useContext(LocaleContext);
-  if (context === undefined) {
-    throw new Error('useLocale must be used within a LocaleProvider');
-  }
-  return context;
 }

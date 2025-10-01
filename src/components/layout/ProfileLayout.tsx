@@ -1,11 +1,9 @@
-// Removed unused import: import { useTranslations } from 'use-intl';
-import type { Locale } from '../../lib/i18n';
+import type { Locale } from '../../constants/i18n';
 import { ErrorBoundary } from '../ErrorBoundary';
 import { InstallPWA } from '../InstallPWA';
 import { ProfileMainContent } from '../profile/ProfileMainContent';
 import { ProfileSidebar } from '../profile/ProfileSidebar';
 import { Navbar } from './Navbar';
-// import { MessagingPopup } from '../messaging/MessagingPopup';
 
 interface ProfileLayoutProps {
   locale: Locale;
