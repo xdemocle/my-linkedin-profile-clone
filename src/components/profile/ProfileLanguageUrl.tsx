@@ -3,6 +3,7 @@ import { useTranslations } from 'use-intl';
 import { useLocation } from 'wouter';
 import type { Locale } from '../../constants/i18n';
 import { LOCALES } from '../../constants/i18n';
+import { LINKEDIN_PROFILE_URL } from '../../constants/webinfo';
 import { getLocaleConfig } from '../../lib/i18n';
 import { Button } from '../ui/button';
 import { Card, CardContent } from '../ui/card';
@@ -19,7 +20,7 @@ export function ProfileLanguageUrl({ locale, onLocaleChange }: ProfileLanguageUr
   const t = useTranslations('ProfileLanguageUrl');
   const { toast } = useToast();
 
-  const profileUrl = 'www.linkedin.com/in/roccorusso';
+  const profileUrl = LINKEDIN_PROFILE_URL;
 
   const [location, setLocation] = useLocation();
 
