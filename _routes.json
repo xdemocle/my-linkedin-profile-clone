@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "include": ["/*"],
+  "exclude": [],
+  "routes": [
+    { "src": "/", "dst": "/en/" },
+    { "src": "/en", "dst": "/en/" },
+    { "src": "/it", "dst": "/it/" },
+    { "src": "/fr", "dst": "/fr/" },
+    { "src": "/es", "dst": "/es/" },
+    { "src": "/ar", "dst": "/ar/" },
+    { "src": "/en/*", "dst": "/en/index.html" },
+    { "src": "/it/*", "dst": "/it/index.html" },
+    { "src": "/fr/*", "dst": "/fr/index.html" },
+    { "src": "/es/*", "dst": "/es/index.html" },
+    { "src": "/ar/*", "dst": "/ar/index.html" }
+  ]
+}

@@ -1,0 +1,77 @@
+name = "my-linkedin-profile-clone"
+compatibility_date = "2025-09-15"
+pages_build_output_dir = "./dist/client"
+
+# [assets]
+# directory = "./dist/client"
+# binding = "ASSETS"
+assets = { not_found_handling = "single-page-application" }
+
+[observability]
+enabled = true
+
+[build]
+command = "bun run build"
+upload.format = "directory"
+upload_source_maps = false
+
+# Configure static assets
+[site.static]
+include = ["**/*"]
+exclude = []
+
+# Configure routes
+[[routes]]
+pattern = "/"
+script = ""
+dest = "/en/index.html"
+
+[[routes]]
+pattern = "/en"
+script = ""
+dest = "/en/index.html"
+
+[[routes]]
+pattern = "/it"
+script = ""
+dest = "/it/index.html"
+
+[[routes]]
+pattern = "/fr"
+script = ""
+dest = "/fr/index.html"
+
+[[routes]]
+pattern = "/es"
+script = ""
+dest = "/es/index.html"
+
+[[routes]]
+pattern = "/ar"
+script = ""
+dest = "/ar/index.html"
+
+[[routes]]
+pattern = "/en/*"
+script = ""
+dest = "/en/index.html"
+
+[[routes]]
+pattern = "/it/*"
+script = ""
+dest = "/it/index.html"
+
+[[routes]]
+pattern = "/fr/*"
+script = ""
+dest = "/fr/index.html"
+
+[[routes]]
+pattern = "/es/*"
+script = ""
+dest = "/es/index.html"
+
+[[routes]]
+pattern = "/ar/*"
+script = ""
+dest = "/ar/index.html"

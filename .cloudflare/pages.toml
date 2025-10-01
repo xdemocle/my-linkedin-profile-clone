@@ -1,0 +1,98 @@
+# Cloudflare Pages configuration
+
+# Build configuration
+[build]
+  command = "bun run build"
+  publish = "dist/client"
+  
+# Redirects and rewrites
+[[redirects]]
+  from = "/"
+  to = "/en/"
+  status = 302
+
+[[redirects]]
+  from = "/en"
+  to = "/en/"
+  status = 301
+
+[[redirects]]
+  from = "/it"
+  to = "/it/"
+  status = 301
+
+[[redirects]]
+  from = "/fr"
+  to = "/fr/"
+  status = 301
+
+[[redirects]]
+  from = "/es"
+  to = "/es/"
+  status = 301
+
+[[redirects]]
+  from = "/ar"
+  to = "/ar/"
+  status = 301
+
+[[redirects]]
+  from = "/en/*"
+  to = "/en/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/it/*"
+  to = "/it/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/fr/*"
+  to = "/fr/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/es/*"
+  to = "/es/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/ar/*"
+  to = "/ar/index.html"
+  status = 200
+
+# Headers
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/*.html"
+  [headers.values]
+    Cache-Control = "public, max-age=600"
+
+[[headers]]
+  for = "/en/*"
+  [headers.values]
+    Content-Language = "en"
+
+[[headers]]
+  for = "/it/*"
+  [headers.values]
+    Content-Language = "it"
+
+[[headers]]
+  for = "/fr/*"
+  [headers.values]
+    Content-Language = "fr"
+
+[[headers]]
+  for = "/es/*"
+  [headers.values]
+    Content-Language = "es"
+
+[[headers]]
+  for = "/ar/*"
+  [headers.values]
+    Content-Language = "ar"
