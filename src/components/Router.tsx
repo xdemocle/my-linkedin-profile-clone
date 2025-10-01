@@ -24,6 +24,18 @@ const RootRedirect = ({ locale }: { locale: Locale | '' }) => {
   return <div>Redirecting...</div>;
 };
 
+// Helper component to redirect /en/* to /* (strip default locale prefix)
+const EnglishRedirect = ({ rest }: { rest?: string }) => {
+  const [, setLocation] = useLocation();
+
+  useEffect(() => {
+    const targetPath = rest ? `/${rest}` : '/';
+    setLocation(targetPath);
+  }, [rest, setLocation]);
+
+  return <div>Redirecting...</div>;
+};
+
 // Note: We're using direct Route components with inline rendering instead of a wrapper component
 export function Router() {
   const { locale } = useLocale();
@@ -31,9 +43,14 @@ export function Router() {
     <WouterRouter>
       <ScrollToTop smooth={true} />
       <Switch>
+        {/* Redirect /en/* to /* (remove default locale prefix) */}
+        <Route path="/en/:rest*">
+          {params => <EnglishRedirect rest={params['rest*']} />}
+        </Route>
+        
         {/* Root redirect */}
-        <Route path={`/${locale}`} component={() => <RootRedirect locale={''} />} />
-        <Route path={`/${locale}/`} component={() => <RootRedirect locale={''} />} />
+        <Route path={`/${LOCALE_DEFAULT}`} component={() => <RootRedirect locale={''} />} />
+        <Route path={`/${LOCALE_DEFAULT}/`} component={() => <RootRedirect locale={''} />} />
 
         {/* Localized routes */}
         {LOCALES.map(lang => (

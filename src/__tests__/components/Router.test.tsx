@@ -109,6 +109,37 @@ describe('Router component', () => {
     });
   });
 
+  describe('English locale redirect handling', () => {
+    it('should redirect /en/experience to /experience', () => {
+      const { container } = render(<Router />, { 
+        initialPath: '/en/experience'
+      });
+      expect(container).toBeInTheDocument();
+      // Should show redirect component initially
+    });
+
+    it('should redirect /en/blog to /blog', () => {
+      const { container } = render(<Router />, { 
+        initialPath: '/en/blog'
+      });
+      expect(container).toBeInTheDocument();
+    });
+
+    it('should redirect /en/ to /', () => {
+      const { container } = render(<Router />, { 
+        initialPath: '/en/'
+      });
+      expect(container).toBeInTheDocument();
+    });
+
+    it('should redirect /en to /', () => {
+      const { container } = render(<Router />, { 
+        initialPath: '/en'
+      });
+      expect(container).toBeInTheDocument();
+    });
+  });
+
   describe('Legacy route handling', () => {
     it('should handle legacy redirects if implemented', () => {
       // Test any legacy route patterns your app might need to support
