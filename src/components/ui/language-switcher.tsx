@@ -30,7 +30,7 @@ export function LanguageSwitcher() {
       // If the current path already has a locale prefix, replace it
       if (pathSegments.length > 0 && LOCALES.includes(pathSegments[0] as Locale)) {
         pathSegments[0] = newLocale;
-        setLocation(getPageUrlFromPath(newLocale, pathSegments.join('/')));
+        setLocation(getPageUrlFromPath(newLocale, pathSegments[1]));
       } else {
         // If there's no locale prefix, add it
         setLocation(getPageUrlFromPath(newLocale, location));

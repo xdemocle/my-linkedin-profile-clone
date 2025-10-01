@@ -33,5 +33,5 @@ export const getLocaleConfig = (locale: Locale) => {
 };
 
 export const getPageUrlFromPath = (locale: Locale, page: string) => {
-  return locale === LOCALE_DEFAULT ? `/${page}` : `/${locale}/${page}`;
+  return String(locale === LOCALE_DEFAULT ? `/${page}` : `/${locale}/${page}`).replaceAll('//', '/');
 };
