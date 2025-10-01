@@ -5,6 +5,37 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  
+  <!-- Theme script - MUST run before CSS loads to prevent FOIT -->
+  <script>
+    (function() {
+      try {
+        // Get stored theme preference
+        const storedTheme = localStorage.getItem('theme');
+        let theme = storedTheme || 'system';
+        
+        // Resolve the actual theme
+        let resolvedTheme;
+        if (theme === 'system') {
+          resolvedTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        } else {
+          resolvedTheme = theme;
+        }
+        
+        // Apply theme class immediately to prevent flash
+        document.documentElement.classList.add(resolvedTheme);
+        
+        // Store the resolved theme for consistency
+        if (!storedTheme) {
+          localStorage.setItem('theme', theme);
+        }
+      } catch (e) {
+        // Fallback to light theme if localStorage is not available
+        document.documentElement.classList.add('light');
+      }
+    })();
+  </script>
+  
   <link href="/src/index.css" rel="stylesheet">
 </head>
 

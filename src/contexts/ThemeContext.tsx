@@ -12,7 +12,13 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
     return 'system';
   });
 
-  const [actualTheme, setActualTheme] = useState<'light' | 'dark'>('light');
+  const [actualTheme, setActualTheme] = useState<'light' | 'dark'>(() => {
+    // Initialize with the theme that was already applied by the blocking script
+    if (typeof window !== 'undefined') {
+      return document.documentElement.classList.contains('dark') ? 'dark' : 'light';
+    }
+    return 'light';
+  });
 
   useEffect(() => {
     const root = window.document.documentElement;
@@ -26,15 +32,18 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
         resolvedTheme = theme;
       }
 
-      setActualTheme(resolvedTheme);
+      // Only update if the theme actually changed
+      if (actualTheme !== resolvedTheme) {
+        setActualTheme(resolvedTheme);
 
-      // Remove existing theme classes
-      root.classList.remove('light', 'dark');
+        // Remove existing theme classes
+        root.classList.remove('light', 'dark');
 
-      // Add the resolved theme class
-      root.classList.add(resolvedTheme);
+        // Add the resolved theme class
+        root.classList.add(resolvedTheme);
+      }
 
-      // Store theme preference
+      // Always store theme preference (user's choice, not resolved theme)
       localStorage.setItem('theme', theme);
     };
 
@@ -50,7 +59,7 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
 
     mediaQuery.addEventListener('change', handleChange);
     return () => mediaQuery.removeEventListener('change', handleChange);
-  }, [theme]);
+  }, [theme, actualTheme]);
 
   return <ThemeContext.Provider value={{ theme, setTheme, actualTheme }}>{children}</ThemeContext.Provider>;
 }

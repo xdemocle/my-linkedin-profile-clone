@@ -13,8 +13,7 @@
   Cache-Control: public, max-age=600
   Content-Language: en
 /en/*
-  Cache-Control: public, max-age=600
-  Content-Language: en
+  Cache-Control: public, max-age=31536000
 /it/*
   Cache-Control: public, max-age=600
   Content-Language: it
