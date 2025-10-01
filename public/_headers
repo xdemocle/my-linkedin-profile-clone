@@ -1,6 +1,8 @@
 # Cache assets with a long TTL
 /assets/*
   Cache-Control: public, max-age=31536000, immutable
+  Access-Control-Allow-Origin: *
+  X-Robots-Tag: nosnippet
 
 # Cache HTML files with a short TTL
 /*.html
@@ -8,12 +10,17 @@
 
 # Language directories
 /en/*
+  Cache-Control: public, max-age=600
   Content-Language: en
 /it/*
+  Cache-Control: public, max-age=600
   Content-Language: it
 /fr/*
+  Cache-Control: public, max-age=600
   Content-Language: fr
 /es/*
+  Cache-Control: public, max-age=600
   Content-Language: es
 /ar/*
+  Cache-Control: public, max-age=600
   Content-Language: ar
