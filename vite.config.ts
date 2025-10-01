@@ -4,9 +4,9 @@ import react from '@vitejs/plugin-react-swc';
 import path from 'path';
 import { defineConfig } from 'vite';
 import { vitePrerenderPlugin } from 'vite-prerender-plugin';
-import { LOCALES } from './src/constants/i18n';
+import { LOCALE_DEFAULT, LOCALES } from './src/constants/i18n';
 
-const mainLanguageRoutes = ['/', ...LOCALES.map(locale => `/${locale}`)];
+const mainLanguageRoutes = [...LOCALES.map(locale => `/${locale}`)];
 
 // https://vite.dev/config/
 export default defineConfig({
@@ -21,13 +21,13 @@ export default defineConfig({
         ...mainLanguageRoutes,
 
         // Experience pages
-        ...LOCALES.map(locale => `/${locale}/experience`),
+        ...LOCALES.map(locale => `/${locale === LOCALE_DEFAULT ? '' : locale}/experience/`),
 
         // Blog pages
-        ...LOCALES.map(locale => `/${locale}/blog`),
+        ...LOCALES.map(locale => `/${locale === LOCALE_DEFAULT ? '' : locale}/blog/`),
 
         // Projects pages
-        ...LOCALES.map(locale => `/${locale}/projects`),
+        ...LOCALES.map(locale => `/${locale}/projects/`),
       ],
     }),
 

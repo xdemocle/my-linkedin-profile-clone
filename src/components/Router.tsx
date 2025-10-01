@@ -107,10 +107,13 @@ export function Router({ locale, onLocaleChange }: RouterProps) {
           <Redirect to={`/${locale}/projects`} />
         </Route>
 
+        {/* Default route in a switch */}
+        <Route>404: No such page!</Route>
+
         {/* Default route - redirect to localized home */}
-        <Route>
+        {/* <Route>
           <Redirect to={`/${locale}`} />
-        </Route>
+        </Route> */}
       </Switch>
     </WouterRouter>
   );
