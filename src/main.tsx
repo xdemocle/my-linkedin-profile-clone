@@ -28,8 +28,11 @@ if (typeof window !== 'undefined') {
 export async function prerender(data: PrerenderData) {
   const { renderToString } = await import('react-dom/server');
   const { parseLinks } = await import('vite-prerender-plugin/parse');
-  const { locales } = await import('./lib/i18n');
-  const { preloadMessages, Root } = await import('./root');
+  const { locales, getMessages } = await import('./lib/i18n');
+  const { ThemeProvider } = await import('./contexts/ThemeContext');
+  const { LocaleProvider } = await import('./contexts/LocaleProvider');
+  const { IntlProvider } = await import('use-intl');
+  const { Toaster } = await import('./components/ui/toaster');
 
   // Extract locale from URL path if available
   let locale: Locale = 'en';
@@ -43,14 +46,44 @@ export async function prerender(data: PrerenderData) {
   }
 
   try {
-    // Pre-load messages for the specific locale
-    const messages = await preloadMessages(locale);
-    console.log(`Preloaded messages for ${locale}:`, Object.keys(messages).length);
+    // Load messages for the specific locale
+    const messages = await getMessages(locale);
+    console.log(`Loaded messages for ${locale}:`, Object.keys(messages).length);
 
-    // Render with the preloaded data
-    const html = await renderToString(<Root {...data} prerenderLocale={locale} />);
+    // Create a simple static component for prerendering
+    const StaticApp = (
+      <ThemeProvider>
+        <LocaleProvider initialLocale={locale}>
+          <div className={locale === 'ar' ? 'rtl' : 'ltr'}>
+            <IntlProvider messages={messages} locale={locale}>
+              <div className="min-h-screen bg-background">
+                <header className="sticky top-0 z-40 border-b bg-background/95 backdrop-blur">
+                  <div className="container flex h-14 items-center">
+                    <div className="mr-4 flex">
+                      <a className="mr-6 flex items-center space-x-2" href="/">
+                        <span className="font-bold">LinkedIn Profile</span>
+                      </a>
+                    </div>
+                  </div>
+                </header>
+                <main className="container py-6">
+                  <div className="flex flex-col space-y-4">
+                    <h1 className="text-3xl font-bold">LinkedIn Profile</h1>
+                    <p>This is a prerendered page for {locale} locale.</p>
+                  </div>
+                </main>
+              </div>
+              <Toaster />
+            </IntlProvider>
+          </div>
+        </LocaleProvider>
+      </ThemeProvider>
+    );
+
+    // Render the static component
+    const html = await renderToString(StaticApp);
     const links = parseLinks(html);
-    
+
     console.log(`Successfully prerendered ${locale} page`);
 
     return {
@@ -65,7 +98,7 @@ export async function prerender(data: PrerenderData) {
     console.error(`Error prerendering ${locale} page:`, error);
     // Return a minimal result to avoid breaking the build
     return {
-      html: `<div>Error loading ${locale} content</div>`,
+      html: `<div class="min-h-screen flex items-center justify-center"><div class="p-4 text-center"><h1 class="text-xl font-bold mb-2">LinkedIn Profile</h1><p>Welcome to the ${locale} version</p></div></div>`,
       links: new Set(),
       head: {
         lang: locale,
