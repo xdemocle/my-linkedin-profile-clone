@@ -1,5 +1,5 @@
 import { useTranslations } from 'use-intl';
-import type { Locale } from '../../lib/i18n';
+import type { Locale } from '../../constants/i18n';
 import { Badge } from '../ui/badge';
 import { Card, CardContent, CardHeader, CardTitle } from '../ui/card';
 import { ProfileLanguageUrl } from './ProfileLanguageUrl';

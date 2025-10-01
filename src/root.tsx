@@ -4,7 +4,7 @@ import { useLocation } from 'wouter';
 import { Router } from './components/Router';
 import { Toaster } from './components/ui/toaster';
 import { LOCALE_DEFAULT, type Locale, type Messages } from './constants/i18n';
-import { LocaleProvider } from './contexts/LocaleProvider';
+import { LocaleProvider } from './contexts/LocaleContext';
 import { ThemeProvider } from './contexts/ThemeContext';
 import { getDirection, getLocaleFromPath, getLocaleMessages } from './lib/i18n';
 
@@ -14,7 +14,7 @@ interface RootProps {
 }
 
 export const Root = ({ prerenderLocale }: RootProps) => {
-  const [pathname] = useLocation();
+  const [pathname, setLocation] = useLocation();
 
   // Use prerenderLocale if provided (for SSG), otherwise default to 'en'
   const [locale, setLocale] = useState<Locale>(prerenderLocale || LOCALE_DEFAULT);
@@ -38,10 +38,17 @@ export const Root = ({ prerenderLocale }: RootProps) => {
 
     const urlLocale = getLocaleFromPath(pathname);
 
+    // 1. User gets here if locale is found in URL.
     if (urlLocale && urlLocale !== locale) {
       setLocale(urlLocale);
     }
-  }, [pathname, prerenderLocale, locale]);
+
+    // 2. Locale is set to default.
+    // 3. If urlLocale is same as locale default, redirect to '/'.
+    if (urlLocale === LOCALE_DEFAULT) {
+      setLocation('/');
+    }
+  }, [pathname, prerenderLocale, locale, setLocation]);
 
   // Update messages when locale changes
   useEffect(() => {
