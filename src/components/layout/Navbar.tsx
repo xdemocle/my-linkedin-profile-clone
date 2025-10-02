@@ -12,6 +12,7 @@ import { Separator } from '@radix-ui/react-separator';
 import { useTranslations } from 'use-intl';
 import { useLocation } from 'wouter';
 import { useLocale } from '../../hooks/useLocale';
+import { getPageUrlFromPath } from '../../lib/i18n';
 import { scrollToTop } from '../../utils/scrollUtils';
 import { Avatar, AvatarFallback, AvatarImage } from '../ui/avatar';
 import { Button } from '../ui/button';
@@ -32,8 +33,7 @@ export function Navbar() {
 
   // Custom navigation handler that scrolls to top and includes locale prefix
   const handleNavigation = (path: string) => {
-    const localizedPath = path === '/' ? `/${locale}` : `/${locale}${path}`;
-    setLocation(localizedPath);
+    setLocation(getPageUrlFromPath(locale, path));
     scrollToTop(true);
   };
 

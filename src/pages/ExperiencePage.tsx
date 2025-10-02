@@ -1,10 +1,10 @@
 import { ArrowLeftIcon } from '@radix-ui/react-icons';
 import { useTranslations } from 'use-intl';
-import { Link } from 'wouter';
 import { Avatar, AvatarFallback, AvatarImage } from '../components/ui/avatar';
 import { Badge } from '../components/ui/badge';
 import { Button } from '../components/ui/button';
 import { Card, CardContent } from '../components/ui/card';
+import { LinkTranslated } from '../components/ui/link-translated';
 import { Separator } from '../components/ui/separator';
 
 interface Experience {
@@ -68,10 +68,10 @@ export function ExperiencePage() {
             {/* Header */}
             <div className='mb-6'>
               <Button variant='ghost' size='sm' className='mb-4' asChild>
-                <Link href='/'>
+                <LinkTranslated href='/'>
                   <ArrowLeftIcon className='h-4 w-4 mr-2' />
                   {t('backToProfile')}
-                </Link>
+                </LinkTranslated>
               </Button>
               <div className='flex items-center justify-between'>
                 <div>

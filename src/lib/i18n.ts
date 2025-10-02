@@ -33,5 +33,21 @@ export const getLocaleConfig = (locale: Locale) => {
 };
 
 export const getPageUrlFromPath = (locale: Locale, page: string) => {
-  return String(locale === LOCALE_DEFAULT ? `/${page}` : `/${locale}/${page}`).replaceAll('//', '/');
+  // Normalize the page path - remove leading/trailing slashes
+  const normalizedPage = page.replace(/^\/+|\/+$/g, '');
+  
+  // Build the URL with locale prefix (if not default)
+  let url = locale === LOCALE_DEFAULT 
+    ? `/${normalizedPage}` 
+    : `/${locale}/${normalizedPage}`;
+  
+  // Clean up any double slashes
+  url = url.replace(/\/+/g, '/');
+  
+  // Ensure trailing slash
+  if (!url.endsWith('/')) {
+    url += '/';
+  }
+  
+  return url;
 };

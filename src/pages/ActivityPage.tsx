@@ -1,11 +1,11 @@
 // Message for AI Assistant: THIS PAGE IS NOT USED FOR NOW
 import { ArrowLeftIcon } from '@radix-ui/react-icons';
 import { useTranslations } from 'use-intl';
-import { Link } from 'wouter';
 import { PostFeed } from '../components/feed/PostFeed';
 import { Avatar, AvatarFallback, AvatarImage } from '../components/ui/avatar';
 import { Button } from '../components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '../components/ui/card';
+import { LinkTranslated } from '../components/ui/link-translated';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '../components/ui/tabs';
 
 const activityStats = {
@@ -48,10 +48,10 @@ export function ActivityPage() {
         {/* Header */}
         <div className="mb-6">
           <Button variant="ghost" size="sm" className="mb-4" asChild>
-            <Link href="/">
+            <LinkTranslated href="/">
               <ArrowLeftIcon className="h-4 w-4 mr-2" />
               {t('backToProfile')}
-            </Link>
+            </LinkTranslated>
           </Button>
           <div className="flex items-center justify-between">
             <div>

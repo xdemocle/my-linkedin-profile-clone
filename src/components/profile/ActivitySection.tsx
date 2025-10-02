@@ -1,6 +1,6 @@
-import { Link } from 'wouter';
 import { Card, CardContent, CardHeader, CardTitle } from '../ui/card';
 import { Button } from '../ui/button';
+import { LinkTranslated } from '../ui/link-translated';
 import { PostFeed } from '../feed/PostFeed';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '../ui/tabs';
 
@@ -10,9 +10,9 @@ export function ActivitySection() {
       <CardHeader className='flex flex-row items-center justify-between'>
         <CardTitle>Activity</CardTitle>
         <Button variant='ghost' size='sm' asChild>
-          <Link href="/activity">
+          <LinkTranslated href="/activity">
             Show all activity
-          </Link>
+          </LinkTranslated>
         </Button>
       </CardHeader>
 

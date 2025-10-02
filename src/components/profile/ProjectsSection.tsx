@@ -4,8 +4,11 @@ import { useLocation } from 'wouter';
 import { Badge } from '../ui/badge';
 import { Button } from '../ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '../ui/card';
+import { useLocale } from '../../hooks/useLocale';
+import { getPageUrlFromPath } from '../../lib/i18n';
 import { scrollToTop } from '../../utils/scrollUtils';
 import { ProjectIconWrapper } from '../../utils/iconComponents';
+import profileData from '../../data/profile-data';
 
 interface Project {
   id: string;
@@ -23,50 +26,34 @@ interface Project {
 export function ProjectsSection() {
   const t = useTranslations('Projects');
   const [, setLocation] = useLocation();
+  const { locale } = useLocale();
 
   // Navigate to projects page with scroll restoration
   const handleNavigateToProjects = () => {
-    setLocation('/projects');
+    setLocation(getPageUrlFromPath(locale, '/projects'));
     scrollToTop(true);
   };
 
-  // Only show featured projects in the profile section
-  const featuredProjects: Project[] = [
-    {
-      id: 'ajna-labs',
-      title: 'Ajna Labs | DeFi Dapp, SDK, Website, Styling Library',
-      description:
-        'Deliverables included the construction of a proprietary SDK to facilitate seamless integration with decentralized smart contracts, as well as the development of scalable front-end architectures.',
-      links: {
-        website: 'https://www.ajnafi.com',
-        marketing: 'https://www.ajna.finance',
-      },
-      technologies: ['React', 'TypeScript', 'Solidity', 'Web3.js'],
-      icon: 'blue-circle', // Using string identifier for icon mapping
-      featured: true,
+  // Map our project data to the component's expected format
+  const featuredProjects: Project[] = profileData.projects.slice(0, 3).map(project => ({
+    id: project.id,
+    title: t(project.id === 'proj1' ? 'ajnaLabs' : 
+           project.id === 'proj2' ? 'modeNetwork' : 
+           project.id === 'proj3' ? 'cyberGrandpa' : 
+           project.id === 'proj4' ? 'tetrisCrypto' : 
+           project.id === 'proj5' ? 'linkedinExtension' : project.name),
+    description: project.description,
+    links: {
+      website: project.link,
+      marketing: project.sourceCode,
     },
-    {
-      id: 'mode-network',
-      title: 'MODE Network EVM Chain | Refactoring codebase',
-      description:
-        'Engaged on a time-bound contract to execute a comprehensive architectural refactor of a large-scale codebase built with Next.js, React Hooks, and TailwindCSS.',
-      links: {
-        website: 'https://www.mode.network',
-      },
-      technologies: ['Next.js', 'React Hooks', 'TailwindCSS'],
-      icon: 'lightning', // Using string identifier for icon mapping
-      featured: true,
-    },
-    {
-      id: 'games-global',
-      title: 'GamesGlobal | Lotsaloot™ Progressive Jackpot Slot Machines',
-      description:
-        'Implemented an enhanced user interface for a jackpot system deployed across diverse iGaming platforms. Responsive UI for player engagement. Entirely in Vanilla.',
-      technologies: ['JavaScript', 'HTML5', 'CSS3', 'Canvas API'],
-      icon: 'game', // Using string identifier for icon mapping
-      featured: true,
-    },
-  ];
+    technologies: project.tags,
+    icon: project.id === 'proj1' ? 'blue-circle' : 
+          project.id === 'proj2' ? 'lightning' : 
+          project.id === 'proj3' ? 'shield' : 
+          project.id === 'proj4' ? 'game' : 'extension',
+    featured: true,
+  }));
 
   return (
     <Card className='shadow-xs'>

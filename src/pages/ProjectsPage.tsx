@@ -4,6 +4,8 @@ import { useLocation } from 'wouter';
 import { Badge } from '../components/ui/badge';
 import { Button } from '../components/ui/button';
 import { Card, CardContent } from '../components/ui/card';
+import { useLocale } from '../hooks/useLocale';
+import { getPageUrlFromPath } from '../lib/i18n';
 import { ProjectIconWrapper } from '../utils/iconComponents';
 import { scrollToTop } from '../utils/scrollUtils';
 
@@ -28,10 +30,11 @@ interface Project {
 export function ProjectsPage() {
   const t = useTranslations('Projects');
   const [, setLocation] = useLocation();
+  const { locale } = useLocale();
 
   // Navigate back to profile with scroll restoration
   const handleBackToProfile = () => {
-    setLocation('/');
+    setLocation(getPageUrlFromPath(locale, '/'));
     scrollToTop(true);
   };
 

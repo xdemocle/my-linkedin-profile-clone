@@ -1,12 +1,14 @@
 // import { Pencil1Icon, PlusIcon } from '@radix-ui/react-icons';
 import { useTranslations } from 'use-intl';
-import { Link } from 'wouter';
+import { useProfileData } from '../../hooks/useProfileData';
 import { Avatar, AvatarFallback, AvatarImage } from '../ui/avatar';
 import { Button } from '../ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '../ui/card';
+import { LinkTranslated } from '../ui/link-translated';
 import { Separator } from '../ui/separator';
 
-interface Experience {
+// Map our experience data to the component's expected format
+interface ExperienceDisplay {
   companyKey: string;
   logo: string;
   titleKey: string;
@@ -17,11 +19,16 @@ interface Experience {
 
 export function ExperienceSection() {
   const t = useTranslations('Experience');
+  const profileData = useProfileData();
+  
+  // Get first 3 experiences from profile data
+  const topExperiences = profileData.experience.slice(0, 3);
 
-  const experiences: Experience[] = [
+  // Map to display format - using translation keys for the UI
+  const experiences: ExperienceDisplay[] = [
     {
       companyKey: 'technicalLead',
-      logo: 'https://github.com/shadcn.png',
+      logo: topExperiences[0].logo ?? '/assets/png/web3ninja-logo.png',
       titleKey: 'frontendDeveloper',
       durationKey: 'duration1',
       locationKey: 'milano',
@@ -29,7 +36,7 @@ export function ExperienceSection() {
     },
     {
       companyKey: 'seniorSolutionsEngineer',
-      logo: 'https://github.com/shadcn.png',
+      logo: topExperiences[1].logo ?? '/assets/png/gamesglobal-logo.png',
       titleKey: 'frontendDeveloper',
       durationKey: 'duration2',
       locationKey: 'milano',
@@ -37,7 +44,7 @@ export function ExperienceSection() {
     },
     {
       companyKey: 'cyberSecurityOperations',
-      logo: 'https://github.com/shadcn.png',
+      logo: topExperiences[2].logo ?? '/assets/png/shibainu-logo.png',
       titleKey: 'frontendDeveloper',
       durationKey: 'duration3',
       locationKey: 'milano',
@@ -50,7 +57,7 @@ export function ExperienceSection() {
       <CardHeader className="flex flex-row items-center justify-between">
         <CardTitle>{t('title')}</CardTitle>
         <Button variant="ghost" size="sm" asChild>
-          <Link href="/experience">{t('showAllExperiences')}</Link>
+          <LinkTranslated href="/experience">{t('showAllExperiences')}</LinkTranslated>
         </Button>
       </CardHeader>
       <CardContent>

@@ -1,7 +1,7 @@
 import { GlobeIcon } from '@radix-ui/react-icons';
 import { useCallback, useState } from 'react';
 import { useLocation } from 'wouter';
-import { type Locale, LOCALES, LOCALE_DEFAULT } from '../../constants/i18n';
+import { type Locale, LOCALES } from '../../constants/i18n';
 import { useLocale } from '../../hooks/useLocale';
 import { getLocaleConfig, getPageUrlFromPath } from '../../lib/i18n';
 import { Button } from './button';
@@ -18,24 +18,21 @@ export function LanguageSwitcher() {
       // First, call the setLocale to update the app state
       setLocale(newLocale);
 
-      // We need a 3rd rule: if the locale is the default, redirect to '/'
-      if (newLocale === LOCALE_DEFAULT) {
-        setLocation(getPageUrlFromPath(newLocale, '/'));
-        return;
-      }
-
-      // Then, update the URL to reflect the new locale
+      // Extract the current page path, removing any locale prefix
       const pathSegments = location.split('/').filter(Boolean);
+      let pagePath = '/';
 
-      // If the current path already has a locale prefix, replace it
+      // If the current path has a locale prefix, extract the page path after it
       if (pathSegments.length > 0 && LOCALES.includes(pathSegments[0] as Locale)) {
-        pathSegments[0] = newLocale;
-        setLocation(getPageUrlFromPath(newLocale, pathSegments[1]));
-      } else {
-        // If there's no locale prefix, add it
-        setLocation(getPageUrlFromPath(newLocale, location));
+        // Get everything after the locale prefix
+        pagePath = pathSegments.slice(1).join('/') || '/';
+      } else if (pathSegments.length > 0) {
+        // No locale prefix, use the full path
+        pagePath = pathSegments.join('/');
       }
 
+      // Build the new URL with the new locale
+      setLocation(getPageUrlFromPath(newLocale, pagePath));
       setIsOpen(false);
     },
     [location, setLocale, setLocation]

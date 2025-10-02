@@ -1,13 +1,16 @@
 import { useTranslations } from 'use-intl';
 import { useLocation } from 'wouter';
 import { Button } from '../components/ui/button';
+import { useLocale } from '../hooks/useLocale';
+import { getPageUrlFromPath } from '../lib/i18n';
 
 export function NotFoundPage() {
   const t = useTranslations('NotFound');
   const [, setLocation] = useLocation();
+  const { locale } = useLocale();
 
   const handleGoHome = () => {
-    setLocation('/');
+    setLocation(getPageUrlFromPath(locale, '/'));
   };
 
   const handleGoBack = () => {

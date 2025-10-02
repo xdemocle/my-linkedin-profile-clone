@@ -1,6 +1,7 @@
 // No edit icons needed - read-only mode
 import { cn } from '@/lib/utils';
 import { useTranslations } from 'use-intl';
+import { useProfileData } from '../../hooks/useProfileData';
 import { OnlineStatusIcon, StealthStartupIcon } from '../../utils/iconComponents';
 import { ShareProfile } from '../ShareProfile';
 import { Avatar, AvatarFallback, AvatarImage } from '../ui/avatar';
@@ -8,6 +9,8 @@ import { Button } from '../ui/button';
 
 export function ProfileHeader() {
   const t = useTranslations('ProfileHeader');
+  const profileData = useProfileData();
+  const { personal } = profileData;
 
   return (
     <div className="bg-card rounded-md overflow-hidden shadow-xs border">
@@ -29,15 +32,15 @@ export function ProfileHeader() {
             'absolute -top-16 left-6 md:-top-31 md:left-6'
           )}
         >
-          <AvatarImage src="/assets/png/rocco-me-nft.png" alt="Rocco Russo" />
-          <AvatarFallback>RR</AvatarFallback>
+          <AvatarImage src={personal.avatar} alt={personal.name} />
+          <AvatarFallback>{personal.name.split(' ').map((n: string) => n[0]).join('')}</AvatarFallback>
         </Avatar>
 
         <div className="pt-10">
           <div className="flex justify-between items-start">
             <div className="flex-1">
               <div className="flex items-center gap-2">
-                <h1 className="text-2xl font-bold">Rocco Russo</h1>
+                <h1 className="text-2xl font-bold">{personal.name}</h1>
                 <div className="flex items-center gap-1">
                   <OnlineStatusIcon className="text-green-500 h-3 w-3" />
                   <span className="text-xs text-muted-foreground">EMEA, GULF, UAE</span>
@@ -47,26 +50,33 @@ export function ProfileHeader() {
               <div className="flex items-center gap-2 mt-2 text-sm">
                 <span className="text-muted-foreground">{t('location')}</span>
                 <span className="text-muted-foreground">•</span>
-                <a href="#" className="text-primary hover:underline font-medium">
+                <a href={`mailto:${personal.email}`} className="text-primary hover:underline font-medium">
                   {t('contactInfo')}
                 </a>
               </div>
               <div className="mt-2">
-                <a href="#" className="text-primary hover:underline text-sm font-medium flex items-center gap-1">
-                  {t('myWebsite')}
-                  <svg
-                    className="w-3 h-3"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
+                {personal.website && (
+                  <a 
+                    href={personal.website} 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="text-primary hover:underline text-sm font-medium flex items-center gap-1"
                   >
-                    <path d="m7 7 10 10-5 0 0-5" />
-                    <path d="m17 7-5 0 0 5" />
-                  </svg>
-                </a>
+                    {t('myWebsite')}
+                    <svg
+                      className="w-3 h-3"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    >
+                      <path d="m7 7 10 10-5 0 0-5" />
+                      <path d="m17 7-5 0 0 5" />
+                    </svg>
+                  </a>
+                )}
               </div>
               <div className="flex items-center gap-4 mt-2 text-sm">
                 <span className="text-primary font-medium">5,984 {t('followers')}</span>
