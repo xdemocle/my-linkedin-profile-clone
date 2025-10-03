@@ -43,7 +43,7 @@ export function LanguageSwitcher() {
       <DropdownMenuTrigger asChild>
         <Button variant="ghost" size="icon" className="relative" aria-label="Select a language">
           <GlobeIcon className="h-5! w-5!" />
-          <span className="absolute bottom-0 right-0 text-[1rem]">{getLocaleConfig(locale).flag}</span>
+          <span className="absolute bottom-0 right-0.5 text-[1rem]">{getLocaleConfig(locale).flag}</span>
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end">
