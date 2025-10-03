@@ -1,9 +1,10 @@
 import { createRoot } from 'react-dom/client';
 import type { JSX } from 'react/jsx-runtime';
+import { IS_DEV } from './constants/env.ts';
 import { LOCALE_DEFAULT, LOCALES, type Locale } from './constants/i18n';
 import './index.css';
 import { getLocaleFromPath, getLocaleMessages } from './lib/i18n';
-import { registerServiceWorker } from './lib/pwa';
+import { registerServiceWorker, unregisterServiceWorker } from './lib/pwa';
 import { Root } from './root.tsx';
 
 interface PrerenderData extends JSX.IntrinsicAttributes {
@@ -17,15 +18,19 @@ if (typeof window !== 'undefined') {
   createRoot(target).render(<Root prerenderLocale={locale} />);
 
   // Register service worker for PWA functionality
-  registerServiceWorker({
-    onSuccess: () => {
-      console.log('Content is cached for offline use.');
-    },
-    onUpdate: () => {
-      console.log('New content is available; please refresh.');
-      // Optionally show a toast notification to the user
-    },
-  });
+  if (!IS_DEV) {
+    registerServiceWorker({
+      onSuccess: () => {
+        console.log('Content is cached for offline use.');
+      },
+      onUpdate: () => {
+        console.log('New content is available; please refresh.');
+        // Optionally show a toast notification to the user
+      },
+    });
+  } else {
+    unregisterServiceWorker();
+  }
 }
 
 export async function prerender(data: PrerenderData) {

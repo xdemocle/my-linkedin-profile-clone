@@ -1,5 +1,4 @@
 import { ErrorBoundary } from '../ErrorBoundary';
-import { InstallPWA } from '../InstallPWA';
 import { ProfileMainContent } from '../profile/ProfileMainContent';
 import { ProfileSidebar } from '../profile/ProfileSidebar';
 import { Navbar } from './Navbar';
@@ -27,9 +26,6 @@ export function ProfileLayout() {
           </div>
         </div>
       </main>
-
-      {/* PWA Install Prompt */}
-      <InstallPWA />
     </div>
   );
 }

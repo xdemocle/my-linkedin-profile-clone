@@ -1,4 +1,5 @@
 import { IntlProvider } from 'use-intl';
+import { InstallPWA } from './components/InstallPWA';
 import { Router } from './components/Router';
 import { Toaster } from './components/ui/toaster';
 import { type Locale } from './constants/i18n';
@@ -44,6 +45,9 @@ export const Root = ({ prerenderLocale }: RootProps) => {
       <LocaleProvider prerenderLocale={prerenderLocale}>
         <AppContent />
       </LocaleProvider>
+
+      {/* PWA Install Prompt */}
+      <InstallPWA />
     </ThemeProvider>
   );
 };
