@@ -5,9 +5,8 @@ import fs from 'fs/promises';
 import path from 'path';
 import { defineConfig } from 'vite';
 import { vitePrerenderPlugin } from 'vite-prerender-plugin';
-import { LOCALES } from './src/constants/i18n';
+import { LOCALES, LOCALE_DEFAULT } from './src/constants/i18n';
 import { getPageUrlFromPath } from './src/lib/i18n';
-
 const mainLanguageRoutes = [...LOCALES.map(locale => getPageUrlFromPath(locale, ''))];
 
 const additionalPrerenderRoutes = [
@@ -40,19 +39,25 @@ export default defineConfig({
     {
       name: 'create-cloudflare-config',
       async writeBundle() {
+        // Ensure each language directory has an index.html file
+        const languages = LOCALES;
+
         // Create _redirects file
         const redirectsContent = [
           '# Handle direct language access with trailing slash',
-          '/en   /       302',
-          '/en/  /       302',
-          '/it   /it/    301',
-          '/fr   /fr/    301',
-          '/es   /es/    301',
-          '/ar   /ar/    301',
-          '/en/* /:splat 302',
-        ].join('\n');
+          `/${LOCALE_DEFAULT}   /       302`,
+          `/${LOCALE_DEFAULT}/  /       302`,
+        ];
 
-        await fs.writeFile('dist/client/_redirects', redirectsContent.trim());
+        for (const lang of languages) {
+          if (lang !== LOCALE_DEFAULT) {
+            redirectsContent.push(`/${lang}  /${lang}/     301`);
+          }
+        }
+
+        redirectsContent.push(`/${LOCALE_DEFAULT}/* /:splat 302`);
+
+        await fs.writeFile('dist/client/_redirects', redirectsContent.join('\n'));
 
         console.log('Created _redirects file for Cloudflare Pages');
 
@@ -72,9 +77,6 @@ export default defineConfig({
           '  Cache-Control: public, max-age=600',
           '\n',
         ].join('\n');
-
-        // Ensure each language directory has an index.html file
-        const languages = LOCALES;
 
         headersContent += `# Language directories\n`;
 
