@@ -34,7 +34,7 @@ export default defineConfig({
       additionalPrerenderRoutes,
     }),
 
-    // TODO: automatize _header and _redirect of cloudflare pages
+    // Automatize _header and _redirect of cloudflare pages
     // Create Cloudflare Pages configuration files for proper routing
     {
       name: 'create-cloudflare-config',
