@@ -20,7 +20,7 @@ interface LocaleProviderProps {
 
 export function LocaleProvider({ children, prerenderLocale }: LocaleProviderProps) {
   const [pathname, setLocation] = useLocation();
-  
+
   // Use prerenderLocale if provided (for SSG), otherwise default to 'en'
   const [locale, setLocale] = useState<Locale>(prerenderLocale || LOCALE_DEFAULT);
 
@@ -35,24 +35,31 @@ export function LocaleProvider({ children, prerenderLocale }: LocaleProviderProp
     }
   });
 
-  // Detect locale from URL and load messages (only in browser)
+  // Detect locale from URL and update locale state (only in browser)
+  // This effect handles browser history navigation (back/forward buttons)
   useEffect(() => {
     // Skip URL detection during prerendering
     if (prerenderLocale) return;
 
     const urlLocale = getLocaleFromPath(pathname);
 
-    // 1. User gets here if locale is found in URL.
-    if (urlLocale && urlLocale !== locale) {
-      setLocale(urlLocale);
+    // If we detected a locale from URL, update state to match
+    // This handles browser back/forward navigation
+    if (urlLocale) {
+      if (urlLocale === LOCALE_DEFAULT) {
+        // Redirect /en to /
+        setLocation('/');
+      } else if (urlLocale !== locale) {
+        // Update locale state to match URL
+        setLocale(urlLocale);
+      }
+    } else {
+      // No locale in URL, assume default locale
+      if (locale !== LOCALE_DEFAULT) {
+        setLocale(LOCALE_DEFAULT);
+      }
     }
-
-    // 2. Locale is set to default.
-    // 3. If urlLocale is same as locale default, redirect to '/'.
-    if (urlLocale === LOCALE_DEFAULT) {
-      setLocation('/');
-    }
-  }, [pathname, prerenderLocale, locale, setLocation]);
+  }, [pathname, prerenderLocale, setLocation]);
 
   // Update messages when locale changes
   useEffect(() => {
@@ -65,9 +72,5 @@ export function LocaleProvider({ children, prerenderLocale }: LocaleProviderProp
     }
   }, [locale]);
 
-  return (
-    <LocaleContext.Provider value={{ locale, setLocale, messages }}>
-      {children}
-    </LocaleContext.Provider>
-  );
+  return <LocaleContext.Provider value={{ locale, setLocale, messages }}>{children}</LocaleContext.Provider>;
 }
