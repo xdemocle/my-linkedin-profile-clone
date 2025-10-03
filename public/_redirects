@@ -7,19 +7,19 @@
 /ar   /ar/ 301
 
 # Serve the correct index.html for each language path
-/     /index.html     200
-/it/  /it/index.html  200
-/fr/  /fr/index.html  200
-/es/  /es/index.html  200
-/ar/  /ar/index.html  200
+# /     /index.html     200
+# /it/  /it/index.html  200
+# /fr/  /fr/index.html  200
+# /es/  /es/index.html  200
+# /ar/  /ar/index.html  200
 
 # Handle all other language-specific routes by serving the language's index.html
-/*    /:splat    200
-/en/* /:splat 302
-/it/* /it/:splat 200
-/fr/* /fr/:splat 200
-/es/* /es/:splat 200
-/ar/* /ar/:splat 200
+# /*!/    /:splat/    301
+/en/* /:splat     302
+# /it/* /it/index.html 200
+# /fr/* /fr/index.html 200
+# /es/* /es/index.html 200
+# /ar/* /ar/index.html 200
 
 
 # /home301 / 301

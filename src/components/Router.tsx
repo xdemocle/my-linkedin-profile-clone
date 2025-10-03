@@ -44,10 +44,8 @@ export function Router() {
       <ScrollToTop smooth={true} />
       <Switch>
         {/* Redirect /en/* to /* (remove default locale prefix) */}
-        <Route path="/en/:rest*">
-          {params => <EnglishRedirect rest={params['rest*']} />}
-        </Route>
-        
+        <Route path="/en/:rest*">{params => <EnglishRedirect rest={params['rest*']} />}</Route>
+
         {/* Root redirect */}
         <Route path={`/${LOCALE_DEFAULT}`} component={() => <RootRedirect locale={''} />} />
         <Route path={`/${LOCALE_DEFAULT}/`} component={() => <RootRedirect locale={''} />} />
@@ -56,7 +54,7 @@ export function Router() {
         {LOCALES.map(lang => (
           <Route
             key={`${lang}-root`}
-            path={getPageUrlFromPath(lang, lang === LOCALE_DEFAULT ? '/' : `/${lang}`)}
+            path={lang === LOCALE_DEFAULT ? '/' : `/${lang}`}
             component={() => <ProfileLayout />}
           />
         ))}

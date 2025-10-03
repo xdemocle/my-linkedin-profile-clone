@@ -4,25 +4,24 @@
   Access-Control-Allow-Origin: *
   X-Robots-Tag: nosnippet
 
+/*
+  Cache-Control: public, max-age=600
+  referrer-policy: strict-origin-when-cross-origin
+
 # Cache HTML files with a short TTL
 /*.html
+  Content-Type: text/html; charset=utf-8
   Cache-Control: public, max-age=600
 
 # Language directories
-/*
-  Cache-Control: public, max-age=600
-  Content-Language: en
-/en/*
-  Cache-Control: public, max-age=31536000
 /it/*
-  Cache-Control: public, max-age=600
   Content-Language: it
+
 /fr/*
-  Cache-Control: public, max-age=600
   Content-Language: fr
+
 /es/*
-  Cache-Control: public, max-age=600
   Content-Language: es
+
 /ar/*
-  Cache-Control: public, max-age=600
   Content-Language: ar

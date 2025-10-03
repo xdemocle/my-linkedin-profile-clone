@@ -1,3 +1,4 @@
+import { LINKEDIN_PROFILE_URL } from '@/constants/webinfo';
 import { useTranslations } from 'use-intl';
 import { Badge } from '../ui/badge';
 import { Card, CardContent, CardHeader, CardTitle } from '../ui/card';
@@ -111,7 +112,7 @@ export function ProfileSidebar() {
           <div className="text-xs text-muted-foreground space-y-3">
             <div className="flex flex-wrap gap-2">
               <a
-                href="https://www.linkedin.com/in/roccorusso/"
+                href={`https://${LINKEDIN_PROFILE_URL}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-primary flex items-center gap-1"
