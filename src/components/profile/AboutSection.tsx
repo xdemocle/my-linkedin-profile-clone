@@ -1,6 +1,7 @@
+import { SUBSTACK_PROFILE_URL } from '@/constants/webinfo';
 import { useTranslations } from 'use-intl';
-import { Card, CardContent, CardHeader, CardTitle } from '../ui/card';
 import { useProfileData } from '../../hooks/useProfileData';
+import { Card, CardContent, CardHeader, CardTitle } from '../ui/card';
 
 export function AboutSection() {
   const t = useTranslations('About');
@@ -13,7 +14,7 @@ export function AboutSection() {
         <CardTitle>{t('title')}</CardTitle>
       </CardHeader>
       <CardContent>
-        <p className="text-foreground leading-relaxed">{t('firstParagraph')}</p>
+        <p className="text-foreground leading-relaxed">{t('firstParagraph', { substack: SUBSTACK_PROFILE_URL })}</p>
 
         <p className="mt-6 text-foreground leading-relaxed">{t('disclaimer')}</p>
 

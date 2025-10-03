@@ -43,7 +43,7 @@
   },
   "About": {
     "title": "About",
-    "firstParagraph": "Software engineer with over 20 years in front-end engineering, 5 years in Web3 integrations, and hands-on full-stack experience.",
+    "firstParagraph": "More active on {substack}. Software engineer with over 20 years in front-end engineering, 5 years in Web3 integrations, and hands-on full-stack experience.",
     "disclaimer": "DISCLAIMER: If you're thinking of offering me a long-term contract, please send a request here or via email at hello@rocco.me",
     "fullStackDeveloper": "Expert in React, Svelte, TypeScript, Next.js, Node.js, TailwindCSS, MongoDB, and cloud-native solutions. I mentor developers, lead teams, and architect solutions for decentralized ecosystems — from DeFi and RWA platforms to AI-augmented apps.",
     "currentlyWorking": "Currently working as Lead Software Engineer at The Web3 Ninja, where I mentor junior developers, engineer full-stack blockchain integrations, and optimize transaction speeds and gas fees.",

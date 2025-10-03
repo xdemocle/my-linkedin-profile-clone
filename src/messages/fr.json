@@ -44,7 +44,7 @@
   },
   "About": {
     "title": "À propos",
-    "firstParagraph": "Plus actif sur substack.com/@xdemocle",
+    "firstParagraph": "Plus actif sur <a href=\"https://{substack}\">{substack}</a>",
     "disclaimer": "AVERTISSEMENT: mon profil ici n'est plus un CV en ligne. Si vous pensez m'offrir un contrat à long terme, veuillez envoyer une demande ici ou par e-mail à hello@rocco.me",
     "fullStackDeveloper": "Développeur full stack avec une expérience en JavaScript, TypeScript et React. Passionné par la création d'expériences utilisateur intuitives et l'optimisation des performances web. Spécialisé dans les frameworks frontend modernes et les systèmes de design.",
     "currentlyWorking": "Je travaille actuellement en tant que développeur freelance, aidant les entreprises à créer des applications web responsives et accessibles. Compétent dans les principes de design UI/UX et l'implémentation d'interfaces interactives complexes.",
