@@ -1,6 +1,7 @@
 import mdx from '@mdx-js/rollup';
 import tailwindcss from '@tailwindcss/vite';
 import react from '@vitejs/plugin-react-swc';
+import fs from 'fs/promises';
 import path from 'path';
 import { defineConfig } from 'vite';
 import { vitePrerenderPlugin } from 'vite-prerender-plugin';
@@ -36,94 +37,80 @@ export default defineConfig({
 
     // TODO: automatize _header and _redirect of cloudflare pages
     // Create Cloudflare Pages configuration files for proper routing
-    //     {
-    //       name: 'create-cloudflare-config',
-    //       async writeBundle() {
-    //         // Create _redirects file
-    //         const redirectsContent = [
-    //           '# Redirect root to default language',
-    //           '/  /en  302',
-    //           '# Handle language-specific routes',
-    //           '/en/*  /en/:splat  200',
-    //           '/it/*  /it/:splat  200',
-    //           '/fr/*  /fr/:splat  200',
-    //           '/es/*  /es/:splat  200',
-    //           '/ar/*  /ar/:splat  200',
-    //         ].join('\n');
+    {
+      name: 'create-cloudflare-config',
+      async writeBundle() {
+        // Create _redirects file
+        const redirectsContent = [
+          '# Handle direct language access with trailing slash',
+          '/en   /       302',
+          '/en/  /       302',
+          '/it   /it/    301',
+          '/fr   /fr/    301',
+          '/es   /es/    301',
+          '/ar   /ar/    301',
+          '/en/* /:splat 302',
+        ].join('\n');
 
-    //         await fs.writeFile('dist/client/_redirects', redirectsContent.trim());
+        await fs.writeFile('dist/client/_redirects', redirectsContent.trim());
 
-    //         console.log('Created _redirects file for Cloudflare Pages');
+        console.log('Created _redirects file for Cloudflare Pages');
 
-    //         // Handle direct language access
-    //         const headersContent = [
-    //           '# Handle direct language access',
-    //           '/en  /en/  200',
-    //           '/it  /it/  200',
-    //           '/fr  /fr/  200',
-    //           '/es  /es/  200',
-    //           '/ar  /ar/  200',
-    //         ].join('\n');
+        // Create _headers file for Cloudflare Pages
+        let headersContent = [
+          '# Cache assets with a long TTL',
+          '/assets/*',
+          '  Cache-Control: public, max-age=31536000, immutable',
+          '  Access-Control-Allow-Origin: *',
+          '  X-Robots-Tag: nosnippet\n',
+          '/*',
+          '  Cache-Control: public, max-age=600',
+          '  referrer-policy: strict-origin-when-cross-origin\n',
+          '# Cache HTML files with a short TTL',
+          '/*.html',
+          '  Content-Type: text/html; charset=utf-8',
+          '  Cache-Control: public, max-age=600',
+          '\n',
+        ].join('\n');
 
-    //         await fs.writeFile('dist/client/_headers', headersContent.trim());
+        // Ensure each language directory has an index.html file
+        const languages = LOCALES;
 
-    //         console.log('Created _headers file for Cloudflare Pages');
+        headersContent += `# Language directories\n`;
 
-    //         // Ensure each language directory has an index.html file
-    //         const languages = LOCALES;
+        for (const lang of languages) {
+          try {
+            // Create directory if it doesn't exist
+            await fs.mkdir(`dist/client/${lang}`, { recursive: true });
 
-    //         for (const lang of languages) {
-    //           try {
-    //             // Create directory if it doesn't exist
-    //             await fs.mkdir(`dist/client/${lang}`, { recursive: true });
+            // Check if the language index.html already exists (prerendered)
+            const langIndexPath = `dist/client/${lang}/index.html`;
 
-    //             // Check if the language index.html already exists (prerendered)
-    //             const langIndexPath = `dist/client/${lang}/index.html`;
+            try {
+              // Check if file exists by trying to access it
+              await fs.access(langIndexPath);
 
-    //             try {
-    //               // Check if file exists by trying to access it
-    //               await fs.access(langIndexPath);
-    //               console.log(`Preserving existing prerendered content in ${lang}/index.html`);
-    //             } catch (e: unknown) {
-    //               console.error(e);
+              headersContent += [`/${lang}/*`, `  Content-Language: ${lang}\n\n`].join('\n');
 
-    //               // Only copy if the file doesn't exist (to preserve prerendered content)
-    //               const indexContent = await fs.readFile('dist/client/index.html', 'utf-8');
-    //               await fs.writeFile(langIndexPath, indexContent);
-    //               console.log(`Copied index.html to ${lang} directory`);
-    //             }
-    //           } catch (error) {
-    //             console.error(`Error handling index.html for ${lang} directory:`, error);
-    //           }
-    //         }
+              console.log(`Preserving existing prerendered content in ${lang}/index.html`);
+            } catch (e: unknown) {
+              console.error(e);
 
-    //         // Create _headers file for Cloudflare Pages
-    //         const headersContent = `
-    // # Cache assets with a long TTL
-    // /assets/*
-    //   Cache-Control: public, max-age=31536000, immutable
+              // Only copy if the file doesn't exist (to preserve prerendered content)
+              const indexContent = await fs.readFile('dist/client/index.html', 'utf-8');
+              await fs.writeFile(langIndexPath, indexContent);
+              console.log(`Copied index.html to ${lang} directory`);
+            }
+          } catch (error) {
+            console.error(`Error handling index.html for ${lang} directory:`, error);
+          }
+        }
 
-    // # Cache HTML files with a short TTL
-    // /*.html
-    //   Cache-Control: public, max-age=0, must-revalidate
+        await fs.writeFile('dist/client/_headers', headersContent.trim());
 
-    // # Language directories
-    // /en/*
-    //   Content-Language: en
-    // /it/*
-    //   Content-Language: it
-    // /fr/*
-    //   Content-Language: fr
-    // /es/*
-    //   Content-Language: es
-    // /ar/*
-    //   Content-Language: ar
-    // `;
-
-    //         await fs.writeFile('dist/client/_headers', headersContent.trim());
-    //         console.log('Created _headers file for Cloudflare Pages');
-    //       },
-    //     },
+        console.log('Created _headers file for Cloudflare Pages');
+      },
+    },
     {
       name: 'ClosePlugin', // required, will show up in warnings and errors
 
@@ -140,7 +127,6 @@ export default defineConfig({
 
       // use this to catch the end of a build without errors
       closeBundle() {
-        console.log('Bundle closed');
         process.exit(0);
       },
     },
