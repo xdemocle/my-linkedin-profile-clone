@@ -115,3 +115,23 @@ src/
 - [x] refactor src/components/Router.tsx to have a common layout
 - [ ] check wouter for better support for multi-lingual prefixes
 - [ ] check vite-prerender-plugin for better support for multi-lingual prefixes
+
+## Next Steps
+
+- **FinalizeUIPolish**
+  Review spacing, typography, and color consistency across localized views using TailwindCSS v4 and Shadcn/UI tokens.
+
+- **ExpandContentAutomation**
+  Introduce a content pipeline for `src/data/profile.json` to sync with external resume sources (e.g., Notion, Airtable, or LinkedIn export).
+
+- **AIEnhancements**
+  Prototype AI-assisted career summaries and skill tagging using LLM-generated highlights sourced from existing achievements.
+
+- **OnChainIntegrations**
+  Explore verifiable credential issuance and wallet-linked identity badges for Web3-native credibility.
+
+- **TestingCoverageReview**
+  Audit Vitest suites, add accessibility checks, and ensure multilingual snapshots stay current.
+
+- **DeploymentAutomation**
+  Configure Bun-based CI workflows and Cloudflare Pages previews for each pull request.
