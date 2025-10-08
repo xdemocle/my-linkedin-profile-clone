@@ -1,11 +1,10 @@
+import { Progress } from '@/components/ui/progress';
 import { useProfileData } from '@/hooks';
 import { ArrowLeftIcon } from '@radix-ui/react-icons';
 import { useTranslations } from 'use-intl';
 import { LinkTranslated } from '../components/link-translated';
-import { Avatar, AvatarFallback, AvatarImage } from '../components/ui/avatar';
 import { Button } from '../components/ui/button';
 import { Card, CardContent } from '../components/ui/card';
-import { Progress } from '../components/ui/progress';
 import { Separator } from '../components/ui/separator';
 
 export function SkillsPage() {
@@ -64,35 +63,6 @@ export function SkillsPage() {
           {/* Sidebar */}
           <div className="lg:col-span-1">
             <Card className="shadow-xs">
-              <CardContent className="p-6">
-                <h2 className="text-xl font-semibold mb-4">{tPage('topEndorsements')}</h2>
-                <div className="space-y-6">
-                  {skills.slice(0, 3).map((category, index) => {
-                    const topSkill = category.items.sort((a, b) => b.level - a.level)[0];
-                    return (
-                      <div key={index} className="space-y-2">
-                        <div className="flex items-center justify-between">
-                          <span className="font-medium text-sm">{topSkill.name}</span>
-                          <span className="text-xs text-muted-foreground">
-                            {Math.floor(topSkill.level / 2)} {t('endorsements')}
-                          </span>
-                        </div>
-                        <div className="flex -space-x-2">
-                          {[1, 2, 3].map(i => (
-                            <Avatar key={i} className="size-8 border-2 border-background">
-                              <AvatarImage src="https://github.com/shadcn.png" />
-                              <AvatarFallback>U{i}</AvatarFallback>
-                            </Avatar>
-                          ))}
-                        </div>
-                      </div>
-                    );
-                  })}
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card className="shadow-xs mt-6">
               <CardContent className="p-6">
                 <h2 className="text-xl font-semibold mb-4">{tPage('skillsOverview')}</h2>
                 <div className="space-y-4">
