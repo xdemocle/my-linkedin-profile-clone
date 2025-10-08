@@ -94,7 +94,7 @@ export function ProfileHeader() {
               {t('resources')}
             </Button>
 
-            <ShareProfile profileUrl={WEBSITE_URL} profileName="Rocco Russo's Profile">
+            <ShareProfile profileUrl={WEBSITE_URL} profileName={tCommon('shareProfileName')}>
               <Button variant="outline" className="rounded-full px-4">
                 {tCommon('share')}
               </Button>
