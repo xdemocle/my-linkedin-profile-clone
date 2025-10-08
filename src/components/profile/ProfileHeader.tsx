@@ -33,12 +33,7 @@ export function ProfileHeader() {
           )}
         >
           <AvatarImage src={personal.avatar} alt={personal.name} />
-          <AvatarFallback>
-            {personal.name
-              .split(' ')
-              .map((n: string) => n[0])
-              .join('')}
-          </AvatarFallback>
+          <AvatarFallback>{personal.name}</AvatarFallback>
         </Avatar>
 
         <div className="pt-10">
