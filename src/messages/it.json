@@ -44,11 +44,11 @@
   },
   "About": {
     "title": "Informazioni",
-    "firstParagraph": "Più attivo su {substack}",
-    "disclaimer": "DISCLAIMER: il mio profilo qui non è più un CV online. Se stai pensando di offrirmi un contratto a lungo termine, invia una richiesta qui o via email a hello@rocco.me",
-    "fullStackDeveloper": "Sviluppatore full stack con esperienza in JavaScript, TypeScript e React. Appassionato di creare esperienze utente intuitive e ottimizzare le prestazioni web. Specializzato in framework frontend moderni e sistemi di design.",
-    "currentlyWorking": "Attualmente lavoro come sviluppatore freelance aiutando le aziende a costruire applicazioni web responsive e accessibili. Esperto nei principi di design UI/UX e nell'implementazione di interfacce interattive complesse.",
-    "lastParagraph": "Scrivo codice. Costruisco sistemi.\nLavoro in Web3, AI e Cybersecurity. Faccio da mentore a sviluppatori junior e a chi cambia carriera. Ma niente di tutto ciò conta se dimentichiamo ciò che le persone portano sotto la superficie. Non faccio connessioni false. Non inseguo la notorietà. Non mi fido di alcun processo che tratta gli umani come righe di dati.\nSono un ingegnere del software con due decenni di esperienza. Come Lead Full-Stack Engineer, definisco la direzione per blockchain e Web3. Dal Sud Italia al mondo, assisto nello sviluppo di applicazioni decentralizzate (DApps) che ridefiniscono le esperienze utente: asset tokenizzati, piattaforme DeFi e integrazioni di smart contract. I miei progetti recenti hanno fornito milioni in liquidità, un aumento del 20% nel coinvolgimento degli utenti e traguardi di concorrenza di picco, inclusi 5 M++ visitatori su iniziative come SHIBA INU."
+    "firstParagraph": "Ingegnere del software con oltre 20 anni di esperienza nel front-end, 5 anni in Web3 ed esperienza pratica nell'integrazione full-stack e nell'AI agentica.",
+    "disclaimer": "DISCLAIMER: Se stai pensando di offrirmi un contratto a lungo termine, invia una richiesta qui o via email a hello@rocco.me",
+    "fullStackDeveloper": "Progetto, ristrutturo e rilascio prodotti che uniscono la trasparenza della blockchain a un valore reale per l'utente, dalle piattaforme DeFi e RWA alle estensioni di browser sicure e alle app gamificate. Guido piccoli team agili con un focus sul mentoring, la qualità del codice e la sostenibilità a lungo termine, non solo sulla velocità di consegna.",
+    "currentlyWorking": "Attualmente lavoro come Lead Software Engineer in The Web3 Ninja, dove faccio da mentore agli sviluppatori, costruisco integrazioni blockchain full-stack per DApp e app Web2, e ottimizzo la comunicazione API per migliorare la velocità e ridurre i costi del gas.",
+    "lastParagraph": "Scrivo codice. Costruisco sistemi. Lavoro in Web3, AI e Cybersecurity. Faccio da mentore a sviluppatori junior e a chi cambia carriera. Dalla Puglia al mondo, sviluppo applicazioni decentralizzate (DApp) che ridefiniscono l'esperienza utente: asset tokenizzati, piattaforme DeFi e integrazioni di smart contract. I miei progetti recenti hanno generato milioni in liquidità, supportato oltre 5 milioni di utenti mensili con 3.000 utenti concorrenti e ottenuto miglioramenti significativi nella qualità del codice e nella produttività del team."
   },
   "Analytics": {
     "title": "Analisi",
