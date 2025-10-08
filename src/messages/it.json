@@ -328,8 +328,8 @@
         "clientProject": "Progetto cliente",
         "personalProject": "Progetto personale",
         "hackathonProject": "Progetto hackathon",
-        "ajnaLabs": "Ajna Labs — DeFi Dapp + SDK (20M liquidità)",
-        "modeNetwork": "Mode Network — Refactoring Next.js su larga scala",
+        "ajnaLabs": "Ajna Labs - DeFi Dapp + SDK (20M liquidità)",
+        "modeNetwork": "Mode Network - Refactoring Next.js su larga scala",
         "cyberGrandpa": "Estensione Anti-Frode CyberGrandpa",
         "tetrisCrypto": "Tetris con Ricompense Crypto",
         "linkedinExtension": "Estensione LinkedIn Full Width"
@@ -409,6 +409,24 @@
         "title": "Persone che potresti conoscere",
         "connections": "collegamenti",
         "showMore": "Mostra di più"
+    },
+    "SkillsPage": {
+        "backToProfile": "Torna al profilo",
+        "topEndorsements": "Principali Raccomandazioni",
+        "skillsOverview": "Panoramica Competenze",
+        "totalSkills": "Competenze Totali",
+        "categories": "Categorie",
+        "expertLevel": "Livello Esperto (90%+)"
+    },
+    "RecommendationsPage": {
+        "backToProfile": "Torna al profilo",
+        "receivedRecommendations": "Raccomandazioni Ricevute",
+        "total": "Totale",
+        "colleagues": "Colleghi",
+        "managers": "Manager",
+        "askForRecommendation": "Chiedi una Raccomandazione",
+        "askForRecommendationDesc": "Richiedi raccomandazioni dai colleghi per rafforzare il tuo profilo.",
+        "requestRecommendation": "Richiedi Raccomandazione"
     },
     "SampleData": {
         "people": {
