@@ -1,7 +1,6 @@
 import { createRoot } from 'react-dom/client';
 import type { JSX } from 'react/jsx-runtime';
-import { IS_DEV } from './constants/env.ts';
-import { LOCALE_DEFAULT, LOCALES, type Locale } from './constants/i18n';
+import { IS_DEV, LOCALE_DEFAULT, LOCALES, type Locale } from './constants';
 import './index.css';
 import { getLocaleFromPath, getLocaleMessages } from './lib/i18n';
 import { registerServiceWorker, unregisterServiceWorker } from './lib/pwa';

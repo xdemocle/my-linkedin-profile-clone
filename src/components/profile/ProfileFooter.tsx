@@ -1,4 +1,4 @@
-import { LINKEDIN_PROFILE_URL } from '@/constants/webinfo';
+import { LINKEDIN_PROFILE_URL, WEBSITE_URL } from '@/constants';
 import { ExternalLinkIcon } from '@radix-ui/react-icons';
 import { useTranslations } from 'use-intl';
 import { Card, CardContent } from '../ui/card';
@@ -12,7 +12,7 @@ export function ProfileFooter() {
         <div className="text-xs text-muted-foreground space-y-3">
           <div className="flex flex-wrap gap-2">
             <a
-              href={`https://${LINKEDIN_PROFILE_URL}`}
+              href={LINKEDIN_PROFILE_URL}
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-primary flex items-center gap-1"
@@ -22,7 +22,7 @@ export function ProfileFooter() {
             </a>
             <span>•</span>
             <a
-              href="https://rocco.me"
+              href={WEBSITE_URL}
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-primary flex items-center gap-1"

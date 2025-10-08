@@ -1,4 +1,4 @@
-import { type Locale } from '../../constants/i18n';
+import { type Locale } from '@/constants';
 
 export const mockPaths = {
   root: '/',
@@ -37,12 +37,7 @@ export const mockPaths = {
     es: '/es/activity',
     ar: '/ar/activity',
   },
-  invalid: [
-    '/nonexistent',
-    '/it/nonexistent',
-    '/invalid-locale/page',
-    '/en/invalid-page',
-  ],
+  invalid: ['/nonexistent', '/it/nonexistent', '/invalid-locale/page', '/en/invalid-page'],
 };
 
 export const mockUrlTestCases = [
@@ -50,7 +45,7 @@ export const mockUrlTestCases = [
   { input: '/', expected: 'en' },
   { input: '/en', expected: 'en' },
   { input: '/en/', expected: 'en' },
-  
+
   // Localized paths
   { input: '/it', expected: 'it' },
   { input: '/it/', expected: 'it' },
@@ -58,7 +53,7 @@ export const mockUrlTestCases = [
   { input: '/fr/blog', expected: 'fr' },
   { input: '/es/projects', expected: 'es' },
   { input: '/ar/activity', expected: 'ar' },
-  
+
   // Invalid paths
   { input: '/invalid', expected: null },
   { input: '/xx/page', expected: null },
@@ -70,14 +65,14 @@ export const mockUrlGenerationCases = [
   { locale: 'en' as Locale, page: '', expected: '/' },
   { locale: 'en' as Locale, page: 'experience', expected: '/experience' },
   { locale: 'en' as Locale, page: 'blog', expected: '/blog' },
-  
+
   // Other locales - should have prefix
   { locale: 'it' as Locale, page: '', expected: '/it/' },
   { locale: 'it' as Locale, page: 'experience', expected: '/it/experience' },
   { locale: 'fr' as Locale, page: 'blog', expected: '/fr/blog' },
   { locale: 'es' as Locale, page: 'projects', expected: '/es/projects' },
   { locale: 'ar' as Locale, page: 'activity', expected: '/ar/activity' },
-  
+
   // Edge cases
   { locale: 'it' as Locale, page: '/', expected: '/it/' },
   { locale: 'en' as Locale, page: '/', expected: '/' },

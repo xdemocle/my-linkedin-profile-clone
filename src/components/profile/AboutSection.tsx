@@ -1,6 +1,6 @@
-import { SUBSTACK_PROFILE_URL } from '@/constants/webinfo';
+import { SUBSTACK_PROFILE_URL } from '@/constants';
+import { useProfileData } from '@/hooks';
 import { useTranslations } from 'use-intl';
-import { useProfileData } from '../../hooks/useProfileData';
 import { Card, CardContent, CardHeader, CardTitle } from '../ui/card';
 
 export function AboutSection() {

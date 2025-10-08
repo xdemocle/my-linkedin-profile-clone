@@ -1,9 +1,9 @@
 /* eslint-disable react-refresh/only-export-components */
+import { type Locale, LOCALE_DEFAULT } from '@/constants';
 import { render, type RenderOptions } from '@testing-library/react';
 import { type ReactElement } from 'react';
 import { IntlProvider } from 'use-intl';
 import { Router } from 'wouter';
-import { type Locale, LOCALE_DEFAULT } from '../../constants/i18n';
 import { LocaleProvider } from '../../contexts/LocaleContext';
 import { ThemeProvider } from '../../contexts/ThemeContext';
 

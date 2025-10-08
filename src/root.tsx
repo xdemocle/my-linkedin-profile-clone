@@ -2,7 +2,7 @@ import { IntlProvider } from 'use-intl';
 import { InstallPWA } from './components/InstallPWA';
 import { Router } from './components/Router';
 import { Toaster } from './components/ui/toaster';
-import { type Locale } from './constants/i18n';
+import { type Locale } from './constants';
 import { LocaleProvider } from './contexts/LocaleContext';
 import { ThemeProvider } from './contexts/ThemeContext';
 import { useLocale } from './hooks/useLocale';

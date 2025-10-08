@@ -1,6 +1,7 @@
 import { PageLayout } from '@/components/layout/PageLayout';
 import { ProfileLayout } from '@/components/layout/ProfileLayout';
 import { ScrollToTop } from '@/components/ScrollToTop';
+import { LOCALE_DEFAULT, LOCALES, type Locale } from '@/constants';
 import { getPageUrlFromPath } from '@/lib/i18n';
 import { ActivityPage } from '@/pages/ActivityPage';
 import { BlogPage } from '@/pages/BlogPage';
@@ -11,7 +12,6 @@ import { RecommendationsPage } from '@/pages/RecommendationsPage';
 import { SkillsPage } from '@/pages/SkillsPage';
 import { useEffect } from 'react';
 import { Redirect, Route, Switch, useLocation, Router as WouterRouter } from 'wouter';
-import { LOCALE_DEFAULT, LOCALES, type Locale } from '../constants/i18n';
 import { useLocale } from '../hooks/useLocale';
 
 // Helper component to redirect from root to localized route
