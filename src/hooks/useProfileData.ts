@@ -1,11 +1,11 @@
 import { useMemo } from 'react';
 import { useTranslations } from 'use-intl';
-import { profileData } from '../data/profile-data';
+import { staticAssets } from '../data/static-assets';
 import type { ProfileData, Experience, Project, Skill, Achievement, Education } from '../types/profile';
 
 /**
  * Hook for accessing profile data with appropriate localization.
- * Now reads from translation files for multilingual support.
+ * Combines static assets with translated content.
  */
 export function useProfileData(): ProfileData {
   const tPersonal = useTranslations('ProfileData.personal');
@@ -15,63 +15,65 @@ export function useProfileData(): ProfileData {
   const tEducation = useTranslations('ProfileData.education');
   const tCertifications = useTranslations('ProfileData.certifications');
   const tAchievements = useTranslations('ProfileData.achievements');
-  const tCommon = useTranslations('Common');
 
   // Return memoized data to prevent unnecessary re-renders
   return useMemo(() => {
-    // Build experience array from translations
-    const experience: Experience[] = ['exp1', 'exp2', 'exp3', 'exp4', 'exp5', 'exp6', 'exp7', 'exp8', 'exp9'].map((key, index) => ({
+    // Build experience array from translations + static logos
+    const experience: Experience[] = ['exp1', 'exp2', 'exp3', 'exp4', 'exp5', 'exp6', 'exp7', 'exp8', 'exp9'].map((key) => ({
       id: key,
       company: tExperience(`${key}.company`),
       position: tExperience(`${key}.position`),
       dateRange: tExperience(`${key}.dateRange`),
       description: tExperience(`${key}.description`),
       highlights: tExperience.raw(`${key}.highlights`) as string[],
-      logo: profileData.experience[index]?.logo || '/assets/png/default-logo.png',
+      logo: staticAssets.experienceLogos[key as keyof typeof staticAssets.experienceLogos],
     }));
 
-    // Build projects array from translations
-    const projects: Project[] = ['proj1', 'proj2', 'proj3', 'proj4', 'proj5'].map((key, index) => ({
-      id: key,
-      name: tProjects(`${key}.name`),
-      description: tProjects(`${key}.description`),
-      link: profileData.projects[index]?.link || '',
-      imageUrl: profileData.projects[index]?.imageUrl || '',
-      tags: profileData.projects[index]?.tags || [],
-      sourceCode: profileData.projects[index]?.sourceCode,
-    }));
+    // Build projects array from translations + static assets
+    const projects: Project[] = (['proj1', 'proj2', 'proj3', 'proj4', 'proj5'] as const).map((key) => {
+      const staticData = staticAssets.projects[key];
+      return {
+        id: key,
+        name: tProjects(`${key}.name`),
+        description: tProjects(`${key}.description`),
+        link: staticData.link,
+        imageUrl: staticData.imageUrl,
+        tags: staticData.tags,
+        sourceCode: 'sourceCode' in staticData ? staticData.sourceCode : undefined,
+      };
+    });
 
-    // Build skills array with translated categories
+    // Build skills array with translated categories + static skill items
     const skills: Skill[] = [
       {
         category: tSkills('categories.frontend'),
-        items: profileData.skills[0]?.items || [],
+        items: staticAssets.skills[0],
       },
       {
         category: tSkills('categories.backend'),
-        items: profileData.skills[1]?.items || [],
+        items: staticAssets.skills[1],
       },
       {
         category: tSkills('categories.devopsCloud'),
-        items: profileData.skills[2]?.items || [],
+        items: staticAssets.skills[2],
       },
       {
         category: tSkills('categories.web3AI'),
-        items: profileData.skills[3]?.items || [],
+        items: staticAssets.skills[3],
       },
       {
         category: tSkills('categories.toolsTesting'),
-        items: profileData.skills[4]?.items || [],
+        items: staticAssets.skills[4],
       },
     ];
 
-    // Build education array from translations
+    // Build education array from translations + static logo
     const education: Education[] = [{
       institution: tEducation('edu1.institution'),
       degree: tEducation('edu1.degree'),
       location: tEducation('edu1.location'),
       dateRange: tEducation('edu1.dateRange'),
-      logo: profileData.education[0]?.logo || '/assets/png/default-logo.png',
+      logo: staticAssets.educationLogos.edu1,
     }];
 
     // Build certifications array from translations
@@ -90,14 +92,15 @@ export function useProfileData(): ProfileData {
 
     return {
       personal: {
-        name: tCommon('profileName'),
+        name: staticAssets.personal.name,
         title: tPersonal('title'),
         headline: tPersonal('headline'),
         location: tPersonal('location'),
-        website: profileData.personal.website,
-        github: profileData.personal.github,
-        email: profileData.personal.email,
-        avatar: profileData.personal.avatar,
+        website: staticAssets.personal.website,
+        github: staticAssets.personal.github,
+        email: staticAssets.personal.email,
+        phone: staticAssets.personal.phone,
+        avatar: staticAssets.personal.avatar,
         about: tPersonal('about'),
       },
       experience,
@@ -107,5 +110,5 @@ export function useProfileData(): ProfileData {
       certifications,
       achievements,
     };
-  }, [tPersonal, tExperience, tProjects, tSkills, tEducation, tCertifications, tAchievements, tCommon]);
+  }, [tPersonal, tExperience, tProjects, tSkills, tEducation, tCertifications, tAchievements]);
 }
