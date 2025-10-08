@@ -28,7 +28,7 @@ export const companies: Record<string, Company> = {
     id: 'ajna',
     name: 'Ajna Labs',
     logo: '/assets/png/ajna-logo.png',
-    website: 'https://ajna.finance'
+    website: 'https://www.ajna.finance'
   },
   linum: {
     id: 'linum',
@@ -65,6 +65,18 @@ export const companies: Record<string, Company> = {
     name: 'BetuniQ',
     logo: '/assets/png/betuniq-logo.png',
     website: 'https://betuniq.com'
+  },
+  web71: {
+    id: 'web71',
+    name: '71web.ag',
+    logo: '/assets/png/71web-logo.png',
+    website: 'https://71web.ag'
+  },
+  spidersolutions: {
+    id: 'spidersolutions',
+    name: 'SpiderSolutions.it',
+    logo: '/assets/png/spider-logo.png',
+    website: 'https://spidersolutions.it'
   }
 };
 

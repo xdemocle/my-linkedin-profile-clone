@@ -41,22 +41,22 @@ export function ProjectsPage() {
   const projects: Project[] = [
     {
       id: 'ajna-labs',
-      title: 'Ajna Labs | DeFi Dapp, SDK, Website, Styling Library',
+      title: 'Ajna Labs — DeFi DApp + SDK',
       description:
-        'Deliverables included the construction of a proprietary SDK to facilitate seamless integration with decentralized smart contracts, as well as the development of scalable front-end architectures.',
+        'DeFi protocol with $20M+ in liquidity. Built proprietary SDK to facilitate seamless integration with decentralized smart contracts, as well as scalable front-end architectures.',
       links: {
-        website: 'https://www.ajnafi.com',
-        marketing: 'https://www.ajna.finance',
+        website: 'https://www.ajna.finance',
+        github: ['https://github.com/ajna-finance'],
       },
-      technologies: ['React', 'TypeScript', 'Solidity', 'Web3.js', 'Ethers.js'],
+      technologies: ['React', 'TypeScript', 'Solidity', 'Web3.js', 'Ethers.js', 'SDK'],
       icon: 'blue-circle',
       featured: true,
     },
     {
       id: 'mode-network',
-      title: 'MODE Network EVM Chain | Refactoring codebase',
+      title: 'Mode Network — Large-scale React Refactoring',
       description:
-        'Engaged on a time-bound contract to execute a comprehensive architectural refactor of a large-scale codebase built with Next.js, React Hooks, and TailwindCSS.',
+        'Comprehensive architectural refactor of a large-scale codebase built with Next.js, React Hooks, and TailwindCSS for an EVM chain platform.',
       links: {
         website: 'https://www.mode.network',
       },
@@ -130,11 +130,11 @@ export function ProjectsPage() {
     },
     {
       id: 'cyber-grandpa',
-      title: 'CyberGrandpa Anti-Fraud | Cross-Browser Web Extension',
+      title: 'CyberGrandpa Anti-Fraud — Browser Extension',
       description:
-        'This open source project entails the development of a cross-browser web extension engineered to enhance digital safety by mitigating exposure to fraudulent activities.',
+        'Open-source cross-browser web extension engineered to enhance digital safety by mitigating exposure to phishing and fraudulent activities.',
       links: {
-        github: ['https://github.com/cybergrandpa-web-extension-antifraud'],
+        github: ['https://github.com/CyberGrandpas/cybergrandpa-web-extension-antifraud'],
       },
       technologies: ['JavaScript', 'Browser Extensions', 'Security', 'Anti-Fraud'],
       icon: 'github',
@@ -142,11 +142,11 @@ export function ProjectsPage() {
     },
     {
       id: 'linkedin-full-width',
-      title: 'LinkedIn Full Width | Cross-Browser Web Extension',
-      description: 'Makes LinkedIn website display in full width mode.',
+      title: 'LinkedIn Full Width — UI Enhancement Extension',
+      description: 'Small but viral Chrome extension that makes LinkedIn website display in full width mode.',
       links: {
-        github: ['https://github.com/linkedin-full-width-extension'],
-        demo: 'https://chrome.google.com/webstore/detail/linkedin-full-width',
+        github: ['https://github.com/xdemocle/linkedin-full-width'],
+        demo: 'https://chromewebstore.google.com/detail/linkedin-full-width/pijfcmadcbkcjdmajckndpccemdgebhn',
       },
       technologies: ['JavaScript', 'Browser Extensions', 'CSS'],
       icon: 'code',
@@ -154,10 +154,10 @@ export function ProjectsPage() {
     },
     {
       id: 'tetris-crypto',
-      title: 'Tetris with Crypto Rewards | Telegram Mini App',
+      title: 'Tetris with Crypto Rewards — Telegram Mini App',
       description: 'Arcade game for Telegram Mini Apps with leaderboard and TON token prizes.',
       links: {
-        github: ['https://github.com/tetris-mini-app'],
+        github: ['https://github.com/xdemocle/tetris-mini-app'],
       },
       technologies: ['JavaScript', 'Telegram Mini Apps', 'TON Blockchain', 'Canvas API'],
       icon: 'code',

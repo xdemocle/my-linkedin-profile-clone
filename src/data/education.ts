@@ -15,19 +15,16 @@ export const certifications = [
     name: 'AWS Cloud Practitioner',
     issuer: 'Coursera',
     dateIssued: '2023',
-    link: 'https://example.com/cert1',
   },
   {
-    name: 'JavaScript AI App with OpenAI API',
+    name: 'Build a JavaScript AI App with OpenAI API',
     issuer: 'LinkedIn Learning',
     dateIssued: '2024',
-    link: 'https://example.com/cert2',
   },
   {
-    name: 'Practical GitHub Project Management',
+    name: 'Practical GitHub Project Management & Collaboration',
     issuer: 'LinkedIn Learning',
     dateIssued: '2023',
-    link: 'https://example.com/cert3',
   },
 ];
 

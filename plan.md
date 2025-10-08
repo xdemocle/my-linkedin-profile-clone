@@ -110,6 +110,16 @@ src/
 - [ ] Router component fully tested
 - [ ] CI/CD integration with test automation
 
+## Recent Updates (2025-10-07)
+
+- [x] Updated `src/data/profile-data.ts` with accurate experience, projects, skills, and achievements from README
+- [x] Updated `src/data/companies.ts` with all companies mentioned in README
+- [x] Updated `src/data/achievements.ts` with key achievements from README
+- [x] Updated `src/data/education.ts` with correct certification names
+- [x] Updated English translations (`src/messages/en.json`) with README content
+- [x] Updated `src/pages/ProjectsPage.tsx` with accurate project data and links
+- [x] Aligned personal information (website, GitHub, headline) with README
+
 ## Previous TODOs (Completed)
 
 - [x] refactor src/components/Router.tsx to have a common layout
@@ -118,11 +128,17 @@ src/
 
 ## Next Steps
 
+- **TranslationSync**
+  Update other language translations (it, fr, es, ar) to match the updated English content. Consider using translation services or AI for consistency.
+
+- **ExperiencePageRefactor**
+  Refactor `src/pages/ExperiencePage.tsx` to consume data from `src/data/profile-data.ts` instead of hardcoded arrays for better maintainability.
+
 - **FinalizeUIPolish**
   Review spacing, typography, and color consistency across localized views using TailwindCSS v4 and Shadcn/UI tokens.
 
 - **ExpandContentAutomation**
-  Introduce a content pipeline for `src/data/profile.json` to sync with external resume sources (e.g., Notion, Airtable, or LinkedIn export).
+  Introduce a content pipeline for profile data to sync with external resume sources (e.g., Notion, Airtable, or LinkedIn export).
 
 - **AIEnhancements**
   Prototype AI-assisted career summaries and skill tagging using LLM-generated highlights sourced from existing achievements.
