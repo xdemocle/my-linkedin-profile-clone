@@ -24,7 +24,7 @@
     "addProfileSection": "Add profile section",
     "enhanceProfile": "Enhance profile",
     "resources": "Resources",
-    "fullStackEngineer": "Software Engineer / Tech Lead | Blockchain & Dapps | Agentic AI | Cybersecurity Advocate",
+    "fullStackEngineer": "Full-stack engineer specializing in frontend architecture and blockchain integrations | Technology leadership | Web3 | React, React-Router, Preact, Next.js, Typescript, Tailwind, IPFS, Ether, EVM, Wagmi, Viem | Fixing code your vibe code",
     "location": "Apulia, Italy",
     "stealthStartup": "The Web3 Ninja"
   },
@@ -45,7 +45,7 @@
     "title": "About",
     "firstParagraph": "More active on {substack}. Software engineer with over 20 years of front-end experience, 5 years in Web3, and hands-on full-stack and AI agent integration expertise.",
     "disclaimer": "DISCLAIMER: If you're thinking of offering me a long-term contract, please send a request here or via email at hello@rocco.me",
-    "fullStackDeveloper": "I design, refactor, and ship products that merge blockchain transparency with real user value, from DeFi and RWA platforms to secure browser extensions and gamified apps. I lead small agile teams with a focus on mentorship, code quality, and long-term sustainability — not just delivery speed.",
+    "fullStackDeveloper": "I design, refactor, and ship products that merge blockchain transparency with real user value, from DeFi and RWA platforms to secure browser extensions and gamified apps. I lead small agile teams with a focus on mentorship, code quality, long-term sustainability and not just delivery speed.",
     "currentlyWorking": "Currently working as Lead Software Engineer at The Web3 Ninja, where I mentor developers, build full-stack blockchain integrations for DApps and Web2 apps, and optimize API communication to improve speed and reduce gas costs.",
     "lastParagraph": "I write code. I build systems. I work in Web3, AI, and Cybersecurity. I mentor junior devs and career changers. From South Italy to the globe, I develop decentralized applications (DApps) that redefine user experiences: tokenized assets, DeFi platforms, and smart contract integrations. My recent projects have delivered millions in liquidity, supported 5M+ monthly users with 3k concurrent, and achieved significant improvements in code quality and team productivity."
   },

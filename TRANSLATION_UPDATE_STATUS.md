@@ -1,28 +1,33 @@
-# Translation Update Status - COMPLETE! 
+# Translation Update Status - COMPLETE
 
 ## All Languages Updated (100%)
 
 ### English (en.json) - Complete
+
 - Personal info with new about text
 - All 9 experiences with new dates and highlights
 - All 6 achievements with new titles
 
 ### Italian (it.json) - Complete
+
 - Personal info with new about text
 - All 9 experiences with new dates and highlights
 - All 6 achievements with new titles
 
 ### French (fr.json) - Complete
+
 - Personal info with new about text
 - All 9 experiences with new dates and highlights
 - All 6 achievements with new titles
 
 ### Spanish (es.json) - Complete
+
 - Personal info with new about text
 - All 9 experiences with new dates and highlights
 - All 6 achievements with new titles
 
 ### Arabic (ar.json) - Complete
+
 - Personal info with new about text
 - All 9 experiences with new dates and highlights
 - All 6 achievements with new titles
