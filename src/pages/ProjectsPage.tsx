@@ -32,7 +32,7 @@ export function ProjectsPage() {
   const projects: Project[] = [
     {
       id: 'ajna-labs',
-      title: 'Ajna Labs — DeFi DApp + SDK',
+      title: 'Ajna Labs - DeFi DApp + SDK',
       description:
         'DeFi protocol with $20M+ in liquidity. Built proprietary SDK to facilitate seamless integration with decentralized smart contracts, as well as scalable front-end architectures.',
       links: {
@@ -45,7 +45,7 @@ export function ProjectsPage() {
     },
     {
       id: 'mode-network',
-      title: 'Mode Network — Large-scale React Refactoring',
+      title: 'Mode Network - Large-scale React Refactoring',
       description:
         'Comprehensive architectural refactor of a large-scale codebase built with Next.js, React Hooks, and TailwindCSS for an EVM chain platform.',
       links: {
@@ -57,7 +57,7 @@ export function ProjectsPage() {
     },
     {
       id: 'games-global',
-      title: 'GamesGlobal | Lotsaloot™ Progressive Jackpot Slot Machines',
+      title: 'GamesGlobal - Lotsaloot™ Progressive Jackpot Slot Machines',
       description:
         'Implemented an enhanced user interface for a jackpot system deployed across diverse iGaming platforms. Responsive UI for player engagement. Entirely in Vanilla.',
       links: {
@@ -70,7 +70,7 @@ export function ProjectsPage() {
     },
     {
       id: 'landworks',
-      title: 'Landworks by EnterDAO | Metaverse Rental System',
+      title: 'Landworks by EnterDAO - Metaverse Rental System',
       description:
         'Contributed to codebase optimization and iterative refactoring initiatives across both user-facing and governance modules.',
       company: 'Linum Labs',
@@ -80,11 +80,11 @@ export function ProjectsPage() {
       },
       technologies: ['React', 'TypeScript', 'Web3', 'Solidity', 'GraphQL'],
       icon: 'building',
-      featured: true,
+      featured: false,
     },
     {
       id: 'omnia-defi',
-      title: 'Omnia DeFi | Dapp Dashboard for Real World Assets',
+      title: 'Omnia DeFi - Dapp Dashboard for Real World Assets',
       description:
         'Dashboard for investors with vesting, farming, and rewards system connected to Ethereum smart contracts. Working across a stack of Node.js, React.js, Next.js, and some basics tasks with Python, Django, and Flask frameworks.',
       links: {
@@ -96,7 +96,7 @@ export function ProjectsPage() {
     },
     {
       id: 'lokr-io',
-      title: 'Lokr.io (former Polkalokr) | Marketing website',
+      title: 'Lokr.io (former Polkalokr) - Marketing website',
       description:
         'Optimization and refactoring of the main website for best browser performances. Next.js and CSS3 Animations',
       links: {
@@ -108,7 +108,7 @@ export function ProjectsPage() {
     },
     {
       id: 'altcash',
-      title: 'AltCash | B2C Crypto Exchanger',
+      title: 'AltCash - B2C Crypto Exchanger',
       description:
         'Another open source project aiming to showcase a one way exchanger to allow small buyers of crypto coins/tokens with Fiat Onramp and Bittrex or Binance API.',
       links: {
@@ -121,7 +121,7 @@ export function ProjectsPage() {
     },
     {
       id: 'cyber-grandpa',
-      title: 'CyberGrandpa Anti-Fraud — Browser Extension',
+      title: 'CyberGrandpa Anti-Fraud - Browser Extension',
       description:
         'Open-source cross-browser web extension engineered to enhance digital safety by mitigating exposure to phishing and fraudulent activities.',
       links: {
@@ -133,7 +133,7 @@ export function ProjectsPage() {
     },
     {
       id: 'linkedin-full-width',
-      title: 'LinkedIn Full Width — UI Enhancement Extension',
+      title: 'LinkedIn Full Width - UI Enhancement Extension',
       description: 'Small but viral Chrome extension that makes LinkedIn website display in full width mode.',
       links: {
         github: ['https://github.com/xdemocle/linkedin-full-width'],
@@ -145,7 +145,7 @@ export function ProjectsPage() {
     },
     {
       id: 'tetris-crypto',
-      title: 'Tetris with Crypto Rewards — Telegram Mini App',
+      title: 'Tetris with Crypto Rewards - Telegram Mini App',
       description: 'Arcade game for Telegram Mini Apps with leaderboard and TON token prizes.',
       links: {
         github: ['https://github.com/xdemocle/tetris-mini-app'],
