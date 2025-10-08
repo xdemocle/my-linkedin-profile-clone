@@ -1,10 +1,10 @@
 // import { Pencil1Icon, PlusIcon } from '@radix-ui/react-icons';
 import { useTranslations } from 'use-intl';
 import { useProfileData } from '../../hooks/useProfileData';
+import { LinkTranslated } from '../link-translated';
 import { Avatar, AvatarFallback, AvatarImage } from '../ui/avatar';
 import { Button } from '../ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '../ui/card';
-import { LinkTranslated } from '../ui/link-translated';
 import { Separator } from '../ui/separator';
 
 // Map our experience data to the component's expected format
@@ -20,7 +20,7 @@ interface ExperienceDisplay {
 export function ExperienceSection() {
   const t = useTranslations('Experience');
   const profileData = useProfileData();
-  
+
   // Get first 3 experiences from profile data
   const topExperiences = profileData.experience.slice(0, 3);
 

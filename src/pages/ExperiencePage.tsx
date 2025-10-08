@@ -1,11 +1,11 @@
 import { useProfileData } from '@/hooks';
 import { ArrowLeftIcon } from '@radix-ui/react-icons';
 import { useTranslations } from 'use-intl';
+import { LinkTranslated } from '../components/link-translated';
 import { Avatar, AvatarFallback, AvatarImage } from '../components/ui/avatar';
 import { Badge } from '../components/ui/badge';
 import { Button } from '../components/ui/button';
 import { Card, CardContent } from '../components/ui/card';
-import { LinkTranslated } from '../components/ui/link-translated';
 import { Separator } from '../components/ui/separator';
 
 interface Experience {
