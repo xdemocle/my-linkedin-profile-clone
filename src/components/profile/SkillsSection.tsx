@@ -9,14 +9,20 @@ export function SkillsSection() {
   const { skills } = useProfileData();
 
   // Get top 3 skills from the first 3 categories
-  const topSkills = skills.slice(0, 6).map(category => {
-    const topSkill = category.items.sort((a, b) => b.level - a.level)[0];
-    return {
-      name: topSkill.name,
-      level: topSkill.level,
-      category: category.category,
-    };
-  });
+  const topSkills = skills
+    .slice(0, 3)
+    .map(category => {
+      // Get top 3 skills from the first 3 categories
+      return category.items
+        .sort((a, b) => b.level - a.level)
+        .slice(0, 3)
+        .map(skill => ({
+          name: skill.name,
+          level: skill.level,
+          category: category.category,
+        }));
+    })
+    .flat();
 
   return (
     <Card className="mt-6 shadow-xs">
@@ -26,6 +32,7 @@ export function SkillsSection() {
           <LinkTranslated href="/skills">{t('showAllSkills')}</LinkTranslated>
         </Button>
       </CardHeader>
+
       <CardContent className="grid grid-cols-max sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {topSkills.map((skill, index) => (
           <div key={index} className="mb-6">
