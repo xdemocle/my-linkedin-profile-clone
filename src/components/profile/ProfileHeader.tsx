@@ -1,5 +1,5 @@
-// No edit icons needed - read-only mode
 import { cn } from '@/lib/utils';
+import { ExternalLinkIcon } from '@radix-ui/react-icons';
 import { useTranslations } from 'use-intl';
 import { useProfileData } from '../../hooks/useProfileData';
 import { OnlineStatusIcon, StealthStartupIcon } from '../../utils/iconComponents';
@@ -33,7 +33,12 @@ export function ProfileHeader() {
           )}
         >
           <AvatarImage src={personal.avatar} alt={personal.name} />
-          <AvatarFallback>{personal.name.split(' ').map((n: string) => n[0]).join('')}</AvatarFallback>
+          <AvatarFallback>
+            {personal.name
+              .split(' ')
+              .map((n: string) => n[0])
+              .join('')}
+          </AvatarFallback>
         </Avatar>
 
         <div className="pt-10">
@@ -56,29 +61,18 @@ export function ProfileHeader() {
               </div>
               <div className="mt-2">
                 {personal.website && (
-                  <a 
-                    href={personal.website} 
-                    target="_blank" 
-                    rel="noopener noreferrer" 
+                  <a
+                    href={personal.website}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="text-primary hover:underline text-sm font-medium flex items-center gap-1"
                   >
                     {t('myWebsite')}
-                    <svg
-                      className="w-3 h-3"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    >
-                      <path d="m7 7 10 10-5 0 0-5" />
-                      <path d="m17 7-5 0 0 5" />
-                    </svg>
+                    <ExternalLinkIcon />
                   </a>
                 )}
               </div>
-              <div className="flex items-center gap-4 mt-2 text-sm">
+              <div className="flex items-center gap-2 mt-2 text-sm">
                 <span className="text-primary font-medium">5,984 {t('followers')}</span>
                 <span className="text-muted-foreground">•</span>
                 <a href="#" className="text-primary hover:underline font-medium">
