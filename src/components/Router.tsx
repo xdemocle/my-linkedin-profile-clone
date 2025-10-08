@@ -94,7 +94,7 @@ export function Router() {
           </Route>
         ))}
 
-        {/* Legacy routes - redirect to localized versions */}
+        {/* redirect to localized versions */}
         <Route path={getPageUrlFromPath(locale, 'experience')}>
           <Redirect to={`/${locale}/experience`} />
         </Route>

@@ -1,3 +1,4 @@
+import { useProfileData } from '@/hooks';
 import { ArrowLeftIcon, ExternalLinkIcon, GitHubLogoIcon } from '@radix-ui/react-icons';
 import { useTranslations } from 'use-intl';
 import { useLocation } from 'wouter';
@@ -31,6 +32,7 @@ export function ProjectsPage() {
   const t = useTranslations('Projects');
   const [, setLocation] = useLocation();
   const { locale } = useLocale();
+  const { personal } = useProfileData();
 
   // Navigate back to profile with scroll restoration
   const handleBackToProfile = () => {
@@ -179,7 +181,7 @@ export function ProjectsPage() {
           <div className="flex items-center justify-between">
             <div>
               <h1 className="text-3xl font-bold">{t('title')}</h1>
-              <p className="text-muted-foreground mt-1">{t('Common.profileName')}</p>
+              <p className="text-muted-foreground mt-1">{personal.name}</p>
             </div>
           </div>
         </div>

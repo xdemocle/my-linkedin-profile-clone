@@ -73,3 +73,13 @@ export interface ProfileData {
   certifications: Certification[];
   achievements: Achievement[];
 }
+
+export interface EducationResult {
+  education: Education[];
+  certifications: {
+    name: string;
+    issuer: string;
+    dateIssued: string;
+    link: string;
+  }[];
+}

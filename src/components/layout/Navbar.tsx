@@ -1,13 +1,4 @@
-import {
-  BackpackIcon,
-  BellIcon,
-  ChatBubbleIcon,
-  FileTextIcon,
-  GearIcon,
-  HomeIcon,
-  Link2Icon,
-  MagnifyingGlassIcon,
-} from '@radix-ui/react-icons';
+import { BackpackIcon, FileTextIcon, HomeIcon, MagnifyingGlassIcon } from '@radix-ui/react-icons';
 import { Separator } from '@radix-ui/react-separator';
 import { useTranslations } from 'use-intl';
 import { useLocation } from 'wouter';
@@ -51,11 +42,10 @@ export function Navbar() {
 
         {/* Navigation */}
         <nav className="ml-auto flex items-center gap-0.5 sm:gap-1">
-          {/* Core navigation - always visible with larger touch targets on mobile */}
           <Button
             variant="ghost"
             size="icon"
-            className="h-10 w-10 sm:h-9 sm:w-9"
+            className="size-10 sm:size-9"
             onClick={() => handleNavigation('/')}
             aria-label={t('home')}
           >
@@ -65,7 +55,7 @@ export function Navbar() {
           <Button
             variant="ghost"
             size="icon"
-            className="h-10 w-10 sm:h-9 sm:w-9"
+            className="size-10 sm:size-9"
             onClick={() => handleNavigation('/experience')}
             aria-label="Experience"
           >
@@ -75,72 +65,21 @@ export function Navbar() {
           <Button
             variant="ghost"
             size="icon"
-            className="h-10 w-10 sm:h-9 sm:w-9"
+            className="size-10 sm:size-9"
             onClick={() => handleNavigation('/projects')}
             aria-label="Projects"
           >
             <FileTextIcon className="h-5.5! w-5.5!" />
           </Button>
 
-          {/* Secondary navigation - hidden on small mobile */}
-          <Button
-            variant="ghost"
-            size="icon"
-            className="h-10 w-10 sm:h-9 sm:w-9 hidden xs:flex"
-            onClick={() => handleNavigation('/skills')}
-            aria-label="Skills"
-          >
-            <FileTextIcon className="h-5.5! w-5.5!" />
-          </Button>
+          <Separator orientation="vertical" color="foreground" />
 
-          <Button
-            variant="ghost"
-            size="icon"
-            className="h-10 w-10 sm:h-9 sm:w-9 hidden sm:flex"
-            onClick={() => handleNavigation('/network')}
-            aria-label="Network"
-          >
-            <Link2Icon className="h-5.5! w-5.5!" />
-          </Button>
-
-          <Button
-            variant="ghost"
-            size="icon"
-            className="h-10 w-10 sm:h-9 sm:w-9 hidden sm:flex"
-            onClick={() => handleNavigation('/messages')}
-            aria-label="Messages"
-          >
-            <ChatBubbleIcon className="h-5.5! w-5.5!" />
-          </Button>
-
-          <Button
-            variant="ghost"
-            size="icon"
-            className="h-10 w-10 sm:h-9 sm:w-9 hidden xs:flex"
-            onClick={() => handleNavigation('/notifications')}
-            aria-label="Notifications"
-          >
-            <BellIcon className="h-5.5! w-5.5!" />
-          </Button>
-
-          <Button variant="ghost" size="icon" className="rounded-full h-10 w-10 sm:h-9 sm:w-9" aria-label="User menu">
+          <Button variant="ghost" size="icon" className="rounded-full size-10 sm:size-9" aria-label="User menu">
             <Avatar className="h-5! w-5!">
               <AvatarImage src="https://github.com/shadcn.png" alt="User" />
               <AvatarFallback>RR</AvatarFallback>
             </Avatar>
           </Button>
-
-          <Button
-            variant="ghost"
-            size="icon"
-            className="h-10 w-10 sm:h-9 sm:w-9 hidden xs:flex"
-            onClick={() => handleNavigation('/settings')}
-            aria-label="Settings"
-          >
-            <GearIcon className="h-5.5! w-5.5!" />
-          </Button>
-
-          <Separator orientation="vertical" color="accent" decorative />
 
           {/* Language and Theme - hidden on mobile */}
           <div className="items-center gap-1">

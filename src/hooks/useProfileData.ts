@@ -1,7 +1,7 @@
 import { useMemo } from 'react';
 import { useTranslations } from 'use-intl';
 import { staticAssets } from '../data/static-assets';
-import type { ProfileData, Experience, Project, Skill, Achievement, Education } from '../types/profile';
+import type { Achievement, Education, Experience, ProfileData, Project, Skill } from '../types/profile';
 
 /**
  * Hook for accessing profile data with appropriate localization.
@@ -19,18 +19,20 @@ export function useProfileData(): ProfileData {
   // Return memoized data to prevent unnecessary re-renders
   return useMemo(() => {
     // Build experience array from translations + static logos
-    const experience: Experience[] = ['exp1', 'exp2', 'exp3', 'exp4', 'exp5', 'exp6', 'exp7', 'exp8', 'exp9'].map((key) => ({
-      id: key,
-      company: tExperience(`${key}.company`),
-      position: tExperience(`${key}.position`),
-      dateRange: tExperience(`${key}.dateRange`),
-      description: tExperience(`${key}.description`),
-      highlights: tExperience.raw(`${key}.highlights`) as string[],
-      logo: staticAssets.experienceLogos[key as keyof typeof staticAssets.experienceLogos],
-    }));
+    const experience: Experience[] = ['exp1', 'exp2', 'exp3', 'exp4', 'exp5', 'exp6', 'exp7', 'exp8', 'exp9'].map(
+      key => ({
+        id: key,
+        company: tExperience(`${key}.company`),
+        position: tExperience(`${key}.position`),
+        dateRange: tExperience(`${key}.dateRange`),
+        description: tExperience(`${key}.description`),
+        highlights: tExperience.raw(`${key}.highlights`) as string[],
+        logo: staticAssets.experienceLogos[key as keyof typeof staticAssets.experienceLogos],
+      })
+    );
 
     // Build projects array from translations + static assets
-    const projects: Project[] = (['proj1', 'proj2', 'proj3', 'proj4', 'proj5'] as const).map((key) => {
+    const projects: Project[] = (['proj1', 'proj2', 'proj3', 'proj4', 'proj5'] as const).map(key => {
       const staticData = staticAssets.projects[key];
       return {
         id: key,
@@ -68,13 +70,15 @@ export function useProfileData(): ProfileData {
     ];
 
     // Build education array from translations + static logo
-    const education: Education[] = [{
-      institution: tEducation('edu1.institution'),
-      degree: tEducation('edu1.degree'),
-      location: tEducation('edu1.location'),
-      dateRange: tEducation('edu1.dateRange'),
-      logo: staticAssets.educationLogos.edu1,
-    }];
+    const education: Education[] = [
+      {
+        institution: tEducation('edu1.institution'),
+        degree: tEducation('edu1.degree'),
+        location: tEducation('edu1.location'),
+        dateRange: tEducation('edu1.dateRange'),
+        logo: staticAssets.educationLogos.edu1,
+      },
+    ];
 
     // Build certifications array from translations
     const certifications = ['cert1', 'cert2', 'cert3'].map(key => ({
