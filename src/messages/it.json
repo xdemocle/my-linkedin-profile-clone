@@ -593,24 +593,24 @@
         },
         "projects": {
             "proj1": {
-                "name": "Ajna Labs — DeFi DApp + SDK",
-                "description": "DeFi DApp + SDK (liquidità $20M)"
+                "name": "Ajna Labs",
+                "description": "DApp DeFi e SDK che alimentano oltre $20M di liquidità."
             },
             "proj2": {
                 "name": "Mode Network",
-                "description": "Refactoring React su larga scala"
+                "description": "Refactoring su larga scala del codebase React e ottimizzazione delle prestazioni."
             },
             "proj3": {
                 "name": "CyberGrandpa Anti-Fraud",
-                "description": "Estensione browser per prevenzione phishing"
+                "description": "Estensione cross-browser che previene phishing ed esposizione a frodi."
             },
             "proj4": {
                 "name": "Tetris with Crypto Rewards",
-                "description": "Mini app Telegram con premi in token TON"
+                "description": "Mini App Telegram che premia con token TON i giocatori in classifica."
             },
             "proj5": {
                 "name": "LinkedIn Full Width",
-                "description": "Estensione Chrome per miglioramento UI"
+                "description": "Estensione Chrome che abilita la visualizzazione a larghezza intera di LinkedIn."
             }
         },
         "skills": {
