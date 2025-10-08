@@ -2,10 +2,10 @@
 import { ArrowLeftIcon } from '@radix-ui/react-icons';
 import { useTranslations } from 'use-intl';
 import { PostFeed } from '../components/feed/PostFeed';
+import { LinkTranslated } from '../components/link-translated';
 import { Avatar, AvatarFallback, AvatarImage } from '../components/ui/avatar';
 import { Button } from '../components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '../components/ui/card';
-import { LinkTranslated } from '../components/ui/link-translated';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '../components/ui/tabs';
 
 const activityStats = {
@@ -56,7 +56,9 @@ export function ActivityPage() {
           <div className="flex items-center justify-between">
             <div>
               <h1 className="text-3xl font-bold">{t('title')}</h1>
-              <p className="text-muted-foreground mt-1">{t('Common.profileName')} • 1,247 {t('followers')}</p>
+              <p className="text-muted-foreground mt-1">
+                {t('Common.profileName')} • 1,247 {t('followers')}
+              </p>
             </div>
             {/* Create post button removed - read-only mode */}
           </div>
