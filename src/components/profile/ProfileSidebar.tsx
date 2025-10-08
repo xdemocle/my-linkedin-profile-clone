@@ -61,12 +61,12 @@ export function ProfileSidebar() {
   ];
 
   return (
-    <div className="space-y-4">
+    <div className="space-y-5 md:space-y-10">
       {/* Profile Language & URL */}
       <ProfileLanguageUrl />
 
       {/* Languages */}
-      <Card className="shadow-xs mb-6">
+      <Card className="shadow-xs">
         <CardHeader>
           <CardTitle className="text-base">{tLanguages('title')}</CardTitle>
         </CardHeader>

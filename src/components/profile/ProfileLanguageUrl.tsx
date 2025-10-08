@@ -47,8 +47,8 @@ export function ProfileLanguageUrl() {
   };
 
   return (
-    <Card className="shadow-xs mb-6">
-      <CardContent className="p-4">
+    <Card className="shadow-xs">
+      <CardContent>
         <div className="space-y-4">
           {/* Profile Language Section */}
           <div>

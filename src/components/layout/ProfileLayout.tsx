@@ -10,7 +10,7 @@ export function ProfileLayout() {
 
       {/* Fixed padding for fixed navbar with improved mobile spacing */}
       <main className="max-w-7xl mx-auto px-2 sm:px-4 py-4 sm:py-6 pt-16 sm:pt-20">
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-3 sm:gap-4">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-5 md:gap-10">
           {/* Main content - 2/3 width on large screens, full width on mobile */}
           <div className="lg:col-span-2 order-1">
             <ErrorBoundary>

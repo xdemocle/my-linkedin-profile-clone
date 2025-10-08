@@ -1,4 +1,5 @@
 import { useProfileData } from '@/hooks';
+import { ArrowRightIcon } from '@radix-ui/react-icons';
 import { useTranslations } from 'use-intl';
 import { LinkTranslated } from '../link-translated';
 import { Button } from '../ui/button';
@@ -25,11 +26,14 @@ export function SkillsSection() {
     .flat();
 
   return (
-    <Card className="mt-6 shadow-xs">
+    <Card className="shadow-xs">
       <CardHeader className="flex flex-row items-center justify-between">
-        <CardTitle>{t('title')}</CardTitle>
-        <Button variant="ghost" size="sm" asChild>
-          <LinkTranslated href="/skills">{t('showAllSkills')}</LinkTranslated>
+        <CardTitle className="text-xl">{t('title')}</CardTitle>
+        <Button variant="link" asChild>
+          <LinkTranslated href="/skills">
+            {t('showAllSkills')}
+            <ArrowRightIcon />
+          </LinkTranslated>
         </Button>
       </CardHeader>
 

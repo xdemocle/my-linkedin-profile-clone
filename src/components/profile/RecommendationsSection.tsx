@@ -2,9 +2,11 @@
 import { useTranslations } from 'use-intl';
 import { Avatar, AvatarFallback, AvatarImage } from '../ui/avatar';
 // import { Button } from '../ui/button';
+import { ArrowRightIcon } from '@radix-ui/react-icons';
+import { LinkTranslated } from '../link-translated';
+import { Button } from '../ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '../ui/card';
 import { Separator } from '../ui/separator';
-
 
 const QuoteSvgIcon = () => (
   <svg
@@ -31,12 +33,15 @@ export function RecommendationsSection() {
   const tData = useTranslations('SampleData.recommendations');
 
   return (
-    <Card className="mt-6 shadow-xs">
+    <Card className="shadow-xs">
       <CardHeader className="flex flex-row items-center justify-between">
-        <CardTitle>{t('title')}</CardTitle>
-        {/* <Button variant='ghost' size='icon'>
-          <PlusIcon className='h-4 w-4' />
-        </Button> */}
+        <CardTitle className="text-xl">{t('title')}</CardTitle>
+        <Button variant="link" asChild>
+          <LinkTranslated href="/recommendations">
+            {t('showAllRecommendations')}
+            <ArrowRightIcon />
+          </LinkTranslated>
+        </Button>
       </CardHeader>
       <CardContent>
         {recommendationKeys.map((key, index) => (
@@ -44,7 +49,7 @@ export function RecommendationsSection() {
             {index > 0 && <Separator className="my-6" />}
             <div className="flex items-start gap-3 mb-2">
               <Avatar>
-                <AvatarImage src='https://github.com/shadcn.png' />
+                <AvatarImage src="https://github.com/shadcn.png" />
                 <AvatarFallback>{tData(`${key}.name`)[0]}</AvatarFallback>
               </Avatar>
               <div>

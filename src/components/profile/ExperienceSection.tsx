@@ -1,4 +1,5 @@
 // import { Pencil1Icon, PlusIcon } from '@radix-ui/react-icons';
+import { ArrowRightIcon } from '@radix-ui/react-icons';
 import { useTranslations } from 'use-intl';
 import { useProfileData } from '../../hooks/useProfileData';
 import { LinkTranslated } from '../link-translated';
@@ -53,11 +54,14 @@ export function ExperienceSection() {
   ];
 
   return (
-    <Card className="mt-6 shadow-xs">
+    <Card className="shadow-xs">
       <CardHeader className="flex flex-row items-center justify-between">
-        <CardTitle>{t('title')}</CardTitle>
-        <Button variant="ghost" size="sm" asChild>
-          <LinkTranslated href="/experience">{t('showAllExperiences')}</LinkTranslated>
+        <CardTitle className="text-xl">{t('title')}</CardTitle>
+        <Button variant="link" asChild>
+          <LinkTranslated href="/experience">
+            {t('showAllExperiences')}
+            <ArrowRightIcon />
+          </LinkTranslated>
         </Button>
       </CardHeader>
       <CardContent>

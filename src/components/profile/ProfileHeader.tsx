@@ -7,6 +7,7 @@ import { OnlineStatusIcon, StealthStartupIcon } from '../../utils/iconComponents
 import { ShareProfile } from '../ShareProfile';
 import { Avatar, AvatarFallback, AvatarImage } from '../ui/avatar';
 import { Button } from '../ui/button';
+import { Card } from '../ui/card';
 
 export function ProfileHeader() {
   const t = useTranslations('ProfileHeader');
@@ -14,9 +15,10 @@ export function ProfileHeader() {
   const { personal } = useProfileData();
 
   return (
-    <div className="bg-card rounded-md overflow-hidden shadow-xs border">
+    // div className="bg-card rounded-md overflow-hidden shadow-xs border"
+    <Card className="pt-0">
       {/* Cover Photo */}
-      <div className="h-36 md:h-48 bg-muted relative">
+      <div className="h-36 md:h-48 bg-muted relative rounded-t-md overflow-hidden border-b-1 border-primary/70">
         <img
           src="https://images.unsplash.com/photo-1542435503-956c469947f6?q=80&w=1974&auto=format&fit=crop"
           alt="Cover"
@@ -101,6 +103,6 @@ export function ProfileHeader() {
           </div>
         </div>
       </div>
-    </div>
+    </Card>
   );
 }

@@ -35,12 +35,12 @@ export function SkillsPage() {
             </div>
 
             {/* Skills by Category */}
-            <Card className="shadow-xs">
-              <CardContent className="p-6">
-                {skills.map((category, categoryIndex) => (
+            {skills.map((category, categoryIndex) => (
+              <Card className="shadow-xs mb-12">
+                <CardContent>
                   <div key={categoryIndex} className="mb-8 last:mb-0">
-                    {categoryIndex > 0 && <Separator className="my-8" />}
                     <h2 className="text-xl font-semibold mb-6">{category.category}</h2>
+
                     <div className="space-y-4">
                       {category.items.map((skill, skillIndex) => (
                         <div key={skillIndex} className="space-y-2">
@@ -55,9 +55,9 @@ export function SkillsPage() {
                       ))}
                     </div>
                   </div>
-                ))}
-              </CardContent>
-            </Card>
+                </CardContent>
+              </Card>
+            ))}
           </div>
 
           {/* Sidebar */}

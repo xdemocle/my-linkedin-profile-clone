@@ -7,7 +7,7 @@ import { SkillsSection } from './SkillsSection';
 
 export function ProfileMainContent() {
   return (
-    <div className='space-y-4'>
+    <div className="space-y-5 md:space-y-10">
       <ProfileHeader />
       <AboutSection />
       <ExperienceSection />
