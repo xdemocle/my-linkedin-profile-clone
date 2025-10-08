@@ -287,15 +287,6 @@
         "personalWebsite": "Sito Web Personale",
         "copyright": "© 2024 Rocco Russo"
     },
-    "Connections": {
-        "title": "Collegamenti",
-        "seeAll": "Vedi tutti ({count}+)",
-        "allConnections": "Tutti i Collegamenti",
-        "pending": "In attesa",
-        "mutualConnections": "{count} collegamenti in comune",
-        "accept": "Accetta",
-        "ignore": "Ignora"
-    },
     "ProfileLanguage": {
         "title": "Lingua del profilo",
         "whoViewersAlsoViewed": "Chi hanno visualizzato anche i tuoi visitatori",
@@ -515,7 +506,9 @@
             "exp1": {
                 "company": "The Web3 Ninja",
                 "position": "Lead Software Engineer, Web3",
+                "type": "B2B, Part Time",
                 "dateRange": "10/2024 - Presente",
+                "location": "Puglia, Italia, Remoto",
                 "description": "Guido progetti di integrazione Web3 e mentoring di sviluppatori junior.",
                 "highlights": [
                     "Mentoring di 5 stagisti, 3 collocati come sviluppatori junior.",
@@ -527,6 +520,7 @@
                 "company": "Games Global",
                 "position": "Lead Frontend Engineer",
                 "dateRange": "09/2023 - 09/2024",
+                "location": "Swieqi, Malta, Remoto",
                 "description": "Guido lo sviluppo front-end per piattaforme di gioco.",
                 "highlights": [
                     "Sviluppata UI per il sistema jackpot Lotsaloot™.",
@@ -581,6 +575,7 @@
                 "company": "HCLTech",
                 "position": "Lead Software Engineer",
                 "dateRange": "12/2014 - 07/2015",
+                "location": "L'Aia, Paesi Bassi",
                 "description": "Realizzazione di soluzioni software enterprise.",
                 "highlights": [
                     "Realizzati progetti di refactoring Web2 di livello enterprise.",
@@ -588,7 +583,7 @@
                 ]
             },
             "exp8": {
-                "company": "Elsevier",
+                "company": "Elsevier (Reaxys 2 Web App)",
                 "position": "Software Engineer",
                 "dateRange": "2013 - 2014",
                 "description": "Costruzione di piattaforme dati scientifici.",

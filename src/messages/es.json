@@ -287,15 +287,6 @@
     "personalWebsite": "Sitio Web Personal",
     "copyright": "© 2024 Rocco Russo"
   },
-  "Connections": {
-    "title": "Conexiones",
-    "seeAll": "Ver todas ({count}+)",
-    "allConnections": "Todas las Conexiones",
-    "pending": "Pendiente",
-    "mutualConnections": "{count} conexiones mutuas",
-    "accept": "Aceptar",
-    "ignore": "Ignorar"
-  },
   "ProfileLanguage": {
     "title": "Idioma del perfil",
     "whoViewersAlsoViewed": "Quién también vieron tus visitantes",
@@ -514,7 +505,9 @@
       "exp1": {
         "company": "The Web3 Ninja",
         "position": "Lead Software Engineer, Web3",
+        "type": "B2B, Tiempo Parcial",
         "dateRange": "10/2024 - Presente",
+        "location": "Apulia, Italia, Remoto",
         "description": "Liderando proyectos de integración Web3 y mentoría de desarrolladores junior.",
         "highlights": [
           "Mentoría a 5 pasantes, 3 colocados como desarrolladores junior.",
@@ -526,6 +519,7 @@
         "company": "Games Global",
         "position": "Lead Frontend Engineer",
         "dateRange": "09/2023 - 09/2024",
+        "location": "Swieqi, Malta, Remoto",
         "description": "Liderando desarrollo front-end para plataformas de juegos.",
         "highlights": [
           "Desarrollada UI para sistema de jackpot Lotsaloot™.",
@@ -580,6 +574,7 @@
         "company": "HCLTech",
         "position": "Lead Software Engineer",
         "dateRange": "12/2014 - 07/2015",
+        "location": "La Haya, Países Bajos",
         "description": "Entregando soluciones de software empresarial.",
         "highlights": [
           "Realizados proyectos de refactorización Web2 de nivel empresarial.",
@@ -587,7 +582,7 @@
         ]
       },
       "exp8": {
-        "company": "Elsevier",
+        "company": "Elsevier (Reaxys 2 Web App)",
         "position": "Software Engineer",
         "dateRange": "2013 - 2014",
         "description": "Construyendo plataformas de datos científicos.",
