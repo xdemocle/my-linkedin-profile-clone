@@ -76,7 +76,7 @@ export function ExperiencePage() {
               <div className='flex items-center justify-between'>
                 <div>
                   <h1 className='text-3xl font-bold'>{t('title')}</h1>
-                  <p className='text-muted-foreground mt-1'>Rocco Russo</p>
+                  <p className='text-muted-foreground mt-1'>{t('Common.profileName')}</p>
                 </div>
                 {/* Edit buttons removed - read-only mode */}
               </div>

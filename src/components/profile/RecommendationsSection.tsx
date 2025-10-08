@@ -1,17 +1,10 @@
 // import { PlusIcon } from '@radix-ui/react-icons';
+import { useTranslations } from 'use-intl';
 import { Avatar, AvatarFallback, AvatarImage } from '../ui/avatar';
 // import { Button } from '../ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '../ui/card';
 import { Separator } from '../ui/separator';
 
-interface Recommendation {
-  name: string;
-  avatar: string;
-  title: string;
-  relationship: string;
-  date: string;
-  content: string;
-}
 
 const QuoteSvgIcon = () => (
   <svg
@@ -31,50 +24,34 @@ const QuoteSvgIcon = () => (
   </svg>
 );
 
-const recommendations: Recommendation[] = [
-  {
-    name: 'Giorgio Ravioli',
-    avatar: 'https://github.com/shadcn.png',
-    title: 'Senior Full Stack Developer',
-    relationship: 'Giorgio worked with Rocco in the same team',
-    date: 'July 24, 2022',
-    content:
-      'Rocco is an exceptional frontend developer with a keen eye for detail and a talent for creating elegant user interfaces. His ability to translate complex requirements into intuitive designs is remarkable. He consistently delivered high-quality code on our shared projects and was always willing to help others on the team.',
-  },
-  {
-    name: 'Alessandro Buccheri',
-    avatar: 'https://github.com/shadcn.png',
-    title: 'Senior Full Stack Developer',
-    relationship: 'Alessandro managed Rocco directly',
-    date: 'March 15, 2021',
-    content:
-      "I had the pleasure of managing Rocco on several critical projects. His technical skills in frontend development are truly impressive, particularly in React and modern JavaScript. He's proactive, reliable, and has an exceptional ability to solve complex problems. His work consistently exceeded client expectations, and he was a valuable asset to our team.",
-  },
-];
+const recommendationKeys = ['giorgioRavioli', 'alessandroBuccheri'];
 
 export function RecommendationsSection() {
+  const t = useTranslations('Recommendations');
+  const tData = useTranslations('SampleData.recommendations');
+
   return (
     <Card className="mt-6 shadow-xs">
       <CardHeader className="flex flex-row items-center justify-between">
-        <CardTitle>Recommendations</CardTitle>
+        <CardTitle>{t('title')}</CardTitle>
         {/* <Button variant='ghost' size='icon'>
           <PlusIcon className='h-4 w-4' />
         </Button> */}
       </CardHeader>
       <CardContent>
-        {recommendations.map((rec, index) => (
+        {recommendationKeys.map((key, index) => (
           <div key={index} className="mb-6">
             {index > 0 && <Separator className="my-6" />}
             <div className="flex items-start gap-3 mb-2">
               <Avatar>
-                <AvatarImage src={rec.avatar} />
-                <AvatarFallback>{rec.name[0]}</AvatarFallback>
+                <AvatarImage src='https://github.com/shadcn.png' />
+                <AvatarFallback>{tData(`${key}.name`)[0]}</AvatarFallback>
               </Avatar>
               <div>
-                <h3 className="font-medium">{rec.name}</h3>
-                <p className="text-sm text-muted-foreground">{rec.title}</p>
-                <p className="text-xs text-muted-foreground">{rec.relationship}</p>
-                <p className="text-xs text-muted-foreground">{rec.date}</p>
+                <h3 className="font-medium">{tData(`${key}.name`)}</h3>
+                <p className="text-sm text-muted-foreground">{tData(`${key}.title`)}</p>
+                <p className="text-xs text-muted-foreground">{tData(`${key}.relationship`)}</p>
+                <p className="text-xs text-muted-foreground">{tData(`${key}.date`)}</p>
               </div>
             </div>
 
@@ -82,7 +59,7 @@ export function RecommendationsSection() {
               <div className="mr-2 mt-1">
                 <QuoteSvgIcon />
               </div>
-              <p className="text-sm text-muted-foreground leading-relaxed">{rec.content}</p>
+              <p className="text-sm text-muted-foreground leading-relaxed">{tData(`${key}.content`)}</p>
             </div>
           </div>
         ))}

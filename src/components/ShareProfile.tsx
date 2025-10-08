@@ -18,6 +18,7 @@ interface ShareProfileProps {
 }
 
 export function ShareProfile({ profileUrl, profileName = "Rocco Russo's Profile", className }: ShareProfileProps) {
+  // Note: profileName default is kept for backward compatibility, but should use translation in parent component
   if (!profileUrl && typeof window !== 'undefined') {
     profileUrl = window.location.href;
   } else {

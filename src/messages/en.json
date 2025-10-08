@@ -264,15 +264,6 @@
     "personalWebsite": "Personal Website",
     "copyright": "© 2024 Rocco Russo"
   },
-  "PeopleAlsoViewed": {
-    "title": "People also viewed",
-    "seeWhoElse": "See who else is often viewed alongside you",
-    "unlockFullList": "Unlock the full list",
-    "reactivatePremium": "Reactivate Premium",
-    "cancelAnytime": "Cancel anytime. No hidden fees.",
-    "solutionsPartner": "Solutions Partner & Business Development Consultant",
-    "vicePresident": "Vice President, Content & Creative"
-  },
   "Connections": {
     "title": "Connections",
     "seeAll": "See all ({count}+)",
@@ -384,6 +375,90 @@
     "unfollow": "Unfollow",
     "loading": "Loading...",
     "error": "Error",
-    "success": "Success"
+    "success": "Success",
+    "profileName": "Rocco Russo",
+    "showMore": "Show more"
+  },
+  "PeopleAlsoViewed": {
+    "title": "People also viewed",
+    "connections": "connections",
+    "showMore": "Show more"
+  },
+  "SampleData": {
+    "people": {
+      "maxMueller": {
+        "name": "Max Mueller",
+        "title": "Senior Frontend Developer at Google"
+      },
+      "sophieJohnson": {
+        "name": "Sophie Johnson",
+        "title": "UX Designer at Apple"
+      },
+      "danielLee": {
+        "name": "Daniel Lee",
+        "title": "Full Stack Developer at Netflix"
+      },
+      "oliviaWilliams": {
+        "name": "Olivia Williams",
+        "title": "Frontend Engineer at Microsoft"
+      },
+      "jamesRodriguez": {
+        "name": "James Rodriguez",
+        "title": "UI Developer at Adobe"
+      },
+      "emilyChen": {
+        "name": "Emily Chen",
+        "title": "Senior React Developer at Meta"
+      }
+    },
+    "recommendations": {
+      "giorgioRavioli": {
+        "name": "Giorgio Ravioli",
+        "title": "Senior Full Stack Developer",
+        "relationship": "Giorgio worked with Rocco in the same team",
+        "date": "July 24, 2022",
+        "content": "Rocco is an exceptional frontend developer with a keen eye for detail and a talent for creating elegant user interfaces. His ability to translate complex requirements into intuitive designs is remarkable. He consistently delivered high-quality code on our shared projects and was always willing to help others on the team."
+      },
+      "alessandroBuccheri": {
+        "name": "Alessandro Buccheri",
+        "title": "Senior Full Stack Developer",
+        "relationship": "Alessandro managed Rocco directly",
+        "date": "March 15, 2021",
+        "content": "I had the pleasure of managing Rocco on several critical projects. His technical skills in frontend development are truly impressive, particularly in React and modern JavaScript. He's proactive, reliable, and has an exceptional ability to solve complex problems. His work consistently exceeded client expectations, and he was a valuable asset to our team."
+      }
+    },
+    "posts": {
+      "post1": {
+        "role": "Full Stack Frontend Web Developer",
+        "content": "Excited to share that I've completed my latest project - a LinkedIn profile clone built with React, TypeScript, and TailwindCSS! 🚀\n\nCheck it out and let me know what you think!"
+      },
+      "post2": {
+        "author": "Sarah Johnson",
+        "role": "UX Designer at Google",
+        "content": "Just published my new article on design systems and how they can transform your product development process.\n\nA good design system can save hundreds of development hours and bring consistency to your user experience."
+      },
+      "post3": {
+        "author": "Michael Chen",
+        "role": "Tech Lead at Microsoft",
+        "content": "We're hiring! Looking for talented frontend developers to join our team. If you have experience with React, TypeScript, and a passion for building great user experiences, send me a message."
+      }
+    },
+    "blogPosts": {
+      "post1": {
+        "title": "Building Modern React Applications with TypeScript",
+        "description": "A comprehensive guide to setting up and developing scalable React applications using TypeScript, focusing on best practices and modern development patterns.",
+        "content": "In this post, we explore the benefits of using TypeScript with React and how to set up a robust development environment..."
+      },
+      "post2": {
+        "title": "The Future of Web3 and Frontend Development",
+        "description": "Exploring how blockchain technology is reshaping frontend development and what developers need to know about Web3 integration.",
+        "content": "Web3 represents a paradigm shift in how we think about applications and user interactions..."
+      },
+      "post3": {
+        "title": "Optimizing Performance in Large React Applications",
+        "description": "Learn advanced techniques for optimizing React application performance, including code splitting, memoization, and efficient state management.",
+        "content": "Performance optimization is crucial for maintaining a good user experience in large applications..."
+      }
+    }
   }
 }

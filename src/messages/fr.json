@@ -258,15 +258,6 @@
     "personalWebsite": "Site Web Personnel",
     "copyright": "© 2024 Rocco Russo"
   },
-  "PeopleAlsoViewed": {
-    "title": "Personnes également consultées",
-    "seeWhoElse": "Voyez qui d'autre est souvent consulté avec vous",
-    "unlockFullList": "Débloquer la liste complète",
-    "reactivatePremium": "Réactiver Premium",
-    "cancelAnytime": "Annuler à tout moment. Aucun frais caché.",
-    "solutionsPartner": "Partenaire de solutions et consultant en développement commercial",
-    "vicePresident": "Vice-président, Contenu et Créativité"
-  },
   "Connections": {
     "title": "Relations",
     "seeAll": "Voir tout ({count}+)",
@@ -367,10 +358,6 @@
     "funMessage": "\"Dans la vaste étendue d'internet, même les meilleurs explorateurs prennent parfois un mauvais virage. Mais c'est comme ça qu'on découvre de nouveaux chemins !\" 🚀"
   },
   "Common": {
-    "showMore": "Afficher plus",
-    "showLess": "Afficher moins",
-    "seeAll": "Voir tout",
-    "edit": "Modifier",
     "add": "Ajouter",
     "save": "Enregistrer",
     "cancel": "Annuler",
@@ -383,6 +370,90 @@
     "unfollow": "Ne plus suivre",
     "loading": "Chargement...",
     "error": "Erreur",
-    "success": "Succès"
+    "success": "Succès",
+    "profileName": "Rocco Russo",
+    "showMore": "Afficher plus"
+  },
+  "PeopleAlsoViewed": {
+    "title": "Personnes consultées",
+    "connections": "relations",
+    "showMore": "Afficher plus"
+  },
+  "SampleData": {
+    "people": {
+      "maxMueller": {
+        "name": "Max Mueller",
+        "title": "Développeur Frontend Senior chez Google"
+      },
+      "sophieJohnson": {
+        "name": "Sophie Johnson",
+        "title": "Designer UX chez Apple"
+      },
+      "danielLee": {
+        "name": "Daniel Lee",
+        "title": "Développeur Full Stack chez Netflix"
+      },
+      "oliviaWilliams": {
+        "name": "Olivia Williams",
+        "title": "Ingénieur Frontend chez Microsoft"
+      },
+      "jamesRodriguez": {
+        "name": "James Rodriguez",
+        "title": "Développeur UI chez Adobe"
+      },
+      "emilyChen": {
+        "name": "Emily Chen",
+        "title": "Développeur React Senior chez Meta"
+      }
+    },
+    "recommendations": {
+      "giorgioRavioli": {
+        "name": "Giorgio Ravioli",
+        "title": "Développeur Full Stack Senior",
+        "relationship": "Giorgio a travaillé avec Rocco dans la même équipe",
+        "date": "24 juillet 2022",
+        "content": "Rocco est un développeur frontend exceptionnel avec un œil attentif aux détails et un talent pour créer des interfaces utilisateur élégantes. Sa capacité à traduire des exigences complexes en designs intuitifs est remarquable. Il a toujours livré du code de haute qualité sur nos projets partagés et était toujours prêt à aider les autres membres de l'équipe."
+      },
+      "alessandroBuccheri": {
+        "name": "Alessandro Buccheri",
+        "title": "Développeur Full Stack Senior",
+        "relationship": "Alessandro a géré Rocco directement",
+        "date": "15 mars 2021",
+        "content": "J'ai eu le plaisir de gérer Rocco sur plusieurs projets critiques. Ses compétences techniques en développement frontend sont vraiment impressionnantes, en particulier en React et JavaScript moderne. Il est proactif, fiable et possède une capacité exceptionnelle à résoudre des problèmes complexes. Son travail a constamment dépassé les attentes des clients et il a été un atout précieux pour notre équipe."
+      }
+    },
+    "posts": {
+      "post1": {
+        "role": "Développeur Web Frontend Full Stack",
+        "content": "Ravi de partager que j'ai terminé mon dernier projet - un clone de profil LinkedIn construit avec React, TypeScript et TailwindCSS ! 🚀\n\nJetez-y un œil et dites-moi ce que vous en pensez !"
+      },
+      "post2": {
+        "author": "Sarah Johnson",
+        "role": "Designer UX chez Google",
+        "content": "Je viens de publier mon nouvel article sur les design systems et comment ils peuvent transformer votre processus de développement de produit.\n\nUn bon design system peut économiser des centaines d'heures de développement et apporter de la cohérence à votre expérience utilisateur."
+      },
+      "post3": {
+        "author": "Michael Chen",
+        "role": "Tech Lead chez Microsoft",
+        "content": "Nous recrutons ! Nous recherchons des développeurs frontend talentueux pour rejoindre notre équipe. Si vous avez de l'expérience avec React, TypeScript et une passion pour créer de grandes expériences utilisateur, envoyez-moi un message."
+      }
+    },
+    "blogPosts": {
+      "post1": {
+        "title": "Construire des Applications React Modernes avec TypeScript",
+        "description": "Un guide complet pour configurer et développer des applications React évolutives en utilisant TypeScript, en se concentrant sur les meilleures pratiques et les modèles de développement modernes.",
+        "content": "Dans cet article, nous explorons les avantages de l'utilisation de TypeScript avec React et comment configurer un environnement de développement robuste..."
+      },
+      "post2": {
+        "title": "L'Avenir du Web3 et du Développement Frontend",
+        "description": "Explorer comment la technologie blockchain remodèle le développement frontend et ce que les développeurs doivent savoir sur l'intégration Web3.",
+        "content": "Web3 représente un changement de paradigme dans notre façon de penser les applications et les interactions utilisateur..."
+      },
+      "post3": {
+        "title": "Optimisation des Performances dans les Grandes Applications React",
+        "description": "Apprenez des techniques avancées pour optimiser les performances des applications React, y compris le code splitting, la mémoïsation et la gestion efficace de l'état.",
+        "content": "L'optimisation des performances est cruciale pour maintenir une bonne expérience utilisateur dans les grandes applications..."
+      }
+    }
   }
 }

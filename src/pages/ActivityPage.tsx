@@ -56,7 +56,7 @@ export function ActivityPage() {
           <div className="flex items-center justify-between">
             <div>
               <h1 className="text-3xl font-bold">{t('title')}</h1>
-              <p className="text-muted-foreground mt-1">Rocco Russo • 1,247 {t('followers')}</p>
+              <p className="text-muted-foreground mt-1">{t('Common.profileName')} • 1,247 {t('followers')}</p>
             </div>
             {/* Create post button removed - read-only mode */}
           </div>
@@ -114,7 +114,7 @@ export function ActivityPage() {
                         </Avatar>
                         <div className="flex-1">
                           <div className="flex items-center gap-2 mb-1">
-                            <span className="font-medium">Rocco Russo</span>
+                            <span className="font-medium">{t('Common.profileName')}</span>
                             <span className="text-sm text-muted-foreground">
                               {activity.type === 'post' && t('posted')}
                               {activity.type === 'comment' && t('commentedOn')}

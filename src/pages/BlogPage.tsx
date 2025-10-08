@@ -20,53 +20,55 @@ interface BlogPost {
   slug: string;
 }
 
-const blogPosts: BlogPost[] = [
-  {
-    id: '1',
-    title: 'Building Modern React Applications with TypeScript',
-    description: 'A comprehensive guide to setting up and developing scalable React applications using TypeScript, focusing on best practices and modern development patterns.',
-    content: 'In this post, we explore the benefits of using TypeScript with React and how to set up a robust development environment...',
-    author: {
-      name: 'Rocco Russo',
-      avatar: 'https://github.com/shadcn.png',
-    },
-    publishedAt: '2024-01-15',
-    readTime: 8,
-    tags: ['React', 'TypeScript', 'Frontend'],
-    slug: 'building-modern-react-applications-typescript',
-  },
-  {
-    id: '2',
-    title: 'The Future of Web3 and Frontend Development',
-    description: 'Exploring how blockchain technology is reshaping frontend development and what developers need to know about Web3 integration.',
-    content: 'Web3 represents a paradigm shift in how we think about applications and user interactions...',
-    author: {
-      name: 'Rocco Russo',
-      avatar: 'https://github.com/shadcn.png',
-    },
-    publishedAt: '2024-01-10',
-    readTime: 12,
-    tags: ['Web3', 'Blockchain', 'Frontend', 'Ethereum'],
-    slug: 'future-web3-frontend-development',
-  },
-  {
-    id: '3',
-    title: 'Optimizing Performance in Large React Applications',
-    description: 'Learn advanced techniques for optimizing React application performance, including code splitting, memoization, and efficient state management.',
-    content: 'Performance optimization is crucial for maintaining a good user experience in large applications...',
-    author: {
-      name: 'Rocco Russo',
-      avatar: 'https://github.com/shadcn.png',
-    },
-    publishedAt: '2024-01-05',
-    readTime: 15,
-    tags: ['React', 'Performance', 'Optimization'],
-    slug: 'optimizing-performance-large-react-applications',
-  },
-];
-
 export function BlogPage() {
   const t = useTranslations('Blog');
+  const tData = useTranslations('SampleData.blogPosts');
+  const tCommon = useTranslations('Common');
+
+  const blogPosts: BlogPost[] = [
+    {
+      id: '1',
+      title: tData('post1.title'),
+      description: tData('post1.description'),
+      content: tData('post1.content'),
+      author: {
+        name: tCommon('profileName'),
+        avatar: 'https://github.com/shadcn.png',
+      },
+      publishedAt: '2024-01-15',
+      readTime: 8,
+      tags: ['React', 'TypeScript', 'Frontend'],
+      slug: 'building-modern-react-applications-typescript',
+    },
+    {
+      id: '2',
+      title: tData('post2.title'),
+      description: tData('post2.description'),
+      content: tData('post2.content'),
+      author: {
+        name: tCommon('profileName'),
+        avatar: 'https://github.com/shadcn.png',
+      },
+      publishedAt: '2024-01-10',
+      readTime: 12,
+      tags: ['Web3', 'Blockchain', 'Frontend', 'Ethereum'],
+      slug: 'future-web3-frontend-development',
+    },
+    {
+      id: '3',
+      title: tData('post3.title'),
+      description: tData('post3.description'),
+      content: tData('post3.content'),
+      author: {
+        name: tCommon('profileName'),
+        avatar: 'https://github.com/shadcn.png',
+      },
+      publishedAt: '2024-01-05',
+      readTime: 15,
+      tags: ['React', 'Performance', 'Optimization'],
+      slug: 'optimizing-performance-large-react-applications',
+    },
+  ];
 
   const formatDate = (dateString: string) => {
     return new Date(dateString).toLocaleDateString('en-US', {
