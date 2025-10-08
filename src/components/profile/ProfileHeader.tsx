@@ -11,8 +11,7 @@ import { Button } from '../ui/button';
 export function ProfileHeader() {
   const t = useTranslations('ProfileHeader');
   const tCommon = useTranslations('Common');
-  const profileData = useProfileData();
-  const { personal } = profileData;
+  const { personal } = useProfileData();
 
   return (
     <div className="bg-card rounded-md overflow-hidden shadow-xs border">

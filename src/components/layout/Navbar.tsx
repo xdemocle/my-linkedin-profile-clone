@@ -3,6 +3,7 @@ import { Separator } from '@radix-ui/react-separator';
 import { useTranslations } from 'use-intl';
 import { useLocation } from 'wouter';
 import { useLocale } from '../../hooks/useLocale';
+import { useProfileData } from '../../hooks/useProfileData';
 import { getPageUrlFromPath } from '../../lib/i18n';
 import { scrollToTop } from '../../utils/scrollUtils';
 import { Avatar, AvatarFallback, AvatarImage } from '../ui/avatar';
@@ -14,6 +15,7 @@ import { ThemeToggle } from '../ui/theme-toggle';
 export function Navbar() {
   const { locale } = useLocale();
   const t = useTranslations('Navigation');
+  const { personal } = useProfileData();
   const [, setLocation] = useLocation();
 
   // Custom navigation handler that scrolls to top and includes locale prefix
@@ -49,7 +51,7 @@ export function Navbar() {
             onClick={() => handleNavigation('/')}
             aria-label={t('home')}
           >
-            <HomeIcon className="h-5.5! w-5.5!" />
+            <HomeIcon className="size-5.5" />
           </Button>
 
           <Button
@@ -59,7 +61,7 @@ export function Navbar() {
             onClick={() => handleNavigation('/experience')}
             aria-label="Experience"
           >
-            <BackpackIcon className="h-5.5! w-5.5!" />
+            <BackpackIcon className="size-5.5" />
           </Button>
 
           <Button
@@ -69,23 +71,22 @@ export function Navbar() {
             onClick={() => handleNavigation('/projects')}
             aria-label="Projects"
           >
-            <FileTextIcon className="h-5.5! w-5.5!" />
+            <FileTextIcon className="size-5.5" />
           </Button>
 
-          <Separator orientation="vertical" color="foreground" />
+          <Separator orientation="vertical" className="block w-[1px] h-4 bg-foreground" />
 
-          <Button variant="ghost" size="icon" className="rounded-full size-10 sm:size-9" aria-label="User menu">
-            <Avatar className="h-5! w-5!">
-              <AvatarImage src="https://github.com/shadcn.png" alt="User" />
-              <AvatarFallback>RR</AvatarFallback>
-            </Avatar>
-          </Button>
-
-          {/* Language and Theme - hidden on mobile */}
-          <div className="items-center gap-1">
+          <div className="items-center gap-0">
             <ThemeToggle />
             <LanguageSwitcher />
           </div>
+
+          <Button variant="ghost" size="icon" className="rounded-full size-10 sm:size-9" aria-label="User menu">
+            <Avatar className="size-6.5">
+              <AvatarImage src={personal.avatar} alt="User" />
+              <AvatarFallback>RR</AvatarFallback>
+            </Avatar>
+          </Button>
         </nav>
       </div>
     </header>

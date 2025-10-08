@@ -38,7 +38,7 @@ export function ProfileLanguageUrl() {
   };
 
   const copyToClipboard = () => {
-    navigator.clipboard.writeText(`https://${profileUrl}`).then(() => {
+    navigator.clipboard.writeText(`${profileUrl}`).then(() => {
       toast({
         description: t('urlCopied'),
         duration: 2000,
@@ -76,14 +76,8 @@ export function ProfileLanguageUrl() {
             <div className="flex items-center justify-between">
               <p className="text-sm text-muted-foreground break-all flex-1">{profileUrl}</p>
               <div className="flex gap-1">
-                <Button
-                  variant="ghost"
-                  size="sm"
-                  onClick={copyToClipboard}
-                  className="h-8 px-2"
-                  aria-label={t('copyUrl')}
-                >
-                  <ClipboardCopyIcon className="h-4 w-4" />
+                <Button variant="ghost" size="sm" onClick={copyToClipboard} aria-label={t('copyUrl')}>
+                  <ClipboardCopyIcon className="size-5!" />
                 </Button>
               </div>
             </div>
