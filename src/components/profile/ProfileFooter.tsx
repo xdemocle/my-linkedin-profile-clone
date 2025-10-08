@@ -8,7 +8,7 @@ export function ProfileFooter() {
 
   return (
     <Card className="shadow-xs">
-      <CardContent className="p-4">
+      <CardContent>
         <div className="text-xs text-muted-foreground space-y-3">
           <div className="flex flex-wrap gap-2">
             <a
