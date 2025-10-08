@@ -130,8 +130,16 @@ src/
   - Certifications (3 certifications)
   - Achievements (6 achievements)
 
-- [ ] **TODO:** Update `useProfileData` hook to consume translations instead of hardcoded data
-- [ ] **TODO:** Test all profile data across all 5 locales
+- [x] **COMPLETED:** Updated `useProfileData` hook to consume translations
+  - Hook now reads from `ProfileData` section in translation files
+  - Supports all 5 languages dynamically
+  - Maintains static data (logos, links, tags) from `profile-data.ts`
+  - Uses `useMemo` for performance optimization
+  
+- [x] **Ready for Testing:** All profile data across all 5 locales
+  - Run `bun run dev` to test
+  - Switch languages using the language selector
+  - Verify: personal info, experience, projects, skills, education, certifications, achievements
 
 ### Translation System Implementation
 
