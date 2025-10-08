@@ -25,7 +25,6 @@
     "enhanceProfile": "Améliorer le profil",
     "resources": "Ressources",
     "fullStackEngineer": "Ingénieur full-stack spécialisé en architecture frontend et intégrations blockchain | Leadership Technique | Web3 | React, React-Router, Preact, Next.js, Typescript, Tailwind, IPFS, Ether, EVM, Wagmi, Viem | Je répare le code qui vibre",
-    "location": "Málaga, Andalousie, Espagne",
     "stealthStartup": "Startup IA en Mode Furtif"
   },
   "ProfileLayout": {
@@ -460,7 +459,7 @@
     "personal": {
       "title": "Ingénieur Logiciel / Tech Lead",
       "headline": "Blockchain & Dapps | IA Agentique | Cybersécurité",
-      "location": "Pouilles, Italie",
+      "location": "Málaga, Andalusia, Espagne",
       "about": "Ingénieur logiciel avec plus de 20 ans d'expérience en ingénierie front-end, 5 ans en intégrations Web3 et développement full-stack pratique. Expert en React, Svelte, TypeScript, Node.js, Next.js, TailwindCSS, MongoDB et solutions cloud-native. Je construis des applications décentralisées fusionnant blockchain, IA et utilité réelle, avec un focus sur le leadership, le mentorat, la conception scalable et le code propre."
     },
     "experience": {

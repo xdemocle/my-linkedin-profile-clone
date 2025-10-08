@@ -25,7 +25,6 @@
     "enhanceProfile": "تحسين الملف الشخصي",
     "resources": "الموارد",
     "fullStackEngineer": "مهندس full-stack متخصص في هندسة الواجهة الأمامية وتكاملات البلوك تشين | القيادة التقنية | Web3 | React, React-Router, Preact, Next.js, Typescript, Tailwind, IPFS, Ether, EVM, Wagmi, Viem | أصلح الكود اللي مش شغال",
-    "location": "مالقة، الأندلس، إسبانيا",
     "stealthStartup": "شركة ناشئة للذكاء الاصطناعي في الوضع الخفي"
   },
   "ProfileLayout": {
@@ -459,7 +458,7 @@
     "personal": {
       "title": "مهندس برمجيات / قائد تقني",
       "headline": "Blockchain & Dapps | الذكاء الاصطناعي الوكيل | الأمن السيبراني",
-      "location": "بوليا، إيطاليا",
+      "location": "مالقة، الأندلس، إسبانيا",
       "about": "مهندس برمجيات مع أكثر من 20 عامًا من الخبرة في هندسة الواجهة الأمامية، 5 سنوات في تكاملات Web3 وتطوير full-stack عملي. خبير في React، Svelte، TypeScript، Node.js، Next.js، TailwindCSS، MongoDB وحلول cloud-native. أبني تطبيقات لامركزية تدمج blockchain والذكاء الاصطناعي والفائدة الحقيقية، مع التركيز على القيادة والإرشاد والتصميم القابل للتوسع والكود النظيف."
     },
     "experience": {

@@ -53,7 +53,7 @@ export function ProfileHeader() {
               </div>
               <p className="leading-snug mt-1">{t('fullStackEngineer')}</p>
               <div className="flex items-center gap-2 mt-2 text-sm">
-                <span className="text-muted-foreground">{t('location')}</span>
+                <span className="text-muted-foreground">{personal.location}</span>
                 <span className="text-muted-foreground">•</span>
                 <a href={`mailto:${personal.email}`} className="text-primary hover:underline font-medium">
                   {t('contactInfo')}
