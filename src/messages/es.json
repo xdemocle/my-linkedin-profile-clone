@@ -458,84 +458,84 @@
   "ProfileData": {
     "personal": {
       "title": "Ingeniero de Software / Tech Lead",
-      "headline": "Blockchain & Dapps | IA Agéntica | Defensor de la Ciberseguridad",
+      "headline": "Blockchain & Dapps | IA Agéntica | Ciberseguridad",
       "location": "Apulia, Italia",
-      "about": "Ingeniero de software con más de 20 años de experiencia front-end, 5 años en Web3 y experiencia práctica en integración full-stack y agentes de IA. Diseño, refactorizo y entrego productos que fusionan la transparencia blockchain con valor real para el usuario, desde plataformas DeFi y RWA hasta extensiones de navegador seguras y aplicaciones gamificadas. Lidero pequeños equipos ágiles con enfoque en mentoría, calidad del código y sostenibilidad a largo plazo, no solo velocidad de entrega."
+      "about": "Ingeniero de software con más de 20 años de experiencia en ingeniería front-end, 5 años en integraciones Web3 y desarrollo full-stack práctico. Experto en React, Svelte, TypeScript, Node.js, Next.js, TailwindCSS, MongoDB y soluciones cloud-native. Construyo aplicaciones descentralizadas que fusionan blockchain, IA y utilidad real, con enfoque en liderazgo, mentoría, diseño escalable y código limpio."
     },
     "experience": {
       "exp1": {
         "company": "The Web3 Ninja",
         "position": "Lead Software Engineer, Web3",
-        "dateRange": "2024 - Presente",
+        "dateRange": "10/2024 - Presente",
         "description": "Liderando proyectos de integración Web3 y mentoría de desarrolladores junior.",
         "highlights": [
-          "Mentoría a 5 desarrolladores; 3 colocados en roles junior.",
-          "Construí integraciones blockchain full-stack para 3 DApps y aplicaciones Web2.",
-          "Optimicé la comunicación API, mejorando la velocidad en 15% y reduciendo costos de gas."
+          "Mentoría a 5 pasantes, 3 colocados como desarrolladores junior.",
+          "Construí 3 DApps y APIs mejorando velocidad de transacciones en 15%.",
+          "Reduje tarifas de gas mediante integración blockchain optimizada."
         ]
       },
       "exp2": {
         "company": "Games Global",
         "position": "Lead Frontend Engineer",
-        "dateRange": "2023 - 2024",
+        "dateRange": "09/2023 - 09/2024",
         "description": "Liderando desarrollo front-end para plataformas de juegos.",
         "highlights": [
-          "Entregué UI para Lotsaloot™, un sistema de jackpot de tres niveles.",
-          "Diseñé un bucle de recompensa rápido para maximizar el engagement.",
-          "Fortalecí carteras de jackpot con retroalimentación constante de micro-recompensas."
+          "Desarrollada UI para sistema de jackpot Lotsaloot™.",
+          "Mejorado engagement de jugadores con lógica de recompensa por niveles.",
+          "Colaborado entre equipos para aumentar métricas de retención."
         ]
       },
       "exp3": {
         "company": "Shiba Inu",
         "position": "Tech Lead, Web3",
-        "dateRange": "2023",
+        "dateRange": "01/2023 - 08/2023",
         "description": "Lideré el desarrollo técnico para el ecosistema Shiba Inu.",
         "highlights": [
-          "Lideré un equipo de 12 miembros, logrando un aumento de productividad del 30%.",
-          "Reduje bugs en 25% y aumenté la calidad del código en 40%.",
-          "Soporté 5M usuarios mensuales con 3k concurrentes."
+          "Liderado equipo de 12 miembros, aumentada productividad 30%.",
+          "Reducidos bugs 25% y mejorada calidad del código 40%.",
+          "Servidos 5M usuarios y 3k visitantes concurrentes."
         ]
       },
       "exp4": {
         "company": "Ajna Labs",
         "position": "Lead Frontend Engineer",
-        "dateRange": "2022 - 2023",
+        "dateRange": "08/2022 - 08/2023",
         "description": "Liderando desarrollo front-end para aplicaciones DeFi.",
         "highlights": [
-          "Lancé SPA con liquidez de $20M+ e integración SDK.",
-          "Reduje el tiempo de integración en 50% y estandaricé sistemas de diseño.",
-          "Construí un sitio de marketing que atrajo 10k+ visitantes únicos en 3 meses."
+          "Desplegada SPA con liquidez $20M+.",
+          "Creado SDK reduciendo tiempo de integración 50%.",
+          "Publicada biblioteca de diseño para ecosistema aumentando velocidad dev 25%."
         ]
       },
       "exp5": {
         "company": "Linum Labs",
         "position": "Lead Frontend Engineer",
-        "dateRange": "2021 - 2022",
+        "dateRange": "08/2021 - 07/2022",
         "description": "Liderando desarrollo de aplicaciones Web3 y crypto.",
         "highlights": [
-          "Supervisé 10 proyectos de aplicaciones Web3 y crypto.",
-          "Mentoría a 4 desarrolladores front-end dentro de un equipo de 15 personas.",
-          "Mejoré escalabilidad y rendimiento UI en múltiples DApps."
+          "Supervisados 10+ proyectos descentralizados.",
+          "Mentoría a 4 desarrolladores frontend.",
+          "Mejorada escalabilidad y coherencia UI."
         ]
       },
       "exp6": {
         "company": "Omnia DeFi",
         "position": "Lead Software Engineer, Web3",
-        "dateRange": "2021",
+        "dateRange": "01/2021 - 07/2021",
         "description": "Construyendo infraestructura DeFi e integraciones de smart contracts.",
         "highlights": [
-          "Programé sistemas de vesting, farming y recompensas conectados a contratos DeFi.",
-          "Contribuí a dashboards DApp con React, Next.js y Node.js."
+          "Construido dashboard de vesting y farming integrado con Ethereum.",
+          "Desarrolladas capas de interacción con smart contracts para operaciones DeFi."
         ]
       },
       "exp7": {
         "company": "HCLTech",
         "position": "Lead Software Engineer",
-        "dateRange": "2014 - 2015",
+        "dateRange": "12/2014 - 07/2015",
         "description": "Entregando soluciones de software empresarial.",
         "highlights": [
-          "Entregué software Web2 de alto impacto para clientes empresariales en La Haya, NL.",
-          "Enfocado en refactorización de rendimiento y transiciones a la nube."
+          "Realizados proyectos de refactorización Web2 de nivel empresarial.",
+          "Optimizados sistemas legacy para cloud-readiness."
         ]
       },
       "exp8": {
@@ -544,8 +544,8 @@
         "dateRange": "2013 - 2014",
         "description": "Construyendo plataformas de datos científicos.",
         "highlights": [
-          "Contribuí a Reaxys 2 Web App integrando datos químicos y médicos.",
-          "Trabajé con Angular y optimización cross-platform para aplicaciones de investigación."
+          "Contribuido a apps web científicas para sistemas de datos químicos.",
+          "Desarrolladas interfaces basadas en Angular para tablets cross-platform."
         ]
       },
       "exp9": {
@@ -554,8 +554,8 @@
         "dateRange": "2012 - 2013",
         "description": "Construyendo marketplace para la industria publicitaria.",
         "highlights": [
-          "Ayudé a construir uno de los marketplaces publicitarios más visitados de Europa (~3M usuarios/mes).",
-          "Entregué bases de código multilingües y optimizadas para SEO en equipos internacionales."
+          "Construido marketplace publicitario multilingüe con 3M+ visitantes/mes.",
+          "Mejorados SEO y engagement de usuario en portales de alto tráfico."
         ]
       }
     },
@@ -617,27 +617,27 @@
     },
     "achievements": {
       "ach1": {
-        "title": "Lancé apps DeFi alcanzando 5M+ usuarios mensuales",
+        "title": "Entregado software accedido por 5M+ usuarios mensuales",
         "description": "Lideré el desarrollo de plataformas y aplicaciones ampliamente utilizadas."
       },
       "ach2": {
-        "title": "Refactoricé SPA legacy ahorrando ~€50.000 en mantenimiento",
+        "title": "Refactorizado SPA legacy ahorrando €50.000 en costos de mantenimiento",
         "description": "Mejoré la eficiencia del código y reduje la deuda técnica en iControlApp."
       },
       "ach3": {
-        "title": "Mejoré la calidad del código en 40%, reduje bugs en 25%",
+        "title": "Aumentada calidad del código 40%, reducidos bugs 25%",
         "description": "Implementé mejores flujos de trabajo y estándares de código."
       },
       "ach4": {
-        "title": "Mentoría a 5+ desarrolladores que avanzaron a nuevas posiciones",
+        "title": "Aumentada productividad del equipo 30% vía mentoría estructurada",
         "description": "Proporcioné mentoría y orientación profesional a desarrolladores junior."
       },
       "ach5": {
-        "title": "Creé guías de diseño y estilo para todo el ecosistema",
+        "title": "Lanzadas apps DeFi con aumento del engagement del 20%",
         "description": "Creé estándares de desarrollo para mejor calidad y consistencia del código."
       },
       "ach6": {
-        "title": "Entregué extensiones open-source enfocadas en ciberseguridad",
+        "title": "Creadas guías de estilo consistentes para múltiples ecosistemas",
         "description": "Construí herramientas para proteger a los usuarios de phishing y fraude."
       }
     }
