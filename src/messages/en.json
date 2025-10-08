@@ -393,12 +393,8 @@
     "success": "Success",
     "profileName": "Rocco Russo",
     "shareProfileName": "Rocco Russo's Profile",
-    "showMore": "Show more"
-  },
-  "PeopleAlsoViewed": {
-    "title": "People also viewed",
-    "connections": "connections",
-    "showMore": "Show more"
+    "showMore": "Show more",
+    "showLess": "Show less"
   },
   "SkillsPage": {
     "backToProfile": "Back to profile",

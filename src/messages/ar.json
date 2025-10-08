@@ -394,12 +394,8 @@
     "success": "نجح",
     "profileName": "Rocco Russo",
     "shareProfileName": "ملف Rocco Russo الشخصي",
-    "showMore": "عرض المزيد"
-  },
-  "PeopleAlsoViewed": {
-    "title": "الأشخاص الذين تم عرضهم أيضًا",
-    "connections": "اتصالات",
-    "showMore": "عرض المزيد"
+    "showMore": "عرض المزيد",
+    "showLess": "عرض أقل"
   },
   "SkillsPage": {
     "backToProfile": "العودة إلى الملف الشخصي",

@@ -1,689 +1,685 @@
 {
-    "Navigation": {
-        "search": "Cerca",
-        "home": "Home",
-        "myNetwork": "La mia rete",
-        "jobs": "Lavoro",
-        "messaging": "Messaggi",
-        "notifications": "Notifiche",
-        "me": "Io",
-        "forBusiness": "Per le aziende",
-        "advertise": "Pubblicità"
-    },
-    "ProfileHeader": {
-        "connections": "collegamenti",
-        "contactInfo": "Info contatto",
-        "connect": "Collegati",
-        "message": "Messaggio",
-        "more": "Altro",
-        "openToWork": "Disponibile per",
-        "seeAllDetails": "Vedi tutti i dettagli",
-        "following": "Segui",
-        "followers": "follower",
-        "myWebsite": "Il mio sito web",
-        "addProfileSection": "Aggiungi sezione profilo",
-        "enhanceProfile": "Migliora profilo",
-        "resources": "Risorse",
-        "fullStackEngineer": "Ingegnere full-stack specializzato in architettura frontend e integrazioni blockchain | Leadership Tecnologica | Web3 | React, React-Router, Preact, Next.js, Typescript, Tailwind, IPFS, Ether, EVM, Wagmi, Viem | Sistemo il codice che vibra",
-        "stealthStartup": "Startup AI in Stealth Mode"
-    },
-    "ProfileLayout": {
-        "hello": "Ciao {firstName}!",
-        "welcome": "Benvenuto nel Profilo LinkedIn",
-        "about": "Informazioni",
-        "experience": "Esperienza",
-        "education": "Istruzione",
-        "skills": "Competenze",
-        "activity": "Attività",
-        "recommendations": "Raccomandazioni",
-        "volunteering": "Volontariato",
-        "languages": "Lingue",
-        "interests": "Interessi",
-        "courses": "Corsi"
-    },
-    "About": {
-        "title": "Informazioni",
-        "firstParagraph": "Ingegnere del software con oltre 20 anni di esperienza nel front-end, 5 anni in Web3 ed esperienza pratica nell'integrazione full-stack e nell'AI agentica.",
-        "disclaimer": "DISCLAIMER: Se stai pensando di offrirmi un contratto a lungo termine, invia una richiesta qui o via email a hello@rocco.me",
-        "fullStackDeveloper": "Progetto, ristrutturo e rilascio prodotti che uniscono la trasparenza della blockchain a un valore reale per l'utente, dalle piattaforme DeFi e RWA alle estensioni di browser sicure e alle app gamificate. Guido piccoli team agili con un focus sul mentoring, la qualità del codice e la sostenibilità a lungo termine, non solo sulla velocità di consegna.",
-        "currentlyWorking": "Attualmente lavoro come Lead Software Engineer in The Web3 Ninja, dove faccio da mentore agli sviluppatori, costruisco integrazioni blockchain full-stack per DApp e app Web2, e ottimizzo la comunicazione API per migliorare la velocità e ridurre i costi del gas.",
-        "lastParagraph": "Scrivo codice. Costruisco sistemi. Lavoro in Web3, AI e Cybersecurity. Faccio da mentore a sviluppatori junior e a chi cambia carriera. Dalla Puglia al mondo, sviluppo applicazioni decentralizzate (DApp) che ridefiniscono l'esperienza utente: asset tokenizzati, piattaforme DeFi e integrazioni di smart contract. I miei progetti recenti hanno generato milioni in liquidità, supportato oltre 5 milioni di utenti mensili con 3.000 utenti concorrenti e ottenuto miglioramenti significativi nella qualità del codice e nella produttività del team."
-    },
-    "Analytics": {
-        "title": "Analisi",
-        "profileViews": "visualizzazioni del profilo",
-        "postImpressions": "impressioni dei post",
-        "searchAppearances": "apparizioni nelle ricerche",
-        "showAll": "Mostra tutte le analisi"
-    },
-    "Resources": {
-        "title": "Risorse",
-        "private": "Privato per te",
-        "creatorMode": "Modalità creator",
-        "myNetwork": "La mia rete",
-        "showAll": "Mostra tutte le risorse"
-    },
-    "Activity": {
-        "title": "Attività",
-        "posts": "Post",
-        "comments": "Commenti",
-        "images": "Immagini",
-        "articles": "Articoli",
-        "startPost": "Inizia un post",
-        "showAllActivity": "Mostra tutta l'attività",
-        "noCommentsToShow": "Nessun commento da mostrare",
-        "noImagesToShow": "Nessuna immagine da mostrare",
-        "noArticlesToShow": "Nessun articolo da mostrare",
-        "backToProfile": "Torna al profilo",
-        "followers": "follower",
-        "createPost": "Crea un post",
-        "activityOverview": "Panoramica dell'attività",
-        "reactions": "Reazioni",
-        "all": "Tutti",
-        "posted": "ha pubblicato",
-        "commentedOn": "ha commentato su",
-        "shared": "ha condiviso",
-        "likes": "mi piace",
-        "shares": "condivisioni",
-        "yourCommentsWillAppear": "I tuoi commenti appariranno qui",
-        "startEngagingWithPosts": "Inizia a interagire con i post",
-        "imagesFromPostsWillAppear": "Le immagini dai tuoi post appariranno qui",
-        "createPostWithImages": "Crea un post con immagini",
-        "yourArticlesWillAppear": "I tuoi articoli appariranno qui",
-        "writeAnArticle": "Scrivi un articolo"
-    },
-    "Experience": {
-        "title": "Esperienza",
-        "showAllExperiences": "Mostra tutte le esperienze",
-        "technicalLead": "Technical Lead",
-        "frontendDeveloper": "Sviluppatore Frontend",
-        "seniorSolutionsEngineer": "Senior Solutions Engineer",
-        "cyberSecurityOperations": "Operazioni di Cyber Security",
-        "present": "Presente",
-        "years": "anni",
-        "months": "mesi",
-        "milano": "Milano, Italia",
-        "ledFrontendDevelopment": "Ho guidato lo sviluppo frontend per progetti multi-cliente. Implementato design UI responsive e ottimizzato le prestazioni web. Formato sviluppatori junior e stabilito standard di codifica.",
-        "developedInteractiveUI": "Ho sviluppato interfacce utente interattive utilizzando React e framework CSS moderni. Collaborato con il team di design per implementare componenti pixel-perfect e animazioni.",
-        "createdDashboardInterfaces": "Ho creato interfacce dashboard per strumenti di monitoraggio della sicurezza. Collaborato con il team backend per integrare API e componenti di visualizzazione dati in tempo reale.",
-        "duration1": "Apr 2022 - Presente · 1 anno 6 mesi",
-        "duration2": "Set 2020 - Mar 2022 · 1 anno 7 mesi",
-        "duration3": "Giu 2018 - Ago 2020 · 2 anni 3 mesi",
-        "duration4": "Gen 2017 - Mag 2018 · 1 anno 5 mesi",
-        "backToProfile": "Torna al profilo",
-        "addExperience": "Aggiungi esperienza",
-        "edit": "Modifica",
-        "skills": "Competenze",
-        "showYourExperience": "Mostra la tua esperienza",
-        "addYourWorkExperience": "Aggiungi la tua esperienza lavorativa per aiutare gli altri a conoscerti meglio.",
-        "fullStackDeveloper": "Sviluppatore Full Stack",
-        "freelanceWebDeveloper": "Sviluppatore Web Freelance",
-        "ledFrontendDevelopmentFull": "Ho guidato lo sviluppo frontend per progetti multi-cliente. Implementato design UI responsive e ottimizzato le prestazioni web. Formato sviluppatori junior e stabilito standard di codifica. Collaborato con team interfunzionali per fornire soluzioni software di alta qualità.",
-        "developedInteractiveUIFull": "Ho sviluppato interfacce utente interattive utilizzando React e framework CSS moderni. Collaborato con il team di design per implementare componenti pixel-perfect e animazioni. Costruito librerie di componenti riutilizzabili e mantenuto design system.",
-        "createdDashboardInterfacesFull": "Ho creato interfacce dashboard per strumenti di monitoraggio della sicurezza. Collaborato con il team backend per integrare API e componenti di visualizzazione dati in tempo reale. Implementato best practice di sicurezza nello sviluppo frontend.",
-        "providedWebDevelopmentServices": "Ho fornito servizi di sviluppo web a piccole e medie imprese. Costruito siti web personalizzati e applicazioni web utilizzando tecnologie moderne. Gestito relazioni con i clienti e tempistiche dei progetti.",
-        "keyAchievements": "Risultati Chiave",
-        "highUserEngagement": "Elevato Coinvolgimento Utenti",
-        "highUserEngagementDesc": "Ho guidato un team che ha fornito software utilizzato da 5 milioni di utenti mensilmente.",
-        "majorRefactoring": "Refactoring Maggiore di SPA su Larga Scala",
-        "majorRefactoringDesc": "Presso iControlApp, ho ridotto il debito tecnico facendo risparmiare all'azienda ~€50.000.",
-        "defiDappLaunch": "Lancio di successo di DApp DeFi",
-        "defiDappLaunchDesc": "Lanciata DApp con aumento del 20% nel coinvolgimento degli utenti.",
-        "improvedCodeQuality": "Miglioramento Qualità del Codice",
-        "improvedCodeQualityDesc": "Aumentata qualità del codice del 40% e ridotti bug del 25%.",
-        "boostedProductivity": "Aumento Produttività del Team",
-        "boostedProductivityDesc": "Raggiunto aumento del 30% della produttività con tecniche di mentoring.",
-        "designConsistency": "Uniformità Design Semplificata",
-        "designConsistencyDesc": "Consegna con successo di guide di stile per più aziende riducendo le incoerenze di design."
-    },
-    "Skills": {
-        "title": "Competenze",
-        "react": "React",
-        "svelte": "Svelte",
-        "typescript": "TypeScript",
-        "nextjs": "Next.js",
-        "redux": "Redux",
-        "zustand": "Zustand",
-        "wagmi": "Wagmi",
-        "viem": "Viem",
-        "css-in-js": "CSS-in-JS",
-        "tailwindcss": "TailwindCSS",
-        "atomic design": "Atomic Design",
-        "nodejs": "Node.js",
-        "express": "Express",
-        "nestjs": "NestJS",
-        "graphql": "GraphQL",
-        "mongodb": "MongoDB",
-        "postgresql": "PostgreSQL",
-        "redis": "Redis",
-        "flask": "Flask",
-        "python": "Python",
-        "docker": "Docker",
-        "kubernetes": "Kubernetes",
-        "ci/cd": "CI/CD",
-        "aws": "AWS",
-        "gcp": "GCP",
-        "vercel": "Vercel",
-        "heroku": "Heroku",
-        "smart contracts": "Smart Contracts",
-        "defi dapps": "DeFi DApps",
-        "sdk development": "Sviluppo SDK",
-        "llm agents": "LLM Agents",
-        "prompt engineering": "Prompt Engineering",
-        "github": "GitHub",
-        "gitlab": "GitLab",
-        "webpack": "Webpack",
-        "vite": "Vite",
-        "figma": "Figma",
-        "jest": "Jest",
-        "vitest": "Vitest",
-        "selenium": "Selenium",
-        "takeSkillQuiz": "Fai il quiz delle competenze",
-        "frontendDevelopment": "Sviluppo Frontend",
-        "reactJs": "React",
-        "javascript": "TypeScript",
-        "cssInJs": "CSS-in-JS",
-        "web3js": "Web3.js",
-        "ethersjs": "Ethers.js",
-        "sdkDevelopment": "Sviluppo SDK",
-        "promptEngineering": "Prompt Engineering",
-        "cybersecurity": "Pratiche di Cybersecurity",
-        "cicd": "CI/CD",
-        "endorsements": "raccomandazioni",
-        "endorsedBy": "Raccomandato da {name} e altri {count}",
-        "showAllSkills": "Mostra tutte le competenze",
-        "categories": {
-            "frontend": "Frontend",
-            "backend": "Backend",
-            "devopsCloud": "DevOps & Cloud",
-            "web3AI": "Web3 & AI",
-            "toolsTesting": "Strumenti & Testing"
-        }
-    },
-    "Recommendations": {
-        "title": "Raccomandazioni",
-        "showAllRecommendations": "Mostra tutte le raccomandazioni",
-        "workedWith": "{name} ha lavorato con {person} nello stesso team",
-        "managed": "{name} ha gestito {person} direttamente",
-        "exceptionalDeveloper": "Rocco è uno sviluppatore frontend eccezionale con un occhio attento ai dettagli e un talento per creare interfacce utente eleganti. La sua capacità di tradurre requisiti complessi in design intuitivi è notevole. Ha costantemente consegnato codice di alta qualità sui nostri progetti condivisi ed è sempre stato disposto ad aiutare gli altri nel team.",
-        "impressiveSkills": "Ho avuto il piacere di gestire Rocco su diversi progetti critici. Le sue competenze tecniche nello sviluppo frontend sono davvero impressionanti, in particolare in React e JavaScript moderno. È proattivo, affidabile e ha un'abilità eccezionale nel risolvere problemi complessi. Il suo lavoro ha costantemente superato le aspettative dei clienti ed è stato una risorsa preziosa per il nostro team."
-    },
-    "Volunteering": {
-        "title": "Volontariato",
-        "peerMentor": "Mentore tra Pari",
-        "theWeb3Ninja": "The Web3 Ninja",
-        "fundraisingManager": "Manager di Raccolta Fondi",
-        "steunactie": "Steunactie",
-        "memberConsultingStaff": "Membro dello Staff di Consulenza",
-        "cyberGrandpa": "CyberGrandpa",
-        "economicEmpowerment": "Empowerment Economico",
-        "disasterHumanitarianRelief": "Soccorso Umanitario e per Disastri",
-        "education": "Istruzione",
-        "helpingPeers": "Finora ho aiutato circa ~12 colleghi, 5 hanno ottenuto una posizione nei primi 1~4 mesi.",
-        "helpedCareerSwitch": "Ho anche aiutato un 32enne nel suo cambio di carriera.",
-        "positionedInterns": "E ho posizionato 2 stagisti, l'anno scorso (metà 2023), nelle loro prime posizioni junior.",
-        "gettingBetter": "Quindi sto migliorando in questo. Ma spesso dipende anche dalla persona e da quanto è motivata.",
-        "dedicatingTime": "Sto dedicando parte della mia giornata per aiutare persone bisognose in Africa e Medio Oriente con iniziative di crowdfunding/raccolta fondi.",
-        "campaignsBelowAre": "Di seguito ci sono alcune delle campagne.",
-        "helpAbdulKarim": "Aiuta Abdul Karim a Guarire: La Lotta di un Bambino di Guerra per la Vita",
-        "bornUnderBombs": "Nato Sotto le Bombe, Ora Lotta per Ogni Passo: Sostieni il Viaggio Medico Urgente del Piccolo Abdul Karim",
-        "saveEliasFamily": "Salva Elias e la Sua Famiglia: Dalla Tenda alla Sicurezza",
-        "helpGazaFamily": "Aiuta una famiglia di Gaza a sopravvivere alla carestia, malattia e senzatetto. Il tuo supporto li avvicina a cibo, rifugio e un futuro più sicuro.",
-        "trustedGuide": "La Tua Guida Fidata per la Sicurezza Online e la Protezione da Truffe, Phishing e Malware. Servizi di Cybersecurity Esperti in abbonamento."
-    },
-    "Languages": {
-        "title": "Lingue",
-        "english": "Inglese",
-        "italian": "Italiano",
-        "spanish": "Spagnolo",
-        "french": "Francese",
-        "native": "Madrelingua",
-        "professional": "Professionale",
-        "conversational": "Conversazione",
-        "nativeOrBilingual": "Competenza madrelingua o bilingue",
-        "fullProfessional": "Piena competenza professionale",
-        "showAllLanguages": "Mostra tutte le lingue"
-    },
-    "Interests": {
-        "title": "Interessi",
-        "techProfession": "Tecnologia & Professione",
-        "blockchain": "Blockchain",
-        "web3": "Web3",
-        "cybersecurity": "Cybersecurity",
-        "react": "React",
-        "typeScript": "TypeScript",
-        "openSource": "Open Source",
-        "ai": "AI",
-        "cleanCode": "Codice Pulito",
-        "scalability": "Scalabilità",
-        "architecture": "Architettura",
-        "problemSolving": "Risoluzione Problemi",
-        "collaborationLeadership": "Collaborazione & Leadership",
-        "mentorship": "Mentoring",
-        "leadership": "Leadership",
-        "remoteWork": "Lavoro Remoto",
-        "collaboration": "Collaborazione",
-        "community": "Comunità",
-        "teaching": "Insegnamento",
-        "education": "Formazione",
-        "mindsetValues": "Mentalità & Valori",
-        "innovation": "Innovazione",
-        "strategy": "Strategia",
-        "systemsThinking": "Pensiero Sistemico",
-        "adaptability": "Adattabilità",
-        "growth": "Crescita",
-        "ethics": "Etica",
-        "empathy": "Empatia",
-        "continuousLearning": "Apprendimento Continuo",
-        "cultureExpression": "Cultura & Espressione",
-        "globalMindset": "Mentalità Globale",
-        "languages": "Lingue",
-        "research": "Ricerca",
-        "writing": "Scrittura",
-        "creativity": "Creatività"
-    },
-    "ProfileFooter": {
-        "linkedinProfile": "Profilo LinkedIn",
-        "personalWebsite": "Sito Web Personale",
-        "copyright": "© 2024 Rocco Russo"
-    },
-    "ProfileLanguage": {
-        "title": "Lingua del profilo",
-        "whoViewersAlsoViewed": "Chi hanno visualizzato anche i tuoi visitatori",
-        "privateToYou": "Privato per te"
-    },
-    "Projects": {
-        "title": "Progetti",
-        "featuredProjects": "Progetti in evidenza",
-        "otherProjects": "Altri progetti",
-        "seeAll": "Vedi tutti i progetti",
-        "backToProfile": "Torna al profilo",
-        "viewProject": "Visualizza progetto",
-        "viewCode": "Visualizza codice",
-        "viewDemo": "Visualizza demo",
-        "technologies": "Tecnologie",
-        "role": "Ruolo",
-        "company": "Azienda",
-        "projectDetails": "Dettagli del progetto",
-        "projectDescription": "Descrizione",
-        "projectTechnologies": "Tecnologie utilizzate",
-        "projectLinks": "Link del progetto",
-        "projectScreenshots": "Screenshot",
-        "projectContributions": "I miei contributi",
-        "projectChallenges": "Sfide",
-        "projectOutcomes": "Risultati",
-        "projectDuration": "Durata",
-        "projectTeam": "Dimensione del team",
-        "projectType": "Tipo di progetto",
-        "openSource": "Open Source",
-        "clientProject": "Progetto cliente",
-        "personalProject": "Progetto personale",
-        "hackathonProject": "Progetto hackathon",
-        "ajnaLabs": "Ajna Labs - DeFi Dapp + SDK (20M liquidità)",
-        "modeNetwork": "Mode Network - Refactoring Next.js su larga scala",
-        "cyberGrandpa": "Estensione Anti-Frode CyberGrandpa",
-        "tetrisCrypto": "Tetris con Ricompense Crypto",
-        "linkedinExtension": "Estensione LinkedIn Full Width"
-    },
-    "ProfileLanguageUrl": {
-        "profileLanguage": "Lingua del profilo",
-        "languageInfo": "Seleziona la lingua che desideri utilizzare per LinkedIn",
-        "selectLanguage": "Seleziona lingua",
-        "publicProfile": "Profilo pubblico e URL",
-        "profileUrl": "URL del profilo",
-        "editUrl": "Modifica URL",
-        "copyUrl": "Copia URL",
-        "urlCopied": "URL copiato negli appunti!",
-        "language": "Lingua del Profilo"
-    },
-    "Blog": {
-        "title": "Blog Tecnico",
-        "subtitle": "Riflessioni sullo sviluppo frontend, Web3 e tecnologie moderne. Condivisione di approfondimenti dalla costruzione di applicazioni scalabili ed esplorazione delle tendenze tecnologiche emergenti.",
-        "featured": "In evidenza",
-        "recentPosts": "Post recenti",
-        "readFullArticle": "Leggi l'articolo completo",
-        "readMore": "Leggi di più",
-        "stayUpdated": "Resta aggiornato",
-        "subscribeDescription": "Iscriviti per ricevere notifiche sui nuovi post sullo sviluppo frontend, Web3 e approfondimenti tecnologici.",
-        "enterEmail": "Inserisci la tua email",
-        "subscribe": "Iscriviti",
-        "minRead": "min di lettura",
-        "publishedOn": "Pubblicato il"
-    },
-    "Footer": {
-        "about": "Informazioni",
-        "accessibility": "Accessibilità",
-        "careers": "Carriere",
-        "adChoices": "Scelte Pubblicitarie",
-        "mobile": "Mobile",
-        "talentSolutions": "Soluzioni Talenti",
-        "marketingSolutions": "Soluzioni Marketing",
-        "advertising": "Pubblicità",
-        "smallBusiness": "Piccole Imprese",
-        "salesSolutions": "Soluzioni Vendite",
-        "safetyCenter": "Centro Sicurezza",
-        "questions": "Domande?",
-        "visitHelpCenter": "Visita il nostro Centro Aiuto.",
-        "manageAccount": "Gestisci il tuo account e la privacy",
-        "goToSettings": "Vai alle tue Impostazioni.",
-        "recommendationTransparency": "Trasparenza delle raccomandazioni",
-        "learnMore": "Scopri di più sui Contenuti Raccomandati.",
-        "selectLanguage": "Seleziona Lingua",
-        "linkedinCorporation": "LinkedIn Corporation © 2025"
-    },
-    "NotFound": {
-        "title": "Ops! Pagina Non Trovata",
-        "description": "La pagina che stai cercando sembra essere svanita nel vuoto digitale. Non preoccuparti, capita anche ai migliori!",
-        "goHome": "Portami a Casa",
-        "goBack": "Torna Indietro",
-        "funMessage": "\"Nella vasta distesa di internet, anche i migliori esploratori a volte prendono una strada sbagliata. Ma è così che scopriamo nuovi percorsi!\" 🚀"
-    },
-    "Common": {
-        "add": "Aggiungi",
-        "save": "Salva",
-        "cancel": "Annulla",
-        "delete": "Elimina",
-        "share": "Condividi",
-        "like": "Mi piace",
-        "comment": "Commenta",
-        "send": "Invia",
-        "follow": "Segui",
-        "unfollow": "Non seguire più",
-        "loading": "Caricamento...",
-        "error": "Errore",
-        "success": "Successo",
-        "profileName": "Rocco Russo",
-        "shareProfileName": "Profilo di Rocco Russo",
-        "showMore": "Mostra di più"
-    },
-    "PeopleAlsoViewed": {
-        "title": "Persone che potresti conoscere",
-        "connections": "collegamenti",
-        "showMore": "Mostra di più"
-    },
-    "SkillsPage": {
-        "backToProfile": "Torna al profilo",
-        "skillsOverview": "Panoramica Competenze",
-        "totalSkills": "Competenze Totali",
-        "categories": "Categorie",
-        "expertLevel": "Livello Esperto (90%+)"
-    },
-    "RecommendationsPage": {
-        "backToProfile": "Torna al profilo",
-        "receivedRecommendations": "Raccomandazioni Ricevute",
-        "total": "Totale",
-        "colleagues": "Colleghi",
-        "managers": "Manager",
-        "askForRecommendation": "Chiedi una Raccomandazione",
-        "askForRecommendationDesc": "Richiedi raccomandazioni dai colleghi per rafforzare il tuo profilo.",
-        "requestRecommendation": "Richiedi Raccomandazione"
-    },
-    "SampleData": {
-        "people": {
-            "maxMueller": {
-                "name": "Max Mueller",
-                "title": "Senior Frontend Developer presso Google"
-            },
-            "sophieJohnson": {
-                "name": "Sophie Johnson",
-                "title": "UX Designer presso Apple"
-            },
-            "danielLee": {
-                "name": "Daniel Lee",
-                "title": "Full Stack Developer presso Netflix"
-            },
-            "oliviaWilliams": {
-                "name": "Olivia Williams",
-                "title": "Frontend Engineer presso Microsoft"
-            },
-            "jamesRodriguez": {
-                "name": "James Rodriguez",
-                "title": "UI Developer presso Adobe"
-            },
-            "emilyChen": {
-                "name": "Emily Chen",
-                "title": "Senior React Developer presso Meta"
-            }
-        },
-        "recommendations": {
-            "giorgioRavioli": {
-                "name": "Giorgio Ravioli",
-                "title": "Senior Full Stack Developer",
-                "relationship": "Giorgio ha lavorato con Rocco nello stesso team",
-                "date": "24 luglio 2022",
-                "content": "Rocco è uno sviluppatore frontend eccezionale con un occhio attento ai dettagli e un talento per creare interfacce utente eleganti. La sua capacità di tradurre requisiti complessi in design intuitivi è notevole. Ha sempre fornito codice di alta qualità nei nostri progetti condivisi ed era sempre disposto ad aiutare gli altri membri del team."
-            },
-            "alessandroBuccheri": {
-                "name": "Alessandro Buccheri",
-                "title": "Senior Full Stack Developer",
-                "relationship": "Alessandro ha gestito Rocco direttamente",
-                "date": "15 marzo 2021",
-                "content": "Ho avuto il piacere di gestire Rocco su diversi progetti critici. Le sue competenze tecniche nello sviluppo frontend sono davvero impressionanti, in particolare in React e JavaScript moderno. È proattivo, affidabile e ha un'eccezionale capacità di risolvere problemi complessi. Il suo lavoro ha costantemente superato le aspettative dei clienti ed è stato una risorsa preziosa per il nostro team."
-            }
-        },
-        "posts": {
-            "post1": {
-                "role": "Full Stack Frontend Web Developer",
-                "content": "Felice di condividere che ho completato il mio ultimo progetto - un clone del profilo LinkedIn costruito con React, TypeScript e TailwindCSS! 🚀\n\nDai un'occhiata e fammi sapere cosa ne pensi!"
-            },
-            "post2": {
-                "author": "Sarah Johnson",
-                "role": "UX Designer presso Google",
-                "content": "Ho appena pubblicato il mio nuovo articolo sui design system e su come possono trasformare il processo di sviluppo del prodotto.\n\nUn buon design system può far risparmiare centinaia di ore di sviluppo e portare coerenza all'esperienza utente."
-            },
-            "post3": {
-                "author": "Michael Chen",
-                "role": "Tech Lead presso Microsoft",
-                "content": "Stiamo assumendo! Cerchiamo sviluppatori frontend di talento per unirsi al nostro team. Se hai esperienza con React, TypeScript e una passione per costruire grandi esperienze utente, mandami un messaggio."
-            }
-        },
-        "blogPosts": {
-            "post1": {
-                "title": "Costruire Applicazioni React Moderne con TypeScript",
-                "description": "Una guida completa per configurare e sviluppare applicazioni React scalabili utilizzando TypeScript, concentrandosi sulle best practice e sui moderni pattern di sviluppo.",
-                "content": "In questo post, esploriamo i vantaggi dell'utilizzo di TypeScript con React e come configurare un ambiente di sviluppo robusto..."
-            },
-            "post2": {
-                "title": "Il Futuro di Web3 e dello Sviluppo Frontend",
-                "description": "Esplorando come la tecnologia blockchain sta rimodellando lo sviluppo frontend e cosa gli sviluppatori devono sapere sull'integrazione Web3.",
-                "content": "Web3 rappresenta un cambio di paradigma nel modo in cui pensiamo alle applicazioni e alle interazioni degli utenti..."
-            },
-            "post3": {
-                "title": "Ottimizzazione delle Prestazioni nelle Grandi Applicazioni React",
-                "description": "Impara tecniche avanzate per ottimizzare le prestazioni delle applicazioni React, inclusi code splitting, memoization e gestione efficiente dello stato.",
-                "content": "L'ottimizzazione delle prestazioni è fondamentale per mantenere una buona esperienza utente nelle applicazioni di grandi dimensioni..."
-            }
-        }
-    },
-    "ProfileData": {
-        "personal": {
-            "title": "Ingegnere Software / Tech Lead",
-            "headline": "Blockchain & Dapps | AI Agentici | Cybersecurity",
-            "location": "Málaga, Andalusia, Spagna",
-            "about": "Ingegnere software con oltre 20 anni di esperienza nell'ingegneria front-end, 5 anni in integrazioni Web3 e sviluppo full-stack pratico. Esperto in React, Svelte, TypeScript, Node.js, Next.js, TailwindCSS, MongoDB e soluzioni cloud-native. Costruisco app decentralizzate che uniscono blockchain, IA e utilità reale, con focus sulla leadership, mentoring, design scalabile e codice pulito."
-        },
-        "experience": {
-            "exp1": {
-                "company": "The Web3 Ninja",
-                "position": "Lead Software Engineer, Web3",
-                "type": "B2B, Part Time",
-                "dateRange": "10/2024 - Presente",
-                "location": "Puglia, Italia, Remoto",
-                "description": "Guido progetti di integrazione Web3 e mentoring di sviluppatori junior.",
-                "highlights": [
-                    "Mentoring di 5 stagisti, 3 collocati come sviluppatori junior.",
-                    "Costruite 3 DApp e API migliorando la velocità delle transazioni del 15%.",
-                    "Ridotte le commissioni gas tramite integrazione blockchain ottimizzata."
-                ]
-            },
-            "exp2": {
-                "company": "Games Global",
-                "position": "Lead Frontend Engineer",
-                "dateRange": "09/2023 - 09/2024",
-                "location": "Swieqi, Malta, Remoto",
-                "description": "Guido lo sviluppo front-end per piattaforme di gioco.",
-                "highlights": [
-                    "Sviluppata UI per il sistema jackpot Lotsaloot™.",
-                    "Migliorato l'engagement dei giocatori con logica di ricompensa a livelli.",
-                    "Collaborato tra team per aumentare le metriche di retention."
-                ]
-            },
-            "exp3": {
-                "company": "Shiba Inu",
-                "position": "Tech Lead, Web3",
-                "dateRange": "01/2023 - 08/2023",
-                "description": "Ho guidato lo sviluppo tecnico per l'ecosistema Shiba Inu.",
-                "highlights": [
-                    "Guidato team di 12 membri, aumentata produttività del 30%.",
-                    "Ridotti bug del 25% e migliorata qualità del codice del 40%.",
-                    "Serviti 5M utenti e 3k visitatori concorrenti."
-                ]
-            },
-            "exp4": {
-                "company": "Ajna Labs",
-                "position": "Lead Frontend Engineer",
-                "dateRange": "08/2022 - 08/2023",
-                "description": "Guido lo sviluppo front-end per applicazioni DeFi.",
-                "highlights": [
-                    "Distribuita SPA con liquidità $20M+.",
-                    "Creato SDK riducendo tempo di integrazione del 50%.",
-                    "Rilasciata libreria di design per l'ecosistema aumentando velocità dev del 25%."
-                ]
-            },
-            "exp5": {
-                "company": "Linum Labs",
-                "position": "Lead Frontend Engineer",
-                "dateRange": "08/2021 - 07/2022",
-                "description": "Guido lo sviluppo di applicazioni Web3 e crypto.",
-                "highlights": [
-                    "Supervisionati 10+ progetti decentralizzati.",
-                    "Mentoring a 4 sviluppatori frontend.",
-                    "Migliorata scalabilità e coerenza UI."
-                ]
-            },
-            "exp6": {
-                "company": "Omnia DeFi",
-                "position": "Lead Software Engineer, Web3",
-                "dateRange": "01/2021 - 07/2021",
-                "description": "Costruzione di infrastrutture DeFi e integrazioni smart contract.",
-                "highlights": [
-                    "Costruita dashboard di vesting e farming integrata con Ethereum.",
-                    "Sviluppati layer di interazione con smart contract per operazioni DeFi."
-                ]
-            },
-            "exp7": {
-                "company": "HCLTech",
-                "position": "Lead Software Engineer",
-                "dateRange": "12/2014 - 07/2015",
-                "location": "L'Aia, Paesi Bassi",
-                "description": "Realizzazione di soluzioni software enterprise.",
-                "highlights": [
-                    "Realizzati progetti di refactoring Web2 di livello enterprise.",
-                    "Ottimizzati sistemi legacy per la cloud-readiness."
-                ]
-            },
-            "exp8": {
-                "company": "Elsevier (Reaxys 2 Web App)",
-                "position": "Software Engineer",
-                "dateRange": "2013 - 2014",
-                "description": "Costruzione di piattaforme dati scientifici.",
-                "highlights": [
-                    "Contribuito ad app web scientifiche per sistemi di dati chimici.",
-                    "Sviluppate interfacce basate su Angular per tablet cross-platform."
-                ]
-            },
-            "exp9": {
-                "company": "AdForum",
-                "position": "Software Engineer",
-                "dateRange": "2012 - 2013",
-                "description": "Costruzione di marketplace per l'industria pubblicitaria.",
-                "highlights": [
-                    "Costruito marketplace pubblicitario multilingue con 3M+ visitatori/mese.",
-                    "Migliorati SEO e engagement utente su portali ad alto traffico."
-                ]
-            }
-        },
-        "projects": {
-            "proj1": {
-                "name": "Ajna Labs",
-                "description": "DApp DeFi e SDK che alimentano oltre $20M di liquidità."
-            },
-            "proj2": {
-                "name": "Mode Network",
-                "description": "Refactoring su larga scala del codebase React e ottimizzazione delle prestazioni."
-            },
-            "proj3": {
-                "name": "CyberGrandpa Anti-Fraud",
-                "description": "Estensione cross-browser che previene phishing ed esposizione a frodi."
-            },
-            "proj4": {
-                "name": "Tetris with Crypto Rewards",
-                "description": "Mini App Telegram che premia con token TON i giocatori in classifica."
-            },
-            "proj5": {
-                "name": "LinkedIn Full Width",
-                "description": "Estensione Chrome che abilita la visualizzazione a larghezza intera di LinkedIn."
-            }
-        },
-        "skills": {
-            "categories": {
-                "frontend": "Frontend",
-                "backend": "Backend",
-                "devopsCloud": "DevOps & Cloud",
-                "web3AI": "Web3 & AI",
-                "toolsTesting": "Strumenti & Testing"
-            }
-        },
-        "education": {
-            "edu1": {
-                "institution": "Athena Institute",
-                "degree": "Diploma Superiore, Contabilità e Business",
-                "location": "Foggia, Italia",
-                "dateRange": "2010 - 2012"
-            }
-        },
-        "certifications": {
-            "cert1": {
-                "name": "AWS Cloud Practitioner",
-                "issuer": "Coursera",
-                "dateIssued": "2023"
-            },
-            "cert2": {
-                "name": "Costruire un'App AI JavaScript con OpenAI API",
-                "issuer": "LinkedIn Learning",
-                "dateIssued": "2024"
-            },
-            "cert3": {
-                "name": "Gestione Pratica di Progetti GitHub & Collaborazione",
-                "issuer": "LinkedIn Learning",
-                "dateIssued": "2023"
-            }
-        },
-        "achievements": {
-            "ach1": {
-                "title": "Realizzato software accessibile da 5M+ utenti mensili",
-                "description": "Ho guidato lo sviluppo di piattaforme e applicazioni ampiamente utilizzate."
-            },
-            "ach2": {
-                "title": "Refactorizzato SPA legacy risparmiando €50.000 in costi di manutenzione",
-                "description": "Ho migliorato l'efficienza del codice e ridotto il debito tecnico presso iControlApp."
-            },
-            "ach3": {
-                "title": "Aumentata qualità del codice del 40%, ridotti bug del 25%",
-                "description": "Ho implementato migliori workflow e standard di codice."
-            },
-            "ach4": {
-                "title": "Aumentata produttività del team del 30% tramite mentoring strutturato",
-                "description": "Ho fornito mentorship e guida di carriera a sviluppatori junior."
-            },
-            "ach5": {
-                "title": "Lanciate app DeFi con aumento dell'engagement del 20%",
-                "description": "Ho creato standard di sviluppo per migliore qualità e coerenza del codice."
-            },
-            "ach6": {
-                "title": "Create guide di stile coerenti per più ecosistemi",
-                "description": "Ho costruito strumenti per proteggere gli utenti da phishing e frodi."
-            }
-        }
+  "Navigation": {
+    "search": "Cerca",
+    "home": "Home",
+    "myNetwork": "La mia rete",
+    "jobs": "Lavoro",
+    "messaging": "Messaggi",
+    "notifications": "Notifiche",
+    "me": "Io",
+    "forBusiness": "Per le aziende",
+    "advertise": "Pubblicità"
+  },
+  "ProfileHeader": {
+    "connections": "collegamenti",
+    "contactInfo": "Info contatto",
+    "connect": "Collegati",
+    "message": "Messaggio",
+    "more": "Altro",
+    "openToWork": "Disponibile per",
+    "seeAllDetails": "Vedi tutti i dettagli",
+    "following": "Segui",
+    "followers": "follower",
+    "myWebsite": "Il mio sito web",
+    "addProfileSection": "Aggiungi sezione profilo",
+    "enhanceProfile": "Migliora profilo",
+    "resources": "Risorse",
+    "fullStackEngineer": "Ingegnere full-stack specializzato in architettura frontend e integrazioni blockchain | Leadership Tecnologica | Web3 | React, React-Router, Preact, Next.js, Typescript, Tailwind, IPFS, Ether, EVM, Wagmi, Viem | Sistemo il codice che vibra",
+    "stealthStartup": "Startup AI in Stealth Mode"
+  },
+  "ProfileLayout": {
+    "hello": "Ciao {firstName}!",
+    "welcome": "Benvenuto nel Profilo LinkedIn",
+    "about": "Informazioni",
+    "experience": "Esperienza",
+    "education": "Istruzione",
+    "skills": "Competenze",
+    "activity": "Attività",
+    "recommendations": "Raccomandazioni",
+    "volunteering": "Volontariato",
+    "languages": "Lingue",
+    "interests": "Interessi",
+    "courses": "Corsi"
+  },
+  "About": {
+    "title": "Informazioni",
+    "firstParagraph": "Ingegnere del software con oltre 20 anni di esperienza nel front-end, 5 anni in Web3 ed esperienza pratica nell'integrazione full-stack e nell'AI agentica.",
+    "disclaimer": "DISCLAIMER: Se stai pensando di offrirmi un contratto a lungo termine, invia una richiesta qui o via email a hello@rocco.me",
+    "fullStackDeveloper": "Progetto, ristrutturo e rilascio prodotti che uniscono la trasparenza della blockchain a un valore reale per l'utente, dalle piattaforme DeFi e RWA alle estensioni di browser sicure e alle app gamificate. Guido piccoli team agili con un focus sul mentoring, la qualità del codice e la sostenibilità a lungo termine, non solo sulla velocità di consegna.",
+    "currentlyWorking": "Attualmente lavoro come Lead Software Engineer in The Web3 Ninja, dove faccio da mentore agli sviluppatori, costruisco integrazioni blockchain full-stack per DApp e app Web2, e ottimizzo la comunicazione API per migliorare la velocità e ridurre i costi del gas.",
+    "lastParagraph": "Scrivo codice. Costruisco sistemi. Lavoro in Web3, AI e Cybersecurity. Faccio da mentore a sviluppatori junior e a chi cambia carriera. Dalla Puglia al mondo, sviluppo applicazioni decentralizzate (DApp) che ridefiniscono l'esperienza utente: asset tokenizzati, piattaforme DeFi e integrazioni di smart contract. I miei progetti recenti hanno generato milioni in liquidità, supportato oltre 5 milioni di utenti mensili con 3.000 utenti concorrenti e ottenuto miglioramenti significativi nella qualità del codice e nella produttività del team."
+  },
+  "Analytics": {
+    "title": "Analisi",
+    "profileViews": "visualizzazioni del profilo",
+    "postImpressions": "impressioni dei post",
+    "searchAppearances": "apparizioni nelle ricerche",
+    "showAll": "Mostra tutte le analisi"
+  },
+  "Resources": {
+    "title": "Risorse",
+    "private": "Privato per te",
+    "creatorMode": "Modalità creator",
+    "myNetwork": "La mia rete",
+    "showAll": "Mostra tutte le risorse"
+  },
+  "Activity": {
+    "title": "Attività",
+    "posts": "Post",
+    "comments": "Commenti",
+    "images": "Immagini",
+    "articles": "Articoli",
+    "startPost": "Inizia un post",
+    "showAllActivity": "Mostra tutta l'attività",
+    "noCommentsToShow": "Nessun commento da mostrare",
+    "noImagesToShow": "Nessuna immagine da mostrare",
+    "noArticlesToShow": "Nessun articolo da mostrare",
+    "backToProfile": "Torna al profilo",
+    "followers": "follower",
+    "createPost": "Crea un post",
+    "activityOverview": "Panoramica dell'attività",
+    "reactions": "Reazioni",
+    "all": "Tutti",
+    "posted": "ha pubblicato",
+    "commentedOn": "ha commentato su",
+    "shared": "ha condiviso",
+    "likes": "mi piace",
+    "shares": "condivisioni",
+    "yourCommentsWillAppear": "I tuoi commenti appariranno qui",
+    "startEngagingWithPosts": "Inizia a interagire con i post",
+    "imagesFromPostsWillAppear": "Le immagini dai tuoi post appariranno qui",
+    "createPostWithImages": "Crea un post con immagini",
+    "yourArticlesWillAppear": "I tuoi articoli appariranno qui",
+    "writeAnArticle": "Scrivi un articolo"
+  },
+  "Experience": {
+    "title": "Esperienza",
+    "showAllExperiences": "Mostra tutte le esperienze",
+    "technicalLead": "Technical Lead",
+    "frontendDeveloper": "Sviluppatore Frontend",
+    "seniorSolutionsEngineer": "Senior Solutions Engineer",
+    "cyberSecurityOperations": "Operazioni di Cyber Security",
+    "present": "Presente",
+    "years": "anni",
+    "months": "mesi",
+    "milano": "Milano, Italia",
+    "ledFrontendDevelopment": "Ho guidato lo sviluppo frontend per progetti multi-cliente. Implementato design UI responsive e ottimizzato le prestazioni web. Formato sviluppatori junior e stabilito standard di codifica.",
+    "developedInteractiveUI": "Ho sviluppato interfacce utente interattive utilizzando React e framework CSS moderni. Collaborato con il team di design per implementare componenti pixel-perfect e animazioni.",
+    "createdDashboardInterfaces": "Ho creato interfacce dashboard per strumenti di monitoraggio della sicurezza. Collaborato con il team backend per integrare API e componenti di visualizzazione dati in tempo reale.",
+    "duration1": "Apr 2022 - Presente · 1 anno 6 mesi",
+    "duration2": "Set 2020 - Mar 2022 · 1 anno 7 mesi",
+    "duration3": "Giu 2018 - Ago 2020 · 2 anni 3 mesi",
+    "duration4": "Gen 2017 - Mag 2018 · 1 anno 5 mesi",
+    "backToProfile": "Torna al profilo",
+    "addExperience": "Aggiungi esperienza",
+    "edit": "Modifica",
+    "skills": "Competenze",
+    "showYourExperience": "Mostra la tua esperienza",
+    "addYourWorkExperience": "Aggiungi la tua esperienza lavorativa per aiutare gli altri a conoscerti meglio.",
+    "fullStackDeveloper": "Sviluppatore Full Stack",
+    "freelanceWebDeveloper": "Sviluppatore Web Freelance",
+    "ledFrontendDevelopmentFull": "Ho guidato lo sviluppo frontend per progetti multi-cliente. Implementato design UI responsive e ottimizzato le prestazioni web. Formato sviluppatori junior e stabilito standard di codifica. Collaborato con team interfunzionali per fornire soluzioni software di alta qualità.",
+    "developedInteractiveUIFull": "Ho sviluppato interfacce utente interattive utilizzando React e framework CSS moderni. Collaborato con il team di design per implementare componenti pixel-perfect e animazioni. Costruito librerie di componenti riutilizzabili e mantenuto design system.",
+    "createdDashboardInterfacesFull": "Ho creato interfacce dashboard per strumenti di monitoraggio della sicurezza. Collaborato con il team backend per integrare API e componenti di visualizzazione dati in tempo reale. Implementato best practice di sicurezza nello sviluppo frontend.",
+    "providedWebDevelopmentServices": "Ho fornito servizi di sviluppo web a piccole e medie imprese. Costruito siti web personalizzati e applicazioni web utilizzando tecnologie moderne. Gestito relazioni con i clienti e tempistiche dei progetti.",
+    "keyAchievements": "Risultati Chiave",
+    "highUserEngagement": "Elevato Coinvolgimento Utenti",
+    "highUserEngagementDesc": "Ho guidato un team che ha fornito software utilizzato da 5 milioni di utenti mensilmente.",
+    "majorRefactoring": "Refactoring Maggiore di SPA su Larga Scala",
+    "majorRefactoringDesc": "Presso iControlApp, ho ridotto il debito tecnico facendo risparmiare all'azienda ~€50.000.",
+    "defiDappLaunch": "Lancio di successo di DApp DeFi",
+    "defiDappLaunchDesc": "Lanciata DApp con aumento del 20% nel coinvolgimento degli utenti.",
+    "improvedCodeQuality": "Miglioramento Qualità del Codice",
+    "improvedCodeQualityDesc": "Aumentata qualità del codice del 40% e ridotti bug del 25%.",
+    "boostedProductivity": "Aumento Produttività del Team",
+    "boostedProductivityDesc": "Raggiunto aumento del 30% della produttività con tecniche di mentoring.",
+    "designConsistency": "Uniformità Design Semplificata",
+    "designConsistencyDesc": "Consegna con successo di guide di stile per più aziende riducendo le incoerenze di design."
+  },
+  "Skills": {
+    "title": "Competenze",
+    "react": "React",
+    "svelte": "Svelte",
+    "typescript": "TypeScript",
+    "nextjs": "Next.js",
+    "redux": "Redux",
+    "zustand": "Zustand",
+    "wagmi": "Wagmi",
+    "viem": "Viem",
+    "css-in-js": "CSS-in-JS",
+    "tailwindcss": "TailwindCSS",
+    "atomic design": "Atomic Design",
+    "nodejs": "Node.js",
+    "express": "Express",
+    "nestjs": "NestJS",
+    "graphql": "GraphQL",
+    "mongodb": "MongoDB",
+    "postgresql": "PostgreSQL",
+    "redis": "Redis",
+    "flask": "Flask",
+    "python": "Python",
+    "docker": "Docker",
+    "kubernetes": "Kubernetes",
+    "ci/cd": "CI/CD",
+    "aws": "AWS",
+    "gcp": "GCP",
+    "vercel": "Vercel",
+    "heroku": "Heroku",
+    "smart contracts": "Smart Contracts",
+    "defi dapps": "DeFi DApps",
+    "sdk development": "Sviluppo SDK",
+    "llm agents": "LLM Agents",
+    "prompt engineering": "Prompt Engineering",
+    "github": "GitHub",
+    "gitlab": "GitLab",
+    "webpack": "Webpack",
+    "vite": "Vite",
+    "figma": "Figma",
+    "jest": "Jest",
+    "vitest": "Vitest",
+    "selenium": "Selenium",
+    "takeSkillQuiz": "Fai il quiz delle competenze",
+    "frontendDevelopment": "Sviluppo Frontend",
+    "reactJs": "React",
+    "javascript": "TypeScript",
+    "cssInJs": "CSS-in-JS",
+    "web3js": "Web3.js",
+    "ethersjs": "Ethers.js",
+    "sdkDevelopment": "Sviluppo SDK",
+    "promptEngineering": "Prompt Engineering",
+    "cybersecurity": "Pratiche di Cybersecurity",
+    "cicd": "CI/CD",
+    "endorsements": "raccomandazioni",
+    "endorsedBy": "Raccomandato da {name} e altri {count}",
+    "showAllSkills": "Mostra tutte le competenze",
+    "categories": {
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "devopsCloud": "DevOps & Cloud",
+      "web3AI": "Web3 & AI",
+      "toolsTesting": "Strumenti & Testing"
     }
+  },
+  "Recommendations": {
+    "title": "Raccomandazioni",
+    "showAllRecommendations": "Mostra tutte le raccomandazioni",
+    "workedWith": "{name} ha lavorato con {person} nello stesso team",
+    "managed": "{name} ha gestito {person} direttamente",
+    "exceptionalDeveloper": "Rocco è uno sviluppatore frontend eccezionale con un occhio attento ai dettagli e un talento per creare interfacce utente eleganti. La sua capacità di tradurre requisiti complessi in design intuitivi è notevole. Ha costantemente consegnato codice di alta qualità sui nostri progetti condivisi ed è sempre stato disposto ad aiutare gli altri nel team.",
+    "impressiveSkills": "Ho avuto il piacere di gestire Rocco su diversi progetti critici. Le sue competenze tecniche nello sviluppo frontend sono davvero impressionanti, in particolare in React e JavaScript moderno. È proattivo, affidabile e ha un'abilità eccezionale nel risolvere problemi complessi. Il suo lavoro ha costantemente superato le aspettative dei clienti ed è stato una risorsa preziosa per il nostro team."
+  },
+  "Volunteering": {
+    "title": "Volontariato",
+    "peerMentor": "Mentore tra Pari",
+    "theWeb3Ninja": "The Web3 Ninja",
+    "fundraisingManager": "Manager di Raccolta Fondi",
+    "steunactie": "Steunactie",
+    "memberConsultingStaff": "Membro dello Staff di Consulenza",
+    "cyberGrandpa": "CyberGrandpa",
+    "economicEmpowerment": "Empowerment Economico",
+    "disasterHumanitarianRelief": "Soccorso Umanitario e per Disastri",
+    "education": "Istruzione",
+    "helpingPeers": "Finora ho aiutato circa ~12 colleghi, 5 hanno ottenuto una posizione nei primi 1~4 mesi.",
+    "helpedCareerSwitch": "Ho anche aiutato un 32enne nel suo cambio di carriera.",
+    "positionedInterns": "E ho posizionato 2 stagisti, l'anno scorso (metà 2023), nelle loro prime posizioni junior.",
+    "gettingBetter": "Quindi sto migliorando in questo. Ma spesso dipende anche dalla persona e da quanto è motivata.",
+    "dedicatingTime": "Sto dedicando parte della mia giornata per aiutare persone bisognose in Africa e Medio Oriente con iniziative di crowdfunding/raccolta fondi.",
+    "campaignsBelowAre": "Di seguito ci sono alcune delle campagne.",
+    "helpAbdulKarim": "Aiuta Abdul Karim a Guarire: La Lotta di un Bambino di Guerra per la Vita",
+    "bornUnderBombs": "Nato Sotto le Bombe, Ora Lotta per Ogni Passo: Sostieni il Viaggio Medico Urgente del Piccolo Abdul Karim",
+    "saveEliasFamily": "Salva Elias e la Sua Famiglia: Dalla Tenda alla Sicurezza",
+    "helpGazaFamily": "Aiuta una famiglia di Gaza a sopravvivere alla carestia, malattia e senzatetto. Il tuo supporto li avvicina a cibo, rifugio e un futuro più sicuro.",
+    "trustedGuide": "La Tua Guida Fidata per la Sicurezza Online e la Protezione da Truffe, Phishing e Malware. Servizi di Cybersecurity Esperti in abbonamento."
+  },
+  "Languages": {
+    "title": "Lingue",
+    "english": "Inglese",
+    "italian": "Italiano",
+    "spanish": "Spagnolo",
+    "french": "Francese",
+    "native": "Madrelingua",
+    "professional": "Professionale",
+    "conversational": "Conversazione",
+    "nativeOrBilingual": "Competenza madrelingua o bilingue",
+    "fullProfessional": "Piena competenza professionale",
+    "showAllLanguages": "Mostra tutte le lingue"
+  },
+  "Interests": {
+    "title": "Interessi",
+    "techProfession": "Tecnologia & Professione",
+    "blockchain": "Blockchain",
+    "web3": "Web3",
+    "cybersecurity": "Cybersecurity",
+    "react": "React",
+    "typeScript": "TypeScript",
+    "openSource": "Open Source",
+    "ai": "AI",
+    "cleanCode": "Codice Pulito",
+    "scalability": "Scalabilità",
+    "architecture": "Architettura",
+    "problemSolving": "Risoluzione Problemi",
+    "collaborationLeadership": "Collaborazione & Leadership",
+    "mentorship": "Mentoring",
+    "leadership": "Leadership",
+    "remoteWork": "Lavoro Remoto",
+    "collaboration": "Collaborazione",
+    "community": "Comunità",
+    "teaching": "Insegnamento",
+    "education": "Formazione",
+    "mindsetValues": "Mentalità & Valori",
+    "innovation": "Innovazione",
+    "strategy": "Strategia",
+    "systemsThinking": "Pensiero Sistemico",
+    "adaptability": "Adattabilità",
+    "growth": "Crescita",
+    "ethics": "Etica",
+    "empathy": "Empatia",
+    "continuousLearning": "Apprendimento Continuo",
+    "cultureExpression": "Cultura & Espressione",
+    "globalMindset": "Mentalità Globale",
+    "languages": "Lingue",
+    "research": "Ricerca",
+    "writing": "Scrittura",
+    "creativity": "Creatività"
+  },
+  "ProfileFooter": {
+    "linkedinProfile": "Profilo LinkedIn",
+    "personalWebsite": "Sito Web Personale",
+    "copyright": "© 2024 Rocco Russo"
+  },
+  "ProfileLanguage": {
+    "title": "Lingua del profilo",
+    "whoViewersAlsoViewed": "Chi hanno visualizzato anche i tuoi visitatori",
+    "privateToYou": "Privato per te"
+  },
+  "Projects": {
+    "title": "Progetti",
+    "featuredProjects": "Progetti in evidenza",
+    "otherProjects": "Altri progetti",
+    "seeAll": "Vedi tutti i progetti",
+    "backToProfile": "Torna al profilo",
+    "viewProject": "Visualizza progetto",
+    "viewCode": "Visualizza codice",
+    "viewDemo": "Visualizza demo",
+    "technologies": "Tecnologie",
+    "role": "Ruolo",
+    "company": "Azienda",
+    "projectDetails": "Dettagli del progetto",
+    "projectDescription": "Descrizione",
+    "projectTechnologies": "Tecnologie utilizzate",
+    "projectLinks": "Link del progetto",
+    "projectScreenshots": "Screenshot",
+    "projectContributions": "I miei contributi",
+    "projectChallenges": "Sfide",
+    "projectOutcomes": "Risultati",
+    "projectDuration": "Durata",
+    "projectTeam": "Dimensione del team",
+    "projectType": "Tipo di progetto",
+    "openSource": "Open Source",
+    "clientProject": "Progetto cliente",
+    "personalProject": "Progetto personale",
+    "hackathonProject": "Progetto hackathon",
+    "ajnaLabs": "Ajna Labs - DeFi Dapp + SDK (20M liquidità)",
+    "modeNetwork": "Mode Network - Refactoring Next.js su larga scala",
+    "cyberGrandpa": "Estensione Anti-Frode CyberGrandpa",
+    "tetrisCrypto": "Tetris con Ricompense Crypto",
+    "linkedinExtension": "Estensione LinkedIn Full Width"
+  },
+  "ProfileLanguageUrl": {
+    "profileLanguage": "Lingua del profilo",
+    "languageInfo": "Seleziona la lingua che desideri utilizzare per LinkedIn",
+    "selectLanguage": "Seleziona lingua",
+    "publicProfile": "Profilo pubblico e URL",
+    "profileUrl": "URL del profilo",
+    "editUrl": "Modifica URL",
+    "copyUrl": "Copia URL",
+    "urlCopied": "URL copiato negli appunti!",
+    "language": "Lingua del Profilo"
+  },
+  "Blog": {
+    "title": "Blog Tecnico",
+    "subtitle": "Riflessioni sullo sviluppo frontend, Web3 e tecnologie moderne. Condivisione di approfondimenti dalla costruzione di applicazioni scalabili ed esplorazione delle tendenze tecnologiche emergenti.",
+    "featured": "In evidenza",
+    "recentPosts": "Post recenti",
+    "readFullArticle": "Leggi l'articolo completo",
+    "readMore": "Leggi di più",
+    "stayUpdated": "Resta aggiornato",
+    "subscribeDescription": "Iscriviti per ricevere notifiche sui nuovi post sullo sviluppo frontend, Web3 e approfondimenti tecnologici.",
+    "enterEmail": "Inserisci la tua email",
+    "subscribe": "Iscriviti",
+    "minRead": "min di lettura",
+    "publishedOn": "Pubblicato il"
+  },
+  "Footer": {
+    "about": "Informazioni",
+    "accessibility": "Accessibilità",
+    "careers": "Carriere",
+    "adChoices": "Scelte Pubblicitarie",
+    "mobile": "Mobile",
+    "talentSolutions": "Soluzioni Talenti",
+    "marketingSolutions": "Soluzioni Marketing",
+    "advertising": "Pubblicità",
+    "smallBusiness": "Piccole Imprese",
+    "salesSolutions": "Soluzioni Vendite",
+    "safetyCenter": "Centro Sicurezza",
+    "questions": "Domande?",
+    "visitHelpCenter": "Visita il nostro Centro Aiuto.",
+    "manageAccount": "Gestisci il tuo account e la privacy",
+    "goToSettings": "Vai alle tue Impostazioni.",
+    "recommendationTransparency": "Trasparenza delle raccomandazioni",
+    "learnMore": "Scopri di più sui Contenuti Raccomandati.",
+    "selectLanguage": "Seleziona Lingua",
+    "linkedinCorporation": "LinkedIn Corporation © 2025"
+  },
+  "NotFound": {
+    "title": "Ops! Pagina Non Trovata",
+    "description": "La pagina che stai cercando sembra essere svanita nel vuoto digitale. Non preoccuparti, capita anche ai migliori!",
+    "goHome": "Portami a Casa",
+    "goBack": "Torna Indietro",
+    "funMessage": "\"Nella vasta distesa di internet, anche i migliori esploratori a volte prendono una strada sbagliata. Ma è così che scopriamo nuovi percorsi!\" 🚀"
+  },
+  "Common": {
+    "add": "Aggiungi",
+    "save": "Salva",
+    "cancel": "Annulla",
+    "delete": "Elimina",
+    "share": "Condividi",
+    "like": "Mi piace",
+    "comment": "Commenta",
+    "send": "Invia",
+    "follow": "Segui",
+    "unfollow": "Non seguire più",
+    "loading": "Caricamento...",
+    "error": "Errore",
+    "success": "Successo",
+    "profileName": "Rocco Russo",
+    "shareProfileName": "Profilo di Rocco Russo",
+    "showMore": "Mostra di più",
+    "showLess": "Mostra meno"
+  },
+  "SkillsPage": {
+    "backToProfile": "Torna al profilo",
+    "skillsOverview": "Panoramica Competenze",
+    "totalSkills": "Competenze Totali",
+    "categories": "Categorie",
+    "expertLevel": "Livello Esperto (90%+)"
+  },
+  "RecommendationsPage": {
+    "backToProfile": "Torna al profilo",
+    "receivedRecommendations": "Raccomandazioni Ricevute",
+    "total": "Totale",
+    "colleagues": "Colleghi",
+    "managers": "Manager",
+    "askForRecommendation": "Chiedi una Raccomandazione",
+    "askForRecommendationDesc": "Richiedi raccomandazioni dai colleghi per rafforzare il tuo profilo.",
+    "requestRecommendation": "Richiedi Raccomandazione"
+  },
+  "SampleData": {
+    "people": {
+      "maxMueller": {
+        "name": "Max Mueller",
+        "title": "Senior Frontend Developer presso Google"
+      },
+      "sophieJohnson": {
+        "name": "Sophie Johnson",
+        "title": "UX Designer presso Apple"
+      },
+      "danielLee": {
+        "name": "Daniel Lee",
+        "title": "Full Stack Developer presso Netflix"
+      },
+      "oliviaWilliams": {
+        "name": "Olivia Williams",
+        "title": "Frontend Engineer presso Microsoft"
+      },
+      "jamesRodriguez": {
+        "name": "James Rodriguez",
+        "title": "UI Developer presso Adobe"
+      },
+      "emilyChen": {
+        "name": "Emily Chen",
+        "title": "Senior React Developer presso Meta"
+      }
+    },
+    "recommendations": {
+      "giorgioRavioli": {
+        "name": "Giorgio Ravioli",
+        "title": "Senior Full Stack Developer",
+        "relationship": "Giorgio ha lavorato con Rocco nello stesso team",
+        "date": "24 luglio 2022",
+        "content": "Rocco è uno sviluppatore frontend eccezionale con un occhio attento ai dettagli e un talento per creare interfacce utente eleganti. La sua capacità di tradurre requisiti complessi in design intuitivi è notevole. Ha sempre fornito codice di alta qualità nei nostri progetti condivisi ed era sempre disposto ad aiutare gli altri membri del team."
+      },
+      "alessandroBuccheri": {
+        "name": "Alessandro Buccheri",
+        "title": "Senior Full Stack Developer",
+        "relationship": "Alessandro ha gestito Rocco direttamente",
+        "date": "15 marzo 2021",
+        "content": "Ho avuto il piacere di gestire Rocco su diversi progetti critici. Le sue competenze tecniche nello sviluppo frontend sono davvero impressionanti, in particolare in React e JavaScript moderno. È proattivo, affidabile e ha un'eccezionale capacità di risolvere problemi complessi. Il suo lavoro ha costantemente superato le aspettative dei clienti ed è stato una risorsa preziosa per il nostro team."
+      }
+    },
+    "posts": {
+      "post1": {
+        "role": "Full Stack Frontend Web Developer",
+        "content": "Felice di condividere che ho completato il mio ultimo progetto - un clone del profilo LinkedIn costruito con React, TypeScript e TailwindCSS! 🚀\n\nDai un'occhiata e fammi sapere cosa ne pensi!"
+      },
+      "post2": {
+        "author": "Sarah Johnson",
+        "role": "UX Designer presso Google",
+        "content": "Ho appena pubblicato il mio nuovo articolo sui design system e su come possono trasformare il processo di sviluppo del prodotto.\n\nUn buon design system può far risparmiare centinaia di ore di sviluppo e portare coerenza all'esperienza utente."
+      },
+      "post3": {
+        "author": "Michael Chen",
+        "role": "Tech Lead presso Microsoft",
+        "content": "Stiamo assumendo! Cerchiamo sviluppatori frontend di talento per unirsi al nostro team. Se hai esperienza con React, TypeScript e una passione per costruire grandi esperienze utente, mandami un messaggio."
+      }
+    },
+    "blogPosts": {
+      "post1": {
+        "title": "Costruire Applicazioni React Moderne con TypeScript",
+        "description": "Una guida completa per configurare e sviluppare applicazioni React scalabili utilizzando TypeScript, concentrandosi sulle best practice e sui moderni pattern di sviluppo.",
+        "content": "In questo post, esploriamo i vantaggi dell'utilizzo di TypeScript con React e come configurare un ambiente di sviluppo robusto..."
+      },
+      "post2": {
+        "title": "Il Futuro di Web3 e dello Sviluppo Frontend",
+        "description": "Esplorando come la tecnologia blockchain sta rimodellando lo sviluppo frontend e cosa gli sviluppatori devono sapere sull'integrazione Web3.",
+        "content": "Web3 rappresenta un cambio di paradigma nel modo in cui pensiamo alle applicazioni e alle interazioni degli utenti..."
+      },
+      "post3": {
+        "title": "Ottimizzazione delle Prestazioni nelle Grandi Applicazioni React",
+        "description": "Impara tecniche avanzate per ottimizzare le prestazioni delle applicazioni React, inclusi code splitting, memoization e gestione efficiente dello stato.",
+        "content": "L'ottimizzazione delle prestazioni è fondamentale per mantenere una buona esperienza utente nelle applicazioni di grandi dimensioni..."
+      }
+    }
+  },
+  "ProfileData": {
+    "personal": {
+      "title": "Ingegnere Software / Tech Lead",
+      "headline": "Blockchain & Dapps | AI Agentici | Cybersecurity",
+      "location": "Málaga, Andalusia, Spagna",
+      "about": "Ingegnere software con oltre 20 anni di esperienza nell'ingegneria front-end, 5 anni in integrazioni Web3 e sviluppo full-stack pratico. Esperto in React, Svelte, TypeScript, Node.js, Next.js, TailwindCSS, MongoDB e soluzioni cloud-native. Costruisco app decentralizzate che uniscono blockchain, IA e utilità reale, con focus sulla leadership, mentoring, design scalabile e codice pulito."
+    },
+    "experience": {
+      "exp1": {
+        "company": "The Web3 Ninja",
+        "position": "Lead Software Engineer, Web3",
+        "type": "B2B, Part Time",
+        "dateRange": "10/2024 - Presente",
+        "location": "Puglia, Italia, Remoto",
+        "description": "Guido progetti di integrazione Web3 e mentoring di sviluppatori junior.",
+        "highlights": [
+          "Mentoring di 5 stagisti, 3 collocati come sviluppatori junior.",
+          "Costruite 3 DApp e API migliorando la velocità delle transazioni del 15%.",
+          "Ridotte le commissioni gas tramite integrazione blockchain ottimizzata."
+        ]
+      },
+      "exp2": {
+        "company": "Games Global",
+        "position": "Lead Frontend Engineer",
+        "dateRange": "09/2023 - 09/2024",
+        "location": "Swieqi, Malta, Remoto",
+        "description": "Guido lo sviluppo front-end per piattaforme di gioco.",
+        "highlights": [
+          "Sviluppata UI per il sistema jackpot Lotsaloot™.",
+          "Migliorato l'engagement dei giocatori con logica di ricompensa a livelli.",
+          "Collaborato tra team per aumentare le metriche di retention."
+        ]
+      },
+      "exp3": {
+        "company": "Shiba Inu",
+        "position": "Tech Lead, Web3",
+        "dateRange": "01/2023 - 08/2023",
+        "description": "Ho guidato lo sviluppo tecnico per l'ecosistema Shiba Inu.",
+        "highlights": [
+          "Guidato team di 12 membri, aumentata produttività del 30%.",
+          "Ridotti bug del 25% e migliorata qualità del codice del 40%.",
+          "Serviti 5M utenti e 3k visitatori concorrenti."
+        ]
+      },
+      "exp4": {
+        "company": "Ajna Labs",
+        "position": "Lead Frontend Engineer",
+        "dateRange": "08/2022 - 08/2023",
+        "description": "Guido lo sviluppo front-end per applicazioni DeFi.",
+        "highlights": [
+          "Distribuita SPA con liquidità $20M+.",
+          "Creato SDK riducendo tempo di integrazione del 50%.",
+          "Rilasciata libreria di design per l'ecosistema aumentando velocità dev del 25%."
+        ]
+      },
+      "exp5": {
+        "company": "Linum Labs",
+        "position": "Lead Frontend Engineer",
+        "dateRange": "08/2021 - 07/2022",
+        "description": "Guido lo sviluppo di applicazioni Web3 e crypto.",
+        "highlights": [
+          "Supervisionati 10+ progetti decentralizzati.",
+          "Mentoring a 4 sviluppatori frontend.",
+          "Migliorata scalabilità e coerenza UI."
+        ]
+      },
+      "exp6": {
+        "company": "Omnia DeFi",
+        "position": "Lead Software Engineer, Web3",
+        "dateRange": "01/2021 - 07/2021",
+        "description": "Costruzione di infrastrutture DeFi e integrazioni smart contract.",
+        "highlights": [
+          "Costruita dashboard di vesting e farming integrata con Ethereum.",
+          "Sviluppati layer di interazione con smart contract per operazioni DeFi."
+        ]
+      },
+      "exp7": {
+        "company": "HCLTech",
+        "position": "Lead Software Engineer",
+        "dateRange": "12/2014 - 07/2015",
+        "location": "L'Aia, Paesi Bassi",
+        "description": "Realizzazione di soluzioni software enterprise.",
+        "highlights": [
+          "Realizzati progetti di refactoring Web2 di livello enterprise.",
+          "Ottimizzati sistemi legacy per la cloud-readiness."
+        ]
+      },
+      "exp8": {
+        "company": "Elsevier (Reaxys 2 Web App)",
+        "position": "Software Engineer",
+        "dateRange": "2013 - 2014",
+        "description": "Costruzione di piattaforme dati scientifici.",
+        "highlights": [
+          "Contribuito ad app web scientifiche per sistemi di dati chimici.",
+          "Sviluppate interfacce basate su Angular per tablet cross-platform."
+        ]
+      },
+      "exp9": {
+        "company": "AdForum",
+        "position": "Software Engineer",
+        "dateRange": "2012 - 2013",
+        "description": "Costruzione di marketplace per l'industria pubblicitaria.",
+        "highlights": [
+          "Costruito marketplace pubblicitario multilingue con 3M+ visitatori/mese.",
+          "Migliorati SEO e engagement utente su portali ad alto traffico."
+        ]
+      }
+    },
+    "projects": {
+      "proj1": {
+        "name": "Ajna Labs",
+        "description": "DApp DeFi e SDK che alimentano oltre $20M di liquidità."
+      },
+      "proj2": {
+        "name": "Mode Network",
+        "description": "Refactoring su larga scala del codebase React e ottimizzazione delle prestazioni."
+      },
+      "proj3": {
+        "name": "CyberGrandpa Anti-Fraud",
+        "description": "Estensione cross-browser che previene phishing ed esposizione a frodi."
+      },
+      "proj4": {
+        "name": "Tetris with Crypto Rewards",
+        "description": "Mini App Telegram che premia con token TON i giocatori in classifica."
+      },
+      "proj5": {
+        "name": "LinkedIn Full Width",
+        "description": "Estensione Chrome che abilita la visualizzazione a larghezza intera di LinkedIn."
+      }
+    },
+    "skills": {
+      "categories": {
+        "frontend": "Frontend",
+        "backend": "Backend",
+        "devopsCloud": "DevOps & Cloud",
+        "web3AI": "Web3 & AI",
+        "toolsTesting": "Strumenti & Testing"
+      }
+    },
+    "education": {
+      "edu1": {
+        "institution": "Athena Institute",
+        "degree": "Diploma Superiore, Contabilità e Business",
+        "location": "Foggia, Italia",
+        "dateRange": "2010 - 2012"
+      }
+    },
+    "certifications": {
+      "cert1": {
+        "name": "AWS Cloud Practitioner",
+        "issuer": "Coursera",
+        "dateIssued": "2023"
+      },
+      "cert2": {
+        "name": "Costruire un'App AI JavaScript con OpenAI API",
+        "issuer": "LinkedIn Learning",
+        "dateIssued": "2024"
+      },
+      "cert3": {
+        "name": "Gestione Pratica di Progetti GitHub & Collaborazione",
+        "issuer": "LinkedIn Learning",
+        "dateIssued": "2023"
+      }
+    },
+    "achievements": {
+      "ach1": {
+        "title": "Realizzato software accessibile da 5M+ utenti mensili",
+        "description": "Ho guidato lo sviluppo di piattaforme e applicazioni ampiamente utilizzate."
+      },
+      "ach2": {
+        "title": "Refactorizzato SPA legacy risparmiando €50.000 in costi di manutenzione",
+        "description": "Ho migliorato l'efficienza del codice e ridotto il debito tecnico presso iControlApp."
+      },
+      "ach3": {
+        "title": "Aumentata qualità del codice del 40%, ridotti bug del 25%",
+        "description": "Ho implementato migliori workflow e standard di codice."
+      },
+      "ach4": {
+        "title": "Aumentata produttività del team del 30% tramite mentoring strutturato",
+        "description": "Ho fornito mentorship e guida di carriera a sviluppatori junior."
+      },
+      "ach5": {
+        "title": "Lanciate app DeFi con aumento dell'engagement del 20%",
+        "description": "Ho creato standard di sviluppo per migliore qualità e coerenza del codice."
+      },
+      "ach6": {
+        "title": "Create guide di stile coerenti per più ecosistemi",
+        "description": "Ho costruito strumenti per proteggere gli utenti da phishing e frodi."
+      }
+    }
+  }
 }
