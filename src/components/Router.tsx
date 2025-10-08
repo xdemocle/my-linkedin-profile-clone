@@ -7,6 +7,8 @@ import { BlogPage } from '@/pages/BlogPage';
 import { ExperiencePage } from '@/pages/ExperiencePage';
 import { NotFoundPage } from '@/pages/NotFoundPage';
 import { ProjectsPage } from '@/pages/ProjectsPage';
+import { RecommendationsPage } from '@/pages/RecommendationsPage';
+import { SkillsPage } from '@/pages/SkillsPage';
 import { useEffect } from 'react';
 import { Redirect, Route, Switch, useLocation, Router as WouterRouter } from 'wouter';
 import { LOCALE_DEFAULT, LOCALES, type Locale } from '../constants/i18n';
@@ -94,6 +96,24 @@ export function Router() {
           </Route>
         ))}
 
+        {/* Skills page with locale prefixes */}
+        {LOCALES.map(lang => (
+          <Route key={`${lang}-skills`} path={getPageUrlFromPath(lang, 'skills')}>
+            <PageLayout>
+              <SkillsPage />
+            </PageLayout>
+          </Route>
+        ))}
+
+        {/* Recommendations page with locale prefixes */}
+        {LOCALES.map(lang => (
+          <Route key={`${lang}-recommendations`} path={getPageUrlFromPath(lang, 'recommendations')}>
+            <PageLayout>
+              <RecommendationsPage />
+            </PageLayout>
+          </Route>
+        ))}
+
         {/* redirect to localized versions */}
         <Route path={getPageUrlFromPath(locale, 'experience')}>
           <Redirect to={`/${locale}/experience`} />
@@ -106,6 +126,12 @@ export function Router() {
         </Route>
         <Route path={getPageUrlFromPath(locale, 'projects')}>
           <Redirect to={`/${locale}/projects`} />
+        </Route>
+        <Route path={getPageUrlFromPath(locale, 'skills')}>
+          <Redirect to={`/${locale}/skills`} />
+        </Route>
+        <Route path={getPageUrlFromPath(locale, 'recommendations')}>
+          <Redirect to={`/${locale}/recommendations`} />
         </Route>
 
         {/* Default route in a switch - 404 page */}

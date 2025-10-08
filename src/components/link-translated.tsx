@@ -1,7 +1,7 @@
 import type { AnchorHTMLAttributes } from 'react';
 import { Link } from 'wouter';
-import { useLocale } from '../../hooks/useLocale';
-import { getPageUrlFromPath } from '../../lib/i18n';
+import { useLocale } from '../hooks/useLocale';
+import { getPageUrlFromPath } from '../lib/i18n';
 
 interface LinkTranslatedProps extends Omit<AnchorHTMLAttributes<HTMLAnchorElement>, 'href'> {
   href: string;
@@ -10,7 +10,7 @@ interface LinkTranslatedProps extends Omit<AnchorHTMLAttributes<HTMLAnchorElemen
 
 /**
  * A locale-aware Link component that automatically adds the current locale prefix to URLs.
- * 
+ *
  * Usage:
  * ```tsx
  * <LinkTranslated href="/experience">Experience</LinkTranslated>
@@ -20,7 +20,7 @@ interface LinkTranslatedProps extends Omit<AnchorHTMLAttributes<HTMLAnchorElemen
  */
 export function LinkTranslated({ href, children, ...props }: LinkTranslatedProps) {
   const { locale } = useLocale();
-  
+
   // Convert the href to a locale-aware URL
   const localizedHref = getPageUrlFromPath(locale, href);
 
