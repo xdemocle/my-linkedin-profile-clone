@@ -454,5 +454,192 @@
         "content": "تحسين الأداء أمر بالغ الأهمية للحفاظ على تجربة مستخدم جيدة في التطبيقات الكبيرة..."
       }
     }
+  },
+  "ProfileData": {
+    "personal": {
+      "title": "مهندس برمجيات / قائد تقني",
+      "headline": "Blockchain & Dapps | الذكاء الاصطناعي الوكيل | مدافع عن الأمن السيبراني",
+      "location": "بوليا، إيطاليا",
+      "about": "مهندس برمجيات مع أكثر من 20 عامًا من الخبرة في الواجهة الأمامية، و5 سنوات في Web3، وخبرة عملية في التكامل الكامل ووكلاء الذكاء الاصطناعي. أصمم وأعيد هيكلة وأقدم منتجات تدمج شفافية blockchain مع قيمة حقيقية للمستخدم، من منصات DeFi وRWA إلى إضافات المتصفح الآمنة والتطبيقات المُلعَّبة. أقود فرقًا صغيرة رشيقة مع التركيز على الإرشاد وجودة الكود والاستدامة طويلة الأجل — وليس فقط سرعة التسليم."
+    },
+    "experience": {
+      "exp1": {
+        "company": "The Web3 Ninja",
+        "position": "Lead Software Engineer, Web3",
+        "dateRange": "2024 - الحاضر",
+        "description": "قيادة مشاريع تكامل Web3 وإرشاد المطورين المبتدئين.",
+        "highlights": [
+          "أرشدت 5 مطورين؛ تم تعيين 3 في أدوار مبتدئة.",
+          "بنيت تكاملات blockchain كاملة لـ 3 DApps وتطبيقات Web2.",
+          "حسّنت اتصال API، محسنًا السرعة بنسبة 15% وخفض تكاليف الغاز."
+        ]
+      },
+      "exp2": {
+        "company": "Games Global",
+        "position": "Lead Frontend Engineer",
+        "dateRange": "2023 - 2024",
+        "description": "قيادة تطوير الواجهة الأمامية لمنصات الألعاب.",
+        "highlights": [
+          "قدمت واجهة مستخدم لـ Lotsaloot™، نظام جائزة كبرى من ثلاثة مستويات.",
+          "صممت حلقة مكافأة سريعة لتعظيم المشاركة.",
+          "عززت محافظ الجوائز الكبرى بتعليقات مكافآت صغيرة متسقة."
+        ]
+      },
+      "exp3": {
+        "company": "Shiba Inu",
+        "position": "Tech Lead, Web3",
+        "dateRange": "2023",
+        "description": "قدت التطوير التقني لنظام Shiba Inu البيئي.",
+        "highlights": [
+          "قدت فريقًا من 12 عضوًا، محققًا زيادة في الإنتاجية بنسبة 30%.",
+          "خفضت الأخطاء بنسبة 25% ورفعت جودة الكود بنسبة 40%.",
+          "دعمت 5 ملايين مستخدم شهريًا مع 3 آلاف متزامن."
+        ]
+      },
+      "exp4": {
+        "company": "Ajna Labs",
+        "position": "Lead Frontend Engineer",
+        "dateRange": "2022 - 2023",
+        "description": "قيادة تطوير الواجهة الأمامية لتطبيقات DeFi.",
+        "highlights": [
+          "أطلقت SPA بسيولة $20M+ وتكامل SDK.",
+          "خفضت وقت التكامل بنسبة 50% ووحدت أنظمة التصميم.",
+          "بنيت موقع تسويقي جذب 10 آلاف+ زائر فريد في 3 أشهر."
+        ]
+      },
+      "exp5": {
+        "company": "Linum Labs",
+        "position": "Lead Frontend Engineer",
+        "dateRange": "2021 - 2022",
+        "description": "قيادة تطوير تطبيقات Web3 والعملات المشفرة.",
+        "highlights": [
+          "أشرفت على 10 مشاريع تطبيقات Web3 والعملات المشفرة.",
+          "أرشدت 4 مطورين للواجهة الأمامية ضمن فريق من 15 شخصًا.",
+          "حسّنت قابلية التوسع وأداء واجهة المستخدم عبر DApps متعددة."
+        ]
+      },
+      "exp6": {
+        "company": "Omnia DeFi",
+        "position": "Lead Software Engineer, Web3",
+        "dateRange": "2021",
+        "description": "بناء بنية تحتية DeFi وتكاملات العقود الذكية.",
+        "highlights": [
+          "برمجت أنظمة الاستحقاق والزراعة والمكافآت المتصلة بعقود DeFi.",
+          "ساهمت في لوحات معلومات DApp باستخدام React وNext.js وNode.js."
+        ]
+      },
+      "exp7": {
+        "company": "HCLTech",
+        "position": "Lead Software Engineer",
+        "dateRange": "2014 - 2015",
+        "description": "تقديم حلول برمجية للمؤسسات.",
+        "highlights": [
+          "قدمت برامج Web2 عالية التأثير لعملاء المؤسسات في لاهاي، هولندا.",
+          "ركزت على إعادة هيكلة الأداء والانتقالات السحابية."
+        ]
+      },
+      "exp8": {
+        "company": "Elsevier",
+        "position": "Software Engineer",
+        "dateRange": "2013 - 2014",
+        "description": "بناء منصات البيانات العلمية.",
+        "highlights": [
+          "ساهمت في Reaxys 2 Web App لدمج البيانات الكيميائية والطبية.",
+          "عملت مع Angular والتحسين عبر المنصات لتطبيقات البحث."
+        ]
+      },
+      "exp9": {
+        "company": "AdForum",
+        "position": "Software Engineer",
+        "dateRange": "2012 - 2013",
+        "description": "بناء سوق لصناعة الإعلان.",
+        "highlights": [
+          "ساعدت في بناء أحد أكثر أسواق الإعلانات زيارة في أوروبا (~3 ملايين مستخدم/شهر).",
+          "قدمت قواعد أكواد متعددة اللغات ومحسنة لـ SEO في فرق دولية."
+        ]
+      }
+    },
+    "projects": {
+      "proj1": {
+        "name": "Ajna Labs — DeFi DApp + SDK",
+        "description": "DeFi DApp + SDK (سيولة $20M)"
+      },
+      "proj2": {
+        "name": "Mode Network",
+        "description": "إعادة هيكلة React واسعة النطاق"
+      },
+      "proj3": {
+        "name": "CyberGrandpa Anti-Fraud",
+        "description": "إضافة متصفح للوقاية من التصيد الاحتيالي"
+      },
+      "proj4": {
+        "name": "Tetris with Crypto Rewards",
+        "description": "تطبيق Telegram صغير مع جوائز رموز TON"
+      },
+      "proj5": {
+        "name": "LinkedIn Full Width",
+        "description": "إضافة Chrome لتحسين واجهة المستخدم"
+      }
+    },
+    "skills": {
+      "categories": {
+        "frontend": "الواجهة الأمامية",
+        "backend": "الواجهة الخلفية",
+        "devopsCloud": "DevOps والسحابة",
+        "web3AI": "Web3 والذكاء الاصطناعي",
+        "toolsTesting": "الأدوات والاختبار"
+      }
+    },
+    "education": {
+      "edu1": {
+        "institution": "Athena Institute",
+        "degree": "دبلوم عالي، المحاسبة والأعمال",
+        "location": "فودجا، إيطاليا",
+        "dateRange": "2010 - 2012"
+      }
+    },
+    "certifications": {
+      "cert1": {
+        "name": "AWS Cloud Practitioner",
+        "issuer": "Coursera",
+        "dateIssued": "2023"
+      },
+      "cert2": {
+        "name": "بناء تطبيق ذكاء اصطناعي JavaScript مع OpenAI API",
+        "issuer": "LinkedIn Learning",
+        "dateIssued": "2024"
+      },
+      "cert3": {
+        "name": "إدارة مشاريع GitHub العملية والتعاون",
+        "issuer": "LinkedIn Learning",
+        "dateIssued": "2023"
+      }
+    },
+    "achievements": {
+      "ach1": {
+        "title": "أطلقت تطبيقات DeFi تصل إلى 5 ملايين+ مستخدم شهريًا",
+        "description": "قدت تطوير منصات وتطبيقات مستخدمة على نطاق واسع."
+      },
+      "ach2": {
+        "title": "أعدت هيكلة SPA قديم موفرًا ~€50.000 في الصيانة",
+        "description": "حسّنت كفاءة الكود وخفضت الديون التقنية في iControlApp."
+      },
+      "ach3": {
+        "title": "حسّنت جودة الكود بنسبة 40%، خفضت الأخطاء بنسبة 25%",
+        "description": "نفذت سير عمل أفضل ومعايير كود."
+      },
+      "ach4": {
+        "title": "أرشدت 5+ مطورين تقدموا إلى مناصب جديدة",
+        "description": "قدمت الإرشاد والتوجيه المهني للمطورين المبتدئين."
+      },
+      "ach5": {
+        "title": "أنشأت أدلة تصميم وأسلوب على مستوى النظام البيئي",
+        "description": "أنشأت معايير تطوير لجودة واتساق أفضل للكود."
+      },
+      "ach6": {
+        "title": "قدمت إضافات مفتوحة المصدر تركز على الأمن السيبراني",
+        "description": "بنيت أدوات لحماية المستخدمين من التصيد الاحتيالي والاحتيال."
+      }
+    }
   }
 }

@@ -455,5 +455,192 @@
         "content": "L'optimisation des performances est cruciale pour maintenir une bonne expérience utilisateur dans les grandes applications..."
       }
     }
+  },
+  "ProfileData": {
+    "personal": {
+      "title": "Ingénieur Logiciel / Tech Lead",
+      "headline": "Blockchain & Dapps | IA Agentique | Défenseur de la Cybersécurité",
+      "location": "Pouilles, Italie",
+      "about": "Ingénieur logiciel avec plus de 20 ans d'expérience front-end, 5 ans en Web3 et une expertise pratique en intégration full-stack et agents IA. Je conçois, refactorise et livre des produits qui fusionnent la transparence blockchain avec une valeur réelle pour l'utilisateur, des plateformes DeFi et RWA aux extensions de navigateur sécurisées et applications gamifiées. Je dirige de petites équipes agiles en mettant l'accent sur le mentorat, la qualité du code et la durabilité à long terme — pas seulement la vitesse de livraison."
+    },
+    "experience": {
+      "exp1": {
+        "company": "The Web3 Ninja",
+        "position": "Lead Software Engineer, Web3",
+        "dateRange": "2024 - Présent",
+        "description": "Direction de projets d'intégration Web3 et mentorat de développeurs juniors.",
+        "highlights": [
+          "Mentorat de 5 développeurs ; 3 placés dans des rôles juniors.",
+          "Construction d'intégrations blockchain full-stack pour 3 DApps et applications Web2.",
+          "Optimisation de la communication API, améliorant la vitesse de 15% et réduisant les coûts de gas."
+        ]
+      },
+      "exp2": {
+        "company": "Games Global",
+        "position": "Lead Frontend Engineer",
+        "dateRange": "2023 - 2024",
+        "description": "Direction du développement front-end pour plateformes de jeux.",
+        "highlights": [
+          "Livraison de l'UI pour Lotsaloot™, un système de jackpot à trois niveaux.",
+          "Conception d'une boucle de récompense rapide pour maximiser l'engagement.",
+          "Renforcement des portefeuilles de jackpot avec des retours de micro-récompenses cohérents."
+        ]
+      },
+      "exp3": {
+        "company": "Shiba Inu",
+        "position": "Tech Lead, Web3",
+        "dateRange": "2023",
+        "description": "Direction du développement technique pour l'écosystème Shiba Inu.",
+        "highlights": [
+          "Direction d'une équipe de 12 membres, atteignant une augmentation de productivité de 30%.",
+          "Réduction des bugs de 25% et amélioration de la qualité du code de 40%.",
+          "Support de 5M utilisateurs mensuels avec 3k concurrents."
+        ]
+      },
+      "exp4": {
+        "company": "Ajna Labs",
+        "position": "Lead Frontend Engineer",
+        "dateRange": "2022 - 2023",
+        "description": "Direction du développement front-end pour applications DeFi.",
+        "highlights": [
+          "Lancement d'une SPA avec liquidité de $20M+ et intégration SDK.",
+          "Réduction du temps d'intégration de 50% et standardisation des design systems.",
+          "Construction d'un site marketing ayant attiré 10k+ visiteurs uniques en 3 mois."
+        ]
+      },
+      "exp5": {
+        "company": "Linum Labs",
+        "position": "Lead Frontend Engineer",
+        "dateRange": "2021 - 2022",
+        "description": "Direction du développement d'applications Web3 et crypto.",
+        "highlights": [
+          "Supervision de 10 projets d'applications Web3 et crypto.",
+          "Mentorat de 4 développeurs front-end au sein d'une équipe de 15 personnes.",
+          "Amélioration de la scalabilité et des performances UI sur plusieurs DApps."
+        ]
+      },
+      "exp6": {
+        "company": "Omnia DeFi",
+        "position": "Lead Software Engineer, Web3",
+        "dateRange": "2021",
+        "description": "Construction d'infrastructures DeFi et intégrations de smart contracts.",
+        "highlights": [
+          "Programmation de systèmes de vesting, farming et récompenses connectés aux contrats DeFi.",
+          "Contribution aux tableaux de bord DApp avec React, Next.js et Node.js."
+        ]
+      },
+      "exp7": {
+        "company": "HCLTech",
+        "position": "Lead Software Engineer",
+        "dateRange": "2014 - 2015",
+        "description": "Livraison de solutions logicielles d'entreprise.",
+        "highlights": [
+          "Livraison de logiciels Web2 à fort impact pour clients d'entreprise à La Haye, NL.",
+          "Focus sur le refactoring des performances et les transitions cloud."
+        ]
+      },
+      "exp8": {
+        "company": "Elsevier",
+        "position": "Software Engineer",
+        "dateRange": "2013 - 2014",
+        "description": "Construction de plateformes de données scientifiques.",
+        "highlights": [
+          "Contribution à Reaxys 2 Web App intégrant données chimiques et médicales.",
+          "Travail avec Angular et optimisation cross-platform pour applications de recherche."
+        ]
+      },
+      "exp9": {
+        "company": "AdForum",
+        "position": "Software Engineer",
+        "dateRange": "2012 - 2013",
+        "description": "Construction de marketplace pour l'industrie publicitaire.",
+        "highlights": [
+          "Aide à la construction d'un des marketplaces publicitaires les plus visités d'Europe (~3M utilisateurs/mois).",
+          "Livraison de codebases multilingues et optimisées SEO dans des équipes internationales."
+        ]
+      }
+    },
+    "projects": {
+      "proj1": {
+        "name": "Ajna Labs — DeFi DApp + SDK",
+        "description": "DeFi DApp + SDK (liquidité $20M)"
+      },
+      "proj2": {
+        "name": "Mode Network",
+        "description": "Refactoring React à grande échelle"
+      },
+      "proj3": {
+        "name": "CyberGrandpa Anti-Fraud",
+        "description": "Extension navigateur pour prévention du phishing"
+      },
+      "proj4": {
+        "name": "Tetris with Crypto Rewards",
+        "description": "Mini app Telegram avec prix en tokens TON"
+      },
+      "proj5": {
+        "name": "LinkedIn Full Width",
+        "description": "Extension Chrome d'amélioration UI"
+      }
+    },
+    "skills": {
+      "categories": {
+        "frontend": "Frontend",
+        "backend": "Backend",
+        "devopsCloud": "DevOps & Cloud",
+        "web3AI": "Web3 & IA",
+        "toolsTesting": "Outils & Tests"
+      }
+    },
+    "education": {
+      "edu1": {
+        "institution": "Athena Institute",
+        "degree": "Diplôme Supérieur, Comptabilité et Business",
+        "location": "Foggia, Italie",
+        "dateRange": "2010 - 2012"
+      }
+    },
+    "certifications": {
+      "cert1": {
+        "name": "AWS Cloud Practitioner",
+        "issuer": "Coursera",
+        "dateIssued": "2023"
+      },
+      "cert2": {
+        "name": "Construire une App IA JavaScript avec l'API OpenAI",
+        "issuer": "LinkedIn Learning",
+        "dateIssued": "2024"
+      },
+      "cert3": {
+        "name": "Gestion Pratique de Projets GitHub & Collaboration",
+        "issuer": "LinkedIn Learning",
+        "dateIssued": "2023"
+      }
+    },
+    "achievements": {
+      "ach1": {
+        "title": "Lancé des apps DeFi atteignant 5M+ utilisateurs mensuels",
+        "description": "Direction du développement de plateformes et applications largement utilisées."
+      },
+      "ach2": {
+        "title": "Refactorisé une SPA legacy économisant ~€50.000 en maintenance",
+        "description": "Amélioration de l'efficacité du code et réduction de la dette technique chez iControlApp."
+      },
+      "ach3": {
+        "title": "Amélioré la qualité du code de 40%, réduit les bugs de 25%",
+        "description": "Mise en place de meilleurs workflows et standards de code."
+      },
+      "ach4": {
+        "title": "Mentorat de 5+ développeurs ayant progressé vers de nouvelles positions",
+        "description": "Fourniture de mentorat et guidance de carrière aux développeurs juniors."
+      },
+      "ach5": {
+        "title": "Créé des guides de design & style pour tout l'écosystème",
+        "description": "Création de standards de développement pour meilleure qualité et cohérence du code."
+      },
+      "ach6": {
+        "title": "Livré des extensions open-source axées sur la cybersécurité",
+        "description": "Construction d'outils pour protéger les utilisateurs du phishing et de la fraude."
+      }
+    }
   }
 }
