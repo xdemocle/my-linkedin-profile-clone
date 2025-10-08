@@ -112,6 +112,35 @@ src/
 
 ## Recent Updates (2025-10-08)
 
+### Latest Resume Data Integration ✅
+
+**Implemented from `plan-to-import.md`:**
+
+- [x] **Updated Profile Data** (`src/data/profile-data.ts`)
+  - Added `phone` field to personal info
+  - Updated about section with latest resume summary
+  - Refined all 9 work experience entries with:
+    - More precise date ranges (e.g., "10/2024 - Present")
+    - Added `type` and `location` fields where applicable
+    - Updated highlights to match 2025 resume
+  - Updated all 6 achievements with latest wording
+
+- [x] **Updated TypeScript Types** (`src/types/profile.ts`)
+  - Added `phone?: string` to PersonalInfo interface
+  - Added `type?: string` and `location?: string` to Experience interface
+
+- [x] **Updated English Translations** (`src/messages/en.json`)
+  - Updated ProfileData.personal with new about text
+  - Updated all experience entries with new date ranges and highlights
+  - Updated all achievements with refined titles
+
+- [x] **useProfileData Hook Integration**
+  - `ProjectsSection.tsx` now uses useProfileData
+  - `useSkillsData.ts` now uses useProfileData
+  - All components properly consume translations
+
+**Note:** Other language translations (IT, FR, ES, AR) still have the previous data. Update them next if needed for consistency.
+
 ### Profile Data Translation Implementation
 
 - [x] **ProfileData Section Added to All Languages**

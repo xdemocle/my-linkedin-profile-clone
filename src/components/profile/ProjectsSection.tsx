@@ -8,7 +8,7 @@ import { useLocale } from '../../hooks/useLocale';
 import { getPageUrlFromPath } from '../../lib/i18n';
 import { scrollToTop } from '../../utils/scrollUtils';
 import { ProjectIconWrapper } from '../../utils/iconComponents';
-import profileData from '../../data/profile-data';
+import { useProfileData } from '../../hooks/useProfileData';
 
 interface Project {
   id: string;
@@ -27,6 +27,7 @@ export function ProjectsSection() {
   const t = useTranslations('Projects');
   const [, setLocation] = useLocation();
   const { locale } = useLocale();
+  const profileData = useProfileData();
 
   // Navigate to projects page with scroll restoration
   const handleNavigateToProjects = () => {

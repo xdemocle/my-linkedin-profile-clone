@@ -1,5 +1,5 @@
 import { useMemo } from 'react';
-import { profileData } from '../data/profile-data';
+import { useProfileData } from './useProfileData';
 
 interface SkillsResult {
   skills: {
@@ -21,15 +21,12 @@ interface SkillsResult {
 
 /**
  * Hook for accessing skills data with appropriate localization.
- * This pattern allows easier migration to a headless CMS in the future.
+ * Now uses useProfileData for multilingual support.
  */
 export function useSkillsData(): SkillsResult {
-  // Will need locale when implementing CMS integration
-  // const { locale } = useLocale();
+  const profileData = useProfileData();
 
   return useMemo(() => {
-    // In the future, this would fetch from a CMS based on locale
-
     // Transform skills from profileData to topSkills format
     const topSkillsByCategory = profileData.skills.map(category => {
       return category.items
@@ -50,5 +47,5 @@ export function useSkillsData(): SkillsResult {
       skills: profileData.skills,
       topSkills: topSkillsByCategory,
     };
-  }, []); // Empty dependency array since we're not using locale yet
+  }, [profileData.skills]);
 }
