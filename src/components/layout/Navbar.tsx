@@ -51,7 +51,7 @@ export function Navbar() {
             </LinkTranslated>
           </Button>
 
-          <Button variant="ghost" size="icon" className="size-10 sm:size-9" aria-label="Projects" asChild>
+          <Button variant="ghost" size="icon" className="size-10 sm:size-9" aria-label="Skills" asChild>
             <LinkTranslated href="/skills">
               <FileTextIcon className="size-5.5" />
             </LinkTranslated>
