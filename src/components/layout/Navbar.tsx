@@ -1,28 +1,17 @@
 import { BackpackIcon, FileTextIcon, HomeIcon, MagnifyingGlassIcon } from '@radix-ui/react-icons';
 import { Separator } from '@radix-ui/react-separator';
 import { useTranslations } from 'use-intl';
-import { useLocation } from 'wouter';
-import { useLocale } from '../../hooks/useLocale';
 import { useProfileData } from '../../hooks/useProfileData';
-import { getPageUrlFromPath } from '../../lib/i18n';
-import { scrollToTop } from '../../utils/scrollUtils';
 import { Avatar, AvatarFallback, AvatarImage } from '../ui/avatar';
 import { Button } from '../ui/button';
 import { LanguageSwitcher } from '../ui/language-switcher';
+import { LinkTranslated } from '../ui/link-translated';
 import { ScrollProgress } from '../ui/scroll-progress';
 import { ThemeToggle } from '../ui/theme-toggle';
 
 export function Navbar() {
-  const { locale } = useLocale();
   const t = useTranslations('Navigation');
   const { personal } = useProfileData();
-  const [, setLocation] = useLocation();
-
-  // Custom navigation handler that scrolls to top and includes locale prefix
-  const handleNavigation = (path: string) => {
-    setLocation(getPageUrlFromPath(locale, path));
-    scrollToTop(true);
-  };
 
   return (
     <header className="border-b bg-card/95 backdrop-blur-sm fixed top-0 left-0 right-0 z-50 shadow-xs">
@@ -44,34 +33,22 @@ export function Navbar() {
 
         {/* Navigation */}
         <nav className="ml-auto flex items-center gap-0.5 sm:gap-1">
-          <Button
-            variant="ghost"
-            size="icon"
-            className="size-10 sm:size-9"
-            onClick={() => handleNavigation('/')}
-            aria-label={t('home')}
-          >
-            <HomeIcon className="size-5.5" />
+          <Button variant="ghost" size="icon" className="size-10 sm:size-9" aria-label={t('home')} asChild>
+            <LinkTranslated href="/">
+              <HomeIcon className="size-5.5" />
+            </LinkTranslated>
           </Button>
 
-          <Button
-            variant="ghost"
-            size="icon"
-            className="size-10 sm:size-9"
-            onClick={() => handleNavigation('/experience')}
-            aria-label="Experience"
-          >
-            <BackpackIcon className="size-5.5" />
+          <Button variant="ghost" size="icon" className="size-10 sm:size-9" aria-label="Experience" asChild>
+            <LinkTranslated href="/experience">
+              <BackpackIcon className="size-5.5" />
+            </LinkTranslated>
           </Button>
 
-          <Button
-            variant="ghost"
-            size="icon"
-            className="size-10 sm:size-9"
-            onClick={() => handleNavigation('/projects')}
-            aria-label="Projects"
-          >
-            <FileTextIcon className="size-5.5" />
+          <Button variant="ghost" size="icon" className="size-10 sm:size-9" aria-label="Projects" asChild>
+            <LinkTranslated href="/projects">
+              <FileTextIcon className="size-5.5" />
+            </LinkTranslated>
           </Button>
 
           <Separator orientation="vertical" className="block w-[1px] h-4 bg-foreground" />
