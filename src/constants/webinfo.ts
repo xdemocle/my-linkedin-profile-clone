@@ -1,3 +1,5 @@
+export const WEBSITE_URL = 'https://rocco.me';
+
 export const LINKEDIN_PROFILE_URL = 'https://www.linkedin.com/in/roccorusso';
 
 export const SUBSTACK_PROFILE_URL = 'https://xdemocle.substack.com';

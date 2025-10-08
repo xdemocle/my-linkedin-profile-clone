@@ -1,7 +1,5 @@
 import { CheckIcon, CopyIcon, LinkedInLogoIcon, Share1Icon, TwitterLogoIcon } from '@radix-ui/react-icons';
 import { useState } from 'react';
-import { useTranslations } from 'use-intl';
-import { Button } from './ui/button';
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -12,20 +10,12 @@ import {
 // Using simple console.log instead of toast for now
 
 interface ShareProfileProps {
-  profileUrl?: string;
+  profileUrl: string;
   profileName?: string;
-  className?: string;
+  children: React.ReactNode;
 }
 
-export function ShareProfile({ profileUrl, profileName = "Rocco Russo's Profile", className }: ShareProfileProps) {
-  // Note: profileName default is kept for backward compatibility, but should use translation in parent component
-  if (!profileUrl && typeof window !== 'undefined') {
-    profileUrl = window.location.href;
-  } else {
-    profileUrl = 'https://rocco.me';
-  }
-
-  const t = useTranslations('Common');
+export function ShareProfile({ profileUrl, profileName = "Rocco Russo's Profile", children }: ShareProfileProps) {
   const [copied, setCopied] = useState(false);
 
   const shareText = `Check out ${profileName} - Full-stack Engineer specializing in frontend architecture and blockchain integrations`;
@@ -70,12 +60,7 @@ export function ShareProfile({ profileUrl, profileName = "Rocco Russo's Profile"
 
   return (
     <DropdownMenu>
-      <DropdownMenuTrigger asChild>
-        <Button variant="outline" size="sm" className={className}>
-          <Share1Icon className="h-4 w-4 mr-2" />
-          {t('share')}
-        </Button>
-      </DropdownMenuTrigger>
+      <DropdownMenuTrigger asChild>{children}</DropdownMenuTrigger>
       <DropdownMenuContent align="end" className="w-48">
         <DropdownMenuItem onClick={handleCopyLink}>
           {copied ? <CheckIcon className="h-4 w-4 mr-2 text-green-600" /> : <CopyIcon className="h-4 w-4 mr-2" />}

@@ -1,3 +1,4 @@
+import { WEBSITE_URL } from '@/constants/webinfo';
 import { cn } from '@/lib/utils';
 import { ExternalLinkIcon } from '@radix-ui/react-icons';
 import { useTranslations } from 'use-intl';
@@ -9,6 +10,7 @@ import { Button } from '../ui/button';
 
 export function ProfileHeader() {
   const t = useTranslations('ProfileHeader');
+  const tCommon = useTranslations('Common');
   const profileData = useProfileData();
   const { personal } = profileData;
 
@@ -92,7 +94,11 @@ export function ProfileHeader() {
               {t('resources')}
             </Button>
 
-            <ShareProfile className="rounded-full" />
+            <ShareProfile profileUrl={WEBSITE_URL} profileName="Rocco Russo's Profile">
+              <Button variant="outline" className="rounded-full px-4">
+                {tCommon('share')}
+              </Button>
+            </ShareProfile>
           </div>
         </div>
       </div>
