@@ -2,10 +2,10 @@ import { BackpackIcon, FileTextIcon, HomeIcon, MagnifyingGlassIcon } from '@radi
 import { Separator } from '@radix-ui/react-separator';
 import { useTranslations } from 'use-intl';
 import { useProfileData } from '../../hooks/useProfileData';
+import { LinkTranslated } from '../link-translated';
 import { Avatar, AvatarFallback, AvatarImage } from '../ui/avatar';
 import { Button } from '../ui/button';
 import { LanguageSwitcher } from '../ui/language-switcher';
-import { LinkTranslated } from '../ui/link-translated';
 import { ScrollProgress } from '../ui/scroll-progress';
 import { ThemeToggle } from '../ui/theme-toggle';
 
@@ -47,6 +47,18 @@ export function Navbar() {
 
           <Button variant="ghost" size="icon" className="size-10 sm:size-9" aria-label="Projects" asChild>
             <LinkTranslated href="/projects">
+              <FileTextIcon className="size-5.5" />
+            </LinkTranslated>
+          </Button>
+
+          <Button variant="ghost" size="icon" className="size-10 sm:size-9" aria-label="Projects" asChild>
+            <LinkTranslated href="/skills">
+              <FileTextIcon className="size-5.5" />
+            </LinkTranslated>
+          </Button>
+
+          <Button variant="ghost" size="icon" className="size-10 sm:size-9" aria-label="Projects" asChild>
+            <LinkTranslated href="/recommendations">
               <FileTextIcon className="size-5.5" />
             </LinkTranslated>
           </Button>
