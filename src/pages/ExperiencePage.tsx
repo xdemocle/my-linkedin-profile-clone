@@ -1,3 +1,5 @@
+import { SEO } from '@/components/SEO';
+import { StructuredData } from '@/components/StructuredData';
 import { useProfileData } from '@/hooks';
 import { ArrowLeftIcon } from '@radix-ui/react-icons';
 import { useTranslations } from 'use-intl';
@@ -36,6 +38,14 @@ export function ExperiencePage() {
 
   return (
     <PageLayout addToSidebar={<ExperienceKeyAchievements />}>
+      <SEO title={`${personal.name} | ${t('title')}`} description={t('description')} path="/experience" />
+      <StructuredData
+        type="breadcrumb"
+        breadcrumbs={[
+          { name: 'Home', url: '/' },
+          { name: t('title'), url: '/experience' },
+        ]}
+      />
       <Card className="shadow-xs">
         {/* Header */}
         <CardHeader className="flex items-center justify-start">

@@ -1,4 +1,6 @@
 import { PageLayout } from '@/components/layout/PageLayout';
+import { SEO } from '@/components/SEO';
+import { StructuredData } from '@/components/StructuredData';
 import { Progress } from '@/components/ui/progress';
 import { useProfileData } from '@/hooks';
 import { ArrowLeftIcon } from '@radix-ui/react-icons';
@@ -13,6 +15,18 @@ export function SkillsPage() {
 
   return (
     <PageLayout>
+      <SEO
+        title={`${personal.name} | ${t('title')}`}
+        description="Comprehensive overview of technical skills including React, TypeScript, blockchain development, and more."
+        path="/skills"
+      />
+      <StructuredData
+        type="breadcrumb"
+        breadcrumbs={[
+          { name: 'Home', url: '/' },
+          { name: t('title'), url: '/skills' },
+        ]}
+      />
       {/* Header */}
       <CardHeader className="mt-8 flex items-center justify-start flex-col text-center sm:flex-row sm:text-left">
         <Button variant="outline" size="icon" asChild>

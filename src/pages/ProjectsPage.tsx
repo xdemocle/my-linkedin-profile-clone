@@ -1,5 +1,7 @@
 import { PageLayout } from '@/components/layout/PageLayout';
 import { LinkTranslated } from '@/components/LinkTranslated';
+import { SEO } from '@/components/SEO';
+import { StructuredData } from '@/components/StructuredData';
 import { useProfileData } from '@/hooks';
 import { ArrowLeftIcon, ExternalLinkIcon, GitHubLogoIcon } from '@radix-ui/react-icons';
 import { useTranslations } from 'use-intl';
@@ -29,6 +31,9 @@ interface Project {
 export function ProjectsPage() {
   const t = useTranslations('Projects');
   const { personal } = useProfileData();
+
+  const seoDescription =
+    'Explore my portfolio of projects including DeFi protocols, blockchain applications, and full-stack web development work.';
 
   const projects: Project[] = [
     {
@@ -162,6 +167,14 @@ export function ProjectsPage() {
 
   return (
     <PageLayout noSidebar>
+      <SEO title={`${personal.name} | ${t('title')}`} description={seoDescription} path="/projects" />
+      <StructuredData
+        type="breadcrumb"
+        breadcrumbs={[
+          { name: 'Home', url: '/' },
+          { name: t('title'), url: '/projects' },
+        ]}
+      />
       {/* Header */}
       <CardHeader className="mt-8 flex items-center justify-start flex-col text-center sm:flex-row sm:text-left">
         <Button variant="outline" size="icon" asChild>

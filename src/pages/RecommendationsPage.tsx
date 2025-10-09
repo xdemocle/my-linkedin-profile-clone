@@ -1,4 +1,6 @@
 import { PageLayout } from '@/components/layout/PageLayout';
+import { SEO } from '@/components/SEO';
+import { StructuredData } from '@/components/StructuredData';
 import { useProfileData } from '@/hooks';
 import { ArrowLeftIcon } from '@radix-ui/react-icons';
 import { useTranslations } from 'use-intl';
@@ -31,6 +33,18 @@ export function RecommendationsPage() {
 
   return (
     <PageLayout>
+      <SEO
+        title={`${personal.name} | ${t('title')}`}
+        description="Professional recommendations and testimonials from colleagues and clients."
+        path="/recommendations"
+      />
+      <StructuredData
+        type="breadcrumb"
+        breadcrumbs={[
+          { name: 'Home', url: '/' },
+          { name: t('title'), url: '/recommendations' },
+        ]}
+      />
       {/* Recommendations List */}
       <Card className="shadow-xs">
         {/* Header */}
