@@ -30,7 +30,7 @@ export function ProfileLanguages() {
           {profileLanguages.map((lang, index) => (
             <div key={index} className="flex justify-between items-center">
               <span className="font-medium text-sm">{t(lang.nameKey)}</span>
-              <Badge variant="secondary" className="text-xs">
+              <Badge variant="outline" className="text-xs">
                 {t(lang.levelKey)}
               </Badge>
             </div>

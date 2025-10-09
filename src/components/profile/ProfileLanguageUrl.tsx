@@ -77,7 +77,7 @@ export function ProfileLanguageUrl() {
               <p className="text-sm text-muted-foreground break-all flex-1">{profileUrl}</p>
               <div className="flex gap-1">
                 <Button variant="ghost" size="sm" onClick={copyToClipboard} aria-label={t('copyUrl')}>
-                  <ClipboardCopyIcon className="size-5!" />
+                  <ClipboardCopyIcon className="size-5! text-primary" />
                 </Button>
               </div>
             </div>
