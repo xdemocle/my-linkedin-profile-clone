@@ -9,18 +9,18 @@ import { Card, CardContent, CardHeader } from '../components/ui/card';
 import { Separator } from '../components/ui/separator';
 
 const recommendationKeys = [
-  'yehudaBortz',
-  'alessandroMucciante',
-  'theoRichard',
-  'antonFagerberg',
-  'patrickBokhove',
-  'balasubramaniPalanisamy',
-  'karlijnMoll',
-  'tobiasCudnik',
-  'luisGomez',
-  'tomMissaar',
-  'fabrizioSabato',
-  'bartoszPacholek',
+  'hiroshiTanaka',
+  'sofiaAndersson',
+  'mateoFernandez',
+  'larsNielsen',
+  'emmaVanDerBerg',
+  'rajeshKumar',
+  'ingridSchmidt',
+  'lukasNovak',
+  'carlosMendoza',
+  'pierreDubois',
+  'marcoRossi',
+  'jakubKowalski',
 ];
 
 export function RecommendationsPage() {

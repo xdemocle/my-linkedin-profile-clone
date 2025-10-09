@@ -409,87 +409,87 @@
       }
     },
     "recommendations": {
-      "yehudaBortz": {
-        "name": "Yehuda Bortz",
+      "hiroshiTanaka": {
+        "name": "Hiroshi Tanaka",
         "title": "Senior Software Engineer at Guideline",
-        "relationship": "Yehuda reported directly to Rocco",
+        "relationship": "Hiroshi reported directly to Rocco",
         "date": "September 1, 2023",
         "content": "In my experience working with Rocco, I've been consistently impressed by his unique blend of professionalism and warmth. He effortlessly cultivates a collaborative atmosphere that is both light-hearted and focused. Rocco's knowledge in software engineering is expansive, but what truly sets him apart is his approachability. Despite his expertise, he never comes off as intimidating. Instead, he's always eager to share, guide, and support. It's truly a privilege to work alongside someone with such a rare combination of qualities."
       },
-      "alessandroMucciante": {
-        "name": "Alessandro Mucciante",
+      "sofiaAndersson": {
+        "name": "Sofia Andersson",
         "title": "Archeologo I fascia (DM 244/2019)",
-        "relationship": "Alessandro was Rocco's client",
+        "relationship": "Sofia was Rocco's client",
         "date": "January 27, 2023",
         "content": "Rocco is the future"
       },
-      "theoRichard": {
-        "name": "Théo Richard",
+      "mateoFernandez": {
+        "name": "Mateo Fernández",
         "title": "Senior Solidity Engineer",
-        "relationship": "Théo managed Rocco directly",
+        "relationship": "Mateo managed Rocco directly",
         "date": "December 16, 2022",
         "content": "Rocco is a great frontend developer who make any designs become real for end users. He is proficient: always ask questions to understand tiny details that will make the difference for a great product, propose better solutions & technologies. The code is always clean, organised and well refactored. On top of that, Rocco is always available when needed and is very friendly and always supports others"
       },
-      "antonFagerberg": {
-        "name": "Anton Fagerberg",
+      "larsNielsen": {
+        "name": "Lars Nielsen",
         "title": "Product-first software CEO, building next-gen enterprise software for commerce",
-        "relationship": "Anton managed Rocco directly",
+        "relationship": "Lars managed Rocco directly",
         "date": "June 5, 2020",
         "content": "Rocco is the type of person you want on your team, highly skilled and without any fear of diving in on the deep end of the pool. He rearchitected our web plattform from the ground up in a matter of months, something that was considered impossible by several people prior to Rocco. In addition to his technical prowess, he's an affable person that quickly built a personal bond to our team, with his humor and great attitude. I can't recommend Rocco enough!"
       },
-      "patrickBokhove": {
-        "name": "Patrick Bokhove",
+      "emmaVanDerBerg": {
+        "name": "Emma van der Berg",
         "title": "Full stack developer",
-        "relationship": "Patrick worked with Rocco on the same team",
+        "relationship": "Emma worked with Rocco on the same team",
         "date": "August 8, 2015",
         "content": "When the company ran out of people to do a Angular + Gulp project and asked me if I knew someone that could help out, I knew Rocco was the guy that would save the day. Rocco managed to achieve amazing results within a very limited timeframe, and even when put under a lot of stress, he maintained his eye for detail and never lost focus."
       },
-      "balasubramaniPalanisamy": {
-        "name": "Balasubramani Palanisamy",
+      "rajeshKumar": {
+        "name": "Rajesh Kumar",
         "title": "Technical Architect at HCL Technologies",
-        "relationship": "Balasubramani worked with Rocco on the same team",
+        "relationship": "Rajesh worked with Rocco on the same team",
         "date": "July 29, 2015",
         "content": "Rocco is an excellent Front End Developer with lots of knowledge in Front End Technologies. He knows lot of tools which supports the development lot more easier and faster. Whatever the tool Rocco is using he will follow the standards always. He is a good team member and always dedicated to work which i noticed when working on the same project. He will finish his tasks by working extra hours."
       },
-      "karlijnMoll": {
-        "name": "Karlijn Moll",
+      "ingridSchmidt": {
+        "name": "Ingrid Schmidt",
         "title": "senior product owner",
-        "relationship": "Karlijn worked with Rocco on the same team",
+        "relationship": "Ingrid worked with Rocco on the same team",
         "date": "July 26, 2015",
         "content": "Rocco is a great senior front end developer. In my team he did the set up of the framework for the Drupal theme for the new website. He will do his utter best to finish the job with the best result. Rocco is a devoted employee and a great guy to work with. I love his hard work and happy energy. As a product owner it is great to work with Rocco because you know he will get the job done."
       },
-      "tobiasCudnik": {
-        "name": "Tobias Cudnik",
+      "lukasNovak": {
+        "name": "Lukas Novak",
         "title": "Fullstack Go/TS/LLM",
-        "relationship": "Tobias worked with Rocco on the same team",
+        "relationship": "Lukas worked with Rocco on the same team",
         "date": "July 22, 2015",
         "content": "We've spend some fun time with Rocco while working on a CoffeeScript and Backbone based Phonegap app. He pursues clean code and separation of concerns in his frontend work, which is decorated by expressive comments. He always tries to be up to date with latest frameworks."
       },
-      "luisGomez": {
-        "name": "Luis A. Gomez",
+      "carlosMendoza": {
+        "name": "Carlos Mendoza",
         "title": "Staff Security Engineer at Bird",
-        "relationship": "Luis A. worked with Rocco on the same team",
+        "relationship": "Carlos worked with Rocco on the same team",
         "date": "June 15, 2015",
         "content": "Rocco is a very attentive to detail person. He makes sure that everything works according to specs and prepares for it. He also is the perfect colleague to work along side with. He always tries to help others when he can, and makes sure you have received all the information that was needed."
       },
-      "tomMissaar": {
-        "name": "Tom Missaar",
+      "pierreDubois": {
+        "name": "Pierre Dubois",
         "title": "Information / DevOps Engineer",
-        "relationship": "Tom worked with Rocco on the same team",
+        "relationship": "Pierre worked with Rocco on the same team",
         "date": "June 2, 2015",
         "content": "Rocco has a highly professional standard concerning front-end development and automated development tools. It is a pleasure and great fun to work with Rocco. He is honest, speaks his mind, can be stubborn at times but manages to make everyone smile. Rocco set a very clear path for himself, \"to learn, keep improving and put his skills into practice\". I learned a lot from Rocco. His contributions to the teams are of high quality and created a sustainable platform for front-end development. I hope to work with Rocco again someday and meet more people like him."
       },
-      "fabrizioSabato": {
-        "name": "Fabrizio Sabato",
+      "marcoRossi": {
+        "name": "Marco Rossi",
         "title": "PHP Symfony/Drupal Back-end Developer @European Commission DIGIT",
-        "relationship": "Fabrizio worked with Rocco but on different teams",
+        "relationship": "Marco worked with Rocco but on different teams",
         "date": "March 30, 2015",
         "content": "Rocco is an high motivated and qualified IT Consultant. He has a strong attitude to day by day challenges and he pay attention to perform high quality final results saving as much time as possible. That's why he's constantly upgrading himself to the newest technologies, mainly Front-end, to obtain the maximum results in terms of time-quality. He is also a nice guy and it was a pleasure to work beside him both professionally and personally."
       },
-      "bartoszPacholek": {
-        "name": "Bartosz Pachołek",
+      "jakubKowalski": {
+        "name": "Jakub Kowalski",
         "title": "Head of development at Praetorian Technology",
-        "relationship": "Bartosz worked with Rocco on the same team",
+        "relationship": "Jakub worked with Rocco on the same team",
         "date": "November 8, 2013",
         "content": "It has been a real pleasure to work with Rocco on projects in Youwin. He has got great knowledge in every area of web development: starting with configuration of development and running environments, web servers and caching systems going through backend dev ending with vast JavaScript, HTML, HTML5 and CSS skills to deliver frontend. Rocco is a person who can be alone given great tasks as he can handle the whole process by himself, yet in the same time with his open mind and potential to share and acquire knowledge is a great team player who likes to consult opinions in order to deliver the best quality products. Rational and agile oriented can work in an environment running on any pace. Great mind, great friend, social person with all the skills which a web dev company may ever need. Rocco is the best choice for a fantastic team of bright developers as with him you can go beyond standards."
       }

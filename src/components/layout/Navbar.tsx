@@ -21,8 +21,6 @@ export function Navbar() {
 
   return (
     <header className="border-b bg-card/95 backdrop-blur-sm fixed top-0 left-0 right-0 z-50 shadow-xs">
-      {/* Scroll progress indicator */}
-      <ScrollProgress color="var(--ring)" height={2} className="z-1" />
       <div className="max-w-7xl mx-auto px-2 sm:px-4 flex items-center z-0 my-1.5 md:my-0">
         {/* Logo */}
         <LinkTranslated href="/">
@@ -72,6 +70,9 @@ export function Navbar() {
           </div>
         </nav>
       </div>
+
+      {/* Scroll progress indicator */}
+      <ScrollProgress color="var(--ring)" height={2} className="z-1" />
     </header>
   );
 }
