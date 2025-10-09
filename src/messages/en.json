@@ -245,8 +245,8 @@
     "conversational": "Conversational",
     "elementary": "Elementary proficiency",
     "limitedWorking": "Limited working proficiency",
-    "nativeOrBilingual": "Native or bilingual proficiency",
-    "fullProfessional": "Full professional proficiency",
+    "nativeOrBilingual": "Native proficiency",
+    "fullProfessional": "Professional proficiency",
     "showAllLanguages": "Show all languages"
   },
   "Interests": {
