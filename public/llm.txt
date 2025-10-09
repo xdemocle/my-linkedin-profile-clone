@@ -1,9 +1,11 @@
 # LinkedIn Profile Clone - LLM Context
 
 ## Project Overview
+
 A modern, open-source LinkedIn profile clone built with React, TypeScript, and TailwindCSS v4. This project demonstrates advanced web development techniques including internationalization, static site generation, and edge routing.
 
 ## Technology Stack
+
 - **Frontend**: React 18, TypeScript, TailwindCSS v4
 - **UI Components**: shadcn/ui
 - **Routing**: Wouter (lightweight)
@@ -14,6 +16,7 @@ A modern, open-source LinkedIn profile clone built with React, TypeScript, and T
 - **Prerendering**: vite-prerender-plugin
 
 ## Supported Languages
+
 - English (en) - Default locale (no prefix in URL)
 - Italian (it)
 - French (fr)
@@ -23,6 +26,7 @@ A modern, open-source LinkedIn profile clone built with React, TypeScript, and T
 ## Routing Architecture
 
 ### URL Structure
+
 ```
 /                    -> English profile page (default)
 /it/, /fr/, /es/, /ar/ -> Localized profile pages
@@ -33,6 +37,7 @@ A modern, open-source LinkedIn profile clone built with React, TypeScript, and T
 ```
 
 ### Routing Rules
+
 1. Default language (English) has no prefix
 2. `/en/*` redirects to `/*` (removes default locale prefix)
 3. Other languages require `/{locale}/` prefix
@@ -41,6 +46,7 @@ A modern, open-source LinkedIn profile clone built with React, TypeScript, and T
 ## Data Architecture
 
 ### Data Hooks Pattern
+
 All data is accessed through custom hooks located in `src/hooks/`:
 - `useProfileData()` - Personal and profile information
 - `useEducationData()` - Education history and certifications
@@ -54,6 +60,7 @@ All data is accessed through custom hooks located in `src/hooks/`:
 ## Key Directories
 
 ### `/src/components/`
+
 - `profile/` - Profile-specific components (Header, About, Experience, etc.)
 - `layout/` - Layout components (Header, Footer, PageLayout)
 - `ui/` - shadcn/ui components (Button, Card, Avatar, etc.)
@@ -61,34 +68,42 @@ All data is accessed through custom hooks located in `src/hooks/`:
 - `messaging/` - Messaging components
 
 ### `/src/data/`
+
 Static data files (will be replaced by CMS API in future):
+
 - `profile-data.ts` - Main profile information
 - `education.ts` - Education and certifications
 - `companies.ts` - Company details
 - `achievements.ts` - Professional achievements
 
 ### `/src/hooks/`
+
 Custom React hooks for data access and utilities
 
 ### `/src/lib/`
+
 - `i18n.ts` - Internationalization utilities
 - `utils.ts` - Common utility functions
 
 ### `/src/pages/`
+
 Page components for different routes
 
 ### `/src/messages/`
+
 i18n translation files (en.json, it.json, fr.json, es.json, ar.json)
 
 ## Styling Guidelines
 
 ### TailwindCSS v4 Rules
+
 - **NEVER** use inline styles or `style` attribute
 - Always use TailwindCSS utility classes
 - Follow latest v4 guidelines
 - Use CSS variables for theming
 
 ### Theme System
+
 - Light/Dark mode support via `ThemeProvider`
 - System preference detection
 - Manual toggle available
@@ -97,13 +112,16 @@ i18n translation files (en.json, it.json, fr.json, es.json, ar.json)
 ## Internationalization
 
 ### Translation Keys
+
 All text uses translation keys via `useTranslations()` from `use-intl`:
+
 ```tsx
 const t = useTranslations('ComponentName');
 <h1>{t('title')}</h1>
 ```
 
 ### Adding New Languages
+
 1. Create message file in `src/messages/{locale}.json`
 2. Add locale to `LOCALES` in `src/constants/i18n.ts`
 3. Update `LOCALE_CONFIGS` with direction and name
@@ -112,6 +130,7 @@ const t = useTranslations('ComponentName');
 ## Build Process
 
 ### Static Generation
+
 1. Vite builds the application
 2. vite-prerender-plugin generates HTML for all routes
 3. Each language gets its own directory with `index.html`
@@ -119,6 +138,7 @@ const t = useTranslations('ComponentName');
 5. Cloudflare configuration files are copied
 
 ### Cloudflare Pages Files
+
 - `_redirects` - URL redirect rules
 - `_headers` - HTTP header configuration
 - `_routes.json` - Cloudflare Pages routing config
@@ -127,12 +147,15 @@ const t = useTranslations('ComponentName');
 ## Testing
 
 ### Test Structure
+
 Located in `src/__tests__/`:
+
 - Component tests
 - Hook tests
 - Library utility tests
 
 ### Running Tests
+
 ```bash
 bun run test          # Run all tests
 bun run test:ui       # Run with UI
@@ -153,21 +176,25 @@ bun run lint          # Lint code
 ## Component Guidelines
 
 ### ProfileHeader
+
 - Shows user avatar, name, title, location
 - Displays follower/connection counts
 - Contains action buttons (Open to Work, Resources, Share)
 
 ### ProfileMainContent
+
 - Main container for profile sections
 - Includes About, Experience, Education, Skills, etc.
 - Must always contain ProfileHeader (per user preferences)
 
 ### Activity Section
+
 - **IMPORTANT**: Do NOT include ActivitySection in profile (per user preferences)
 
 ## Deployment
 
 ### Cloudflare Pages
+
 1. Connected to GitHub repository
 2. Auto-deploys on push to main branch
 3. Build command: `bun run build`
@@ -175,7 +202,9 @@ bun run lint          # Lint code
 5. Edge functions handle language routing
 
 ### Edge Routing
+
 The `_worker.js` file handles:
+
 - Language-specific index.html serving
 - Redirect logic for `/en/*` paths
 - Content-Language header injection
@@ -184,13 +213,16 @@ The `_worker.js` file handles:
 ## Future Enhancements
 
 ### Headless CMS Integration (Planned)
+
 When integrating a CMS:
+
 1. Update data hooks in `src/hooks/`
 2. Add CMS API client
 3. Fetch data based on locale
 4. Maintain same TypeScript interfaces
 
 ### Performance
+
 - Code splitting (currently warns about chunk size)
 - Image optimization
 - Font optimization
@@ -205,6 +237,7 @@ When integrating a CMS:
 5. **Component library**: Use shadcn/ui components, don't reinvent
 
 ## Contact & Links
+
 - Repository: https://github.com/xdemocle/my-linkedin-profile-clone
-- Live Demo: https://my-linkedin-profile-clone.pages.dev/
+- Live Demo: https://linkedin-roccorusso.work/
 - License: MIT
