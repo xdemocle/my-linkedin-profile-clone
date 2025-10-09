@@ -13,17 +13,19 @@ export function SkillsPage() {
 
   return (
     <PageLayout>
-      {/* Header */}
-      <CardHeader className="flex items-center justify-start">
-        <Button variant="outline" size="icon" asChild>
-          <LinkTranslated href="/">
-            <ArrowLeftIcon className="size-5" />
-          </LinkTranslated>
-        </Button>
-        <h1 className="text-3xl font-bold ml-3">
-          {personal.name} | {t('title')}
-        </h1>
-      </CardHeader>
+      <Card>
+        {/* Header */}
+        <CardHeader className="flex items-center justify-start">
+          <Button variant="outline" size="icon" asChild>
+            <LinkTranslated href="/">
+              <ArrowLeftIcon className="size-5" />
+            </LinkTranslated>
+          </Button>
+          <h1 className="text-3xl font-bold ml-3">
+            {personal.name} | {t('title')}
+          </h1>
+        </CardHeader>
+      </Card>
 
       {/* Skills by Category */}
       {skills.map((category, categoryIndex) => (
