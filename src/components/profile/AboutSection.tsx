@@ -35,9 +35,9 @@ export function AboutSection() {
             <p className="mt-6 text-foreground leading-relaxed">{t('lastParagraph')}</p>
           </CollapsibleContent>
 
-          <CollapsibleTrigger className="float-right">
+          <CollapsibleTrigger className="float-right" asChild>
             <Button type="button" variant="ghost">
-              {open ? c('showLess') : c('showMore')} <RowSpacingIcon />
+              {open ? c('showLess') : c('showMore')} <RowSpacingIcon className="text-primary" />
             </Button>
           </CollapsibleTrigger>
         </CardContent>
