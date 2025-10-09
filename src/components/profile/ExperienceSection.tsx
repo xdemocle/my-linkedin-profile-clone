@@ -58,12 +58,13 @@ export function ExperienceSection() {
       <CardHeader className="flex flex-col md:flex-row md:items-center justify-start md:justify-between">
         <CardTitle className="text-xl">{t('title')}</CardTitle>
         <Button variant="link" asChild>
-          <LinkTranslated href="/experience">
+          <LinkTranslated href="/experience" className="px-0!">
             {t('showAllExperiences')}
             <ArrowRightIcon />
           </LinkTranslated>
         </Button>
       </CardHeader>
+
       <CardContent>
         {experiences.map((exp, index) => (
           <div key={index} className="mb-6">

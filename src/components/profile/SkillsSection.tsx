@@ -31,7 +31,7 @@ export function SkillsSection() {
       <CardHeader className="flex flex-col md:flex-row md:items-center justify-start md:justify-between">
         <CardTitle className="text-xl">{t('title')}</CardTitle>
         <Button variant="link" asChild>
-          <LinkTranslated href="/skills">
+          <LinkTranslated href="/skills" className="px-0!">
             {t('showAllSkills')}
             <ArrowRightIcon />
           </LinkTranslated>

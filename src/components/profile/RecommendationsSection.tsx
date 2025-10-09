@@ -37,7 +37,7 @@ export function RecommendationsSection() {
       <CardHeader className="flex flex-col md:flex-row md:items-center justify-start md:justify-between">
         <CardTitle className="text-xl">{t('title')}</CardTitle>
         <Button variant="link" asChild>
-          <LinkTranslated href="/recommendations">
+          <LinkTranslated href="/recommendations" className="px-0!">
             {t('showAllRecommendations')}
             <ArrowRightIcon />
           </LinkTranslated>
