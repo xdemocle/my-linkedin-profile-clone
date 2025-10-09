@@ -245,8 +245,8 @@
     "conversational": "Conversacional",
     "elementary": "Competencia elemental",
     "limitedWorking": "Competencia laboral limitada",
-    "nativeOrBilingual": "Competencia nativa o bilingüe",
-    "fullProfessional": "Competencia profesional completa",
+    "nativeOrBilingual": "Competencia nativa",
+    "fullProfessional": "Competencia profesional",
     "showAllLanguages": "Mostrar todos los idiomas"
   },
   "Interests": {
