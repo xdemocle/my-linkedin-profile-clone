@@ -1,17 +1,7 @@
 import { useApp } from '@/hooks';
 import { cn } from '@/lib';
-import {
-  BackpackIcon,
-  CardStackPlusIcon,
-  Cross1Icon,
-  HamburgerMenuIcon,
-  HomeIcon,
-  LayersIcon,
-  RocketIcon,
-} from '@radix-ui/react-icons';
+import { Cross1Icon, HamburgerMenuIcon } from '@radix-ui/react-icons';
 import { Separator } from '@radix-ui/react-separator';
-import { useTranslations } from 'use-intl';
-// import { useProfileData } from '../../hooks/useProfileData';
 import { LinkTranslated } from '../LinkTranslated';
 import { Logo } from '../Logo';
 import { MobileDrawer } from '../MobileDrawer';
@@ -22,17 +12,8 @@ import { ThemeToggle } from '../ui/theme-toggle';
 import { Search } from './Search';
 
 export function Navbar() {
-  const t = useTranslations('Navigation');
-  const { isSearchOpen, isMobile, isMenuOpen, setIsMenuOpen } = useApp();
+  const { isSearchOpen, isMobile, isMenuOpen, setIsMenuOpen, navLinks } = useApp();
   // const { personal } = useProfileData();
-
-  const navLinks = [
-    { href: '/', label: t('home'), icon: HomeIcon },
-    { href: '/experience', label: t('experience'), icon: BackpackIcon },
-    { href: '/projects', label: t('projects'), icon: RocketIcon },
-    { href: '/skills', label: t('skills'), icon: LayersIcon },
-    { href: '/recommendations', label: t('recommendations'), icon: CardStackPlusIcon },
-  ];
 
   const handleMenuClick = () => {
     setIsMenuOpen(!isMenuOpen);

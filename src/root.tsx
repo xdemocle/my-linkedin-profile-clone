@@ -33,8 +33,10 @@ function AppContent() {
           console.warn('IntlProvider error:', error);
         }}
       >
-        <Router />
-        <Toaster />
+        <AppProvider>
+          <Router />
+          <Toaster />
+        </AppProvider>
       </IntlProvider>
     </div>
   );
@@ -44,12 +46,10 @@ export const Root = ({ prerenderLocale }: RootProps) => {
   return (
     <ThemeProvider>
       <LocaleProvider prerenderLocale={prerenderLocale}>
-        <AppProvider>
-          <AppContent />
+        <AppContent />
 
-          {/* PWA Install Prompt */}
-          <InstallPWA />
-        </AppProvider>
+        {/* PWA Install Prompt */}
+        <InstallPWA />
       </LocaleProvider>
     </ThemeProvider>
   );
