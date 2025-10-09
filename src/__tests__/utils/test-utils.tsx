@@ -5,7 +5,7 @@ import { type ReactElement } from 'react';
 import { IntlProvider } from 'use-intl';
 import { Router } from 'wouter';
 import { LocaleProvider } from '../../contexts/LocaleContext';
-import { ThemeProvider } from '../../contexts/ThemeContext';
+import { ThemeProvider } from '../../contexts/ThemeContextProvider';
 
 // Mock messages for use-intl provider
 const mockMessages = {

@@ -59,7 +59,8 @@ export function LocaleProvider({ children, prerenderLocale }: LocaleProviderProp
         setLocale(LOCALE_DEFAULT);
       }
     }
-  }, [pathname, prerenderLocale, setLocation]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [pathname, prerenderLocale]);
 
   // Update messages when locale changes
   useEffect(() => {

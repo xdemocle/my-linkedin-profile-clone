@@ -3,8 +3,9 @@ import { InstallPWA } from './components/InstallPWA';
 import { Router } from './components/Router';
 import { Toaster } from './components/ui/toaster';
 import { type Locale } from './constants';
+import { AppProvider } from './contexts/AppContextProvider';
 import { LocaleProvider } from './contexts/LocaleContext';
-import { ThemeProvider } from './contexts/ThemeContext';
+import { ThemeProvider } from './contexts/ThemeContextProvider';
 import { useLocale } from './hooks/useLocale';
 import { getDirection } from './lib/i18n';
 
@@ -43,11 +44,13 @@ export const Root = ({ prerenderLocale }: RootProps) => {
   return (
     <ThemeProvider>
       <LocaleProvider prerenderLocale={prerenderLocale}>
-        <AppContent />
-      </LocaleProvider>
+        <AppProvider>
+          <AppContent />
 
-      {/* PWA Install Prompt */}
-      <InstallPWA />
+          {/* PWA Install Prompt */}
+          <InstallPWA />
+        </AppProvider>
+      </LocaleProvider>
     </ThemeProvider>
   );
 };

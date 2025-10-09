@@ -1,4 +1,6 @@
-import { BackpackIcon, FileTextIcon, HomeIcon, MagnifyingGlassIcon } from '@radix-ui/react-icons';
+import { useApp } from '@/hooks';
+import { cn } from '@/lib';
+import { BackpackIcon, FileTextIcon, HomeIcon } from '@radix-ui/react-icons';
 import { Separator } from '@radix-ui/react-separator';
 import { useTranslations } from 'use-intl';
 import { useProfileData } from '../../hooks/useProfileData';
@@ -9,9 +11,11 @@ import { Button } from '../ui/button';
 import { LanguageSwitcher } from '../ui/language-switcher';
 import { ScrollProgress } from '../ui/scroll-progress';
 import { ThemeToggle } from '../ui/theme-toggle';
+import { Search } from './Search';
 
 export function Navbar() {
   const t = useTranslations('Navigation');
+  const { isSearchOpen, isMobile } = useApp();
   const { personal } = useProfileData();
 
   return (
@@ -24,59 +28,60 @@ export function Navbar() {
           <Logo />
         </LinkTranslated>
 
-        {/* Search - hidden on mobile, shown on sm+ */}
-        <div className="relative flex-1 max-w-md hidden sm:block">
-          <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-            <MagnifyingGlassIcon className="h-4 w-4 text-muted-foreground" />
-          </div>
-          <input type="text" placeholder={t('search')} className="w-full bg-muted pl-10 h-8 rounded-md text-sm" />
-        </div>
+        {/* Search */}
+        <Search />
 
         {/* Navigation */}
         <nav className="ml-auto flex items-center gap-0.5 sm:gap-1">
-          <Button variant="ghost" size="icon" className="size-10" aria-label={t('home')} asChild>
+          <Button variant="ghost" size="icon" className="hidden md:inline-flex" aria-label={t('home')} asChild>
             <LinkTranslated href="/">
               <HomeIcon className="size-5.5" />
             </LinkTranslated>
           </Button>
 
-          <Button variant="ghost" size="icon" className="size-10" aria-label="Experience" asChild>
+          <Button variant="ghost" size="icon" className="hidden md:inline-flex" aria-label="Experience" asChild>
             <LinkTranslated href="/experience">
               <BackpackIcon className="size-5.5" />
             </LinkTranslated>
           </Button>
 
-          <Button variant="ghost" size="icon" className="size-10" aria-label="Projects" asChild>
+          <Button variant="ghost" size="icon" className="hidden md:inline-flex" aria-label="Projects" asChild>
             <LinkTranslated href="/projects">
               <FileTextIcon className="size-5.5" />
             </LinkTranslated>
           </Button>
 
-          <Button variant="ghost" size="icon" className="size-10" aria-label="Skills" asChild>
+          <Button variant="ghost" size="icon" className="hidden md:inline-flex" aria-label="Skills" asChild>
             <LinkTranslated href="/skills">
               <FileTextIcon className="size-5.5" />
             </LinkTranslated>
           </Button>
 
-          <Button variant="ghost" size="icon" className="size-10" aria-label="Recommendations" asChild>
+          <Button
+            variant="ghost"
+            size="icon"
+            className="size-10 hidden md:inline-flex"
+            aria-label="Recommendations"
+            asChild
+          >
             <LinkTranslated href="/recommendations">
               <FileTextIcon className="size-5.5" />
             </LinkTranslated>
           </Button>
 
-          <Separator orientation="vertical" className="block w-[1px] h-4 mx-1 bg-foreground" />
+          <div className={cn('flex items-center', isMobile && isSearchOpen ? 'hidden' : '')}>
+            <Separator orientation="vertical" className="w-[1px] h-4 mx-2 bg-foreground hidden md:block" />
 
-          <div className="items-center gap-0">
             <ThemeToggle />
             <LanguageSwitcher />
-          </div>
 
-          <Button variant="ghost" size="icon" className="rounded-full size-10" aria-label="User menu">
-            <Avatar className="size-6.5">
-              <AvatarImage src={personal.avatar} alt="User" />
-              <AvatarFallback>RR</AvatarFallback>
-            </Avatar>
-          </Button>
+            <Button variant="ghost" size="icon" aria-label="User menu">
+              <Avatar className="size-5.5">
+                <AvatarImage src={personal.avatar} alt="User" />
+                <AvatarFallback>RR</AvatarFallback>
+              </Avatar>
+            </Button>
+          </div>
         </nav>
       </div>
     </header>
