@@ -72,7 +72,7 @@ export function Navbar() {
       </div>
 
       {/* Scroll progress indicator */}
-      <ScrollProgress color="var(--ring)" height={2} className="z-1" />
+      <ScrollProgress color="var(--ring)" height={2} className="z-1 top-full absolute" />
     </header>
   );
 }
