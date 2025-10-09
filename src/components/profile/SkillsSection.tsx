@@ -4,6 +4,7 @@ import { useTranslations } from 'use-intl';
 import { LinkTranslated } from '../link-translated';
 import { Button } from '../ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '../ui/card';
+import { Progress } from '../ui/progress';
 
 export function SkillsSection() {
   const t = useTranslations('Skills');
@@ -45,7 +46,7 @@ export function SkillsSection() {
               <span className="text-sm text-muted-foreground">{skill.level}%</span>
             </div>
             <div className="w-full bg-secondary rounded-full h-2">
-              <div className="bg-primary h-2 rounded-full transition-all" style={{ width: `${skill.level}%` }} />
+              <Progress value={skill.level} />
             </div>
             <p className="text-xs text-muted-foreground mt-2">{skill.category}</p>
           </div>
