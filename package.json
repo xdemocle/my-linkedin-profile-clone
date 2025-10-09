@@ -20,7 +20,7 @@
     }
   },
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --host",
     "build": "vite build",
     "build:cf": "bun install --frozen-lockfile && vite build",
     "lint": "eslint .",
