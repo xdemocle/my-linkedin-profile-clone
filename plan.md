@@ -157,7 +157,21 @@ src/
 - ✅ Removed unused dependencies and imports
 - ✅ Fixed deprecated mobile-web-app meta tag
 
-**Documentation:** See `/SEO.md` for complete implementation details and best practices.
+#### SEO Prerendering Fix
+
+- ✅ **Problem:** SEO meta tags were not being prerendered (only client-side via `useEffect`)
+- ✅ **Solution:** Implemented dual-layer SEO approach
+  - Created `/src/lib/seo-meta.ts` with pure functions for SSG
+  - Updated `prerender()` function in `/src/main.tsx` to generate meta tags during build
+  - Added all missing routes to vite.config.ts (skills, recommendations)
+  - Now prerendering **25 routes** with full SEO metadata
+- ✅ **Result:** All meta tags, Open Graph, Twitter Cards, and structured data now in static HTML
+- ✅ **Client-side components** (`SEO.tsx`, `StructuredData.tsx`) still active for SPA navigation
+
+**Documentation:**
+
+- See `/SEO.md` for complete SEO implementation details
+- See `/SEO_PRERENDER.md` for prerendering architecture and testing
 
 ## Recent Updates (2025-10-08)
 
