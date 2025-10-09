@@ -1,6 +1,5 @@
 /**
  * Scroll to the top of the page
- * @param {boolean} smooth - Whether to use smooth scrolling
  */
 export function scrollToTop(smooth = false): void {
   window.scrollTo({
@@ -21,7 +20,7 @@ export function scrollToElement(elementId: string, smooth = false, offset = 0): 
   if (element) {
     const elementPosition = element.getBoundingClientRect().top;
     const offsetPosition = elementPosition + window.pageYOffset - offset;
-    
+
     window.scrollTo({
       top: offsetPosition,
       behavior: smooth ? 'smooth' : 'auto',

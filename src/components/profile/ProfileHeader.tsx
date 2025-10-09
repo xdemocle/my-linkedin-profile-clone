@@ -3,7 +3,7 @@ import { cn } from '@/lib/utils';
 import { ExternalLinkIcon } from '@radix-ui/react-icons';
 import { useTranslations } from 'use-intl';
 import { useProfileData } from '../../hooks/useProfileData';
-import { OnlineStatusIcon, StealthStartupIcon } from '../../utils/iconComponents';
+import { OnlineStatusIcon, StealthStartupIcon } from '../../lib/iconComponents';
 import { ShareProfile } from '../ShareProfile';
 import { Avatar, AvatarFallback, AvatarImage } from '../ui/avatar';
 import { Button } from '../ui/button';

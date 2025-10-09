@@ -1,7 +1,7 @@
 import { ArrowRightIcon, ExternalLinkIcon } from '@radix-ui/react-icons';
 import { useTranslations } from 'use-intl';
 import { useProfileData } from '../../hooks/useProfileData';
-import { ProjectIconWrapper } from '../../utils/iconComponents';
+import { ProjectIconWrapper } from '../../lib/iconComponents';
 import { LinkTranslated } from '../link-translated';
 import { Badge } from '../ui/badge';
 import { Button } from '../ui/button';

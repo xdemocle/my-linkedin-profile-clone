@@ -23,55 +23,55 @@ export function ProjectIcon({ iconKey, className = 'h-8 w-8' }: ProjectIconProps
     case 'blue-circle':
       return (
         <div className={className}>
-          <CircleIcon className='text-blue-500 h-full w-full' />
+          <CircleIcon className="text-blue-500 h-full w-full" />
         </div>
       );
     case 'lightning':
       return (
         <div className={className}>
-          <LightningBoltIcon className='text-yellow-500 h-full w-full' />
+          <LightningBoltIcon className="text-yellow-500 h-full w-full" />
         </div>
       );
     case 'game':
       return (
         <div className={className}>
-          <CodeIcon className='text-purple-500 h-full w-full' />
+          <CodeIcon className="text-purple-500 h-full w-full" />
         </div>
       );
     case 'building':
       return (
         <div className={className}>
-          <BoxIcon className='text-cyan-500 h-full w-full' />
+          <BoxIcon className="text-cyan-500 h-full w-full" />
         </div>
       );
     case 'home':
       return (
         <div className={className}>
-          <HomeIcon className='text-green-500 h-full w-full' />
+          <HomeIcon className="text-green-500 h-full w-full" />
         </div>
       );
     case 'mail':
       return (
         <div className={className}>
-          <EnvelopeClosedIcon className='text-blue-400 h-full w-full' />
+          <EnvelopeClosedIcon className="text-blue-400 h-full w-full" />
         </div>
       );
     case 'github':
       return (
         <div className={className}>
-          <GitHubLogoIcon className='text-gray-700 h-full w-full' />
+          <GitHubLogoIcon className="text-gray-700 h-full w-full" />
         </div>
       );
     case 'code':
       return (
         <div className={className}>
-          <CodeIcon className='text-indigo-500 h-full w-full' />
+          <CodeIcon className="text-indigo-500 h-full w-full" />
         </div>
       );
     default:
       return (
         <div className={className}>
-          <Component1Icon className='h-full w-full' />
+          <Component1Icon className="h-full w-full" />
         </div>
       );
   }
