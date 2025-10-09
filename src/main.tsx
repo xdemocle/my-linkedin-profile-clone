@@ -2,7 +2,7 @@ import { createRoot } from 'react-dom/client';
 import type { JSX } from 'react/jsx-runtime';
 import { IS_DEV, LOCALE_DEFAULT, LOCALES, type Locale } from './constants';
 import './index.css';
-import { getLocaleFromPath, getLocaleMessages } from './lib/i18n';
+import { getLocaleFromPath } from './lib/i18n';
 import { registerServiceWorker, unregisterServiceWorker } from './lib/pwa';
 import { Root } from './root.tsx';
 
@@ -49,10 +49,6 @@ export async function prerender(data: PrerenderData) {
   }
 
   try {
-    // Load messages for the specific locale
-    const messages = getLocaleMessages(locale);
-    console.log(`Loaded messages for ${locale}:`, Object.keys(messages).length);
-
     // Render the static app with error boundary
     const html = renderToString(<Root prerenderLocale={locale} />);
     const links = parseLinks(html);
