@@ -31,7 +31,7 @@ export function SkillsPage() {
           <CardContent>
             <h2 className="text-xl font-semibold mb-6">{category.category}</h2>
 
-            <div className="space-y-4">
+            <div className="space-y-4 grid grid-cols-max lg:grid-cols-2 gap-6">
               {category.items.map((skill, skillIndex) => (
                 <div key={skillIndex} className="space-y-2">
                   <div className="flex items-center justify-between">
