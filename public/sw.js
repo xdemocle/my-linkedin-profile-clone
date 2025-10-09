@@ -10,8 +10,41 @@ const IMAGE_CACHE = `images-${CACHE_VERSION}`;
 const STATIC_ASSETS = [
   '/',
   '/experience',
+  '/projects',
+  '/skills',
+  '/recommendations',
+
+  // add multilingual pages
+  '/ar',
+  '/es',
+  '/fr',
+  '/it',
+
+  // add multilingual experience pages
+  '/ar/experience',
+  '/es/experience',
+  '/fr/experience',
+  '/it/experience',
+
+  // add multilingual projects pages
+  '/ar/projects',
+  '/es/projects',
+  '/fr/projects',
+  '/it/projects',
+
+  // add multilingual skills pages
+  '/ar/skills',
+  '/es/skills',
+  '/fr/skills',
+  '/it/skills',
+
+  // add multilingual recommendations pages
+  '/ar/recommendations',
+  '/es/recommendations',
+  '/fr/recommendations',
+  '/it/recommendations',
+
   '/manifest.json',
-  // Add prerendered pages here as they're generated
 ];
 
 // Install event - cache static assets
