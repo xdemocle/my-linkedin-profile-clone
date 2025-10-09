@@ -410,19 +410,89 @@
       }
     },
     "recommendations": {
-      "giorgioRavioli": {
-        "name": "Giorgio Ravioli",
-        "title": "Développeur Full Stack Senior",
-        "relationship": "Giorgio a travaillé avec Rocco dans la même équipe",
-        "date": "24 juillet 2022",
-        "content": "Rocco est un développeur frontend exceptionnel avec un œil attentif aux détails et un talent pour créer des interfaces utilisateur élégantes. Sa capacité à traduire des exigences complexes en designs intuitifs est remarquable. Il a toujours livré du code de haute qualité sur nos projets partagés et était toujours prêt à aider les autres membres de l'équipe."
+      "hiroshiTanaka": {
+        "name": "Hiroshi Tanaka",
+        "title": "Ingénieur Logiciel Senior chez Guideline",
+        "relationship": "Hiroshi a rapporté directement à Rocco",
+        "date": "1er septembre 2023",
+        "content": "Dans mon expérience de travail avec Rocco, j'ai été constamment impressionné par son mélange unique de professionnalisme et de chaleur. Il cultive sans effort une atmosphère collaborative à la fois légère et concentrée. Les connaissances de Rocco en ingénierie logicielle sont vastes, mais ce qui le distingue vraiment, c'est son accessibilité. Malgré son expertise, il n'est jamais intimidant. Au contraire, il est toujours désireux de partager, guider et soutenir. C'est vraiment un privilège de travailler aux côtés de quelqu'un avec une combinaison aussi rare de qualités."
       },
-      "alessandroBuccheri": {
-        "name": "Alessandro Buccheri",
-        "title": "Développeur Full Stack Senior",
-        "relationship": "Alessandro a géré Rocco directement",
-        "date": "15 mars 2021",
-        "content": "J'ai eu le plaisir de gérer Rocco sur plusieurs projets critiques. Ses compétences techniques en développement frontend sont vraiment impressionnantes, en particulier en React et JavaScript moderne. Il est proactif, fiable et possède une capacité exceptionnelle à résoudre des problèmes complexes. Son travail a constamment dépassé les attentes des clients et il a été un atout précieux pour notre équipe."
+      "sofiaAndersson": {
+        "name": "Sofia Andersson",
+        "title": "Archeologo I fascia (DM 244/2019)",
+        "relationship": "Sofia était cliente de Rocco",
+        "date": "27 janvier 2023",
+        "content": "Rocco est l'avenir"
+      },
+      "mateoFernandez": {
+        "name": "Mateo Fernández",
+        "title": "Ingénieur Solidity Senior",
+        "relationship": "Mateo a géré Rocco directement",
+        "date": "16 décembre 2022",
+        "content": "Rocco est un excellent développeur frontend qui rend réels tous les designs pour les utilisateurs finaux. Il est compétent : pose toujours des questions pour comprendre les petits détails qui feront la différence pour un excellent produit, propose de meilleures solutions et technologies. Le code est toujours propre, organisé et bien refactorisé. De plus, Rocco est toujours disponible quand nécessaire et est très amical et soutient toujours les autres"
+      },
+      "larsNielsen": {
+        "name": "Lars Nielsen",
+        "title": "PDG de logiciels axés sur le produit, construisant des logiciels d'entreprise de nouvelle génération pour le commerce",
+        "relationship": "Lars a géré Rocco directement",
+        "date": "5 juin 2020",
+        "content": "Rocco est le type de personne que vous voulez dans votre équipe, hautement qualifié et sans aucune peur de plonger dans le grand bain. Il a réarchitecturé notre plateforme web de zéro en quelques mois, quelque chose qui était considéré comme impossible par plusieurs personnes avant Rocco. En plus de ses prouesses techniques, c'est une personne affable qui a rapidement créé un lien personnel avec notre équipe, avec son humour et sa grande attitude. Je ne peux pas recommander Rocco assez!"
+      },
+      "emmaVanDerBerg": {
+        "name": "Emma van der Berg",
+        "title": "Développeur full stack",
+        "relationship": "Emma a travaillé avec Rocco dans la même équipe",
+        "date": "8 août 2015",
+        "content": "Quand l'entreprise a manqué de personnes pour faire un projet Angular + Gulp et m'a demandé si je connaissais quelqu'un qui pourrait aider, je savais que Rocco était la personne qui sauverait la situation. Rocco a réussi à obtenir des résultats incroyables dans un délai très limité, et même lorsqu'il a été mis sous beaucoup de stress, il a maintenu son attention aux détails et n'a jamais perdu sa concentration."
+      },
+      "rajeshKumar": {
+        "name": "Rajesh Kumar",
+        "title": "Architecte Technique chez HCL Technologies",
+        "relationship": "Rajesh a travaillé avec Rocco dans la même équipe",
+        "date": "29 juillet 2015",
+        "content": "Rocco est un excellent développeur Front End avec beaucoup de connaissances en technologies Front End. Il connaît beaucoup d'outils qui facilitent et accélèrent le développement. Quel que soit l'outil que Rocco utilise, il suivra toujours les normes. C'est un bon membre d'équipe et toujours dévoué au travail, ce que j'ai remarqué en travaillant sur le même projet. Il terminera ses tâches en travaillant des heures supplémentaires."
+      },
+      "ingridSchmidt": {
+        "name": "Ingrid Schmidt",
+        "title": "product owner senior",
+        "relationship": "Ingrid a travaillé avec Rocco dans la même équipe",
+        "date": "26 juillet 2015",
+        "content": "Rocco est un excellent développeur front end senior. Dans mon équipe, il a fait la configuration du framework pour le thème Drupal du nouveau site web. Il fera de son mieux pour terminer le travail avec le meilleur résultat. Rocco est un employé dévoué et une personne formidable avec qui travailler. J'aime son travail acharné et son énergie joyeuse. En tant que product owner, c'est formidable de travailler avec Rocco car vous savez qu'il fera le travail."
+      },
+      "lukasNovak": {
+        "name": "Lukas Novak",
+        "title": "Fullstack Go/TS/LLM",
+        "relationship": "Lukas a travaillé avec Rocco dans la même équipe",
+        "date": "22 juillet 2015",
+        "content": "Nous avons passé du bon temps avec Rocco en travaillant sur une application Phonegap basée sur CoffeeScript et Backbone. Il poursuit un code propre et une séparation des préoccupations dans son travail frontend, qui est décoré de commentaires expressifs. Il essaie toujours d'être à jour avec les derniers frameworks."
+      },
+      "carlosMendoza": {
+        "name": "Carlos Mendoza",
+        "title": "Ingénieur de Sécurité Staff chez Bird",
+        "relationship": "Carlos a travaillé avec Rocco dans la même équipe",
+        "date": "15 juin 2015",
+        "content": "Rocco est une personne très attentive aux détails. Il s'assure que tout fonctionne selon les spécifications et s'y prépare. C'est aussi le collègue parfait avec qui travailler. Il essaie toujours d'aider les autres quand il le peut et s'assure que vous avez reçu toutes les informations nécessaires."
+      },
+      "pierreDubois": {
+        "name": "Pierre Dubois",
+        "title": "Ingénieur Information / DevOps",
+        "relationship": "Pierre a travaillé avec Rocco dans la même équipe",
+        "date": "2 juin 2015",
+        "content": "Rocco a un standard hautement professionnel concernant le développement front-end et les outils de développement automatisés. C'est un plaisir et très amusant de travailler avec Rocco. Il est honnête, dit ce qu'il pense, peut être têtu parfois mais réussit à faire sourire tout le monde. Rocco s'est fixé un chemin très clair, \"apprendre, continuer à s'améliorer et mettre ses compétences en pratique\". J'ai beaucoup appris de Rocco. Ses contributions aux équipes sont de haute qualité et ont créé une plateforme durable pour le développement front-end. J'espère travailler à nouveau avec Rocco un jour et rencontrer plus de personnes comme lui."
+      },
+      "marcoRossi": {
+        "name": "Marco Rossi",
+        "title": "Développeur Back-end PHP Symfony/Drupal @Commission Européenne DIGIT",
+        "relationship": "Marco a travaillé avec Rocco mais dans des équipes différentes",
+        "date": "30 mars 2015",
+        "content": "Rocco est un consultant IT hautement motivé et qualifié. Il a une forte attitude face aux défis quotidiens et fait attention à obtenir des résultats finaux de haute qualité en économisant autant de temps que possible. C'est pourquoi il se met constamment à jour avec les technologies les plus récentes, principalement Front-end, pour obtenir les meilleurs résultats en termes de temps-qualité. C'est aussi une personne sympathique et c'était un plaisir de travailler à ses côtés tant professionnellement que personnellement."
+      },
+      "jakubKowalski": {
+        "name": "Jakub Kowalski",
+        "title": "Responsable du développement chez Praetorian Technology",
+        "relationship": "Jakub a travaillé avec Rocco dans la même équipe",
+        "date": "8 novembre 2013",
+        "content": "C'était un vrai plaisir de travailler avec Rocco sur des projets chez Youwin. Il a une grande connaissance dans tous les domaines du développement web : en commençant par la configuration des environnements de développement et d'exécution, les serveurs web et les systèmes de mise en cache en passant par le développement backend jusqu'aux vastes compétences JavaScript, HTML, HTML5 et CSS pour livrer le frontend. Rocco est une personne qui peut se voir confier de grandes tâches seule car il peut gérer tout le processus lui-même, mais en même temps avec son esprit ouvert et son potentiel de partage et d'acquisition de connaissances, c'est un excellent joueur d'équipe qui aime consulter les opinions pour livrer des produits de la meilleure qualité. Rationnel et orienté agile, il peut travailler dans un environnement fonctionnant à n'importe quel rythme. Grand esprit, grand ami, personne sociale avec toutes les compétences dont une entreprise de développement web pourrait avoir besoin. Rocco est le meilleur choix pour une équipe fantastique de développeurs brillants car avec lui, vous pouvez aller au-delà des standards."
       }
     }
   },
