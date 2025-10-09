@@ -30,7 +30,7 @@ export function ExperienceSection() {
     {
       companyKey: 'technicalLead',
       logo: topExperiences[0].logo ?? '/assets/png/web3ninja-logo.png',
-      titleKey: 'frontendDeveloper',
+      titleKey: 'technicalLead',
       durationKey: 'duration1',
       locationKey: 'milano',
       descriptionKey: 'ledFrontendDevelopment',
@@ -38,7 +38,7 @@ export function ExperienceSection() {
     {
       companyKey: 'seniorSolutionsEngineer',
       logo: topExperiences[1].logo ?? '/assets/png/gamesglobal-logo.png',
-      titleKey: 'frontendDeveloper',
+      titleKey: 'seniorSolutionsEngineer',
       durationKey: 'duration2',
       locationKey: 'milano',
       descriptionKey: 'developedInteractiveUI',

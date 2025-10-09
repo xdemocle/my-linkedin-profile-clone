@@ -30,7 +30,7 @@ export function generateSEOMeta(options: SEOMetaOptions): string {
 
   const defaultTitle = `${personalName} | Software Engineer / Tech Lead`;
   const defaultDescription =
-    'Software engineer with over 20 years of experience in front-end engineering, Web3 integrations, and full-stack development. Expert in React, TypeScript, blockchain, and AI.';
+    'Experienced software engineer and tech lead with 20+ years in frontend development, Web3, and blockchain. Specialized in React, TypeScript, Next.js, DeFi applications, smart contracts, and AI integrations. Led teams building scalable applications serving 5M+ monthly users with expertise in modern web architecture and decentralized technologies.';
 
   const pageTitle = title || defaultTitle;
   const pageDescription = description || defaultDescription;

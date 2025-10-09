@@ -43,14 +43,16 @@ export function ProfileHeader() {
           <div className="flex justify-between items-start gap-4 flex-col sm:flex-row">
             <div className="flex flex-col flex-1 w-full text-center gap-1 sm:text-left">
               <div className="flex items-center gap-2 flex-col sm:flex-row">
-                <h1 className="text-2xl font-bold">{personal.name}</h1>
+                <h1 className="text-2xl font-bold">
+                  {personal.name} - {t('fullStackEngineer').split('|')[0].trim()}
+                </h1>
                 <div className="flex items-center gap-1">
                   <OnlineStatusIcon className="text-green-500 h-3 w-3" />
                   <span className="text-xs text-muted-foreground">EMEA, GULF, UAE</span>
                 </div>
               </div>
 
-              <p className="leading-snug mt-1">{t('fullStackEngineer')}</p>
+              <p className="leading-snug mt-1 text-sm">{t('fullStackEngineer')}</p>
 
               <div className="flex items-center gap-2 mt-2 text-sm justify-center sm:justify-start">
                 <span className="text-muted-foreground">{personal.location}</span>
