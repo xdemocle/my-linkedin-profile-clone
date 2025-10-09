@@ -61,7 +61,7 @@ export function RecommendationsPage() {
       {/* Recommendations List */}
       <Card className="shadow-xs">
         {/* Header */}
-        <CardHeader className="flex items-center justify-start">
+        <CardHeader className="flex items-center justify-start flex-col text-center sm:flex-row sm:text-left">
           <Button variant="outline" size="icon" asChild>
             <LinkTranslated href="/">
               <ArrowLeftIcon className="size-5" />
@@ -71,6 +71,7 @@ export function RecommendationsPage() {
             {personal.name} | {t('title')}
           </h1>
         </CardHeader>
+
         <CardContent className="p-6">
           {recommendations.map((rec, index) => (
             <div key={index} className="mb-8 last:mb-0">
