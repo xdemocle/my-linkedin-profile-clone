@@ -11,10 +11,13 @@ export function ProfileLanguages() {
   const t = useTranslations('Languages');
 
   const profileLanguages: Language[] = [
-    { nameKey: 'italian', levelKey: 'native' },
-    { nameKey: 'english', levelKey: 'professional' },
-    { nameKey: 'spanish', levelKey: 'conversational' },
-    { nameKey: 'french', levelKey: 'conversational' },
+    { nameKey: 'arabic', levelKey: 'elementary' },
+    { nameKey: 'english', levelKey: 'fullProfessional' },
+    { nameKey: 'french', levelKey: 'elementary' },
+    { nameKey: 'italian', levelKey: 'nativeOrBilingual' },
+    { nameKey: 'portuguese', levelKey: 'elementary' },
+    { nameKey: 'spanish', levelKey: 'limitedWorking' },
+    { nameKey: 'zulu', levelKey: 'elementary' },
   ];
 
   return (
