@@ -1,4 +1,4 @@
-import { LINKEDIN_PROFILE_URL, WEBSITE_URL } from '@/constants';
+import { LINKEDIN_PROFILE_URL, WEBSITE_ROCCOME_URL } from '@/constants';
 import { useApp } from '@/hooks';
 import { ExternalLinkIcon } from '@radix-ui/react-icons';
 import React from 'react';
@@ -39,7 +39,7 @@ export function ProfileFooter() {
             </a>
             <span>•</span>
             <a
-              href={WEBSITE_URL}
+              href={WEBSITE_ROCCOME_URL}
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-primary flex items-center gap-1"

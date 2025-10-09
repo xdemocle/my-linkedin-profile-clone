@@ -1,4 +1,4 @@
-import { WEBSITE_URL } from '@/constants/webinfo';
+import { WEBSITE_ROCCOME_URL, WEBSITE_URL } from '@/constants/webinfo';
 import { cn } from '@/lib/utils';
 import { ExternalLinkIcon } from '@radix-ui/react-icons';
 import { GhostIcon } from 'lucide-react';
@@ -97,7 +97,7 @@ export function ProfileHeader() {
             <Button className="bg-primary text-white hover:bg-primary-700 rounded-full px-6">{t('openToWork')}</Button>
 
             <Button variant="outline" className="rounded-full px-4" asChild>
-              <a target="_blank" href={`${WEBSITE_URL}/#newsletters`} rel="noopener noreferrer">
+              <a target="_blank" href={`${WEBSITE_ROCCOME_URL}/#newsletters`} rel="noopener noreferrer">
                 {tCommon('newsletters')}
               </a>
             </Button>

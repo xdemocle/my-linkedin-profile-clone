@@ -1,4 +1,6 @@
-export const WEBSITE_URL = 'https://rocco.me';
+export const WEBSITE_URL = 'https://linkedin-roccorusso.work';
+
+export const WEBSITE_ROCCOME_URL = 'https://rocco.me';
 
 export const LINKEDIN_PROFILE_URL = 'https://www.linkedin.com/in/roccorusso';
 
