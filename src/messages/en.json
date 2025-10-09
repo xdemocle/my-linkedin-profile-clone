@@ -364,6 +364,14 @@
     "showLess": "Show less",
     "newsletters": "Newsletters"
   },
+  "ShareProfile": {
+    "copyLink": "Copy link",
+    "copied": "Copied!",
+    "shareOnLinkedIn": "Share on LinkedIn",
+    "shareOnTwitter": "Share on Twitter",
+    "moreOptions": "More options",
+    "shareText": "Check out {profileName} - Full-stack Engineer specializing in frontend architecture and blockchain integrations"
+  },
   "SkillsPage": {
     "backToProfile": "Back to profile",
     "skillsOverview": "Skills Overview",

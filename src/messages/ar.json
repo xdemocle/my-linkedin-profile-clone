@@ -365,6 +365,14 @@
     "showLess": "عرض أقل",
     "newsletters": "النشرات الإخبارية"
   },
+  "ShareProfile": {
+    "copyLink": "نسخ الرابط",
+    "copied": "تم النسخ!",
+    "shareOnLinkedIn": "مشاركة على LinkedIn",
+    "shareOnTwitter": "مشاركة على Twitter",
+    "moreOptions": "خيارات أخرى",
+    "shareText": "تحقق من {profileName} - مهندس Full-stack متخصص في بنية الواجهة الأمامية وتكاملات البلوكشين"
+  },
   "SkillsPage": {
     "backToProfile": "العودة إلى الملف الشخصي",
     "skillsOverview": "نظرة عامة على المهارات",

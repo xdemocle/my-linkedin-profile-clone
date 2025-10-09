@@ -365,6 +365,14 @@
     "showLess": "Mostra meno",
     "newsletters": "Newsletter"
   },
+  "ShareProfile": {
+    "copyLink": "Copia link",
+    "copied": "Copiato!",
+    "shareOnLinkedIn": "Condividi su LinkedIn",
+    "shareOnTwitter": "Condividi su Twitter",
+    "moreOptions": "Altre opzioni",
+    "shareText": "Dai un'occhiata a {profileName} - Ingegnere Full-stack specializzato in architettura frontend e integrazioni blockchain"
+  },
   "SkillsPage": {
     "backToProfile": "Torna al profilo",
     "skillsOverview": "Panoramica Competenze",

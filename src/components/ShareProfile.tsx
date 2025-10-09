@@ -1,5 +1,6 @@
 import { CheckIcon, CopyIcon, LinkedInLogoIcon, Share1Icon, TwitterLogoIcon } from '@radix-ui/react-icons';
 import { useState } from 'react';
+import { useTranslations } from 'use-intl';
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -7,7 +8,6 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from './ui/dropdown-menu';
-// Using simple console.log instead of toast for now
 
 interface ShareProfileProps {
   profileUrl: string;
@@ -15,10 +15,14 @@ interface ShareProfileProps {
   children: React.ReactNode;
 }
 
-export function ShareProfile({ profileUrl, profileName = "Rocco Russo's Profile", children }: ShareProfileProps) {
+export function ShareProfile({ profileUrl, profileName, children }: ShareProfileProps) {
   const [copied, setCopied] = useState(false);
+  const t = useTranslations();
 
-  const shareText = `Check out ${profileName} - Full-stack Engineer specializing in frontend architecture and blockchain integrations`;
+  const defaultProfileName = t('Common.shareProfileName');
+  const finalProfileName = profileName || defaultProfileName;
+
+  const shareText = t('ShareProfile.shareText', { profileName: finalProfileName });
 
   const handleCopyLink = async () => {
     try {
@@ -48,7 +52,7 @@ export function ShareProfile({ profileUrl, profileName = "Rocco Russo's Profile"
     if (navigator.share) {
       try {
         await navigator.share({
-          title: profileName,
+          title: finalProfileName,
           text: shareText,
           url: profileUrl,
         });
@@ -64,19 +68,19 @@ export function ShareProfile({ profileUrl, profileName = "Rocco Russo's Profile"
       <DropdownMenuContent align="end" className="w-48">
         <DropdownMenuItem onClick={handleCopyLink}>
           {copied ? <CheckIcon className="h-4 w-4 mr-2 text-green-600" /> : <CopyIcon className="h-4 w-4 mr-2" />}
-          {copied ? 'Copied!' : 'Copy link'}
+          {t(copied ? 'ShareProfile.copied' : 'ShareProfile.copyLink')}
         </DropdownMenuItem>
 
         <DropdownMenuSeparator />
 
         <DropdownMenuItem onClick={handleLinkedInShare}>
           <LinkedInLogoIcon className="h-4 w-4 mr-2" />
-          Share on LinkedIn
+          {t('ShareProfile.shareOnLinkedIn')}
         </DropdownMenuItem>
 
         <DropdownMenuItem onClick={handleTwitterShare}>
           <TwitterLogoIcon className="h-4 w-4 mr-2" />
-          Share on Twitter
+          {t('ShareProfile.shareOnTwitter')}
         </DropdownMenuItem>
 
         {typeof navigator !== 'undefined' && 'share' in navigator && (
@@ -84,7 +88,7 @@ export function ShareProfile({ profileUrl, profileName = "Rocco Russo's Profile"
             <DropdownMenuSeparator />
             <DropdownMenuItem onClick={handleNativeShare}>
               <Share1Icon className="h-4 w-4 mr-2" />
-              More options
+              {t('ShareProfile.moreOptions')}
             </DropdownMenuItem>
           </>
         )}
