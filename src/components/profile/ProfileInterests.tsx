@@ -51,7 +51,7 @@ export function ProfileInterests() {
   ];
 
   return (
-    <Card className="shadow-xs mb-6">
+    <Card className="shadow-xs">
       <CardHeader>
         <CardTitle className="text-base">{t('title')}</CardTitle>
       </CardHeader>
