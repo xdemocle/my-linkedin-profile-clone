@@ -34,36 +34,35 @@ A locale-aware Link wrapper that:
 
 ### Pages
 
-2. **ExperiencePage** (`/src/pages/ExperiencePage.tsx`)
+1. **ExperiencePage** (`/src/pages/ExperiencePage.tsx`)
+
    - Replaced `Link` with `LinkTranslated` for "Back to profile" button
 
-3. **ActivityPage** (`/src/pages/ActivityPage.tsx`)
-   - Replaced `Link` with `LinkTranslated` for "Back to profile" button
+2. **ProjectsPage** (`/src/pages/ProjectsPage.tsx`)
 
-4. **ProjectsPage** (`/src/pages/ProjectsPage.tsx`)
    - Added `useLocale` and `getPageUrlFromPath`
    - Updated `handleBackToProfile` to use locale-aware navigation with trailing slash
 
-5. **NotFoundPage** (`/src/pages/NotFoundPage.tsx`)
+3. **NotFoundPage** (`/src/pages/NotFoundPage.tsx`)
    - Updated "Go Home" button to use locale-aware navigation with trailing slash
 
 ### Components
 
-6. **Navbar** (`/src/components/layout/Navbar.tsx`)
+1. **Navbar** (`/src/components/layout/Navbar.tsx`)
+
    - Replaced custom locale logic with `getPageUrlFromPath()`
    - All navigation links now have trailing slashes
 
-7. **ActivitySection** (`/src/components/profile/ActivitySection.tsx`)
-   - Replaced `Link` with `LinkTranslated` for "Show all activity" button
+2. **ExperienceSection** (`/src/components/profile/ExperienceSection.tsx`)
 
-8. **ExperienceSection** (`/src/components/profile/ExperienceSection.tsx`)
    - Replaced `Link` with `LinkTranslated` for "Show all experiences" button
 
-9. **ProjectsSection** (`/src/components/profile/ProjectsSection.tsx`)
+3. **ProjectsSection** (`/src/components/profile/ProjectsSection.tsx`)
+
    - Updated "See All" button to use locale-aware navigation with trailing slash
 
-10. **LanguageSwitcher** (`/src/components/ui/language-switcher.tsx`)
-    - Already uses `getPageUrlFromPath()`, now automatically gets trailing slashes
+4. **LanguageSwitcher** (`/src/components/ui/language-switcher.tsx`)
+   - Already uses `getPageUrlFromPath()`, now automatically gets trailing slashes
 
 ## Usage Example
 
@@ -86,21 +85,20 @@ A locale-aware Link wrapper that:
 
 All navigation links now correctly preserve the user's selected language **with trailing slashes**:
 
-| Current Locale | Link To | Result |
-|---------------|---------|----------|
-| en (default) | `/` | `/` |
-| it | `/` | `/it/` |
-| fr | `/experience` | `/fr/experience/` |
-| es | `/activity` | `/es/activity/` |
-| ar | `/projects` | `/ar/projects/` |
-| en | `/projects` | `/projects/` |
-| it | `/experience` | `/it/experience/` |
+| Current Locale | Link To       | Result            |
+| -------------- | ------------- | ----------------- |
+| en (default)   | `/`           | `/`               |
+| it             | `/`           | `/it/`            |
+| fr             | `/experience` | `/fr/experience/` |
+| ar             | `/projects`   | `/ar/projects/`   |
+| en             | `/projects`   | `/projects/`      |
+| it             | `/experience` | `/it/experience/` |
 
 ### Test Commands
 
 ```bash
 # Test Italian locale home
-curl -I http://localhost:8788/it/ 
+curl -I http://localhost:8788/it/
 # Expected: 200 OK, Content-Language: it
 
 # Test French experience page
@@ -125,20 +123,18 @@ The `getPageUrlFromPath()` function now:
 export const getPageUrlFromPath = (locale: Locale, page: string) => {
   // Normalize the page path - remove leading/trailing slashes
   const normalizedPage = page.replace(/^\/+|\/+$/g, '');
-  
+
   // Build the URL with locale prefix (if not default)
-  let url = locale === LOCALE_DEFAULT 
-    ? `/${normalizedPage}` 
-    : `/${locale}/${normalizedPage}`;
-  
+  let url = locale === LOCALE_DEFAULT ? `/${normalizedPage}` : `/${locale}/${normalizedPage}`;
+
   // Clean up any double slashes
   url = url.replace(/\/+/g, '/');
-  
+
   // Ensure trailing slash
   if (!url.endsWith('/')) {
     url += '/';
   }
-  
+
   return url;
 };
 ```

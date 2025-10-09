@@ -64,18 +64,6 @@
           "sizes": "192x192"
         }
       ]
-    },
-    {
-      "name": "Activity",
-      "short_name": "Activity",
-      "description": "View recent activity",
-      "url": "/activity",
-      "icons": [
-        {
-          "src": "/icon-192.png",
-          "sizes": "192x192"
-        }
-      ]
     }
   ]
 }

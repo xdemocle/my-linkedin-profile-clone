@@ -26,7 +26,7 @@ const QuoteSvgIcon = () => (
   </svg>
 );
 
-const recommendationKeys = ['giorgioRavioli', 'alessandroBuccheri'];
+const recommendationKeys = ['yehudaBortz', 'theoRichard'];
 
 export function RecommendationsSection() {
   const t = useTranslations('Recommendations');

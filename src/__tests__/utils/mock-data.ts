@@ -23,13 +23,6 @@ export const mockPaths = {
     es: '/es/projects',
     ar: '/ar/projects',
   },
-  activity: {
-    en: '/activity',
-    it: '/it/activity',
-    fr: '/fr/activity',
-    es: '/es/activity',
-    ar: '/ar/activity',
-  },
   invalid: ['/nonexistent', '/it/nonexistent', '/invalid-locale/page', '/en/invalid-page'],
 };
 
@@ -44,7 +37,6 @@ export const mockUrlTestCases = [
   { input: '/it/', expected: 'it' },
   { input: '/it/experience', expected: 'it' },
   { input: '/es/projects', expected: 'es' },
-  { input: '/ar/activity', expected: 'ar' },
 
   // Invalid paths
   { input: '/invalid', expected: null },
@@ -61,7 +53,6 @@ export const mockUrlGenerationCases = [
   { locale: 'it' as Locale, page: '', expected: '/it/' },
   { locale: 'it' as Locale, page: 'experience', expected: '/it/experience' },
   { locale: 'es' as Locale, page: 'projects', expected: '/es/projects' },
-  { locale: 'ar' as Locale, page: 'activity', expected: '/ar/activity' },
 
   // Edge cases
   { locale: 'it' as Locale, page: '/', expected: '/it/' },

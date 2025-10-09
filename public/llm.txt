@@ -187,10 +187,6 @@ bun run lint          # Lint code
 - Includes About, Experience, Education, Skills, etc.
 - Must always contain ProfileHeader (per user preferences)
 
-### Activity Section
-
-- **IMPORTANT**: Do NOT include ActivitySection in profile (per user preferences)
-
 ## Deployment
 
 ### Cloudflare Pages

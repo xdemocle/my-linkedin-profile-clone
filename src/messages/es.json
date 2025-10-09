@@ -40,7 +40,6 @@
     "experience": "Experiencia",
     "education": "Educación",
     "skills": "Habilidades",
-    "activity": "Actividad",
     "recommendations": "Recomendaciones",
     "volunteering": "Voluntariado",
     "languages": "Idiomas",
@@ -68,35 +67,6 @@
     "creatorMode": "Modo creador",
     "myNetwork": "Mi red",
     "showAll": "Mostrar todos los recursos"
-  },
-  "Activity": {
-    "title": "Actividad",
-    "posts": "Publicaciones",
-    "comments": "Comentarios",
-    "images": "Imágenes",
-    "articles": "Artículos",
-    "startPost": "Comenzar una publicación",
-    "showAllActivity": "Mostrar toda la actividad",
-    "noCommentsToShow": "No hay comentarios que mostrar",
-    "noImagesToShow": "No hay imágenes que mostrar",
-    "noArticlesToShow": "No hay artículos que mostrar",
-    "backToProfile": "Volver al perfil",
-    "followers": "seguidores",
-    "createPost": "Crear una publicación",
-    "activityOverview": "Resumen de actividad",
-    "reactions": "Reacciones",
-    "all": "Todos",
-    "posted": "publicó",
-    "commentedOn": "comentó en",
-    "shared": "compartió",
-    "likes": "me gusta",
-    "shares": "compartidos",
-    "yourCommentsWillAppear": "Tus comentarios aparecerán aquí",
-    "startEngagingWithPosts": "Comienza a interactuar con las publicaciones",
-    "imagesFromPostsWillAppear": "Las imágenes de tus publicaciones aparecerán aquí",
-    "createPostWithImages": "Crear una publicación con imágenes",
-    "yourArticlesWillAppear": "Tus artículos aparecerán aquí",
-    "writeAnArticle": "Escribir un artículo"
   },
   "Experience": {
     "title": "Experiencia",
@@ -452,22 +422,6 @@
         "relationship": "Alessandro gestionó a Rocco directamente",
         "date": "15 de marzo de 2021",
         "content": "Tuve el placer de gestionar a Rocco en varios proyectos críticos. Sus habilidades técnicas en desarrollo frontend son realmente impresionantes, particularmente en React y JavaScript moderno. Es proactivo, confiable y tiene una capacidad excepcional para resolver problemas complejos. Su trabajo superó constantemente las expectativas del cliente y fue un activo valioso para nuestro equipo."
-      }
-    },
-    "posts": {
-      "post1": {
-        "role": "Desarrollador Web Frontend Full Stack",
-        "content": "¡Emocionado de compartir que he completado mi último proyecto - un clon de perfil de LinkedIn construido con React, TypeScript y TailwindCSS! 🚀\n\n¡Échale un vistazo y dime qué piensas!"
-      },
-      "post2": {
-        "author": "Sarah Johnson",
-        "role": "Diseñadora UX en Google",
-        "content": "Acabo de publicar mi nuevo artículo sobre sistemas de diseño y cómo pueden transformar tu proceso de desarrollo de productos.\n\nUn buen sistema de diseño puede ahorrar cientos de horas de desarrollo y aportar coherencia a tu experiencia de usuario."
-      },
-      "post3": {
-        "author": "Michael Chen",
-        "role": "Tech Lead en Microsoft",
-        "content": "¡Estamos contratando! Buscamos desarrolladores frontend talentosos para unirse a nuestro equipo. Si tienes experiencia con React, TypeScript y pasión por crear grandes experiencias de usuario, envíame un mensaje."
       }
     }
   },

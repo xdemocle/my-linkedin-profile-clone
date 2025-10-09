@@ -69,7 +69,6 @@ describe('i18n utilities', () => {
       // Only test non-default locales since English has special behavior
       const testCases = [
         { locale: 'fr', page: 'projects' },
-        { locale: 'es', page: 'activity' },
         { locale: 'ar', page: 'about' },
       ] as const;
 

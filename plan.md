@@ -45,7 +45,7 @@ The routing system is complex with multiple concerns:
 
 - [ ] **Route matching and rendering**
   - Home routes for each locale
-  - Page routes (experience, projects, activity)
+  - Page routes (experience, projects)
   - 404 fallback behavior
   - Legacy route redirects
 - [ ] **Navigation scenarios**
@@ -225,7 +225,6 @@ src/
 
 - [x] Updated components to use translations:
 
-  - `src/pages/ActivityPage.tsx` - Uses `Common.profileName`
   - `src/pages/ExperiencePage.tsx` - Uses `Common.profileName`
   - `src/pages/ProjectsPage.tsx` - Uses `Common.profileName`
   - `src/components/profile/PeopleAlsoViewed.tsx` - Fully translatable

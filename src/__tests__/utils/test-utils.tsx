@@ -14,7 +14,6 @@ const mockMessages = {
     search: 'Search',
     experience: 'Experience',
     projects: 'Projects',
-    activity: 'Activity',
   },
   NotFound: {
     title: 'Page Not Found',
@@ -43,12 +42,6 @@ const mockMessages = {
     title: 'Projects',
     viewProject: 'View Project',
     sourceCode: 'Source Code',
-  },
-  Activity: {
-    title: 'Activity',
-    posts: 'Posts',
-    likes: 'Likes',
-    comments: 'Comments',
   },
 };
 

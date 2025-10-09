@@ -177,7 +177,7 @@ The project follows a structured development plan outlined in `DEVELOPMENT_PLAN.
    - ExperienceSection job titles and descriptions (✅ **COMPLETED**)
    - SkillsSection skill names and endorsements (✅ **COMPLETED**)
    - ProfileSidebar languages, interests, and footer (✅ **COMPLETED**)
-   - ActivityPage & ExperiencePage full translations (✅ **COMPLETED**)
+   - ExperiencePage full translations (✅ **COMPLETED**)
 
 2. **UX & Accessibility Improvements**:
 
@@ -209,13 +209,13 @@ The project follows a structured development plan outlined in `DEVELOPMENT_PLAN.
 
 ### **Current Development Phase**
 
-**Phase 1**: Translation completion for remaining pages (ActivityPage & ExperiencePage) is the immediate priority.
+**Phase 1**: Translation completion for remaining pages (ExperiencePage) is the immediate priority.
 
 ### **✅ Completed Implementations**
 
 #### **Translation System (100% Complete)**
 
-- **Core Components**: ProfileHeader, AboutSection, ExperienceSection, SkillsSection, ProfileSidebar (with clustered interests), Navbar, ActivityPage, ExperiencePage
+- **Core Components**: ProfileHeader, AboutSection, ExperienceSection, SkillsSection, ProfileSidebar (with clustered interests), Navbar, ExperiencePage
 - **5 Languages Supported**: English, Italian, Spanish, French, Arabic
 - **Language Support**: French added to ProfileSidebar with conversational proficiency level
 - **Clustered Interests**: 4 categories with 35+ interest tags fully translated

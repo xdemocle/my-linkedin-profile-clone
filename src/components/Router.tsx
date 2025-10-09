@@ -1,7 +1,6 @@
 import { ScrollToTop } from '@/components/ScrollToTop';
 import { LOCALE_DEFAULT, LOCALES, type Locale } from '@/constants';
 import { getPageUrlFromPath } from '@/lib/i18n';
-import { ActivityPage } from '@/pages/ActivityPage';
 import { ExperiencePage } from '@/pages/ExperiencePage';
 import { MainPage } from '@/pages/MainPage';
 import { NotFoundPage } from '@/pages/NotFoundPage';
@@ -65,13 +64,6 @@ export function Router() {
           </Route>
         ))}
 
-        {/* Activity page with locale prefixes */}
-        {LOCALES.map(lang => (
-          <Route key={`${lang}-activity`} path={getPageUrlFromPath(lang, 'activity')}>
-            <ActivityPage />
-          </Route>
-        ))}
-
         {/* Projects page with locale prefixes */}
         {LOCALES.map(lang => (
           <Route key={`${lang}-projects`} path={getPageUrlFromPath(lang, 'projects')}>
@@ -96,9 +88,6 @@ export function Router() {
         {/* redirect to localized versions */}
         <Route path={getPageUrlFromPath(locale, 'experience')}>
           <Redirect to={`/${locale}/experience`} />
-        </Route>
-        <Route path={getPageUrlFromPath(locale, 'activity')}>
-          <Redirect to={`/${locale}/activity`} />
         </Route>
         <Route path={getPageUrlFromPath(locale, 'projects')}>
           <Redirect to={`/${locale}/projects`} />

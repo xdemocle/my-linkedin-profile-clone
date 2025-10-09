@@ -10,7 +10,6 @@ const IMAGE_CACHE = `images-${CACHE_VERSION}`;
 const STATIC_ASSETS = [
   '/',
   '/experience',
-  '/activity',
   '/manifest.json',
   // Add prerendered pages here as they're generated
 ];
