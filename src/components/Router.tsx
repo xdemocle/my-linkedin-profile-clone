@@ -1,11 +1,10 @@
-import { PageLayout } from '@/components/layout/PageLayout';
-import { ProfileLayout } from '@/components/layout/ProfileLayout';
 import { ScrollToTop } from '@/components/ScrollToTop';
 import { LOCALE_DEFAULT, LOCALES, type Locale } from '@/constants';
 import { getPageUrlFromPath } from '@/lib/i18n';
 import { ActivityPage } from '@/pages/ActivityPage';
 import { BlogPage } from '@/pages/BlogPage';
 import { ExperiencePage } from '@/pages/ExperiencePage';
+import { MainPage } from '@/pages/MainPage';
 import { NotFoundPage } from '@/pages/NotFoundPage';
 import { ProjectsPage } from '@/pages/ProjectsPage';
 import { RecommendationsPage } from '@/pages/RecommendationsPage';
@@ -56,61 +55,49 @@ export function Router() {
           <Route
             key={`${lang}-root`}
             path={lang === LOCALE_DEFAULT ? '/' : `/${lang}`}
-            component={() => <ProfileLayout />}
+            component={() => <MainPage />}
           />
         ))}
 
         {/* Experience page with locale prefixes */}
         {LOCALES.map(lang => (
           <Route key={`${lang}-experience`} path={getPageUrlFromPath(lang, 'experience')}>
-            <PageLayout>
-              <ExperiencePage />
-            </PageLayout>
+            <ExperiencePage />
           </Route>
         ))}
 
         {/* Activity page with locale prefixes */}
         {LOCALES.map(lang => (
           <Route key={`${lang}-activity`} path={getPageUrlFromPath(lang, 'activity')}>
-            <PageLayout>
-              <ActivityPage />
-            </PageLayout>
+            <ActivityPage />
           </Route>
         ))}
 
         {/* Blog page with locale prefixes */}
         {LOCALES.map(lang => (
           <Route key={`${lang}-blog`} path={getPageUrlFromPath(lang, 'blog')}>
-            <PageLayout>
-              <BlogPage />
-            </PageLayout>
+            <BlogPage />
           </Route>
         ))}
 
         {/* Projects page with locale prefixes */}
         {LOCALES.map(lang => (
           <Route key={`${lang}-projects`} path={getPageUrlFromPath(lang, 'projects')}>
-            <PageLayout>
-              <ProjectsPage />
-            </PageLayout>
+            <ProjectsPage />
           </Route>
         ))}
 
         {/* Skills page with locale prefixes */}
         {LOCALES.map(lang => (
           <Route key={`${lang}-skills`} path={getPageUrlFromPath(lang, 'skills')}>
-            <PageLayout>
-              <SkillsPage />
-            </PageLayout>
+            <SkillsPage />
           </Route>
         ))}
 
         {/* Recommendations page with locale prefixes */}
         {LOCALES.map(lang => (
           <Route key={`${lang}-recommendations`} path={getPageUrlFromPath(lang, 'recommendations')}>
-            <PageLayout>
-              <RecommendationsPage />
-            </PageLayout>
+            <RecommendationsPage />
           </Route>
         ))}
 

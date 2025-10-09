@@ -1,16 +1,42 @@
 import { type ReactNode } from 'react';
+import { ErrorBoundary } from '../ErrorBoundary';
+import { ProfileFooter } from '../profile/ProfileFooter';
+import { ProfileLanguageUrl } from '../profile/ProfileLanguageUrl';
 import { Navbar } from './Navbar';
 
 interface PageLayoutProps {
   children: ReactNode;
+  addToSidebar: ReactNode;
 }
 
-export function PageLayout({ children }: PageLayoutProps) {
+export function PageLayout({ children, addToSidebar }: PageLayoutProps) {
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen">
       <Navbar />
 
-      <div className="pt-16">{children}</div>
+      <main className="max-w-7xl mx-auto px-4 sm:px-6 py-16 sm:py-20">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-5 md:gap-10 ">
+          {/* Main content - 2/3 width on large screens, full width on mobile */}
+          <ErrorBoundary>
+            <div className="lg:col-span-2 order-1 space-y-5 md:space-y-10">{children}</div>
+          </ErrorBoundary>
+
+          {/* addToSidebar - 1/3 width on large screens, full width on mobile, appears after main content */}
+          <ErrorBoundary>
+            <div className="lg:col-span-1 order-2">
+              <div className="space-y-5 md:space-y-10">
+                {/* Profile Language & URL */}
+                <ProfileLanguageUrl />
+
+                {addToSidebar}
+
+                {/* Footer Links */}
+                <ProfileFooter />
+              </div>
+            </div>
+          </ErrorBoundary>
+        </div>
+      </main>
     </div>
   );
 }

@@ -15,7 +15,6 @@ export function ProfileHeader() {
   const { personal } = useProfileData();
 
   return (
-    // div className="bg-card rounded-md overflow-hidden shadow-xs border"
     <Card className="pt-0">
       {/* Cover Photo */}
       <div className="h-36 md:h-48 bg-muted relative rounded-t-md overflow-hidden border-b-1 border-primary/70">
