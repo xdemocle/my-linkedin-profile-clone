@@ -1,11 +1,20 @@
 import { useApp } from '@/hooks';
 import { cn } from '@/lib';
-import { BackpackIcon, CardStackPlusIcon, HomeIcon, LayersIcon, RocketIcon } from '@radix-ui/react-icons';
+import {
+  BackpackIcon,
+  CardStackPlusIcon,
+  Cross1Icon,
+  HamburgerMenuIcon,
+  HomeIcon,
+  LayersIcon,
+  RocketIcon,
+} from '@radix-ui/react-icons';
 import { Separator } from '@radix-ui/react-separator';
 import { useTranslations } from 'use-intl';
 // import { useProfileData } from '../../hooks/useProfileData';
-import { LinkTranslated } from '../link-translated';
+import { LinkTranslated } from '../LinkTranslated';
 import { Logo } from '../Logo';
+import { MobileDrawer } from '../MobileDrawer';
 import { Button } from '../ui/button';
 import { LanguageSwitcher } from '../ui/language-switcher';
 import { ScrollProgress } from '../ui/scroll-progress';
@@ -14,7 +23,7 @@ import { Search } from './Search';
 
 export function Navbar() {
   const t = useTranslations('Navigation');
-  const { isSearchOpen, isMobile } = useApp();
+  const { isSearchOpen, isMobile, isMenuOpen, setIsMenuOpen } = useApp();
   // const { personal } = useProfileData();
 
   const navLinks = [
@@ -24,6 +33,10 @@ export function Navbar() {
     { href: '/skills', label: t('skills'), icon: LayersIcon },
     { href: '/recommendations', label: t('recommendations'), icon: CardStackPlusIcon },
   ];
+
+  const handleMenuClick = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
 
   return (
     <header className="border-b bg-card/95 backdrop-blur-sm fixed top-0 left-0 right-0 z-50 shadow-xs">
@@ -56,12 +69,18 @@ export function Navbar() {
             </Button>
           ))}
 
-          <div className={cn('flex items-center', isMobile && isSearchOpen ? 'hidden' : '')}>
+          <div className={cn('flex items-center gap-1', isMobile && isSearchOpen ? 'hidden' : '')}>
             <Separator orientation="vertical" className="w-[1px] h-4 mx-2 bg-foreground hidden md:block" />
 
             <ThemeToggle />
 
             <LanguageSwitcher />
+
+            <MobileDrawer onOpenChangeHandler={handleMenuClick} navLinks={navLinks}>
+              <Button variant="ghost" size="icon" className="flex md:hidden" aria-label="Menu">
+                {isMenuOpen ? <Cross1Icon className="size-5.5" /> : <HamburgerMenuIcon className="size-5.5" />}
+              </Button>
+            </MobileDrawer>
 
             {/* <Button variant="ghost" size="icon" aria-label="User menu">
               <Avatar className="size-5.5">

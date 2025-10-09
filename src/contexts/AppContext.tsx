@@ -3,6 +3,8 @@ import { createContext } from 'react';
 interface AppContextType {
   isSearchOpen: boolean;
   setIsSearchOpen: (value: boolean) => void;
+  isMenuOpen: boolean;
+  setIsMenuOpen: (value: boolean) => void;
   isMobile: boolean;
 }
 

@@ -2,7 +2,7 @@
 import { ArrowRightIcon } from '@radix-ui/react-icons';
 import { useTranslations } from 'use-intl';
 import { useProfileData } from '../../hooks/useProfileData';
-import { LinkTranslated } from '../link-translated';
+import { LinkTranslated } from '../LinkTranslated';
 import { Avatar, AvatarFallback, AvatarImage } from '../ui/avatar';
 import { Button } from '../ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '../ui/card';

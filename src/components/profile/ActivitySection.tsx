@@ -1,5 +1,5 @@
 import { PostFeed } from '../feed/PostFeed';
-import { LinkTranslated } from '../link-translated';
+import { LinkTranslated } from '../LinkTranslated';
 import { Button } from '../ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '../ui/card';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '../ui/tabs';

@@ -85,6 +85,7 @@
     "typescript": "~5.9.3",
     "typescript-eslint": "^8.45.0",
     "use-intl": "^4.3.9",
+    "vaul": "^1.1.2",
     "vite": "^7.1.7",
     "vite-prerender-plugin": "^0.5.12",
     "wouter": "^3.7.1",

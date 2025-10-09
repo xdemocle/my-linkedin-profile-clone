@@ -3,7 +3,7 @@ import { PageLayout } from '@/components/layout/PageLayout';
 import { ArrowLeftIcon } from '@radix-ui/react-icons';
 import { useTranslations } from 'use-intl';
 import { PostFeed } from '../components/feed/PostFeed';
-import { LinkTranslated } from '../components/link-translated';
+import { LinkTranslated } from '../components/LinkTranslated';
 import { Avatar, AvatarFallback, AvatarImage } from '../components/ui/avatar';
 import { Button } from '../components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '../components/ui/card';

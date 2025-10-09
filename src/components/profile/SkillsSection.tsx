@@ -1,7 +1,7 @@
 import { useProfileData } from '@/hooks';
 import { ArrowRightIcon } from '@radix-ui/react-icons';
 import { useTranslations } from 'use-intl';
-import { LinkTranslated } from '../link-translated';
+import { LinkTranslated } from '../LinkTranslated';
 import { Button } from '../ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '../ui/card';
 import { Progress } from '../ui/progress';

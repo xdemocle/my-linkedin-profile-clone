@@ -3,7 +3,7 @@ import { useTranslations } from 'use-intl';
 import { Avatar, AvatarFallback, AvatarImage } from '../ui/avatar';
 // import { Button } from '../ui/button';
 import { ArrowRightIcon } from '@radix-ui/react-icons';
-import { LinkTranslated } from '../link-translated';
+import { LinkTranslated } from '../LinkTranslated';
 import { Button } from '../ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '../ui/card';
 import { Separator } from '../ui/separator';

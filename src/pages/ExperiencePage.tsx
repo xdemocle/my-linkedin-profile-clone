@@ -2,7 +2,7 @@ import { useProfileData } from '@/hooks';
 import { ArrowLeftIcon } from '@radix-ui/react-icons';
 import { useTranslations } from 'use-intl';
 import { PageLayout } from '../components/layout/PageLayout';
-import { LinkTranslated } from '../components/link-translated';
+import { LinkTranslated } from '../components/LinkTranslated';
 import { ExperienceKeyAchievements } from '../components/profile/ExperienceKeyAchievements';
 import { Avatar, AvatarFallback, AvatarImage } from '../components/ui/avatar';
 import { Button } from '../components/ui/button';
