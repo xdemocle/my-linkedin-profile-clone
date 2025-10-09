@@ -17,6 +17,7 @@ export function ExperiencePage() {
   // Get all 9 experiences from translations
   const experiences = Array.from({ length: 9 }, (_, i) => {
     const expKey = `exp${i + 1}`;
+
     return {
       company: tData(`${expKey}.company`),
       position: tData(`${expKey}.position`),
@@ -24,12 +25,11 @@ export function ExperiencePage() {
       dateRange: tData(`${expKey}.dateRange`),
       location: tData.has(`${expKey}.location`) ? tData(`${expKey}.location`) : undefined,
       description: tData(`${expKey}.description`),
-      highlights: Array.from({ length: 10 }, (_, j) => {
-        try {
+      highlights: Array.from({ length: 5 }, (_, j) => {
+        if (tData.has(`${expKey}.highlights.${j}`)) {
           return tData(`${expKey}.highlights.${j}`);
-        } catch {
-          return null;
         }
+        return null;
       }).filter(Boolean),
     };
   });
