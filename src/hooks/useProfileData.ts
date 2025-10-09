@@ -52,12 +52,12 @@ export function useProfileData(): ProfileData {
         items: staticAssets.skills[0],
       },
       {
-        category: tSkills('categories.backend'),
-        items: staticAssets.skills[1],
-      },
-      {
         category: tSkills('categories.web3AI'),
         items: staticAssets.skills[3],
+      },
+      {
+        category: tSkills('categories.backend'),
+        items: staticAssets.skills[1],
       },
       {
         category: tSkills('categories.devopsCloud'),
