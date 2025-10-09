@@ -60,7 +60,7 @@ export async function prerender(data: PrerenderData) {
 
   try {
     // Render the static app with error boundary
-    const html = renderToString(<Root prerenderLocale={locale} />);
+    let html = renderToString(<Root prerenderLocale={locale} />);
     const links = parseLinks(html);
 
     // Generate SEO meta tags based on page type
@@ -100,7 +100,23 @@ export async function prerender(data: PrerenderData) {
       type: pageType === 'home' ? 'profile' : 'website',
     });
 
-    console.log(`Successfully prerendered ${locale}${pagePath} page as static.`);
+    // Inject SEO meta tags and structured data into the HTML
+    // The vite-prerender-plugin doesn't support custom head injection,
+    // so we manually inject into the HTML string
+    const headInjection = `
+    ${seoMeta}
+    ${structuredData}
+  `;
+
+    // Insert before the closing </head> tag
+    html = html.replace('</head>', `${headInjection}\n  </head>`);
+
+    // Debug: Log injection details
+    const hreflangCount = (seoMeta.match(/hreflang/g) || []).length;
+    const hasStructuredData = structuredData.includes('schema.org');
+    console.log(
+      `Successfully prerendered ${locale}${pagePath} | hreflang: ${hreflangCount}, structured data: ${hasStructuredData}`
+    );
 
     return {
       html,
@@ -108,8 +124,6 @@ export async function prerender(data: PrerenderData) {
       head: {
         lang: locale,
         title,
-        meta: seoMeta,
-        script: structuredData,
       },
     };
   } catch (error) {

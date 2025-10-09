@@ -37,6 +37,111 @@ export default defineConfig({
       additionalPrerenderRoutes,
     }),
 
+    // Inject SEO meta tags into prerendered HTML files
+    {
+      name: 'inject-seo-meta',
+      async writeBundle() {
+        // Process all prerendered HTML files and inject hreflang + structured data
+        const routes = [
+          { path: '', type: 'home' as const },
+          { path: 'experience', type: 'experience' as const },
+          { path: 'projects', type: 'projects' as const },
+          { path: 'skills', type: 'skills' as const },
+          { path: 'recommendations', type: 'recommendations' as const },
+        ];
+
+        const WEBSITE_URL = 'https://linkedin-roccorusso.work';
+
+        for (const lang of LOCALES) {
+          for (const route of routes) {
+            const isDefault = lang === LOCALE_DEFAULT;
+            const langPrefix = isDefault ? '' : `/${lang}`;
+            const routePath = route.path ? `/${route.path}` : '';
+            const filePath = `dist/client${langPrefix}${routePath}/index.html`;
+
+            try {
+              let html = await fs.readFile(filePath, 'utf-8');
+
+              // Generate hreflang tags
+              const hreflangTags = LOCALES.map(l => {
+                const href = `${WEBSITE_URL}${l === LOCALE_DEFAULT ? '' : `/${l}`}${routePath}`;
+                return `<link rel="alternate" hreflang="${l}" href="${href}" />`;
+              });
+              hreflangTags.push(
+                `<link rel="alternate" hreflang="x-default" href="${WEBSITE_URL}${routePath}" />`
+              );
+
+              // Generate structured data
+              let structuredData = '';
+              if (route.type === 'home') {
+                const personSchema = {
+                  '@context': 'https://schema.org',
+                  '@type': 'Person',
+                  name: 'Rocco Russo',
+                  jobTitle: 'Software Engineer / Tech Lead',
+                  description:
+                    'Software engineer with over 20 years of experience in front-end engineering, Web3 integrations, and full-stack development.',
+                  url: WEBSITE_URL,
+                  image: `${WEBSITE_URL}/assets/png/profile.png`,
+                  sameAs: [
+                    'https://github.com/xdemocle',
+                    'https://linkedin.com/in/roccorusso',
+                    'https://twitter.com/xdemocle',
+                  ],
+                  address: {
+                    '@type': 'PostalAddress',
+                    addressLocality: 'Málaga',
+                    addressRegion: 'Andalusia',
+                    addressCountry: 'ES',
+                  },
+                  knowsAbout: ['React', 'TypeScript', 'Blockchain', 'Web3', 'DeFi', 'Smart Contracts'],
+                };
+                structuredData = `<script type="application/ld+json">${JSON.stringify(personSchema)}</script>`;
+              } else {
+                const routeNames = {
+                  experience: 'Experience',
+                  projects: 'Projects',
+                  skills: 'Skills',
+                  recommendations: 'Recommendations',
+                };
+                const breadcrumbSchema = {
+                  '@context': 'https://schema.org',
+                  '@type': 'BreadcrumbList',
+                  itemListElement: [
+                    {
+                      '@type': 'ListItem',
+                      position: 1,
+                      name: 'Home',
+                      item: `${WEBSITE_URL}${langPrefix}`,
+                    },
+                    {
+                      '@type': 'ListItem',
+                      position: 2,
+                      name: routeNames[route.type as keyof typeof routeNames] || '',
+                      item: `${WEBSITE_URL}${langPrefix}${routePath}`,
+                    },
+                  ],
+                };
+                structuredData = `<script type="application/ld+json">${JSON.stringify(breadcrumbSchema)}</script>`;
+              }
+
+              // Inject before </head>
+              const injection = `
+    ${hreflangTags.join('\n    ')}
+    ${structuredData}
+  `;
+              html = html.replace('</head>', `${injection}\n  </head>`);
+
+              await fs.writeFile(filePath, html);
+              console.log(`✓ Injected SEO meta into ${lang}${routePath || '/'}`);
+            } catch {
+              // File might not exist for some routes, skip silently
+            }
+          }
+        }
+      },
+    },
+
     // Automatize _header and _redirect of cloudflare pages
     // Create Cloudflare Pages configuration files for proper routing
     {
