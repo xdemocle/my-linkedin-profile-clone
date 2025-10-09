@@ -41,9 +41,9 @@ export function Search() {
         type="text"
         placeholder={t('search')}
         className={cn(
-          'bg-transparent sm:bg-muted pl-10 h-8 rounded-md text-sm transition-all w-xs',
+          'bg-transparent lg:bg-muted px-10 h-9 rounded-md text-sm transition-all w-xs',
           !isMobile || isSearchOpen ? '' : 'w-0.5',
-          isSearchOpen ? 'bg-muted w-full sm:w-lg' : ''
+          isSearchOpen ? 'bg-muted w-full md:max-w-lg' : ''
         )}
         onFocus={() => toggleInputSearch(true)}
         onBlur={() => toggleInputSearch(false)}

@@ -2,6 +2,10 @@
   "Navigation": {
     "search": "Rechercher",
     "home": "Accueil",
+    "experience": "Expérience",
+    "projects": "Projets",
+    "skills": "Compétences",
+    "recommendations": "Références",
     "myNetwork": "Mon réseau",
     "jobs": "Emplois",
     "messaging": "Messages",

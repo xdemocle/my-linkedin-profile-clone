@@ -2,6 +2,10 @@
   "Navigation": {
     "search": "Search",
     "home": "Home",
+    "experience": "Experience",
+    "projects": "Projects",
+    "skills": "Skills",
+    "recommendations": "Referrals",
     "myNetwork": "My Network",
     "jobs": "Jobs",
     "messaging": "Messaging",
