@@ -48,9 +48,8 @@ export function SkillsPage() {
                             <span className="font-medium">{skill.name}</span>
                             <span className="text-sm text-muted-foreground">{skill.level}%</span>
                           </div>
-                          <div className="w-full bg-secondary rounded-full h-2">
-                            <Progress value={skill.level} />
-                          </div>
+
+                          <Progress value={skill.level} />
                         </div>
                       ))}
                     </div>
