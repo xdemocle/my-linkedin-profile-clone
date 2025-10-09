@@ -17,7 +17,6 @@ The entire LinkedIn profile clone is now **fully multilingual** with support for
 - Navigation menus
 - Profile headers and sections
 - Activity feeds and posts
-- Blog articles
 - People recommendations
 - All button labels and common text
 

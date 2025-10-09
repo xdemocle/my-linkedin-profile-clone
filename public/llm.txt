@@ -32,8 +32,8 @@ A modern, open-source LinkedIn profile clone built with React, TypeScript, and T
 /it/, /fr/, /es/, /ar/ -> Localized profile pages
 /experience          -> English experience page
 /it/experience       -> Italian experience page
-/blog                -> English blog page
 /projects            -> English projects page
+/it/projects         -> Italian projects page
 ```
 
 ### Routing Rules

@@ -13,7 +13,6 @@ const mockMessages = {
     home: 'Home',
     search: 'Search',
     experience: 'Experience',
-    blog: 'Blog',
     projects: 'Projects',
     activity: 'Activity',
   },
@@ -44,11 +43,6 @@ const mockMessages = {
     title: 'Projects',
     viewProject: 'View Project',
     sourceCode: 'Source Code',
-  },
-  Blog: {
-    title: 'Blog',
-    readMore: 'Read More',
-    publishedOn: 'Published on',
   },
   Activity: {
     title: 'Activity',

@@ -45,7 +45,7 @@ The routing system is complex with multiple concerns:
 
 - [ ] **Route matching and rendering**
   - Home routes for each locale
-  - Page routes (experience, blog, projects, activity)
+  - Page routes (experience, projects, activity)
   - 404 fallback behavior
   - Legacy route redirects
 - [ ] **Navigation scenarios**
@@ -222,15 +222,12 @@ src/
   - `SampleData` section with:
     - `people` (6 sample profiles)
     - `recommendations` (2 recommendations)
-    - `posts` (3 social media posts)
-    - `blogPosts` (3 blog articles)
 
 - [x] Updated components to use translations:
 
   - `src/pages/ActivityPage.tsx` - Uses `Common.profileName`
   - `src/pages/ExperiencePage.tsx` - Uses `Common.profileName`
   - `src/pages/ProjectsPage.tsx` - Uses `Common.profileName`
-  - `src/pages/BlogPage.tsx` - Uses `SampleData.blogPosts` for all blog content
   - `src/components/profile/PeopleAlsoViewed.tsx` - Fully translatable
   - `src/components/profile/RecommendationsSection.tsx` - Fully translatable
   - `src/components/feed/PostFeed.tsx` - Fully translatable

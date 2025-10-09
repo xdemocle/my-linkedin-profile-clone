@@ -16,13 +16,6 @@ export const mockPaths = {
     es: '/es/experience',
     ar: '/ar/experience',
   },
-  blog: {
-    en: '/blog',
-    it: '/it/blog',
-    fr: '/fr/blog',
-    es: '/es/blog',
-    ar: '/ar/blog',
-  },
   projects: {
     en: '/projects',
     it: '/it/projects',
@@ -50,7 +43,6 @@ export const mockUrlTestCases = [
   { input: '/it', expected: 'it' },
   { input: '/it/', expected: 'it' },
   { input: '/it/experience', expected: 'it' },
-  { input: '/fr/blog', expected: 'fr' },
   { input: '/es/projects', expected: 'es' },
   { input: '/ar/activity', expected: 'ar' },
 
@@ -64,12 +56,10 @@ export const mockUrlGenerationCases = [
   // Default locale (English) - should not have prefix
   { locale: 'en' as Locale, page: '', expected: '/' },
   { locale: 'en' as Locale, page: 'experience', expected: '/experience' },
-  { locale: 'en' as Locale, page: 'blog', expected: '/blog' },
 
   // Other locales - should have prefix
   { locale: 'it' as Locale, page: '', expected: '/it/' },
   { locale: 'it' as Locale, page: 'experience', expected: '/it/experience' },
-  { locale: 'fr' as Locale, page: 'blog', expected: '/fr/blog' },
   { locale: 'es' as Locale, page: 'projects', expected: '/es/projects' },
   { locale: 'ar' as Locale, page: 'activity', expected: '/ar/activity' },
 
@@ -104,11 +94,5 @@ export const mockNavigationScenarios = [
     from: '/experience',
     switchTo: 'it' as Locale,
     expectedPath: '/it/experience',
-  },
-  {
-    name: 'Language switch from Italian to English (root)',
-    from: '/it/blog',
-    switchTo: 'en' as Locale,
-    expectedPath: '/blog',
   },
 ];

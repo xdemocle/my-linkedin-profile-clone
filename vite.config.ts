@@ -16,9 +16,6 @@ const additionalPrerenderRoutes = [
   // Experience pages
   ...LOCALES.map(locale => getPageUrlFromPath(locale, 'experience')),
 
-  // Blog pages
-  ...LOCALES.map(locale => getPageUrlFromPath(locale, 'blog')),
-
   // Projects pages
   ...LOCALES.map(locale => getPageUrlFromPath(locale, 'projects')),
 ];

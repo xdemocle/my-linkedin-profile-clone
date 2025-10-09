@@ -366,20 +366,6 @@
     "urlCopied": "URL copiada al portapapeles!",
     "language": "Idioma del Perfil"
   },
-  "Blog": {
-    "title": "Blog Técnico",
-    "subtitle": "Reflexiones sobre desarrollo frontend, Web3 y tecnología moderna. Compartiendo insights sobre la construcción de aplicaciones escalables y explorando tendencias tecnológicas emergentes.",
-    "featured": "Destacado",
-    "recentPosts": "Publicaciones recientes",
-    "readFullArticle": "Leer artículo completo",
-    "readMore": "Leer más",
-    "stayUpdated": "Mantente actualizado",
-    "subscribeDescription": "Suscríbete para recibir notificaciones sobre nuevas publicaciones de desarrollo frontend, Web3 e insights tecnológicos.",
-    "enterEmail": "Ingresa tu email",
-    "subscribe": "Suscribirse",
-    "minRead": "min de lectura",
-    "publishedOn": "Publicado el"
-  },
   "NotFound": {
     "title": "¡Ups! Página No Encontrada",
     "description": "La página que buscas parece haberse perdido en el vacío digital. ¡No te preocupes, les pasa a los mejores!",
@@ -480,23 +466,6 @@
         "author": "Michael Chen",
         "role": "Tech Lead en Microsoft",
         "content": "¡Estamos contratando! Buscamos desarrolladores frontend talentosos para unirse a nuestro equipo. Si tienes experiencia con React, TypeScript y pasión por crear grandes experiencias de usuario, envíame un mensaje."
-      }
-    },
-    "blogPosts": {
-      "post1": {
-        "title": "Construyendo Aplicaciones React Modernas con TypeScript",
-        "description": "Una guía completa para configurar y desarrollar aplicaciones React escalables usando TypeScript, enfocándose en las mejores prácticas y patrones de desarrollo modernos.",
-        "content": "En este post, exploramos los beneficios de usar TypeScript con React y cómo configurar un entorno de desarrollo robusto..."
-      },
-      "post2": {
-        "title": "El Futuro de Web3 y el Desarrollo Frontend",
-        "description": "Explorando cómo la tecnología blockchain está remodelando el desarrollo frontend y qué necesitan saber los desarrolladores sobre la integración Web3.",
-        "content": "Web3 representa un cambio de paradigma en cómo pensamos sobre las aplicaciones y las interacciones del usuario..."
-      },
-      "post3": {
-        "title": "Optimización del Rendimiento en Grandes Aplicaciones React",
-        "description": "Aprende técnicas avanzadas para optimizar el rendimiento de aplicaciones React, incluyendo división de código, memoización y gestión eficiente del estado.",
-        "content": "La optimización del rendimiento es crucial para mantener una buena experiencia de usuario en aplicaciones grandes..."
       }
     }
   },

@@ -166,48 +166,6 @@ function Page() {
 }
 ```
 
-## Blog Setup
-
-The project includes a **blog page** at the `/blog` route:
-
-- **BlogPage Component**: Located at `src/pages/BlogPage.tsx`
-- **Route Configuration**: Configured in `src/components/Router.tsx` with `/blog` path
-- **Navigation**: Blog link added to Navbar with ReaderIcon from Lucide React
-- **Content**: Features blog posts with author information, publish dates, read times, and tags
-- **Layout**: Uses shadcn/ui Card components for post display and responsive grid layout
-- **Internationalization**: Fully integrated with use-intl for multi-language support
-- **Features**:
-  - Featured post section highlighting the latest blog post
-  - Recent posts grid with hover effects
-  - Newsletter signup section for user engagement
-  - Responsive design with mobile-first approach
-  - Blog post metadata including author, date, read time, and tags
-
-### Blog Structure
-
-```tsx
-// Blog posts are defined as TypeScript interfaces
-interface BlogPost {
-  id: string;
-  title: string;
-  description: string;
-  content: string;
-  author: { name: string; avatar: string };
-  publishedAt: string;
-  readTime: number;
-  tags: string[];
-  slug: string;
-}
-```
-
-### Translation Keys
-
-Blog translations are organized under the `"Blog"` section in translation files:
-
-- `title`, `subtitle`, `featured`, `recentPosts`
-- `readFullArticle`, `readMore`, `minRead`
-- `stayUpdated`, `subscribeDescription`, `enterEmail`, `subscribe`
-
 ## Development Plan & Priorities
 
 The project follows a structured development plan outlined in `DEVELOPMENT_PLAN.md`:
@@ -220,7 +178,6 @@ The project follows a structured development plan outlined in `DEVELOPMENT_PLAN.
    - SkillsSection skill names and endorsements (✅ **COMPLETED**)
    - ProfileSidebar languages, interests, and footer (✅ **COMPLETED**)
    - ActivityPage & ExperiencePage full translations (✅ **COMPLETED**)
-   - BlogPage translations (✅ **COMPLETED**)
 
 2. **UX & Accessibility Improvements**:
 
@@ -258,7 +215,7 @@ The project follows a structured development plan outlined in `DEVELOPMENT_PLAN.
 
 #### **Translation System (100% Complete)**
 
-- **Core Components**: ProfileHeader, AboutSection, ExperienceSection, SkillsSection, ProfileSidebar (with clustered interests), BlogPage, Navbar, ActivityPage, ExperiencePage
+- **Core Components**: ProfileHeader, AboutSection, ExperienceSection, SkillsSection, ProfileSidebar (with clustered interests), Navbar, ActivityPage, ExperiencePage
 - **5 Languages Supported**: English, Italian, Spanish, French, Arabic
 - **Language Support**: French added to ProfileSidebar with conversational proficiency level
 - **Clustered Interests**: 4 categories with 35+ interest tags fully translated
@@ -288,7 +245,7 @@ The project follows a structured development plan outlined in `DEVELOPMENT_PLAN.
 
 - **Progressive Disclosure**: Essential functions always visible, secondary features on larger screens
 - **Touch Optimization**: 44px+ touch targets on mobile (40px buttons vs 36px on desktop)
-- **Responsive Navigation**: Core navigation (Home, Blog) always visible, secondary items (Jobs, Messages) on larger screens
+- **Responsive Navigation**: Core navigation (Home) always visible, secondary items (Jobs, Messages) on larger screens
 - **Layout Adaptation**: Proper content flow and spacing across xs, sm, md, lg breakpoints
 
 #### **Accessibility Implementation (Complete)**

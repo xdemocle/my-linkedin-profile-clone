@@ -301,20 +301,6 @@
     "whoViewersAlsoViewed": "Who your viewers also viewed",
     "privateToYou": "Private to you"
   },
-  "Blog": {
-    "title": "Tech Blog",
-    "subtitle": "Thoughts on frontend development, Web3, and modern technology. Sharing insights from building scalable applications and exploring emerging tech trends.",
-    "featured": "Featured",
-    "recentPosts": "Recent Posts",
-    "readFullArticle": "Read Full Article",
-    "readMore": "Read More",
-    "stayUpdated": "Stay Updated",
-    "subscribeDescription": "Subscribe to get notified about new posts on frontend development, Web3, and tech insights.",
-    "enterEmail": "Enter your email",
-    "subscribe": "Subscribe",
-    "minRead": "min read",
-    "publishedOn": "Published on"
-  },
   "Footer": {
     "about": "About",
     "accessibility": "Accessibility",
@@ -480,23 +466,6 @@
         "author": "Michael Chen",
         "role": "Tech Lead at Microsoft",
         "content": "We're hiring! Looking for talented frontend developers to join our team. If you have experience with React, TypeScript, and a passion for building great user experiences, send me a message."
-      }
-    },
-    "blogPosts": {
-      "post1": {
-        "title": "Building Modern React Applications with TypeScript",
-        "description": "A comprehensive guide to setting up and developing scalable React applications using TypeScript, focusing on best practices and modern development patterns.",
-        "content": "In this post, we explore the benefits of using TypeScript with React and how to set up a robust development environment..."
-      },
-      "post2": {
-        "title": "The Future of Web3 and Frontend Development",
-        "description": "Exploring how blockchain technology is reshaping frontend development and what developers need to know about Web3 integration.",
-        "content": "Web3 represents a paradigm shift in how we think about applications and user interactions..."
-      },
-      "post3": {
-        "title": "Optimizing Performance in Large React Applications",
-        "description": "Learn advanced techniques for optimizing React application performance, including code splitting, memoization, and efficient state management.",
-        "content": "Performance optimization is crucial for maintaining a good user experience in large applications..."
       }
     }
   },

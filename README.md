@@ -263,8 +263,6 @@ The application implements a sophisticated i18n system with:
 /it/, /fr/, etc. - Localized profile pages
 /experience      - Experience page in English
 /*/experience    - Localized experience pages
-/blog            - Blog page in English
-/*/blog          - Localized blog pages
 /projects        - Projects page in English
 /*/projects      - Localized projects pages
 ```

@@ -345,20 +345,6 @@
     "urlCopied": "URL copiato negli appunti!",
     "language": "Lingua del Profilo"
   },
-  "Blog": {
-    "title": "Blog Tecnico",
-    "subtitle": "Riflessioni sullo sviluppo frontend, Web3 e tecnologie moderne. Condivisione di approfondimenti dalla costruzione di applicazioni scalabili ed esplorazione delle tendenze tecnologiche emergenti.",
-    "featured": "In evidenza",
-    "recentPosts": "Post recenti",
-    "readFullArticle": "Leggi l'articolo completo",
-    "readMore": "Leggi di più",
-    "stayUpdated": "Resta aggiornato",
-    "subscribeDescription": "Iscriviti per ricevere notifiche sui nuovi post sullo sviluppo frontend, Web3 e approfondimenti tecnologici.",
-    "enterEmail": "Inserisci la tua email",
-    "subscribe": "Iscriviti",
-    "minRead": "min di lettura",
-    "publishedOn": "Pubblicato il"
-  },
   "Footer": {
     "about": "Informazioni",
     "accessibility": "Accessibilità",
@@ -481,23 +467,6 @@
         "author": "Michael Chen",
         "role": "Tech Lead presso Microsoft",
         "content": "Stiamo assumendo! Cerchiamo sviluppatori frontend di talento per unirsi al nostro team. Se hai esperienza con React, TypeScript e una passione per costruire grandi esperienze utente, mandami un messaggio."
-      }
-    },
-    "blogPosts": {
-      "post1": {
-        "title": "Costruire Applicazioni React Moderne con TypeScript",
-        "description": "Una guida completa per configurare e sviluppare applicazioni React scalabili utilizzando TypeScript, concentrandosi sulle best practice e sui moderni pattern di sviluppo.",
-        "content": "In questo post, esploriamo i vantaggi dell'utilizzo di TypeScript con React e come configurare un ambiente di sviluppo robusto..."
-      },
-      "post2": {
-        "title": "Il Futuro di Web3 e dello Sviluppo Frontend",
-        "description": "Esplorando come la tecnologia blockchain sta rimodellando lo sviluppo frontend e cosa gli sviluppatori devono sapere sull'integrazione Web3.",
-        "content": "Web3 rappresenta un cambio di paradigma nel modo in cui pensiamo alle applicazioni e alle interazioni degli utenti..."
-      },
-      "post3": {
-        "title": "Ottimizzazione delle Prestazioni nelle Grandi Applicazioni React",
-        "description": "Impara tecniche avanzate per ottimizzare le prestazioni delle applicazioni React, inclusi code splitting, memoization e gestione efficiente dello stato.",
-        "content": "L'ottimizzazione delle prestazioni è fondamentale per mantenere una buona esperienza utente nelle applicazioni di grandi dimensioni..."
       }
     }
   },

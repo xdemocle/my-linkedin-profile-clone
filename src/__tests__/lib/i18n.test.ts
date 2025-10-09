@@ -1,39 +1,24 @@
-import { describe, it, expect } from 'vitest';
-import { 
-  getLocaleFromPath, 
-  getPageUrlFromPath, 
-  getDirection, 
-  isRTL 
-} from '../../lib/i18n';
-import { 
-  mockUrlTestCases, 
-  mockUrlGenerationCases, 
-  mockDirectionCases 
-} from '../utils/mock-data';
+import { describe, expect, it } from 'vitest';
+import { getDirection, getLocaleFromPath, getPageUrlFromPath, isRTL } from '../../lib/i18n';
+import { mockDirectionCases, mockUrlGenerationCases, mockUrlTestCases } from '../utils/mock-data';
 
 describe('i18n utilities', () => {
   describe('getLocaleFromPath', () => {
-    it.each(mockUrlTestCases)(
-      'should detect locale correctly for path: $input',
-      ({ input, expected }) => {
-        const result = getLocaleFromPath(input);
-        expect(result).toBe(expected);
-      }
-    );
+    it.each(mockUrlTestCases)('should detect locale correctly for path: $input', ({ input, expected }) => {
+      const result = getLocaleFromPath(input);
+      expect(result).toBe(expected);
+    });
 
     it('should handle edge cases', () => {
       // Empty string should return null (not a valid path)
       expect(getLocaleFromPath('')).toBe(null);
-      
+
       // Multiple slashes
       expect(getLocaleFromPath('//it//experience')).toBe('it');
-      
-      // Query parameters (should be handled by router, but function should still work)
-      expect(getLocaleFromPath('/fr/blog?param=value')).toBe('fr');
-      
+
       // Hash fragments (should be handled by router, but function should still work)
       expect(getLocaleFromPath('/es/projects#section')).toBe('es');
-      
+
       // Case sensitivity - locales are case sensitive
       expect(getLocaleFromPath('/IT/experience')).toBe(null);
     });
@@ -63,13 +48,10 @@ describe('i18n utilities', () => {
   });
 
   describe('getDirection', () => {
-    it.each(mockDirectionCases)(
-      'should return correct direction for locale: $locale',
-      ({ locale, expected }) => {
-        const result = getDirection(locale);
-        expect(result).toBe(expected);
-      }
-    );
+    it.each(mockDirectionCases)('should return correct direction for locale: $locale', ({ locale, expected }) => {
+      const result = getDirection(locale);
+      expect(result).toBe(expected);
+    });
   });
 
   describe('isRTL', () => {
@@ -86,7 +68,6 @@ describe('i18n utilities', () => {
     it('should maintain consistency between locale detection and URL generation for non-default locales', () => {
       // Only test non-default locales since English has special behavior
       const testCases = [
-        { locale: 'it', page: 'blog' },
         { locale: 'fr', page: 'projects' },
         { locale: 'es', page: 'activity' },
         { locale: 'ar', page: 'about' },
@@ -95,7 +76,7 @@ describe('i18n utilities', () => {
       testCases.forEach(({ locale, page }) => {
         const generatedUrl = getPageUrlFromPath(locale, page);
         const detectedLocale = getLocaleFromPath(generatedUrl);
-        
+
         expect(detectedLocale).toBe(locale);
       });
     });
@@ -104,12 +85,11 @@ describe('i18n utilities', () => {
       // English pages without locale prefix should return null from getLocaleFromPath
       // because they don't have a locale prefix, except for root path
       expect(getLocaleFromPath('/experience')).toBe(null);
-      expect(getLocaleFromPath('/blog')).toBe(null);
       expect(getLocaleFromPath('/projects')).toBe(null);
-      
+
       // But root path should return 'en'
       expect(getLocaleFromPath('/')).toBe('en');
-      
+
       // This is the expected behavior for the default locale system
     });
 
@@ -132,7 +112,7 @@ describe('i18n utilities', () => {
     it('should handle root path special case', () => {
       // Root should always detect as default locale
       expect(getLocaleFromPath('/')).toBe('en');
-      
+
       // But generating URL for default locale with empty page should be root
       expect(getPageUrlFromPath('en', '')).toBe('/');
       expect(getPageUrlFromPath('en', '/')).toBe('/');
