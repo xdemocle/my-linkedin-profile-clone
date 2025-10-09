@@ -1,7 +1,7 @@
+import { useLocale } from '@/hooks';
+import { getPageUrlFromPath } from '@/lib';
 import type { AnchorHTMLAttributes } from 'react';
 import { Link } from 'wouter';
-import { useLocale } from '../hooks/useLocale';
-import { getPageUrlFromPath } from '../lib/i18n';
 
 interface LinkTranslatedProps extends Omit<AnchorHTMLAttributes<HTMLAnchorElement>, 'href'> {
   href: string;

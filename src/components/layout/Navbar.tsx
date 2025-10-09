@@ -44,6 +44,7 @@ export function Navbar() {
             <Button
               variant="ghost"
               size="icon"
+              key={`${link.href}-${link.label}`}
               className="rounded-none size-12 w-20 py-7 hidden md:flex flex-col gap-1 group"
               aria-label={link.label}
               asChild
@@ -59,6 +60,7 @@ export function Navbar() {
             <Separator orientation="vertical" className="w-[1px] h-4 mx-2 bg-foreground hidden md:block" />
 
             <ThemeToggle />
+
             <LanguageSwitcher />
 
             {/* <Button variant="ghost" size="icon" aria-label="User menu">
