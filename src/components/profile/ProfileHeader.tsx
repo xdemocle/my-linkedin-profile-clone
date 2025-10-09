@@ -91,8 +91,10 @@ export function ProfileHeader() {
           <div className="flex flex-wrap gap-2 mt-6">
             <Button className="bg-primary text-white hover:bg-primary-700 rounded-full px-6">{t('openToWork')}</Button>
 
-            <Button variant="outline" className="rounded-full px-4">
-              {t('resources')}
+            <Button variant="outline" className="rounded-full px-4" asChild>
+              <a target="_blank" href={`${WEBSITE_URL}/#newsletters`} rel="noopener noreferrer">
+                {tCommon('newsletters')}
+              </a>
             </Button>
 
             <ShareProfile profileUrl={WEBSITE_URL} profileName={tCommon('shareProfileName')}>
