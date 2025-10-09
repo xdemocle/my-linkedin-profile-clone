@@ -53,8 +53,8 @@ export function ExperiencePage() {
           {experiences.map((exp, index) => (
             <div key={index} className="mb-8 last:mb-0">
               {index > 0 && <Separator className="my-8" />}
-              <div className="flex gap-4">
-                <Avatar className="w-16 h-16 flex-shrink-0">
+              <div className="flex gap-2 md:gap-4">
+                <Avatar className="w-10 h-10 md:w-12 md:h-12">
                   <AvatarImage src="/assets/png/avatar.png" />
                   <AvatarFallback>{exp.company[0]}</AvatarFallback>
                 </Avatar>

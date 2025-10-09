@@ -69,17 +69,15 @@ export function ExperienceSection() {
         {experiences.map((exp, index) => (
           <div key={index} className="mb-6">
             {index > 0 && <Separator className="my-6" />}
-            <div className="flex gap-4">
-              <Avatar className="w-12 h-12">
+            <div className="flex gap-2 md:gap-4">
+              <Avatar className="w-10 h-10 md:w-12 md:h-12">
                 <AvatarImage src={exp.logo} />
                 <AvatarFallback>{t(exp.companyKey)[0]}</AvatarFallback>
               </Avatar>
+
               <div className="flex-1">
                 <div className="flex justify-between">
                   <h3 className="font-medium">{t(exp.titleKey)}</h3>
-                  {/* <Button variant='ghost' size='icon' className='h-8 w-8'>
-                    <Pencil1Icon className='h-4 w-4' />
-                  </Button> */}
                 </div>
                 <p className="text-sm text-muted-foreground">{t(exp.companyKey)}</p>
                 <p className="text-sm text-muted-foreground">
