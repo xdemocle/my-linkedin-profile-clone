@@ -18,6 +18,12 @@ const additionalPrerenderRoutes = [
 
   // Projects pages
   ...LOCALES.map(locale => getPageUrlFromPath(locale, 'projects')),
+
+  // Skills pages
+  ...LOCALES.map(locale => getPageUrlFromPath(locale, 'skills')),
+
+  // Recommendations pages
+  ...LOCALES.map(locale => getPageUrlFromPath(locale, 'recommendations')),
 ];
 
 // https://vite.dev/config/
