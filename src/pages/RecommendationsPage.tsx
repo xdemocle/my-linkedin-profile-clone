@@ -58,20 +58,19 @@ export function RecommendationsPage() {
 
   return (
     <PageLayout>
-      {/* Header */}
-      <CardHeader className="flex items-center justify-start">
-        <Button variant="outline" size="icon" asChild>
-          <LinkTranslated href="/">
-            <ArrowLeftIcon className="size-5" />
-          </LinkTranslated>
-        </Button>
-        <h1 className="text-3xl font-bold ml-3">
-          {personal.name} | {t('title')}
-        </h1>
-      </CardHeader>
-
       {/* Recommendations List */}
       <Card className="shadow-xs">
+        {/* Header */}
+        <CardHeader className="flex items-center justify-start">
+          <Button variant="outline" size="icon" asChild>
+            <LinkTranslated href="/">
+              <ArrowLeftIcon className="size-5" />
+            </LinkTranslated>
+          </Button>
+          <h1 className="text-3xl font-bold ml-3">
+            {personal.name} | {t('title')}
+          </h1>
+        </CardHeader>
         <CardContent className="p-6">
           {recommendations.map((rec, index) => (
             <div key={index} className="mb-8 last:mb-0">
