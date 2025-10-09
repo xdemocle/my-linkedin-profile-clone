@@ -1,4 +1,5 @@
 // Message for AI Assistant: THIS PAGE IS NOT USED FOR NOW
+import { PageLayout } from '@/components/layout/PageLayout';
 import { ArrowLeftIcon } from '@radix-ui/react-icons';
 import { useTranslations } from 'use-intl';
 import { PostFeed } from '../components/feed/PostFeed';
@@ -40,142 +41,133 @@ const recentActivity = [
 
 export function ActivityPage() {
   const t = useTranslations('Activity');
-  const tProfileHeader = useTranslations('ProfileHeader');
+  const tCommon = useTranslations('Common');
 
   return (
-    <div className="min-h-screen bg-background">
-      <div className="max-w-4xl mx-auto px-4 py-6">
-        {/* Header */}
-        <div className="mb-6">
-          <Button variant="ghost" size="sm" className="mb-4" asChild>
-            <LinkTranslated href="/">
-              <ArrowLeftIcon className="h-4 w-4 mr-2" />
-              {t('backToProfile')}
-            </LinkTranslated>
-          </Button>
-          <div className="flex items-center justify-between">
-            <div>
-              <h1 className="text-3xl font-bold">{t('title')}</h1>
-              <p className="text-muted-foreground mt-1">
-                {t('Common.profileName')} • 1,247 {t('followers')}
-              </p>
+    <PageLayout>
+      {/* Header */}
+      <CardHeader className="flex items-center justify-start">
+        <Button variant="outline" size="icon" asChild>
+          <LinkTranslated href="/">
+            <ArrowLeftIcon className="size-5" />
+          </LinkTranslated>
+        </Button>
+        <h1 className="text-3xl font-bold ml-3">
+          {tCommon('profileName')} | {t('title')}
+        </h1>
+      </CardHeader>
+
+      {/* Activity Stats */}
+      <Card className="shadow-xs">
+        <CardHeader>
+          <CardTitle>{t('activityOverview')}</CardTitle>
+        </CardHeader>
+        <CardContent>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <div className="text-center">
+              <div className="text-2xl font-bold text-primary">{activityStats.posts}</div>
+              <div className="text-sm text-muted-foreground">{t('posts')}</div>
             </div>
-            {/* Create post button removed - read-only mode */}
+            <div className="text-center">
+              <div className="text-2xl font-bold text-primary">{activityStats.comments}</div>
+              <div className="text-sm text-muted-foreground">{t('comments')}</div>
+            </div>
+            <div className="text-center">
+              <div className="text-2xl font-bold text-primary">{activityStats.reactions}</div>
+              <div className="text-sm text-muted-foreground">{t('reactions')}</div>
+            </div>
+            <div className="text-center">
+              <div className="text-2xl font-bold text-primary">{activityStats.followers}</div>
+              <div className="text-sm text-muted-foreground">{t('followers')}</div>
+            </div>
           </div>
-        </div>
+        </CardContent>
+      </Card>
 
-        {/* Activity Stats */}
-        <Card className="mb-6 shadow-xs">
-          <CardHeader>
-            <CardTitle>{t('activityOverview')}</CardTitle>
-          </CardHeader>
-          <CardContent>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-              <div className="text-center">
-                <div className="text-2xl font-bold text-primary">{activityStats.posts}</div>
-                <div className="text-sm text-muted-foreground">{t('posts')}</div>
-              </div>
-              <div className="text-center">
-                <div className="text-2xl font-bold text-primary">{activityStats.comments}</div>
-                <div className="text-sm text-muted-foreground">{t('comments')}</div>
-              </div>
-              <div className="text-center">
-                <div className="text-2xl font-bold text-primary">{activityStats.reactions}</div>
-                <div className="text-sm text-muted-foreground">{t('reactions')}</div>
-              </div>
-              <div className="text-center">
-                <div className="text-2xl font-bold text-primary">{activityStats.followers}</div>
-                <div className="text-sm text-muted-foreground">{tProfileHeader('followers')}</div>
-              </div>
-            </div>
-          </CardContent>
-        </Card>
+      {/* Activity Tabs */}
+      <Card className="shadow-xs">
+        <Tabs defaultValue="all" className="w-full">
+          <div className="px-6 pt-6">
+            <TabsList className="grid w-full grid-cols-5">
+              <TabsTrigger value="all">{t('all')}</TabsTrigger>
+              <TabsTrigger value="posts">{t('posts')}</TabsTrigger>
+              <TabsTrigger value="comments">{t('comments')}</TabsTrigger>
+              <TabsTrigger value="images">{t('images')}</TabsTrigger>
+              <TabsTrigger value="articles">{t('articles')}</TabsTrigger>
+            </TabsList>
+          </div>
 
-        {/* Activity Tabs */}
-        <Card className="shadow-xs">
-          <Tabs defaultValue="all" className="w-full">
-            <div className="px-6 pt-6">
-              <TabsList className="grid w-full grid-cols-5">
-                <TabsTrigger value="all">{t('all')}</TabsTrigger>
-                <TabsTrigger value="posts">{t('posts')}</TabsTrigger>
-                <TabsTrigger value="comments">{t('comments')}</TabsTrigger>
-                <TabsTrigger value="images">{t('images')}</TabsTrigger>
-                <TabsTrigger value="articles">{t('articles')}</TabsTrigger>
-              </TabsList>
-            </div>
-
-            <CardContent className="p-6">
-              <TabsContent value="all" className="mt-0">
-                <div className="space-y-6">
-                  {recentActivity.map((activity, index) => (
-                    <div key={index} className="border-l-2 border-primary/20 pl-4">
-                      <div className="flex items-start gap-3">
-                        <Avatar className="w-10 h-10">
-                          <AvatarImage src="https://github.com/shadcn.png" />
-                          <AvatarFallback>RR</AvatarFallback>
-                        </Avatar>
-                        <div className="flex-1">
-                          <div className="flex items-center gap-2 mb-1">
-                            <span className="font-medium">{t('Common.profileName')}</span>
-                            <span className="text-sm text-muted-foreground">
-                              {activity.type === 'post' && t('posted')}
-                              {activity.type === 'comment' && t('commentedOn')}
-                              {activity.type === 'share' && t('shared')}
+          <CardContent className="p-6">
+            <TabsContent value="all" className="mt-0">
+              <div className="space-y-6">
+                {recentActivity.map((activity, index) => (
+                  <div key={index} className="border-l-2 border-primary/20 pl-4">
+                    <div className="flex items-start gap-3">
+                      <Avatar className="w-10 h-10">
+                        <AvatarImage src="https://github.com/shadcn.png" />
+                        <AvatarFallback>RR</AvatarFallback>
+                      </Avatar>
+                      <div className="flex-1">
+                        <div className="flex items-center gap-2 mb-1">
+                          <span className="font-medium">{t('Common.profileName')}</span>
+                          <span className="text-sm text-muted-foreground">
+                            {activity.type === 'post' && t('posted')}
+                            {activity.type === 'comment' && t('commentedOn')}
+                            {activity.type === 'share' && t('shared')}
+                          </span>
+                          <span className="text-sm text-muted-foreground">• {activity.date}</span>
+                        </div>
+                        <p className="text-sm mb-2">{activity.content}</p>
+                        {activity.originalPost && (
+                          <p className="text-sm text-muted-foreground italic mb-2">"{activity.originalPost}"</p>
+                        )}
+                        <div className="flex items-center gap-4 text-xs text-muted-foreground">
+                          <span>
+                            {activity.engagement.likes} {t('likes')}
+                          </span>
+                          <span>
+                            {activity.engagement.comments || activity.engagement.replies || 0} {t('comments')}
+                          </span>
+                          {activity.engagement.shares && (
+                            <span>
+                              {activity.engagement.shares} {t('shares')}
                             </span>
-                            <span className="text-sm text-muted-foreground">• {activity.date}</span>
-                          </div>
-                          <p className="text-sm mb-2">{activity.content}</p>
-                          {activity.originalPost && (
-                            <p className="text-sm text-muted-foreground italic mb-2">"{activity.originalPost}"</p>
                           )}
-                          <div className="flex items-center gap-4 text-xs text-muted-foreground">
-                            <span>
-                              {activity.engagement.likes} {t('likes')}
-                            </span>
-                            <span>
-                              {activity.engagement.comments || activity.engagement.replies || 0} {t('comments')}
-                            </span>
-                            {activity.engagement.shares && (
-                              <span>
-                                {activity.engagement.shares} {t('shares')}
-                              </span>
-                            )}
-                          </div>
                         </div>
                       </div>
                     </div>
-                  ))}
-                </div>
-              </TabsContent>
+                  </div>
+                ))}
+              </div>
+            </TabsContent>
 
-              <TabsContent value="posts" className="mt-0">
-                <PostFeed />
-              </TabsContent>
+            <TabsContent value="posts" className="mt-0">
+              <PostFeed />
+            </TabsContent>
 
-              <TabsContent value="comments" className="mt-0">
-                <div className="text-center py-12">
-                  <p className="text-muted-foreground mb-4">{t('yourCommentsWillAppear')}</p>
-                  <Button variant="outline">{t('startEngagingWithPosts')}</Button>
-                </div>
-              </TabsContent>
+            <TabsContent value="comments" className="mt-0">
+              <div className="text-center py-12">
+                <p className="text-muted-foreground mb-4">{t('yourCommentsWillAppear')}</p>
+                <Button variant="outline">{t('startEngagingWithPosts')}</Button>
+              </div>
+            </TabsContent>
 
-              <TabsContent value="images" className="mt-0">
-                <div className="text-center py-12">
-                  <p className="text-muted-foreground mb-4">{t('imagesFromPostsWillAppear')}</p>
-                  <Button variant="outline">{t('createPostWithImages')}</Button>
-                </div>
-              </TabsContent>
+            <TabsContent value="images" className="mt-0">
+              <div className="text-center py-12">
+                <p className="text-muted-foreground mb-4">{t('imagesFromPostsWillAppear')}</p>
+                <Button variant="outline">{t('createPostWithImages')}</Button>
+              </div>
+            </TabsContent>
 
-              <TabsContent value="articles" className="mt-0">
-                <div className="text-center py-12">
-                  <p className="text-muted-foreground mb-4">{t('yourArticlesWillAppear')}</p>
-                  <Button variant="outline">{t('writeAnArticle')}</Button>
-                </div>
-              </TabsContent>
-            </CardContent>
-          </Tabs>
-        </Card>
-      </div>
-    </div>
+            <TabsContent value="articles" className="mt-0">
+              <div className="text-center py-12">
+                <p className="text-muted-foreground mb-4">{t('yourArticlesWillAppear')}</p>
+                <Button variant="outline">{t('writeAnArticle')}</Button>
+              </div>
+            </TabsContent>
+          </CardContent>
+        </Tabs>
+      </Card>
+    </PageLayout>
   );
 }
