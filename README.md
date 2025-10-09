@@ -160,13 +160,14 @@ My goal is to bridge **human authenticity** and **technological transparency**, 
 
 ## ✨ Core Features
 
-- Multi-language support with RTL coverage for 5 locales (en, it, fr, es, ar).
-- Clean & modern UI inspired by LinkedIn, built with TailwindCSS and Shadcn/UI.
-- Static site generation for all language routes (no SSR).
-- Dark/light themes with automatic and manual switching.
-- Edge-aware routing for Cloudflare Pages deployments.
-- Comprehensive testing with Vitest ensuring 100% routing coverage.
-- Responsive design optimized for every screen size.
+- **Multi-language support** with RTL coverage for 5 locales (en, it, fr, es, ar).
+- **Clean & modern UI** inspired by LinkedIn, built with TailwindCSS and Shadcn/UI.
+- **Static site generation** for all language routes (no SSR).
+- **Dark/light themes** with automatic and manual switching.
+- **Edge-aware routing** for Cloudflare Pages deployments.
+- **Comprehensive SEO** with meta tags, Open Graph, Twitter Cards, structured data, and sitemap.
+- **Testing coverage** with Vitest ensuring 100% routing coverage.
+- **Responsive design** optimized for every screen size.
 
 ---
 
