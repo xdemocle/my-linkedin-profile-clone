@@ -3,6 +3,7 @@ import { Separator } from '@radix-ui/react-separator';
 import { useTranslations } from 'use-intl';
 import { useProfileData } from '../../hooks/useProfileData';
 import { LinkTranslated } from '../link-translated';
+import { Logo } from '../Logo';
 import { Avatar, AvatarFallback, AvatarImage } from '../ui/avatar';
 import { Button } from '../ui/button';
 import { LanguageSwitcher } from '../ui/language-switcher';
@@ -19,9 +20,9 @@ export function Navbar() {
       <ScrollProgress color="var(--ring)" height={2} className="z-1" />
       <div className="max-w-7xl mx-auto px-2 sm:px-4 flex items-center h-12 sm:h-14 z-0">
         {/* Logo */}
-        <div className="mr-2 sm:mr-4">
-          <img src="/assets/logo/rr-logo--bg-trasnparent.png" width={32} height={32} alt="Logo" />
-        </div>
+        <LinkTranslated href="/">
+          <Logo />
+        </LinkTranslated>
 
         {/* Search - hidden on mobile, shown on sm+ */}
         <div className="relative flex-1 max-w-md hidden sm:block">
@@ -33,44 +34,44 @@ export function Navbar() {
 
         {/* Navigation */}
         <nav className="ml-auto flex items-center gap-0.5 sm:gap-1">
-          <Button variant="ghost" size="icon" className="size-10 sm:size-9" aria-label={t('home')} asChild>
+          <Button variant="ghost" size="icon" className="size-10" aria-label={t('home')} asChild>
             <LinkTranslated href="/">
               <HomeIcon className="size-5.5" />
             </LinkTranslated>
           </Button>
 
-          <Button variant="ghost" size="icon" className="size-10 sm:size-9" aria-label="Experience" asChild>
+          <Button variant="ghost" size="icon" className="size-10" aria-label="Experience" asChild>
             <LinkTranslated href="/experience">
               <BackpackIcon className="size-5.5" />
             </LinkTranslated>
           </Button>
 
-          <Button variant="ghost" size="icon" className="size-10 sm:size-9" aria-label="Projects" asChild>
+          <Button variant="ghost" size="icon" className="size-10" aria-label="Projects" asChild>
             <LinkTranslated href="/projects">
               <FileTextIcon className="size-5.5" />
             </LinkTranslated>
           </Button>
 
-          <Button variant="ghost" size="icon" className="size-10 sm:size-9" aria-label="Skills" asChild>
+          <Button variant="ghost" size="icon" className="size-10" aria-label="Skills" asChild>
             <LinkTranslated href="/skills">
               <FileTextIcon className="size-5.5" />
             </LinkTranslated>
           </Button>
 
-          <Button variant="ghost" size="icon" className="size-10 sm:size-9" aria-label="Projects" asChild>
+          <Button variant="ghost" size="icon" className="size-10" aria-label="Recommendations" asChild>
             <LinkTranslated href="/recommendations">
               <FileTextIcon className="size-5.5" />
             </LinkTranslated>
           </Button>
 
-          <Separator orientation="vertical" className="block w-[1px] h-4 bg-foreground" />
+          <Separator orientation="vertical" className="block w-[1px] h-4 mx-1 bg-foreground" />
 
           <div className="items-center gap-0">
             <ThemeToggle />
             <LanguageSwitcher />
           </div>
 
-          <Button variant="ghost" size="icon" className="rounded-full size-10 sm:size-9" aria-label="User menu">
+          <Button variant="ghost" size="icon" className="rounded-full size-10" aria-label="User menu">
             <Avatar className="size-6.5">
               <AvatarImage src={personal.avatar} alt="User" />
               <AvatarFallback>RR</AvatarFallback>
