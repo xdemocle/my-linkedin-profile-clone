@@ -3,7 +3,6 @@ import {
   Drawer,
   DrawerClose,
   DrawerContent,
-  DrawerDescription,
   DrawerFooter,
   DrawerHeader,
   DrawerTitle,
@@ -27,8 +26,7 @@ export function MobileDrawer({ children, onOpenChangeHandler, navLinks }: Mobile
       <DrawerTrigger asChild>{children}</DrawerTrigger>
       <DrawerContent>
         <DrawerHeader>
-          <DrawerTitle>Menu</DrawerTitle>
-          <DrawerDescription>This action cannot be undone.</DrawerDescription>
+          <DrawerTitle>{t('menu')}</DrawerTitle>
         </DrawerHeader>
 
         <div className="flex flex-col gap-3 px-4">
