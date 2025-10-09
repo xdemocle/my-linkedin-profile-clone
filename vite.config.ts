@@ -71,6 +71,15 @@ export default defineConfig({
                 `<link rel="alternate" hreflang="x-default" href="${WEBSITE_URL}${routePath}" />`
               );
 
+              // Generate canonical URL
+              const canonicalUrl = `${WEBSITE_URL}${langPrefix}${routePath}`;
+              
+              // Replace existing canonical tag with the correct one for this page
+              const canonicalRegex = /<link rel="canonical" href="[^"]*" >/;
+              if (canonicalRegex.test(html)) {
+                html = html.replace(canonicalRegex, `<link rel="canonical" href="${canonicalUrl}" >`);
+              }
+
               // Generate structured data
               let structuredData = '';
               if (route.type === 'home') {
