@@ -48,6 +48,7 @@ export function ExperiencePage() {
             {personal.name} | {t('title')}
           </h1>
         </CardHeader>
+
         <CardContent className="p-6">
           {experiences.map((exp, index) => (
             <div key={index} className="mb-8 last:mb-0">
