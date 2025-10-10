@@ -1,10 +1,5 @@
-import {
-  BackpackIcon,
-  CardStackPlusIcon,
-  HomeIcon,
-  LayersIcon,
-  RocketIcon,
-} from '@radix-ui/react-icons';
+import { SOCIAL_LINKS } from '@/constants';
+import { BackpackIcon, CardStackPlusIcon, HomeIcon, LayersIcon, RocketIcon } from '@radix-ui/react-icons';
 import useMediaQuery from 'beautiful-react-hooks/useMediaQuery';
 import { useMemo, useState, type ReactNode } from 'react';
 import { useTranslations } from 'use-intl';
@@ -27,8 +22,12 @@ export function AppProvider({ children }: { children: ReactNode }) {
     [t]
   );
 
+  const socialLinks = SOCIAL_LINKS;
+
   return (
-    <AppContext.Provider value={{ isSearchOpen, setIsSearchOpen, isMenuOpen, setIsMenuOpen, isMobile, navLinks }}>
+    <AppContext.Provider
+      value={{ isSearchOpen, setIsSearchOpen, isMenuOpen, setIsMenuOpen, isMobile, navLinks, socialLinks }}
+    >
       {children}
     </AppContext.Provider>
   );

@@ -1,10 +1,15 @@
-import { createContext } from 'react';
 import type { ComponentType } from 'react';
+import { createContext } from 'react';
 
 export interface NavLink {
   href: string;
   label: string;
   icon: ComponentType<{ className?: string }>;
+}
+
+interface SocialLink {
+  href: string;
+  label: string;
 }
 
 interface AppContextType {
@@ -14,6 +19,7 @@ interface AppContextType {
   setIsMenuOpen: (value: boolean) => void;
   isMobile: boolean;
   navLinks: NavLink[];
+  socialLinks: SocialLink[];
 }
 
 export const AppContext = createContext<AppContextType | undefined>(undefined);

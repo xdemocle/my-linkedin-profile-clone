@@ -34,3 +34,42 @@ export const HUGGING_FACE_LABEL = 'Hugging Face';
 export const DRIBBBLE_LABEL = 'Dribbble';
 export const CV_REQUEST_LABEL = 'CV';
 export const EMAIL_LABEL = 'Email';
+
+export const SOCIAL_LINKS = [
+  {
+    href: LINKEDIN_PROFILE_URL,
+    label: LINKEDIN_LABEL,
+  },
+  {
+    href: SUBSTACK_PROFILE_URL,
+    label: SUBSTACK_LABEL,
+  },
+  {
+    href: CALENDLY_PROFILE_URL,
+    label: CALENDLY_LABEL,
+  },
+  {
+    href: TELEGRAM_PROFILE_URL,
+    label: TELEGRAM_LABEL,
+  },
+  {
+    href: WELLFOUNDED_PROFILE_URL,
+    label: WELLFOUNDED_LABEL,
+  },
+  {
+    href: GITHUB_PROFILE_URL,
+    label: GITHUB_LABEL,
+  },
+  {
+    href: X_PROFILE_URL,
+    label: X_LABEL,
+  },
+  {
+    href: HUGGING_FACE_PROFILE_URL,
+    label: HUGGING_FACE_LABEL,
+  },
+  {
+    href: DRIBBBLE_PROFILE_URL,
+    label: DRIBBBLE_LABEL,
+  },
+];

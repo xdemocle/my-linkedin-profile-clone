@@ -3,6 +3,7 @@ import { type ReactNode } from 'react';
 import { ErrorBoundary } from '../ErrorBoundary';
 import { ProfileFooter } from '../profile/ProfileFooter';
 import { ProfileLanguageUrl } from '../profile/ProfileLanguageUrl';
+import { SocialProfileSidebar } from '../profile/SocialProfileSidebar';
 import { Navbar } from './Navbar';
 
 interface PageLayoutProps {
@@ -32,6 +33,9 @@ export function PageLayout({ children, addToSidebar, noSidebar }: PageLayoutProp
                   <ProfileLanguageUrl />
 
                   {addToSidebar}
+
+                  {/* Social Profile Sidebar widget */}
+                  <SocialProfileSidebar />
 
                   {/* Footer Links */}
                   <ProfileFooter />
