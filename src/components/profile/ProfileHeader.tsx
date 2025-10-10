@@ -4,7 +4,6 @@ import { ExternalLinkIcon } from '@radix-ui/react-icons';
 import { GhostIcon } from 'lucide-react';
 import { useTranslations } from 'use-intl';
 import { useProfileData } from '../../hooks/useProfileData';
-import { OnlineStatusIcon } from '../../lib/iconComponents';
 import { ShareProfile } from '../ShareProfile';
 import { Avatar, AvatarFallback, AvatarImage } from '../ui/avatar';
 import { Button } from '../ui/button';
@@ -19,11 +18,7 @@ export function ProfileHeader() {
     <Card className="pt-0">
       {/* Cover Photo */}
       <div className="h-36 md:h-48 bg-muted relative rounded-t-md overflow-hidden border-b-1 border-primary/70">
-        <img
-          src="https://images.unsplash.com/photo-1542435503-956c469947f6?q=80&w=1974&auto=format&fit=crop"
-          alt="Cover"
-          className="w-full h-full object-cover"
-        />
+        <img src="/assets/ui/banner.png" alt="Cover" className="w-full h-full object-cover" />
       </div>
 
       {/* Profile Info */}
@@ -46,13 +41,11 @@ export function ProfileHeader() {
                 <h1 className="text-2xl font-bold">
                   {personal.name} - {t('fullStackEngineer').split('|')[0].trim()}
                 </h1>
-                <div className="flex items-center gap-1">
-                  <OnlineStatusIcon className="text-green-500 h-3 w-3" />
-                  <span className="text-xs text-muted-foreground">EMEA, GULF, UAE</span>
-                </div>
               </div>
 
-              <p className="leading-snug mt-1 text-sm">{t('fullStackEngineer')}</p>
+              <h2 className="leading-snug mt-1 text-sm">
+                {t('fullStackEngineer').replace(t('fullStackEngineer').split('|')[0], '').trim().substring(1)}
+              </h2>
 
               <div className="flex items-center gap-2 mt-2 text-sm justify-center sm:justify-start">
                 <span className="text-muted-foreground">{personal.location}</span>
