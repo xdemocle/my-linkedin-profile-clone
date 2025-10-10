@@ -8,6 +8,7 @@ import { ShareProfile } from '../ShareProfile';
 import { Avatar, AvatarFallback, AvatarImage } from '../ui/avatar';
 import { Button } from '../ui/button';
 import { Card } from '../ui/card';
+import { Carousel, CarouselContent, CarouselItem } from '../ui/carousel';
 
 export function ProfileHeader() {
   const t = useTranslations('ProfileHeader');
@@ -17,9 +18,16 @@ export function ProfileHeader() {
   return (
     <Card className="pt-0">
       {/* Cover Photo */}
-      <div className="h-36 md:h-48 bg-muted relative rounded-t-md overflow-hidden border-b-1 border-primary/70">
-        <img src="/assets/ui/banner.png" alt="Cover" className="w-full h-full object-cover" />
-      </div>
+      <Carousel className="bg-muted relative rounded-t-sm overflow-hidden border-b-1 border-primary/70">
+        <CarouselContent>
+          <CarouselItem className="h-36 md:h-48">
+            <img src="/assets/ui/banner-1.jpg" alt="Cover banner-1.jpg" className="w-full h-full object-cover" />
+          </CarouselItem>
+          <CarouselItem className="h-36 md:h-48">
+            <img src="/assets/ui/banner-2.jpg" alt="Cover banner-2.jpg" className="w-full h-full object-cover" />
+          </CarouselItem>
+        </CarouselContent>
+      </Carousel>
 
       {/* Profile Info */}
       <div className="p-6 relative">
