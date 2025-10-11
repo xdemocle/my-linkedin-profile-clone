@@ -267,7 +267,7 @@
   "ProfileFooter": {
     "linkedinProfile": "Profilo LinkedIn",
     "personalWebsite": "Sito Web Personale",
-    "copyright": "© 2024 Rocco Russo"
+    "copyright": "© {year} Rocco Russo"
   },
   "ProfileLanguage": {
     "title": "Lingua del profilo",
@@ -336,8 +336,7 @@
     "goToSettings": "Vai alle tue Impostazioni.",
     "recommendationTransparency": "Trasparenza delle referenze",
     "learnMore": "Scopri di più sui Contenuti Raccomandati.",
-    "selectLanguage": "Seleziona Lingua",
-    "linkedinCorporation": "LinkedIn Corporation © 2025"
+    "selectLanguage": "Seleziona Lingua"
   },
   "NotFound": {
     "title": "Ops! Pagina Non Trovata",

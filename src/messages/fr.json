@@ -267,7 +267,7 @@
   "ProfileFooter": {
     "linkedinProfile": "Profil LinkedIn",
     "personalWebsite": "Site Web Personnel",
-    "copyright": "© 2024 Rocco Russo"
+    "copyright": "© {year} Rocco Russo"
   },
   "ProfileLanguage": {
     "title": "Langue du profil",
@@ -292,8 +292,7 @@
     "goToSettings": "Allez à vos paramètres.",
     "recommendationTransparency": "Transparence des recommandations",
     "learnMore": "En savoir plus sur le contenu recommandé.",
-    "selectLanguage": "Sélectionner la langue",
-    "linkedinCorporation": "LinkedIn Corporation © 2025"
+    "selectLanguage": "Sélectionner la langue"
   },
   "Projects": {
     "title": "Projets",

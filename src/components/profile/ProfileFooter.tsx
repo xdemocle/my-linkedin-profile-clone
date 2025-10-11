@@ -51,7 +51,7 @@ export function ProfileFooter() {
 
           {/* Copyright */}
           <div className="pt-2 border-t">
-            <p>{tFooter('copyright')}</p>
+            <p>{tFooter('copyright', { year: new Date().getFullYear() })}</p>
           </div>
         </div>
       </CardContent>
