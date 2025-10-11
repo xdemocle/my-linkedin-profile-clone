@@ -70,6 +70,7 @@
   },
   "Experience": {
     "title": "الخبرة",
+    "description": "الخبرة المهنية والتاريخ الوظيفي",
     "showAllExperiences": "عرض جميع الخبرات",
     "technicalLead": "قائد تقني",
     "frontendDeveloper": "مطور الواجهة الأمامية",

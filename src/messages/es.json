@@ -70,6 +70,7 @@
   },
   "Experience": {
     "title": "Experiencia",
+    "description": "Experiencia profesional e historial de carrera",
     "showAllExperiences": "Mostrar todas las experiencias",
     "technicalLead": "Líder Técnico",
     "frontendDeveloper": "Desarrollador Frontend",
