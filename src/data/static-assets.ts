@@ -15,15 +15,15 @@ export const staticAssets = {
   },
 
   experienceLogos: {
-    exp1: '/assets/png/exp/web3ninja-logo.jpeg',
-    exp2: '/assets/png/exp/gamesglobal-logo.jpeg',
-    exp3: '/assets/png/exp/shibainu-logo.jpeg',
-    exp4: '/assets/png/exp/ajna-logo.jpeg',
-    exp5: '/assets/png/exp/linum-logo.jpeg',
-    exp6: '/assets/png/exp/omnia-logo.jpeg',
-    exp7: '/assets/png/exp/hcl-logo.jpeg',
-    exp8: '/assets/png/exp/elsevier-logo.jpeg',
-    exp9: '/assets/png/exp/adforum-logo.jpeg',
+    exp1: '/assets/exp/web3ninja_logo.jpg',
+    exp2: '/assets/exp/gamesglobal_logo.jpg',
+    exp3: '/assets/exp/shibainu_logo.jpg',
+    exp4: '/assets/exp/ajna_logo.jpg',
+    exp5: '/assets/exp/linum_logo.jpg',
+    exp6: '/assets/exp/omnia_logo.jpg',
+    exp7: '/assets/exp/hcltech_logo.jpg',
+    exp8: '/assets/exp/elsevier_logo.jpg',
+    exp9: '/assets/exp/adforum_logo.jpg',
   },
 
   projects: {

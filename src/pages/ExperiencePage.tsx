@@ -14,7 +14,7 @@ import { Separator } from '../components/ui/separator';
 export function ExperiencePage() {
   const t = useTranslations('Experience');
   const tData = useTranslations('ProfileData.experience');
-  const { personal } = useProfileData();
+  const { personal, experience } = useProfileData();
 
   // Get all 9 experiences from translations
   const experiences = Array.from({ length: 9 }, (_, i) => {
@@ -22,6 +22,7 @@ export function ExperiencePage() {
 
     return {
       company: tData(`${expKey}.company`),
+      logo: experience[i].logo,
       position: tData(`${expKey}.position`),
       type: tData.has(`${expKey}.type`) ? tData(`${expKey}.type`) : undefined,
       dateRange: tData(`${expKey}.dateRange`),
@@ -65,7 +66,7 @@ export function ExperiencePage() {
               {index > 0 && <Separator className="my-8" />}
               <div className="flex gap-2 md:gap-4">
                 <Avatar className="w-10 h-10 md:w-12 md:h-12">
-                  <AvatarImage src="/assets/png/avatar.png" />
+                  <AvatarImage src={exp.logo} />
                   <AvatarFallback>{exp.company[0]}</AvatarFallback>
                 </Avatar>
                 <div className="flex-1">
