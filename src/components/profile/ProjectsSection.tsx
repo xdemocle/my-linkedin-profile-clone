@@ -95,7 +95,7 @@ export function ProjectsSection() {
                 </div>
 
                 {project.links && (
-                  <div className="flex gap-2 mt-2">
+                  <div className="gap-2 mt-2">
                     {project.links.website && (
                       <Button variant="ghost" size="sm" className="h-7 px-2 text-xs" asChild>
                         <a href={project.links.website} target="_blank" rel="noopener noreferrer">
