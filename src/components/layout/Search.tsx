@@ -41,7 +41,7 @@ export function Search() {
         type="text"
         placeholder={t('search')}
         className={cn(
-          'bg-transparent lg:bg-muted px-10 h-9 rounded-md text-sm transition-all w-xs',
+          'bg-transparent lg:bg-muted px-10 h-9 rounded-sm text-sm transition-all w-xs',
           !isMobile || isSearchOpen ? '' : 'w-0.5',
           isSearchOpen ? 'bg-muted w-full md:max-w-lg' : ''
         )}

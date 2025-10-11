@@ -66,7 +66,7 @@ function ErrorFallback({ error, onRetry }: ErrorFallbackProps) {
       </CardHeader>
       <CardContent className="space-y-4">
         {error && (
-          <details className="rounded-md bg-muted p-3 text-sm">
+          <details className="rounded-sm bg-muted p-3 text-sm">
             <summary className="cursor-pointer font-medium">Technical Details</summary>
             <pre className="mt-2 whitespace-pre-wrap text-xs text-muted-foreground">{error.message}</pre>
           </details>

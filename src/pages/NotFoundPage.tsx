@@ -46,8 +46,9 @@ export function NotFoundPage() {
             {t('title', { fallback: 'Oops! Page Not Found' })}
           </h1>
           <p className="text-lg md:text-xl text-muted-foreground max-w-md mx-auto leading-relaxed">
-            {t('description', { 
-              fallback: 'The page you\'re looking for seems to have wandered off into the digital void. Don\'t worry, it happens to the best of us!' 
+            {t('description', {
+              fallback:
+                "The page you're looking for seems to have wandered off into the digital void. Don't worry, it happens to the best of us!",
             })}
           </p>
         </div>
@@ -59,17 +60,17 @@ export function NotFoundPage() {
             <div className="absolute inset-4 bg-gradient-to-l from-primary/30 to-secondary/30 rounded-full animate-spin-reverse"></div>
             <div className="absolute inset-8 bg-gradient-to-r from-primary/40 to-secondary/40 rounded-full animate-pulse"></div>
             <div className="absolute inset-0 flex items-center justify-center">
-              <svg 
-                className="w-12 h-12 text-primary animate-bounce" 
-                fill="none" 
-                stroke="currentColor" 
+              <svg
+                className="w-12 h-12 text-primary animate-bounce"
+                fill="none"
+                stroke="currentColor"
                 viewBox="0 0 24 24"
               >
-                <path 
-                  strokeLinecap="round" 
-                  strokeLinejoin="round" 
-                  strokeWidth={2} 
-                  d="M9.172 16.172a4 4 0 015.656 0M9 12h6m-6-4h6m2 5.291A7.962 7.962 0 0112 15c-2.34 0-4.29-1.009-5.674-2.64C7.85 10.723 9.8 9 12 9s4.15 1.723 2.674 3.36A7.962 7.962 0 0112 15z" 
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M9.172 16.172a4 4 0 015.656 0M9 12h6m-6-4h6m2 5.291A7.962 7.962 0 0112 15c-2.34 0-4.29-1.009-5.674-2.64C7.85 10.723 9.8 9 12 9s4.15 1.723 2.674 3.36A7.962 7.962 0 0112 15z"
                 />
               </svg>
             </div>
@@ -78,14 +79,14 @@ export function NotFoundPage() {
 
         {/* Action Buttons */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-          <Button 
+          <Button
             onClick={handleGoHome}
             className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-3 rounded-full text-lg font-semibold shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200"
           >
             🏠 {t('goHome', { fallback: 'Take Me Home' })}
           </Button>
-          
-          <Button 
+
+          <Button
             onClick={handleGoBack}
             variant="outline"
             className="border-2 border-primary/30 text-primary hover:bg-primary/10 px-8 py-3 rounded-full text-lg font-semibold shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200"
@@ -95,10 +96,11 @@ export function NotFoundPage() {
         </div>
 
         {/* Fun Message */}
-        <div className="mt-12 p-6 bg-card/50 backdrop-blur-sm rounded-2xl border border-primary/20 shadow-lg">
+        <div className="mt-12 p-6 bg-card/50 backdrop-blur-sm rounded-sm border border-primary/20 shadow-lg">
           <p className="text-sm text-muted-foreground italic">
-            {t('funMessage', { 
-              fallback: '"In the vast expanse of the internet, even the best explorers sometimes take a wrong turn. But hey, that\'s how we discover new paths!" 🚀' 
+            {t('funMessage', {
+              fallback:
+                '"In the vast expanse of the internet, even the best explorers sometimes take a wrong turn. But hey, that\'s how we discover new paths!" 🚀',
             })}
           </p>
         </div>
@@ -106,11 +108,14 @@ export function NotFoundPage() {
 
       {/* Background Pattern */}
       <div className="fixed inset-0 -z-10 opacity-5">
-        <div className="absolute inset-0" style={{
-          backgroundImage: `radial-gradient(circle at 25% 25%, var(--primary) 2px, transparent 2px),
+        <div
+          className="absolute inset-0"
+          style={{
+            backgroundImage: `radial-gradient(circle at 25% 25%, var(--primary) 2px, transparent 2px),
                            radial-gradient(circle at 75% 75%, var(--secondary) 2px, transparent 2px)`,
-          backgroundSize: '50px 50px'
-        }}></div>
+            backgroundSize: '50px 50px',
+          }}
+        ></div>
       </div>
     </div>
   );
