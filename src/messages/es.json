@@ -359,6 +359,7 @@
   },
   "Common": {
     "add": "Agregar",
+    "save": "Guardar",
     "cancel": "Cancelar",
     "delete": "Eliminar",
     "share": "Compartir",

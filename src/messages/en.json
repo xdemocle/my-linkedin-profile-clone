@@ -333,6 +333,7 @@
     "selectLanguage": "Select language",
     "publicProfile": "Public profile & URL",
     "profileUrl": "Profile URL",
+    "editUrl": "Edit URL",
     "copyUrl": "Copy URL",
     "urlCopied": "URL copied to clipboard!",
     "language": "Profile Language"
