@@ -1,14 +1,36 @@
 import { WEBSITE_URL } from '@/constants';
 import { useProfileData } from '@/hooks';
 import { useEffect } from 'react';
+import { useLocale } from 'use-intl';
+import { LOCALE_DEFAULT } from '@/constants';
 
 interface StructuredDataProps {
   type?: 'person' | 'organization' | 'breadcrumb';
   breadcrumbs?: Array<{ name: string; url: string }>;
 }
 
+/**
+ * Converts a relative or absolute URL to a fully qualified absolute URL
+ * Takes into account the current locale for proper URL construction
+ */
+function toAbsoluteUrl(url: string, locale: string): string {
+  // If already absolute, return as-is
+  if (url.startsWith('http://') || url.startsWith('https://')) {
+    return url;
+  }
+
+  // Ensure url starts with /
+  const path = url.startsWith('/') ? url : `/${url}`;
+
+  // Add locale prefix if not default locale
+  const localePath = locale === LOCALE_DEFAULT ? path : `/${locale}${path}`;
+
+  return `${WEBSITE_URL}${localePath}`;
+}
+
 export function StructuredData({ type = 'person', breadcrumbs }: StructuredDataProps) {
   const { personal, experience, skills } = useProfileData();
+  const locale = useLocale();
 
   useEffect(() => {
     const scriptId = `structured-data-${type}`;
@@ -64,7 +86,7 @@ export function StructuredData({ type = 'person', breadcrumbs }: StructuredDataP
           '@type': 'ListItem',
           position: index + 1,
           name: crumb.name,
-          item: crumb.url,
+          item: toAbsoluteUrl(crumb.url, locale),
         })),
       };
     }
@@ -80,7 +102,7 @@ export function StructuredData({ type = 'person', breadcrumbs }: StructuredDataP
         existingScript.remove();
       }
     };
-  }, [type, personal, experience, skills, breadcrumbs]);
+  }, [type, personal, experience, skills, breadcrumbs, locale]);
 
   return null;
 }

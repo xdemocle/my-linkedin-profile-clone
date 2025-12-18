@@ -88,6 +88,25 @@ export function generateSEOMeta(options: SEOMetaOptions): string {
 }
 
 /**
+ * Converts a relative or absolute URL to a fully qualified absolute URL
+ * Takes into account the locale for proper URL construction
+ */
+function toAbsoluteUrl(url: string, locale: Locale): string {
+  // If already absolute, return as-is
+  if (url.startsWith('http://') || url.startsWith('https://')) {
+    return url;
+  }
+
+  // Ensure url starts with /
+  const path = url.startsWith('/') ? url : `/${url}`;
+
+  // Add locale prefix if not default locale
+  const localePath = locale === LOCALE_DEFAULT ? path : `/${locale}${path}`;
+
+  return `${WEBSITE_URL}${localePath}`;
+}
+
+/**
  * Generate structured data (JSON-LD) for SEO
  */
 export function generateStructuredData(
@@ -98,6 +117,7 @@ export function generateStructuredData(
     about?: string;
     skills?: string[];
     breadcrumbs?: Array<{ name: string; url: string }>;
+    locale?: Locale;
   }
 ): string {
   if (type === 'person') {
@@ -123,6 +143,7 @@ export function generateStructuredData(
 
     return `<script type="application/ld+json">${JSON.stringify(personSchema)}</script>`;
   } else if (type === 'breadcrumb' && options.breadcrumbs) {
+    const locale = options.locale || LOCALE_DEFAULT;
     const breadcrumbSchema = {
       '@context': 'https://schema.org',
       '@type': 'BreadcrumbList',
@@ -130,7 +151,7 @@ export function generateStructuredData(
         '@type': 'ListItem',
         position: index + 1,
         name: crumb.name,
-        item: crumb.url,
+        item: toAbsoluteUrl(crumb.url, locale),
       })),
     };
 
