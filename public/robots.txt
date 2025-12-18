@@ -9,5 +9,4 @@ Sitemap: https://linkedin-roccorusso.work/sitemap.xml
 Crawl-delay: 1
 
 # Disallow admin or private paths (if any)
-# Disallow: /admin/
-# Disallow: /private/
+Disallow: /cgi-bin/
