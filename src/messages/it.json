@@ -345,6 +345,17 @@
     "goBack": "Torna Indietro",
     "funMessage": "\"Nella vasta distesa di internet, anche i migliori esploratori a volte prendono una strada sbagliata. Ma è così che scopriamo nuovi percorsi!\" 🚀"
   },
+  "Search": {
+    "noResults": "Nessun risultato trovato",
+    "category": {
+      "profile": "Profilo",
+      "experience": "Esperienza",
+      "project": "Progetto",
+      "skill": "Competenza",
+      "recommendation": "Raccomandazione",
+      "page": "Pagina"
+    }
+  },
   "Common": {
     "add": "Aggiungi",
     "save": "Salva",

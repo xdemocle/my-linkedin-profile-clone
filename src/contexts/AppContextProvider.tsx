@@ -8,6 +8,7 @@ import { AppContext } from './AppContext';
 export function AppProvider({ children }: { children: ReactNode }) {
   const [isSearchOpen, setIsSearchOpen] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [searchQuery, setSearchQuery] = useState('');
   const isMobile = useMediaQuery('(max-width: 60rem)');
   const t = useTranslations('Navigation');
 
@@ -26,7 +27,7 @@ export function AppProvider({ children }: { children: ReactNode }) {
 
   return (
     <AppContext.Provider
-      value={{ isSearchOpen, setIsSearchOpen, isMenuOpen, setIsMenuOpen, isMobile, navLinks, socialLinks }}
+      value={{ isSearchOpen, setIsSearchOpen, isMenuOpen, setIsMenuOpen, isMobile, navLinks, socialLinks, searchQuery, setSearchQuery }}
     >
       {children}
     </AppContext.Provider>

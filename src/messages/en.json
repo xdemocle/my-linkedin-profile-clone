@@ -344,6 +344,17 @@
     "goBack": "Go Back",
     "funMessage": "\"In the vast expanse of the internet, even the best explorers sometimes take a wrong turn. But hey, that's how we discover new paths!\" 🚀"
   },
+  "Search": {
+    "noResults": "No results found",
+    "category": {
+      "profile": "Profile",
+      "experience": "Experience",
+      "project": "Project",
+      "skill": "Skill",
+      "recommendation": "Recommendation",
+      "page": "Page"
+    }
+  },
   "Common": {
     "add": "Add",
     "save": "Save",

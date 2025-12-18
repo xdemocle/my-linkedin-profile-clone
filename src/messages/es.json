@@ -345,6 +345,17 @@
     "goBack": "Volver",
     "funMessage": "\"En la vasta extensión de internet, incluso los mejores exploradores a veces toman un camino equivocado. ¡Pero así es como descubrimos nuevos senderos!\" 🚀"
   },
+  "Search": {
+    "noResults": "No se encontraron resultados",
+    "category": {
+      "profile": "Perfil",
+      "experience": "Experiencia",
+      "project": "Proyecto",
+      "skill": "Habilidad",
+      "recommendation": "Recomendación",
+      "page": "Página"
+    }
+  },
   "Common": {
     "add": "Agregar",
     "cancel": "Cancelar",

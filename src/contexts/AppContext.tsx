@@ -20,6 +20,8 @@ interface AppContextType {
   isMobile: boolean;
   navLinks: NavLink[];
   socialLinks: SocialLink[];
+  searchQuery: string;
+  setSearchQuery: (value: string) => void;
 }
 
 export const AppContext = createContext<AppContextType | undefined>(undefined);

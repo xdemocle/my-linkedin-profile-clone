@@ -345,6 +345,17 @@
     "goBack": "Retour",
     "funMessage": "\"Dans la vaste étendue d'internet, même les meilleurs explorateurs prennent parfois un mauvais virage. Mais c'est comme ça qu'on découvre de nouveaux chemins !\" 🚀"
   },
+  "Search": {
+    "noResults": "Aucun résultat trouvé",
+    "category": {
+      "profile": "Profil",
+      "experience": "Expérience",
+      "project": "Projet",
+      "skill": "Compétence",
+      "recommendation": "Recommandation",
+      "page": "Page"
+    }
+  },
   "Common": {
     "add": "Ajouter",
     "save": "Enregistrer",
