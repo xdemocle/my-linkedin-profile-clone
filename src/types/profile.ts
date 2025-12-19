@@ -20,17 +20,33 @@ export interface Experience {
   location?: string;
   description: string;
   highlights: string[];
-  logo?: string;
+  logo: string;
+  metadata?: {
+    featured?: boolean;
+    order?: number;
+  };
 }
 
 export interface Project {
   id: string;
-  name: string;
+  title: string;
   description: string;
-  link: string;
-  imageUrl?: string;
-  tags: string[];
-  sourceCode?: string;
+  role?: string | null;
+  company?: string | null;
+  links?: {
+    website?: string;
+    marketing?: string;
+    github?: string | string[];
+    screenshots?: string[];
+    demo?: string;
+  };
+  technologies: string[];
+  icon: string;
+  imageUrl?: string | null;
+  metadata?: {
+    featured?: boolean;
+    order?: number;
+  };
 }
 
 export interface SkillItem {

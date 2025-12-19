@@ -13,29 +13,7 @@ import { Separator } from '../components/ui/separator';
 
 export function ExperiencePage() {
   const t = useTranslations('Experience');
-  const tData = useTranslations('ProfileData.experience');
   const { personal, experience } = useProfileData();
-
-  // Get all 9 experiences from translations
-  const experiences = Array.from({ length: 9 }, (_, i) => {
-    const expKey = `exp${i + 1}`;
-
-    return {
-      company: tData(`${expKey}.company`),
-      logo: experience[i].logo,
-      position: tData(`${expKey}.position`),
-      type: tData.has(`${expKey}.type`) ? tData(`${expKey}.type`) : undefined,
-      dateRange: tData(`${expKey}.dateRange`),
-      location: tData.has(`${expKey}.location`) ? tData(`${expKey}.location`) : undefined,
-      description: tData(`${expKey}.description`),
-      highlights: Array.from({ length: 5 }, (_, j) => {
-        if (tData.has(`${expKey}.highlights.${j}`)) {
-          return tData(`${expKey}.highlights.${j}`);
-        }
-        return null;
-      }).filter(Boolean),
-    };
-  });
 
   return (
     <PageLayout addToSidebar={<ExperienceKeyAchievements />}>
@@ -61,8 +39,8 @@ export function ExperiencePage() {
         </CardHeader>
 
         <CardContent className="p-6">
-          {experiences.map((exp, index) => (
-            <div key={index} className="mb-8 last:mb-0">
+          {experience.map((exp, index) => (
+            <div key={exp.id} className="mb-8 last:mb-0">
               {index > 0 && <Separator className="my-8" />}
               <div className="flex gap-2 md:gap-4">
                 <Avatar className="w-10 h-10 md:w-12 md:h-12">

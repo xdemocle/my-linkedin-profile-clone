@@ -1,6 +1,8 @@
 import { useMemo } from 'react';
 import { useTranslations } from 'use-intl';
 import { staticAssets } from '../data/static-assets';
+import experienceData from '../data/experience.json';
+import projectsData from '../data/projects.json';
 import type { Achievement, Education, Experience, ProfileData, Project, Skill } from '../types/profile';
 
 /**
@@ -9,8 +11,6 @@ import type { Achievement, Education, Experience, ProfileData, Project, Skill } 
  */
 export function useProfileData(): ProfileData {
   const tPersonal = useTranslations('ProfileData.personal');
-  const tExperience = useTranslations('ProfileData.experience');
-  const tProjects = useTranslations('ProfileData.projects');
   const tSkills = useTranslations('ProfileData.skills');
   const tEducation = useTranslations('ProfileData.education');
   const tCertifications = useTranslations('ProfileData.certifications');
@@ -18,32 +18,11 @@ export function useProfileData(): ProfileData {
 
   // Return memoized data to prevent unnecessary re-renders
   return useMemo(() => {
-    // Build experience array from translations + static logos
-    const experience: Experience[] = ['exp1', 'exp2', 'exp3', 'exp4', 'exp5', 'exp6', 'exp7', 'exp8', 'exp9'].map(
-      key => ({
-        id: key,
-        company: tExperience(`${key}.company`),
-        position: tExperience(`${key}.position`),
-        dateRange: tExperience(`${key}.dateRange`),
-        description: tExperience(`${key}.description`),
-        highlights: tExperience.raw(`${key}.highlights`) as string[],
-        logo: staticAssets.experienceLogos[key as keyof typeof staticAssets.experienceLogos],
-      })
-    );
+    // Use experience data from JSON file
+    const experience: Experience[] = experienceData as Experience[];
 
-    // Build projects array from translations + static assets
-    const projects: Project[] = (['proj1', 'proj2', 'proj3', 'proj4', 'proj5'] as const).map(key => {
-      const staticData = staticAssets.projects[key];
-      return {
-        id: key,
-        name: tProjects(`${key}.name`),
-        description: tProjects(`${key}.description`),
-        link: staticData.link,
-        imageUrl: staticData.imageUrl,
-        tags: staticData.tags,
-        sourceCode: 'sourceCode' in staticData ? staticData.sourceCode : undefined,
-      };
-    });
+    // Use projects data from JSON file
+    const projects: Project[] = projectsData as Project[];
 
     // Build skills array with translated categories + static skill items
     const skills: Skill[] = [
@@ -114,5 +93,5 @@ export function useProfileData(): ProfileData {
       certifications,
       achievements,
     };
-  }, [tPersonal, tExperience, tProjects, tSkills, tEducation, tCertifications, tAchievements]);
+  }, [tPersonal, tSkills, tEducation, tCertifications, tAchievements]);
 }

@@ -7,57 +7,15 @@ import { Badge } from '../ui/badge';
 import { Button } from '../ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '../ui/card';
 
-interface Project {
-  id: string;
-  title: string;
-  description: string;
-  links?: {
-    website?: string;
-    marketing?: string;
-  };
-  technologies: string[];
-  icon: string; // This is now a key to map to a Radix UI icon
-  featured: boolean;
-}
-
 export function ProjectsSection() {
   const t = useTranslations('Projects');
-  const profileData = useProfileData();
+  const { projects } = useProfileData();
 
-  // Map our project data to the component's expected format
-  const featuredProjects: Project[] = profileData.projects.slice(0, 3).map(project => ({
-    id: project.id,
-    title: t(
-      project.id === 'proj1'
-        ? 'ajnaLabs'
-        : project.id === 'proj2'
-        ? 'modeNetwork'
-        : project.id === 'proj3'
-        ? 'cyberGrandpa'
-        : project.id === 'proj4'
-        ? 'tetrisCrypto'
-        : project.id === 'proj5'
-        ? 'linkedinExtension'
-        : project.name
-    ),
-    description: project.description,
-    links: {
-      website: project.link,
-      marketing: project.sourceCode,
-    },
-    technologies: project.tags,
-    icon:
-      project.id === 'proj1'
-        ? 'blue-circle'
-        : project.id === 'proj2'
-        ? 'lightning'
-        : project.id === 'proj3'
-        ? 'shield'
-        : project.id === 'proj4'
-        ? 'game'
-        : 'extension',
-    featured: true,
-  }));
+  // Get top 3 featured projects (sorted by metadata.order)
+  const featuredProjects = projects
+    .filter(project => project.metadata?.featured)
+    .sort((a, b) => (a.metadata?.order || 999) - (b.metadata?.order || 999))
+    .slice(0, 3);
 
   return (
     <Card className="shadow-xs">

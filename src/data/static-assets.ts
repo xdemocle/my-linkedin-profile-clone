@@ -14,50 +14,6 @@ export const staticAssets = {
     avatar: '/assets/ui/rocco-me-nft.png',
   },
 
-  experienceLogos: {
-    exp1: '/assets/exp/web3ninja_logo.jpg',
-    exp2: '/assets/exp/gamesglobal_logo.jpg',
-    exp3: '/assets/exp/shibainu_logo.jpg',
-    exp4: '/assets/exp/ajna_logo.jpg',
-    exp5: '/assets/exp/linum_logo.jpg',
-    exp6: '/assets/exp/omnia_logo.jpg',
-    exp7: '/assets/exp/hcltech_logo.jpg',
-    exp8: '/assets/exp/elsevier_logo.jpg',
-    exp9: '/assets/exp/adforum_logo.jpg',
-  },
-
-  projects: {
-    proj1: {
-      link: 'https://www.ajna.finance',
-      imageUrl: '/assets/png/projects/ajna-project.png',
-      tags: ['React', 'TypeScript', 'Web3', 'DeFi', 'SDK'],
-      sourceCode: 'https://github.com/ajna-finance',
-    },
-    proj2: {
-      link: 'https://www.mode.network',
-      imageUrl: '/assets/png/projects/mode-project.png',
-      tags: ['Next.js', 'React', 'TypeScript', 'Web3'],
-    },
-    proj3: {
-      link: 'https://github.com/CyberGrandpas/cybergrandpa-web-extension-antifraud',
-      imageUrl: '/assets/png/projects/cybersec-project.png',
-      tags: ['JavaScript', 'Extension', 'Security'],
-      sourceCode: 'https://github.com/CyberGrandpas/cybergrandpa-web-extension-antifraud',
-    },
-    proj4: {
-      link: 'https://github.com/xdemocle/tetris-mini-app',
-      imageUrl: '/assets/png/projects/tetris-project.png',
-      tags: ['JavaScript', 'Gaming', 'Crypto', 'TON'],
-      sourceCode: 'https://github.com/xdemocle/tetris-mini-app',
-    },
-    proj5: {
-      link: 'https://chromewebstore.google.com/detail/linkedin-full-width/pijfcmadcbkcjdmajckndpccemdgebhn',
-      imageUrl: '/assets/png/projects/linkedin-project.png',
-      tags: ['JavaScript', 'Extension', 'UI'],
-      sourceCode: 'https://github.com/xdemocle/linkedin-full-width',
-    },
-  },
-
   skills: [
     // Frontend
     [
