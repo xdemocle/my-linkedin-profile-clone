@@ -1,8 +1,9 @@
 import { useMemo } from 'react';
 import { useTranslations } from 'use-intl';
-import { staticAssets } from '../data/static-assets';
 import experienceData from '../data/experience.json';
 import projectsData from '../data/projects.json';
+import skillsData from '../data/skills.json';
+import { staticAssets } from '../data/static-assets';
 import type { Achievement, Education, Experience, ProfileData, Project, Skill } from '../types/profile';
 
 /**
@@ -25,26 +26,27 @@ export function useProfileData(): ProfileData {
     const projects: Project[] = projectsData as Project[];
 
     // Build skills array with translated categories + static skill items
+    const skillItems = skillsData as Skill['items'][];
     const skills: Skill[] = [
       {
         category: tSkills('categories.frontend'),
-        items: staticAssets.skills[0],
+        items: skillItems[0],
       },
       {
         category: tSkills('categories.web3AI'),
-        items: staticAssets.skills[3],
+        items: skillItems[3],
       },
       {
         category: tSkills('categories.backend'),
-        items: staticAssets.skills[1],
+        items: skillItems[1],
       },
       {
         category: tSkills('categories.devopsCloud'),
-        items: staticAssets.skills[2],
+        items: skillItems[2],
       },
       {
         category: tSkills('categories.toolsTesting'),
-        items: staticAssets.skills[4],
+        items: skillItems[4],
       },
     ];
 
