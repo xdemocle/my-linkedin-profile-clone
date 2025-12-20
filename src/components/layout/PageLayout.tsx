@@ -1,7 +1,7 @@
 import { cn } from '@/lib/utils';
 import { type ReactNode } from 'react';
 import { ErrorBoundary } from '../ErrorBoundary';
-import { ProfileFooter } from '../profile/ProfileFooter';
+import { Footer } from '../Footer';
 import { ProfileLanguageUrl } from '../profile/ProfileLanguageUrl';
 import { SocialProfileSidebar } from '../profile/SocialProfileSidebar';
 import { Navbar } from './Navbar';
@@ -18,7 +18,7 @@ export function PageLayout({ children, addToSidebar, noSidebar }: PageLayoutProp
       <Navbar />
 
       <main className="max-w-7xl mx-auto px-4 sm:px-6 py-16 sm:py-20">
-        <div className={cn('grid grid-cols-1 lg:grid-cols-3 gap-5 md:gap-10 ', noSidebar && 'lg:grid-cols-1')}>
+        <div className={cn('grid grid-cols-1 lg:grid-cols-3 gap-5 md:gap-10', noSidebar && 'lg:grid-cols-1')}>
           {/* Main content - 2/3 width on large screens, full width on mobile */}
           <ErrorBoundary>
             <div className="lg:col-span-2 order-1 space-y-5 md:space-y-10">{children}</div>
@@ -36,13 +36,15 @@ export function PageLayout({ children, addToSidebar, noSidebar }: PageLayoutProp
 
                   {/* Social Profile Sidebar widget */}
                   <SocialProfileSidebar />
-
-                  {/* Footer Links */}
-                  <ProfileFooter />
                 </div>
               </div>
             </ErrorBoundary>
           )}
+        </div>
+
+        {/* Footer Links */}
+        <div className={cn('grid grid-cols-1 gap-5 md:gap-10', noSidebar && 'lg:grid-cols-1')}>
+          <Footer />
         </div>
       </main>
     </div>

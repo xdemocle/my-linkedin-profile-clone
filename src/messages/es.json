@@ -174,8 +174,11 @@
       "frontend": "Frontend",
       "backend": "Backend",
       "devopsCloud": "DevOps & Cloud",
-      "web3AI": "Web3 & IA",
-      "toolsTesting": "Herramientas & Testing"
+      "toolsTesting": "Herramientas & Testing",
+      "web3": "Web3",
+      "ai": "IA",
+      "softSkills": "Habilidades blandas",
+      "languages": "Idiomas"
     }
   },
   "Recommendations": {
@@ -265,17 +268,15 @@
     "writing": "Escritura",
     "creativity": "Creatividad"
   },
-  "ProfileFooter": {
-    "linkedinProfile": "Perfil de LinkedIn",
-    "personalWebsite": "Sitio Web Personal",
-    "copyright": "© {year} Rocco Russo"
-  },
   "ProfileLanguage": {
     "title": "Idioma del perfil",
     "whoViewersAlsoViewed": "Quién también vieron tus visitantes",
     "privateToYou": "Privado para ti"
   },
   "Footer": {
+    "linkedinProfile": "Perfil de LinkedIn",
+    "personalWebsite": "Sitio Web Personal",
+    "copyright": "© {year} Rocco Russo",
     "about": "Acerca de",
     "accessibility": "Accesibilidad",
     "careers": "Carreras",
@@ -659,8 +660,11 @@
         "frontend": "Frontend",
         "backend": "Backend",
         "devopsCloud": "DevOps & Cloud",
-        "web3AI": "Web3 & IA",
-        "toolsTesting": "Herramientas & Testing"
+        "toolsTesting": "Herramientas & Testing",
+        "web3": "Web3",
+        "ai": "IA",
+        "softSkills": "Habilidades blandas",
+        "languages": "Idiomas"
       }
     },
     "education": {

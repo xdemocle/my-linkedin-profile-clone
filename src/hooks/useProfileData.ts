@@ -25,30 +25,13 @@ export function useProfileData(): ProfileData {
     // Use projects data from JSON file
     const projects: Project[] = projectsData as Project[];
 
-    // Build skills array with translated categories + static skill items
-    const skillItems = skillsData as Skill['items'][];
-    const skills: Skill[] = [
-      {
-        category: tSkills('categories.frontend'),
-        items: skillItems[0],
-      },
-      {
-        category: tSkills('categories.web3AI'),
-        items: skillItems[3],
-      },
-      {
-        category: tSkills('categories.backend'),
-        items: skillItems[1],
-      },
-      {
-        category: tSkills('categories.devopsCloud'),
-        items: skillItems[2],
-      },
-      {
-        category: tSkills('categories.toolsTesting'),
-        items: skillItems[4],
-      },
-    ];
+    // Build skills array from JSON categories + translated labels
+    const skills = (skillsData as Array<{ categoryKey: string; categoryLabel?: string; items: Skill['items'] }>).map(
+      category => ({
+        category: category.categoryLabel ?? tSkills(`categories.${category.categoryKey}` as never),
+        items: category.items,
+      })
+    ) satisfies Skill[];
 
     // Build education array from translations + static logo
     const education: Education[] = [

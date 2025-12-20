@@ -3,15 +3,15 @@ import { useApp } from '@/hooks';
 import { ExternalLinkIcon } from '@radix-ui/react-icons';
 import React from 'react';
 import { useTranslations } from 'use-intl';
-import { LinkTranslated } from '../LinkTranslated';
-import { Card, CardContent } from '../ui/card';
+import { LinkTranslated } from './LinkTranslated';
+import { Card, CardContent } from './ui/card';
 
-export function ProfileFooter() {
-  const tFooter = useTranslations('ProfileFooter');
+export function Footer() {
+  const tFooter = useTranslations('Footer');
   const { navLinks } = useApp();
 
   return (
-    <Card className="shadow-xs">
+    <Card className="shadow-xs mt-10">
       <CardContent>
         <div className="text-xs text-muted-foreground space-y-3">
           {/* Navigation Links */}
