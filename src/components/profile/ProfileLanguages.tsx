@@ -1,6 +1,6 @@
-import { useTranslations } from 'use-intl';
-import { Badge } from '../ui/badge';
-import { Card, CardContent, CardHeader, CardTitle } from '../ui/card';
+import { useTranslations } from "use-intl";
+import { Badge } from "../ui/badge";
+import { Card, CardContent, CardHeader, CardTitle } from "../ui/card";
 
 interface Language {
   nameKey: string;
@@ -8,22 +8,22 @@ interface Language {
 }
 
 export function ProfileLanguages() {
-  const t = useTranslations('Languages');
+  const t = useTranslations("Languages");
 
   const profileLanguages: Language[] = [
-    { nameKey: 'arabic', levelKey: 'elementary' },
-    { nameKey: 'english', levelKey: 'fullProfessional' },
-    { nameKey: 'french', levelKey: 'elementary' },
-    { nameKey: 'italian', levelKey: 'nativeOrBilingual' },
-    { nameKey: 'portuguese', levelKey: 'elementary' },
-    { nameKey: 'spanish', levelKey: 'limitedWorking' },
-    { nameKey: 'zulu', levelKey: 'elementary' },
+    { nameKey: "arabic", levelKey: "elementary" },
+    { nameKey: "english", levelKey: "fullProfessional" },
+    { nameKey: "french", levelKey: "elementary" },
+    { nameKey: "italian", levelKey: "nativeOrBilingual" },
+    { nameKey: "portuguese", levelKey: "elementary" },
+    { nameKey: "spanish", levelKey: "limitedWorking" },
+    { nameKey: "zulu", levelKey: "elementary" },
   ];
 
   return (
     <Card className="shadow-xs">
       <CardHeader>
-        <CardTitle className="text-base">{t('title')}</CardTitle>
+        <CardTitle className="text-base">{t("title")}</CardTitle>
       </CardHeader>
       <CardContent className="pt-0">
         <div className="space-y-3">

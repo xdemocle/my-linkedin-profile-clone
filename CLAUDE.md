@@ -155,7 +155,7 @@ The project includes **MDX** support for writing content with React components e
 ### MDX Example Usage
 
 ```tsx
-import MyContent from './content/example.mdx';
+import MyContent from "./content/example.mdx";
 
 function Page() {
   return (
@@ -173,20 +173,17 @@ The project follows a structured development plan outlined in `DEVELOPMENT_PLAN.
 ### **High Priority Tasks**
 
 1. **Complete Translation Implementation** (✅ **ALL COMPLETED**):
-
    - ExperienceSection job titles and descriptions (✅ **COMPLETED**)
    - SkillsSection skill names and endorsements (✅ **COMPLETED**)
    - ProfileSidebar languages, interests, and footer (✅ **COMPLETED**)
    - ExperiencePage full translations (✅ **COMPLETED**)
 
 2. **UX & Accessibility Improvements**:
-
    - Error boundaries for translation/data loading (✅ **COMPLETED**)
    - Mobile-first responsive design completion (✅ **COMPLETED**)
    - ARIA labels and keyboard navigation (✅ **COMPLETED**)
 
 3. **Advanced Features**:
-
    - Social sharing functionality (✅ **COMPLETED**)
    - Print-optimized styles (✅ **COMPLETED**)
    - PWA capabilities with offline support (✅ **COMPLETED**)

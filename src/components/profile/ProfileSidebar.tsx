@@ -1,5 +1,5 @@
-import { ProfileInterests } from './ProfileInterests';
-import { ProfileLanguages } from './ProfileLanguages';
+import { ProfileInterests } from "./ProfileInterests";
+import { ProfileLanguages } from "./ProfileLanguages";
 
 export function ProfileSidebar() {
   return (

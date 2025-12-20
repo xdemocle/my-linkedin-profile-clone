@@ -1,16 +1,16 @@
-import { useTranslations } from 'use-intl';
-import { useLocation } from 'wouter';
-import { Button } from '../components/ui/button';
-import { useLocale } from '../hooks/useLocale';
-import { getPageUrlFromPath } from '../lib/i18n';
+import { useTranslations } from "use-intl";
+import { useLocation } from "wouter";
+import { Button } from "../components/ui/button";
+import { useLocale } from "../hooks/useLocale";
+import { getPageUrlFromPath } from "../lib/i18n";
 
 export function NotFoundPage() {
-  const t = useTranslations('NotFound');
+  const t = useTranslations("NotFound");
   const [, setLocation] = useLocation();
   const { locale } = useLocale();
 
   const handleGoHome = () => {
-    setLocation(getPageUrlFromPath(locale, '/'));
+    setLocation(getPageUrlFromPath(locale, "/"));
   };
 
   const handleGoBack = () => {
@@ -43,10 +43,10 @@ export function NotFoundPage() {
         {/* Error Message */}
         <div className="mb-8 space-y-4">
           <h1 className="text-3xl md:text-5xl font-bold text-foreground mb-4">
-            {t('title', { fallback: 'Oops! Page Not Found' })}
+            {t("title", { fallback: "Oops! Page Not Found" })}
           </h1>
           <p className="text-lg md:text-xl text-muted-foreground max-w-md mx-auto leading-relaxed">
-            {t('description', {
+            {t("description", {
               fallback:
                 "The page you're looking for seems to have wandered off into the digital void. Don't worry, it happens to the best of us!",
             })}
@@ -83,7 +83,7 @@ export function NotFoundPage() {
             onClick={handleGoHome}
             className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-3 rounded-full text-lg font-semibold shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200"
           >
-            🏠 {t('goHome', { fallback: 'Take Me Home' })}
+            🏠 {t("goHome", { fallback: "Take Me Home" })}
           </Button>
 
           <Button
@@ -91,14 +91,14 @@ export function NotFoundPage() {
             variant="outline"
             className="border-2 border-primary/30 text-primary hover:bg-primary/10 px-8 py-3 rounded-full text-lg font-semibold shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200"
           >
-            ⬅️ {t('goBack', { fallback: 'Go Back' })}
+            ⬅️ {t("goBack", { fallback: "Go Back" })}
           </Button>
         </div>
 
         {/* Fun Message */}
         <div className="mt-12 p-6 bg-card/50 backdrop-blur-sm rounded-sm border border-primary/20 shadow-lg">
           <p className="text-sm text-muted-foreground italic">
-            {t('funMessage', {
+            {t("funMessage", {
               fallback:
                 '"In the vast expanse of the internet, even the best explorers sometimes take a wrong turn. But hey, that\'s how we discover new paths!" 🚀',
             })}
@@ -113,7 +113,7 @@ export function NotFoundPage() {
           style={{
             backgroundImage: `radial-gradient(circle at 25% 25%, var(--primary) 2px, transparent 2px),
                            radial-gradient(circle at 75% 75%, var(--secondary) 2px, transparent 2px)`,
-            backgroundSize: '50px 50px',
+            backgroundSize: "50px 50px",
           }}
         ></div>
       </div>

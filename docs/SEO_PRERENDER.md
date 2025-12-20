@@ -41,13 +41,11 @@ This ensures SEO metadata stays current even when users navigate within the app 
 ### Files Modified
 
 1. **`/src/lib/seo-meta.ts`** (NEW)
-
    - Pure functions for generating SEO meta tags
    - No React dependencies
    - Works in Node.js environment during build
 
 2. **`/src/main.tsx`**
-
    - Updated `prerender()` function to:
      - Detect page type (home, experience, projects, skills, recommendations)
      - Generate appropriate SEO meta tags for each page
@@ -169,13 +167,11 @@ Each prerendered page includes:
 ### Test with SEO Tools
 
 1. **Google Rich Results Test:**
-
    - <https://search.google.com/test/rich-results>
    - Test the deployed URL
    - Verify Person schema is detected
 
 2. **Facebook Sharing Debugger:**
-
    - <https://developers.facebook.com/tools/debug/>
    - Test the deployed URL
    - Verify Open Graph tags are correct

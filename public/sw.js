@@ -1,97 +1,105 @@
 // Service Worker for LinkedIn Profile Clone
 // Optimized for SSG/Prerendered content with Cloudflare Pages
 
-const CACHE_VERSION = 'v1';
+const CACHE_VERSION = "v1";
 const STATIC_CACHE = `static-${CACHE_VERSION}`;
 const DYNAMIC_CACHE = `dynamic-${CACHE_VERSION}`;
 const IMAGE_CACHE = `images-${CACHE_VERSION}`;
 
 // Assets to cache immediately on install (critical for offline)
 const STATIC_ASSETS = [
-  '/',
-  '/experience',
-  '/projects',
-  '/skills',
-  '/recommendations',
+  "/",
+  "/experience",
+  "/projects",
+  "/skills",
+  "/recommendations",
 
   // add multilingual pages
-  '/ar',
-  '/es',
-  '/fr',
-  '/it',
+  "/ar",
+  "/es",
+  "/fr",
+  "/it",
 
   // add multilingual experience pages
-  '/ar/experience',
-  '/es/experience',
-  '/fr/experience',
-  '/it/experience',
+  "/ar/experience",
+  "/es/experience",
+  "/fr/experience",
+  "/it/experience",
 
   // add multilingual projects pages
-  '/ar/projects',
-  '/es/projects',
-  '/fr/projects',
-  '/it/projects',
+  "/ar/projects",
+  "/es/projects",
+  "/fr/projects",
+  "/it/projects",
 
   // add multilingual skills pages
-  '/ar/skills',
-  '/es/skills',
-  '/fr/skills',
-  '/it/skills',
+  "/ar/skills",
+  "/es/skills",
+  "/fr/skills",
+  "/it/skills",
 
   // add multilingual recommendations pages
-  '/ar/recommendations',
-  '/es/recommendations',
-  '/fr/recommendations',
-  '/it/recommendations',
+  "/ar/recommendations",
+  "/es/recommendations",
+  "/fr/recommendations",
+  "/it/recommendations",
 
-  '/manifest.json',
+  "/manifest.json",
 ];
 
 // Install event - cache static assets
-self.addEventListener('install', event => {
-  console.log('[SW] Installing service worker...');
+self.addEventListener("install", (event) => {
+  console.log("[SW] Installing service worker...");
   event.waitUntil(
     caches
       .open(STATIC_CACHE)
-      .then(cache => {
-        console.log('[SW] Caching static assets');
+      .then((cache) => {
+        console.log("[SW] Caching static assets");
         return cache.addAll(STATIC_ASSETS);
       })
       .then(() => {
         return self.skipWaiting(); // Activate immediately
-      })
+      }),
   );
 });
 
 // Activate event - clean up old caches
-self.addEventListener('activate', event => {
-  console.log('[SW] Activating service worker...');
+self.addEventListener("activate", (event) => {
+  console.log("[SW] Activating service worker...");
   event.waitUntil(
     caches
       .keys()
-      .then(cacheNames => {
+      .then((cacheNames) => {
         return Promise.all(
           cacheNames
-            .filter(name => {
-              return name.startsWith('static-') || name.startsWith('dynamic-') || name.startsWith('images-');
+            .filter((name) => {
+              return (
+                name.startsWith("static-") ||
+                name.startsWith("dynamic-") ||
+                name.startsWith("images-")
+              );
             })
-            .filter(name => {
-              return name !== STATIC_CACHE && name !== DYNAMIC_CACHE && name !== IMAGE_CACHE;
+            .filter((name) => {
+              return (
+                name !== STATIC_CACHE &&
+                name !== DYNAMIC_CACHE &&
+                name !== IMAGE_CACHE
+              );
             })
-            .map(name => {
-              console.log('[SW] Deleting old cache:', name);
+            .map((name) => {
+              console.log("[SW] Deleting old cache:", name);
               return caches.delete(name);
-            })
+            }),
         );
       })
       .then(() => {
         return self.clients.claim(); // Take control immediately
-      })
+      }),
   );
 });
 
 // Fetch event - serve from cache, fallback to network
-self.addEventListener('fetch', event => {
+self.addEventListener("fetch", (event) => {
   const { request } = event;
   const url = new URL(request.url);
 
@@ -101,27 +109,31 @@ self.addEventListener('fetch', event => {
   }
 
   // Handle different types of requests
-  if (request.method === 'GET') {
+  if (request.method === "GET") {
     // Images - Cache first, fallback to network
-    if (request.destination === 'image') {
+    if (request.destination === "image") {
       event.respondWith(cacheFirstStrategy(request, IMAGE_CACHE));
       return;
     }
 
     // HTML pages - Network first for SSG content, fallback to cache
-    if (request.mode === 'navigate' || request.destination === 'document') {
+    if (request.mode === "navigate" || request.destination === "document") {
       event.respondWith(networkFirstStrategy(request, STATIC_CACHE));
       return;
     }
 
     // CSS, JS, fonts - Cache first, fallback to network
-    if (request.destination === 'style' || request.destination === 'script' || request.destination === 'font') {
+    if (
+      request.destination === "style" ||
+      request.destination === "script" ||
+      request.destination === "font"
+    ) {
       event.respondWith(cacheFirstStrategy(request, STATIC_CACHE));
       return;
     }
 
     // API calls and dynamic content - Network first
-    if (url.pathname.startsWith('/api/')) {
+    if (url.pathname.startsWith("/api/")) {
       event.respondWith(networkFirstStrategy(request, DYNAMIC_CACHE));
       return;
     }
@@ -137,22 +149,22 @@ async function cacheFirstStrategy(request, cacheName) {
   const cached = await cache.match(request);
 
   if (cached) {
-    console.log('[SW] Serving from cache:', request.url);
+    console.log("[SW] Serving from cache:", request.url);
     return cached;
   }
 
   try {
     const response = await fetch(request);
     if (response.ok) {
-      console.log('[SW] Caching new resource:', request.url);
+      console.log("[SW] Caching new resource:", request.url);
       cache.put(request, response.clone());
     }
     return response;
   } catch (error) {
-    console.error('[SW] Fetch failed:', error);
-    return new Response('Offline - Resource not available', {
+    console.error("[SW] Fetch failed:", error);
+    return new Response("Offline - Resource not available", {
       status: 503,
-      statusText: 'Service Unavailable',
+      statusText: "Service Unavailable",
     });
   }
 }
@@ -164,12 +176,12 @@ async function networkFirstStrategy(request, cacheName) {
   try {
     const response = await fetch(request);
     if (response.ok) {
-      console.log('[SW] Updating cache from network:', request.url);
+      console.log("[SW] Updating cache from network:", request.url);
       cache.put(request, response.clone());
     }
     return response;
   } catch (error) {
-    console.log('[SW] Network failed, serving from cache:', request.url);
+    console.log("[SW] Network failed, serving from cache:", request.url);
     const cached = await cache.match(request);
 
     if (cached) {
@@ -177,49 +189,49 @@ async function networkFirstStrategy(request, cacheName) {
     }
 
     // Return offline page for navigation requests
-    if (request.mode === 'navigate') {
-      const offlinePage = await cache.match('/');
+    if (request.mode === "navigate") {
+      const offlinePage = await cache.match("/");
       if (offlinePage) {
         return offlinePage;
       }
     }
 
-    return new Response('Offline - Please check your connection', {
+    return new Response("Offline - Please check your connection", {
       status: 503,
-      statusText: 'Service Unavailable',
-      headers: { 'Content-Type': 'text/plain' },
+      statusText: "Service Unavailable",
+      headers: { "Content-Type": "text/plain" },
     });
   }
 }
 
 // Background sync for future enhancements
-self.addEventListener('sync', event => {
-  console.log('[SW] Background sync:', event.tag);
-  if (event.tag === 'sync-profile-data') {
+self.addEventListener("sync", (event) => {
+  console.log("[SW] Background sync:", event.tag);
+  if (event.tag === "sync-profile-data") {
     event.waitUntil(syncProfileData());
   }
 });
 
 async function syncProfileData() {
   // Placeholder for future background sync functionality
-  console.log('[SW] Syncing profile data...');
+  console.log("[SW] Syncing profile data...");
 }
 
 // Push notifications (for future enhancements)
-self.addEventListener('push', event => {
+self.addEventListener("push", (event) => {
   const data = event.data ? event.data.json() : {};
-  const title = data.title || 'LinkedIn Profile Update';
+  const title = data.title || "LinkedIn Profile Update";
   const options = {
-    body: data.body || 'You have a new update',
-    icon: '/icon-192.png',
-    badge: '/icon-192.png',
-    data: data.url || '/',
+    body: data.body || "You have a new update",
+    icon: "/icon-192.png",
+    badge: "/icon-192.png",
+    data: data.url || "/",
   };
 
   event.waitUntil(self.registration.showNotification(title, options));
 });
 
-self.addEventListener('notificationclick', event => {
+self.addEventListener("notificationclick", (event) => {
   event.notification.close();
   event.waitUntil(clients.openWindow(event.notification.data));
 });

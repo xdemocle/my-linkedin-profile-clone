@@ -1,726 +1,726 @@
 [
-    {
-        "categoryKey": "frontend",
-        "items": [
-            {
-                "name": "React",
-                "level": 95
-            },
-            {
-                "name": "React Router",
-                "level": 95
-            },
-            {
-                "name": "Preact",
-                "level": 90
-            },
-            {
-                "name": "Svelte",
-                "level": 90
-            },
-            {
-                "name": "TypeScript",
-                "level": 95
-            },
-            {
-                "name": "JavaScript",
-                "level": 95
-            },
-            {
-                "name": "Next.js",
-                "level": 90
-            },
-            {
-                "name": "Remix",
-                "level": 85
-            },
-            {
-                "name": "Redux",
-                "level": 85
-            },
-            {
-                "name": "Zustand",
-                "level": 90
-            },
-            {
-                "name": "TanStack Query",
-                "level": 90
-            },
-            {
-                "name": "CSS",
-                "level": 90
-            },
-            {
-                "name": "CSS-in-JS",
-                "level": 80
-            },
-            {
-                "name": "TailwindCSS",
-                "level": 95
-            },
-            {
-                "name": "Styled Components",
-                "level": 85
-            },
-            {
-                "name": "Atomic Design",
-                "level": 90
-            },
-            {
-                "name": "Responsive Design",
-                "level": 95
-            },
-            {
-                "name": "Web Accessibility (a11y)",
-                "level": 85
-            },
-            {
-                "name": "Performance Optimization",
-                "level": 90
-            },
-            {
-                "name": "Vue.js",
-                "level": 70
-            },
-            {
-                "name": "Angular",
-                "level": 65
-            },
-            {
-                "name": "Astro",
-                "level": 75
-            },
-            {
-                "name": "SolidJS",
-                "level": 70
-            },
-            {
-                "name": "SASS/SCSS",
-                "level": 80
-            },
-            {
-                "name": "Framer Motion",
-                "level": 75
-            },
-            {
-                "name": "Three.js",
-                "level": 60
-            },
-            {
-                "name": "WebGL",
-                "level": 55
-            },
-            {
-                "name": "PWA",
-                "level": 75
-            },
-            {
-                "name": "Web Components",
-                "level": 70
-            }
-        ]
-    },
-    {
-        "categoryKey": "web3",
-        "items": [
-            {
-                "name": "Solidity",
-                "level": 80
-            },
-            {
-                "name": "Smart Contracts",
-                "level": 85
-            },
-            {
-                "name": "EVM",
-                "level": 85
-            },
-            {
-                "name": "Wagmi",
-                "level": 85
-            },
-            {
-                "name": "Viem",
-                "level": 85
-            },
-            {
-                "name": "Ethers.js",
-                "level": 85
-            },
-            {
-                "name": "Web3.js",
-                "level": 80
-            },
-            {
-                "name": "DeFi DApps",
-                "level": 90
-            },
-            {
-                "name": "NFT Marketplaces",
-                "level": 85
-            },
-            {
-                "name": "IPFS",
-                "level": 80
-            },
-            {
-                "name": "The Graph",
-                "level": 75
-            },
-            {
-                "name": "Hardhat",
-                "level": 80
-            },
-            {
-                "name": "Foundry",
-                "level": 75
-            },
-            {
-                "name": "Wallet Integration",
-                "level": 90
-            },
-            {
-                "name": "SDK Development",
-                "level": 90
-            },
-            {
-                "name": "Chainlink",
-                "level": 70
-            },
-            {
-                "name": "OpenZeppelin",
-                "level": 75
-            },
-            {
-                "name": "Alchemy",
-                "level": 80
-            },
-            {
-                "name": "Infura",
-                "level": 75
-            },
-            {
-                "name": "ENS",
-                "level": 70
-            },
-            {
-                "name": "Layer 2 Solutions",
-                "level": 75
-            },
-            {
-                "name": "Token Standards (ERC-20/721/1155)",
-                "level": 80
-            },
-            {
-                "name": "Vyper",
-                "level": 60
-            },
-            {
-                "name": "Cairo (StarkNet)",
-                "level": 55
-            },
-            {
-                "name": "Subgraphs",
-                "level": 70
-            }
-        ]
-    },
-    {
-        "categoryKey": "ai",
-        "items": [
-            {
-                "name": "LLM Agents",
-                "level": 85
-            },
-            {
-                "name": "Prompt Engineering",
-                "level": 85
-            },
-            {
-                "name": "Claude API",
-                "level": 85
-            },
-            {
-                "name": "OpenAI API",
-                "level": 80
-            },
-            {
-                "name": "RAG Systems",
-                "level": 80
-            },
-            {
-                "name": "AI-Assisted Development",
-                "level": 90
-            },
-            {
-                "name": "Cloudflare AI",
-                "level": 80
-            },
-            {
-                "name": "LangChain",
-                "level": 70
-            },
-            {
-                "name": "Vector Databases",
-                "level": 70
-            },
-            {
-                "name": "Embeddings",
-                "level": 75
-            },
-            {
-                "name": "Fine-tuning",
-                "level": 65
-            },
-            {
-                "name": "Hugging Face",
-                "level": 65
-            },
-            {
-                "name": "Stable Diffusion",
-                "level": 60
-            },
-            {
-                "name": "MCP (Model Context Protocol)",
-                "level": 75
-            }
-        ]
-    },
-    {
-        "categoryKey": "backend",
-        "items": [
-            {
-                "name": "Node.js",
-                "level": 90
-            },
-            {
-                "name": "Express",
-                "level": 85
-            },
-            {
-                "name": "Hono",
-                "level": 85
-            },
-            {
-                "name": "NestJS",
-                "level": 80
-            },
-            {
-                "name": "GraphQL",
-                "level": 85
-            },
-            {
-                "name": "REST APIs",
-                "level": 95
-            },
-            {
-                "name": "tRPC",
-                "level": 80
-            },
-            {
-                "name": "MongoDB",
-                "level": 85
-            },
-            {
-                "name": "PostgreSQL",
-                "level": 80
-            },
-            {
-                "name": "Drizzle ORM",
-                "level": 85
-            },
-            {
-                "name": "Prisma",
-                "level": 80
-            },
-            {
-                "name": "Redis",
-                "level": 75
-            },
-            {
-                "name": "Cloudflare D1",
-                "level": 85
-            },
-            {
-                "name": "Better Auth",
-                "level": 85
-            },
-            {
-                "name": "Flask",
-                "level": 70
-            },
-            {
-                "name": "Python",
-                "level": 75
-            },
-            {
-                "name": "FastAPI",
-                "level": 65
-            },
-            {
-                "name": "Deno",
-                "level": 70
-            },
-            {
-                "name": "Bun",
-                "level": 75
-            },
-            {
-                "name": "MySQL",
-                "level": 75
-            },
-            {
-                "name": "SQLite",
-                "level": 80
-            },
-            {
-                "name": "Supabase",
-                "level": 75
-            },
-            {
-                "name": "Firebase",
-                "level": 70
-            },
-            {
-                "name": "WebSockets",
-                "level": 80
-            },
-            {
-                "name": "Message Queues",
-                "level": 70
-            },
-            {
-                "name": "Microservices",
-                "level": 75
-            },
-            {
-                "name": "Serverless Functions",
-                "level": 85
-            },
-            {
-                "name": "OAuth/OIDC",
-                "level": 80
-            },
-            {
-                "name": "JWT",
-                "level": 85
-            }
-        ]
-    },
-    {
-        "categoryKey": "devopsCloud",
-        "items": [
-            {
-                "name": "Docker",
-                "level": 85
-            },
-            {
-                "name": "Kubernetes",
-                "level": 75
-            },
-            {
-                "name": "CI/CD",
-                "level": 85
-            },
-            {
-                "name": "GitHub Actions",
-                "level": 85
-            },
-            {
-                "name": "AWS",
-                "level": 80
-            },
-            {
-                "name": "GCP",
-                "level": 75
-            },
-            {
-                "name": "Cloudflare Workers",
-                "level": 90
-            },
-            {
-                "name": "Cloudflare Pages",
-                "level": 90
-            },
-            {
-                "name": "Vercel",
-                "level": 90
-            },
-            {
-                "name": "Heroku",
-                "level": 80
-            },
-            {
-                "name": "Wrangler",
-                "level": 85
-            },
-            {
-                "name": "Terraform",
-                "level": 65
-            },
-            {
-                "name": "Nginx",
-                "level": 75
-            },
-            {
-                "name": "Linux/Unix",
-                "level": 80
-            },
-            {
-                "name": "Shell Scripting",
-                "level": 75
-            },
-            {
-                "name": "AWS Lambda",
-                "level": 75
-            },
-            {
-                "name": "AWS S3",
-                "level": 80
-            },
-            {
-                "name": "AWS EC2",
-                "level": 70
-            },
-            {
-                "name": "Cloudflare R2",
-                "level": 80
-            },
-            {
-                "name": "Cloudflare KV",
-                "level": 85
-            },
-            {
-                "name": "DigitalOcean",
-                "level": 70
-            },
-            {
-                "name": "Railway",
-                "level": 75
-            },
-            {
-                "name": "Render",
-                "level": 70
-            },
-            {
-                "name": "Monitoring/Logging",
-                "level": 75
-            },
-            {
-                "name": "Sentry",
-                "level": 80
-            }
-        ]
-    },
-    {
-        "categoryKey": "toolsTesting",
-        "items": [
-            {
-                "name": "Git",
-                "level": 95
-            },
-            {
-                "name": "GitHub",
-                "level": 95
-            },
-            {
-                "name": "GitLab",
-                "level": 85
-            },
-            {
-                "name": "Webpack",
-                "level": 85
-            },
-            {
-                "name": "Vite",
-                "level": 90
-            },
-            {
-                "name": "Turborepo",
-                "level": 80
-            },
-            {
-                "name": "pnpm",
-                "level": 90
-            },
-            {
-                "name": "Figma",
-                "level": 80
-            },
-            {
-                "name": "Jest",
-                "level": 85
-            },
-            {
-                "name": "Vitest",
-                "level": 90
-            },
-            {
-                "name": "Playwright",
-                "level": 80
-            },
-            {
-                "name": "Testing Library",
-                "level": 85
-            },
-            {
-                "name": "Selenium",
-                "level": 75
-            },
-            {
-                "name": "Storybook",
-                "level": 80
-            },
-            {
-                "name": "Cypress",
-                "level": 75
-            },
-            {
-                "name": "ESLint",
-                "level": 90
-            },
-            {
-                "name": "Prettier",
-                "level": 90
-            },
-            {
-                "name": "Biome",
-                "level": 80
-            },
-            {
-                "name": "npm",
-                "level": 90
-            },
-            {
-                "name": "yarn",
-                "level": 85
-            },
-            {
-                "name": "Postman",
-                "level": 80
-            },
-            {
-                "name": "Insomnia",
-                "level": 75
-            },
-            {
-                "name": "Chrome DevTools",
-                "level": 90
-            },
-            {
-                "name": "Lighthouse",
-                "level": 80
-            },
-            {
-                "name": "Nx",
-                "level": 70
-            },
-            {
-                "name": "Lerna",
-                "level": 65
-            },
-            {
-                "name": "Changesets",
-                "level": 75
-            },
-            {
-                "name": "Husky",
-                "level": 80
-            },
-            {
-                "name": "Commitlint",
-                "level": 75
-            }
-        ]
-    },
-    {
-        "categoryKey": "softSkills",
-        "items": [
-            {
-                "name": "Technical Mentoring",
-                "level": 90
-            },
-            {
-                "name": "Code Review",
-                "level": 95
-            },
-            {
-                "name": "Technical Writing",
-                "level": 85
-            },
-            {
-                "name": "Architecture Design",
-                "level": 90
-            },
-            {
-                "name": "Agile/Scrum",
-                "level": 85
-            },
-            {
-                "name": "Remote Collaboration",
-                "level": 90
-            },
-            {
-                "name": "Team Leadership",
-                "level": 85
-            },
-            {
-                "name": "Project Estimation",
-                "level": 80
-            },
-            {
-                "name": "Client Communication",
-                "level": 85
-            },
-            {
-                "name": "Technical Interviews",
-                "level": 85
-            },
-            {
-                "name": "Documentation",
-                "level": 90
-            },
-            {
-                "name": "Pair Programming",
-                "level": 85
-            },
-            {
-                "name": "Problem Solving",
-                "level": 90
-            },
-            {
-                "name": "Debugging",
-                "level": 95
-            }
-        ]
-    },
-    {
-        "categoryKey": "languages",
-        "items": [
-            {
-                "name": "Italian",
-                "level": 100
-            },
-            {
-                "name": "English",
-                "level": 90
-            },
-            {
-                "name": "Spanish",
-                "level": 60
-            },
-            {
-                "name": "French",
-                "level": 20
-            },
-            {
-                "name": "Portuguese",
-                "level": 30
-            },
-            {
-                "name": "Zulu",
-                "level": 10
-            }
-        ]
-    }
+  {
+    "categoryKey": "frontend",
+    "items": [
+      {
+        "name": "React",
+        "level": 95
+      },
+      {
+        "name": "React Router",
+        "level": 95
+      },
+      {
+        "name": "Preact",
+        "level": 90
+      },
+      {
+        "name": "Svelte",
+        "level": 90
+      },
+      {
+        "name": "TypeScript",
+        "level": 95
+      },
+      {
+        "name": "JavaScript",
+        "level": 95
+      },
+      {
+        "name": "Next.js",
+        "level": 90
+      },
+      {
+        "name": "Remix",
+        "level": 85
+      },
+      {
+        "name": "Redux",
+        "level": 85
+      },
+      {
+        "name": "Zustand",
+        "level": 90
+      },
+      {
+        "name": "TanStack Query",
+        "level": 90
+      },
+      {
+        "name": "CSS",
+        "level": 90
+      },
+      {
+        "name": "CSS-in-JS",
+        "level": 80
+      },
+      {
+        "name": "TailwindCSS",
+        "level": 95
+      },
+      {
+        "name": "Styled Components",
+        "level": 85
+      },
+      {
+        "name": "Atomic Design",
+        "level": 90
+      },
+      {
+        "name": "Responsive Design",
+        "level": 95
+      },
+      {
+        "name": "Web Accessibility (a11y)",
+        "level": 85
+      },
+      {
+        "name": "Performance Optimization",
+        "level": 90
+      },
+      {
+        "name": "Vue.js",
+        "level": 70
+      },
+      {
+        "name": "Angular",
+        "level": 65
+      },
+      {
+        "name": "Astro",
+        "level": 75
+      },
+      {
+        "name": "SolidJS",
+        "level": 70
+      },
+      {
+        "name": "SASS/SCSS",
+        "level": 80
+      },
+      {
+        "name": "Framer Motion",
+        "level": 75
+      },
+      {
+        "name": "Three.js",
+        "level": 60
+      },
+      {
+        "name": "WebGL",
+        "level": 55
+      },
+      {
+        "name": "PWA",
+        "level": 75
+      },
+      {
+        "name": "Web Components",
+        "level": 70
+      }
+    ]
+  },
+  {
+    "categoryKey": "web3",
+    "items": [
+      {
+        "name": "Solidity",
+        "level": 80
+      },
+      {
+        "name": "Smart Contracts",
+        "level": 85
+      },
+      {
+        "name": "EVM",
+        "level": 85
+      },
+      {
+        "name": "Wagmi",
+        "level": 85
+      },
+      {
+        "name": "Viem",
+        "level": 85
+      },
+      {
+        "name": "Ethers.js",
+        "level": 85
+      },
+      {
+        "name": "Web3.js",
+        "level": 80
+      },
+      {
+        "name": "DeFi DApps",
+        "level": 90
+      },
+      {
+        "name": "NFT Marketplaces",
+        "level": 85
+      },
+      {
+        "name": "IPFS",
+        "level": 80
+      },
+      {
+        "name": "The Graph",
+        "level": 75
+      },
+      {
+        "name": "Hardhat",
+        "level": 80
+      },
+      {
+        "name": "Foundry",
+        "level": 75
+      },
+      {
+        "name": "Wallet Integration",
+        "level": 90
+      },
+      {
+        "name": "SDK Development",
+        "level": 90
+      },
+      {
+        "name": "Chainlink",
+        "level": 70
+      },
+      {
+        "name": "OpenZeppelin",
+        "level": 75
+      },
+      {
+        "name": "Alchemy",
+        "level": 80
+      },
+      {
+        "name": "Infura",
+        "level": 75
+      },
+      {
+        "name": "ENS",
+        "level": 70
+      },
+      {
+        "name": "Layer 2 Solutions",
+        "level": 75
+      },
+      {
+        "name": "Token Standards (ERC-20/721/1155)",
+        "level": 80
+      },
+      {
+        "name": "Vyper",
+        "level": 60
+      },
+      {
+        "name": "Cairo (StarkNet)",
+        "level": 55
+      },
+      {
+        "name": "Subgraphs",
+        "level": 70
+      }
+    ]
+  },
+  {
+    "categoryKey": "ai",
+    "items": [
+      {
+        "name": "LLM Agents",
+        "level": 85
+      },
+      {
+        "name": "Prompt Engineering",
+        "level": 85
+      },
+      {
+        "name": "Claude API",
+        "level": 85
+      },
+      {
+        "name": "OpenAI API",
+        "level": 80
+      },
+      {
+        "name": "RAG Systems",
+        "level": 80
+      },
+      {
+        "name": "AI-Assisted Development",
+        "level": 90
+      },
+      {
+        "name": "Cloudflare AI",
+        "level": 80
+      },
+      {
+        "name": "LangChain",
+        "level": 70
+      },
+      {
+        "name": "Vector Databases",
+        "level": 70
+      },
+      {
+        "name": "Embeddings",
+        "level": 75
+      },
+      {
+        "name": "Fine-tuning",
+        "level": 65
+      },
+      {
+        "name": "Hugging Face",
+        "level": 65
+      },
+      {
+        "name": "Stable Diffusion",
+        "level": 60
+      },
+      {
+        "name": "MCP (Model Context Protocol)",
+        "level": 75
+      }
+    ]
+  },
+  {
+    "categoryKey": "backend",
+    "items": [
+      {
+        "name": "Node.js",
+        "level": 90
+      },
+      {
+        "name": "Express",
+        "level": 85
+      },
+      {
+        "name": "Hono",
+        "level": 85
+      },
+      {
+        "name": "NestJS",
+        "level": 80
+      },
+      {
+        "name": "GraphQL",
+        "level": 85
+      },
+      {
+        "name": "REST APIs",
+        "level": 95
+      },
+      {
+        "name": "tRPC",
+        "level": 80
+      },
+      {
+        "name": "MongoDB",
+        "level": 85
+      },
+      {
+        "name": "PostgreSQL",
+        "level": 80
+      },
+      {
+        "name": "Drizzle ORM",
+        "level": 85
+      },
+      {
+        "name": "Prisma",
+        "level": 80
+      },
+      {
+        "name": "Redis",
+        "level": 75
+      },
+      {
+        "name": "Cloudflare D1",
+        "level": 85
+      },
+      {
+        "name": "Better Auth",
+        "level": 85
+      },
+      {
+        "name": "Flask",
+        "level": 70
+      },
+      {
+        "name": "Python",
+        "level": 75
+      },
+      {
+        "name": "FastAPI",
+        "level": 65
+      },
+      {
+        "name": "Deno",
+        "level": 70
+      },
+      {
+        "name": "Bun",
+        "level": 75
+      },
+      {
+        "name": "MySQL",
+        "level": 75
+      },
+      {
+        "name": "SQLite",
+        "level": 80
+      },
+      {
+        "name": "Supabase",
+        "level": 75
+      },
+      {
+        "name": "Firebase",
+        "level": 70
+      },
+      {
+        "name": "WebSockets",
+        "level": 80
+      },
+      {
+        "name": "Message Queues",
+        "level": 70
+      },
+      {
+        "name": "Microservices",
+        "level": 75
+      },
+      {
+        "name": "Serverless Functions",
+        "level": 85
+      },
+      {
+        "name": "OAuth/OIDC",
+        "level": 80
+      },
+      {
+        "name": "JWT",
+        "level": 85
+      }
+    ]
+  },
+  {
+    "categoryKey": "devopsCloud",
+    "items": [
+      {
+        "name": "Docker",
+        "level": 85
+      },
+      {
+        "name": "Kubernetes",
+        "level": 75
+      },
+      {
+        "name": "CI/CD",
+        "level": 85
+      },
+      {
+        "name": "GitHub Actions",
+        "level": 85
+      },
+      {
+        "name": "AWS",
+        "level": 80
+      },
+      {
+        "name": "GCP",
+        "level": 75
+      },
+      {
+        "name": "Cloudflare Workers",
+        "level": 90
+      },
+      {
+        "name": "Cloudflare Pages",
+        "level": 90
+      },
+      {
+        "name": "Vercel",
+        "level": 90
+      },
+      {
+        "name": "Heroku",
+        "level": 80
+      },
+      {
+        "name": "Wrangler",
+        "level": 85
+      },
+      {
+        "name": "Terraform",
+        "level": 65
+      },
+      {
+        "name": "Nginx",
+        "level": 75
+      },
+      {
+        "name": "Linux/Unix",
+        "level": 80
+      },
+      {
+        "name": "Shell Scripting",
+        "level": 75
+      },
+      {
+        "name": "AWS Lambda",
+        "level": 75
+      },
+      {
+        "name": "AWS S3",
+        "level": 80
+      },
+      {
+        "name": "AWS EC2",
+        "level": 70
+      },
+      {
+        "name": "Cloudflare R2",
+        "level": 80
+      },
+      {
+        "name": "Cloudflare KV",
+        "level": 85
+      },
+      {
+        "name": "DigitalOcean",
+        "level": 70
+      },
+      {
+        "name": "Railway",
+        "level": 75
+      },
+      {
+        "name": "Render",
+        "level": 70
+      },
+      {
+        "name": "Monitoring/Logging",
+        "level": 75
+      },
+      {
+        "name": "Sentry",
+        "level": 80
+      }
+    ]
+  },
+  {
+    "categoryKey": "toolsTesting",
+    "items": [
+      {
+        "name": "Git",
+        "level": 95
+      },
+      {
+        "name": "GitHub",
+        "level": 95
+      },
+      {
+        "name": "GitLab",
+        "level": 85
+      },
+      {
+        "name": "Webpack",
+        "level": 85
+      },
+      {
+        "name": "Vite",
+        "level": 90
+      },
+      {
+        "name": "Turborepo",
+        "level": 80
+      },
+      {
+        "name": "pnpm",
+        "level": 90
+      },
+      {
+        "name": "Figma",
+        "level": 80
+      },
+      {
+        "name": "Jest",
+        "level": 85
+      },
+      {
+        "name": "Vitest",
+        "level": 90
+      },
+      {
+        "name": "Playwright",
+        "level": 80
+      },
+      {
+        "name": "Testing Library",
+        "level": 85
+      },
+      {
+        "name": "Selenium",
+        "level": 75
+      },
+      {
+        "name": "Storybook",
+        "level": 80
+      },
+      {
+        "name": "Cypress",
+        "level": 75
+      },
+      {
+        "name": "ESLint",
+        "level": 90
+      },
+      {
+        "name": "Prettier",
+        "level": 90
+      },
+      {
+        "name": "Biome",
+        "level": 80
+      },
+      {
+        "name": "npm",
+        "level": 90
+      },
+      {
+        "name": "yarn",
+        "level": 85
+      },
+      {
+        "name": "Postman",
+        "level": 80
+      },
+      {
+        "name": "Insomnia",
+        "level": 75
+      },
+      {
+        "name": "Chrome DevTools",
+        "level": 90
+      },
+      {
+        "name": "Lighthouse",
+        "level": 80
+      },
+      {
+        "name": "Nx",
+        "level": 70
+      },
+      {
+        "name": "Lerna",
+        "level": 65
+      },
+      {
+        "name": "Changesets",
+        "level": 75
+      },
+      {
+        "name": "Husky",
+        "level": 80
+      },
+      {
+        "name": "Commitlint",
+        "level": 75
+      }
+    ]
+  },
+  {
+    "categoryKey": "softSkills",
+    "items": [
+      {
+        "name": "Technical Mentoring",
+        "level": 90
+      },
+      {
+        "name": "Code Review",
+        "level": 95
+      },
+      {
+        "name": "Technical Writing",
+        "level": 85
+      },
+      {
+        "name": "Architecture Design",
+        "level": 90
+      },
+      {
+        "name": "Agile/Scrum",
+        "level": 85
+      },
+      {
+        "name": "Remote Collaboration",
+        "level": 90
+      },
+      {
+        "name": "Team Leadership",
+        "level": 85
+      },
+      {
+        "name": "Project Estimation",
+        "level": 80
+      },
+      {
+        "name": "Client Communication",
+        "level": 85
+      },
+      {
+        "name": "Technical Interviews",
+        "level": 85
+      },
+      {
+        "name": "Documentation",
+        "level": 90
+      },
+      {
+        "name": "Pair Programming",
+        "level": 85
+      },
+      {
+        "name": "Problem Solving",
+        "level": 90
+      },
+      {
+        "name": "Debugging",
+        "level": 95
+      }
+    ]
+  },
+  {
+    "categoryKey": "languages",
+    "items": [
+      {
+        "name": "Italian",
+        "level": 100
+      },
+      {
+        "name": "English",
+        "level": 90
+      },
+      {
+        "name": "Spanish",
+        "level": 60
+      },
+      {
+        "name": "French",
+        "level": 20
+      },
+      {
+        "name": "Portuguese",
+        "level": 30
+      },
+      {
+        "name": "Zulu",
+        "level": 10
+      }
+    ]
+  }
 ]

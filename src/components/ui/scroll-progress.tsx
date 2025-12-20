@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState } from "react";
 
 interface ScrollProgressProps {
   color?: string;
@@ -6,10 +6,10 @@ interface ScrollProgressProps {
   className?: string;
 }
 
-export function ScrollProgress({ 
-  color = 'var(--primary)', 
+export function ScrollProgress({
+  color = "var(--primary)",
   height = 3,
-  className = ''
+  className = "",
 }: ScrollProgressProps) {
   const [scrollProgress, setScrollProgress] = useState(0);
 
@@ -21,7 +21,7 @@ export function ScrollProgress({
       const docHeight = getDocHeight();
 
       // Calculate the percentage the user has scrolled
-      const scrollPercent = scrollTop / (docHeight - winHeight) * 100;
+      const scrollPercent = (scrollTop / (docHeight - winHeight)) * 100;
       setScrollProgress(scrollPercent);
     };
 
@@ -33,33 +33,33 @@ export function ScrollProgress({
         document.body.offsetHeight,
         document.documentElement.offsetHeight,
         document.body.clientHeight,
-        document.documentElement.clientHeight
+        document.documentElement.clientHeight,
       );
     };
 
-    window.addEventListener('scroll', handleScroll, { passive: true });
+    window.addEventListener("scroll", handleScroll, { passive: true });
 
     // Initial call to set the progress
     handleScroll();
 
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
   return (
-    <div 
+    <div
       className={`fixed top-0 left-0 z-50 w-full ${className}`}
-      style={{ 
-        height: `${height}px`, 
-        backgroundColor: 'transparent', 
-        pointerEvents: 'none'
+      style={{
+        height: `${height}px`,
+        backgroundColor: "transparent",
+        pointerEvents: "none",
       }}
     >
-      <div 
+      <div
         className="h-full transition-all duration-150 ease-out"
-        style={{ 
-          width: `${scrollProgress}%`, 
+        style={{
+          width: `${scrollProgress}%`,
           backgroundColor: color,
         }}
       />

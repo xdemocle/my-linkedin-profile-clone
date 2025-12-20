@@ -1,10 +1,10 @@
-import '@testing-library/jest-dom';
-import { beforeAll, vi } from 'vitest';
+import "@testing-library/jest-dom";
+import { beforeAll, vi } from "vitest";
 
 // Mock window.matchMedia
-Object.defineProperty(window, 'matchMedia', {
+Object.defineProperty(window, "matchMedia", {
   writable: true,
-  value: vi.fn().mockImplementation(query => ({
+  value: vi.fn().mockImplementation((query) => ({
     matches: false,
     media: query,
     onchange: null,
@@ -17,18 +17,18 @@ Object.defineProperty(window, 'matchMedia', {
 });
 
 // Mock window.location
-Object.defineProperty(window, 'location', {
+Object.defineProperty(window, "location", {
   writable: true,
   value: {
-    href: 'http://localhost:3000/',
-    pathname: '/',
-    search: '',
-    hash: '',
-    origin: 'http://localhost:3000',
-    protocol: 'http:',
-    host: 'localhost:3000',
-    hostname: 'localhost',
-    port: '3000',
+    href: "http://localhost:3000/",
+    pathname: "/",
+    search: "",
+    hash: "",
+    origin: "http://localhost:3000",
+    protocol: "http:",
+    host: "localhost:3000",
+    hostname: "localhost",
+    port: "3000",
     assign: vi.fn(),
     replace: vi.fn(),
     reload: vi.fn(),

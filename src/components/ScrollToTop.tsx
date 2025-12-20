@@ -1,5 +1,5 @@
-import { useEffect } from 'react';
-import { useLocation } from 'wouter';
+import { useEffect } from "react";
+import { useLocation } from "wouter";
 
 interface ScrollToTopProps {
   /**
@@ -7,7 +7,7 @@ interface ScrollToTopProps {
    * @default false
    */
   smooth?: boolean;
-  
+
   /**
    * Delay in milliseconds before scrolling to top
    * Useful if you want to wait for a transition to complete
@@ -20,7 +20,10 @@ interface ScrollToTopProps {
  * ScrollToTop component that scrolls the window to the top when the route changes
  * This component should be placed inside the Router component
  */
-export function ScrollToTop({ smooth = false, delay = 0 }: ScrollToTopProps = {}) {
+export function ScrollToTop({
+  smooth = false,
+  delay = 0,
+}: ScrollToTopProps = {}) {
   // Get the current location from wouter
   const [location] = useLocation();
 
@@ -30,7 +33,7 @@ export function ScrollToTop({ smooth = false, delay = 0 }: ScrollToTopProps = {}
       window.scrollTo({
         top: 0,
         left: 0,
-        behavior: smooth ? 'smooth' : 'auto',
+        behavior: smooth ? "smooth" : "auto",
       });
     };
 

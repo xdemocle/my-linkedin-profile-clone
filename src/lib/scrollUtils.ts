@@ -5,7 +5,7 @@ export function scrollToTop(smooth = false): void {
   window.scrollTo({
     top: 0,
     left: 0,
-    behavior: smooth ? 'smooth' : 'auto',
+    behavior: smooth ? "smooth" : "auto",
   });
 }
 
@@ -15,7 +15,11 @@ export function scrollToTop(smooth = false): void {
  * @param {boolean} smooth - Whether to use smooth scrolling
  * @param {number} offset - Offset in pixels from the top of the element
  */
-export function scrollToElement(elementId: string, smooth = false, offset = 0): void {
+export function scrollToElement(
+  elementId: string,
+  smooth = false,
+  offset = 0,
+): void {
   const element = document.getElementById(elementId);
   if (element) {
     const elementPosition = element.getBoundingClientRect().top;
@@ -23,7 +27,7 @@ export function scrollToElement(elementId: string, smooth = false, offset = 0): 
 
     window.scrollTo({
       top: offsetPosition,
-      behavior: smooth ? 'smooth' : 'auto',
+      behavior: smooth ? "smooth" : "auto",
     });
   }
 }
@@ -46,7 +50,7 @@ export function restoreScrollPosition(key: string, smooth = false): void {
   if (scrollY) {
     window.scrollTo({
       top: parseInt(scrollY, 10),
-      behavior: smooth ? 'smooth' : 'auto',
+      behavior: smooth ? "smooth" : "auto",
     });
   }
 }
@@ -55,12 +59,12 @@ export function restoreScrollPosition(key: string, smooth = false): void {
  * Prevent scrolling on the body
  */
 export function disableBodyScroll(): void {
-  document.body.style.overflow = 'hidden';
+  document.body.style.overflow = "hidden";
 }
 
 /**
  * Enable scrolling on the body
  */
 export function enableBodyScroll(): void {
-  document.body.style.overflow = '';
+  document.body.style.overflow = "";
 }

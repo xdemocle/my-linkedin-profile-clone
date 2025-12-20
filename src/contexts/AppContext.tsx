@@ -1,5 +1,5 @@
-import type { ComponentType } from 'react';
-import { createContext } from 'react';
+import type { ComponentType } from "react";
+import { createContext } from "react";
 
 export interface NavLink {
   href: string;

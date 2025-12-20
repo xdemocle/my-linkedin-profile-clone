@@ -1,8 +1,14 @@
 :root {
   /* LinkedIn color palette with brighter blue in OKLCH format */
-  --linkedin-blue-bright: oklch(60% 0.26 255); /* Brighter blue for primary actions */
-  --linkedin-blue-light: oklch(80% 0.22 255); /* Lighter variant for hover states */
-  --linkedin-blue-dark: oklch(45% 0.2 255); /* Darker variant for active states */
+  --linkedin-blue-bright: oklch(
+    60% 0.26 255
+  ); /* Brighter blue for primary actions */
+  --linkedin-blue-light: oklch(
+    80% 0.22 255
+  ); /* Lighter variant for hover states */
+  --linkedin-blue-dark: oklch(
+    45% 0.2 255
+  ); /* Darker variant for active states */
 
   /* Neutrals and supporting colors */
   --linkedin-gray-50: oklch(98% 0.005 0); /* Almost white */

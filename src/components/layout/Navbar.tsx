@@ -1,18 +1,19 @@
-import { useApp } from '@/hooks';
-import { cn } from '@/lib';
-import { Cross1Icon, HamburgerMenuIcon } from '@radix-ui/react-icons';
-import { Separator } from '@radix-ui/react-separator';
-import { LinkTranslated } from '../LinkTranslated';
-import { Logo } from '../Logo';
-import { MobileDrawer } from '../MobileDrawer';
-import { Button } from '../ui/button';
-import { LanguageSwitcher } from '../ui/language-switcher';
-import { ScrollProgress } from '../ui/scroll-progress';
-import { ThemeToggle } from '../ui/theme-toggle';
-import { Search } from './Search';
+import { useApp } from "@/hooks";
+import { cn } from "@/lib";
+import { Cross1Icon, HamburgerMenuIcon } from "@radix-ui/react-icons";
+import { Separator } from "@radix-ui/react-separator";
+import { LinkTranslated } from "../LinkTranslated";
+import { Logo } from "../Logo";
+import { MobileDrawer } from "../MobileDrawer";
+import { Button } from "../ui/button";
+import { LanguageSwitcher } from "../ui/language-switcher";
+import { ScrollProgress } from "../ui/scroll-progress";
+import { ThemeToggle } from "../ui/theme-toggle";
+import { Search } from "./Search";
 
 export function Navbar() {
-  const { isSearchOpen, isMobile, isMenuOpen, setIsMenuOpen, navLinks } = useApp();
+  const { isSearchOpen, isMobile, isMenuOpen, setIsMenuOpen, navLinks } =
+    useApp();
   // const { personal } = useProfileData();
 
   const handleMenuClick = () => {
@@ -32,7 +33,7 @@ export function Navbar() {
 
         {/* Navigation */}
         <nav className="flex items-center gap-0.5 sm:gap-1">
-          {navLinks.map(link => (
+          {navLinks.map((link) => (
             <Button
               variant="ghost"
               size="icon"
@@ -43,21 +44,43 @@ export function Navbar() {
             >
               <LinkTranslated href={link.href}>
                 <link.icon className="size-5.5 group-hover:text-primary" />
-                <span className="text-[11px] group-hover:text-primary">{link.label}</span>
+                <span className="text-[11px] group-hover:text-primary">
+                  {link.label}
+                </span>
               </LinkTranslated>
             </Button>
           ))}
 
-          <div className={cn('flex items-center gap-1', isMobile && isSearchOpen ? 'hidden' : '')}>
-            <Separator orientation="vertical" className="w-[1px] h-4 mx-2 bg-foreground hidden md:block" />
+          <div
+            className={cn(
+              "flex items-center gap-1",
+              isMobile && isSearchOpen ? "hidden" : "",
+            )}
+          >
+            <Separator
+              orientation="vertical"
+              className="w-[1px] h-4 mx-2 bg-foreground hidden md:block"
+            />
 
             <ThemeToggle />
 
             <LanguageSwitcher />
 
-            <MobileDrawer onOpenChangeHandler={handleMenuClick} navLinks={navLinks}>
-              <Button variant="ghost" size="icon" className="flex md:hidden" aria-label="Menu">
-                {isMenuOpen ? <Cross1Icon className="size-5.5" /> : <HamburgerMenuIcon className="size-5.5" />}
+            <MobileDrawer
+              onOpenChangeHandler={handleMenuClick}
+              navLinks={navLinks}
+            >
+              <Button
+                variant="ghost"
+                size="icon"
+                className="flex md:hidden"
+                aria-label="Menu"
+              >
+                {isMenuOpen ? (
+                  <Cross1Icon className="size-5.5" />
+                ) : (
+                  <HamburgerMenuIcon className="size-5.5" />
+                )}
               </Button>
             </MobileDrawer>
 
@@ -72,7 +95,11 @@ export function Navbar() {
       </div>
 
       {/* Scroll progress indicator */}
-      <ScrollProgress color="var(--ring)" height={2} className="z-1 top-full absolute" />
+      <ScrollProgress
+        color="var(--ring)"
+        height={2}
+        className="z-1 top-full absolute"
+      />
     </header>
   );
 }

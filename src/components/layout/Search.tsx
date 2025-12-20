@@ -1,18 +1,24 @@
-import { useApp } from '@/hooks';
-import { useSearchIndex } from '@/hooks/useSearchIndex';
-import { cn } from '@/lib';
-import { MagnifyingGlassIcon } from '@radix-ui/react-icons';
-import { useEffect, useRef, useState } from 'react';
-import { useTranslations } from 'use-intl';
-import { Button } from '../ui/button';
-import { SearchResults } from './SearchResults';
+import { useApp } from "@/hooks";
+import { useSearchIndex } from "@/hooks/useSearchIndex";
+import { cn } from "@/lib";
+import { MagnifyingGlassIcon } from "@radix-ui/react-icons";
+import { useEffect, useRef, useState } from "react";
+import { useTranslations } from "use-intl";
+import { Button } from "../ui/button";
+import { SearchResults } from "./SearchResults";
 
 export function Search() {
   const refInputSearch = useRef<HTMLInputElement>(null);
   const refSearchContainer = useRef<HTMLDivElement>(null);
-  const { isSearchOpen, setIsSearchOpen, isMobile, searchQuery, setSearchQuery } = useApp();
+  const {
+    isSearchOpen,
+    setIsSearchOpen,
+    isMobile,
+    searchQuery,
+    setSearchQuery,
+  } = useApp();
   const { fuse } = useSearchIndex();
-  const t = useTranslations('Navigation');
+  const t = useTranslations("Navigation");
   const [showResults, setShowResults] = useState(false);
 
   const toggleInputSearch = (forceStatus?: boolean) => {
@@ -36,25 +42,32 @@ export function Search() {
   };
 
   const handleResultClick = () => {
-    setSearchQuery('');
+    setSearchQuery("");
     setShowResults(false);
     setIsSearchOpen(false);
   };
 
   // Perform search
-  const searchResults = searchQuery.length >= 2 ? fuse.search(searchQuery).map((result) => result.item) : [];
+  const searchResults =
+    searchQuery.length >= 2
+      ? fuse.search(searchQuery).map((result) => result.item)
+      : [];
 
   // Close results when clicking outside
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
-      if (refSearchContainer.current && !refSearchContainer.current.contains(event.target as Node)) {
+      if (
+        refSearchContainer.current &&
+        !refSearchContainer.current.contains(event.target as Node)
+      ) {
         setShowResults(false);
       }
     };
 
     if (showResults) {
-      document.addEventListener('mousedown', handleClickOutside);
-      return () => document.removeEventListener('mousedown', handleClickOutside);
+      document.addEventListener("mousedown", handleClickOutside);
+      return () =>
+        document.removeEventListener("mousedown", handleClickOutside);
     }
   }, [showResults]);
 
@@ -64,29 +77,39 @@ export function Search() {
         <Button
           variant="ghost"
           size="icon"
-          className={isSearchOpen ? 'pointer-events-none' : ''}
-          aria-label={t('search')}
+          className={isSearchOpen ? "pointer-events-none" : ""}
+          aria-label={t("search")}
           onClick={() => toggleInputSearch()}
         >
-          <MagnifyingGlassIcon className={cn('transition-width', !isMobile || isSearchOpen ? 'size-4' : 'size-5.5')} />
+          <MagnifyingGlassIcon
+            className={cn(
+              "transition-width",
+              !isMobile || isSearchOpen ? "size-4" : "size-5.5",
+            )}
+          />
         </Button>
       </div>
 
       <input
         ref={refInputSearch}
         type="text"
-        placeholder={t('search')}
+        placeholder={t("search")}
         value={searchQuery}
         onChange={handleInputChange}
         className={cn(
-          'bg-transparent lg:bg-muted px-10 h-9 rounded-sm text-sm transition-all w-xs',
-          !isMobile || isSearchOpen ? '' : 'w-0.5',
-          isSearchOpen ? 'bg-muted w-full md:max-w-lg' : ''
+          "bg-transparent lg:bg-muted px-10 h-9 rounded-sm text-sm transition-all w-xs",
+          !isMobile || isSearchOpen ? "" : "w-0.5",
+          isSearchOpen ? "bg-muted w-full md:max-w-lg" : "",
         )}
         onFocus={() => toggleInputSearch(true)}
       />
 
-      {showResults && <SearchResults results={searchResults} onResultClick={handleResultClick} />}
+      {showResults && (
+        <SearchResults
+          results={searchResults}
+          onResultClick={handleResultClick}
+        />
+      )}
     </div>
   );
 }

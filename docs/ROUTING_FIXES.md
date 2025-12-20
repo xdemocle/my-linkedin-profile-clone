@@ -35,11 +35,9 @@ A locale-aware Link wrapper that:
 ### Pages
 
 1. **ExperiencePage** (`/src/pages/ExperiencePage.tsx`)
-
    - Replaced `Link` with `LinkTranslated` for "Back to profile" button
 
 2. **ProjectsPage** (`/src/pages/ProjectsPage.tsx`)
-
    - Added `useLocale` and `getPageUrlFromPath`
    - Updated `handleBackToProfile` to use locale-aware navigation with trailing slash
 
@@ -49,16 +47,13 @@ A locale-aware Link wrapper that:
 ### Components
 
 1. **Navbar** (`/src/components/layout/Navbar.tsx`)
-
    - Replaced custom locale logic with `getPageUrlFromPath()`
    - All navigation links now have trailing slashes
 
 2. **ExperienceSection** (`/src/components/profile/ExperienceSection.tsx`)
-
    - Replaced `Link` with `LinkTranslated` for "Show all experiences" button
 
 3. **ProjectsSection** (`/src/components/profile/ProjectsSection.tsx`)
-
    - Updated "See All" button to use locale-aware navigation with trailing slash
 
 4. **LanguageSwitcher** (`/src/components/ui/language-switcher.tsx`)
@@ -122,17 +117,20 @@ The `getPageUrlFromPath()` function now:
 ```typescript
 export const getPageUrlFromPath = (locale: Locale, page: string) => {
   // Normalize the page path - remove leading/trailing slashes
-  const normalizedPage = page.replace(/^\/+|\/+$/g, '');
+  const normalizedPage = page.replace(/^\/+|\/+$/g, "");
 
   // Build the URL with locale prefix (if not default)
-  let url = locale === LOCALE_DEFAULT ? `/${normalizedPage}` : `/${locale}/${normalizedPage}`;
+  let url =
+    locale === LOCALE_DEFAULT
+      ? `/${normalizedPage}`
+      : `/${locale}/${normalizedPage}`;
 
   // Clean up any double slashes
-  url = url.replace(/\/+/g, '/');
+  url = url.replace(/\/+/g, "/");
 
   // Ensure trailing slash
-  if (!url.endsWith('/')) {
-    url += '/';
+  if (!url.endsWith("/")) {
+    url += "/";
   }
 
   return url;

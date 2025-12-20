@@ -1,7 +1,12 @@
-import { ChatBubbleIcon, HeartIcon, ReloadIcon, Share1Icon } from '@radix-ui/react-icons';
-import { Avatar, AvatarFallback, AvatarImage } from '../ui/avatar';
-import { Card, CardContent, CardFooter, CardHeader } from '../ui/card';
-import { Separator } from '../ui/separator';
+import {
+  ChatBubbleIcon,
+  HeartIcon,
+  ReloadIcon,
+  Share1Icon,
+} from "@radix-ui/react-icons";
+import { Avatar, AvatarFallback, AvatarImage } from "../ui/avatar";
+import { Card, CardContent, CardFooter, CardHeader } from "../ui/card";
+import { Separator } from "../ui/separator";
 
 interface PostAuthor {
   name: string;
@@ -19,7 +24,14 @@ interface PostProps {
   shares: number;
 }
 
-export function Post({ author, content, imageUrl, likes, comments, shares }: PostProps) {
+export function Post({
+  author,
+  content,
+  imageUrl,
+  likes,
+  comments,
+  shares,
+}: PostProps) {
   return (
     <Card className="mb-4 overflow-hidden shadow-xs">
       <CardHeader className="p-4 pb-0">
@@ -42,7 +54,11 @@ export function Post({ author, content, imageUrl, likes, comments, shares }: Pos
 
         {imageUrl && (
           <div className="mt-6 -mx-4">
-            <img src={imageUrl} alt="Post content" className="w-full max-h-[400px] object-cover" />
+            <img
+              src={imageUrl}
+              alt="Post content"
+              className="w-full max-h-[400px] object-cover"
+            />
           </div>
         )}
       </CardContent>

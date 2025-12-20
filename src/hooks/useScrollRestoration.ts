@@ -1,5 +1,5 @@
-import { useEffect } from 'react';
-import { useLocation } from 'wouter';
+import { useEffect } from "react";
+import { useLocation } from "wouter";
 
 /**
  * Hook that scrolls the window to the top when the route changes
@@ -13,7 +13,7 @@ export function useScrollRestoration(smooth = false) {
     window.scrollTo({
       top: 0,
       left: 0,
-      behavior: smooth ? 'smooth' : 'auto',
+      behavior: smooth ? "smooth" : "auto",
     });
   }, [location, smooth]);
 }

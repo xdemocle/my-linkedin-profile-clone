@@ -1,19 +1,20 @@
-import { useState, useEffect, useCallback } from 'react';
+import { useState, useEffect, useCallback } from "react";
 
-type ScrollDirection = 'up' | 'down' | 'none';
+type ScrollDirection = "up" | "down" | "none";
 
 interface ScrollOptions {
-  threshold?: number;       // Minimum scroll distance to trigger direction change
-  idleHideDelay?: number;   // Time in ms to hide navbar after scrolling stops
+  threshold?: number; // Minimum scroll distance to trigger direction change
+  idleHideDelay?: number; // Time in ms to hide navbar after scrolling stops
   initiallyVisible?: boolean;
 }
 
 export function useScrollDirection({
   threshold = 10,
-  idleHideDelay = 3000,     // 3 seconds of idle time before hiding
-  initiallyVisible = true
+  idleHideDelay = 3000, // 3 seconds of idle time before hiding
+  initiallyVisible = true,
 }: ScrollOptions = {}) {
-  const [scrollDirection, setScrollDirection] = useState<ScrollDirection>('none');
+  const [scrollDirection, setScrollDirection] =
+    useState<ScrollDirection>("none");
   const [prevScrollY, setPrevScrollY] = useState(0);
   const [visible, setVisible] = useState(initiallyVisible);
   const [isScrolling, setIsScrolling] = useState(false);
@@ -29,33 +30,32 @@ export function useScrollDirection({
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
-      
+
       // Reset idle timer on any scroll
       resetIdleTimer();
-      
+
       if (Math.abs(currentScrollY - prevScrollY) < threshold) {
         return;
       }
-      
+
       // Determine scroll direction
-      const newScrollDirection = 
-        currentScrollY > prevScrollY ? 'down' : 'up';
-        
+      const newScrollDirection = currentScrollY > prevScrollY ? "down" : "up";
+
       // Update visibility based on scroll direction
-      if (newScrollDirection === 'down' && currentScrollY > 80) {
+      if (newScrollDirection === "down" && currentScrollY > 80) {
         setVisible(false);
-      } else if (newScrollDirection === 'up') {
+      } else if (newScrollDirection === "up") {
         setVisible(true);
       }
-      
+
       setScrollDirection(newScrollDirection);
       setPrevScrollY(currentScrollY);
     };
 
-    window.addEventListener('scroll', handleScroll, { passive: true });
-    
+    window.addEventListener("scroll", handleScroll, { passive: true });
+
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, [prevScrollY, threshold, resetIdleTimer]);
 
@@ -68,7 +68,11 @@ export function useScrollDirection({
       const timeSinceLastActivity = now - lastActivity;
 
       // If we've been idle for longer than our delay and we're not at the top
-      if (timeSinceLastActivity > idleHideDelay && isScrolling && window.scrollY > 100) {
+      if (
+        timeSinceLastActivity > idleHideDelay &&
+        isScrolling &&
+        window.scrollY > 100
+      ) {
         setVisible(false);
         setIsScrolling(false);
       }
@@ -87,10 +91,10 @@ export function useScrollDirection({
       }
     };
 
-    document.addEventListener('mousemove', handleMouseMove);
-    
+    document.addEventListener("mousemove", handleMouseMove);
+
     return () => {
-      document.removeEventListener('mousemove', handleMouseMove);
+      document.removeEventListener("mousemove", handleMouseMove);
     };
   }, [resetIdleTimer]);
 

@@ -1,17 +1,17 @@
-import { createRoot } from 'react-dom/client';
-import type { JSX } from 'react/jsx-runtime';
-import { IS_DEV, LOCALE_DEFAULT, LOCALES, type Locale } from './constants';
-import './index.css';
-import { getLocaleFromPath } from './lib/i18n';
-import { registerServiceWorker, unregisterServiceWorker } from './lib/pwa';
-import { Root } from './root.tsx';
+import { createRoot } from "react-dom/client";
+import type { JSX } from "react/jsx-runtime";
+import { IS_DEV, LOCALE_DEFAULT, LOCALES, type Locale } from "./constants";
+import "./index.css";
+import { getLocaleFromPath } from "./lib/i18n";
+import { registerServiceWorker, unregisterServiceWorker } from "./lib/pwa";
+import { Root } from "./root.tsx";
 
 interface PrerenderData extends JSX.IntrinsicAttributes {
   url?: string;
 }
 
-if (typeof window !== 'undefined') {
-  const target = document.getElementById('root')!;
+if (typeof window !== "undefined") {
+  const target = document.getElementById("root")!;
   const locale = getLocaleFromPath(location.pathname) ?? LOCALE_DEFAULT;
 
   createRoot(target).render(<Root prerenderLocale={locale} />);
@@ -20,10 +20,10 @@ if (typeof window !== 'undefined') {
   if (!IS_DEV) {
     registerServiceWorker({
       onSuccess: () => {
-        console.log('Content is cached for offline use.');
+        console.log("Content is cached for offline use.");
       },
       onUpdate: () => {
-        console.log('New content is available; please refresh.');
+        console.log("New content is available; please refresh.");
         // Optionally show a toast notification to the user
       },
     });
@@ -33,20 +33,29 @@ if (typeof window !== 'undefined') {
 }
 
 export async function prerender(data: PrerenderData) {
-  const { renderToString } = await import('react-dom/server');
-  const { parseLinks } = await import('vite-prerender-plugin/parse');
-  const { generateSEOMeta, generateStructuredData } = await import('./lib/seo-meta');
+  const { renderToString } = await import("react-dom/server");
+  const { parseLinks } = await import("vite-prerender-plugin/parse");
+  const { generateSEOMeta, generateStructuredData } =
+    await import("./lib/seo-meta");
 
   // Extract locale from URL path
   let locale: Locale = LOCALE_DEFAULT;
-  let pagePath = '';
-  let pageType: 'home' | 'experience' | 'projects' | 'skills' | 'recommendations' = 'home';
+  let pagePath = "";
+  let pageType:
+    | "home"
+    | "experience"
+    | "projects"
+    | "skills"
+    | "recommendations" = "home";
 
   if (data.url) {
     const path = data.url.toString();
-    const pathSegments = path.split('/').filter(Boolean);
+    const pathSegments = path.split("/").filter(Boolean);
 
-    if (pathSegments.length > 0 && LOCALES.includes(pathSegments[0] as Locale)) {
+    if (
+      pathSegments.length > 0 &&
+      LOCALES.includes(pathSegments[0] as Locale)
+    ) {
       locale = pathSegments[0] as Locale;
       if (pathSegments.length > 1) {
         pageType = pathSegments[1] as typeof pageType;
@@ -64,30 +73,37 @@ export async function prerender(data: PrerenderData) {
     const links = parseLinks(html);
 
     // Generate SEO meta tags based on page type
-    let title = 'Rocco Russo | Software Engineer / Tech Lead';
+    let title = "Rocco Russo | Software Engineer / Tech Lead";
     const description =
-      'Software engineer with over 20 years of experience in front-end engineering, Web3 integrations, and full-stack development.';
-    let structuredData = '';
+      "Software engineer with over 20 years of experience in front-end engineering, Web3 integrations, and full-stack development.";
+    let structuredData = "";
 
-    if (pageType === 'home') {
-      structuredData = generateStructuredData('person', {
-        personalName: 'Rocco Russo',
-        jobTitle: 'Software Engineer / Tech Lead',
+    if (pageType === "home") {
+      structuredData = generateStructuredData("person", {
+        personalName: "Rocco Russo",
+        jobTitle: "Software Engineer / Tech Lead",
         about: description,
-        skills: ['React', 'TypeScript', 'Blockchain', 'Web3', 'DeFi', 'Smart Contracts'],
+        skills: [
+          "React",
+          "TypeScript",
+          "Blockchain",
+          "Web3",
+          "DeFi",
+          "Smart Contracts",
+        ],
       });
     } else {
       const pageTitles = {
-        experience: 'Experience',
-        projects: 'Projects',
-        skills: 'Skills',
-        recommendations: 'Recommendations',
+        experience: "Experience",
+        projects: "Projects",
+        skills: "Skills",
+        recommendations: "Recommendations",
       };
-      title = `Rocco Russo | ${pageTitles[pageType] || ''}`;
-      structuredData = generateStructuredData('breadcrumb', {
+      title = `Rocco Russo | ${pageTitles[pageType] || ""}`;
+      structuredData = generateStructuredData("breadcrumb", {
         breadcrumbs: [
-          { name: 'Home', url: `${data.url?.split(pagePath)[0] || '/'}` },
-          { name: pageTitles[pageType] || '', url: data.url || '/' },
+          { name: "Home", url: `${data.url?.split(pagePath)[0] || "/"}` },
+          { name: pageTitles[pageType] || "", url: data.url || "/" },
         ],
       });
     }
@@ -97,7 +113,7 @@ export async function prerender(data: PrerenderData) {
       description,
       locale,
       path: pagePath,
-      type: pageType === 'home' ? 'profile' : 'website',
+      type: pageType === "home" ? "profile" : "website",
     });
 
     // Inject SEO meta tags and structured data into the HTML
@@ -109,13 +125,13 @@ export async function prerender(data: PrerenderData) {
   `;
 
     // Insert before the closing </head> tag
-    html = html.replace('</head>', `${headInjection}\n  </head>`);
+    html = html.replace("</head>", `${headInjection}\n  </head>`);
 
     // Debug: Log injection details
     const hreflangCount = (seoMeta.match(/hreflang/g) || []).length;
-    const hasStructuredData = structuredData.includes('schema.org');
+    const hasStructuredData = structuredData.includes("schema.org");
     console.log(
-      `Successfully prerendered ${locale}${pagePath} | hreflang: ${hreflangCount}, structured data: ${hasStructuredData}`
+      `Successfully prerendered ${locale}${pagePath} | hreflang: ${hreflangCount}, structured data: ${hasStructuredData}`,
     );
 
     return {
@@ -131,9 +147,9 @@ export async function prerender(data: PrerenderData) {
 
     // Log more details about the error
     if (error instanceof Error) {
-      console.error('Error name:', error.name);
-      console.error('Error message:', error.message);
-      console.error('Error stack:', error.stack);
+      console.error("Error name:", error.name);
+      console.error("Error message:", error.message);
+      console.error("Error stack:", error.stack);
     }
 
     // Return a minimal result to avoid breaking the build

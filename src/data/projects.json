@@ -9,7 +9,14 @@
       "website": "https://www.ajna.finance",
       "github": ["https://github.com/ajna-finance"]
     },
-    "technologies": ["React", "TypeScript", "Solidity", "Web3.js", "Ethers.js", "SDK"],
+    "technologies": [
+      "React",
+      "TypeScript",
+      "Solidity",
+      "Web3.js",
+      "Ethers.js",
+      "SDK"
+    ],
     "icon": "blue-circle",
     "imageUrl": null,
     "metadata": {
@@ -79,7 +86,15 @@
     "links": {
       "screenshots": ["Link1"]
     },
-    "technologies": ["Node.js", "React.js", "Next.js", "Python", "Django", "Flask", "Ethereum"],
+    "technologies": [
+      "Node.js",
+      "React.js",
+      "Next.js",
+      "Python",
+      "Django",
+      "Flask",
+      "Ethereum"
+    ],
     "icon": "home",
     "imageUrl": null,
     "metadata": {
@@ -112,7 +127,10 @@
     "company": null,
     "links": {
       "screenshots": ["Link1"],
-      "github": ["https://github.com/altcash-frontend", "https://github.com/altcash-backend"]
+      "github": [
+        "https://github.com/altcash-frontend",
+        "https://github.com/altcash-backend"
+      ]
     },
     "technologies": ["React", "Node.js", "Crypto APIs", "Fiat Onramp"],
     "icon": "github",
@@ -129,9 +147,16 @@
     "role": null,
     "company": null,
     "links": {
-      "github": ["https://github.com/CyberGrandpas/cybergrandpa-web-extension-antifraud"]
+      "github": [
+        "https://github.com/CyberGrandpas/cybergrandpa-web-extension-antifraud"
+      ]
     },
-    "technologies": ["JavaScript", "Browser Extensions", "Security", "Anti-Fraud"],
+    "technologies": [
+      "JavaScript",
+      "Browser Extensions",
+      "Security",
+      "Anti-Fraud"
+    ],
     "icon": "github",
     "imageUrl": null,
     "metadata": {
@@ -166,7 +191,12 @@
     "links": {
       "github": ["https://github.com/xdemocle/tetris-mini-app"]
     },
-    "technologies": ["JavaScript", "Telegram Mini Apps", "TON Blockchain", "Canvas API"],
+    "technologies": [
+      "JavaScript",
+      "Telegram Mini Apps",
+      "TON Blockchain",
+      "Canvas API"
+    ],
     "icon": "code",
     "imageUrl": null,
     "metadata": {

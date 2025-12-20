@@ -1,48 +1,48 @@
-import { PageLayout } from '@/components/layout/PageLayout';
-import { SEO } from '@/components/SEO';
-import { StructuredData } from '@/components/StructuredData';
-import { useProfileData } from '@/hooks';
-import { ArrowLeftIcon } from '@radix-ui/react-icons';
-import { useTranslations } from 'use-intl';
-import { LinkTranslated } from '../components/LinkTranslated';
-import { Avatar, AvatarFallback, AvatarImage } from '../components/ui/avatar';
-import { Button } from '../components/ui/button';
-import { Card, CardContent, CardHeader } from '../components/ui/card';
-import { Separator } from '../components/ui/separator';
+import { PageLayout } from "@/components/layout/PageLayout";
+import { SEO } from "@/components/SEO";
+import { StructuredData } from "@/components/StructuredData";
+import { useProfileData } from "@/hooks";
+import { ArrowLeftIcon } from "@radix-ui/react-icons";
+import { useTranslations } from "use-intl";
+import { LinkTranslated } from "../components/LinkTranslated";
+import { Avatar, AvatarFallback, AvatarImage } from "../components/ui/avatar";
+import { Button } from "../components/ui/button";
+import { Card, CardContent, CardHeader } from "../components/ui/card";
+import { Separator } from "../components/ui/separator";
 
 const recommendationKeys = [
-  'oliverMuller',
-  'hiroshiTanaka',
-  'sofiaAndersson',
-  'mateoFernandez',
-  'larsNielsen',
-  'emmaVanDerBerg',
-  'rajeshKumar',
-  'ingridSchmidt',
-  'lukasNovak',
-  'carlosMendoza',
-  'pierreDubois',
-  'marcoRossi',
-  'jakubKowalski',
+  "oliverMuller",
+  "hiroshiTanaka",
+  "sofiaAndersson",
+  "mateoFernandez",
+  "larsNielsen",
+  "emmaVanDerBerg",
+  "rajeshKumar",
+  "ingridSchmidt",
+  "lukasNovak",
+  "carlosMendoza",
+  "pierreDubois",
+  "marcoRossi",
+  "jakubKowalski",
 ];
 
 export function RecommendationsPage() {
-  const t = useTranslations('Recommendations');
-  const tData = useTranslations('SampleData.recommendations');
+  const t = useTranslations("Recommendations");
+  const tData = useTranslations("SampleData.recommendations");
   const { personal } = useProfileData();
 
   return (
     <PageLayout>
       <SEO
-        title={`${personal.name} | ${t('title')}`}
+        title={`${personal.name} | ${t("title")}`}
         description="Professional recommendations and testimonials from colleagues and clients."
         path="/recommendations"
       />
       <StructuredData
         type="breadcrumb"
         breadcrumbs={[
-          { name: 'Home', url: '/' },
-          { name: t('title'), url: '/recommendations' },
+          { name: "Home", url: "/" },
+          { name: t("title"), url: "/recommendations" },
         ]}
       />
       {/* Recommendations List */}
@@ -55,7 +55,7 @@ export function RecommendationsPage() {
             </LinkTranslated>
           </Button>
           <h1 className="text-3xl font-bold ml-3">
-            {personal.name} | {t('title')}
+            {personal.name} | {t("title")}
           </h1>
         </CardHeader>
 
@@ -70,12 +70,22 @@ export function RecommendationsPage() {
                 </Avatar>
                 <div className="flex-1">
                   <div className="mb-3">
-                    <h3 className="text-lg font-semibold">{tData(`${key}.name`)}</h3>
-                    <p className="text-sm text-muted-foreground">{tData(`${key}.title`)}</p>
-                    <p className="text-xs text-muted-foreground mt-1">{tData(`${key}.relationship`)}</p>
-                    <p className="text-xs text-muted-foreground">{tData(`${key}.date`)}</p>
+                    <h3 className="text-lg font-semibold">
+                      {tData(`${key}.name`)}
+                    </h3>
+                    <p className="text-sm text-muted-foreground">
+                      {tData(`${key}.title`)}
+                    </p>
+                    <p className="text-xs text-muted-foreground mt-1">
+                      {tData(`${key}.relationship`)}
+                    </p>
+                    <p className="text-xs text-muted-foreground">
+                      {tData(`${key}.date`)}
+                    </p>
                   </div>
-                  <p className="text-sm leading-relaxed mb-3">{tData(`${key}.content`)}</p>
+                  <p className="text-sm leading-relaxed mb-3">
+                    {tData(`${key}.content`)}
+                  </p>
                 </div>
               </div>
             </div>

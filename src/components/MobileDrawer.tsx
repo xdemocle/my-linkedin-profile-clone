@@ -1,4 +1,4 @@
-import { Button } from '@/components/ui/button';
+import { Button } from "@/components/ui/button";
 import {
   Drawer,
   DrawerClose,
@@ -7,10 +7,10 @@ import {
   DrawerHeader,
   DrawerTitle,
   DrawerTrigger,
-} from '@/components/ui/drawer';
-import { useTranslations } from 'use-intl';
-import type { NavigationalProps } from 'wouter';
-import { LinkTranslated } from './LinkTranslated';
+} from "@/components/ui/drawer";
+import { useTranslations } from "use-intl";
+import type { NavigationalProps } from "wouter";
+import { LinkTranslated } from "./LinkTranslated";
 
 interface MobileDrawerProps {
   children: React.ReactNode;
@@ -18,19 +18,23 @@ interface MobileDrawerProps {
   navLinks: ({ href: string; label: string } & NavigationalProps)[];
 }
 
-export function MobileDrawer({ children, onOpenChangeHandler, navLinks }: MobileDrawerProps) {
-  const t = useTranslations('Navigation');
+export function MobileDrawer({
+  children,
+  onOpenChangeHandler,
+  navLinks,
+}: MobileDrawerProps) {
+  const t = useTranslations("Navigation");
 
   return (
     <Drawer onOpenChange={onOpenChangeHandler}>
       <DrawerTrigger asChild>{children}</DrawerTrigger>
       <DrawerContent>
         <DrawerHeader>
-          <DrawerTitle>{t('menu')}</DrawerTitle>
+          <DrawerTitle>{t("menu")}</DrawerTitle>
         </DrawerHeader>
 
         <div className="flex flex-col gap-3 px-4">
-          {navLinks.map(link => (
+          {navLinks.map((link) => (
             <Button
               key={link.href}
               onClick={() => onOpenChangeHandler(false)}
@@ -47,7 +51,7 @@ export function MobileDrawer({ children, onOpenChangeHandler, navLinks }: Mobile
           <hr />
           <DrawerClose>
             <Button variant="outline" asChild>
-              <span>{t('close')}</span>
+              <span>{t("close")}</span>
             </Button>
           </DrawerClose>
         </DrawerFooter>

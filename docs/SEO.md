@@ -21,7 +21,12 @@ A reusable SEO component that dynamically updates meta tags for each page:
 **Usage:**
 
 ```tsx
-<SEO title="Custom Page Title" description="Custom description" path="/page-path" type="profile" />
+<SEO
+  title="Custom Page Title"
+  description="Custom description"
+  path="/page-path"
+  type="profile"
+/>
 ```
 
 ### 2. **Structured Data (JSON-LD)** (`/src/components/StructuredData.tsx`)

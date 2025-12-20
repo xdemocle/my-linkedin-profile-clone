@@ -1,13 +1,13 @@
-import { LINKEDIN_PROFILE_URL, WEBSITE_ROCCOME_URL } from '@/constants';
-import { useApp } from '@/hooks';
-import { ExternalLinkIcon } from '@radix-ui/react-icons';
-import React from 'react';
-import { useTranslations } from 'use-intl';
-import { LinkTranslated } from './LinkTranslated';
-import { Card, CardContent } from './ui/card';
+import { LINKEDIN_PROFILE_URL, WEBSITE_ROCCOME_URL } from "@/constants";
+import { useApp } from "@/hooks";
+import { ExternalLinkIcon } from "@radix-ui/react-icons";
+import React from "react";
+import { useTranslations } from "use-intl";
+import { LinkTranslated } from "./LinkTranslated";
+import { Card, CardContent } from "./ui/card";
 
 export function Footer() {
-  const tFooter = useTranslations('Footer');
+  const tFooter = useTranslations("Footer");
   const { navLinks } = useApp();
 
   return (
@@ -34,7 +34,7 @@ export function Footer() {
               rel="noopener noreferrer"
               className="hover:text-primary flex items-center gap-1"
             >
-              {tFooter('linkedinProfile')}
+              {tFooter("linkedinProfile")}
               <ExternalLinkIcon className="size-3" />
             </a>
             <span>•</span>
@@ -44,14 +44,14 @@ export function Footer() {
               rel="noopener noreferrer"
               className="hover:text-primary flex items-center gap-1"
             >
-              {tFooter('personalWebsite')}
+              {tFooter("personalWebsite")}
               <ExternalLinkIcon className="size-3" />
             </a>
           </div>
 
           {/* Copyright */}
           <div className="pt-2 border-t">
-            <p>{tFooter('copyright', { year: new Date().getFullYear() })}</p>
+            <p>{tFooter("copyright", { year: new Date().getFullYear() })}</p>
           </div>
         </div>
       </CardContent>

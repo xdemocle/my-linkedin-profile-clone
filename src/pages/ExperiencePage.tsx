@@ -1,28 +1,32 @@
-import { SEO } from '@/components/SEO';
-import { StructuredData } from '@/components/StructuredData';
-import { useProfileData } from '@/hooks';
-import { ArrowLeftIcon } from '@radix-ui/react-icons';
-import { useTranslations } from 'use-intl';
-import { PageLayout } from '../components/layout/PageLayout';
-import { LinkTranslated } from '../components/LinkTranslated';
-import { ExperienceKeyAchievements } from '../components/profile/ExperienceKeyAchievements';
-import { Avatar, AvatarFallback, AvatarImage } from '../components/ui/avatar';
-import { Button } from '../components/ui/button';
-import { Card, CardContent, CardHeader } from '../components/ui/card';
-import { Separator } from '../components/ui/separator';
+import { SEO } from "@/components/SEO";
+import { StructuredData } from "@/components/StructuredData";
+import { useProfileData } from "@/hooks";
+import { ArrowLeftIcon } from "@radix-ui/react-icons";
+import { useTranslations } from "use-intl";
+import { PageLayout } from "../components/layout/PageLayout";
+import { LinkTranslated } from "../components/LinkTranslated";
+import { ExperienceKeyAchievements } from "../components/profile/ExperienceKeyAchievements";
+import { Avatar, AvatarFallback, AvatarImage } from "../components/ui/avatar";
+import { Button } from "../components/ui/button";
+import { Card, CardContent, CardHeader } from "../components/ui/card";
+import { Separator } from "../components/ui/separator";
 
 export function ExperiencePage() {
-  const t = useTranslations('Experience');
+  const t = useTranslations("Experience");
   const { personal, experience } = useProfileData();
 
   return (
     <PageLayout addToSidebar={<ExperienceKeyAchievements />}>
-      <SEO title={`${personal.name} | ${t('title')}`} description={t('description')} path="/experience" />
+      <SEO
+        title={`${personal.name} | ${t("title")}`}
+        description={t("description")}
+        path="/experience"
+      />
       <StructuredData
         type="breadcrumb"
         breadcrumbs={[
-          { name: 'Home', url: '/' },
-          { name: t('title'), url: '/experience' },
+          { name: "Home", url: "/" },
+          { name: t("title"), url: "/experience" },
         ]}
       />
       <Card className="shadow-xs">
@@ -34,7 +38,7 @@ export function ExperiencePage() {
             </LinkTranslated>
           </Button>
           <h1 className="text-3xl font-bold ml-3">
-            {personal.name} | {t('title')}
+            {personal.name} | {t("title")}
           </h1>
         </CardHeader>
 
@@ -50,15 +54,23 @@ export function ExperiencePage() {
                 <div className="flex-1">
                   <div className="mb-3">
                     <h3 className="text-xl font-semibold">{exp.position}</h3>
-                    <p className="text-lg text-muted-foreground">{exp.company}</p>
-                    {exp.type && <p className="text-sm text-muted-foreground">{exp.type}</p>}
+                    <p className="text-lg text-muted-foreground">
+                      {exp.company}
+                    </p>
+                    {exp.type && (
+                      <p className="text-sm text-muted-foreground">
+                        {exp.type}
+                      </p>
+                    )}
                     <p className="text-sm text-muted-foreground mt-1">
                       {exp.dateRange}
                       {exp.location && ` • ${exp.location}`}
                     </p>
                   </div>
 
-                  <p className="text-sm leading-relaxed mb-4">{exp.description}</p>
+                  <p className="text-sm leading-relaxed mb-4">
+                    {exp.description}
+                  </p>
 
                   {exp.highlights.length > 0 && (
                     <ul className="space-y-2">

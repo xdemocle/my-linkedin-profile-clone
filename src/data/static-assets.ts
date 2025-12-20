@@ -6,15 +6,15 @@
 
 export const staticAssets = {
   personal: {
-    name: 'Rocco Russo',
-    website: 'https://rocco.me',
-    github: 'https://github.com/xdemocle',
-    email: 'hello@rocco.me',
-    phone: '+39 379 263 0288',
-    avatar: '/assets/ui/rocco-me-nft.png',
+    name: "Rocco Russo",
+    website: "https://rocco.me",
+    github: "https://github.com/xdemocle",
+    email: "hello@rocco.me",
+    phone: "+39 379 263 0288",
+    avatar: "/assets/ui/rocco-me-nft.png",
   },
   educationLogos: {
-    edu1: '/assets/png/athena-logo.png',
+    edu1: "/assets/png/athena-logo.png",
   },
 };
 

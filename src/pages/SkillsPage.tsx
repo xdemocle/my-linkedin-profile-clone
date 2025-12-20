@@ -1,30 +1,30 @@
-import { PageLayout } from '@/components/layout/PageLayout';
-import { SEO } from '@/components/SEO';
-import { StructuredData } from '@/components/StructuredData';
-import { Progress } from '@/components/ui/progress';
-import { useProfileData } from '@/hooks';
-import { ArrowLeftIcon } from '@radix-ui/react-icons';
-import { useTranslations } from 'use-intl';
-import { LinkTranslated } from '../components/LinkTranslated';
-import { Button } from '../components/ui/button';
-import { Card, CardContent, CardHeader } from '../components/ui/card';
+import { PageLayout } from "@/components/layout/PageLayout";
+import { SEO } from "@/components/SEO";
+import { StructuredData } from "@/components/StructuredData";
+import { Progress } from "@/components/ui/progress";
+import { useProfileData } from "@/hooks";
+import { ArrowLeftIcon } from "@radix-ui/react-icons";
+import { useTranslations } from "use-intl";
+import { LinkTranslated } from "../components/LinkTranslated";
+import { Button } from "../components/ui/button";
+import { Card, CardContent, CardHeader } from "../components/ui/card";
 
 export function SkillsPage() {
-  const t = useTranslations('Skills');
+  const t = useTranslations("Skills");
   const { personal, skills } = useProfileData();
 
   return (
     <PageLayout>
       <SEO
-        title={`${personal.name} | ${t('title')}`}
+        title={`${personal.name} | ${t("title")}`}
         description="Comprehensive overview of technical skills including React, TypeScript, blockchain development, and more."
         path="/skills"
       />
       <StructuredData
         type="breadcrumb"
         breadcrumbs={[
-          { name: 'Home', url: '/' },
-          { name: t('title'), url: '/skills' },
+          { name: "Home", url: "/" },
+          { name: t("title"), url: "/skills" },
         ]}
       />
       {/* Header */}
@@ -35,7 +35,7 @@ export function SkillsPage() {
           </LinkTranslated>
         </Button>
         <h1 className="text-3xl font-bold ml-3">
-          {personal.name} | {t('title')}
+          {personal.name} | {t("title")}
         </h1>
       </CardHeader>
 
@@ -50,7 +50,9 @@ export function SkillsPage() {
                 <div key={skillIndex} className="space-y-2">
                   <div className="flex items-center justify-between">
                     <span className="font-medium">{skill.name}</span>
-                    <span className="text-sm text-muted-foreground">{skill.level}%</span>
+                    <span className="text-sm text-muted-foreground">
+                      {skill.level}%
+                    </span>
                   </div>
 
                   <Progress value={skill.level} />

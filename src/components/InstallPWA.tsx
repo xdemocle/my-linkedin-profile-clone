@@ -1,16 +1,17 @@
-import { Cross2Icon, DownloadIcon } from '@radix-ui/react-icons';
-import { useEffect, useState } from 'react';
-import { isPWA } from '../lib/pwa';
-import { Button } from './ui/button';
-import { Card, CardContent } from './ui/card';
+import { Cross2Icon, DownloadIcon } from "@radix-ui/react-icons";
+import { useEffect, useState } from "react";
+import { isPWA } from "../lib/pwa";
+import { Button } from "./ui/button";
+import { Card, CardContent } from "./ui/card";
 
 interface BeforeInstallPromptEvent extends Event {
   prompt: () => Promise<void>;
-  userChoice: Promise<{ outcome: 'accepted' | 'dismissed' }>;
+  userChoice: Promise<{ outcome: "accepted" | "dismissed" }>;
 }
 
 export function InstallPWA() {
-  const [deferredPrompt, setDeferredPrompt] = useState<BeforeInstallPromptEvent | null>(null);
+  const [deferredPrompt, setDeferredPrompt] =
+    useState<BeforeInstallPromptEvent | null>(null);
   const [showPrompt, setShowPrompt] = useState(false);
 
   useEffect(() => {
@@ -24,16 +25,16 @@ export function InstallPWA() {
       setDeferredPrompt(e as BeforeInstallPromptEvent);
 
       // Check if user has dismissed the prompt before
-      const dismissed = localStorage.getItem('pwa-install-dismissed');
+      const dismissed = localStorage.getItem("pwa-install-dismissed");
       if (!dismissed) {
         setShowPrompt(true);
       }
     };
 
-    window.addEventListener('beforeinstallprompt', handler);
+    window.addEventListener("beforeinstallprompt", handler);
 
     return () => {
-      window.removeEventListener('beforeinstallprompt', handler);
+      window.removeEventListener("beforeinstallprompt", handler);
     };
   }, []);
 
@@ -47,7 +48,7 @@ export function InstallPWA() {
 
     console.log(`User response to install prompt: ${outcome}`);
 
-    if (outcome === 'accepted') {
+    if (outcome === "accepted") {
       setShowPrompt(false);
     }
 
@@ -56,11 +57,14 @@ export function InstallPWA() {
 
   const handleDismiss = () => {
     setShowPrompt(false);
-    localStorage.setItem('pwa-install-dismissed', 'true');
+    localStorage.setItem("pwa-install-dismissed", "true");
     // Clear after 7 days
-    setTimeout(() => {
-      localStorage.removeItem('pwa-install-dismissed');
-    }, 7 * 24 * 60 * 60 * 1000);
+    setTimeout(
+      () => {
+        localStorage.removeItem("pwa-install-dismissed");
+      },
+      7 * 24 * 60 * 60 * 1000,
+    );
   };
 
   if (!showPrompt) {
@@ -86,7 +90,12 @@ export function InstallPWA() {
               </Button>
             </div>
           </div>
-          <Button variant="ghost" size="icon" className="h-6 w-6" onClick={handleDismiss}>
+          <Button
+            variant="ghost"
+            size="icon"
+            className="h-6 w-6"
+            onClick={handleDismiss}
+          >
             <Cross2Icon className="h-4 w-4" />
           </Button>
         </div>

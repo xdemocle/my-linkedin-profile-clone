@@ -1,15 +1,25 @@
-import { BackpackIcon, CardStackPlusIcon, FileTextIcon, HomeIcon, LayersIcon, RocketIcon } from '@radix-ui/react-icons';
-import type { ComponentType } from 'react';
-import { useLocation } from 'wouter';
-import { useTranslations } from 'use-intl';
-import type { SearchResult } from '@/hooks/useSearchIndex';
+import {
+  BackpackIcon,
+  CardStackPlusIcon,
+  FileTextIcon,
+  HomeIcon,
+  LayersIcon,
+  RocketIcon,
+} from "@radix-ui/react-icons";
+import type { ComponentType } from "react";
+import { useLocation } from "wouter";
+import { useTranslations } from "use-intl";
+import type { SearchResult } from "@/hooks/useSearchIndex";
 
 interface SearchResultsProps {
   results: SearchResult[];
   onResultClick: () => void;
 }
 
-const categoryIcons: Record<SearchResult['category'], ComponentType<{ className?: string }>> = {
+const categoryIcons: Record<
+  SearchResult["category"],
+  ComponentType<{ className?: string }>
+> = {
   profile: HomeIcon,
   experience: BackpackIcon,
   project: RocketIcon,
@@ -20,7 +30,7 @@ const categoryIcons: Record<SearchResult['category'], ComponentType<{ className?
 
 export function SearchResults({ results, onResultClick }: SearchResultsProps) {
   const [, setLocation] = useLocation();
-  const t = useTranslations('Search');
+  const t = useTranslations("Search");
 
   const handleResultClick = (result: SearchResult) => {
     if (result.url) {
@@ -28,7 +38,7 @@ export function SearchResults({ results, onResultClick }: SearchResultsProps) {
     } else if (result.sectionId) {
       const element = document.getElementById(result.sectionId);
       if (element) {
-        element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        element.scrollIntoView({ behavior: "smooth", block: "start" });
       }
     }
     onResultClick();
@@ -38,7 +48,7 @@ export function SearchResults({ results, onResultClick }: SearchResultsProps) {
     return (
       <div className="absolute top-full left-0 right-0 mt-2 bg-card border border-border rounded-lg shadow-lg overflow-hidden z-50">
         <div className="p-4 text-center text-muted-foreground">
-          <p>{t('noResults')}</p>
+          <p>{t("noResults")}</p>
         </div>
       </div>
     );

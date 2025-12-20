@@ -1,9 +1,12 @@
-import { useLocale } from '@/hooks';
-import { getPageUrlFromPath } from '@/lib';
-import type { AnchorHTMLAttributes } from 'react';
-import { Link } from 'wouter';
+import { useLocale } from "@/hooks";
+import { getPageUrlFromPath } from "@/lib";
+import type { AnchorHTMLAttributes } from "react";
+import { Link } from "wouter";
 
-interface LinkTranslatedProps extends Omit<AnchorHTMLAttributes<HTMLAnchorElement>, 'href'> {
+interface LinkTranslatedProps extends Omit<
+  AnchorHTMLAttributes<HTMLAnchorElement>,
+  "href"
+> {
   href: string;
   children?: React.ReactNode;
 }
@@ -18,7 +21,11 @@ interface LinkTranslatedProps extends Omit<AnchorHTMLAttributes<HTMLAnchorElemen
  * // On /en/ context: renders as <Link href="/experience">
  * ```
  */
-export function LinkTranslated({ href, children, ...props }: LinkTranslatedProps) {
+export function LinkTranslated({
+  href,
+  children,
+  ...props
+}: LinkTranslatedProps) {
   const { locale } = useLocale();
 
   // Convert the href to a locale-aware URL

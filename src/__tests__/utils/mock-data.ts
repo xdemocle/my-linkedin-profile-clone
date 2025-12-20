@@ -1,89 +1,94 @@
-import { type Locale } from '@/constants';
+import { type Locale } from "@/constants";
 
 export const mockPaths = {
-  root: '/',
+  root: "/",
   home: {
-    en: '/',
-    it: '/it/',
-    fr: '/fr/',
-    es: '/es/',
-    ar: '/ar/',
+    en: "/",
+    it: "/it/",
+    fr: "/fr/",
+    es: "/es/",
+    ar: "/ar/",
   },
   experience: {
-    en: '/experience',
-    it: '/it/experience',
-    fr: '/fr/experience',
-    es: '/es/experience',
-    ar: '/ar/experience',
+    en: "/experience",
+    it: "/it/experience",
+    fr: "/fr/experience",
+    es: "/es/experience",
+    ar: "/ar/experience",
   },
   projects: {
-    en: '/projects',
-    it: '/it/projects',
-    fr: '/fr/projects',
-    es: '/es/projects',
-    ar: '/ar/projects',
+    en: "/projects",
+    it: "/it/projects",
+    fr: "/fr/projects",
+    es: "/es/projects",
+    ar: "/ar/projects",
   },
-  invalid: ['/nonexistent', '/it/nonexistent', '/invalid-locale/page', '/en/invalid-page'],
+  invalid: [
+    "/nonexistent",
+    "/it/nonexistent",
+    "/invalid-locale/page",
+    "/en/invalid-page",
+  ],
 };
 
 export const mockUrlTestCases = [
   // Root paths
-  { input: '/', expected: 'en' },
-  { input: '/en', expected: 'en' },
-  { input: '/en/', expected: 'en' },
+  { input: "/", expected: "en" },
+  { input: "/en", expected: "en" },
+  { input: "/en/", expected: "en" },
 
   // Localized paths
-  { input: '/it', expected: 'it' },
-  { input: '/it/', expected: 'it' },
-  { input: '/it/experience', expected: 'it' },
-  { input: '/es/projects', expected: 'es' },
+  { input: "/it", expected: "it" },
+  { input: "/it/", expected: "it" },
+  { input: "/it/experience", expected: "it" },
+  { input: "/es/projects", expected: "es" },
 
   // Invalid paths
-  { input: '/invalid', expected: null },
-  { input: '/xx/page', expected: null },
-  { input: '/en/it/mixed', expected: 'en' },
+  { input: "/invalid", expected: null },
+  { input: "/xx/page", expected: null },
+  { input: "/en/it/mixed", expected: "en" },
 ];
 
 export const mockUrlGenerationCases = [
   // Default locale (English) - should not have prefix
-  { locale: 'en' as Locale, page: '', expected: '/' },
-  { locale: 'en' as Locale, page: 'experience', expected: '/experience' },
+  { locale: "en" as Locale, page: "", expected: "/" },
+  { locale: "en" as Locale, page: "experience", expected: "/experience" },
 
   // Other locales - should have prefix
-  { locale: 'it' as Locale, page: '', expected: '/it/' },
-  { locale: 'it' as Locale, page: 'experience', expected: '/it/experience' },
-  { locale: 'es' as Locale, page: 'projects', expected: '/es/projects' },
+  { locale: "it" as Locale, page: "", expected: "/it/" },
+  { locale: "it" as Locale, page: "experience", expected: "/it/experience" },
+  { locale: "es" as Locale, page: "projects", expected: "/es/projects" },
 
   // Edge cases
-  { locale: 'it' as Locale, page: '/', expected: '/it/' },
-  { locale: 'en' as Locale, page: '/', expected: '/' },
+  { locale: "it" as Locale, page: "/", expected: "/it/" },
+  { locale: "en" as Locale, page: "/", expected: "/" },
 ];
 
 export const mockDirectionCases = [
-  { locale: 'en' as Locale, expected: 'ltr' },
-  { locale: 'it' as Locale, expected: 'ltr' },
-  { locale: 'fr' as Locale, expected: 'ltr' },
-  { locale: 'es' as Locale, expected: 'ltr' },
-  { locale: 'ar' as Locale, expected: 'rtl' },
+  { locale: "en" as Locale, expected: "ltr" },
+  { locale: "it" as Locale, expected: "ltr" },
+  { locale: "fr" as Locale, expected: "ltr" },
+  { locale: "es" as Locale, expected: "ltr" },
+  { locale: "ar" as Locale, expected: "rtl" },
 ];
 
 export const mockNavigationScenarios = [
   {
-    name: 'Home to Experience',
-    from: '/',
-    to: '/experience',
-    expectedLocale: 'en',
+    name: "Home to Experience",
+    from: "/",
+    to: "/experience",
+    expectedLocale: "en",
   },
   {
-    name: 'Italian Home to Italian Experience',
-    from: '/it/',
-    to: '/it/experience',
-    expectedLocale: 'it',
+    name: "Italian Home to Italian Experience",
+    from: "/it/",
+    to: "/it/experience",
+    expectedLocale: "it",
   },
   {
-    name: 'Language switch preserves page',
-    from: '/experience',
-    switchTo: 'it' as Locale,
-    expectedPath: '/it/experience',
+    name: "Language switch preserves page",
+    from: "/experience",
+    switchTo: "it" as Locale,
+    expectedPath: "/it/experience",
   },
 ];

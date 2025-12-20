@@ -1,51 +1,51 @@
 /* eslint-disable react-refresh/only-export-components */
-import { type Locale, LOCALE_DEFAULT } from '@/constants';
-import { render, type RenderOptions } from '@testing-library/react';
-import { type ReactElement } from 'react';
-import { IntlProvider } from 'use-intl';
-import { Router } from 'wouter';
-import { LocaleProvider } from '../../contexts/LocaleContext';
-import { ThemeProvider } from '../../contexts/ThemeContextProvider';
+import { type Locale, LOCALE_DEFAULT } from "@/constants";
+import { render, type RenderOptions } from "@testing-library/react";
+import { type ReactElement } from "react";
+import { IntlProvider } from "use-intl";
+import { Router } from "wouter";
+import { LocaleProvider } from "../../contexts/LocaleContext";
+import { ThemeProvider } from "../../contexts/ThemeContextProvider";
 
 // Mock messages for use-intl provider
 const mockMessages = {
   Navigation: {
-    home: 'Home',
-    search: 'Search',
-    experience: 'Experience',
-    projects: 'Projects',
+    home: "Home",
+    search: "Search",
+    experience: "Experience",
+    projects: "Projects",
   },
   NotFound: {
-    title: 'Page Not Found',
-    description: 'The page you are looking for does not exist.',
-    goHome: 'Go Home',
-    goBack: 'Go Back',
-    funMessage: 'Oops! This page seems to have vanished into the digital void.',
+    title: "Page Not Found",
+    description: "The page you are looking for does not exist.",
+    goHome: "Go Home",
+    goBack: "Go Back",
+    funMessage: "Oops! This page seems to have vanished into the digital void.",
   },
   Profile: {
-    title: 'Profile',
-    about: 'About',
-    experience: 'Experience',
-    education: 'Education',
-    skills: 'Skills',
-    name: 'John Doe',
-    headline: 'Software Developer',
-    location: 'San Francisco, CA',
-    connections: 'connections',
+    title: "Profile",
+    about: "About",
+    experience: "Experience",
+    education: "Education",
+    skills: "Skills",
+    name: "John Doe",
+    headline: "Software Developer",
+    location: "San Francisco, CA",
+    connections: "connections",
   },
   Experience: {
-    title: 'Experience',
-    current: 'Present',
-    duration: 'duration',
+    title: "Experience",
+    current: "Present",
+    duration: "duration",
   },
   Projects: {
-    title: 'Projects',
-    viewProject: 'View Project',
-    sourceCode: 'Source Code',
+    title: "Projects",
+    viewProject: "View Project",
+    sourceCode: "Source Code",
   },
 };
 
-interface CustomRenderOptions extends Omit<RenderOptions, 'wrapper'> {
+interface CustomRenderOptions extends Omit<RenderOptions, "wrapper"> {
   initialLocale?: Locale;
   initialPath?: string;
 }
@@ -53,7 +53,7 @@ interface CustomRenderOptions extends Omit<RenderOptions, 'wrapper'> {
 function AllTheProviders({
   children,
   initialLocale = LOCALE_DEFAULT,
-  initialPath = '/',
+  initialPath = "/",
 }: {
   children: React.ReactNode;
   initialLocale?: Locale;
@@ -63,7 +63,9 @@ function AllTheProviders({
     <Router base="" hook={() => [initialPath, () => {}]}>
       <ThemeProvider>
         <IntlProvider locale={initialLocale} messages={mockMessages}>
-          <LocaleProvider prerenderLocale={initialLocale}>{children}</LocaleProvider>
+          <LocaleProvider prerenderLocale={initialLocale}>
+            {children}
+          </LocaleProvider>
         </IntlProvider>
       </ThemeProvider>
     </Router>
@@ -74,7 +76,7 @@ const customRender = (ui: ReactElement, options: CustomRenderOptions = {}) => {
   const { initialLocale, initialPath, ...renderOptions } = options;
 
   return render(ui, {
-    wrapper: props =>
+    wrapper: (props) =>
       AllTheProviders({
         ...props,
         initialLocale,
@@ -87,7 +89,7 @@ const customRender = (ui: ReactElement, options: CustomRenderOptions = {}) => {
 export { customRender as render };
 
 // Helper function to create a mock router hook
-export const createMockRouter = (initialPath = '/') => {
+export const createMockRouter = (initialPath = "/") => {
   let currentPath = initialPath;
   const navigate = (path: string) => {
     currentPath = path;
@@ -102,8 +104,8 @@ export const createMockRouter = (initialPath = '/') => {
 
 // Helper to test different locales
 export const testWithAllLocales = (testFn: (locale: Locale) => void) => {
-  const locales: Locale[] = ['en', 'it', 'fr', 'es', 'ar'];
-  locales.forEach(locale => {
+  const locales: Locale[] = ["en", "it", "fr", "es", "ar"];
+  locales.forEach((locale) => {
     testFn(locale);
   });
 };

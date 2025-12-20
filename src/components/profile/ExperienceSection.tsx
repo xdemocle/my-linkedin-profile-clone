@@ -1,14 +1,14 @@
-import { ArrowRightIcon } from '@radix-ui/react-icons';
-import { useTranslations } from 'use-intl';
-import { useProfileData } from '../../hooks/useProfileData';
-import { LinkTranslated } from '../LinkTranslated';
-import { Avatar, AvatarFallback, AvatarImage } from '../ui/avatar';
-import { Button } from '../ui/button';
-import { Card, CardContent, CardHeader, CardTitle } from '../ui/card';
-import { Separator } from '../ui/separator';
+import { ArrowRightIcon } from "@radix-ui/react-icons";
+import { useTranslations } from "use-intl";
+import { useProfileData } from "../../hooks/useProfileData";
+import { LinkTranslated } from "../LinkTranslated";
+import { Avatar, AvatarFallback, AvatarImage } from "../ui/avatar";
+import { Button } from "../ui/button";
+import { Card, CardContent, CardHeader, CardTitle } from "../ui/card";
+import { Separator } from "../ui/separator";
 
 export function ExperienceSection() {
-  const t = useTranslations('Experience');
+  const t = useTranslations("Experience");
   const { experience } = useProfileData();
 
   // Get top 3 experiences (sorted by metadata.order)
@@ -19,10 +19,10 @@ export function ExperienceSection() {
   return (
     <Card className="shadow-xs">
       <CardHeader className="flex flex-col md:flex-row md:items-center justify-start md:justify-between">
-        <CardTitle className="text-xl">{t('title')}</CardTitle>
+        <CardTitle className="text-xl">{t("title")}</CardTitle>
         <Button variant="link" asChild>
           <LinkTranslated href="/experience" className="px-0!">
-            {t('showAllExperiences')}
+            {t("showAllExperiences")}
             <ArrowRightIcon />
           </LinkTranslated>
         </Button>
@@ -47,7 +47,9 @@ export function ExperienceSection() {
                   {exp.dateRange}
                   {exp.location && ` • ${exp.location}`}
                 </p>
-                <p className="mt-2 text-sm leading-relaxed">{exp.description}</p>
+                <p className="mt-2 text-sm leading-relaxed">
+                  {exp.description}
+                </p>
               </div>
             </div>
           </div>

@@ -1,12 +1,12 @@
 // import { PlusIcon } from '@radix-ui/react-icons';
-import { useTranslations } from 'use-intl';
-import { Avatar, AvatarFallback, AvatarImage } from '../ui/avatar';
+import { useTranslations } from "use-intl";
+import { Avatar, AvatarFallback, AvatarImage } from "../ui/avatar";
 // import { Button } from '../ui/button';
-import { ArrowRightIcon } from '@radix-ui/react-icons';
-import { LinkTranslated } from '../LinkTranslated';
-import { Button } from '../ui/button';
-import { Card, CardContent, CardHeader, CardTitle } from '../ui/card';
-import { Separator } from '../ui/separator';
+import { ArrowRightIcon } from "@radix-ui/react-icons";
+import { LinkTranslated } from "../LinkTranslated";
+import { Button } from "../ui/button";
+import { Card, CardContent, CardHeader, CardTitle } from "../ui/card";
+import { Separator } from "../ui/separator";
 
 const QuoteSvgIcon = () => (
   <svg
@@ -26,19 +26,19 @@ const QuoteSvgIcon = () => (
   </svg>
 );
 
-const recommendationKeys = ['oliverMuller', 'hiroshiTanaka', 'mateoFernandez'];
+const recommendationKeys = ["oliverMuller", "hiroshiTanaka", "mateoFernandez"];
 
 export function RecommendationsSection() {
-  const t = useTranslations('Recommendations');
-  const tData = useTranslations('SampleData.recommendations');
+  const t = useTranslations("Recommendations");
+  const tData = useTranslations("SampleData.recommendations");
 
   return (
     <Card className="shadow-xs">
       <CardHeader className="flex flex-col md:flex-row md:items-center justify-start md:justify-between">
-        <CardTitle className="text-xl">{t('title')}</CardTitle>
+        <CardTitle className="text-xl">{t("title")}</CardTitle>
         <Button variant="link" asChild>
           <LinkTranslated href="/recommendations" className="px-0!">
-            {t('showAllRecommendations')}
+            {t("showAllRecommendations")}
             <ArrowRightIcon />
           </LinkTranslated>
         </Button>
@@ -54,9 +54,15 @@ export function RecommendationsSection() {
               </Avatar>
               <div>
                 <h3 className="font-medium">{tData(`${key}.name`)}</h3>
-                <p className="text-sm text-muted-foreground">{tData(`${key}.title`)}</p>
-                <p className="text-xs text-muted-foreground">{tData(`${key}.relationship`)}</p>
-                <p className="text-xs text-muted-foreground">{tData(`${key}.date`)}</p>
+                <p className="text-sm text-muted-foreground">
+                  {tData(`${key}.title`)}
+                </p>
+                <p className="text-xs text-muted-foreground">
+                  {tData(`${key}.relationship`)}
+                </p>
+                <p className="text-xs text-muted-foreground">
+                  {tData(`${key}.date`)}
+                </p>
               </div>
             </div>
 
@@ -64,7 +70,9 @@ export function RecommendationsSection() {
               <div className="mr-2 mt-1">
                 <QuoteSvgIcon />
               </div>
-              <p className="text-sm text-muted-foreground leading-relaxed">{tData(`${key}.content`)}</p>
+              <p className="text-sm text-muted-foreground leading-relaxed">
+                {tData(`${key}.content`)}
+              </p>
             </div>
           </div>
         ))}
