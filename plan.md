@@ -62,6 +62,10 @@ The routing system is complex with multiple concerns:
   - URL structure consistency
   - Browser history behavior
 
+## TODO
+
+- use this scema for all content https://jsonresume.org/schema
+
 ## Test File Structure
 
 ```text
