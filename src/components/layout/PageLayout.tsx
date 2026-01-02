@@ -1,3 +1,4 @@
+import { useApp } from "@/hooks";
 import { cn } from "@/lib/utils";
 import { type ReactNode } from "react";
 import { ErrorBoundary } from "../ErrorBoundary";
@@ -17,11 +18,18 @@ export function PageLayout({
   addToSidebar,
   noSidebar,
 }: PageLayoutProps) {
+  const { isLayoutLarge } = useApp();
+
   return (
     <div className="min-h-screen">
       <Navbar />
 
-      <main className="max-w-7xl mx-auto px-4 sm:px-6 py-16 sm:py-20">
+      <main
+        className={cn(
+          "mx-auto px-4 sm:px-6 py-16 sm:py-20",
+          isLayoutLarge ? "" : "max-w-7xl"
+        )}
+      >
         <div
           className={cn(
             "grid grid-cols-1 lg:grid-cols-3 gap-5 md:gap-10",
@@ -39,7 +47,7 @@ export function PageLayout({
           {!noSidebar && (
             <ErrorBoundary>
               <div className="lg:col-span-1 order-2">
-                <div className="space-y-5 md:space-y-10">
+                <div className="lg:sticky lg:top-20 lg:max-h-[calc(100vh-5rem)] lg:overflow-y-auto space-y-5 md:space-y-10">
                   {/* Profile Language & URL */}
                   <ProfileLanguageUrl />
 

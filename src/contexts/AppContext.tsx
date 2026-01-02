@@ -18,6 +18,8 @@ interface AppContextType {
   isMenuOpen: boolean;
   setIsMenuOpen: (value: boolean) => void;
   isMobile: boolean;
+  isLayoutLarge: boolean;
+  setIsLayoutLarge: (value: boolean) => void;
   navLinks: NavLink[];
   socialLinks: SocialLink[];
   searchQuery: string;

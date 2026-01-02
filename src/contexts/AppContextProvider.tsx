@@ -14,6 +14,7 @@ import { AppContext } from "./AppContext";
 export function AppProvider({ children }: { children: ReactNode }) {
   const [isSearchOpen, setIsSearchOpen] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isLayoutLarge, setIsLayoutLarge] = useState(false);
   const [searchQuery, setSearchQuery] = useState("");
   const isMobile = useMediaQuery("(max-width: 60rem)");
   const t = useTranslations("Navigation");
@@ -42,6 +43,8 @@ export function AppProvider({ children }: { children: ReactNode }) {
         setIsSearchOpen,
         isMenuOpen,
         setIsMenuOpen,
+        isLayoutLarge,
+        setIsLayoutLarge,
         isMobile,
         navLinks,
         socialLinks,

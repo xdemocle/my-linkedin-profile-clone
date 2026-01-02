@@ -5,6 +5,7 @@ import { Separator } from "@radix-ui/react-separator";
 import { LinkTranslated } from "../LinkTranslated";
 import { Logo } from "../Logo";
 import { MobileDrawer } from "../MobileDrawer";
+import { Avatar, AvatarFallback, AvatarImage } from "../ui/avatar";
 import { Button } from "../ui/button";
 import { LanguageSwitcher } from "../ui/language-switcher";
 import { ScrollProgress } from "../ui/scroll-progress";
@@ -12,17 +13,32 @@ import { ThemeToggle } from "../ui/theme-toggle";
 import { Search } from "./Search";
 
 export function Navbar() {
-  const { isSearchOpen, isMobile, isMenuOpen, setIsMenuOpen, navLinks } =
-    useApp();
-  // const { personal } = useJSONResumeAdapter();
+  const {
+    isLayoutLarge,
+    isMenuOpen,
+    isMobile,
+    isSearchOpen,
+    navLinks,
+    setIsLayoutLarge,
+    setIsMenuOpen,
+  } = useApp();
 
   const handleMenuClick = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const handleEnlargeLayoutClick = () => {
+    setIsLayoutLarge(!isLayoutLarge);
+  };
+
   return (
     <header className="border-b bg-card/95 backdrop-blur-sm fixed top-0 left-0 right-0 z-50 shadow-xs">
-      <div className="max-w-7xl mx-auto px-2 sm:px-4 flex items-center z-0 my-1.5 md:my-0">
+      <div
+        className={cn(
+          "mx-auto px-2 sm:px-4 flex items-center z-0 my-1.5 md:my-0",
+          isLayoutLarge ? "" : "max-w-7xl"
+        )}
+      >
         {/* Logo */}
         <LinkTranslated href="/">
           <Logo />
@@ -59,8 +75,23 @@ export function Navbar() {
           >
             <Separator
               orientation="vertical"
-              className="w-[1px] h-4 mx-2 bg-foreground hidden md:block"
+              className="w-px h-4 mx-2 bg-foreground hidden md:block"
             />
+
+            <Button
+              variant="ghost"
+              size="icon"
+              aria-label="Enlarge/Stretch screen"
+              onClick={handleEnlargeLayoutClick}
+            >
+              <Avatar className="size-5.5 rounded-none">
+                <AvatarImage
+                  src="public/assets/ui/logo-linkedin-xl.png"
+                  alt="Browser Extension: Linkedin XL"
+                />
+                <AvatarFallback>XL</AvatarFallback>
+              </Avatar>
+            </Button>
 
             <ThemeToggle />
 
@@ -83,13 +114,6 @@ export function Navbar() {
                 )}
               </Button>
             </MobileDrawer>
-
-            {/* <Button variant="ghost" size="icon" aria-label="User menu">
-              <Avatar className="size-5.5">
-                <AvatarImage src={personal.avatar} alt="User" />
-                <AvatarFallback>RR</AvatarFallback>
-              </Avatar>
-            </Button> */}
           </div>
         </nav>
       </div>
