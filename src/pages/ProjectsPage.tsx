@@ -22,11 +22,9 @@ export function ProjectsPage() {
     "Explore my portfolio of projects including DeFi protocols, blockchain applications, and full-stack web development work.";
 
   const featuredProjects = projects.filter(
-    (project) => project.metadata?.featured,
+    project => project.metadata?.featured
   );
-  const otherProjects = projects.filter(
-    (project) => !project.metadata?.featured,
-  );
+  const otherProjects = projects.filter(project => !project.metadata?.featured);
 
   return (
     <PageLayout noSidebar>
@@ -58,7 +56,7 @@ export function ProjectsPage() {
       <CardContent className="p-6">
         <h2 className="text-2xl font-semibold mb-6">{t("featuredProjects")}</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {featuredProjects.map((project) => (
+          {featuredProjects.map(project => (
             <Card
               key={project.id}
               className="overflow-hidden shadow-md hover:shadow-lg transition-shadow"
@@ -137,7 +135,7 @@ export function ProjectsPage() {
                                     : ""}
                                 </a>
                               </Button>
-                            ),
+                            )
                           )}
                       </div>
                     )}
@@ -166,7 +164,7 @@ export function ProjectsPage() {
       <section>
         <h2 className="text-2xl font-semibold mb-6">{t("otherProjects")}</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-          {otherProjects.map((project) => (
+          {otherProjects.map(project => (
             <Card
               key={project.id}
               className="shadow-sm hover:shadow-md transition-shadow"

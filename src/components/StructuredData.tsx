@@ -51,9 +51,7 @@ export function StructuredData({
     if (type === "person") {
       // Get all skill names from all categories
       const allSkills = skills
-        .flatMap((skillCategory) =>
-          skillCategory.items.map((item) => item.name),
-        )
+        .flatMap(skillCategory => skillCategory.items.map(item => item.name))
         .slice(0, 15);
 
       // Person schema for profile page

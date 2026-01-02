@@ -131,7 +131,7 @@ export async function prerender(data: PrerenderData) {
     const hreflangCount = (seoMeta.match(/hreflang/g) || []).length;
     const hasStructuredData = structuredData.includes("schema.org");
     console.log(
-      `Successfully prerendered ${locale}${pagePath} | hreflang: ${hreflangCount}, structured data: ${hasStructuredData}`,
+      `Successfully prerendered ${locale}${pagePath} | hreflang: ${hreflangCount}, structured data: ${hasStructuredData}`
     );
 
     return {

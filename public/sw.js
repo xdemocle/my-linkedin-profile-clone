@@ -48,58 +48,58 @@ const STATIC_ASSETS = [
 ];
 
 // Install event - cache static assets
-self.addEventListener("install", (event) => {
+self.addEventListener("install", event => {
   console.log("[SW] Installing service worker...");
   event.waitUntil(
     caches
       .open(STATIC_CACHE)
-      .then((cache) => {
+      .then(cache => {
         console.log("[SW] Caching static assets");
         return cache.addAll(STATIC_ASSETS);
       })
       .then(() => {
         return self.skipWaiting(); // Activate immediately
-      }),
+      })
   );
 });
 
 // Activate event - clean up old caches
-self.addEventListener("activate", (event) => {
+self.addEventListener("activate", event => {
   console.log("[SW] Activating service worker...");
   event.waitUntil(
     caches
       .keys()
-      .then((cacheNames) => {
+      .then(cacheNames => {
         return Promise.all(
           cacheNames
-            .filter((name) => {
+            .filter(name => {
               return (
                 name.startsWith("static-") ||
                 name.startsWith("dynamic-") ||
                 name.startsWith("images-")
               );
             })
-            .filter((name) => {
+            .filter(name => {
               return (
                 name !== STATIC_CACHE &&
                 name !== DYNAMIC_CACHE &&
                 name !== IMAGE_CACHE
               );
             })
-            .map((name) => {
+            .map(name => {
               console.log("[SW] Deleting old cache:", name);
               return caches.delete(name);
-            }),
+            })
         );
       })
       .then(() => {
         return self.clients.claim(); // Take control immediately
-      }),
+      })
   );
 });
 
 // Fetch event - serve from cache, fallback to network
-self.addEventListener("fetch", (event) => {
+self.addEventListener("fetch", event => {
   const { request } = event;
   const url = new URL(request.url);
 
@@ -205,7 +205,7 @@ async function networkFirstStrategy(request, cacheName) {
 }
 
 // Background sync for future enhancements
-self.addEventListener("sync", (event) => {
+self.addEventListener("sync", event => {
   console.log("[SW] Background sync:", event.tag);
   if (event.tag === "sync-profile-data") {
     event.waitUntil(syncProfileData());
@@ -218,7 +218,7 @@ async function syncProfileData() {
 }
 
 // Push notifications (for future enhancements)
-self.addEventListener("push", (event) => {
+self.addEventListener("push", event => {
   const data = event.data ? event.data.json() : {};
   const title = data.title || "LinkedIn Profile Update";
   const options = {
@@ -231,7 +231,7 @@ self.addEventListener("push", (event) => {
   event.waitUntil(self.registration.showNotification(title, options));
 });
 
-self.addEventListener("notificationclick", (event) => {
+self.addEventListener("notificationclick", event => {
   event.notification.close();
   event.waitUntil(clients.openWindow(event.notification.data));
 });

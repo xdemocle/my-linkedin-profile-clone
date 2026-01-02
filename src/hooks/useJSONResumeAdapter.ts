@@ -50,7 +50,7 @@ export function useJSONResumeAdapter(): ProfileData {
         ? `${resume.basics.location.city}, ${resume.basics.location.region}, ${resume.basics.location.countryCode}`
         : "",
       website: resume.basics?.url,
-      github: resume.basics?.profiles?.find((p) => p.network === "GitHub")?.url,
+      github: resume.basics?.profiles?.find(p => p.network === "GitHub")?.url,
       email: resume.basics?.email || "",
       phone: resume.basics?.phone,
       avatar: resume.basics?.image || "",
@@ -152,22 +152,22 @@ export function useJSONResumeAdapter(): ProfileData {
 
     // Map skills to Skill[] using skills.json for levels
     const skills: Skill[] =
-      resume.skills?.map((skillCategory) => {
+      resume.skills?.map(skillCategory => {
         // Find matching category in skillsData
         const categoryData = skillsData.find(
-          (data) =>
+          data =>
             data.categoryKey ===
             skillCategory.name
               ?.toLowerCase()
               .replace(/ & /g, "-and-")
-              .replace(/ /g, "-"),
+              .replace(/ /g, "-")
         );
 
         if (categoryData && skillCategory.keywords) {
           return {
             category: skillCategory.name || "",
-            items: skillCategory.keywords.map((keyword) => {
-              const item = categoryData.items.find((i) => i.name === keyword);
+            items: skillCategory.keywords.map(keyword => {
+              const item = categoryData.items.find(i => i.name === keyword);
               return {
                 name: keyword,
                 level: item
@@ -181,7 +181,7 @@ export function useJSONResumeAdapter(): ProfileData {
         return {
           category: skillCategory.name || "",
           items:
-            skillCategory.keywords?.map((keyword) => ({
+            skillCategory.keywords?.map(keyword => ({
               name: keyword,
               level: getLevelFromString(skillCategory.level || ""),
             })) || [],
@@ -190,7 +190,7 @@ export function useJSONResumeAdapter(): ProfileData {
 
     // Map education to Education[]
     const education: Education[] =
-      resume.education?.map((edu) => {
+      resume.education?.map(edu => {
         const startYear = edu.startDate
           ? new Date(edu.startDate).getFullYear()
           : "";
@@ -208,7 +208,7 @@ export function useJSONResumeAdapter(): ProfileData {
 
     // Map certificates to Certification[]
     const certifications: Certification[] =
-      resume.certificates?.map((cert) => ({
+      resume.certificates?.map(cert => ({
         name: cert.name || "",
         issuer: cert.issuer || "",
         dateIssued: cert.date || "",

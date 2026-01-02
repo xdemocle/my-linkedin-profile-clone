@@ -62,7 +62,7 @@ export function ProfileHeader() {
         <Avatar
           className={cn(
             "w-32 h-32 md:w-44 md:h-44 border-4 border-secondary shadow-md hover:shadow-xl transition-all duration-300",
-            "absolute -top-22 left-1/2 transform -translate-x-1/2 md:-top-31 sm:transform-none sm:translate-x-0 sm:left-6",
+            "absolute -top-22 left-1/2 transform -translate-x-1/2 md:-top-31 sm:transform-none sm:translate-x-0 sm:left-6"
           )}
         >
           <AvatarImage src={personal.avatar} alt={personal.name} />

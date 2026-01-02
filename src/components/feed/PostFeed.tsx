@@ -36,7 +36,7 @@ export function PostFeed() {
   const tCommon = useTranslations("Common");
   const tData = useTranslations("SampleData.posts");
 
-  const posts = postData.map((post) => ({
+  const posts = postData.map(post => ({
     id: post.id,
     author: {
       name:
@@ -60,7 +60,7 @@ export function PostFeed() {
 
       {/* Posts list */}
       <div>
-        {posts.map((post) => (
+        {posts.map(post => (
           <Post key={post.id} {...post} />
         ))}
       </div>

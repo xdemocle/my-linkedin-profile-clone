@@ -8,7 +8,7 @@ import { vitePrerenderPlugin } from "vite-prerender-plugin";
 import { LOCALES, LOCALE_DEFAULT } from "./src/constants/i18n";
 import { getPageUrlFromPath } from "./src/lib/i18n";
 const mainLanguageRoutes = [
-  ...LOCALES.map((locale) => getPageUrlFromPath(locale, "")),
+  ...LOCALES.map(locale => getPageUrlFromPath(locale, "")),
 ];
 
 const additionalPrerenderRoutes = [
@@ -16,16 +16,16 @@ const additionalPrerenderRoutes = [
   ...mainLanguageRoutes,
 
   // Experience pages
-  ...LOCALES.map((locale) => getPageUrlFromPath(locale, "experience")),
+  ...LOCALES.map(locale => getPageUrlFromPath(locale, "experience")),
 
   // Projects pages
-  ...LOCALES.map((locale) => getPageUrlFromPath(locale, "projects")),
+  ...LOCALES.map(locale => getPageUrlFromPath(locale, "projects")),
 
   // Skills pages
-  ...LOCALES.map((locale) => getPageUrlFromPath(locale, "skills")),
+  ...LOCALES.map(locale => getPageUrlFromPath(locale, "skills")),
 
   // Recommendations pages
-  ...LOCALES.map((locale) => getPageUrlFromPath(locale, "recommendations")),
+  ...LOCALES.map(locale => getPageUrlFromPath(locale, "recommendations")),
 ];
 
 // https://vite.dev/config/
@@ -65,12 +65,12 @@ export default defineConfig({
               let html = await fs.readFile(filePath, "utf-8");
 
               // Generate hreflang tags
-              const hreflangTags = LOCALES.map((l) => {
+              const hreflangTags = LOCALES.map(l => {
                 const href = `${WEBSITE_URL}${l === LOCALE_DEFAULT ? "" : `/${l}`}${routePath}`;
                 return `<link rel="alternate" hreflang="${l}" href="${href}" />`;
               });
               hreflangTags.push(
-                `<link rel="alternate" hreflang="x-default" href="${WEBSITE_URL}${routePath}" />`,
+                `<link rel="alternate" hreflang="x-default" href="${WEBSITE_URL}${routePath}" />`
               );
 
               // Generate canonical URL
@@ -81,7 +81,7 @@ export default defineConfig({
               if (canonicalRegex.test(html)) {
                 html = html.replace(
                   canonicalRegex,
-                  `<link rel="canonical" href="${canonicalUrl}" >`,
+                  `<link rel="canonical" href="${canonicalUrl}" >`
                 );
               }
 
@@ -156,7 +156,7 @@ export default defineConfig({
 
               await fs.writeFile(filePath, html);
               console.log(
-                `✓ Injected SEO meta into ${lang}${routePath || "/"}`,
+                `✓ Injected SEO meta into ${lang}${routePath || "/"}`
               );
             } catch {
               // File might not exist for some routes, skip silently
@@ -191,7 +191,7 @@ export default defineConfig({
 
         await fs.writeFile(
           "dist/client/_redirects",
-          redirectsContent.join("\n"),
+          redirectsContent.join("\n")
         );
 
         console.log("Created _redirects file for Cloudflare Pages");
@@ -233,7 +233,7 @@ export default defineConfig({
               ].join("\n");
 
               console.log(
-                `Preserving existing prerendered content in ${lang}/index.html`,
+                `Preserving existing prerendered content in ${lang}/index.html`
               );
             } catch (e: unknown) {
               console.error(e);
@@ -241,7 +241,7 @@ export default defineConfig({
               // Only copy if the file doesn't exist (to preserve prerendered content)
               const indexContent = await fs.readFile(
                 "dist/client/index.html",
-                "utf-8",
+                "utf-8"
               );
               await fs.writeFile(langIndexPath, indexContent);
               console.log(`Copied index.html to ${lang} directory`);
@@ -249,7 +249,7 @@ export default defineConfig({
           } catch (error) {
             console.error(
               `Error handling index.html for ${lang} directory:`,
-              error,
+              error
             );
           }
         }

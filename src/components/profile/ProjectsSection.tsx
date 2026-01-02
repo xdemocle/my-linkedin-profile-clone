@@ -13,7 +13,7 @@ export function ProjectsSection() {
 
   // Get top 3 featured projects (sorted by metadata.order)
   const featuredProjects = projects
-    .filter((project) => project.metadata?.featured)
+    .filter(project => project.metadata?.featured)
     .sort((a, b) => (a.metadata?.order || 999) - (b.metadata?.order || 999))
     .slice(0, 3);
 
@@ -30,7 +30,7 @@ export function ProjectsSection() {
       </CardHeader>
       <CardContent>
         <div className="space-y-4">
-          {featuredProjects.map((project) => (
+          {featuredProjects.map(project => (
             <div key={project.id} className="flex gap-3">
               <div className="flex items-center justify-center h-8 w-8">
                 <ProjectIconWrapper iconKey={project.icon} />

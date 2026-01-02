@@ -25,7 +25,7 @@ export function PageLayout({
         <div
           className={cn(
             "grid grid-cols-1 lg:grid-cols-3 gap-5 md:gap-10",
-            noSidebar && "lg:grid-cols-1",
+            noSidebar && "lg:grid-cols-1"
           )}
         >
           {/* Main content - 2/3 width on large screens, full width on mobile */}
@@ -57,7 +57,7 @@ export function PageLayout({
         <div
           className={cn(
             "grid grid-cols-1 gap-5 md:gap-10",
-            noSidebar && "lg:grid-cols-1",
+            noSidebar && "lg:grid-cols-1"
           )}
         >
           <Footer />

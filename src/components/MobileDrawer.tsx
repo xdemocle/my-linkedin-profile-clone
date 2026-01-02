@@ -34,7 +34,7 @@ export function MobileDrawer({
         </DrawerHeader>
 
         <div className="flex flex-col gap-3 px-4">
-          {navLinks.map((link) => (
+          {navLinks.map(link => (
             <Button
               key={link.href}
               onClick={() => onOpenChangeHandler(false)}

@@ -192,7 +192,7 @@ export function MessagingPopup() {
 
               <CardContent className="p-0 h-80 overflow-auto">
                 <div className="p-4 space-y-4">
-                  {activeChat.messages.map((message) => (
+                  {activeChat.messages.map(message => (
                     <div
                       key={message.id}
                       className={`flex ${message.isSelf ? "justify-end" : "justify-start"}`}
@@ -232,7 +232,7 @@ export function MessagingPopup() {
                 </div>
 
                 <div className="py-2">
-                  {chats.map((chat) => (
+                  {chats.map(chat => (
                     <div
                       key={chat.id}
                       className="px-4 py-2 hover:bg-muted cursor-pointer"

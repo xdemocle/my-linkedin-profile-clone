@@ -30,7 +30,7 @@ export function AppProvider({ children }: { children: ReactNode }) {
         icon: CardStackPlusIcon,
       },
     ],
-    [t],
+    [t]
   );
 
   const socialLinks = SOCIAL_LINKS;

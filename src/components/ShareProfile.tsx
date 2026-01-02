@@ -50,7 +50,7 @@ export function ShareProfile({
 
   const handleTwitterShare = () => {
     const twitterUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(shareText)}&url=${encodeURIComponent(
-      profileUrl,
+      profileUrl
     )}`;
     window.open(twitterUrl, "_blank", "noopener,noreferrer");
   };

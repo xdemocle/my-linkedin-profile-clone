@@ -43,7 +43,7 @@ export function LanguageSwitcher() {
       setLocation(getPageUrlFromPath(newLocale, pagePath));
       setIsOpen(false);
     },
-    [location, setLocale, setLocation],
+    [location, setLocale, setLocation]
   );
 
   return (
@@ -62,7 +62,7 @@ export function LanguageSwitcher() {
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end">
-        {LOCALES.map((localeOption) => (
+        {LOCALES.map(localeOption => (
           <DropdownMenuItem
             key={localeOption}
             onClick={() => handleLanguageChange(localeOption)}

@@ -12,7 +12,7 @@ interface LocaleContextType {
 }
 
 export const LocaleContext = createContext<LocaleContextType | undefined>(
-  undefined,
+  undefined
 );
 
 interface LocaleProviderProps {
@@ -28,7 +28,7 @@ export function LocaleProvider({
 
   // Use prerenderLocale if provided (for SSG), otherwise default to 'en'
   const [locale, setLocale] = useState<Locale>(
-    prerenderLocale || LOCALE_DEFAULT,
+    prerenderLocale || LOCALE_DEFAULT
   );
 
   // Initialize with messages for the current locale
@@ -39,7 +39,7 @@ export function LocaleProvider({
       console.warn(
         "Failed to load messages for locale:",
         prerenderLocale || locale,
-        error,
+        error
       );
       // Fallback to English messages
       return getLocaleMessages(LOCALE_DEFAULT);

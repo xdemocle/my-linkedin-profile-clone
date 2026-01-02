@@ -50,7 +50,7 @@ export function Search() {
   // Perform search
   const searchResults =
     searchQuery.length >= 2
-      ? fuse.search(searchQuery).map((result) => result.item)
+      ? fuse.search(searchQuery).map(result => result.item)
       : [];
 
   // Close results when clicking outside
@@ -84,7 +84,7 @@ export function Search() {
           <MagnifyingGlassIcon
             className={cn(
               "transition-width",
-              !isMobile || isSearchOpen ? "size-4" : "size-5.5",
+              !isMobile || isSearchOpen ? "size-4" : "size-5.5"
             )}
           />
         </Button>
@@ -99,7 +99,7 @@ export function Search() {
         className={cn(
           "bg-transparent lg:bg-muted px-10 h-9 rounded-sm text-sm transition-all w-xs",
           !isMobile || isSearchOpen ? "" : "w-0.5",
-          isSearchOpen ? "bg-muted w-full md:max-w-lg" : "",
+          isSearchOpen ? "bg-muted w-full md:max-w-lg" : ""
         )}
         onFocus={() => toggleInputSearch(true)}
       />

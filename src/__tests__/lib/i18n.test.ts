@@ -18,7 +18,7 @@ describe("i18n utilities", () => {
       ({ input, expected }) => {
         const result = getLocaleFromPath(input);
         expect(result).toBe(expected);
-      },
+      }
     );
 
     it("should handle edge cases", () => {
@@ -42,7 +42,7 @@ describe("i18n utilities", () => {
       ({ locale, page, expected }) => {
         const result = getPageUrlFromPath(locale, page);
         expect(result).toBe(expected);
-      },
+      }
     );
 
     it("should handle double slashes correctly", () => {
@@ -54,10 +54,10 @@ describe("i18n utilities", () => {
 
     it("should handle special characters in page names", () => {
       expect(getPageUrlFromPath("it", "page-with-dashes")).toBe(
-        "/it/page-with-dashes",
+        "/it/page-with-dashes"
       );
       expect(getPageUrlFromPath("en", "page_with_underscores")).toBe(
-        "/page_with_underscores",
+        "/page_with_underscores"
       );
       expect(getPageUrlFromPath("fr", "page123")).toBe("/fr/page123");
     });
@@ -69,7 +69,7 @@ describe("i18n utilities", () => {
       ({ locale, expected }) => {
         const result = getDirection(locale);
         expect(result).toBe(expected);
-      },
+      }
     );
   });
 

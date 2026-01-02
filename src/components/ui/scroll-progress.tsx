@@ -33,7 +33,7 @@ export function ScrollProgress({
         document.body.offsetHeight,
         document.documentElement.offsetHeight,
         document.body.clientHeight,
-        document.documentElement.clientHeight,
+        document.documentElement.clientHeight
       );
     };
 

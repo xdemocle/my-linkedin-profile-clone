@@ -33,7 +33,7 @@ export function Navbar() {
 
         {/* Navigation */}
         <nav className="flex items-center gap-0.5 sm:gap-1">
-          {navLinks.map((link) => (
+          {navLinks.map(link => (
             <Button
               variant="ghost"
               size="icon"
@@ -54,7 +54,7 @@ export function Navbar() {
           <div
             className={cn(
               "flex items-center gap-1",
-              isMobile && isSearchOpen ? "hidden" : "",
+              isMobile && isSearchOpen ? "hidden" : ""
             )}
           >
             <Separator

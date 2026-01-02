@@ -76,7 +76,7 @@ const customRender = (ui: ReactElement, options: CustomRenderOptions = {}) => {
   const { initialLocale, initialPath, ...renderOptions } = options;
 
   return render(ui, {
-    wrapper: (props) =>
+    wrapper: props =>
       AllTheProviders({
         ...props,
         initialLocale,
@@ -105,7 +105,7 @@ export const createMockRouter = (initialPath = "/") => {
 // Helper to test different locales
 export const testWithAllLocales = (testFn: (locale: Locale) => void) => {
   const locales: Locale[] = ["en", "it", "fr", "es", "ar"];
-  locales.forEach((locale) => {
+  locales.forEach(locale => {
     testFn(locale);
   });
 };

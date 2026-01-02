@@ -23,7 +23,7 @@ export function registerServiceWorker(config: PWAConfig = {}) {
 
     navigator.serviceWorker
       .register(swUrl)
-      .then((registration) => {
+      .then(registration => {
         console.log("[PWA] Service Worker registered:", registration);
 
         // Check for updates periodically
@@ -53,10 +53,10 @@ export function registerServiceWorker(config: PWAConfig = {}) {
           () => {
             registration.update();
           },
-          60 * 60 * 1000,
+          60 * 60 * 1000
         );
       })
-      .catch((error) => {
+      .catch(error => {
         console.error("[PWA] Service Worker registration failed:", error);
       });
   });
@@ -76,10 +76,10 @@ export function registerServiceWorker(config: PWAConfig = {}) {
 export function unregisterServiceWorker() {
   if ("serviceWorker" in navigator) {
     navigator.serviceWorker.ready
-      .then((registration) => {
+      .then(registration => {
         registration.unregister();
       })
-      .catch((error) => {
+      .catch(error => {
         console.error("[PWA] Service Worker unregistration failed:", error);
       });
   }
@@ -111,7 +111,7 @@ export function promptPWAInstall() {
 
   let deferredPrompt: BeforeInstallPromptEvent | null = null;
 
-  window.addEventListener("beforeinstallprompt", (e) => {
+  window.addEventListener("beforeinstallprompt", e => {
     // Prevent the mini-infobar from appearing on mobile
     e.preventDefault();
     // Stash the event so it can be triggered later
@@ -184,7 +184,7 @@ export async function prefetchResources(urls: string[]) {
   const cache = await caches.open("prefetch-cache");
 
   await Promise.all(
-    urls.map(async (url) => {
+    urls.map(async url => {
       try {
         const response = await fetch(url);
         if (response.ok) {
@@ -194,6 +194,6 @@ export async function prefetchResources(urls: string[]) {
       } catch (error) {
         console.error(`[PWA] Failed to prefetch ${url}:`, error);
       }
-    }),
+    })
   );
 }

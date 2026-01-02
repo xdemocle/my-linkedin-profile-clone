@@ -24,7 +24,7 @@ function AppContent() {
       <IntlProvider
         messages={messages}
         locale={locale}
-        onError={(error) => {
+        onError={error => {
           // Suppress environment fallback errors during prerendering
           if (error.code === "ENVIRONMENT_FALLBACK") {
             return;

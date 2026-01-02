@@ -66,13 +66,13 @@ export function ProfileLanguageUrl() {
             </h3>
             <Select
               value={locale}
-              onValueChange={(value) => handleLocaleChange(value as Locale)}
+              onValueChange={value => handleLocaleChange(value as Locale)}
             >
               <SelectTrigger className="w-full">
                 <SelectValue placeholder={t("selectLanguage")} />
               </SelectTrigger>
               <SelectContent>
-                {LOCALES.map((localeOption) => (
+                {LOCALES.map(localeOption => (
                   <SelectItem key={localeOption} value={localeOption}>
                     {getLocaleConfig(localeOption).name}
                   </SelectItem>

@@ -2,6 +2,12 @@ import { useProfileData } from "@/hooks";
 import { ArrowRightIcon } from "@radix-ui/react-icons";
 import { useTranslations } from "use-intl";
 import { LinkTranslated } from "../LinkTranslated";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "../ui/accordion";
 import { Button } from "../ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "../ui/card";
 import { Progress } from "../ui/progress";
@@ -11,20 +17,17 @@ export function SkillsSection() {
   const { skills } = useProfileData();
 
   // Get top 3 skills from the first 3 categories
-  const topSkills = skills
-    .slice(0, 3)
-    .map((category) => {
-      // Get top 3 skills from the first 3 categories
-      return category.items
-        .sort((a, b) => b.level - a.level)
-        .slice(0, 3)
-        .map((skill) => ({
-          name: skill.name,
-          level: skill.level,
-          category: category.category,
-        }));
-    })
-    .flat();
+  const topSkillsByCategory = skills.slice(0, 3).map(category => ({
+    category: category.category,
+    items: category.items
+      .sort((a, b) => b.level - a.level)
+      .slice(0, 3)
+      .map(skill => ({
+        name: skill.name,
+        level: skill.level,
+        category: category.category,
+      })),
+  }));
 
   return (
     <Card className="shadow-xs">
@@ -38,23 +41,34 @@ export function SkillsSection() {
         </Button>
       </CardHeader>
 
-      <CardContent className="grid grid-cols-max sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        {topSkills.map((skill, index) => (
-          <div key={index} className="mb-6">
-            <div className="flex justify-between items-center mb-2">
-              <h3 className="font-medium">{skill.name}</h3>
-              <span className="text-sm text-muted-foreground">
-                {skill.level}%
-              </span>
-            </div>
-            <div className="w-full bg-secondary rounded-full h-2">
-              <Progress value={skill.level} />
-            </div>
-            <p className="text-xs text-muted-foreground mt-2">
-              {skill.category}
-            </p>
-          </div>
-        ))}
+      <CardContent className="grid grid-cols-1 gap-4">
+        <Accordion type="single" collapsible className="w-full">
+          {topSkillsByCategory.map((category, categoryIndex) => (
+            <AccordionItem
+              key={categoryIndex}
+              value={`category-${categoryIndex}`}
+            >
+              <AccordionTrigger>{category.category}</AccordionTrigger>
+              <AccordionContent>
+                <div className="space-y-4">
+                  {category.items.map((skill, skillIndex) => (
+                    <div key={skillIndex} className="mb-6">
+                      <div className="flex justify-between items-center mb-2">
+                        <h3 className="font-medium">{skill.name}</h3>
+                        <span className="text-sm text-muted-foreground">
+                          {skill.level}%
+                        </span>
+                      </div>
+                      <div className="w-full bg-secondary rounded-full h-2">
+                        <Progress value={skill.level} />
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </AccordionContent>
+            </AccordionItem>
+          ))}
+        </Accordion>
       </CardContent>
     </Card>
   );

@@ -131,7 +131,7 @@ export function useSearchIndex() {
       "web3js",
       "ethersjs",
     ];
-    skills.forEach((skill) => {
+    skills.forEach(skill => {
       data.push({
         id: `skill-${skill}`,
         title: tSkills(skill),
@@ -197,7 +197,7 @@ export function useSearchIndex() {
         minMatchCharLength: 2,
         ignoreLocation: true,
       }),
-    [searchData],
+    [searchData]
   );
 
   return { searchData, fuse };

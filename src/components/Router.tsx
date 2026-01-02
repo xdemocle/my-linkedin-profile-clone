@@ -49,7 +49,7 @@ export function Router() {
       <Switch>
         {/* Redirect /en/* to /* (remove default locale prefix) */}
         <Route path="/en/:rest*">
-          {(params) => <EnglishRedirect rest={params["rest*"]} />}
+          {params => <EnglishRedirect rest={params["rest*"]} />}
         </Route>
 
         {/* Root redirect */}
@@ -63,7 +63,7 @@ export function Router() {
         />
 
         {/* Localized routes */}
-        {LOCALES.map((lang) => (
+        {LOCALES.map(lang => (
           <Route
             key={`${lang}-root`}
             path={lang === LOCALE_DEFAULT ? "/" : `/${lang}`}
@@ -72,7 +72,7 @@ export function Router() {
         ))}
 
         {/* Experience page with locale prefixes */}
-        {LOCALES.map((lang) => (
+        {LOCALES.map(lang => (
           <Route
             key={`${lang}-experience`}
             path={getPageUrlFromPath(lang, "experience")}
@@ -82,7 +82,7 @@ export function Router() {
         ))}
 
         {/* Projects page with locale prefixes */}
-        {LOCALES.map((lang) => (
+        {LOCALES.map(lang => (
           <Route
             key={`${lang}-projects`}
             path={getPageUrlFromPath(lang, "projects")}
@@ -92,7 +92,7 @@ export function Router() {
         ))}
 
         {/* Skills page with locale prefixes */}
-        {LOCALES.map((lang) => (
+        {LOCALES.map(lang => (
           <Route
             key={`${lang}-skills`}
             path={getPageUrlFromPath(lang, "skills")}
@@ -102,7 +102,7 @@ export function Router() {
         ))}
 
         {/* Recommendations page with locale prefixes */}
-        {LOCALES.map((lang) => (
+        {LOCALES.map(lang => (
           <Route
             key={`${lang}-recommendations`}
             path={getPageUrlFromPath(lang, "recommendations")}

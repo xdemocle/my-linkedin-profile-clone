@@ -1,8 +1,47 @@
-# LinkedIn Profile Clone - LLM Context
+# Rocco Russo LinkedIn Profile Clone - LLM Context
+
+## Last Updated: January 2, 2026
 
 ## Project Overview
 
-A modern, open-source LinkedIn profile clone built with React, TypeScript, and TailwindCSS v4. This project demonstrates advanced web development techniques including internationalization, static site generation, and edge routing.
+This project is a clone of a LinkedIn profile for Rocco Russo, a Frontend Software Engineer with over 8 years of experience. The application showcases personal information, work experience, skills, projects, education, certifications, and achievements. It has been refactored to use the JSON Resume schema for data management with multi-language support.
+
+## Key Features
+
+- Multi-language support with separate JSON Resume files for English, Italian, French, Spanish, and Arabic.
+- Dynamic loading of resume data based on user locale using the useJSONResumeAdapter hook.
+- UI enhancements including an accordion layout for the skills section.
+- Comprehensive documentation updated to reflect the JSON Resume migration and multi-language approach.
+
+## Technical Stack
+
+- React with TypeScript for frontend development.
+- Tailwind CSS for styling, following v4 guidelines.
+- shadcn/ui components for UI elements like accordions and progress bars.
+- Bun as the package manager.
+- No SSR, but SSG is implemented.
+
+## Data Structure
+
+- JSON Resume schema as the central data format, with language-specific files in src/data/ (resume-en.json, resume-it.json, etc.).
+- Adapter hook (useJSONResumeAdapter.ts) maps JSON Resume data to the existing ProfileData structure for backward compatibility.
+- Skills data enriched with levels from skills.json.
+
+## Recent Updates
+
+- Completed refactoring to JSON Resume schema with full data across all languages.
+- Updated skills section to use accordion UI for better organization and user experience.
+
+## Current Status
+
+- All tasks related to data refactoring, multi-language support, and UI updates are completed.
+- The project is fully functional and ready for further enhancements or deployment.
+
+## For AI Assistance
+
+- This file serves as a context guide for language model interactions.
+- Any code changes or updates should adhere to the user rules (e.g., Tailwind CSS for styling, shadcn/ui components, etc.).
+- If tasked with modifications, ensure compatibility with the existing structure and maintain the multi-language setup.
 
 ## Technology Stack
 

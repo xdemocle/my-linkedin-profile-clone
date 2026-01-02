@@ -43,7 +43,7 @@ export function generateSEOMeta(options: SEOMetaOptions): string {
   metaTags.push(`<title>${pageTitle}</title>`);
   metaTags.push(`<meta name="description" content="${pageDescription}" />`);
   metaTags.push(
-    `<meta name="keywords" content="software engineer, tech lead, blockchain, web3, react, typescript, full-stack developer" />`,
+    `<meta name="keywords" content="software engineer, tech lead, blockchain, web3, react, typescript, full-stack developer" />`
   );
   metaTags.push(`<meta name="author" content="${personalName}" />`);
 
@@ -52,28 +52,28 @@ export function generateSEOMeta(options: SEOMetaOptions): string {
     metaTags.push(`<meta name="robots" content="noindex, nofollow" />`);
   } else {
     metaTags.push(
-      `<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />`,
+      `<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />`
     );
   }
 
   // Open Graph
   metaTags.push(`<meta property="og:title" content="${pageTitle}" />`);
   metaTags.push(
-    `<meta property="og:description" content="${pageDescription}" />`,
+    `<meta property="og:description" content="${pageDescription}" />`
   );
   metaTags.push(`<meta property="og:image" content="${pageImage}" />`);
   metaTags.push(`<meta property="og:url" content="${canonicalUrl}" />`);
   metaTags.push(`<meta property="og:type" content="${type}" />`);
   metaTags.push(`<meta property="og:site_name" content="${personalName}" />`);
   metaTags.push(
-    `<meta property="og:locale" content="${locale.replace("-", "_")}" />`,
+    `<meta property="og:locale" content="${locale.replace("-", "_")}" />`
   );
 
   // Twitter Card
   metaTags.push(`<meta name="twitter:card" content="summary_large_image" />`);
   metaTags.push(`<meta name="twitter:title" content="${pageTitle}" />`);
   metaTags.push(
-    `<meta name="twitter:description" content="${pageDescription}" />`,
+    `<meta name="twitter:description" content="${pageDescription}" />`
   );
   metaTags.push(`<meta name="twitter:image" content="${pageImage}" />`);
   metaTags.push(`<meta name="twitter:creator" content="@xdemocle" />`);
@@ -82,16 +82,16 @@ export function generateSEOMeta(options: SEOMetaOptions): string {
   metaTags.push(`<link rel="canonical" href="${canonicalUrl}" />`);
 
   // Hreflang tags
-  LOCALES.forEach((lang) => {
+  LOCALES.forEach(lang => {
     const hrefUrl = `${WEBSITE_URL}${lang === LOCALE_DEFAULT ? "" : `/${lang}`}${path}`;
     metaTags.push(
-      `<link rel="alternate" hreflang="${lang}" href="${hrefUrl}" />`,
+      `<link rel="alternate" hreflang="${lang}" href="${hrefUrl}" />`
     );
   });
 
   // x-default hreflang
   metaTags.push(
-    `<link rel="alternate" hreflang="x-default" href="${WEBSITE_URL}${path}" />`,
+    `<link rel="alternate" hreflang="x-default" href="${WEBSITE_URL}${path}" />`
   );
 
   return metaTags.join("\n    ");
@@ -128,7 +128,7 @@ export function generateStructuredData(
     skills?: string[];
     breadcrumbs?: Array<{ name: string; url: string }>;
     locale?: Locale;
-  },
+  }
 ): string {
   if (type === "person") {
     const {

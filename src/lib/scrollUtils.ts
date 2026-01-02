@@ -18,7 +18,7 @@ export function scrollToTop(smooth = false): void {
 export function scrollToElement(
   elementId: string,
   smooth = false,
-  offset = 0,
+  offset = 0
 ): void {
   const element = document.getElementById(elementId);
   if (element) {

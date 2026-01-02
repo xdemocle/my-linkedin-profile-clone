@@ -41,7 +41,7 @@ export function SEO({
     const updateMetaTag = (
       name: string,
       content: string,
-      isProperty = false,
+      isProperty = false
     ) => {
       const attribute = isProperty ? "property" : "name";
       let element = document.querySelector(`meta[${attribute}="${name}"]`);
@@ -59,7 +59,7 @@ export function SEO({
     updateMetaTag("description", pageDescription);
     updateMetaTag(
       "keywords",
-      "software engineer, tech lead, blockchain, web3, react, typescript, full-stack developer",
+      "software engineer, tech lead, blockchain, web3, react, typescript, full-stack developer"
     );
     updateMetaTag("author", personal.name);
 
@@ -85,13 +85,13 @@ export function SEO({
     } else {
       updateMetaTag(
         "robots",
-        "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+        "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
       );
     }
 
     // Update canonical link
     let canonical = document.querySelector(
-      'link[rel="canonical"]',
+      'link[rel="canonical"]'
     ) as HTMLLinkElement;
     if (!canonical) {
       canonical = document.createElement("link");
@@ -102,11 +102,11 @@ export function SEO({
 
     // Update or create alternate language links (hreflang)
     const existingAlternates = document.querySelectorAll(
-      'link[rel="alternate"]',
+      'link[rel="alternate"]'
     );
-    existingAlternates.forEach((link) => link.remove());
+    existingAlternates.forEach(link => link.remove());
 
-    LOCALES.forEach((lang) => {
+    LOCALES.forEach(lang => {
       const alternate = document.createElement("link");
       alternate.rel = "alternate";
       alternate.hreflang = lang;
