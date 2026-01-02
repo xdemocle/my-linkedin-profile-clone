@@ -1,519 +1,883 @@
 {
+  "awards": [
+    {
+      "awarder": "Stack Overflow",
+      "date": "2019-01-01",
+      "summary": "مصنف باستمرار ضمن أفضل 10% من المساهمين لعلامات React و JavaScript.",
+      "title": "أفضل 10% في Stack Overflow"
+    },
+    {
+      "awarder": "نجاح العميل",
+      "date": "2023-01-01",
+      "summary": "تحسين كفاءة الكود وتقليل الدين التقني.",
+      "title": "إعادة هيكلة SPA قديم وفرت حوالي €50,000"
+    },
+    {
+      "awarder": "إنجاز الفريق",
+      "date": "2023-01-01",
+      "summary": "تقليل الأخطاء بنسبة 25% وتطبيق سير عمل ومعايير كود أفضل.",
+      "title": "تحسين جودة الكود بنسبة 40%"
+    },
+    {
+      "awarder": "Mentorship",
+      "date": "2024-01-01",
+      "summary": "تقديم الإرشاد والتوجيه المهني للمطورين المبتدئين.",
+      "title": "إرشاد أكثر من 5 مطورين للحصول على وظائف جديدة"
+    },
+    {
+      "awarder": "قيادة تقنية",
+      "date": "2022-01-01",
+      "summary": "إنشاء معايير تطوير لتحسين جودة الكود واتساقه.",
+      "title": "كتابة أدلة أسلوب على مستوى المنظومة"
+    },
+    {
+      "awarder": "Open Source",
+      "date": "2022-01-01",
+      "summary": "بناء أدوات مفتوحة المصدر لحماية المستخدمين من التصيد والاحتيال.",
+      "title": "تسليم إضافات أمن سيبراني"
+    }
+  ],
   "basics": {
-    "name": "روكو روسو",
-    "label": "مهندس برمجيات واجهة أمامية",
-    "image": "/assets/ui/rocco-me-nft.png",
     "email": "hello@rocco.me",
-    "url": "https://rocco.me",
-    "summary": "مهندس برمجيات واجهة أمامية بخبرة تزيد عن 8 سنوات في تطوير الويب. أقوم ببناء تطبيقات ويب عالية الأداء وسهلة الوصول باستخدام React و TypeScript وأطر العمل الحديثة.",
+    "image": "/assets/ui/rocco-me-nft.png",
+    "label": "مهندس برمجيات واجهة أمامية",
     "location": {
       "city": "Foggia",
-      "region": "Apulia",
-      "countryCode": "IT"
+      "countryCode": "IT",
+      "region": "Apulia"
     },
+    "name": "روكو روسو",
     "profiles": [
       {
         "network": "GitHub",
-        "username": "xdemocle",
-        "url": "https://github.com/xdemocle"
+        "url": "https://github.com/xdemocle",
+        "username": "xdemocle"
       },
       {
         "network": "LinkedIn",
-        "username": "roccorusso",
-        "url": "https://linkedin.com/in/roccorusso"
+        "url": "https://linkedin.com/in/roccorusso",
+        "username": "roccorusso"
       },
       {
         "network": "Twitter",
-        "username": "xdemocle",
-        "url": "https://twitter.com/xdemocle"
+        "url": "https://twitter.com/xdemocle",
+        "username": "xdemocle"
       }
-    ]
+    ],
+    "summary": "مهندس برمجيات واجهة أمامية بخبرة تزيد عن 8 سنوات في تطوير الويب. أقوم ببناء تطبيقات ويب عالية الأداء وسهلة الوصول باستخدام React و TypeScript وأطر العمل الحديثة.",
+    "url": "https://rocco.me"
   },
-  "work": [
+  "certificates": [
     {
-      "name": "The Web3 Ninja",
-      "position": "مهندس برمجيات واجهة أمامية",
-      "url": "https://theweb3.ninja",
-      "startDate": "2024-09-01",
-      "endDate": "",
-      "summary": "بناء حلول web3 مع التركيز على أداء الواجهة الأمامية وتجربة المستخدم لتطبيقات البلوكشين.",
-      "highlights": ["تحسين مكونات React لعرض بيانات البلوكشين، مما قلل من أوقات التحميل بنسبة 40%", "بناء 3 تطبيقات DApp وواجهات API مما حسّن سرعة المعاملات بنسبة 15%.", "تقليل رسوم الغاز عبر تحسين تكامل البلوكشين."],
-      "location": "عن بُعد"
+      "date": "2020-01-01",
+      "issuer": "Udemy - Academind بواسطة Maximilian Schwarzmüller",
+      "name": "React - الدليل الشامل (يشمل Hooks، React Router، Redux)",
+      "url": "https://www.udemy.com/certificate/UC-1Y9Z2R3N/"
     },
     {
-      "name": "Games Global",
-      "position": "قائد هندسة الواجهة الأمامية",
-      "url": "https://www.gamesglobal.com",
-      "startDate": "2023-09-01",
-      "endDate": "2024-09-01",
-      "summary": "قيادة تطوير الواجهة الأمامية لمنصات الألعاب.",
-      "highlights": ["تطوير واجهة المستخدم لنظام الجائزة الكبرى Lotsaloot™.", "تعزيز تفاعل اللاعبين عبر منطق مكافآت متعدد المستويات.", "التعاون بين الفرق لتحسين مؤشرات الاحتفاظ بالمستخدمين."],
-      "location": "سوييقي، مالطا، عن بُعد"
+      "date": "2020-03-01",
+      "issuer": "Cloud Native Computing Foundation",
+      "name": "مسؤول Kubernetes معتمد",
+      "url": "https://www.cncf.io/certification/cka/"
     },
     {
-      "name": "Shiba Inu",
-      "position": "Tech Lead, Web3",
-      "url": "https://shibatoken.com",
-      "startDate": "2023-01-01",
-      "endDate": "2023-08-01",
-      "summary": "قيادة التطوير التقني لمنظومة Shiba Inu.",
-      "highlights": ["قيادة فريق مكوّن من 12 شخصًا وزيادة الإنتاجية بنسبة 30%.", "تقليل الأخطاء بنسبة 25% ورفع جودة الكود بنسبة 40%.", "خدمة 5 ملايين مستخدم و3 آلاف زائر متزامن."],
-      "location": "Remote"
-    },
-    {
-      "name": "Ajna Labs",
-      "position": "قائد هندسة الواجهة الأمامية",
-      "url": "https://www.ajna.finance",
-      "startDate": "2022-08-01",
-      "endDate": "2023-08-01",
-      "summary": "قيادة تطوير الواجهة الأمامية لتطبيقات DeFi.",
-      "highlights": ["نشر تطبيق SPA بسيولة تتجاوز 20 مليون دولار.", "إنشاء SDK يقلل وقت الدمج بنسبة 50%.", "إطلاق مكتبة تصميم على مستوى المنظومة زادت سرعة التطوير بنسبة 25%."],
-      "location": "Remote"
-    },
-    {
-      "name": "Linum Labs",
-      "position": "قائد هندسة الواجهة الأمامية",
-      "url": "https://linumlabs.com",
-      "startDate": "2021-08-01",
-      "endDate": "2022-07-01",
-      "summary": "قيادة تطوير تطبيقات Web3 والعملات الرقمية.",
-      "highlights": ["الإشراف على أكثر من 10 مشاريع لامركزية.", "إرشاد 4 مطورين للواجهة الأمامية.", "تحسين قابلية التوسع وتناسق واجهة المستخدم."],
-      "location": "Remote"
-    },
-    {
-      "name": "Omnia DeFi",
-      "position": "Lead Software Engineer, Web3",
-      "url": "https://omniadefi.com",
-      "startDate": "2021-01-01",
-      "endDate": "2021-07-01",
-      "summary": "بناء بنية تحتية لـ DeFi وتكاملات العقود الذكية.",
-      "highlights": ["بناء لوحة تحكم للـ vesting والـ farming متكاملة مع Ethereum.", "تطوير طبقات تفاعل مع العقود الذكية لعمليات DeFi."],
-      "location": "Remote"
-    },
-    {
-      "name": "HCLTech",
-      "position": "Lead Software Engineer",
-      "url": "https://www.hcltech.com",
-      "startDate": "2014-12-01",
-      "endDate": "2015-07-01",
-      "summary": "تقديم حلول برمجية على مستوى المؤسسات.",
-      "highlights": ["تنفيذ مشاريع إعادة هيكلة Web2 على مستوى المؤسسات.", "تحسين الأنظمة القديمة لتكون جاهزة للسحابة."],
-      "location": "The Hague, Netherlands"
-    },
-    {
-      "name": "Elsevier",
-      "position": "Software Engineer",
-      "url": "https://www.elsevier.com",
-      "startDate": "2013-01-01",
-      "endDate": "2014-12-01",
-      "summary": "بناء منصات بيانات علمية (Reaxys 2 Web App).",
-      "highlights": ["المساهمة في تطبيقات ويب علمية لأنظمة بيانات كيميائية.", "تطوير واجهات مبنية على Angular لأجهزة لوحية متعددة المنصات."],
-      "location": "Amsterdam, Netherlands"
-    },
-    {
-      "name": "AdForum",
-      "position": "Software Engineer",
-      "url": "https://www.adforum.com",
-      "startDate": "2012-01-01",
-      "endDate": "2013-01-01",
-      "summary": "بناء سوق (Marketplace) لصناعة الإعلان.",
-      "highlights": ["بناء سوق إعلاني متعدد اللغات مع أكثر من 3 ملايين زائر شهريًا.", "تحسين SEO وتفاعل المستخدمين على بوابات عالية الزيارات."],
-      "location": "Paris, France"
-    }
-  ],
-  "volunteer": [
-    {
-      "organization": "The Web3 Ninja",
-      "position": "مرشد للزملاء",
-      "url": "https://theweb3ninja.com",
-      "startDate": "2024-01-01",
-      "endDate": "",
-      "summary": "إرشاد مطورين ينتقلون إلى Web3 ومساعدة من يغيّرون مسارهم المهني لدخول المجال التقني.",
-      "highlights": ["مساعدة ~12 زميلًا، 5 حصلوا على وظائف خلال 1-4 أشهر", "مساعدة شخص عمره 32 عامًا في تغيير مساره المهني", "تهيئة 2 متدربين للحصول على أول وظيفة Junior في 2023"]
-    },
-    {
-      "organization": "Steunactie",
-      "position": "مسؤول جمع التبرعات",
-      "url": "https://www.steunactie.nl",
-      "startDate": "2023-01-01",
-      "endDate": "",
-      "summary": "تخصيص وقت لمساعدة المحتاجين في أفريقيا والشرق الأوسط عبر مبادرات التمويل الجماعي.",
-      "highlights": ["ساعد عبد الكريم على الشفاء: معركة طفل حرب من أجل الحياة", "أنقذ إلياس وعائلته: من خيمة إلى الأمان"]
-    },
-    {
-      "organization": "CyberGrandpa",
-      "position": "عضو في طاقم الاستشارات",
-      "url": "https://cybergrandpa.space",
-      "startDate": "2022-01-01",
-      "endDate": "",
-      "summary": "دليل موثوق للسلامة على الإنترنت والحماية من الاحتيال والتصيد والبرمجيات الخبيثة. خدمات أمن سيبراني احترافية بنظام اشتراك."
+      "date": "2019-01-01",
+      "issuer": "Scrum.org",
+      "name": "Professional Scrum Master I",
+      "url": "https://www.scrum.org/professional-scrum-master-i-certification"
     }
   ],
   "education": [
     {
-      "institution": "مدرسة أثينا",
-      "url": "",
       "area": "علوم الحاسوب",
-      "studyType": "دورة مهنية",
-      "startDate": "2009-01-01",
+      "courses": [],
       "endDate": "2010-01-01",
+      "institution": "مدرسة أثينا",
       "score": "",
-      "courses": []
-    }
-  ],
-  "awards": [
-    {
-      "title": "أفضل 10% في Stack Overflow",
-      "date": "2019-01-01",
-      "awarder": "Stack Overflow",
-      "summary": "مصنف باستمرار ضمن أفضل 10% من المساهمين لعلامات React و JavaScript."
-    },
-    {
-      "title": "إعادة هيكلة SPA قديم وفرت حوالي €50,000",
-      "date": "2023-01-01",
-      "awarder": "نجاح العميل",
-      "summary": "تحسين كفاءة الكود وتقليل الدين التقني."
-    },
-    {
-      "title": "تحسين جودة الكود بنسبة 40%",
-      "date": "2023-01-01",
-      "awarder": "إنجاز الفريق",
-      "summary": "تقليل الأخطاء بنسبة 25% وتطبيق سير عمل ومعايير كود أفضل."
-    },
-    {
-      "title": "إرشاد أكثر من 5 مطورين للحصول على وظائف جديدة",
-      "date": "2024-01-01",
-      "awarder": "Mentorship",
-      "summary": "تقديم الإرشاد والتوجيه المهني للمطورين المبتدئين."
-    },
-    {
-      "title": "كتابة أدلة أسلوب على مستوى المنظومة",
-      "date": "2022-01-01",
-      "awarder": "قيادة تقنية",
-      "summary": "إنشاء معايير تطوير لتحسين جودة الكود واتساقه."
-    },
-    {
-      "title": "تسليم إضافات أمن سيبراني",
-      "date": "2022-01-01",
-      "awarder": "Open Source",
-      "summary": "بناء أدوات مفتوحة المصدر لحماية المستخدمين من التصيد والاحتيال."
-    }
-  ],
-  "certificates": [
-    {
-      "name": "React - الدليل الشامل (يشمل Hooks، React Router، Redux)",
-      "date": "2020-01-01",
-      "issuer": "Udemy - Academind بواسطة Maximilian Schwarzmüller",
-      "url": "https://www.udemy.com/certificate/UC-1Y9Z2R3N/"
-    },
-    {
-      "name": "مسؤول Kubernetes معتمد",
-      "date": "2020-03-01",
-      "issuer": "Cloud Native Computing Foundation",
-      "url": "https://www.cncf.io/certification/cka/"
-    },
-    {
-      "name": "Professional Scrum Master I",
-      "date": "2019-01-01",
-      "issuer": "Scrum.org",
-      "url": "https://www.scrum.org/professional-scrum-master-i-certification"
-    }
-  ],
-  "publications": [],
-  "skills": [
-    {
-      "name": "الواجهة الأمامية",
-      "level": "خبير",
-      "keywords": ["React", "React Router", "Preact", "Svelte", "TypeScript", "JavaScript", "Next.js", "Remix", "Redux", "Zustand", "TanStack Query", "CSS", "CSS-in-JS", "TailwindCSS", "Styled Components", "Atomic Design", "Responsive Design", "Web Accessibility (a11y)", "Performance Optimization", "Vue.js", "Angular", "Astro", "SolidJS", "SASS/SCSS", "Framer Motion", "Three.js", "WebGL", "PWA", "Web Components"]
-    },
-    {
-      "name": "Web3 & Blockchain",
-      "level": "Expert",
-      "keywords": ["Solidity", "Smart Contracts", "EVM", "Wagmi", "Viem", "Ethers.js", "Web3.js", "DeFi DApps", "NFT Marketplaces", "IPFS", "The Graph", "Hardhat", "Foundry", "Wallet Integration", "SDK Development", "Chainlink", "OpenZeppelin", "Alchemy", "Infura", "ENS", "Layer 2 Solutions", "Token Standards (ERC-20/721/1155)", "Vyper", "Cairo (StarkNet)", "Subgraphs"]
-    },
-    {
-      "name": "AI & Machine Learning",
-      "level": "Advanced",
-      "keywords": ["LLM Agents", "Prompt Engineering", "Claude API", "OpenAI API", "RAG Systems", "AI-Assisted Development", "Cloudflare AI", "LangChain", "Vector Databases", "Embeddings", "Fine-tuning", "Hugging Face", "Stable Diffusion", "MCP (Model Context Protocol)"]
-    },
-    {
-      "name": "Backend Development",
-      "level": "Advanced",
-      "keywords": ["Node.js", "Express", "Hono", "NestJS", "GraphQL", "REST APIs", "tRPC", "MongoDB", "PostgreSQL", "Drizzle ORM", "Prisma", "Redis", "Cloudflare D1", "Better Auth", "Flask", "Python", "FastAPI", "Deno", "Bun", "MySQL", "SQLite", "Supabase", "Firebase", "WebSockets", "Message Queues", "Microservices", "Serverless Functions", "OAuth/OIDC", "JWT"]
-    },
-    {
-      "name": "DevOps & Cloud",
-      "level": "Advanced",
-      "keywords": ["Docker", "Kubernetes", "CI/CD", "GitHub Actions", "AWS", "GCP", "Cloudflare Workers", "Cloudflare Pages", "Vercel", "Heroku", "Wrangler", "Terraform", "Nginx", "Linux/Unix", "Shell Scripting", "AWS Lambda", "AWS S3", "AWS EC2", "Cloudflare R2", "Cloudflare KV", "DigitalOcean", "Railway", "Render", "Monitoring/Logging", "Sentry"]
-    },
-    {
-      "name": "Tools & Testing",
-      "level": "Expert",
-      "keywords": ["Git", "GitHub", "GitLab", "Webpack", "Vite", "Turborepo", "pnpm", "Figma", "Jest", "Vitest", "Playwright", "Testing Library", "Selenium", "Storybook", "Cypress", "ESLint", "Prettier", "Biome", "npm", "yarn", "Postman", "Insomnia", "Chrome DevTools", "Lighthouse", "Nx", "Lerna", "Changesets", "Husky", "Commitlint"]
-    },
-    {
-      "name": "Soft Skills",
-      "level": "Expert",
-      "keywords": ["Technical Mentoring", "Code Review", "Technical Writing", "Architecture Design", "Agile/Scrum", "Remote Collaboration", "Team Leadership", "Project Estimation", "Client Communication", "Technical Interviews", "Documentation", "Pair Programming", "Problem Solving", "Debugging"]
-    }
-  ],
-  "languages": [
-    {
-      "language": "الإنجليزية",
-      "fluency": "كفاءة مهنية"
-    },
-    {
-      "language": "الإسبانية",
-      "fluency": "كفاءة أساسية"
-    },
-    {
-      "language": "الإيطالية",
-      "fluency": "كفاءة أصلية أو ثنائية اللغة"
-    },
-    {
-      "language": "البرتغالية",
-      "fluency": "كفاءة أساسية"
-    },
-    {
-      "language": "الفرنسية",
-      "fluency": "كفاءة أساسية"
-    },
-    {
-      "language": "Zulu",
-      "fluency": "كفاءة أساسية"
+      "startDate": "2009-01-01",
+      "studyType": "دورة مهنية",
+      "url": ""
     }
   ],
   "interests": [
     {
-      "name": "التكنولوجيا",
-      "keywords": ["تطوير الويب", "البلوكشين", "AI/ML", "إنترنت الأشياء", "الأمن السيبراني", "Open Source", "AI", "Clean Code", "Scalability", "Architecture", "Problem-Solving"]
+      "keywords": [
+        "تطوير الويب",
+        "البلوكشين",
+        "AI/ML",
+        "إنترنت الأشياء",
+        "الأمن السيبراني",
+        "Open Source",
+        "AI",
+        "Clean Code",
+        "Scalability",
+        "Architecture",
+        "Problem-Solving"
+      ],
+      "name": "التكنولوجيا"
     },
     {
-      "name": "الهوايات",
-      "keywords": ["التصوير الفوتوغرافي", "السفر", "الألعاب", "الطبخ", "القراءة", "التدريس", "التعليم"]
+      "keywords": [
+        "التصوير الفوتوغرافي",
+        "السفر",
+        "الألعاب",
+        "الطبخ",
+        "القراءة",
+        "التدريس",
+        "التعليم"
+      ],
+      "name": "الهوايات"
     },
     {
-      "name": "العقلية والقيم",
-      "keywords": ["الابتكار", "الاستراتيجية", "التفكير المنظومي", "القدرة على التكيف", "النمو", "الأخلاق", "التعاطف", "التعلم المستمر"]
+      "keywords": [
+        "الابتكار",
+        "الاستراتيجية",
+        "التفكير المنظومي",
+        "القدرة على التكيف",
+        "النمو",
+        "الأخلاق",
+        "التعاطف",
+        "التعلم المستمر"
+      ],
+      "name": "العقلية والقيم"
     },
     {
-      "name": "الثقافة والتعبير",
-      "keywords": ["عقلية عالمية", "اللغات", "البحث", "الكتابة", "الإبداع"]
+      "keywords": [
+        "عقلية عالمية",
+        "اللغات",
+        "البحث",
+        "الكتابة",
+        "الإبداع"
+      ],
+      "name": "الثقافة والتعبير"
     }
   ],
-  "references": [
+  "languages": [
     {
-      "name": "Hiroshi Tanaka",
-      "reference": "في تجربتي في العمل مع Rocco، لقد تأثرت باستمرار بمزيجه الفريد من الاحترافية والدفء. إنه يزرع بسهولة جواً تعاونياً يكون في الوقت نفسه مريحاً ومركزاً. معرفة Rocco في هندسة البرمجيات واسعة، لكن ما يميزه حقاً هو قابليته للوصول إليه. رغم خبرته، لا يبدو أبداً مخيفاً. على العكس، هو دائماً حريص على المشاركة والتوجيه والدعم. إنه حقاً امتياز العمل جنباً إلى جنب مع شخص لديه مثل هذا المزيج النادر من الصفات.",
-      "position": "مهندس برمجيات أول في Guideline",
-      "relationship": "تقرير مباشر",
-      "date": "2023-09-01"
+      "fluency": "كفاءة مهنية",
+      "language": "الإنجليزية"
     },
     {
-      "name": "Sofia Andersson",
-      "reference": "Rocco هو المستقبل",
-      "position": "Archeologo I fascia (DM 244/2019)",
-      "relationship": "عميل",
-      "date": "2023-01-27"
+      "fluency": "كفاءة أساسية",
+      "language": "الإسبانية"
     },
     {
-      "name": "Mateo Fernández",
-      "reference": "Rocco مطور frontend رائع يجعل أي تصاميم حقيقية للمستخدمين النهائيين. إنه ماهر: يطرح دائماً أسئلة لفهم التفاصيل الصغيرة التي ستحدث الفرق لمنتج رائع، يقترح حلولاً وتقنيات أفضل. الكود دائماً نظيف ومنظم ومعاد هيكلته بشكل جيد. علاوة على ذلك، Rocco متاح دائماً عند الحاجة وهو ودود جداً ويدعم الآخرين دائماً",
-      "position": "مهندس Solidity أول",
-      "relationship": "مدير",
-      "date": "2022-12-16"
+      "fluency": "كفاءة أصلية أو ثنائية اللغة",
+      "language": "الإيطالية"
     },
     {
-      "name": "Lars Nielsen",
-      "reference": "Rocco هو نوع الشخص الذي تريده في فريقك، مؤهل بدرجة عالية وبدون أي خوف من الغوص في الجزء الأعمق من المسبح. لقد أعاد تصميم منصتنا الإلكترونية من الصفر في غضون أشهر، شيء كان يعتبر مستحيلاً من قبل عدة أشخاص قبل Rocco. بالإضافة إلى براعته التقنية، إنه شخص ودود بنى بسرعة رابطة شخصية مع فريقنا، بروح الدعابة والموقف الرائع. لا يمكنني أن أوصي بـ Rocco بما فيه الكفاية!",
-      "position": "الرئيس التنفيذي للبرمجيات المركزة على المنتج، بناء برمجيات المؤسسات من الجيل القادم للتجارة",
-      "relationship": "مدير",
-      "date": "2020-06-05"
+      "fluency": "كفاءة أساسية",
+      "language": "البرتغالية"
     },
     {
-      "name": "Emma van der Berg",
-      "reference": "عندما نفد من الشركة الأشخاص للقيام بمشروع Angular + Gulp وسألوني إذا كنت أعرف أحداً يمكنه المساعدة، كنت أعرف أن Rocco هو الشخص الذي سينقذ الموقف. تمكن Rocco من تحقيق نتائج مذهلة في إطار زمني محدود جداً، وحتى عندما وُضع تحت ضغط كبير، حافظ على انتباهه للتفاصيل ولم يفقد التركيز أبداً.",
-      "position": "مطور full stack",
-      "relationship": "زميل",
-      "date": "2015-08-08"
+      "fluency": "كفاءة أساسية",
+      "language": "الفرنسية"
     },
     {
-      "name": "Rajesh Kumar",
-      "reference": "Rocco مطور Front End ممتاز مع الكثير من المعرفة في تقنيات Front End. يعرف الكثير من الأدوات التي تدعم التطوير بشكل أسهل وأسرع. مهما كانت الأداة التي يستخدمها Rocco، سيتبع المعايير دائماً. إنه عضو فريق جيد ومكرس دائماً للعمل الذي لاحظته عند العمل على نفس المشروع. سينهي مهامه بالعمل ساعات إضافية.",
-      "position": "مهندس معماري تقني في HCL Technologies",
-      "relationship": "زميل",
-      "date": "2015-07-29"
-    },
-    {
-      "name": "Ingrid Schmidt",
-      "reference": "Rocco مطور front end أول رائع. في فريقي قام بإعداد الإطار لموضوع Drupal للموقع الجديد. سيبذل قصارى جهده لإنهاء العمل بأفضل نتيجة. Rocco موظف مخلص وشخص رائع للعمل معه. أحب عمله الجاد وطاقته السعيدة. كمالك منتج، من الرائع العمل مع Rocco لأنك تعرف أنه سينجز العمل.",
-      "position": "مالك منتج أول",
-      "relationship": "زميل",
-      "date": "2015-07-26"
-    },
-    {
-      "name": "Lukas Novak",
-      "reference": "قضينا وقتاً ممتعاً مع Rocco أثناء العمل على تطبيق Phonegap مبني على CoffeeScript و Backbone. إنه يسعى للكود النظيف وفصل الاهتمامات في عمله في frontend، والذي مزين بتعليقات معبرة. يحاول دائماً أن يكون محدثاً مع أحدث الأطر.",
-      "position": "Fullstack Go/TS/LLM",
-      "relationship": "زميل",
-      "date": "2015-07-22"
-    },
-    {
-      "name": "Carlos Mendoza",
-      "reference": "Rocco شخص منتبه جداً للتفاصيل. يتأكد من أن كل شيء يعمل وفقاً للمواصفات ويستعد لذلك. إنه أيضاً الزميل المثالي للعمل معه. يحاول دائماً مساعدة الآخرين عندما يستطيع، ويتأكد من أنك تلقيت كل المعلومات المطلوبة.",
-      "position": "مهندس أمان أول في Bird",
-      "relationship": "زميل",
-      "date": "2015-06-15"
-    },
-    {
-      "name": "Pierre Dubois",
-      "reference": "Rocco لديه معيار مهني عالي فيما يتعلق بتطوير front-end وأدوات التطوير الآلية. إنه متعة وممتع جداً العمل مع Rocco. إنه صادق، يقول ما يفكر فيه، يمكن أن يكون عنيداً أحياناً لكنه يتمكن من جعل الجميع يبتسمون. وضع Rocco مساراً واضحاً جداً لنفسه، \"التعلم، الاستمرار في التحسن ووضع مهاراته موضع التطبيق\". تعلمت الكثير من Rocco. مساهماته في الفرق عالية الجودة وخلقت منصة مستدامة لتطوير front-end. أتمنى العمل مع Rocco مرة أخرى يوماً ما ومقابلة المزيد من الأشخاص مثله.",
-      "position": "مهندس معلومات / DevOps",
-      "relationship": "زميل",
-      "date": "2015-06-02"
-    },
-    {
-      "name": "Marco Rossi",
-      "reference": "Rocco مستشار تقنية معلومات متحمس ومؤهل بدرجة عالية. لديه موقف قوي تجاه التحديات اليومية ويولي اهتماماً لأداء نتائج نهائية عالية الجودة مع توفير أكبر قدر ممكن من الوقت. لهذا السبب يحدث نفسه باستمرار بأحدث التقنيات، بشكل أساسي Front-end، للحصول على أقصى النتائج من ناحية الوقت والجودة. إنه أيضاً شخص لطيف وكان من دواعي سروري العمل بجانبه مهنياً وشخصياً.",
-      "position": "مطور Back-end PHP Symfony/Drupal @المفوضية الأوروبية DIGIT",
-      "relationship": "زميل",
-      "date": "2015-03-30"
-    },
-    {
-      "name": "Jakub Kowalski",
-      "reference": "لقد كان متعة حقيقية العمل مع Rocco على المشاريع في Youwin. لديه معرفة عظيمة في كل مجال من مجالات تطوير الويب: بدءاً من تكوين بيئات التطوير والتشغيل، خوادم الويب وأنظمة التخزين المؤقت مروراً بتطوير backend وانتهاءً بمهارات JavaScript و HTML و HTML5 و CSS الواسعة لتسليم frontend. Rocco شخص يمكن تركه وحده مع مهام كبيرة لأنه يستطيع التعامل مع العملية كاملة بنفسه، لكن في نفس الوقت مع عقله المنفتح وإمكانيته لمشاركة واكتساب المعرفة هو لاعب فريق رائع يحب استشارة الآراء لتسليم منتجات بأفضل جودة. عقلاني وموجه نحو الرشاقة يمكنه العمل في بيئة تعمل بأي وتيرة. عقل عظيم، صديق عظيم، شخص اجتماعي مع كل المهارات التي قد تحتاجها شركة تطوير ويب. Rocco هو الخيار الأفضل لفريق رائع من المطورين اللامعين لأنه معه يمكنك تجاوز المعايير.",
-      "position": "رئيس التطوير في Praetorian Technology",
-      "relationship": "زميل",
-      "date": "2013-11-08"
-    },
-    {
-      "name": "Oliver Müller",
-      "reference": "ساعدني Rocco في تطوير مسيرتي المهنية كمطور من خلال منحي فرصة لتعلم مهارات العالم الحقيقي من خلال مشاريع حقيقية. كمية المعرفة التي اكتسبتها خلال فترة تدريبي ساعدتني على النمو من متدرب إلى مطور مبتدئ والحصول على وظيفة في شركة إنترنت الأشياء بعد الأشهر الثلاثة. إنه ذو خبرة كبيرة وغرس فيّ مبادئ جيدة أنا ممتن جدًا لها. أوصي به بشدة إذا كنت تريد مهندس برمجيات وقائد ذو معرفة واسعة.",
-      "position": "مهندس برمجيات | تطوير البرمجيات | المنتج",
-      "relationship": "تقرير مباشر",
-      "date": "2025-10-09"
+      "fluency": "كفاءة أساسية",
+      "language": "Zulu"
     }
   ],
   "projects": [
     {
-      "name": "Ajna Labs - تطبيق DeFi + SDK",
       "description": "تصميم تطبيق مالي لامركزي و SDK للإقراض والاقتراض في فضاء web3. تم بناؤه باستخدام React و TypeScript و Ethers.js وعقود Solidity الذكية.",
-      "highlights": ["مدمج مع أكثر من 5 شبكات بلوكشين للإقراض عبر السلاسل", "مصممة واجهة عالية الأداء تدير أكثر من مليون دولار في المعاملات", "تم تطوير SDK مستخدم من قبل أكثر من 10 مطورين خارجيين للتكاملات المخصصة"],
-      "keywords": ["React", "TypeScript", "Ethers.js", "Solidity", "DeFi", "Web3"],
-      "startDate": "2022-01-01",
       "endDate": "2022-12-01",
-      "url": "https://ajna.finance",
-      "roles": ["قائد الواجهة الأمامية"],
       "entity": "Ajna Labs",
-      "type": "application"
-    },
-    {
-      "name": "Mode Network - إعادة هيكلة React على نطاق واسع",
-      "description": "قيادة إعادة هيكلة تطبيق React أحادي إلى قاعدة كود معيارية وقابلة للصيانة لشبكة بلوكشين من الطبقة الثانية.",
-      "highlights": ["تقليل الدين الفني بنسبة 60% من خلال تجزئة المكونات", "تحسين أوقات تحميل الصفحات بنسبة 35% مع تقسيم الكود والتحميل الكسول", "إرشاد فريق من 4 مطورين حول أنماط React الحديثة"],
-      "keywords": ["React", "TypeScript", "تحسين الأداء", "إعادة هيكلة الكود"],
-      "startDate": "2023-01-01",
-      "endDate": "2023-12-01",
-      "url": "https://mode.network",
-      "roles": ["قائد الواجهة الأمامية"],
-      "entity": "Mode Network",
-      "type": "application"
-    },
-    {
-      "name": "GamesGlobal - ماكينات القمار ذات الجائزة الكبرى التقدمية Lotsaloot™",
-      "description": "تطوير ألعاب ماكينات القمار ذات الجائزة الكبرى التقدمية مع ميزات متعددة اللاعبين في الوقت الحقيقي ورسومات عالية الأداء.",
-      "highlights": ["بناء نظام ماكينات قمار متعددة اللاعبين يدير أكثر من 1000 مستخدم متزامن", "تحسين عرض WebGL للحصول على 60 إطارًا في الثانية على الأجهزة منخفضة الجودة", "دمج بوابات دفع آمنة للمعاملات اليومية التي تزيد عن 100,000 دولار"],
-      "keywords": ["React", "WebGL", "WebSocket", "الألعاب", "متعدد اللاعبين"],
+      "highlights": [
+        "مدمج مع أكثر من 5 شبكات بلوكشين للإقراض عبر السلاسل",
+        "مصممة واجهة عالية الأداء تدير أكثر من مليون دولار في المعاملات",
+        "تم تطوير SDK مستخدم من قبل أكثر من 10 مطورين خارجيين للتكاملات المخصصة"
+      ],
+      "keywords": [
+        "React",
+        "TypeScript",
+        "Ethers.js",
+        "Solidity",
+        "DeFi",
+        "Web3"
+      ],
+      "name": "Ajna Labs - تطبيق DeFi + SDK",
+      "roles": [
+        "قائد الواجهة الأمامية"
+      ],
       "startDate": "2022-01-01",
-      "endDate": "2024-01-01",
-      "url": "https://gamesglobal.com",
-      "roles": ["مهندس الواجهة الأمامية"],
-      "entity": "Games Global",
-      "type": "application"
+      "type": "application",
+      "url": "https://ajna.finance"
     },
     {
-      "name": "Landworks by EnterDAO - نظام تأجير الميتافيرس",
-      "description": "تطوير نظام تأجير لامركزي للأراضي الافتراضية في الميتافيرس، مدمج مع ملكية NFT والعقود الذكية.",
-      "highlights": ["بناء سوق تأجير NFT مع أكثر من 500 مستخدم نشط شهريًا", "دمج العقود الذكية للتأجير والدفعات الآلية", "تحسين واجهة المستخدم لمعاينات الأصول ثلاثية الأبعاد المعقدة باستخدام Three.js"],
-      "keywords": ["React", "TypeScript", "Three.js", "NFT", "Web3", "DeFi"],
-      "startDate": "2021-01-01",
-      "endDate": "2022-01-01",
-      "url": "https://enterdao.xyz",
-      "roles": ["مطور الواجهة الأمامية"],
-      "entity": "EnterDAO",
-      "type": "application"
-    },
-    {
-      "name": "Omnia DeFi - لوحة تحكم Dapp للأصول في العالم الحقيقي",
-      "description": "بناء لوحة تحكم للتمويل اللامركزي لإدارة الأصول الحقيقية المميزة مع بيانات وتحليلات في الوقت الحقيقي.",
-      "highlights": ["تطوير لوحة تحكم لتتبع الأصول لأكثر من 2 مليون دولار في الأصول المميزة", "دمج بيانات البلوكشين في الوقت الحقيقي مع بروتوكول The Graph", "تصميم واجهة مستخدم متجاوبة للمستثمرين على سطح المكتب والجوال"],
-      "keywords": ["React", "GraphQL", "The Graph", "DeFi", "Web3", "Flask", "Ethereum"],
-      "startDate": "2021-01-01",
-      "endDate": "2022-01-01",
-      "url": "https://omnia-defi.com",
-      "roles": ["مطور الواجهة الأمامية"],
-      "entity": "Omnia DeFi",
-      "type": "application"
-    },
-    {
-      "name": "Lokr.io (سابقًا Polkalokr) - موقع تسويقي",
-      "description": "تصميم وتطوير موقع تسويقي لمنصة قفل الرموز المستندة إلى البلوكشين مع محتوى ديناميكي.",
-      "highlights": ["بناء موقع مدفوع بنظام إدارة المحتوى مع أكثر من 10,000 زائر شهريًا", "تحسين لتحسين محركات البحث، محققًا المرتبة الثلاثة الأولى للمصطلحات الرئيسية", "دمج مصادقة محفظة web3 لميزات العرض التوضيحي"],
-      "keywords": ["React", "Next.js", "SEO", "مصادقة Web3"],
-      "startDate": "2021-01-01",
-      "endDate": "2021-12-01",
-      "url": "https://lokr.io",
-      "roles": ["مطور الواجهة الأمامية"],
-      "entity": "Lokr.io",
-      "type": "website"
-    },
-    {
-      "name": "AltCash - مبادل العملات الرقمية B2C",
-      "description": "تطوير منصة لتبادل العملات الرقمية للمعاملات B2C مع معالجة الدفعات مدمجة.",
-      "highlights": ["بناء واجهة تبادل تدير أكثر من 50,000 دولار في تبادلات العملات الرقمية اليومية", "دمج أكثر من 5 بوابات دفع لتحويل العملات الورقية إلى العملات الرقمية", "تصميم مصادقة مستخدم آمنة مع التحقق من KYC"],
-      "keywords": ["React", "Node.js", "بوابة الدفع", "العملات الرقمية"],
-      "startDate": "2020-01-01",
-      "endDate": "2021-01-01",
-      "url": "https://alt.cash",
-      "roles": ["مطور Full Stack"],
-      "entity": "AltCash",
-      "type": "application"
-    },
-    {
-      "name": "CyberGrandpa مكافحة الاحتيال - امتداد المتصفح",
-      "description": "إنشاء امتداد متصفح للكشف عن الاحتيال عبر الإنترنت ومنعه للمستخدمين الضعفاء مع تنبيهات في الوقت الحقيقي.",
-      "highlights": ["تطوير امتداد مع أكثر من 1000 مستخدم نشط على متجر Chrome", "تنفيذ كشف الاحتيال المستند إلى التعلم الآلي بدقة 85%", "تصميم واجهة مستخدم بديهية للمستخدمين المسنين غير التقنيين"],
-      "keywords": ["JavaScript", "امتداد المتصفح", "التعلم الآلي", "UX"],
-      "startDate": "2019-01-01",
-      "endDate": "2020-01-01",
-      "url": "https://github.com/xdemocle/cybergrandpa",
-      "roles": ["المطور الرئيسي"],
-      "entity": "مشروع شخصي",
-      "type": "application"
-    },
-    {
-      "name": "LinkedIn Full Width - امتداد تحسين واجهة المستخدم",
-      "description": "بناء امتداد متصفح لتحسين واجهة مستخدم LinkedIn عن طريق تعظيم عرض المحتوى وإزالة المشتتات.",
-      "highlights": ["تحقيق أكثر من 500 تنزيل بتقييم 4.8/5", "زيادة إنتاجية المستخدم من خلال تحسين تخطيط المحتوى", "الحفاظ على التوافق عبر تحديثات واجهة LinkedIn"],
-      "keywords": ["JavaScript", "CSS", "امتداد المتصفح", "تحسين واجهة المستخدم"],
-      "startDate": "2018-01-01",
-      "endDate": "2019-01-01",
-      "url": "https://github.com/xdemocle/linkedin-full-width",
-      "roles": ["المنشئ"],
-      "entity": "مشروع شخصي",
-      "type": "application"
-    },
-    {
-      "name": "Tetris مع مكافآت العملات الرقمية - تطبيق صغير على Telegram",
-      "description": "تطوير لعبة Tetris كتطبيق صغير على Telegram مع مكافآت عملات رقمية مدمجة لجذب اللاعبين.",
-      "highlights": ["بناء لعبة مع أكثر من 2000 لاعب نشط في الشهر الأول", "دمج محفظة بلوكشين لمكافآت صغيرة بالـ ETH", "تحسين الأداء للحصول على لعب سلس على الجوال"],
-      "keywords": ["React", "تطوير الألعاب", "API Telegram", "Web3"],
-      "startDate": "2023-01-01",
+      "description": "قيادة إعادة هيكلة تطبيق React أحادي إلى قاعدة كود معيارية وقابلة للصيانة لشبكة بلوكشين من الطبقة الثانية.",
       "endDate": "2023-12-01",
-      "url": "https://t.me/tetris_crypto_bot",
-      "roles": ["المطور الرئيسي"],
+      "entity": "Mode Network",
+      "highlights": [
+        "تقليل الدين الفني بنسبة 60% من خلال تجزئة المكونات",
+        "تحسين أوقات تحميل الصفحات بنسبة 35% مع تقسيم الكود والتحميل الكسول",
+        "إرشاد فريق من 4 مطورين حول أنماط React الحديثة"
+      ],
+      "keywords": [
+        "React",
+        "TypeScript",
+        "تحسين الأداء",
+        "إعادة هيكلة الكود"
+      ],
+      "name": "Mode Network - إعادة هيكلة React على نطاق واسع",
+      "roles": [
+        "قائد الواجهة الأمامية"
+      ],
+      "startDate": "2023-01-01",
+      "type": "application",
+      "url": "https://mode.network"
+    },
+    {
+      "description": "تطوير ألعاب ماكينات القمار ذات الجائزة الكبرى التقدمية مع ميزات متعددة اللاعبين في الوقت الحقيقي ورسومات عالية الأداء.",
+      "endDate": "2024-01-01",
+      "entity": "Games Global",
+      "highlights": [
+        "بناء نظام ماكينات قمار متعددة اللاعبين يدير أكثر من 1000 مستخدم متزامن",
+        "تحسين عرض WebGL للحصول على 60 إطارًا في الثانية على الأجهزة منخفضة الجودة",
+        "دمج بوابات دفع آمنة للمعاملات اليومية التي تزيد عن 100,000 دولار"
+      ],
+      "keywords": [
+        "React",
+        "WebGL",
+        "WebSocket",
+        "الألعاب",
+        "متعدد اللاعبين"
+      ],
+      "name": "GamesGlobal - ماكينات القمار ذات الجائزة الكبرى التقدمية Lotsaloot™",
+      "roles": [
+        "مهندس الواجهة الأمامية"
+      ],
+      "startDate": "2022-01-01",
+      "type": "application",
+      "url": "https://gamesglobal.com"
+    },
+    {
+      "description": "تطوير نظام تأجير لامركزي للأراضي الافتراضية في الميتافيرس، مدمج مع ملكية NFT والعقود الذكية.",
+      "endDate": "2022-01-01",
+      "entity": "EnterDAO",
+      "highlights": [
+        "بناء سوق تأجير NFT مع أكثر من 500 مستخدم نشط شهريًا",
+        "دمج العقود الذكية للتأجير والدفعات الآلية",
+        "تحسين واجهة المستخدم لمعاينات الأصول ثلاثية الأبعاد المعقدة باستخدام Three.js"
+      ],
+      "keywords": [
+        "React",
+        "TypeScript",
+        "Three.js",
+        "NFT",
+        "Web3",
+        "DeFi"
+      ],
+      "name": "Landworks by EnterDAO - نظام تأجير الميتافيرس",
+      "roles": [
+        "مطور الواجهة الأمامية"
+      ],
+      "startDate": "2021-01-01",
+      "type": "application",
+      "url": "https://enterdao.xyz"
+    },
+    {
+      "description": "بناء لوحة تحكم للتمويل اللامركزي لإدارة الأصول الحقيقية المميزة مع بيانات وتحليلات في الوقت الحقيقي.",
+      "endDate": "2022-01-01",
+      "entity": "Omnia DeFi",
+      "highlights": [
+        "تطوير لوحة تحكم لتتبع الأصول لأكثر من 2 مليون دولار في الأصول المميزة",
+        "دمج بيانات البلوكشين في الوقت الحقيقي مع بروتوكول The Graph",
+        "تصميم واجهة مستخدم متجاوبة للمستثمرين على سطح المكتب والجوال"
+      ],
+      "keywords": [
+        "React",
+        "GraphQL",
+        "The Graph",
+        "DeFi",
+        "Web3",
+        "Flask",
+        "Ethereum"
+      ],
+      "name": "Omnia DeFi - لوحة تحكم Dapp للأصول في العالم الحقيقي",
+      "roles": [
+        "مطور الواجهة الأمامية"
+      ],
+      "startDate": "2021-01-01",
+      "type": "application",
+      "url": "https://omnia-defi.com"
+    },
+    {
+      "description": "تصميم وتطوير موقع تسويقي لمنصة قفل الرموز المستندة إلى البلوكشين مع محتوى ديناميكي.",
+      "endDate": "2021-12-01",
+      "entity": "Lokr.io",
+      "highlights": [
+        "بناء موقع مدفوع بنظام إدارة المحتوى مع أكثر من 10,000 زائر شهريًا",
+        "تحسين لتحسين محركات البحث، محققًا المرتبة الثلاثة الأولى للمصطلحات الرئيسية",
+        "دمج مصادقة محفظة web3 لميزات العرض التوضيحي"
+      ],
+      "keywords": [
+        "React",
+        "Next.js",
+        "SEO",
+        "مصادقة Web3"
+      ],
+      "name": "Lokr.io (سابقًا Polkalokr) - موقع تسويقي",
+      "roles": [
+        "مطور الواجهة الأمامية"
+      ],
+      "startDate": "2021-01-01",
+      "type": "website",
+      "url": "https://lokr.io"
+    },
+    {
+      "description": "تطوير منصة لتبادل العملات الرقمية للمعاملات B2C مع معالجة الدفعات مدمجة.",
+      "endDate": "2021-01-01",
+      "entity": "AltCash",
+      "highlights": [
+        "بناء واجهة تبادل تدير أكثر من 50,000 دولار في تبادلات العملات الرقمية اليومية",
+        "دمج أكثر من 5 بوابات دفع لتحويل العملات الورقية إلى العملات الرقمية",
+        "تصميم مصادقة مستخدم آمنة مع التحقق من KYC"
+      ],
+      "keywords": [
+        "React",
+        "Node.js",
+        "بوابة الدفع",
+        "العملات الرقمية"
+      ],
+      "name": "AltCash - مبادل العملات الرقمية B2C",
+      "roles": [
+        "مطور Full Stack"
+      ],
+      "startDate": "2020-01-01",
+      "type": "application",
+      "url": "https://alt.cash"
+    },
+    {
+      "description": "إنشاء امتداد متصفح للكشف عن الاحتيال عبر الإنترنت ومنعه للمستخدمين الضعفاء مع تنبيهات في الوقت الحقيقي.",
+      "endDate": "2020-01-01",
       "entity": "مشروع شخصي",
-      "type": "application"
+      "highlights": [
+        "تطوير امتداد مع أكثر من 1000 مستخدم نشط على متجر Chrome",
+        "تنفيذ كشف الاحتيال المستند إلى التعلم الآلي بدقة 85%",
+        "تصميم واجهة مستخدم بديهية للمستخدمين المسنين غير التقنيين"
+      ],
+      "keywords": [
+        "JavaScript",
+        "امتداد المتصفح",
+        "التعلم الآلي",
+        "UX"
+      ],
+      "name": "CyberGrandpa مكافحة الاحتيال - امتداد المتصفح",
+      "roles": [
+        "المطور الرئيسي"
+      ],
+      "startDate": "2019-01-01",
+      "type": "application",
+      "url": "https://github.com/xdemocle/cybergrandpa"
+    },
+    {
+      "description": "بناء امتداد متصفح لتحسين واجهة مستخدم LinkedIn عن طريق تعظيم عرض المحتوى وإزالة المشتتات.",
+      "endDate": "2019-01-01",
+      "entity": "مشروع شخصي",
+      "highlights": [
+        "تحقيق أكثر من 500 تنزيل بتقييم 4.8/5",
+        "زيادة إنتاجية المستخدم من خلال تحسين تخطيط المحتوى",
+        "الحفاظ على التوافق عبر تحديثات واجهة LinkedIn"
+      ],
+      "keywords": [
+        "JavaScript",
+        "CSS",
+        "امتداد المتصفح",
+        "تحسين واجهة المستخدم"
+      ],
+      "name": "LinkedIn Full Width - امتداد تحسين واجهة المستخدم",
+      "roles": [
+        "المنشئ"
+      ],
+      "startDate": "2018-01-01",
+      "type": "application",
+      "url": "https://github.com/xdemocle/linkedin-full-width"
+    },
+    {
+      "description": "تطوير لعبة Tetris كتطبيق صغير على Telegram مع مكافآت عملات رقمية مدمجة لجذب اللاعبين.",
+      "endDate": "2023-12-01",
+      "entity": "مشروع شخصي",
+      "highlights": [
+        "بناء لعبة مع أكثر من 2000 لاعب نشط في الشهر الأول",
+        "دمج محفظة بلوكشين لمكافآت صغيرة بالـ ETH",
+        "تحسين الأداء للحصول على لعب سلس على الجوال"
+      ],
+      "keywords": [
+        "React",
+        "تطوير الألعاب",
+        "API Telegram",
+        "Web3"
+      ],
+      "name": "Tetris مع مكافآت العملات الرقمية - تطبيق صغير على Telegram",
+      "roles": [
+        "المطور الرئيسي"
+      ],
+      "startDate": "2023-01-01",
+      "type": "application",
+      "url": "https://t.me/tetris_crypto_bot"
+    }
+  ],
+  "publications": [],
+  "references": [
+    {
+      "date": "2023-09-01",
+      "name": "Hiroshi Tanaka",
+      "position": "مهندس برمجيات أول في Guideline",
+      "reference": "في تجربتي في العمل مع Rocco، لقد تأثرت باستمرار بمزيجه الفريد من الاحترافية والدفء. إنه يزرع بسهولة جواً تعاونياً يكون في الوقت نفسه مريحاً ومركزاً. معرفة Rocco في هندسة البرمجيات واسعة، لكن ما يميزه حقاً هو قابليته للوصول إليه. رغم خبرته، لا يبدو أبداً مخيفاً. على العكس، هو دائماً حريص على المشاركة والتوجيه والدعم. إنه حقاً امتياز العمل جنباً إلى جنب مع شخص لديه مثل هذا المزيج النادر من الصفات.",
+      "relationship": "تقرير مباشر"
+    },
+    {
+      "date": "2023-01-27",
+      "name": "Sofia Andersson",
+      "position": "Archeologo I fascia (DM 244/2019)",
+      "reference": "Rocco هو المستقبل",
+      "relationship": "عميل"
+    },
+    {
+      "date": "2022-12-16",
+      "name": "Mateo Fernández",
+      "position": "مهندس Solidity أول",
+      "reference": "Rocco مطور frontend رائع يجعل أي تصاميم حقيقية للمستخدمين النهائيين. إنه ماهر: يطرح دائماً أسئلة لفهم التفاصيل الصغيرة التي ستحدث الفرق لمنتج رائع، يقترح حلولاً وتقنيات أفضل. الكود دائماً نظيف ومنظم ومعاد هيكلته بشكل جيد. علاوة على ذلك، Rocco متاح دائماً عند الحاجة وهو ودود جداً ويدعم الآخرين دائماً",
+      "relationship": "مدير"
+    },
+    {
+      "date": "2020-06-05",
+      "name": "Lars Nielsen",
+      "position": "الرئيس التنفيذي للبرمجيات المركزة على المنتج، بناء برمجيات المؤسسات من الجيل القادم للتجارة",
+      "reference": "Rocco هو نوع الشخص الذي تريده في فريقك، مؤهل بدرجة عالية وبدون أي خوف من الغوص في الجزء الأعمق من المسبح. لقد أعاد تصميم منصتنا الإلكترونية من الصفر في غضون أشهر، شيء كان يعتبر مستحيلاً من قبل عدة أشخاص قبل Rocco. بالإضافة إلى براعته التقنية، إنه شخص ودود بنى بسرعة رابطة شخصية مع فريقنا، بروح الدعابة والموقف الرائع. لا يمكنني أن أوصي بـ Rocco بما فيه الكفاية!",
+      "relationship": "مدير"
+    },
+    {
+      "date": "2015-08-08",
+      "name": "Emma van der Berg",
+      "position": "مطور full stack",
+      "reference": "عندما نفد من الشركة الأشخاص للقيام بمشروع Angular + Gulp وسألوني إذا كنت أعرف أحداً يمكنه المساعدة، كنت أعرف أن Rocco هو الشخص الذي سينقذ الموقف. تمكن Rocco من تحقيق نتائج مذهلة في إطار زمني محدود جداً، وحتى عندما وُضع تحت ضغط كبير، حافظ على انتباهه للتفاصيل ولم يفقد التركيز أبداً.",
+      "relationship": "زميل"
+    },
+    {
+      "date": "2015-07-29",
+      "name": "Rajesh Kumar",
+      "position": "مهندس معماري تقني في HCL Technologies",
+      "reference": "Rocco مطور Front End ممتاز مع الكثير من المعرفة في تقنيات Front End. يعرف الكثير من الأدوات التي تدعم التطوير بشكل أسهل وأسرع. مهما كانت الأداة التي يستخدمها Rocco، سيتبع المعايير دائماً. إنه عضو فريق جيد ومكرس دائماً للعمل الذي لاحظته عند العمل على نفس المشروع. سينهي مهامه بالعمل ساعات إضافية.",
+      "relationship": "زميل"
+    },
+    {
+      "date": "2015-07-26",
+      "name": "Ingrid Schmidt",
+      "position": "مالك منتج أول",
+      "reference": "Rocco مطور front end أول رائع. في فريقي قام بإعداد الإطار لموضوع Drupal للموقع الجديد. سيبذل قصارى جهده لإنهاء العمل بأفضل نتيجة. Rocco موظف مخلص وشخص رائع للعمل معه. أحب عمله الجاد وطاقته السعيدة. كمالك منتج، من الرائع العمل مع Rocco لأنك تعرف أنه سينجز العمل.",
+      "relationship": "زميل"
+    },
+    {
+      "date": "2015-07-22",
+      "name": "Lukas Novak",
+      "position": "Fullstack Go/TS/LLM",
+      "reference": "قضينا وقتاً ممتعاً مع Rocco أثناء العمل على تطبيق Phonegap مبني على CoffeeScript و Backbone. إنه يسعى للكود النظيف وفصل الاهتمامات في عمله في frontend، والذي مزين بتعليقات معبرة. يحاول دائماً أن يكون محدثاً مع أحدث الأطر.",
+      "relationship": "زميل"
+    },
+    {
+      "date": "2015-06-15",
+      "name": "Carlos Mendoza",
+      "position": "مهندس أمان أول في Bird",
+      "reference": "Rocco شخص منتبه جداً للتفاصيل. يتأكد من أن كل شيء يعمل وفقاً للمواصفات ويستعد لذلك. إنه أيضاً الزميل المثالي للعمل معه. يحاول دائماً مساعدة الآخرين عندما يستطيع، ويتأكد من أنك تلقيت كل المعلومات المطلوبة.",
+      "relationship": "زميل"
+    },
+    {
+      "date": "2015-06-02",
+      "name": "Pierre Dubois",
+      "position": "مهندس معلومات / DevOps",
+      "reference": "Rocco لديه معيار مهني عالي فيما يتعلق بتطوير front-end وأدوات التطوير الآلية. إنه متعة وممتع جداً العمل مع Rocco. إنه صادق، يقول ما يفكر فيه، يمكن أن يكون عنيداً أحياناً لكنه يتمكن من جعل الجميع يبتسمون. وضع Rocco مساراً واضحاً جداً لنفسه، \"التعلم، الاستمرار في التحسن ووضع مهاراته موضع التطبيق\". تعلمت الكثير من Rocco. مساهماته في الفرق عالية الجودة وخلقت منصة مستدامة لتطوير front-end. أتمنى العمل مع Rocco مرة أخرى يوماً ما ومقابلة المزيد من الأشخاص مثله.",
+      "relationship": "زميل"
+    },
+    {
+      "date": "2015-03-30",
+      "name": "Marco Rossi",
+      "position": "مطور Back-end PHP Symfony/Drupal @المفوضية الأوروبية DIGIT",
+      "reference": "Rocco مستشار تقنية معلومات متحمس ومؤهل بدرجة عالية. لديه موقف قوي تجاه التحديات اليومية ويولي اهتماماً لأداء نتائج نهائية عالية الجودة مع توفير أكبر قدر ممكن من الوقت. لهذا السبب يحدث نفسه باستمرار بأحدث التقنيات، بشكل أساسي Front-end، للحصول على أقصى النتائج من ناحية الوقت والجودة. إنه أيضاً شخص لطيف وكان من دواعي سروري العمل بجانبه مهنياً وشخصياً.",
+      "relationship": "زميل"
+    },
+    {
+      "date": "2013-11-08",
+      "name": "Jakub Kowalski",
+      "position": "رئيس التطوير في Praetorian Technology",
+      "reference": "لقد كان متعة حقيقية العمل مع Rocco على المشاريع في Youwin. لديه معرفة عظيمة في كل مجال من مجالات تطوير الويب: بدءاً من تكوين بيئات التطوير والتشغيل، خوادم الويب وأنظمة التخزين المؤقت مروراً بتطوير backend وانتهاءً بمهارات JavaScript و HTML و HTML5 و CSS الواسعة لتسليم frontend. Rocco شخص يمكن تركه وحده مع مهام كبيرة لأنه يستطيع التعامل مع العملية كاملة بنفسه، لكن في نفس الوقت مع عقله المنفتح وإمكانيته لمشاركة واكتساب المعرفة هو لاعب فريق رائع يحب استشارة الآراء لتسليم منتجات بأفضل جودة. عقلاني وموجه نحو الرشاقة يمكنه العمل في بيئة تعمل بأي وتيرة. عقل عظيم، صديق عظيم، شخص اجتماعي مع كل المهارات التي قد تحتاجها شركة تطوير ويب. Rocco هو الخيار الأفضل لفريق رائع من المطورين اللامعين لأنه معه يمكنك تجاوز المعايير.",
+      "relationship": "زميل"
+    },
+    {
+      "date": "2025-10-09",
+      "name": "Oliver Müller",
+      "position": "مهندس برمجيات | تطوير البرمجيات | المنتج",
+      "reference": "ساعدني Rocco في تطوير مسيرتي المهنية كمطور من خلال منحي فرصة لتعلم مهارات العالم الحقيقي من خلال مشاريع حقيقية. كمية المعرفة التي اكتسبتها خلال فترة تدريبي ساعدتني على النمو من متدرب إلى مطور مبتدئ والحصول على وظيفة في شركة إنترنت الأشياء بعد الأشهر الثلاثة. إنه ذو خبرة كبيرة وغرس فيّ مبادئ جيدة أنا ممتن جدًا لها. أوصي به بشدة إذا كنت تريد مهندس برمجيات وقائد ذو معرفة واسعة.",
+      "relationship": "تقرير مباشر"
+    }
+  ],
+  "skills": [
+    {
+      "keywords": [
+        "React",
+        "React Router",
+        "Preact",
+        "Svelte",
+        "TypeScript",
+        "JavaScript",
+        "Next.js",
+        "Remix",
+        "Redux",
+        "Zustand",
+        "TanStack Query",
+        "CSS",
+        "CSS-in-JS",
+        "TailwindCSS",
+        "Styled Components",
+        "Atomic Design",
+        "Responsive Design",
+        "Web Accessibility (a11y)",
+        "Performance Optimization",
+        "Vue.js",
+        "Angular",
+        "Astro",
+        "SolidJS",
+        "SASS/SCSS",
+        "Framer Motion",
+        "Three.js",
+        "WebGL",
+        "PWA",
+        "Web Components"
+      ],
+      "level": "خبير",
+      "name": "الواجهة الأمامية"
+    },
+    {
+      "keywords": [
+        "Solidity",
+        "Smart Contracts",
+        "EVM",
+        "Wagmi",
+        "Viem",
+        "Ethers.js",
+        "Web3.js",
+        "DeFi DApps",
+        "NFT Marketplaces",
+        "IPFS",
+        "The Graph",
+        "Hardhat",
+        "Foundry",
+        "Wallet Integration",
+        "SDK Development",
+        "Chainlink",
+        "OpenZeppelin",
+        "Alchemy",
+        "Infura",
+        "ENS",
+        "Layer 2 Solutions",
+        "Token Standards (ERC-20/721/1155)",
+        "Vyper",
+        "Cairo (StarkNet)",
+        "Subgraphs"
+      ],
+      "level": "Expert",
+      "name": "Web3 & Blockchain"
+    },
+    {
+      "keywords": [
+        "LLM Agents",
+        "Prompt Engineering",
+        "Claude API",
+        "OpenAI API",
+        "RAG Systems",
+        "AI-Assisted Development",
+        "Cloudflare AI",
+        "LangChain",
+        "Vector Databases",
+        "Embeddings",
+        "Fine-tuning",
+        "Hugging Face",
+        "Stable Diffusion",
+        "MCP (Model Context Protocol)"
+      ],
+      "level": "Advanced",
+      "name": "AI & Machine Learning"
+    },
+    {
+      "keywords": [
+        "Node.js",
+        "Express",
+        "Hono",
+        "NestJS",
+        "GraphQL",
+        "REST APIs",
+        "tRPC",
+        "MongoDB",
+        "PostgreSQL",
+        "Drizzle ORM",
+        "Prisma",
+        "Redis",
+        "Cloudflare D1",
+        "Better Auth",
+        "Flask",
+        "Python",
+        "FastAPI",
+        "Deno",
+        "Bun",
+        "MySQL",
+        "SQLite",
+        "Supabase",
+        "Firebase",
+        "WebSockets",
+        "Message Queues",
+        "Microservices",
+        "Serverless Functions",
+        "OAuth/OIDC",
+        "JWT"
+      ],
+      "level": "Advanced",
+      "name": "Backend Development"
+    },
+    {
+      "keywords": [
+        "Docker",
+        "Kubernetes",
+        "CI/CD",
+        "GitHub Actions",
+        "AWS",
+        "GCP",
+        "Cloudflare Workers",
+        "Cloudflare Pages",
+        "Vercel",
+        "Heroku",
+        "Wrangler",
+        "Terraform",
+        "Nginx",
+        "Linux/Unix",
+        "Shell Scripting",
+        "AWS Lambda",
+        "AWS S3",
+        "AWS EC2",
+        "Cloudflare R2",
+        "Cloudflare KV",
+        "DigitalOcean",
+        "Railway",
+        "Render",
+        "Monitoring/Logging",
+        "Sentry"
+      ],
+      "level": "Advanced",
+      "name": "DevOps & Cloud"
+    },
+    {
+      "keywords": [
+        "Git",
+        "GitHub",
+        "GitLab",
+        "Webpack",
+        "Vite",
+        "Turborepo",
+        "pnpm",
+        "Figma",
+        "Jest",
+        "Vitest",
+        "Playwright",
+        "Testing Library",
+        "Selenium",
+        "Storybook",
+        "Cypress",
+        "ESLint",
+        "Prettier",
+        "Biome",
+        "npm",
+        "yarn",
+        "Postman",
+        "Insomnia",
+        "Chrome DevTools",
+        "Lighthouse",
+        "Nx",
+        "Lerna",
+        "Changesets",
+        "Husky",
+        "Commitlint"
+      ],
+      "level": "Expert",
+      "name": "Tools & Testing"
+    },
+    {
+      "keywords": [
+        "Technical Mentoring",
+        "Code Review",
+        "Technical Writing",
+        "Architecture Design",
+        "Agile/Scrum",
+        "Remote Collaboration",
+        "Team Leadership",
+        "Project Estimation",
+        "Client Communication",
+        "Technical Interviews",
+        "Documentation",
+        "Pair Programming",
+        "Problem Solving",
+        "Debugging"
+      ],
+      "level": "Expert",
+      "name": "Soft Skills"
+    }
+  ],
+  "volunteer": [
+    {
+      "endDate": "",
+      "highlights": [
+        "مساعدة ~12 زميلًا، 5 حصلوا على وظائف خلال 1-4 أشهر",
+        "مساعدة شخص عمره 32 عامًا في تغيير مساره المهني",
+        "تهيئة 2 متدربين للحصول على أول وظيفة Junior في 2023"
+      ],
+      "organization": "The Web3 Ninja",
+      "position": "مرشد للزملاء",
+      "startDate": "2024-01-01",
+      "summary": "إرشاد مطورين ينتقلون إلى Web3 ومساعدة من يغيّرون مسارهم المهني لدخول المجال التقني.",
+      "url": "https://theweb3ninja.com"
+    },
+    {
+      "endDate": "",
+      "highlights": [
+        "ساعد عبد الكريم على الشفاء: معركة طفل حرب من أجل الحياة",
+        "أنقذ إلياس وعائلته: من خيمة إلى الأمان"
+      ],
+      "organization": "Steunactie",
+      "position": "مسؤول جمع التبرعات",
+      "startDate": "2023-01-01",
+      "summary": "تخصيص وقت لمساعدة المحتاجين في أفريقيا والشرق الأوسط عبر مبادرات التمويل الجماعي.",
+      "url": "https://www.steunactie.nl"
+    },
+    {
+      "endDate": "",
+      "organization": "CyberGrandpa",
+      "position": "عضو في طاقم الاستشارات",
+      "startDate": "2022-01-01",
+      "summary": "دليل موثوق للسلامة على الإنترنت والحماية من الاحتيال والتصيد والبرمجيات الخبيثة. خدمات أمن سيبراني احترافية بنظام اشتراك.",
+      "url": "https://cybergrandpa.space"
+    }
+  ],
+  "work": [
+    {
+      "endDate": "",
+      "highlights": [
+        "تحسين مكونات React لعرض بيانات البلوكشين، مما قلل من أوقات التحميل بنسبة 40%",
+        "بناء 3 تطبيقات DApp وواجهات API مما حسّن سرعة المعاملات بنسبة 15%.",
+        "تقليل رسوم الغاز عبر تحسين تكامل البلوكشين."
+      ],
+      "location": "عن بُعد",
+      "name": "The Web3 Ninja",
+      "position": "مهندس برمجيات واجهة أمامية",
+      "startDate": "2024-09-01",
+      "summary": "بناء حلول web3 مع التركيز على أداء الواجهة الأمامية وتجربة المستخدم لتطبيقات البلوكشين.",
+      "url": "https://theweb3.ninja"
+    },
+    {
+      "endDate": "2024-09-01",
+      "highlights": [
+        "تطوير واجهة المستخدم لنظام الجائزة الكبرى Lotsaloot™.",
+        "تعزيز تفاعل اللاعبين عبر منطق مكافآت متعدد المستويات.",
+        "التعاون بين الفرق لتحسين مؤشرات الاحتفاظ بالمستخدمين."
+      ],
+      "location": "سوييقي، مالطا، عن بُعد",
+      "name": "Games Global",
+      "position": "قائد هندسة الواجهة الأمامية",
+      "startDate": "2023-09-01",
+      "summary": "قيادة تطوير الواجهة الأمامية لمنصات الألعاب.",
+      "url": "https://www.gamesglobal.com"
+    },
+    {
+      "endDate": "2023-08-01",
+      "highlights": [
+        "قيادة فريق مكوّن من 12 شخصًا وزيادة الإنتاجية بنسبة 30%.",
+        "تقليل الأخطاء بنسبة 25% ورفع جودة الكود بنسبة 40%.",
+        "خدمة 5 ملايين مستخدم و3 آلاف زائر متزامن."
+      ],
+      "location": "Remote",
+      "name": "Shiba Inu",
+      "position": "Tech Lead, Web3",
+      "startDate": "2023-01-01",
+      "summary": "قيادة التطوير التقني لمنظومة Shiba Inu.",
+      "url": "https://shibatoken.com"
+    },
+    {
+      "endDate": "2023-08-01",
+      "highlights": [
+        "نشر تطبيق SPA بسيولة تتجاوز 20 مليون دولار.",
+        "إنشاء SDK يقلل وقت الدمج بنسبة 50%.",
+        "إطلاق مكتبة تصميم على مستوى المنظومة زادت سرعة التطوير بنسبة 25%."
+      ],
+      "location": "Remote",
+      "name": "Ajna Labs",
+      "position": "قائد هندسة الواجهة الأمامية",
+      "startDate": "2022-08-01",
+      "summary": "قيادة تطوير الواجهة الأمامية لتطبيقات DeFi.",
+      "url": "https://www.ajna.finance"
+    },
+    {
+      "endDate": "2022-07-01",
+      "highlights": [
+        "الإشراف على أكثر من 10 مشاريع لامركزية.",
+        "إرشاد 4 مطورين للواجهة الأمامية.",
+        "تحسين قابلية التوسع وتناسق واجهة المستخدم."
+      ],
+      "location": "Remote",
+      "name": "Linum Labs",
+      "position": "قائد هندسة الواجهة الأمامية",
+      "startDate": "2021-08-01",
+      "summary": "قيادة تطوير تطبيقات Web3 والعملات الرقمية.",
+      "url": "https://linumlabs.com"
+    },
+    {
+      "endDate": "2021-07-01",
+      "highlights": [
+        "بناء لوحة تحكم للـ vesting والـ farming متكاملة مع Ethereum.",
+        "تطوير طبقات تفاعل مع العقود الذكية لعمليات DeFi."
+      ],
+      "location": "Remote",
+      "name": "Omnia DeFi",
+      "position": "Lead Software Engineer, Web3",
+      "startDate": "2021-01-01",
+      "summary": "بناء بنية تحتية لـ DeFi وتكاملات العقود الذكية.",
+      "url": "https://omniadefi.com"
+    },
+    {
+      "endDate": "2015-07-01",
+      "highlights": [
+        "تنفيذ مشاريع إعادة هيكلة Web2 على مستوى المؤسسات.",
+        "تحسين الأنظمة القديمة لتكون جاهزة للسحابة."
+      ],
+      "location": "The Hague, Netherlands",
+      "name": "HCLTech",
+      "position": "Lead Software Engineer",
+      "startDate": "2014-12-01",
+      "summary": "تقديم حلول برمجية على مستوى المؤسسات.",
+      "url": "https://www.hcltech.com"
+    },
+    {
+      "endDate": "2014-12-01",
+      "highlights": [
+        "المساهمة في تطبيقات ويب علمية لأنظمة بيانات كيميائية.",
+        "تطوير واجهات مبنية على Angular لأجهزة لوحية متعددة المنصات."
+      ],
+      "location": "Amsterdam, Netherlands",
+      "name": "Elsevier",
+      "position": "Software Engineer",
+      "startDate": "2013-01-01",
+      "summary": "بناء منصات بيانات علمية (Reaxys 2 Web App).",
+      "url": "https://www.elsevier.com"
+    },
+    {
+      "endDate": "2013-01-01",
+      "highlights": [
+        "بناء سوق إعلاني متعدد اللغات مع أكثر من 3 ملايين زائر شهريًا.",
+        "تحسين SEO وتفاعل المستخدمين على بوابات عالية الزيارات."
+      ],
+      "location": "Paris, France",
+      "name": "AdForum",
+      "position": "Software Engineer",
+      "startDate": "2012-01-01",
+      "summary": "بناء سوق (Marketplace) لصناعة الإعلان.",
+      "url": "https://www.adforum.com"
     }
   ]
 }

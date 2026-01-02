@@ -1,499 +1,499 @@
 {
+  "awards": [
+    {
+      "awarder": "Industry Recognition",
+      "date": "2023-01-01",
+      "summary": "Led development of widely used platforms and applications.",
+      "title": "Launched DeFi Apps Reaching 5M+ Users"
+    },
+    {
+      "awarder": "Client Success",
+      "date": "2023-01-01",
+      "summary": "Improved code efficiency and reduced technical debt.",
+      "title": "Refactored Legacy SPA Saving ~€50,000"
+    },
+    {
+      "awarder": "Team Achievement",
+      "date": "2023-01-01",
+      "summary": "Reduced bugs by 25% and implemented better workflows and code standards.",
+      "title": "Improved Code Quality by 40%"
+    },
+    {
+      "awarder": "Mentorship",
+      "date": "2024-01-01",
+      "summary": "Provided mentorship and career guidance to junior developers.",
+      "title": "Mentored 5+ Developers to New Positions"
+    },
+    {
+      "awarder": "Technical Leadership",
+      "date": "2022-01-01",
+      "summary": "Created development standards for better code quality and consistency.",
+      "title": "Authored Ecosystem-Wide Style Guides"
+    },
+    {
+      "awarder": "Open Source",
+      "date": "2022-01-01",
+      "summary": "Built open-source tools to protect users from phishing and fraud.",
+      "title": "Delivered Cybersecurity Extensions"
+    }
+  ],
   "basics": {
-    "name": "Rocco Russo",
-    "label": "Lead Software Engineer, Web3",
-    "image": "/assets/ui/rocco-me-nft.png",
     "email": "hello@rocco.me",
-    "url": "https://rocco.me",
-    "summary": "Software engineer with over 20 years of front-end experience, 5 years in Web3, and hands-on full-stack and AI agent integration expertise. I design, refactor, and ship products that merge blockchain transparency with real user value, from DeFi and RWA platforms to secure browser extensions and gamified apps. I lead small agile teams with a focus on mentorship, code quality, long-term sustainability and not just delivery speed.",
+    "image": "/assets/ui/rocco-me-nft.png",
+    "label": "Lead Software Engineer, Web3",
     "location": {
       "city": "Foggia",
-      "region": "Apulia",
-      "countryCode": "IT"
+      "countryCode": "IT",
+      "region": "Apulia"
     },
+    "name": "Rocco Russo",
     "profiles": [
       {
         "network": "GitHub",
-        "username": "xdemocle",
-        "url": "https://github.com/xdemocle"
+        "url": "https://github.com/xdemocle",
+        "username": "xdemocle"
       },
       {
         "network": "LinkedIn",
-        "username": "roccorusso",
-        "url": "https://linkedin.com/in/roccorusso"
+        "url": "https://linkedin.com/in/roccorusso",
+        "username": "roccorusso"
       },
       {
         "network": "Twitter",
-        "username": "xdemocle",
-        "url": "https://twitter.com/xdemocle"
+        "url": "https://twitter.com/xdemocle",
+        "username": "xdemocle"
       }
-    ]
+    ],
+    "summary": "Software engineer with over 20 years of front-end experience, 5 years in Web3, and hands-on full-stack and AI agent integration expertise. I design, refactor, and ship products that merge blockchain transparency with real user value, from DeFi and RWA platforms to secure browser extensions and gamified apps. I lead small agile teams with a focus on mentorship, code quality, long-term sustainability and not just delivery speed.",
+    "url": "https://rocco.me"
   },
-  "work": [
+  "certificates": [
     {
-      "name": "The Web3 Ninja",
-      "position": "Lead Software Engineer, Web3",
-      "url": "https://theweb3ninja.com",
-      "startDate": "2024-10-01",
-      "endDate": "",
-      "summary": "Leading Web3 integration projects and mentoring junior developers.",
-      "highlights": ["Mentored 5 interns, placed 3 as junior devs.", "Built 3 DApps and APIs improving transaction speed by 15%.", "Reduced gas fees via optimized blockchain integration."],
-      "location": "Apulia, Italy, Remote"
+      "date": "2021-06-01",
+      "issuer": "Amazon Web Services",
+      "name": "AWS Certified Solutions Architect",
+      "url": "https://aws.amazon.com/certification/"
     },
     {
-      "name": "Games Global",
-      "position": "Lead Frontend Engineer",
-      "url": "https://www.gamesglobal.com",
-      "startDate": "2023-09-01",
-      "endDate": "2024-09-01",
-      "summary": "Leading front-end development for gaming platforms.",
-      "highlights": ["Developed UI for Lotsaloot™ jackpot system.", "Enhanced player engagement with tiered reward logic.", "Collaborated across teams to increase retention metrics."],
-      "location": "Swieqi, Malta, Remote"
+      "date": "2021-01-01",
+      "issuer": "Udemy - Stephen Grider",
+      "name": "TypeScript: The Complete Guide for Developers",
+      "url": "https://www.udemy.com/certificate/UC-2K4P5L8M/"
     },
     {
-      "name": "Shiba Inu",
-      "position": "Tech Lead, Web3",
-      "url": "https://shibatoken.com",
-      "startDate": "2023-01-01",
-      "endDate": "2023-08-01",
-      "summary": "Led technical development for the Shiba Inu ecosystem.",
-      "highlights": ["Led 12-member team, boosted productivity by 30%.", "Reduced bugs by 25% and raised code quality 40%.", "Served 5M users and 3k concurrent visitors."],
-      "location": "Remote"
-    },
-    {
-      "name": "Ajna Labs",
-      "position": "Lead Frontend Engineer",
-      "url": "https://www.ajna.finance",
-      "startDate": "2022-08-01",
-      "endDate": "2023-08-01",
-      "summary": "Leading front-end development for DeFi applications.",
-      "highlights": ["Deployed SPA with $20M+ liquidity.", "Created SDK reducing integration time 50%.", "Released ecosystem-wide design library increasing dev speed 25%."],
-      "location": "Remote"
-    },
-    {
-      "name": "Linum Labs",
-      "position": "Lead Frontend Engineer",
-      "url": "https://linumlabs.com",
-      "startDate": "2021-08-01",
-      "endDate": "2022-07-01",
-      "summary": "Leading Web3 and crypto application development.",
-      "highlights": ["Supervised 10+ decentralized projects.", "Mentored 4 frontend developers.", "Improved scalability and UI consistency."],
-      "location": "Remote"
-    },
-    {
-      "name": "Omnia DeFi",
-      "position": "Lead Software Engineer, Web3",
-      "url": "https://omniadefi.com",
-      "startDate": "2021-01-01",
-      "endDate": "2021-07-01",
-      "summary": "Building DeFi infrastructure and smart contract integrations.",
-      "highlights": ["Built vesting and farming dashboard integrated with Ethereum.", "Developed smart contract interaction layers for DeFi operations."],
-      "location": "Remote"
-    },
-    {
-      "name": "HCLTech",
-      "position": "Lead Software Engineer",
-      "url": "https://www.hcltech.com",
-      "startDate": "2014-12-01",
-      "endDate": "2015-07-01",
-      "summary": "Delivering enterprise software solutions.",
-      "highlights": ["Delivered enterprise-grade Web2 refactoring projects.", "Optimized legacy systems for cloud-readiness."],
-      "location": "The Hague, Netherlands"
-    },
-    {
-      "name": "Elsevier",
-      "position": "Software Engineer",
-      "url": "https://www.elsevier.com",
-      "startDate": "2013-01-01",
-      "endDate": "2014-12-01",
-      "summary": "Building scientific data platforms (Reaxys 2 Web App).",
-      "highlights": ["Contributed to scientific web apps for chemical data systems.", "Developed Angular-based interfaces for cross-platform tablets."],
-      "location": "Amsterdam, Netherlands"
-    },
-    {
-      "name": "AdForum",
-      "position": "Software Engineer",
-      "url": "https://www.adforum.com",
-      "startDate": "2012-01-01",
-      "endDate": "2013-01-01",
-      "summary": "Building marketplace for advertising industry.",
-      "highlights": ["Built multilingual advertising marketplace with 3M+ visitors/month.", "Improved SEO and user engagement on high-traffic portals."],
-      "location": "Paris, France"
-    }
-  ],
-  "volunteer": [
-    {
-      "organization": "The Web3 Ninja",
-      "position": "Peer Mentor",
-      "url": "https://theweb3ninja.com",
-      "startDate": "2024-01-01",
-      "endDate": "",
-      "summary": "Mentoring developers transitioning to Web3 and helping career changers break into tech.",
-      "highlights": ["Helped ~12 peers, 5 got positions in first 1-4 months", "Helped a 32-year-old in his job switch career", "Positioned 2 interns to their first junior positions in 2023"]
-    },
-    {
-      "organization": "Steunactie",
-      "position": "Fundraising Manager",
-      "url": "https://www.steunactie.nl",
-      "startDate": "2023-01-01",
-      "endDate": "",
-      "summary": "Dedicating time to help people in need around Africa and the Middle East with crowdfunding initiatives.",
-      "highlights": ["Help Abdul Karim Heal: A War Child's Fight for Life", "Save Elias & His Family: From Tent to Safety"]
-    },
-    {
-      "organization": "CyberGrandpa",
-      "position": "Member of Consulting Staff",
-      "url": "https://cybergrandpa.space",
-      "startDate": "2022-01-01",
-      "endDate": "",
-      "summary": "Trusted Guide to Online Safety and Protection from Scams, Phishing, and Malware. Expert Cybersecurity Services on subscription."
+      "date": "2022-01-01",
+      "issuer": "Udemy - Maximilian Schwarzmüller",
+      "name": "Next.js & React - The Complete Guide",
+      "url": "https://www.udemy.com/certificate/UC-3J6Q7N9P/"
     }
   ],
   "education": [
     {
-      "institution": "Athena University",
-      "url": "https://athenauniversity.edu",
       "area": "Computer Science",
-      "studyType": "Bachelor",
-      "startDate": "2008-09-01",
+      "courses": [],
       "endDate": "2012-06-01",
+      "institution": "Athena University",
       "score": "",
-      "courses": []
-    }
-  ],
-  "awards": [
-    {
-      "title": "Launched DeFi Apps Reaching 5M+ Users",
-      "date": "2023-01-01",
-      "awarder": "Industry Recognition",
-      "summary": "Led development of widely used platforms and applications."
-    },
-    {
-      "title": "Refactored Legacy SPA Saving ~€50,000",
-      "date": "2023-01-01",
-      "awarder": "Client Success",
-      "summary": "Improved code efficiency and reduced technical debt."
-    },
-    {
-      "title": "Improved Code Quality by 40%",
-      "date": "2023-01-01",
-      "awarder": "Team Achievement",
-      "summary": "Reduced bugs by 25% and implemented better workflows and code standards."
-    },
-    {
-      "title": "Mentored 5+ Developers to New Positions",
-      "date": "2024-01-01",
-      "awarder": "Mentorship",
-      "summary": "Provided mentorship and career guidance to junior developers."
-    },
-    {
-      "title": "Authored Ecosystem-Wide Style Guides",
-      "date": "2022-01-01",
-      "awarder": "Technical Leadership",
-      "summary": "Created development standards for better code quality and consistency."
-    },
-    {
-      "title": "Delivered Cybersecurity Extensions",
-      "date": "2022-01-01",
-      "awarder": "Open Source",
-      "summary": "Built open-source tools to protect users from phishing and fraud."
-    }
-  ],
-  "certificates": [
-    {
-      "name": "AWS Certified Solutions Architect",
-      "date": "2021-06-01",
-      "issuer": "Amazon Web Services",
-      "url": "https://aws.amazon.com/certification/"
-    },
-    {
-      "name": "TypeScript: The Complete Guide for Developers",
-      "date": "2021-01-01",
-      "issuer": "Udemy - Stephen Grider",
-      "url": "https://www.udemy.com/certificate/UC-2K4P5L8M/"
-    },
-    {
-      "name": "Next.js & React - The Complete Guide",
-      "date": "2022-01-01",
-      "issuer": "Udemy - Maximilian Schwarzmüller",
-      "url": "https://www.udemy.com/certificate/UC-3J6Q7N9P/"
-    }
-  ],
-  "publications": [],
-  "skills": [
-    {
-      "name": "Frontend Development",
-      "level": "Expert",
-      "keywords": ["React", "React Router", "Preact", "Svelte", "TypeScript", "JavaScript", "Next.js", "Remix", "Redux", "Zustand", "TanStack Query", "CSS", "CSS-in-JS", "TailwindCSS", "Styled Components", "Atomic Design", "Responsive Design", "Web Accessibility (a11y)", "Performance Optimization", "Vue.js", "Angular", "Astro", "SolidJS", "SASS/SCSS", "Framer Motion", "Three.js", "WebGL", "PWA", "Web Components"]
-    },
-    {
-      "name": "Web3 & Blockchain",
-      "level": "Expert",
-      "keywords": ["Solidity", "Smart Contracts", "EVM", "Wagmi", "Viem", "Ethers.js", "Web3.js", "DeFi DApps", "NFT Marketplaces", "IPFS", "The Graph", "Hardhat", "Foundry", "Wallet Integration", "SDK Development", "Chainlink", "OpenZeppelin", "Alchemy", "Infura", "ENS", "Layer 2 Solutions", "Token Standards (ERC-20/721/1155)", "Vyper", "Cairo (StarkNet)", "Subgraphs"]
-    },
-    {
-      "name": "AI & Machine Learning",
-      "level": "Advanced",
-      "keywords": ["LLM Agents", "Prompt Engineering", "Claude API", "OpenAI API", "RAG Systems", "AI-Assisted Development", "Cloudflare AI", "LangChain", "Vector Databases", "Embeddings", "Fine-tuning", "Hugging Face", "Stable Diffusion", "MCP (Model Context Protocol)"]
-    },
-    {
-      "name": "Backend Development",
-      "level": "Advanced",
-      "keywords": ["Node.js", "Express", "Hono", "NestJS", "GraphQL", "REST APIs", "tRPC", "MongoDB", "PostgreSQL", "Drizzle ORM", "Prisma", "Redis", "Cloudflare D1", "Better Auth", "Flask", "Python", "FastAPI", "Deno", "Bun", "MySQL", "SQLite", "Supabase", "Firebase", "WebSockets", "Message Queues", "Microservices", "Serverless Functions", "OAuth/OIDC", "JWT"]
-    },
-    {
-      "name": "DevOps & Cloud",
-      "level": "Advanced",
-      "keywords": ["Docker", "Kubernetes", "CI/CD", "GitHub Actions", "AWS", "GCP", "Cloudflare Workers", "Cloudflare Pages", "Vercel", "Heroku", "Wrangler", "Terraform", "Nginx", "Linux/Unix", "Shell Scripting", "AWS Lambda", "AWS S3", "AWS EC2", "Cloudflare R2", "Cloudflare KV", "DigitalOcean", "Railway", "Render", "Monitoring/Logging", "Sentry"]
-    },
-    {
-      "name": "Tools & Testing",
-      "level": "Expert",
-      "keywords": ["Git", "GitHub", "GitLab", "Webpack", "Vite", "Turborepo", "pnpm", "Figma", "Jest", "Vitest", "Playwright", "Testing Library", "Selenium", "Storybook", "Cypress", "ESLint", "Prettier", "Biome", "npm", "yarn", "Postman", "Insomnia", "Chrome DevTools", "Lighthouse", "Nx", "Lerna", "Changesets", "Husky", "Commitlint"]
-    },
-    {
-      "name": "Soft Skills",
-      "level": "Expert",
-      "keywords": ["Technical Mentoring", "Code Review", "Technical Writing", "Architecture Design", "Agile/Scrum", "Remote Collaboration", "Team Leadership", "Project Estimation", "Client Communication", "Technical Interviews", "Documentation", "Pair Programming", "Problem Solving", "Debugging"]
-    }
-  ],
-  "languages": [
-    {
-      "language": "Italian",
-      "fluency": "Native speaker"
-    },
-    {
-      "language": "English",
-      "fluency": "Professional working proficiency"
-    },
-    {
-      "language": "Spanish",
-      "fluency": "Limited working proficiency"
-    },
-    {
-      "language": "Portuguese",
-      "fluency": "Elementary proficiency"
-    },
-    {
-      "language": "French",
-      "fluency": "Elementary proficiency"
-    },
-    {
-      "language": "Zulu",
-      "fluency": "Elementary proficiency"
+      "startDate": "2008-09-01",
+      "studyType": "Bachelor",
+      "url": "https://athenauniversity.edu"
     }
   ],
   "interests": [
     {
-      "name": "Tech & Profession",
-      "keywords": ["Blockchain", "Web3", "Cybersecurity", "React", "TypeScript", "Open Source", "AI", "Clean Code", "Scalability", "Architecture", "Problem-Solving"]
+      "keywords": ["Blockchain", "Web3", "Cybersecurity", "React", "TypeScript", "Open Source", "AI", "Clean Code", "Scalability", "Architecture", "Problem-Solving"],
+      "name": "Tech & Profession"
     },
     {
-      "name": "Collaboration & Leadership",
-      "keywords": ["Mentorship", "Leadership", "Remote Work", "Collaboration", "Community", "Teaching", "Education"]
+      "keywords": ["Mentorship", "Leadership", "Remote Work", "Collaboration", "Community", "Teaching", "Education"],
+      "name": "Collaboration & Leadership"
     },
     {
-      "name": "Mindset & Values",
-      "keywords": ["Innovation", "Strategy", "Systems Thinking", "Adaptability", "Growth", "Ethics", "Empathy", "Continuous Learning"]
+      "keywords": ["Innovation", "Strategy", "Systems Thinking", "Adaptability", "Growth", "Ethics", "Empathy", "Continuous Learning"],
+      "name": "Mindset & Values"
     },
     {
-      "name": "Culture & Expression",
-      "keywords": ["Global Mindset", "Languages", "Research", "Writing", "Creativity"]
+      "keywords": ["Global Mindset", "Languages", "Research", "Writing", "Creativity"],
+      "name": "Culture & Expression"
     }
   ],
-  "references": [
+  "languages": [
     {
-      "name": "Hiroshi Tanaka",
-      "reference": "In my experience working with Rocco, I've been consistently impressed by his unique blend of professionalism and warmth. He effortlessly cultivates a collaborative atmosphere that is both light-hearted and focused. Rocco's knowledge in software engineering is expansive, but what truly sets him apart is his approachability. Despite his expertise, he never comes off as intimidating. Instead, he's always eager to share, guide, and support. It's truly a privilege to work alongside someone with such a rare combination of qualities.",
-      "position": "Senior Software Engineer at Guideline",
-      "relationship": "Direct Report",
-      "date": "2023-09-01"
+      "fluency": "Native speaker",
+      "language": "Italian"
     },
     {
-      "name": "Sofia Andersson",
-      "reference": "Rocco is the future",
-      "position": "Archeologo I fascia (DM 244/2019)",
-      "relationship": "Client",
-      "date": "2023-01-27"
+      "fluency": "Professional working proficiency",
+      "language": "English"
     },
     {
-      "name": "Mateo Fernández",
-      "reference": "Rocco is a great frontend developer who make any designs become real for end users. He is proficient: always ask questions to understand tiny details that will make the difference for a great product, propose better solutions & technologies. The code is always clean, organised and well refactored. On top of that, Rocco is always available when needed and is very friendly and always supports others",
-      "position": "Senior Solidity Engineer",
-      "relationship": "Manager",
-      "date": "2022-12-16"
+      "fluency": "Limited working proficiency",
+      "language": "Spanish"
     },
     {
-      "name": "Lars Nielsen",
-      "reference": "Rocco is the type of person you want on your team, highly skilled and without any fear of diving in on the deep end of the pool. He rearchitected our web plattform from the ground up in a matter of months, something that was considered impossible by several people prior to Rocco. In addition to his technical prowess, he's an affable person that quickly built a personal bond to our team, with his humor and great attitude. I can't recommend Rocco enough!",
-      "position": "Product-first software CEO, building next-gen enterprise software for commerce",
-      "relationship": "Manager",
-      "date": "2020-06-05"
+      "fluency": "Elementary proficiency",
+      "language": "Portuguese"
     },
     {
-      "name": "Emma van der Berg",
-      "reference": "When the company ran out of people to do a Angular + Gulp project and asked me if I knew someone that could help out, I knew Rocco was the guy that would save the day. Rocco managed to achieve amazing results within a very limited timeframe, and even when put under a lot of stress, he maintained his eye for detail and never lost focus.",
-      "position": "Full stack developer",
-      "relationship": "Colleague",
-      "date": "2015-08-08"
+      "fluency": "Elementary proficiency",
+      "language": "French"
     },
     {
-      "name": "Rajesh Kumar",
-      "reference": "Rocco is an excellent Front End Developer with lots of knowledge in Front End Technologies. He knows lot of tools which supports the development lot more easier and faster. Whatever the tool Rocco is using he will follow the standards always. He is a good team member and always dedicated to work which i noticed when working on the same project. He will finish his tasks by working extra hours.",
-      "position": "Technical Architect at HCL Technologies",
-      "relationship": "Colleague",
-      "date": "2015-07-29"
-    },
-    {
-      "name": "Ingrid Schmidt",
-      "reference": "Rocco is a great senior front end developer. In my team he did the set up of the framework for the Drupal theme for the new website. He will do his utter best to finish the job with the best result. Rocco is a devoted employee and a great guy to work with. I love his hard work and happy energy. As a product owner it is great to work with Rocco because you know he will get the job done.",
-      "position": "Senior Product Owner",
-      "relationship": "Colleague",
-      "date": "2015-07-26"
-    },
-    {
-      "name": "Lukas Novak",
-      "reference": "We've spend some fun time with Rocco while working on a CoffeeScript and Backbone based Phonegap app. He pursues clean code and separation of concerns in his frontend work, which is decorated by expressive comments. He always tries to be up to date with latest frameworks.",
-      "position": "Fullstack Go/TS/LLM",
-      "relationship": "Colleague",
-      "date": "2015-07-22"
-    },
-    {
-      "name": "Carlos Mendoza",
-      "reference": "Rocco is a very attentive to detail person. He makes sure that everything works according to specs and prepares for it. He also is the perfect colleague to work along side with. He always tries to help others when he can, and makes sure you have received all the information that was needed.",
-      "position": "Staff Security Engineer at Bird",
-      "relationship": "Colleague",
-      "date": "2015-06-15"
-    },
-    {
-      "name": "Pierre Dubois",
-      "reference": "Rocco has a highly professional standard concerning front-end development and automated development tools. It is a pleasure and great fun to work with Rocco. He is honest, speaks his mind, can be stubborn at times but manages to make everyone smile. Rocco set a very clear path for himself, \"to learn, keep improving and put his skills into practice\". I learned a lot from Rocco. His contributions to the teams are of high quality and created a sustainable platform for front-end development. I hope to work with Rocco again someday and meet more people like him.",
-      "position": "Information / DevOps Engineer",
-      "relationship": "Colleague",
-      "date": "2015-06-02"
-    },
-    {
-      "name": "Marco Rossi",
-      "reference": "Rocco is an high motivated and qualified IT Consultant. He has a strong attitude to day by day challenges and he pay attention to perform high quality final results saving as much time as possible. That's why he's constantly upgrading himself to the newest technologies, mainly Front-end, to obtain the maximum results in terms of time-quality. He is also a nice guy and it was a pleasure to work beside him both professionally and personally.",
-      "position": "PHP Symfony/Drupal Back-end Developer @European Commission DIGIT",
-      "relationship": "Colleague",
-      "date": "2015-03-30"
-    },
-    {
-      "name": "Jakub Kowalski",
-      "reference": "It has been a real pleasure to work with Rocco on projects in Youwin. He has got great knowledge in every area of web development: starting with configuration of development and running environments, web servers and caching systems going through backend dev ending with vast JavaScript, HTML, HTML5 and CSS skills to deliver frontend. Rocco is a person who can be alone given great tasks as he can handle the whole process by himself, yet in the same time with his open mind and potential to share and acquire knowledge is a great team player who likes to consult opinions in order to deliver the best quality products. Rational and agile oriented can work in an environment running on any pace. Great mind, great friend, social person with all the skills which a web dev company may ever need. Rocco is the best choice for a fantastic team of bright developers as with him you can go beyond standards.",
-      "position": "Head of development at Praetorian Technology",
-      "relationship": "Colleague",
-      "date": "2013-11-08"
-    },
-    {
-      "name": "Oliver Müller",
-      "reference": "Rocco helped me grow my developer career by providing me with an opportunity to learn real world skills through real world projects. The amount of knowledge I gained during my internship helped me grow from intern to junior developer and land a job at an IoT company after the 3 months. He is very experienced and installed good principles in me which I am very thankful for. Highly recommend if you want a very knowledgable software engineer & leader.",
-      "position": "Software Engineer | Software Development | Product",
-      "relationship": "Direct Report",
-      "date": "2025-10-09"
+      "fluency": "Elementary proficiency",
+      "language": "Zulu"
     }
   ],
   "projects": [
     {
-      "name": "Ajna Labs - DeFi DApp + SDK",
-      "startDate": "2022-08-01",
-      "endDate": "2023-08-01",
       "description": "DeFi protocol with $20M+ in liquidity. Built proprietary SDK to facilitate seamless integration with decentralized smart contracts, as well as scalable front-end architectures.",
+      "endDate": "2023-08-01",
       "highlights": ["Deployed SPA managing $20M+ in liquidity", "Created SDK reducing integration time by 50%", "Released ecosystem-wide design library"],
-      "url": "https://www.ajna.finance",
       "keywords": ["React", "TypeScript", "Solidity", "Web3.js", "Ethers.js", "SDK"],
-      "roles": ["Lead Frontend Engineer"]
+      "name": "Ajna Labs - DeFi DApp + SDK",
+      "roles": ["Lead Frontend Engineer"],
+      "startDate": "2022-08-01",
+      "url": "https://www.ajna.finance"
     },
     {
-      "name": "Mode Network - Large-scale React Refactoring",
-      "startDate": "2023-01-01",
-      "endDate": "2023-12-01",
       "description": "Comprehensive architectural refactor of a large-scale codebase built with Next.js, React Hooks, and TailwindCSS for an EVM chain platform.",
+      "endDate": "2023-12-01",
       "highlights": ["Refactored large-scale Next.js application", "Improved code organization and performance", "Implemented modern React patterns"],
-      "url": "https://www.mode.network",
       "keywords": ["Next.js", "React Hooks", "TailwindCSS", "TypeScript"],
-      "roles": ["Frontend Consultant"]
+      "name": "Mode Network - Large-scale React Refactoring",
+      "roles": ["Frontend Consultant"],
+      "startDate": "2023-01-01",
+      "url": "https://www.mode.network"
     },
     {
-      "name": "GamesGlobal - Lotsaloot™ Progressive Jackpot Slot Machines",
-      "startDate": "2023-09-01",
-      "endDate": "2024-09-01",
       "description": "Implemented an enhanced user interface for a jackpot system deployed across diverse iGaming platforms. Responsive UI for player engagement. Entirely in Vanilla.",
+      "endDate": "2024-09-01",
       "highlights": ["Built jackpot system UI in vanilla JavaScript", "Optimized for high-traffic gaming platforms", "Implemented real-time updates and animations"],
-      "url": "https://www.bet365.com",
       "keywords": ["JavaScript", "HTML5", "CSS3", "Canvas API", "WebGL"],
-      "roles": ["Lead Frontend Engineer"]
+      "name": "GamesGlobal - Lotsaloot™ Progressive Jackpot Slot Machines",
+      "roles": ["Lead Frontend Engineer"],
+      "startDate": "2023-09-01",
+      "url": "https://www.bet365.com"
     },
     {
-      "name": "Landworks by EnterDAO - Metaverse Rental System",
-      "startDate": "2021-08-01",
-      "endDate": "2022-07-01",
       "description": "Contributed to codebase optimization and iterative refactoring initiatives across both user-facing and governance modules.",
+      "endDate": "2022-07-01",
       "highlights": ["Optimized metaverse rental platform", "Improved governance module performance", "Enhanced user experience"],
-      "url": "https://www.enterdao.xyz",
       "keywords": ["React", "TypeScript", "Web3", "Solidity", "GraphQL"],
-      "roles": ["Frontend Developer"]
+      "name": "Landworks by EnterDAO - Metaverse Rental System",
+      "roles": ["Frontend Developer"],
+      "startDate": "2021-08-01",
+      "url": "https://www.enterdao.xyz"
     },
     {
-      "name": "Omnia DeFi - Dapp Dashboard for Real World Assets",
-      "startDate": "2021-01-01",
-      "endDate": "2021-07-01",
       "description": "Dashboard for investors with vesting, farming, and rewards system connected to Ethereum smart contracts. Working across a stack of Node.js, React.js, Next.js, and some basics tasks with Python, Django, and Flask frameworks.",
+      "endDate": "2021-07-01",
       "highlights": ["Built full-stack DeFi dashboard", "Integrated Ethereum smart contracts", "Implemented vesting and farming features"],
-      "url": "",
       "keywords": ["Node.js", "React.js", "Next.js", "Python", "Django", "Flask", "Ethereum"],
-      "roles": ["Lead Software Engineer"]
+      "name": "Omnia DeFi - Dapp Dashboard for Real World Assets",
+      "roles": ["Lead Software Engineer"],
+      "startDate": "2021-01-01",
+      "url": ""
     },
     {
-      "name": "Lokr.io (former Polkalokr) - Marketing website",
-      "startDate": "2021-06-01",
-      "endDate": "2021-12-01",
       "description": "Optimization and refactoring of the main website for best browser performances. Next.js and CSS3 Animations",
+      "endDate": "2021-12-01",
       "highlights": ["Optimized website performance", "Implemented smooth CSS3 animations", "Improved load times and SEO"],
-      "url": "",
       "keywords": ["Next.js", "CSS3 Animations", "Performance Optimization"],
-      "roles": ["Frontend Consultant"]
+      "name": "Lokr.io (former Polkalokr) - Marketing website",
+      "roles": ["Frontend Consultant"],
+      "startDate": "2021-06-01",
+      "url": ""
     },
     {
-      "name": "AltCash - B2C Crypto Exchanger",
-      "startDate": "2020-01-01",
-      "endDate": "2021-01-01",
       "description": "Another open source project aiming to showcase a one way exchanger to allow small buyers of crypto coins/tokens with Fiat Onramp and Bittrex or Binance API.",
+      "endDate": "2021-01-01",
       "highlights": ["Built crypto exchange platform", "Integrated Fiat onramp", "Connected to major exchange APIs"],
-      "url": "",
       "keywords": ["React", "Node.js", "Crypto APIs", "Fiat Onramp"],
-      "roles": ["Full Stack Developer"]
+      "name": "AltCash - B2C Crypto Exchanger",
+      "roles": ["Full Stack Developer"],
+      "startDate": "2020-01-01",
+      "url": ""
     },
     {
-      "name": "CyberGrandpa Anti-Fraud - Browser Extension",
-      "startDate": "2022-01-01",
-      "endDate": "",
       "description": "Open-source cross-browser web extension engineered to enhance digital safety by mitigating exposure to phishing and fraudulent activities.",
+      "endDate": "",
       "highlights": ["Built cross-browser security extension", "Implemented phishing detection", "Released as open source"],
-      "url": "https://github.com/CyberGrandpas/cybergrandpa-web-extension-antifraud",
       "keywords": ["JavaScript", "Browser Extensions", "Security", "Anti-Fraud"],
-      "roles": ["Lead Developer"]
+      "name": "CyberGrandpa Anti-Fraud - Browser Extension",
+      "roles": ["Lead Developer"],
+      "startDate": "2022-01-01",
+      "url": "https://github.com/CyberGrandpas/cybergrandpa-web-extension-antifraud"
     },
     {
-      "name": "LinkedIn Full Width - UI Enhancement Extension",
-      "startDate": "2019-01-01",
-      "endDate": "",
       "description": "Small but viral Chrome extension that makes LinkedIn website display in full width mode.",
+      "endDate": "",
       "highlights": ["Viral Chrome extension with thousands of users", "Simple CSS injection for better UX", "Maintained and updated regularly"],
-      "url": "https://chromewebstore.google.com/detail/linkedin-full-width/pijfcmadcbkcjdmajckndpccemdgebhn",
       "keywords": ["JavaScript", "Browser Extensions", "CSS"],
-      "roles": ["Solo Developer"]
+      "name": "LinkedIn Full Width - UI Enhancement Extension",
+      "roles": ["Solo Developer"],
+      "startDate": "2019-01-01",
+      "url": "https://chromewebstore.google.com/detail/linkedin-full-width/pijfcmadcbkcjdmajckndpccemdgebhn"
     },
     {
-      "name": "Tetris with Crypto Rewards - Telegram Mini App",
-      "startDate": "2024-01-01",
-      "endDate": "",
       "description": "Arcade game for Telegram Mini Apps with leaderboard and TON token prizes.",
+      "endDate": "",
       "highlights": ["Built Telegram Mini App game", "Integrated TON blockchain rewards", "Implemented competitive leaderboard"],
-      "url": "https://github.com/xdemocle/tetris-mini-app",
       "keywords": ["JavaScript", "Telegram Mini Apps", "TON Blockchain", "Canvas API"],
-      "roles": ["Solo Developer"]
+      "name": "Tetris with Crypto Rewards - Telegram Mini App",
+      "roles": ["Solo Developer"],
+      "startDate": "2024-01-01",
+      "url": "https://github.com/xdemocle/tetris-mini-app"
+    }
+  ],
+  "publications": [],
+  "references": [
+    {
+      "date": "2023-09-01",
+      "name": "Hiroshi Tanaka",
+      "position": "Senior Software Engineer at Guideline",
+      "reference": "In my experience working with Rocco, I've been consistently impressed by his unique blend of professionalism and warmth. He effortlessly cultivates a collaborative atmosphere that is both light-hearted and focused. Rocco's knowledge in software engineering is expansive, but what truly sets him apart is his approachability. Despite his expertise, he never comes off as intimidating. Instead, he's always eager to share, guide, and support. It's truly a privilege to work alongside someone with such a rare combination of qualities.",
+      "relationship": "Direct Report"
+    },
+    {
+      "date": "2023-01-27",
+      "name": "Sofia Andersson",
+      "position": "Archeologo I fascia (DM 244/2019)",
+      "reference": "Rocco is the future",
+      "relationship": "Client"
+    },
+    {
+      "date": "2022-12-16",
+      "name": "Mateo Fernández",
+      "position": "Senior Solidity Engineer",
+      "reference": "Rocco is a great frontend developer who make any designs become real for end users. He is proficient: always ask questions to understand tiny details that will make the difference for a great product, propose better solutions & technologies. The code is always clean, organised and well refactored. On top of that, Rocco is always available when needed and is very friendly and always supports others",
+      "relationship": "Manager"
+    },
+    {
+      "date": "2020-06-05",
+      "name": "Lars Nielsen",
+      "position": "Product-first software CEO, building next-gen enterprise software for commerce",
+      "reference": "Rocco is the type of person you want on your team, highly skilled and without any fear of diving in on the deep end of the pool. He rearchitected our web plattform from the ground up in a matter of months, something that was considered impossible by several people prior to Rocco. In addition to his technical prowess, he's an affable person that quickly built a personal bond to our team, with his humor and great attitude. I can't recommend Rocco enough!",
+      "relationship": "Manager"
+    },
+    {
+      "date": "2015-08-08",
+      "name": "Emma van der Berg",
+      "position": "Full stack developer",
+      "reference": "When the company ran out of people to do a Angular + Gulp project and asked me if I knew someone that could help out, I knew Rocco was the guy that would save the day. Rocco managed to achieve amazing results within a very limited timeframe, and even when put under a lot of stress, he maintained his eye for detail and never lost focus.",
+      "relationship": "Colleague"
+    },
+    {
+      "date": "2015-07-29",
+      "name": "Rajesh Kumar",
+      "position": "Technical Architect at HCL Technologies",
+      "reference": "Rocco is an excellent Front End Developer with lots of knowledge in Front End Technologies. He knows lot of tools which supports the development lot more easier and faster. Whatever the tool Rocco is using he will follow the standards always. He is a good team member and always dedicated to work which i noticed when working on the same project. He will finish his tasks by working extra hours.",
+      "relationship": "Colleague"
+    },
+    {
+      "date": "2015-07-26",
+      "name": "Ingrid Schmidt",
+      "position": "Senior Product Owner",
+      "reference": "Rocco is a great senior front end developer. In my team he did the set up of the framework for the Drupal theme for the new website. He will do his utter best to finish the job with the best result. Rocco is a devoted employee and a great guy to work with. I love his hard work and happy energy. As a product owner it is great to work with Rocco because you know he will get the job done.",
+      "relationship": "Colleague"
+    },
+    {
+      "date": "2015-07-22",
+      "name": "Lukas Novak",
+      "position": "Fullstack Go/TS/LLM",
+      "reference": "We've spend some fun time with Rocco while working on a CoffeeScript and Backbone based Phonegap app. He pursues clean code and separation of concerns in his frontend work, which is decorated by expressive comments. He always tries to be up to date with latest frameworks.",
+      "relationship": "Colleague"
+    },
+    {
+      "date": "2015-06-15",
+      "name": "Carlos Mendoza",
+      "position": "Staff Security Engineer at Bird",
+      "reference": "Rocco is a very attentive to detail person. He makes sure that everything works according to specs and prepares for it. He also is the perfect colleague to work along side with. He always tries to help others when he can, and makes sure you have received all the information that was needed.",
+      "relationship": "Colleague"
+    },
+    {
+      "date": "2015-06-02",
+      "name": "Pierre Dubois",
+      "position": "Information / DevOps Engineer",
+      "reference": "Rocco has a highly professional standard concerning front-end development and automated development tools. It is a pleasure and great fun to work with Rocco. He is honest, speaks his mind, can be stubborn at times but manages to make everyone smile. Rocco set a very clear path for himself, \"to learn, keep improving and put his skills into practice\". I learned a lot from Rocco. His contributions to the teams are of high quality and created a sustainable platform for front-end development. I hope to work with Rocco again someday and meet more people like him.",
+      "relationship": "Colleague"
+    },
+    {
+      "date": "2015-03-30",
+      "name": "Marco Rossi",
+      "position": "PHP Symfony/Drupal Back-end Developer @European Commission DIGIT",
+      "reference": "Rocco is an high motivated and qualified IT Consultant. He has a strong attitude to day by day challenges and he pay attention to perform high quality final results saving as much time as possible. That's why he's constantly upgrading himself to the newest technologies, mainly Front-end, to obtain the maximum results in terms of time-quality. He is also a nice guy and it was a pleasure to work beside him both professionally and personally.",
+      "relationship": "Colleague"
+    },
+    {
+      "date": "2013-11-08",
+      "name": "Jakub Kowalski",
+      "position": "Head of development at Praetorian Technology",
+      "reference": "It has been a real pleasure to work with Rocco on projects in Youwin. He has got great knowledge in every area of web development: starting with configuration of development and running environments, web servers and caching systems going through backend dev ending with vast JavaScript, HTML, HTML5 and CSS skills to deliver frontend. Rocco is a person who can be alone given great tasks as he can handle the whole process by himself, yet in the same time with his open mind and potential to share and acquire knowledge is a great team player who likes to consult opinions in order to deliver the best quality products. Rational and agile oriented can work in an environment running on any pace. Great mind, great friend, social person with all the skills which a web dev company may ever need. Rocco is the best choice for a fantastic team of bright developers as with him you can go beyond standards.",
+      "relationship": "Colleague"
+    },
+    {
+      "date": "2025-10-09",
+      "name": "Oliver Müller",
+      "position": "Software Engineer | Software Development | Product",
+      "reference": "Rocco helped me grow my developer career by providing me with an opportunity to learn real world skills through real world projects. The amount of knowledge I gained during my internship helped me grow from intern to junior developer and land a job at an IoT company after the 3 months. He is very experienced and installed good principles in me which I am very thankful for. Highly recommend if you want a very knowledgable software engineer & leader.",
+      "relationship": "Direct Report"
+    }
+  ],
+  "skills": [
+    {
+      "keywords": ["React", "React Router", "Preact", "Svelte", "TypeScript", "JavaScript", "Next.js", "Remix", "Redux", "Zustand", "TanStack Query", "CSS", "CSS-in-JS", "TailwindCSS", "Styled Components", "Atomic Design", "Responsive Design", "Web Accessibility (a11y)", "Performance Optimization", "Vue.js", "Angular", "Astro", "SolidJS", "SASS/SCSS", "Framer Motion", "Three.js", "WebGL", "PWA", "Web Components"],
+      "level": "Expert",
+      "name": "Frontend Development"
+    },
+    {
+      "keywords": ["Solidity", "Smart Contracts", "EVM", "Wagmi", "Viem", "Ethers.js", "Web3.js", "DeFi DApps", "NFT Marketplaces", "IPFS", "The Graph", "Hardhat", "Foundry", "Wallet Integration", "SDK Development", "Chainlink", "OpenZeppelin", "Alchemy", "Infura", "ENS", "Layer 2 Solutions", "Token Standards (ERC-20/721/1155)", "Vyper", "Cairo (StarkNet)", "Subgraphs"],
+      "level": "Expert",
+      "name": "Web3 & Blockchain"
+    },
+    {
+      "keywords": ["LLM Agents", "Prompt Engineering", "Claude API", "OpenAI API", "RAG Systems", "AI-Assisted Development", "Cloudflare AI", "LangChain", "Vector Databases", "Embeddings", "Fine-tuning", "Hugging Face", "Stable Diffusion", "MCP (Model Context Protocol)"],
+      "level": "Advanced",
+      "name": "AI & Machine Learning"
+    },
+    {
+      "keywords": ["Node.js", "Express", "Hono", "NestJS", "GraphQL", "REST APIs", "tRPC", "MongoDB", "PostgreSQL", "Drizzle ORM", "Prisma", "Redis", "Cloudflare D1", "Better Auth", "Flask", "Python", "FastAPI", "Deno", "Bun", "MySQL", "SQLite", "Supabase", "Firebase", "WebSockets", "Message Queues", "Microservices", "Serverless Functions", "OAuth/OIDC", "JWT"],
+      "level": "Advanced",
+      "name": "Backend Development"
+    },
+    {
+      "keywords": ["Docker", "Kubernetes", "CI/CD", "GitHub Actions", "AWS", "GCP", "Cloudflare Workers", "Cloudflare Pages", "Vercel", "Heroku", "Wrangler", "Terraform", "Nginx", "Linux/Unix", "Shell Scripting", "AWS Lambda", "AWS S3", "AWS EC2", "Cloudflare R2", "Cloudflare KV", "DigitalOcean", "Railway", "Render", "Monitoring/Logging", "Sentry"],
+      "level": "Advanced",
+      "name": "DevOps & Cloud"
+    },
+    {
+      "keywords": ["Git", "GitHub", "GitLab", "Webpack", "Vite", "Turborepo", "pnpm", "Figma", "Jest", "Vitest", "Playwright", "Testing Library", "Selenium", "Storybook", "Cypress", "ESLint", "Prettier", "Biome", "npm", "yarn", "Postman", "Insomnia", "Chrome DevTools", "Lighthouse", "Nx", "Lerna", "Changesets", "Husky", "Commitlint"],
+      "level": "Expert",
+      "name": "Tools & Testing"
+    },
+    {
+      "keywords": ["Technical Mentoring", "Code Review", "Technical Writing", "Architecture Design", "Agile/Scrum", "Remote Collaboration", "Team Leadership", "Project Estimation", "Client Communication", "Technical Interviews", "Documentation", "Pair Programming", "Problem Solving", "Debugging"],
+      "level": "Expert",
+      "name": "Soft Skills"
+    }
+  ],
+  "volunteer": [
+    {
+      "endDate": "",
+      "highlights": ["Helped ~12 peers, 5 got positions in first 1-4 months", "Helped a 32-year-old in his job switch career", "Positioned 2 interns to their first junior positions in 2023"],
+      "organization": "The Web3 Ninja",
+      "position": "Peer Mentor",
+      "startDate": "2024-01-01",
+      "summary": "Mentoring developers transitioning to Web3 and helping career changers break into tech.",
+      "url": "https://theweb3ninja.com"
+    },
+    {
+      "endDate": "",
+      "highlights": ["Help Abdul Karim Heal: A War Child's Fight for Life", "Save Elias & His Family: From Tent to Safety"],
+      "organization": "Steunactie",
+      "position": "Fundraising Manager",
+      "startDate": "2023-01-01",
+      "summary": "Dedicating time to help people in need around Africa and the Middle East with crowdfunding initiatives.",
+      "url": "https://www.steunactie.nl"
+    },
+    {
+      "endDate": "",
+      "organization": "CyberGrandpa",
+      "position": "Member of Consulting Staff",
+      "startDate": "2022-01-01",
+      "summary": "Trusted Guide to Online Safety and Protection from Scams, Phishing, and Malware. Expert Cybersecurity Services on subscription.",
+      "url": "https://cybergrandpa.space"
+    }
+  ],
+  "work": [
+    {
+      "endDate": "",
+      "highlights": ["Mentored 5 interns, placed 3 as junior devs.", "Built 3 DApps and APIs improving transaction speed by 15%.", "Reduced gas fees via optimized blockchain integration."],
+      "location": "Apulia, Italy, Remote",
+      "name": "The Web3 Ninja",
+      "position": "Lead Software Engineer, Web3",
+      "startDate": "2024-10-01",
+      "summary": "Leading Web3 integration projects and mentoring junior developers.",
+      "url": "https://theweb3ninja.com"
+    },
+    {
+      "endDate": "2024-09-01",
+      "highlights": ["Developed UI for Lotsaloot™ jackpot system.", "Enhanced player engagement with tiered reward logic.", "Collaborated across teams to increase retention metrics."],
+      "location": "Swieqi, Malta, Remote",
+      "name": "Games Global",
+      "position": "Lead Frontend Engineer",
+      "startDate": "2023-09-01",
+      "summary": "Leading front-end development for gaming platforms.",
+      "url": "https://www.gamesglobal.com"
+    },
+    {
+      "endDate": "2023-08-01",
+      "highlights": ["Led 12-member team, boosted productivity by 30%.", "Reduced bugs by 25% and raised code quality 40%.", "Served 5M users and 3k concurrent visitors."],
+      "location": "Remote",
+      "name": "Shiba Inu",
+      "position": "Tech Lead, Web3",
+      "startDate": "2023-01-01",
+      "summary": "Led technical development for the Shiba Inu ecosystem.",
+      "url": "https://shibatoken.com"
+    },
+    {
+      "endDate": "2023-08-01",
+      "highlights": ["Deployed SPA with $20M+ liquidity.", "Created SDK reducing integration time 50%.", "Released ecosystem-wide design library increasing dev speed 25%."],
+      "location": "Remote",
+      "name": "Ajna Labs",
+      "position": "Lead Frontend Engineer",
+      "startDate": "2022-08-01",
+      "summary": "Leading front-end development for DeFi applications.",
+      "url": "https://www.ajna.finance"
+    },
+    {
+      "endDate": "2022-07-01",
+      "highlights": ["Supervised 10+ decentralized projects.", "Mentored 4 frontend developers.", "Improved scalability and UI consistency."],
+      "location": "Remote",
+      "name": "Linum Labs",
+      "position": "Lead Frontend Engineer",
+      "startDate": "2021-08-01",
+      "summary": "Leading Web3 and crypto application development.",
+      "url": "https://linumlabs.com"
+    },
+    {
+      "endDate": "2021-07-01",
+      "highlights": ["Built vesting and farming dashboard integrated with Ethereum.", "Developed smart contract interaction layers for DeFi operations."],
+      "location": "Remote",
+      "name": "Omnia DeFi",
+      "position": "Lead Software Engineer, Web3",
+      "startDate": "2021-01-01",
+      "summary": "Building DeFi infrastructure and smart contract integrations.",
+      "url": "https://omniadefi.com"
+    },
+    {
+      "endDate": "2015-07-01",
+      "highlights": ["Delivered enterprise-grade Web2 refactoring projects.", "Optimized legacy systems for cloud-readiness."],
+      "location": "The Hague, Netherlands",
+      "name": "HCLTech",
+      "position": "Lead Software Engineer",
+      "startDate": "2014-12-01",
+      "summary": "Delivering enterprise software solutions.",
+      "url": "https://www.hcltech.com"
+    },
+    {
+      "endDate": "2014-12-01",
+      "highlights": ["Contributed to scientific web apps for chemical data systems.", "Developed Angular-based interfaces for cross-platform tablets."],
+      "location": "Amsterdam, Netherlands",
+      "name": "Elsevier",
+      "position": "Software Engineer",
+      "startDate": "2013-01-01",
+      "summary": "Building scientific data platforms (Reaxys 2 Web App).",
+      "url": "https://www.elsevier.com"
+    },
+    {
+      "endDate": "2013-01-01",
+      "highlights": ["Built multilingual advertising marketplace with 3M+ visitors/month.", "Improved SEO and user engagement on high-traffic portals."],
+      "location": "Paris, France",
+      "name": "AdForum",
+      "position": "Software Engineer",
+      "startDate": "2012-01-01",
+      "summary": "Building marketplace for advertising industry.",
+      "url": "https://www.adforum.com"
     }
   ]
 }
