@@ -86,7 +86,7 @@ export function Navbar() {
             >
               <Avatar className="size-5.5 rounded-none">
                 <AvatarImage
-                  src="public/assets/ui/logo-linkedin-xl.png"
+                  src="/assets/ui/logo-linkedin-xl.png"
                   alt="Browser Extension: Linkedin XL"
                 />
                 <AvatarFallback>XL</AvatarFallback>
