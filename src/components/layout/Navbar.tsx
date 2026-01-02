@@ -33,12 +33,7 @@ export function Navbar() {
 
   return (
     <header className="border-b bg-card/95 backdrop-blur-sm fixed top-0 left-0 right-0 z-50 shadow-xs">
-      <div
-        className={cn(
-          "mx-auto px-2 sm:px-4 flex items-center z-0 my-1.5 md:my-0",
-          isLayoutLarge ? "" : "max-w-7xl"
-        )}
-      >
+      <div className="mx-auto px-2 sm:px-4 flex items-center z-0 my-1.5 md:my-0 max-w-7xl">
         {/* Logo */}
         <LinkTranslated href="/">
           <Logo />

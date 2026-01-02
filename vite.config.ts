@@ -155,7 +155,7 @@ export default defineConfig({
         const stored = localStorage.getItem("isLayoutLarge");
         const isLayoutLarge = stored ? JSON.parse(stored) : false;
         if (isLayoutLarge) {
-          document.documentElement.style.setProperty("--layout-large", "true");
+          document.documentElement.classList.add("layout-large");
         }
       } catch (e) {
         // Silently fail if localStorage is not available

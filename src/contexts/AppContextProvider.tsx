@@ -17,18 +17,23 @@ export function AppProvider({ children }: { children: ReactNode }) {
   const [isLayoutLarge, setIsLayoutLarge] = useState(() => {
     if (typeof window === "undefined") return false;
     // Check if the preference was already set by the inline script in prerendered HTML
-    const htmlStyle =
-      document.documentElement.style.getPropertyValue("--layout-large");
-    if (htmlStyle === "true") return true;
+    if (document.documentElement.classList.contains("layout-large")) {
+      return true;
+    }
     // Otherwise, read from localStorage
     const stored = localStorage.getItem("isLayoutLarge");
     return stored ? JSON.parse(stored) : false;
   });
   const [searchQuery, setSearchQuery] = useState("");
 
-  // Persist isLayoutLarge to localStorage whenever it changes
+  // Persist isLayoutLarge to localStorage and update html class whenever it changes
   useEffect(() => {
     localStorage.setItem("isLayoutLarge", JSON.stringify(isLayoutLarge));
+    if (isLayoutLarge) {
+      document.documentElement.classList.add("layout-large");
+    } else {
+      document.documentElement.classList.remove("layout-large");
+    }
   }, [isLayoutLarge]);
 
   const isMobile = useMediaQuery("(max-width: 60rem)");

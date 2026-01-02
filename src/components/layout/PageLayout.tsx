@@ -1,4 +1,3 @@
-import { useApp } from "@/hooks";
 import { cn } from "@/lib/utils";
 import { type ReactNode } from "react";
 import { ErrorBoundary } from "../ErrorBoundary";
@@ -20,18 +19,11 @@ export function PageLayout({
   noSidebar,
   disableSidebarScroll,
 }: PageLayoutProps) {
-  const { isLayoutLarge } = useApp();
-
   return (
     <div className="min-h-screen">
       <Navbar />
 
-      <main
-        className={cn(
-          "mx-auto px-4 sm:px-6 py-16 sm:py-20",
-          isLayoutLarge ? "" : "max-w-7xl"
-        )}
-      >
+      <main className="mx-auto px-4 sm:px-6 py-16 sm:py-20 max-w-7xl">
         <div
           className={cn(
             "grid grid-cols-1 lg:grid-cols-3 gap-5 md:gap-10",
