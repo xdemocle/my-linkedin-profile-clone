@@ -29,6 +29,11 @@ export function SkillsSection() {
       })),
   }));
 
+  // Set all accordion items to be open by default
+  const defaultOpenValues = topSkillsByCategory.map(
+    (_, index) => `category-${index}`
+  );
+
   return (
     <Card className="shadow-xs">
       <CardHeader className="flex flex-col md:flex-row md:items-center justify-start md:justify-between">
@@ -42,7 +47,7 @@ export function SkillsSection() {
       </CardHeader>
 
       <CardContent className="grid grid-cols-1 gap-4">
-        <Accordion type="single" collapsible className="w-full">
+        <Accordion type="multiple" value={defaultOpenValues} className="w-full">
           {topSkillsByCategory.map((category, categoryIndex) => (
             <AccordionItem
               key={categoryIndex}
