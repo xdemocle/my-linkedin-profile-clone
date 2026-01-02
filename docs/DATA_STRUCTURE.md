@@ -35,7 +35,7 @@ Full TypeScript definitions for the JSON Resume schema.
 ### Primary Hook: `useJSONResumeAdapter()`
 
 ```typescript
-import { useJSONResumeAdapter } from "@/hooks";
+import { useJSONResumeAdapter } from '@/hooks';
 
 function Component() {
   const data = useJSONResumeAdapter();
@@ -46,7 +46,7 @@ function Component() {
 ### Legacy Hook: `useProfileData()`
 
 ```typescript
-import { useProfileData } from "@/hooks";
+import { useProfileData } from '@/hooks';
 
 function Component() {
   const data = useProfileData();
@@ -62,6 +62,7 @@ function Component() {
 4. **Portability** - Compatible with JSON Resume tools and services
 5. **Backward Compatible** - Existing components work without changes via adapter
 6. **Detailed Skill Mapping** - Preserves individual skill levels using `skills.json` as the source for accurate level data
+7. **Multi-Language Support** - Separate JSON Resume files for each language, dynamically loaded based on locale
 
 ## Editing Data
 

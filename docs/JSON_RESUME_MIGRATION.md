@@ -50,7 +50,7 @@ The JSON Resume schema includes these main sections:
 ### Option 1: Use the Adapter (Recommended for existing code)
 
 ```typescript
-import { useProfileData } from "@/hooks";
+import { useProfileData } from '@/hooks';
 
 function MyComponent() {
   const { personal, experience, projects, skills } = useProfileData();
@@ -61,7 +61,7 @@ function MyComponent() {
 ### Option 2: Use JSON Resume Directly (Recommended for new code)
 
 ```typescript
-import { useJSONResumeAdapter } from "@/hooks";
+import { useJSONResumeAdapter } from '@/hooks';
 
 function MyComponent() {
   const profileData = useJSONResumeAdapter();
@@ -72,8 +72,8 @@ function MyComponent() {
 ### Option 3: Access Raw JSON Resume Data
 
 ```typescript
-import resumeData from "@/data/resume.json";
-import type { JSONResume } from "@/types/json-resume";
+import resumeData from '@/data/resume.json';
+import type { JSONResume } from '@/types/json-resume';
 
 function MyComponent() {
   const resume = resumeData as JSONResume;
@@ -202,11 +202,7 @@ Use bullet points for achievements:
 
 ```json
 {
-  "highlights": [
-    "Led team of 5 developers",
-    "Increased performance by 40%",
-    "Reduced bugs by 25%"
-  ]
+  "highlights": ["Led team of 5 developers", "Increased performance by 40%", "Reduced bugs by 25%"]
 }
 ```
 
@@ -218,6 +214,10 @@ Use bullet points for achievements:
 4. **Documentation** - Well-documented standard with examples
 5. **Internationalization** - Easy to create multiple language versions
 6. **Export** - Can export to PDF, HTML, etc. using JSON Resume tools
+
+## Multi-Language Support
+
+To support multiple languages, separate JSON Resume files are created for each language (e.g., `resume-en.json`). The adapter hook dynamically loads the appropriate file based on the current locale. Translations for UI elements and fallback text are managed using the `useTranslations` hook from `use-intl`, ensuring a seamless experience across languages.
 
 ## Migration Checklist
 
