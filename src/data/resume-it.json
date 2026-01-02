@@ -161,7 +161,41 @@
       "location": "Milano, Italia"
     }
   ],
-  "volunteer": [],
+  "volunteer": [
+    {
+      "organization": "The Web3 Ninja",
+      "position": "Peer Mentor",
+      "url": "https://theweb3ninja.com",
+      "startDate": "2024-01-01",
+      "endDate": "",
+      "summary": "Mentoring developers transitioning to Web3 and helping career changers break into tech.",
+      "highlights": [
+        "Helped ~12 peers, 5 got positions in first 1-4 months",
+        "Helped a 32-year-old in his job switch career",
+        "Positioned 2 interns to their first junior positions in 2023"
+      ]
+    },
+    {
+      "organization": "Steunactie",
+      "position": "Fundraising Manager",
+      "url": "https://www.steunactie.nl",
+      "startDate": "2023-01-01",
+      "endDate": "",
+      "summary": "Dedicating time to help people in need around Africa and the Middle East with crowdfunding initiatives.",
+      "highlights": [
+        "Help Abdul Karim Heal: A War Child's Fight for Life",
+        "Save Elias & His Family: From Tent to Safety"
+      ]
+    },
+    {
+      "organization": "CyberGrandpa",
+      "position": "Member of Consulting Staff",
+      "url": "https://cybergrandpa.space",
+      "startDate": "2022-01-01",
+      "endDate": "",
+      "summary": "Trusted Guide to Online Safety and Protection from Scams, Phishing, and Malware. Expert Cybersecurity Services on subscription."
+    }
+  ],
   "education": [
     {
       "institution": "Athena School",
@@ -377,7 +411,9 @@
         "Postman",
         "Swagger",
         "Storybook",
-        "Chromatic"
+        "Chromatic",
+        "OAuth/OIDC",
+        "JWT"
       ]
     },
     {
@@ -399,7 +435,71 @@
         "Comunicazione",
         "Gestione del Tempo",
         "Lavoro Remoto",
-        "Collaborazione Cross-funzionale"
+        "Collaborazione Cross-funzionale",
+        "AWS S3",
+        "AWS EC2",
+        "Cloudflare R2",
+        "Cloudflare KV",
+        "DigitalOcean",
+        "Railway",
+        "Render",
+        "Monitoring/Logging",
+        "Sentry"
+      ]
+    },
+    {
+      "name": "Tools & Testing",
+      "level": "Expert",
+      "keywords": [
+        "Git",
+        "GitHub",
+        "GitLab",
+        "Webpack",
+        "Vite",
+        "Turborepo",
+        "pnpm",
+        "Figma",
+        "Jest",
+        "Vitest",
+        "Playwright",
+        "Testing Library",
+        "Selenium",
+        "Storybook",
+        "Cypress",
+        "ESLint",
+        "Prettier",
+        "Biome",
+        "npm",
+        "yarn",
+        "Postman",
+        "Insomnia",
+        "Chrome DevTools",
+        "Lighthouse",
+        "Nx",
+        "Lerna",
+        "Changesets",
+        "Husky",
+        "Commitlint"
+      ]
+    },
+    {
+      "name": "Soft Skills",
+      "level": "Expert",
+      "keywords": [
+        "Technical Mentoring",
+        "Code Review",
+        "Technical Writing",
+        "Architecture Design",
+        "Agile/Scrum",
+        "Remote Collaboration",
+        "Team Leadership",
+        "Project Estimation",
+        "Client Communication",
+        "Technical Interviews",
+        "Documentation",
+        "Pair Programming",
+        "Problem Solving",
+        "Debugging"
       ]
     }
   ],
@@ -415,6 +515,18 @@
     {
       "language": "Italiano",
       "fluency": "Competenza Nativa o Bilingue"
+    },
+    {
+      "language": "Portuguese",
+      "fluency": "Elementary proficiency"
+    },
+    {
+      "language": "French",
+      "fluency": "Elementary proficiency"
+    },
+    {
+      "language": "Zulu",
+      "fluency": "Elementary proficiency"
     }
   ],
   "interests": [
@@ -425,12 +537,49 @@
         "Blockchain",
         "AI/ML",
         "IoT",
-        "Cybersecurity"
+        "Cybersecurity",
+        "Open Source",
+        "AI",
+        "Clean Code",
+        "Scalability",
+        "Architecture",
+        "Problem-Solving"
       ]
     },
     {
       "name": "Hobby",
-      "keywords": ["Fotografia", "Viaggi", "Gaming", "Cucina", "Lettura"]
+      "keywords": [
+        "Fotografia",
+        "Viaggi",
+        "Gaming",
+        "Cucina",
+        "Lettura",
+        "Teaching",
+        "Education"
+      ]
+    },
+    {
+      "name": "Mindset & Values",
+      "keywords": [
+        "Innovation",
+        "Strategy",
+        "Systems Thinking",
+        "Adaptability",
+        "Growth",
+        "Ethics",
+        "Empathy",
+        "Continuous Learning"
+      ]
+    },
+    {
+      "name": "Culture & Expression",
+      "keywords": [
+        "Global Mindset",
+        "Languages",
+        "Research",
+        "Writing",
+        "Creativity"
+      ]
     }
   ],
   "references": [],
@@ -454,7 +603,9 @@
       "startDate": "2022-01-01",
       "endDate": "2022-12-01",
       "url": "https://ajna.finance",
-      "roles": ["Frontend Lead"],
+      "roles": [
+        "Frontend Lead"
+      ],
       "entity": "Ajna Labs",
       "type": "application"
     },
@@ -475,7 +626,9 @@
       "startDate": "2023-01-01",
       "endDate": "2023-12-01",
       "url": "https://mode.network",
-      "roles": ["Frontend Lead"],
+      "roles": [
+        "Frontend Lead"
+      ],
       "entity": "Mode Network",
       "type": "application"
     },
@@ -487,11 +640,19 @@
         "Ottimizzato il rendering WebGL per 60 FPS su dispositivi di fascia bassa",
         "Integrati gateway di pagamento sicuri per transazioni giornaliere di oltre $100K"
       ],
-      "keywords": ["React", "WebGL", "WebSocket", "Gaming", "Multiplayer"],
+      "keywords": [
+        "React",
+        "WebGL",
+        "WebSocket",
+        "Gaming",
+        "Multiplayer"
+      ],
       "startDate": "2022-01-01",
       "endDate": "2024-01-01",
       "url": "https://gamesglobal.com",
-      "roles": ["Ingegnere Frontend"],
+      "roles": [
+        "Ingegnere Frontend"
+      ],
       "entity": "Games Global",
       "type": "application"
     },
@@ -503,11 +664,20 @@
         "Integrati smart contract per leasing e pagamenti automatizzati",
         "Ottimizzata interfaccia utente per anteprime di asset 3D complessi con Three.js"
       ],
-      "keywords": ["React", "TypeScript", "Three.js", "NFT", "Web3", "DeFi"],
+      "keywords": [
+        "React",
+        "TypeScript",
+        "Three.js",
+        "NFT",
+        "Web3",
+        "DeFi"
+      ],
       "startDate": "2021-01-01",
       "endDate": "2022-01-01",
       "url": "https://enterdao.xyz",
-      "roles": ["Sviluppatore Frontend"],
+      "roles": [
+        "Sviluppatore Frontend"
+      ],
       "entity": "EnterDAO",
       "type": "application"
     },
@@ -519,11 +689,21 @@
         "Integrati dati blockchain in tempo reale con il protocollo The Graph",
         "Progettata interfaccia utente responsive per investitori desktop e mobile"
       ],
-      "keywords": ["React", "GraphQL", "The Graph", "DeFi", "Web3"],
+      "keywords": [
+        "React",
+        "GraphQL",
+        "The Graph",
+        "DeFi",
+        "Web3",
+        "Flask",
+        "Ethereum"
+      ],
       "startDate": "2021-01-01",
       "endDate": "2022-01-01",
       "url": "https://omnia-defi.com",
-      "roles": ["Sviluppatore Frontend"],
+      "roles": [
+        "Sviluppatore Frontend"
+      ],
       "entity": "Omnia DeFi",
       "type": "application"
     },
@@ -535,11 +715,18 @@
         "Ottimizzato per SEO, raggiungendo il top 3 per termini chiave",
         "Integrata autenticazione wallet web3 per funzionalità demo"
       ],
-      "keywords": ["React", "Next.js", "SEO", "Autenticazione Web3"],
+      "keywords": [
+        "React",
+        "Next.js",
+        "SEO",
+        "Autenticazione Web3"
+      ],
       "startDate": "2021-01-01",
       "endDate": "2021-12-01",
       "url": "https://lokr.io",
-      "roles": ["Sviluppatore Frontend"],
+      "roles": [
+        "Sviluppatore Frontend"
+      ],
       "entity": "Lokr.io",
       "type": "website"
     },
@@ -551,11 +738,18 @@
         "Integrati oltre 5 gateway di pagamento per conversione fiat-to-crypto",
         "Progettata autenticazione utente sicura con verifica KYC"
       ],
-      "keywords": ["React", "Node.js", "Gateway di Pagamento", "Criptovaluta"],
+      "keywords": [
+        "React",
+        "Node.js",
+        "Gateway di Pagamento",
+        "Criptovaluta"
+      ],
       "startDate": "2020-01-01",
       "endDate": "2021-01-01",
       "url": "https://alt.cash",
-      "roles": ["Sviluppatore Full Stack"],
+      "roles": [
+        "Sviluppatore Full Stack"
+      ],
       "entity": "AltCash",
       "type": "application"
     },
@@ -576,7 +770,9 @@
       "startDate": "2019-01-01",
       "endDate": "2020-01-01",
       "url": "https://github.com/xdemocle/cybergrandpa",
-      "roles": ["Sviluppatore Principale"],
+      "roles": [
+        "Sviluppatore Principale"
+      ],
       "entity": "Progetto Personale",
       "type": "application"
     },
@@ -597,7 +793,9 @@
       "startDate": "2018-01-01",
       "endDate": "2019-01-01",
       "url": "https://github.com/xdemocle/linkedin-full-width",
-      "roles": ["Creatore"],
+      "roles": [
+        "Creatore"
+      ],
       "entity": "Progetto Personale",
       "type": "application"
     },
@@ -609,11 +807,18 @@
         "Integrato wallet blockchain per micro-ricompense in ETH",
         "Ottimizzate prestazioni per un gameplay fluido su mobile"
       ],
-      "keywords": ["React", "Sviluppo Giochi", "API Telegram", "Web3"],
+      "keywords": [
+        "React",
+        "Sviluppo Giochi",
+        "API Telegram",
+        "Web3"
+      ],
       "startDate": "2023-01-01",
       "endDate": "2023-12-01",
       "url": "https://t.me/tetris_crypto_bot",
-      "roles": ["Sviluppatore Principale"],
+      "roles": [
+        "Sviluppatore Principale"
+      ],
       "entity": "Progetto Personale",
       "type": "application"
     }
