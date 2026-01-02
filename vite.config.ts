@@ -7,6 +7,7 @@ import { defineConfig } from "vite";
 import { vitePrerenderPlugin } from "vite-prerender-plugin";
 import { LOCALES, LOCALE_DEFAULT } from "./src/constants/i18n";
 import { getPageUrlFromPath } from "./src/lib/i18n";
+
 const mainLanguageRoutes = [
   ...LOCALES.map(locale => getPageUrlFromPath(locale, "")),
 ];
@@ -176,18 +177,22 @@ export default defineConfig({
 
         // Create _redirects file
         const redirectsContent = [
-          "# Handle direct language access with trailing slash",
-          // `/${LOCALE_DEFAULT}   /       302`,
-          // `/${LOCALE_DEFAULT}/  /       302`,
+          "# Handle language routes with trailing slash",
         ];
 
+        // Add language-specific redirects to add trailing slash
         for (const lang of languages) {
           if (lang !== LOCALE_DEFAULT) {
             redirectsContent.push(`/${lang}  /${lang}/     301`);
           }
         }
 
-        redirectsContent.push(`/${LOCALE_DEFAULT}/* /:splat 302`);
+        // Add catch-all for routes without trailing slash (but NOT for other languages)
+        // This ensures /en/* routes work but doesn't interfere with /fr/*, /it/*, etc.
+        redirectsContent.push(`/experience  /experience/     301`);
+        redirectsContent.push(`/projects  /projects/     301`);
+        redirectsContent.push(`/skills  /skills/     301`);
+        redirectsContent.push(`/recommendations  /recommendations/     301`);
 
         await fs.writeFile(
           "dist/client/_redirects",
