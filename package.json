@@ -26,6 +26,7 @@
     "lint": "eslint .",
     "prettier": "prettier --write .",
     "check:resume-sync": "node scripts/check-resume-sync.ts",
+    "sync:resume-locales": "node scripts/sync-resume-locales-from-en.ts",
     "preview": "bun run build && wrangler pages dev",
     "deploy": "bun run build && wrangler pages deploy",
     "cf-typegen": "wrangler types",
