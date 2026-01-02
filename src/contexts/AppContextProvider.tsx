@@ -7,15 +7,25 @@ import {
   RocketIcon,
 } from "@radix-ui/react-icons";
 import useMediaQuery from "beautiful-react-hooks/useMediaQuery";
-import { useMemo, useState, type ReactNode } from "react";
+import { useEffect, useMemo, useState, type ReactNode } from "react";
 import { useTranslations } from "use-intl";
 import { AppContext } from "./AppContext";
 
 export function AppProvider({ children }: { children: ReactNode }) {
   const [isSearchOpen, setIsSearchOpen] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isLayoutLarge, setIsLayoutLarge] = useState(false);
+  const [isLayoutLarge, setIsLayoutLarge] = useState(() => {
+    if (typeof window === "undefined") return false;
+    const stored = localStorage.getItem("isLayoutLarge");
+    return stored ? JSON.parse(stored) : false;
+  });
   const [searchQuery, setSearchQuery] = useState("");
+
+  // Persist isLayoutLarge to localStorage whenever it changes
+  useEffect(() => {
+    localStorage.setItem("isLayoutLarge", JSON.stringify(isLayoutLarge));
+  }, [isLayoutLarge]);
+
   const isMobile = useMediaQuery("(max-width: 60rem)");
   const t = useTranslations("Navigation");
 
