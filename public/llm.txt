@@ -73,7 +73,6 @@ Static data files (will be replaced by CMS API in future):
 
 - `profile-data.ts` - Main profile information
 - `education.ts` - Education and certifications
-- `companies.ts` - Company details
 - `achievements.ts` - Professional achievements
 
 ### `/src/hooks/`

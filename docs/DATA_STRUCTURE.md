@@ -6,12 +6,12 @@ This application uses the [JSON Resume](https://jsonresume.org/schema) standard 
 
 ## Main Data File
 
-**Location:** `src/data/resume.json`
+**Location:** `src/data/resume-*.json`
 
 This single file contains all resume data in JSON Resume format:
 
 ```
-resume.json
+resume-*.json
 ├── basics (personal info, contact, location, profiles)
 ├── work (employment history)
 ├── volunteer (volunteer experience)
@@ -35,7 +35,7 @@ Full TypeScript definitions for the JSON Resume schema.
 ### Primary Hook: `useJSONResumeAdapter()`
 
 ```typescript
-import { useJSONResumeAdapter } from '@/hooks';
+import { useJSONResumeAdapter } from "@/hooks";
 
 function Component() {
   const data = useJSONResumeAdapter();
@@ -46,7 +46,7 @@ function Component() {
 ### Legacy Hook: `useProfileData()`
 
 ```typescript
-import { useProfileData } from '@/hooks';
+import { useProfileData } from "@/hooks";
 
 function Component() {
   const data = useProfileData();
@@ -57,7 +57,7 @@ function Component() {
 ## Key Features
 
 1. **Standardized Format** - Industry-standard JSON Resume schema
-2. **Single Source of Truth** - One file (`resume.json`) for all data
+2. **Single Source of Truth** - Language-specific files (e.g., `resume-en.json`) for all data
 3. **Type Safety** - Full TypeScript definitions
 4. **Portability** - Compatible with JSON Resume tools and services
 5. **Backward Compatible** - Existing components work without changes via adapter
@@ -68,7 +68,7 @@ function Component() {
 
 To update your resume:
 
-1. Open `src/data/resume.json`
+1. Open `src/data/resume-*.json`
 2. Edit the relevant section
 3. Save the file
 4. Changes will be reflected immediately in development mode
@@ -110,8 +110,9 @@ Contains non-resume data like:
 
 The old data files have been consolidated:
 
-- ~~`experience.json`~~ → `resume.json` (work section)
-- ~~`projects.json`~~ → `resume.json` (projects section)
+- ~~`experience.json`~~ → Language-specific `resume-*.json` (work section)
+- ~~`projects.json`~~ → Language-specific `resume-*.json` (projects section)
 - `skills.json` → Retained as source for individual skill levels in adapter
+- ~~`resume.json`~~ → Replaced by language-specific files like `resume-en.json`, `resume-it.json`, etc.
 
 See `docs/JSON_RESUME_MIGRATION.md` for detailed migration guide.

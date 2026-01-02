@@ -9,8 +9,12 @@ The application has been refactored to use the [JSON Resume](https://jsonresume.
 ### New Files
 
 1. **`src/types/json-resume.ts`** - TypeScript types for the JSON Resume schema
-2. **`src/data/resume.json`** - Main resume data file in JSON Resume format
-3. **`src/hooks/useJSONResumeAdapter.ts`** - Adapter hook that converts JSON Resume to ProfileData format
+2. **`src/data/resume-en.json`** - Main resume data file in JSON Resume format for English
+3. **`src/data/resume-it.json`** - Main resume data file in JSON Resume format for Italian
+4. **`src/data/resume-fr.json`** - Main resume data file in JSON Resume format for French
+5. **`src/data/resume-ar.json`** - Main resume data file in JSON Resume format for Arabic
+6. **`src/data/resume-es.json`** - Main resume data file in JSON Resume format for Spanish
+7. **`src/hooks/useJSONResumeAdapter.ts`** - Adapter hook that converts JSON Resume to ProfileData format
 
 ### Modified Files
 
@@ -21,6 +25,7 @@ The application has been refactored to use the [JSON Resume](https://jsonresume.
 
 - `src/data/experience.json`
 - `src/data/projects.json`
+- `src/data/resume.json`
 
 ## JSON Resume Schema
 
@@ -50,7 +55,7 @@ The JSON Resume schema includes these main sections:
 ### Option 1: Use the Adapter (Recommended for existing code)
 
 ```typescript
-import { useProfileData } from '@/hooks';
+import { useProfileData } from "@/hooks";
 
 function MyComponent() {
   const { personal, experience, projects, skills } = useProfileData();
@@ -61,7 +66,7 @@ function MyComponent() {
 ### Option 2: Use JSON Resume Directly (Recommended for new code)
 
 ```typescript
-import { useJSONResumeAdapter } from '@/hooks';
+import { useJSONResumeAdapter } from "@/hooks";
 
 function MyComponent() {
   const profileData = useJSONResumeAdapter();
@@ -72,8 +77,8 @@ function MyComponent() {
 ### Option 3: Access Raw JSON Resume Data
 
 ```typescript
-import resumeData from '@/data/resume.json';
-import type { JSONResume } from '@/types/json-resume';
+import resumeData from "@/data/resume-en.json";
+import type { JSONResume } from "@/types/json-resume";
 
 function MyComponent() {
   const resume = resumeData as JSONResume;
@@ -169,7 +174,7 @@ Since JSON Resume applies a single level to an entire skill category, the adapte
 
 ## Updating Resume Data
 
-To update your resume, edit `src/data/resume.json`. The file follows the JSON Resume schema with these conventions:
+To update your resume, edit the corresponding language-specific JSON Resume file (e.g., `src/data/resume-en.json`, `src/data/resume-it.json`, `src/data/resume-fr.json`, `src/data/resume-ar.json`, `src/data/resume-es.json`). The file follows the JSON Resume schema with these conventions:
 
 ### Date Format
 
@@ -202,7 +207,11 @@ Use bullet points for achievements:
 
 ```json
 {
-  "highlights": ["Led team of 5 developers", "Increased performance by 40%", "Reduced bugs by 25%"]
+  "highlights": [
+    "Led team of 5 developers",
+    "Increased performance by 40%",
+    "Reduced bugs by 25%"
+  ]
 }
 ```
 
@@ -217,16 +226,16 @@ Use bullet points for achievements:
 
 ## Multi-Language Support
 
-To support multiple languages, separate JSON Resume files are created for each language (e.g., `resume-en.json`). The adapter hook dynamically loads the appropriate file based on the current locale. Translations for UI elements and fallback text are managed using the `useTranslations` hook from `use-intl`, ensuring a seamless experience across languages.
+To support multiple languages, separate JSON Resume files are created for each language (e.g., `resume-en.json`, `resume-it.json`, `resume-fr.json`, `resume-ar.json`, `resume-es.json`). The adapter hook dynamically loads the appropriate file based on the current locale. Translations for UI elements and fallback text are managed using the `useTranslations` hook from `use-intl`, ensuring a seamless experience across languages. The original `resume.json` file is deprecated and no longer used.
 
 ## Migration Checklist
 
 - [x] Create JSON Resume types
-- [x] Convert existing data to resume.json
+- [x] Convert existing data to resume-en.json, resume-it.json, resume-fr.json, resume-ar.json, resume-es.json
 - [x] Create adapter hook
 - [x] Update useProfileData to use adapter
 - [x] Export new hooks
-- [x] Remove old data files (experience.json, projects.json, skills.json)
+- [x] Remove old data files (experience.json, projects.json, skills.json, resume.json)
 - [x] Update tests to use new structure
 - [x] Verify all components work correctly
 - [x] Update documentation
