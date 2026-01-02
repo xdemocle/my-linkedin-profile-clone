@@ -177,8 +177,8 @@ export default defineConfig({
         // Create _redirects file
         const redirectsContent = [
           "# Handle direct language access with trailing slash",
-          `/${LOCALE_DEFAULT}   /       302`,
-          `/${LOCALE_DEFAULT}/  /       302`,
+          // `/${LOCALE_DEFAULT}   /       302`,
+          // `/${LOCALE_DEFAULT}/  /       302`,
         ];
 
         for (const lang of languages) {
