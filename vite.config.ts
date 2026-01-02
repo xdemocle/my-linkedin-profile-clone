@@ -148,8 +148,24 @@ export default defineConfig({
                 structuredData = `<script type="application/ld+json">${JSON.stringify(breadcrumbSchema)}</script>`;
               }
 
+              // Create script to prevent layout flash by reading localStorage preference early
+              const layoutPreferenceScript = `<script>
+    (function() {
+      try {
+        const stored = localStorage.getItem("isLayoutLarge");
+        const isLayoutLarge = stored ? JSON.parse(stored) : false;
+        if (isLayoutLarge) {
+          document.documentElement.style.setProperty("--layout-large", "true");
+        }
+      } catch (e) {
+        // Silently fail if localStorage is not available
+      }
+    })();
+  </script>`;
+
               // Inject before </head>
               const injection = `
+    ${layoutPreferenceScript}
     ${hreflangTags.join("\n    ")}
     ${structuredData}
   `;

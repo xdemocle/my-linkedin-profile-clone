@@ -16,6 +16,11 @@ export function AppProvider({ children }: { children: ReactNode }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isLayoutLarge, setIsLayoutLarge] = useState(() => {
     if (typeof window === "undefined") return false;
+    // Check if the preference was already set by the inline script in prerendered HTML
+    const htmlStyle =
+      document.documentElement.style.getPropertyValue("--layout-large");
+    if (htmlStyle === "true") return true;
+    // Otherwise, read from localStorage
     const stored = localStorage.getItem("isLayoutLarge");
     return stored ? JSON.parse(stored) : false;
   });
