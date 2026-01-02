@@ -102,6 +102,9 @@ export interface Interest {
 export interface Reference {
   name?: string;
   reference?: string;
+  position?: string;
+  relationship?: string;
+  date?: string;
 }
 
 export interface Project {

@@ -16,6 +16,7 @@ import type {
   PersonalInfo,
   ProfileData,
   Project,
+  Reference,
   Skill,
 } from "../types/profile";
 
@@ -234,6 +235,19 @@ export function useJSONResumeAdapter(): ProfileData {
         keywords: interest.keywords || [],
       })) || [];
 
+    // Map references to Reference[]
+    const references: Reference[] =
+      resume.references?.map(
+        ref =>
+          ({
+            name: ref.name || "",
+            reference: ref.reference || "",
+            position: ref.position || "",
+            relationship: ref.relationship || "",
+            date: ref.date || "",
+          }) as Reference
+      ) || [];
+
     return {
       personal,
       experience,
@@ -243,6 +257,7 @@ export function useJSONResumeAdapter(): ProfileData {
       certifications,
       achievements,
       interests,
+      references,
     };
   }, [resume, tPersonal, tAchievements, tCertifications, tEducation, locale]);
 }

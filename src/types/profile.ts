@@ -85,6 +85,14 @@ export interface Interest {
   keywords: string[];
 }
 
+export interface Reference {
+  name: string;
+  reference: string;
+  position: string;
+  relationship: string;
+  date: string;
+}
+
 export interface ProfileData {
   personal: PersonalInfo;
   experience: Experience[];
@@ -94,6 +102,7 @@ export interface ProfileData {
   certifications: Certification[];
   achievements: Achievement[];
   interests: Interest[];
+  references: Reference[];
 }
 
 export interface EducationResult {

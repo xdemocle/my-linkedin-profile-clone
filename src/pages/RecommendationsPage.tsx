@@ -10,26 +10,10 @@ import { Button } from "../components/ui/button";
 import { Card, CardContent, CardHeader } from "../components/ui/card";
 import { Separator } from "../components/ui/separator";
 
-const recommendationKeys = [
-  "oliverMuller",
-  "hiroshiTanaka",
-  "sofiaAndersson",
-  "mateoFernandez",
-  "larsNielsen",
-  "emmaVanDerBerg",
-  "rajeshKumar",
-  "ingridSchmidt",
-  "lukasNovak",
-  "carlosMendoza",
-  "pierreDubois",
-  "marcoRossi",
-  "jakubKowalski",
-];
-
 export function RecommendationsPage() {
   const t = useTranslations("Recommendations");
-  const tData = useTranslations("SampleData.recommendations");
-  const { personal } = useJSONResumeAdapter();
+  const profileData = useJSONResumeAdapter();
+  const { personal } = profileData;
 
   return (
     <PageLayout>
@@ -60,31 +44,29 @@ export function RecommendationsPage() {
         </CardHeader>
 
         <CardContent className="p-6">
-          {recommendationKeys.map((key, index) => (
-            <div key={key} className="mb-8 last:mb-0">
+          {profileData.references.map((reference, index) => (
+            <div key={index} className="mb-8 last:mb-0">
               {index > 0 && <Separator className="my-8" />}
               <div className="flex gap-2 md:gap-4">
                 <Avatar className="w-10 h-10 md:w-12 md:h-12 shrink-0">
                   <AvatarImage src="https://github.com/shadcn.png" />
-                  <AvatarFallback>{tData(`${key}.name`)[0]}</AvatarFallback>
+                  <AvatarFallback>{reference.name[0]}</AvatarFallback>
                 </Avatar>
                 <div className="flex-1">
                   <div className="mb-3">
-                    <h3 className="text-lg font-semibold">
-                      {tData(`${key}.name`)}
-                    </h3>
+                    <h3 className="text-lg font-semibold">{reference.name}</h3>
                     <p className="text-sm text-muted-foreground">
-                      {tData(`${key}.title`)}
+                      {reference.position}
                     </p>
                     <p className="text-xs text-muted-foreground mt-1">
-                      {tData(`${key}.relationship`)}
+                      {reference.relationship}
                     </p>
                     <p className="text-xs text-muted-foreground">
-                      {tData(`${key}.date`)}
+                      {reference.date}
                     </p>
                   </div>
                   <p className="text-sm leading-relaxed mb-3">
-                    {tData(`${key}.content`)}
+                    {reference.reference}
                   </p>
                 </div>
               </div>

@@ -3,6 +3,7 @@ import { useTranslations } from "use-intl";
 import { Avatar, AvatarFallback, AvatarImage } from "../ui/avatar";
 // import { Button } from '../ui/button';
 import { ArrowRightIcon } from "@radix-ui/react-icons";
+import { useJSONResumeAdapter } from "../../hooks";
 import { LinkTranslated } from "../LinkTranslated";
 import { Button } from "../ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "../ui/card";
@@ -26,11 +27,12 @@ const QuoteSvgIcon = () => (
   </svg>
 );
 
-const recommendationKeys = ["oliverMuller", "hiroshiTanaka", "mateoFernandez"];
-
 export function RecommendationsSection() {
   const t = useTranslations("Recommendations");
-  const tData = useTranslations("SampleData.recommendations");
+  const profileData = useJSONResumeAdapter();
+
+  // Show only the first 3 references for the preview
+  const previewReferences = profileData.references.slice(0, 3);
 
   return (
     <Card className="shadow-xs">
@@ -44,24 +46,24 @@ export function RecommendationsSection() {
         </Button>
       </CardHeader>
       <CardContent>
-        {recommendationKeys.map((key, index) => (
+        {previewReferences.map((reference, index) => (
           <div key={index} className="mb-6">
             {index > 0 && <Separator className="my-6" />}
             <div className="flex items-start gap-3 mb-2">
               <Avatar>
                 <AvatarImage src="https://github.com/shadcn.png" />
-                <AvatarFallback>{tData(`${key}.name`)[0]}</AvatarFallback>
+                <AvatarFallback>{reference.name[0]}</AvatarFallback>
               </Avatar>
               <div>
-                <h3 className="font-medium">{tData(`${key}.name`)}</h3>
+                <h3 className="font-medium">{reference.name}</h3>
                 <p className="text-sm text-muted-foreground">
-                  {tData(`${key}.title`)}
+                  {reference.position}
                 </p>
                 <p className="text-xs text-muted-foreground">
-                  {tData(`${key}.relationship`)}
+                  {reference.relationship}
                 </p>
                 <p className="text-xs text-muted-foreground">
-                  {tData(`${key}.date`)}
+                  {reference.date}
                 </p>
               </div>
             </div>
@@ -71,7 +73,7 @@ export function RecommendationsSection() {
                 <QuoteSvgIcon />
               </div>
               <p className="text-sm text-muted-foreground leading-relaxed">
-                {tData(`${key}.content`)}
+                {reference.reference}
               </p>
             </div>
           </div>
