@@ -11,7 +11,7 @@ import { SkillsSection } from "../components/profile/SkillsSection";
 
 export function MainPage() {
   return (
-    <PageLayout addToSidebar={<ProfileSidebar />}>
+    <PageLayout addToSidebar={<ProfileSidebar />} disableSidebarScroll>
       <SEO type="profile" path="" />
       <StructuredData type="person" />
       <ProfileHeader />

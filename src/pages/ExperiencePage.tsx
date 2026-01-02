@@ -16,7 +16,10 @@ export function ExperiencePage() {
   const { personal, experience } = useJSONResumeAdapter();
 
   return (
-    <PageLayout addToSidebar={<ExperienceKeyAchievements />}>
+    <PageLayout
+      addToSidebar={<ExperienceKeyAchievements />}
+      disableSidebarScroll
+    >
       <SEO
         title={`${personal.name} | ${t("title")}`}
         description={t("description")}

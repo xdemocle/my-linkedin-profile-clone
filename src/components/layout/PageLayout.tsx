@@ -11,12 +11,14 @@ interface PageLayoutProps {
   children: ReactNode;
   addToSidebar?: ReactNode;
   noSidebar?: boolean;
+  disableSidebarScroll?: boolean;
 }
 
 export function PageLayout({
   children,
   addToSidebar,
   noSidebar,
+  disableSidebarScroll,
 }: PageLayoutProps) {
   const { isLayoutLarge } = useApp();
 
@@ -47,7 +49,13 @@ export function PageLayout({
           {!noSidebar && (
             <ErrorBoundary>
               <div className="lg:col-span-1 order-2">
-                <div className="lg:sticky lg:top-20 lg:max-h-[calc(100vh-5rem)] lg:overflow-y-auto space-y-5 md:space-y-10">
+                <div
+                  className={cn(
+                    "space-y-5 md:space-y-10",
+                    !disableSidebarScroll &&
+                      "lg:sticky lg:top-20 lg:max-h-[calc(100vh-5rem)] lg:overflow-y-auto"
+                  )}
+                >
                   {/* Profile Language & URL */}
                   <ProfileLanguageUrl />
 
