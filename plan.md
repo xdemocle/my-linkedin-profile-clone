@@ -301,7 +301,6 @@ src/
 ## Recent Updates (2025-10-07)
 
 - [x] Updated `src/data/profile-data.ts` with accurate experience, projects, skills, and achievements from README
-- [x] Updated `src/data/companies.ts` with all companies mentioned in README
 - [x] Updated `src/data/achievements.ts` with key achievements from README
 - [x] Updated `src/data/education.ts` with correct certification names
 - [x] Updated English translations (`src/messages/en.json`) with README content

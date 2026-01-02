@@ -1,0 +1,133 @@
+{
+  "basics": {
+    "name": "Rocco Russo",
+    "label": "Ingeniero de Software Frontend",
+    "image": "/assets/png/profile.png",
+    "email": "rocco.russo.dev@gmail.com",
+    "phone": "+34 604 06 87 00",
+    "url": "https://xdemocle.eu",
+    "summary": "Ingeniero de Software Frontend con más de 8 años de experiencia en desarrollo web. Construyo aplicaciones web de alto rendimiento y accesibles con React, TypeScript y frameworks modernos.",
+    "location": {
+      "address": "",
+      "postalCode": "",
+      "city": "Málaga",
+      "countryCode": "ES",
+      "region": "Andalucía"
+    },
+    "profiles": [
+      {
+        "network": "GitHub",
+        "username": "xdemocle",
+        "url": "https://github.com/xdemocle"
+      },
+      {
+        "network": "LinkedIn",
+        "username": "roccorusso",
+        "url": "https://linkedin.com/in/roccorusso"
+      },
+      {
+        "network": "Twitter",
+        "username": "xdemocle",
+        "url": "https://twitter.com/xdemocle"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "The Web3 Ninja",
+      "position": "Ingeniero de Software Frontend",
+      "url": "https://theweb3.ninja",
+      "startDate": "2024-09-01",
+      "endDate": "",
+      "summary": "Construcción de soluciones web3 con un enfoque en el rendimiento frontend y la experiencia del usuario para aplicaciones blockchain.",
+      "highlights": [
+        "Optimización de componentes React para el renderizado de datos blockchain, reduciendo los tiempos de carga en un 40%"
+      ],
+      "location": "Remoto"
+    }
+  ],
+  "volunteer": [],
+  "education": [
+    {
+      "institution": "Athena School",
+      "url": "",
+      "area": "Ciencias de la Computación",
+      "studyType": "Curso Profesional",
+      "startDate": "2009-01-01",
+      "endDate": "2010-01-01",
+      "score": "",
+      "courses": []
+    }
+  ],
+  "awards": [
+    {
+      "title": "Top 10% Stack Overflow",
+      "date": "2019-01-01",
+      "awarder": "Stack Overflow",
+      "summary": "Clasificado constantemente en el top 10% de colaboradores para las etiquetas React y JavaScript."
+    }
+  ],
+  "certificates": [
+    {
+      "name": "React - La Guía Completa (incl. Hooks, React Router, Redux)",
+      "date": "2020-01-01",
+      "issuer": "Udemy - Academind por Maximilian Schwarzmüller",
+      "url": "https://www.udemy.com/certificate/UC-1Y9Z2R3N/"
+    }
+  ],
+  "publications": [],
+  "skills": [
+    {
+      "name": "Frontend",
+      "level": "Experto",
+      "keywords": [
+        "React",
+        "React Router",
+        "Preact",
+        "Svelte",
+        "TypeScript",
+        "JavaScript",
+        "Next.js",
+        "Remix",
+        "Redux"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "Inglés",
+      "fluency": "Competencia Profesional"
+    },
+    {
+      "language": "Español",
+      "fluency": "Competencia Elemental"
+    },
+    {
+      "language": "Italiano",
+      "fluency": "Competencia Nativa o Bilingüe"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Tecnología",
+      "keywords": ["Desarrollo Web", "Blockchain"]
+    }
+  ],
+  "references": [],
+  "projects": [
+    {
+      "name": "Ajna Labs - DApp DeFi + SDK",
+      "description": "Diseño de una aplicación de finanzas descentralizadas y un SDK para préstamos y empréstitos en el espacio web3.",
+      "highlights": [
+        "Integrado con más de 5 redes blockchain para préstamos entre cadenas"
+      ],
+      "keywords": ["React", "TypeScript"],
+      "startDate": "2022-01-01",
+      "endDate": "2022-12-01",
+      "url": "https://ajna.finance",
+      "roles": ["Líder Frontend"],
+      "entity": "Ajna Labs",
+      "type": "application"
+    }
+  ]
+}

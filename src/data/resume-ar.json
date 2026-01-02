@@ -1,0 +1,131 @@
+{
+  "basics": {
+    "name": "روكو روسو",
+    "label": "مهندس برمجيات واجهة أمامية",
+    "image": "/assets/png/profile.png",
+    "email": "rocco.russo.dev@gmail.com",
+    "phone": "+34 604 06 87 00",
+    "url": "https://xdemocle.eu",
+    "summary": "مهندس برمجيات واجهة أمامية بخبرة تزيد عن 8 سنوات في تطوير الويب. أقوم ببناء تطبيقات ويب عالية الأداء وسهلة الوصول باستخدام React و TypeScript وأطر العمل الحديثة.",
+    "location": {
+      "address": "",
+      "postalCode": "",
+      "city": "مالقة",
+      "countryCode": "ES",
+      "region": "أندلوسيا"
+    },
+    "profiles": [
+      {
+        "network": "GitHub",
+        "username": "xdemocle",
+        "url": "https://github.com/xdemocle"
+      },
+      {
+        "network": "LinkedIn",
+        "username": "roccorusso",
+        "url": "https://linkedin.com/in/roccorusso"
+      },
+      {
+        "network": "Twitter",
+        "username": "xdemocle",
+        "url": "https://twitter.com/xdemocle"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "The Web3 Ninja",
+      "position": "مهندس برمجيات واجهة أمامية",
+      "url": "https://theweb3.ninja",
+      "startDate": "2024-09-01",
+      "endDate": "",
+      "summary": "بناء حلول web3 مع التركيز على أداء الواجهة الأمامية وتجربة المستخدم لتطبيقات البلوكشين.",
+      "highlights": [
+        "تحسين مكونات React لعرض بيانات البلوكشين، مما قلل من أوقات التحميل بنسبة 40%"
+      ],
+      "location": "عن بُعد"
+    }
+  ],
+  "volunteer": [],
+  "education": [
+    {
+      "institution": "مدرسة أثينا",
+      "url": "",
+      "area": "علوم الحاسوب",
+      "studyType": "دورة مهنية",
+      "startDate": "2009-01-01",
+      "endDate": "2010-01-01",
+      "score": "",
+      "courses": []
+    }
+  ],
+  "awards": [
+    {
+      "title": "أفضل 10% في Stack Overflow",
+      "date": "2019-01-01",
+      "awarder": "Stack Overflow",
+      "summary": "مصنف باستمرار ضمن أفضل 10% من المساهمين لعلامات React و JavaScript."
+    }
+  ],
+  "certificates": [
+    {
+      "name": "React - الدليل الشامل (يشمل Hooks، React Router، Redux)",
+      "date": "2020-01-01",
+      "issuer": "Udemy - Academind بواسطة Maximilian Schwarzmüller",
+      "url": "https://www.udemy.com/certificate/UC-1Y9Z2R3N/"
+    }
+  ],
+  "publications": [],
+  "skills": [
+    {
+      "name": "الواجهة الأمامية",
+      "level": "خبير",
+      "keywords": [
+        "React",
+        "React Router",
+        "Preact",
+        "Svelte",
+        "TypeScript",
+        "JavaScript",
+        "Next.js",
+        "Remix",
+        "Redux"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "الإنجليزية",
+      "fluency": "كفاءة مهنية"
+    },
+    {
+      "language": "الإسبانية",
+      "fluency": "كفاءة أساسية"
+    },
+    {
+      "language": "الإيطالية",
+      "fluency": "كفاءة أصلية أو ثنائية اللغة"
+    }
+  ],
+  "interests": [
+    {
+      "name": "التكنولوجيا",
+      "keywords": ["تطوير الويب", "البلوكشين"]
+    }
+  ],
+  "references": [],
+  "projects": [
+    {
+      "name": "Ajna Labs - تطبيق DeFi + SDK",
+      "description": "تصميم تطبيق مالي لامركزي و SDK للإقراض والاقتراض في فضاء web3.",
+      "highlights": ["مدمج مع أكثر من 5 شبكات بلوكشين للإقراض عبر السلاسل"],
+      "keywords": ["React", "TypeScript"],
+      "startDate": "2022-01-01",
+      "endDate": "2022-12-01",
+      "url": "https://ajna.finance",
+      "roles": ["قائد الواجهة الأمامية"],
+      "entity": "Ajna Labs",
+      "type": "application"
+    }
+  ]
+}
