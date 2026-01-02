@@ -37,11 +37,7 @@
       "startDate": "2024-09-01",
       "endDate": "",
       "summary": "Construction de solutions web3 avec un accent sur les performances frontend et l'expérience utilisateur pour les applications blockchain.",
-      "highlights": [
-        "Optimisation des composants React pour le rendu des données blockchain, réduisant les temps de chargement de 40%",
-        "Création de 3 DApps et d'APIs, améliorant la vitesse des transactions de 15%.",
-        "Réduction des frais de gas grâce à une intégration blockchain optimisée."
-      ],
+      "highlights": ["Optimisation des composants React pour le rendu des données blockchain, réduisant les temps de chargement de 40%", "Création de 3 DApps et d'APIs, améliorant la vitesse des transactions de 15%.", "Réduction des frais de gas grâce à une intégration blockchain optimisée."],
       "location": "À distance"
     },
     {
@@ -51,11 +47,7 @@
       "startDate": "2023-09-01",
       "endDate": "2024-09-01",
       "summary": "Pilotage du développement frontend pour des plateformes de jeux.",
-      "highlights": [
-        "Développement de l'UI pour le système de jackpot Lotsaloot™.",
-        "Amélioration de l'engagement des joueurs via une logique de récompenses par paliers.",
-        "Collaboration inter-équipes pour améliorer les métriques de rétention."
-      ],
+      "highlights": ["Développement de l'UI pour le système de jackpot Lotsaloot™.", "Amélioration de l'engagement des joueurs via une logique de récompenses par paliers.", "Collaboration inter-équipes pour améliorer les métriques de rétention."],
       "location": "Swieqi, Malte, à distance"
     },
     {
@@ -65,11 +57,7 @@
       "startDate": "2023-01-01",
       "endDate": "2023-08-01",
       "summary": "Pilotage du développement technique pour l'écosystème Shiba Inu.",
-      "highlights": [
-        "Management d'une équipe de 12 personnes, productivité augmentée de 30%.",
-        "Réduction des bugs de 25% et amélioration de la qualité du code de 40%.",
-        "Service pour 5M d'utilisateurs et 3 000 visiteurs simultanés."
-      ],
+      "highlights": ["Management d'une équipe de 12 personnes, productivité augmentée de 30%.", "Réduction des bugs de 25% et amélioration de la qualité du code de 40%.", "Service pour 5M d'utilisateurs et 3 000 visiteurs simultanés."],
       "location": "Remote"
     },
     {
@@ -79,11 +67,7 @@
       "startDate": "2022-08-01",
       "endDate": "2023-08-01",
       "summary": "Pilotage du développement frontend pour des applications DeFi.",
-      "highlights": [
-        "Déploiement d'une SPA avec plus de 20M$ de liquidité.",
-        "Création d'un SDK réduisant le temps d'intégration de 50%.",
-        "Publication d'une librairie de design à l'échelle de l'écosystème, accélérant le développement de 25%."
-      ],
+      "highlights": ["Déploiement d'une SPA avec plus de 20M$ de liquidité.", "Création d'un SDK réduisant le temps d'intégration de 50%.", "Publication d'une librairie de design à l'échelle de l'écosystème, accélérant le développement de 25%."],
       "location": "Remote"
     },
     {
@@ -145,11 +129,7 @@
       "startDate": "2024-01-01",
       "endDate": "",
       "summary": "Mentorat de développeurs en transition vers le Web3 et accompagnement de reconversions vers la tech.",
-      "highlights": [
-        "Accompagné ~12 pairs, 5 ont trouvé un poste en 1 à 4 mois",
-        "Accompagné une personne de 32 ans dans une reconversion",
-        "Aidés 2 stagiaires à obtenir leur premier poste junior en 2023"
-      ]
+      "highlights": ["Accompagné ~12 pairs, 5 ont trouvé un poste en 1 à 4 mois", "Accompagné une personne de 32 ans dans une reconversion", "Aidés 2 stagiaires à obtenir leur premier poste junior en 2023"]
     },
     {
       "organization": "Steunactie",
@@ -244,236 +224,37 @@
     {
       "name": "Frontend",
       "level": "Expert",
-      "keywords": [
-        "React",
-        "React Router",
-        "Preact",
-        "Svelte",
-        "TypeScript",
-        "JavaScript",
-        "Next.js",
-        "Remix",
-        "Redux",
-        "Zustand",
-        "React Query",
-        "Apollo Client",
-        "GraphQL",
-        "Jest",
-        "React Testing Library",
-        "Cypress",
-        "Playwright",
-        "Webpack",
-        "Vite",
-        "Esbuild",
-        "Babel",
-        "SWC",
-        "HTML5",
-        "CSS3",
-        "SASS",
-        "LESS",
-        "Styled Components",
-        "CSS-in-JS",
-        "Tailwind CSS",
-        "shadcn/ui",
-        "Material-UI",
-        "Chakra UI",
-        "Ant Design",
-        "Bootstrap",
-        "Framer Motion",
-        "GreenSock",
-        "Accessibilité",
-        "Design Réactif",
-        "PWA",
-        "SEO"
-      ]
+      "keywords": ["React", "React Router", "Preact", "Svelte", "TypeScript", "JavaScript", "Next.js", "Remix", "Redux", "Zustand", "React Query", "Apollo Client", "GraphQL", "Jest", "React Testing Library", "Cypress", "Playwright", "Webpack", "Vite", "Esbuild", "Babel", "SWC", "HTML5", "CSS3", "SASS", "LESS", "Styled Components", "CSS-in-JS", "Tailwind CSS", "shadcn/ui", "Material-UI", "Chakra UI", "Ant Design", "Bootstrap", "Framer Motion", "GreenSock", "Accessibilité", "Design Réactif", "PWA", "SEO"]
     },
     {
       "name": "Backend",
       "level": "Intermédiaire",
-      "keywords": [
-        "Node.js",
-        "Express",
-        "NestJS",
-        "Python",
-        "Django",
-        "Flask",
-        "FastAPI",
-        "PHP",
-        "Laravel",
-        "Symfony",
-        "REST API",
-        "GraphQL API",
-        "WebSocket",
-        "gRPC",
-        "MongoDB",
-        "PostgreSQL",
-        "MySQL",
-        "SQLite",
-        "Redis",
-        "Elasticsearch",
-        "Firebase",
-        "Supabase",
-        "Prisma",
-        "TypeORM",
-        "Sequelize",
-        "Docker",
-        "Kubernetes",
-        "CI/CD",
-        "GitHub Actions",
-        "Jenkins",
-        "Nginx",
-        "Apache",
-        "AWS Lambda",
-        "Serverless"
-      ]
+      "keywords": ["Node.js", "Express", "NestJS", "Python", "Django", "Flask", "FastAPI", "PHP", "Laravel", "Symfony", "REST API", "GraphQL API", "WebSocket", "gRPC", "MongoDB", "PostgreSQL", "MySQL", "SQLite", "Redis", "Elasticsearch", "Firebase", "Supabase", "Prisma", "TypeORM", "Sequelize", "Docker", "Kubernetes", "CI/CD", "GitHub Actions", "Jenkins", "Nginx", "Apache", "AWS Lambda", "Serverless"]
     },
     {
       "name": "Web3 & Blockchain",
       "level": "Avancé",
-      "keywords": [
-        "Ethereum",
-        "Solidity",
-        "Truffle",
-        "Hardhat",
-        "Ethers.js",
-        "Wagmi",
-        "Web3.js",
-        "The Graph",
-        "IPFS",
-        "DeFi",
-        "NFT",
-        "DAO",
-        "Smart Contracts",
-        "Développement DApp",
-        "Tokenomics",
-        "Metamask",
-        "WalletConnect",
-        "Polygon",
-        "Binance Smart Chain",
-        "Solana",
-        "Rust"
-      ]
+      "keywords": ["Ethereum", "Solidity", "Truffle", "Hardhat", "Ethers.js", "Wagmi", "Web3.js", "The Graph", "IPFS", "DeFi", "NFT", "DAO", "Smart Contracts", "Développement DApp", "Tokenomics", "Metamask", "WalletConnect", "Polygon", "Binance Smart Chain", "Solana", "Rust"]
     },
     {
       "name": "Outils & Plateformes",
       "level": "Avancé",
-      "keywords": [
-        "Git",
-        "GitHub",
-        "GitLab",
-        "Bitbucket",
-        "Jira",
-        "Trello",
-        "Confluence",
-        "Slack",
-        "Discord",
-        "Figma",
-        "Sketch",
-        "Adobe XD",
-        "Zeplin",
-        "Vercel",
-        "Netlify",
-        "Heroku",
-        "AWS",
-        "Azure",
-        "Google Cloud",
-        "DigitalOcean",
-        "Sentry",
-        "New Relic",
-        "Datadog",
-        "Postman",
-        "Swagger",
-        "Storybook",
-        "Chromatic",
-        "OAuth/OIDC",
-        "JWT"
-      ]
+      "keywords": ["Git", "GitHub", "GitLab", "Bitbucket", "Jira", "Trello", "Confluence", "Slack", "Discord", "Figma", "Sketch", "Adobe XD", "Zeplin", "Vercel", "Netlify", "Heroku", "AWS", "Azure", "Google Cloud", "DigitalOcean", "Sentry", "New Relic", "Datadog", "Postman", "Swagger", "Storybook", "Chromatic", "OAuth/OIDC", "JWT"]
     },
     {
       "name": "Compétences Douces & Méthodologies",
       "level": "Expert",
-      "keywords": [
-        "Agile",
-        "Scrum",
-        "Kanban",
-        "Lean",
-        "TDD",
-        "BDD",
-        "Pair Programming",
-        "Code Review",
-        "Mentorat",
-        "Leadership d'Équipe",
-        "Rédaction Technique",
-        "Résolution de Problèmes",
-        "Communication",
-        "Gestion du Temps",
-        "Travail à Distance",
-        "Collaboration Cross-fonctionnelle",
-        "AWS S3",
-        "AWS EC2",
-        "Cloudflare R2",
-        "Cloudflare KV",
-        "DigitalOcean",
-        "Railway",
-        "Render",
-        "Monitoring/Logging",
-        "Sentry"
-      ]
+      "keywords": ["Agile", "Scrum", "Kanban", "Lean", "TDD", "BDD", "Pair Programming", "Code Review", "Mentorat", "Leadership d'Équipe", "Rédaction Technique", "Résolution de Problèmes", "Communication", "Gestion du Temps", "Travail à Distance", "Collaboration Cross-fonctionnelle", "AWS S3", "AWS EC2", "Cloudflare R2", "Cloudflare KV", "DigitalOcean", "Railway", "Render", "Monitoring/Logging", "Sentry"]
     },
     {
       "name": "Tools & Testing",
       "level": "Expert",
-      "keywords": [
-        "Git",
-        "GitHub",
-        "GitLab",
-        "Webpack",
-        "Vite",
-        "Turborepo",
-        "pnpm",
-        "Figma",
-        "Jest",
-        "Vitest",
-        "Playwright",
-        "Testing Library",
-        "Selenium",
-        "Storybook",
-        "Cypress",
-        "ESLint",
-        "Prettier",
-        "Biome",
-        "npm",
-        "yarn",
-        "Postman",
-        "Insomnia",
-        "Chrome DevTools",
-        "Lighthouse",
-        "Nx",
-        "Lerna",
-        "Changesets",
-        "Husky",
-        "Commitlint"
-      ]
+      "keywords": ["Git", "GitHub", "GitLab", "Webpack", "Vite", "Turborepo", "pnpm", "Figma", "Jest", "Vitest", "Playwright", "Testing Library", "Selenium", "Storybook", "Cypress", "ESLint", "Prettier", "Biome", "npm", "yarn", "Postman", "Insomnia", "Chrome DevTools", "Lighthouse", "Nx", "Lerna", "Changesets", "Husky", "Commitlint"]
     },
     {
       "name": "Soft Skills",
       "level": "Expert",
-      "keywords": [
-        "Technical Mentoring",
-        "Code Review",
-        "Technical Writing",
-        "Architecture Design",
-        "Agile/Scrum",
-        "Remote Collaboration",
-        "Team Leadership",
-        "Project Estimation",
-        "Client Communication",
-        "Technical Interviews",
-        "Documentation",
-        "Pair Programming",
-        "Problem Solving",
-        "Debugging"
-      ]
+      "keywords": ["Technical Mentoring", "Code Review", "Technical Writing", "Architecture Design", "Agile/Scrum", "Remote Collaboration", "Team Leadership", "Project Estimation", "Client Communication", "Technical Interviews", "Documentation", "Pair Programming", "Problem Solving", "Debugging"]
     }
   ],
   "languages": [
@@ -617,11 +398,7 @@
     {
       "name": "Ajna Labs - DApp DeFi + SDK",
       "description": "Conception d'une application de finance décentralisée et d'un SDK pour les prêts et emprunts dans l'espace web3. Construit avec React, TypeScript, Ethers.js et des smart contracts Solidity.",
-      "highlights": [
-        "Intégré à plus de 5 réseaux blockchain pour des prêts inter-chaînes",
-        "Conçu une interface haute performance gérant plus de 1 million $ en transactions",
-        "Développé un SDK utilisé par plus de 10 développeurs externes pour des intégrations personnalisées"
-      ],
+      "highlights": ["Intégré à plus de 5 réseaux blockchain pour des prêts inter-chaînes", "Conçu une interface haute performance gérant plus de 1 million $ en transactions", "Développé un SDK utilisé par plus de 10 développeurs externes pour des intégrations personnalisées"],
       "keywords": ["React", "TypeScript", "Ethers.js", "Solidity", "DeFi", "Web3"],
       "startDate": "2022-01-01",
       "endDate": "2022-12-01",
@@ -633,11 +410,7 @@
     {
       "name": "Mode Network - Refactorisation React à Grande Échelle",
       "description": "Direction de la refactorisation d'une application React monolithique en une base de code modulaire et maintenable pour un réseau blockchain de couche 2.",
-      "highlights": [
-        "Réduction de la dette technique de 60% grâce à la modularisation des composants",
-        "Amélioration des temps de chargement des pages de 35% avec le code splitting et le lazy loading",
-        "Mentorat d'une équipe de 4 développeurs sur les patterns React modernes"
-      ],
+      "highlights": ["Réduction de la dette technique de 60% grâce à la modularisation des composants", "Amélioration des temps de chargement des pages de 35% avec le code splitting et le lazy loading", "Mentorat d'une équipe de 4 développeurs sur les patterns React modernes"],
       "keywords": ["React", "TypeScript", "Optimisation des Performances", "Refactorisation de Code"],
       "startDate": "2023-01-01",
       "endDate": "2023-12-01",
@@ -649,11 +422,7 @@
     {
       "name": "GamesGlobal - Machines à Sous Jackpot Progressif Lotsaloot™",
       "description": "Développement de jeux de machines à sous à jackpot progressif avec des fonctionnalités multiplayer en temps réel et des graphismes haute performance.",
-      "highlights": [
-        "Construction d'un système de machines à sous multiplayer gérant plus de 1000 utilisateurs simultanés",
-        "Optimisation du rendu WebGL pour 60 FPS sur des appareils bas de gamme",
-        "Intégration de passerelles de paiement sécurisées pour des transactions quotidiennes de plus de 100 000 $"
-      ],
+      "highlights": ["Construction d'un système de machines à sous multiplayer gérant plus de 1000 utilisateurs simultanés", "Optimisation du rendu WebGL pour 60 FPS sur des appareils bas de gamme", "Intégration de passerelles de paiement sécurisées pour des transactions quotidiennes de plus de 100 000 $"],
       "keywords": ["React", "WebGL", "WebSocket", "Jeux", "Multijoueur"],
       "startDate": "2022-01-01",
       "endDate": "2024-01-01",
@@ -665,11 +434,7 @@
     {
       "name": "Landworks by EnterDAO - Système de Location Métaverse",
       "description": "Développement d'un système de location décentralisé pour des terrains virtuels dans le métaverse, intégrant la propriété NFT et les smart contracts.",
-      "highlights": [
-        "Construction d'un marché de location NFT avec plus de 500 utilisateurs actifs mensuels",
-        "Intégration de smart contracts pour des locations et paiements automatisés",
-        "Optimisation de l'interface utilisateur pour des aperçus d'actifs 3D complexes avec Three.js"
-      ],
+      "highlights": ["Construction d'un marché de location NFT avec plus de 500 utilisateurs actifs mensuels", "Intégration de smart contracts pour des locations et paiements automatisés", "Optimisation de l'interface utilisateur pour des aperçus d'actifs 3D complexes avec Three.js"],
       "keywords": ["React", "TypeScript", "Three.js", "NFT", "Web3", "DeFi"],
       "startDate": "2021-01-01",
       "endDate": "2022-01-01",
@@ -681,11 +446,7 @@
     {
       "name": "Omnia DeFi - Tableau de Bord Dapp pour Actifs du Monde Réel",
       "description": "Construction d'un tableau de bord de finance décentralisée pour gérer des actifs du monde réel tokenisés avec des données et analyses en temps réel.",
-      "highlights": [
-        "Développement d'un tableau de bord de suivi des actifs pour plus de 2 millions $ d'actifs tokenisés",
-        "Intégration de données blockchain en temps réel avec le protocole The Graph",
-        "Conception d'une interface utilisateur responsive pour les investisseurs sur desktop et mobile"
-      ],
+      "highlights": ["Développement d'un tableau de bord de suivi des actifs pour plus de 2 millions $ d'actifs tokenisés", "Intégration de données blockchain en temps réel avec le protocole The Graph", "Conception d'une interface utilisateur responsive pour les investisseurs sur desktop et mobile"],
       "keywords": ["React", "GraphQL", "The Graph", "DeFi", "Web3", "Flask", "Ethereum"],
       "startDate": "2021-01-01",
       "endDate": "2022-01-01",
@@ -697,11 +458,7 @@
     {
       "name": "Lokr.io (anciennement Polkalokr) - Site de Marketing",
       "description": "Conception et développement d'un site de marketing pour une plateforme de verrouillage de tokens basée sur la blockchain avec contenu dynamique.",
-      "highlights": [
-        "Construction d'un site piloté par CMS avec plus de 10 000 visiteurs mensuels",
-        "Optimisation pour le SEO, atteignant le top 3 pour des termes clés",
-        "Intégration de l'authentification de portefeuille web3 pour des fonctionnalités de démonstration"
-      ],
+      "highlights": ["Construction d'un site piloté par CMS avec plus de 10 000 visiteurs mensuels", "Optimisation pour le SEO, atteignant le top 3 pour des termes clés", "Intégration de l'authentification de portefeuille web3 pour des fonctionnalités de démonstration"],
       "keywords": ["React", "Next.js", "SEO", "Authentification Web3"],
       "startDate": "2021-01-01",
       "endDate": "2021-12-01",
@@ -713,11 +470,7 @@
     {
       "name": "AltCash - Échangeur Crypto B2C",
       "description": "Développement d'une plateforme d'échange de cryptomonnaies pour des transactions B2C avec traitement des paiements intégré.",
-      "highlights": [
-        "Construction d'une interface d'échange gérant plus de 50 000 $ en échanges crypto quotidiens",
-        "Intégration de plus de 5 passerelles de paiement pour la conversion fiat-to-crypto",
-        "Conception d'une authentification utilisateur sécurisée avec vérification KYC"
-      ],
+      "highlights": ["Construction d'une interface d'échange gérant plus de 50 000 $ en échanges crypto quotidiens", "Intégration de plus de 5 passerelles de paiement pour la conversion fiat-to-crypto", "Conception d'une authentification utilisateur sécurisée avec vérification KYC"],
       "keywords": ["React", "Node.js", "Passerelle de Paiement", "Cryptomonnaie"],
       "startDate": "2020-01-01",
       "endDate": "2021-01-01",
@@ -729,11 +482,7 @@
     {
       "name": "CyberGrandpa Anti-Fraude - Extension de Navigateur",
       "description": "Création d'une extension de navigateur pour détecter et prévenir la fraude en ligne pour les utilisateurs vulnérables avec des alertes en temps réel.",
-      "highlights": [
-        "Développement d'une extension avec plus de 1000 utilisateurs actifs sur le Chrome Store",
-        "Mise en œuvre d'une détection de fraude basée sur l'IA avec une précision de 85%",
-        "Conception d'une interface intuitive pour les utilisateurs âgés non techniques"
-      ],
+      "highlights": ["Développement d'une extension avec plus de 1000 utilisateurs actifs sur le Chrome Store", "Mise en œuvre d'une détection de fraude basée sur l'IA avec une précision de 85%", "Conception d'une interface intuitive pour les utilisateurs âgés non techniques"],
       "keywords": ["JavaScript", "Extension de Navigateur", "Machine Learning", "UX"],
       "startDate": "2019-01-01",
       "endDate": "2020-01-01",
@@ -745,11 +494,7 @@
     {
       "name": "LinkedIn Full Width - Extension d'Amélioration UI",
       "description": "Construction d'une extension de navigateur pour améliorer l'interface utilisateur de LinkedIn en maximisant la largeur du contenu et en supprimant les distractions.",
-      "highlights": [
-        "Atteint plus de 500 téléchargements avec une note de 4.8/5",
-        "Amélioration de la productivité des utilisateurs en optimisant la disposition du contenu",
-        "Maintien de la compatibilité à travers les mises à jour de l'interface LinkedIn"
-      ],
+      "highlights": ["Atteint plus de 500 téléchargements avec une note de 4.8/5", "Amélioration de la productivité des utilisateurs en optimisant la disposition du contenu", "Maintien de la compatibilité à travers les mises à jour de l'interface LinkedIn"],
       "keywords": ["JavaScript", "CSS", "Extension de Navigateur", "Amélioration UI"],
       "startDate": "2018-01-01",
       "endDate": "2019-01-01",
@@ -761,11 +506,7 @@
     {
       "name": "Tetris avec Récompenses Crypto - Mini App Telegram",
       "description": "Développement d'un jeu Tetris en tant que Mini App Telegram avec des récompenses en cryptomonnaie intégrées pour l'engagement des joueurs.",
-      "highlights": [
-        "Construction d'un jeu avec plus de 2000 joueurs actifs dès le premier mois",
-        "Intégration d'un portefeuille blockchain pour des micro-récompenses en ETH",
-        "Optimisation des performances pour un gameplay fluide sur mobile"
-      ],
+      "highlights": ["Construction d'un jeu avec plus de 2000 joueurs actifs dès le premier mois", "Intégration d'un portefeuille blockchain pour des micro-récompenses en ETH", "Optimisation des performances pour un gameplay fluide sur mobile"],
       "keywords": ["React", "Développement de Jeux", "API Telegram", "Web3"],
       "startDate": "2023-01-01",
       "endDate": "2023-12-01",

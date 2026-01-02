@@ -37,11 +37,7 @@
       "startDate": "2024-09-01",
       "endDate": "",
       "summary": "بناء حلول web3 مع التركيز على أداء الواجهة الأمامية وتجربة المستخدم لتطبيقات البلوكشين.",
-      "highlights": [
-        "تحسين مكونات React لعرض بيانات البلوكشين، مما قلل من أوقات التحميل بنسبة 40%",
-        "بناء 3 تطبيقات DApp وواجهات API مما حسّن سرعة المعاملات بنسبة 15%.",
-        "تقليل رسوم الغاز عبر تحسين تكامل البلوكشين."
-      ],
+      "highlights": ["تحسين مكونات React لعرض بيانات البلوكشين، مما قلل من أوقات التحميل بنسبة 40%", "بناء 3 تطبيقات DApp وواجهات API مما حسّن سرعة المعاملات بنسبة 15%.", "تقليل رسوم الغاز عبر تحسين تكامل البلوكشين."],
       "location": "عن بُعد"
     },
     {
@@ -228,209 +224,37 @@
     {
       "name": "الواجهة الأمامية",
       "level": "خبير",
-      "keywords": [
-        "React",
-        "React Router",
-        "Preact",
-        "Svelte",
-        "TypeScript",
-        "JavaScript",
-        "Next.js",
-        "Remix",
-        "Redux",
-        "Zustand",
-        "TanStack Query",
-        "CSS",
-        "CSS-in-JS",
-        "TailwindCSS",
-        "Styled Components",
-        "Atomic Design",
-        "Responsive Design",
-        "Web Accessibility (a11y)",
-        "Performance Optimization",
-        "Vue.js",
-        "Angular",
-        "Astro",
-        "SolidJS",
-        "SASS/SCSS",
-        "Framer Motion",
-        "Three.js",
-        "WebGL",
-        "PWA",
-        "Web Components"
-      ]
+      "keywords": ["React", "React Router", "Preact", "Svelte", "TypeScript", "JavaScript", "Next.js", "Remix", "Redux", "Zustand", "TanStack Query", "CSS", "CSS-in-JS", "TailwindCSS", "Styled Components", "Atomic Design", "Responsive Design", "Web Accessibility (a11y)", "Performance Optimization", "Vue.js", "Angular", "Astro", "SolidJS", "SASS/SCSS", "Framer Motion", "Three.js", "WebGL", "PWA", "Web Components"]
     },
     {
       "name": "Web3 & Blockchain",
       "level": "Expert",
-      "keywords": [
-        "Solidity",
-        "Smart Contracts",
-        "EVM",
-        "Wagmi",
-        "Viem",
-        "Ethers.js",
-        "Web3.js",
-        "DeFi DApps",
-        "NFT Marketplaces",
-        "IPFS",
-        "The Graph",
-        "Hardhat",
-        "Foundry",
-        "Wallet Integration",
-        "SDK Development",
-        "Chainlink",
-        "OpenZeppelin",
-        "Alchemy",
-        "Infura",
-        "ENS",
-        "Layer 2 Solutions",
-        "Token Standards (ERC-20/721/1155)",
-        "Vyper",
-        "Cairo (StarkNet)",
-        "Subgraphs"
-      ]
+      "keywords": ["Solidity", "Smart Contracts", "EVM", "Wagmi", "Viem", "Ethers.js", "Web3.js", "DeFi DApps", "NFT Marketplaces", "IPFS", "The Graph", "Hardhat", "Foundry", "Wallet Integration", "SDK Development", "Chainlink", "OpenZeppelin", "Alchemy", "Infura", "ENS", "Layer 2 Solutions", "Token Standards (ERC-20/721/1155)", "Vyper", "Cairo (StarkNet)", "Subgraphs"]
     },
     {
       "name": "AI & Machine Learning",
       "level": "Advanced",
-      "keywords": [
-        "LLM Agents",
-        "Prompt Engineering",
-        "Claude API",
-        "OpenAI API",
-        "RAG Systems",
-        "AI-Assisted Development",
-        "Cloudflare AI",
-        "LangChain",
-        "Vector Databases",
-        "Embeddings",
-        "Fine-tuning",
-        "Hugging Face",
-        "Stable Diffusion",
-        "MCP (Model Context Protocol)"
-      ]
+      "keywords": ["LLM Agents", "Prompt Engineering", "Claude API", "OpenAI API", "RAG Systems", "AI-Assisted Development", "Cloudflare AI", "LangChain", "Vector Databases", "Embeddings", "Fine-tuning", "Hugging Face", "Stable Diffusion", "MCP (Model Context Protocol)"]
     },
     {
       "name": "Backend Development",
       "level": "Advanced",
-      "keywords": [
-        "Node.js",
-        "Express",
-        "Hono",
-        "NestJS",
-        "GraphQL",
-        "REST APIs",
-        "tRPC",
-        "MongoDB",
-        "PostgreSQL",
-        "Drizzle ORM",
-        "Prisma",
-        "Redis",
-        "Cloudflare D1",
-        "Better Auth",
-        "Flask",
-        "Python",
-        "FastAPI",
-        "Deno",
-        "Bun",
-        "MySQL",
-        "SQLite",
-        "Supabase",
-        "Firebase",
-        "WebSockets",
-        "Message Queues",
-        "Microservices",
-        "Serverless Functions",
-        "OAuth/OIDC",
-        "JWT"
-      ]
+      "keywords": ["Node.js", "Express", "Hono", "NestJS", "GraphQL", "REST APIs", "tRPC", "MongoDB", "PostgreSQL", "Drizzle ORM", "Prisma", "Redis", "Cloudflare D1", "Better Auth", "Flask", "Python", "FastAPI", "Deno", "Bun", "MySQL", "SQLite", "Supabase", "Firebase", "WebSockets", "Message Queues", "Microservices", "Serverless Functions", "OAuth/OIDC", "JWT"]
     },
     {
       "name": "DevOps & Cloud",
       "level": "Advanced",
-      "keywords": [
-        "Docker",
-        "Kubernetes",
-        "CI/CD",
-        "GitHub Actions",
-        "AWS",
-        "GCP",
-        "Cloudflare Workers",
-        "Cloudflare Pages",
-        "Vercel",
-        "Heroku",
-        "Wrangler",
-        "Terraform",
-        "Nginx",
-        "Linux/Unix",
-        "Shell Scripting",
-        "AWS Lambda",
-        "AWS S3",
-        "AWS EC2",
-        "Cloudflare R2",
-        "Cloudflare KV",
-        "DigitalOcean",
-        "Railway",
-        "Render",
-        "Monitoring/Logging",
-        "Sentry"
-      ]
+      "keywords": ["Docker", "Kubernetes", "CI/CD", "GitHub Actions", "AWS", "GCP", "Cloudflare Workers", "Cloudflare Pages", "Vercel", "Heroku", "Wrangler", "Terraform", "Nginx", "Linux/Unix", "Shell Scripting", "AWS Lambda", "AWS S3", "AWS EC2", "Cloudflare R2", "Cloudflare KV", "DigitalOcean", "Railway", "Render", "Monitoring/Logging", "Sentry"]
     },
     {
       "name": "Tools & Testing",
       "level": "Expert",
-      "keywords": [
-        "Git",
-        "GitHub",
-        "GitLab",
-        "Webpack",
-        "Vite",
-        "Turborepo",
-        "pnpm",
-        "Figma",
-        "Jest",
-        "Vitest",
-        "Playwright",
-        "Testing Library",
-        "Selenium",
-        "Storybook",
-        "Cypress",
-        "ESLint",
-        "Prettier",
-        "Biome",
-        "npm",
-        "yarn",
-        "Postman",
-        "Insomnia",
-        "Chrome DevTools",
-        "Lighthouse",
-        "Nx",
-        "Lerna",
-        "Changesets",
-        "Husky",
-        "Commitlint"
-      ]
+      "keywords": ["Git", "GitHub", "GitLab", "Webpack", "Vite", "Turborepo", "pnpm", "Figma", "Jest", "Vitest", "Playwright", "Testing Library", "Selenium", "Storybook", "Cypress", "ESLint", "Prettier", "Biome", "npm", "yarn", "Postman", "Insomnia", "Chrome DevTools", "Lighthouse", "Nx", "Lerna", "Changesets", "Husky", "Commitlint"]
     },
     {
       "name": "Soft Skills",
       "level": "Expert",
-      "keywords": [
-        "Technical Mentoring",
-        "Code Review",
-        "Technical Writing",
-        "Architecture Design",
-        "Agile/Scrum",
-        "Remote Collaboration",
-        "Team Leadership",
-        "Project Estimation",
-        "Client Communication",
-        "Technical Interviews",
-        "Documentation",
-        "Pair Programming",
-        "Problem Solving",
-        "Debugging"
-      ]
+      "keywords": ["Technical Mentoring", "Code Review", "Technical Writing", "Architecture Design", "Agile/Scrum", "Remote Collaboration", "Team Leadership", "Project Estimation", "Client Communication", "Technical Interviews", "Documentation", "Pair Programming", "Problem Solving", "Debugging"]
     }
   ],
   "languages": [
@@ -574,11 +398,7 @@
     {
       "name": "Ajna Labs - تطبيق DeFi + SDK",
       "description": "تصميم تطبيق مالي لامركزي و SDK للإقراض والاقتراض في فضاء web3. تم بناؤه باستخدام React و TypeScript و Ethers.js وعقود Solidity الذكية.",
-      "highlights": [
-        "مدمج مع أكثر من 5 شبكات بلوكشين للإقراض عبر السلاسل",
-        "مصممة واجهة عالية الأداء تدير أكثر من مليون دولار في المعاملات",
-        "تم تطوير SDK مستخدم من قبل أكثر من 10 مطورين خارجيين للتكاملات المخصصة"
-      ],
+      "highlights": ["مدمج مع أكثر من 5 شبكات بلوكشين للإقراض عبر السلاسل", "مصممة واجهة عالية الأداء تدير أكثر من مليون دولار في المعاملات", "تم تطوير SDK مستخدم من قبل أكثر من 10 مطورين خارجيين للتكاملات المخصصة"],
       "keywords": ["React", "TypeScript", "Ethers.js", "Solidity", "DeFi", "Web3"],
       "startDate": "2022-01-01",
       "endDate": "2022-12-01",
@@ -602,11 +422,7 @@
     {
       "name": "GamesGlobal - ماكينات القمار ذات الجائزة الكبرى التقدمية Lotsaloot™",
       "description": "تطوير ألعاب ماكينات القمار ذات الجائزة الكبرى التقدمية مع ميزات متعددة اللاعبين في الوقت الحقيقي ورسومات عالية الأداء.",
-      "highlights": [
-        "بناء نظام ماكينات قمار متعددة اللاعبين يدير أكثر من 1000 مستخدم متزامن",
-        "تحسين عرض WebGL للحصول على 60 إطارًا في الثانية على الأجهزة منخفضة الجودة",
-        "دمج بوابات دفع آمنة للمعاملات اليومية التي تزيد عن 100,000 دولار"
-      ],
+      "highlights": ["بناء نظام ماكينات قمار متعددة اللاعبين يدير أكثر من 1000 مستخدم متزامن", "تحسين عرض WebGL للحصول على 60 إطارًا في الثانية على الأجهزة منخفضة الجودة", "دمج بوابات دفع آمنة للمعاملات اليومية التي تزيد عن 100,000 دولار"],
       "keywords": ["React", "WebGL", "WebSocket", "الألعاب", "متعدد اللاعبين"],
       "startDate": "2022-01-01",
       "endDate": "2024-01-01",
@@ -618,11 +434,7 @@
     {
       "name": "Landworks by EnterDAO - نظام تأجير الميتافيرس",
       "description": "تطوير نظام تأجير لامركزي للأراضي الافتراضية في الميتافيرس، مدمج مع ملكية NFT والعقود الذكية.",
-      "highlights": [
-        "بناء سوق تأجير NFT مع أكثر من 500 مستخدم نشط شهريًا",
-        "دمج العقود الذكية للتأجير والدفعات الآلية",
-        "تحسين واجهة المستخدم لمعاينات الأصول ثلاثية الأبعاد المعقدة باستخدام Three.js"
-      ],
+      "highlights": ["بناء سوق تأجير NFT مع أكثر من 500 مستخدم نشط شهريًا", "دمج العقود الذكية للتأجير والدفعات الآلية", "تحسين واجهة المستخدم لمعاينات الأصول ثلاثية الأبعاد المعقدة باستخدام Three.js"],
       "keywords": ["React", "TypeScript", "Three.js", "NFT", "Web3", "DeFi"],
       "startDate": "2021-01-01",
       "endDate": "2022-01-01",
@@ -634,11 +446,7 @@
     {
       "name": "Omnia DeFi - لوحة تحكم Dapp للأصول في العالم الحقيقي",
       "description": "بناء لوحة تحكم للتمويل اللامركزي لإدارة الأصول الحقيقية المميزة مع بيانات وتحليلات في الوقت الحقيقي.",
-      "highlights": [
-        "تطوير لوحة تحكم لتتبع الأصول لأكثر من 2 مليون دولار في الأصول المميزة",
-        "دمج بيانات البلوكشين في الوقت الحقيقي مع بروتوكول The Graph",
-        "تصميم واجهة مستخدم متجاوبة للمستثمرين على سطح المكتب والجوال"
-      ],
+      "highlights": ["تطوير لوحة تحكم لتتبع الأصول لأكثر من 2 مليون دولار في الأصول المميزة", "دمج بيانات البلوكشين في الوقت الحقيقي مع بروتوكول The Graph", "تصميم واجهة مستخدم متجاوبة للمستثمرين على سطح المكتب والجوال"],
       "keywords": ["React", "GraphQL", "The Graph", "DeFi", "Web3", "Flask", "Ethereum"],
       "startDate": "2021-01-01",
       "endDate": "2022-01-01",
@@ -650,11 +458,7 @@
     {
       "name": "Lokr.io (سابقًا Polkalokr) - موقع تسويقي",
       "description": "تصميم وتطوير موقع تسويقي لمنصة قفل الرموز المستندة إلى البلوكشين مع محتوى ديناميكي.",
-      "highlights": [
-        "بناء موقع مدفوع بنظام إدارة المحتوى مع أكثر من 10,000 زائر شهريًا",
-        "تحسين لتحسين محركات البحث، محققًا المرتبة الثلاثة الأولى للمصطلحات الرئيسية",
-        "دمج مصادقة محفظة web3 لميزات العرض التوضيحي"
-      ],
+      "highlights": ["بناء موقع مدفوع بنظام إدارة المحتوى مع أكثر من 10,000 زائر شهريًا", "تحسين لتحسين محركات البحث، محققًا المرتبة الثلاثة الأولى للمصطلحات الرئيسية", "دمج مصادقة محفظة web3 لميزات العرض التوضيحي"],
       "keywords": ["React", "Next.js", "SEO", "مصادقة Web3"],
       "startDate": "2021-01-01",
       "endDate": "2021-12-01",
@@ -666,11 +470,7 @@
     {
       "name": "AltCash - مبادل العملات الرقمية B2C",
       "description": "تطوير منصة لتبادل العملات الرقمية للمعاملات B2C مع معالجة الدفعات مدمجة.",
-      "highlights": [
-        "بناء واجهة تبادل تدير أكثر من 50,000 دولار في تبادلات العملات الرقمية اليومية",
-        "دمج أكثر من 5 بوابات دفع لتحويل العملات الورقية إلى العملات الرقمية",
-        "تصميم مصادقة مستخدم آمنة مع التحقق من KYC"
-      ],
+      "highlights": ["بناء واجهة تبادل تدير أكثر من 50,000 دولار في تبادلات العملات الرقمية اليومية", "دمج أكثر من 5 بوابات دفع لتحويل العملات الورقية إلى العملات الرقمية", "تصميم مصادقة مستخدم آمنة مع التحقق من KYC"],
       "keywords": ["React", "Node.js", "بوابة الدفع", "العملات الرقمية"],
       "startDate": "2020-01-01",
       "endDate": "2021-01-01",
