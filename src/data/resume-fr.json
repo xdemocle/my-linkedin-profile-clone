@@ -2,17 +2,14 @@
   "basics": {
     "name": "Rocco Russo",
     "label": "Ingénieur Logiciel Frontend",
-    "image": "/assets/png/profile.png",
-    "email": "rocco.russo.dev@gmail.com",
-    "phone": "+34 604 06 87 00",
-    "url": "https://xdemocle.eu",
+    "image": "/assets/ui/rocco-me-nft.png",
+    "email": "hello@rocco.me",
+    "url": "https://rocco.me",
     "summary": "Ingénieur Logiciel Frontend avec plus de 8 ans d'expérience en développement web. Je construis des applications web performantes et accessibles avec React, TypeScript et des frameworks modernes.",
     "location": {
-      "address": "",
-      "postalCode": "",
-      "city": "Málaga",
-      "countryCode": "ES",
-      "region": "Andalousie"
+      "city": "Foggia",
+      "region": "Apulia",
+      "countryCode": "IT"
     },
     "profiles": [
       {
@@ -42,24 +39,24 @@
       "summary": "Construction de solutions web3 avec un accent sur les performances frontend et l'expérience utilisateur pour les applications blockchain.",
       "highlights": [
         "Optimisation des composants React pour le rendu des données blockchain, réduisant les temps de chargement de 40%",
-        "Built 3 DApps and APIs improving transaction speed by 15%.",
-        "Reduced gas fees via optimized blockchain integration."
+        "Création de 3 DApps et d'APIs, améliorant la vitesse des transactions de 15%.",
+        "Réduction des frais de gas grâce à une intégration blockchain optimisée."
       ],
       "location": "À distance"
     },
     {
       "name": "Games Global",
-      "position": "Lead Frontend Engineer",
+      "position": "Ingénieur Frontend Lead",
       "url": "https://www.gamesglobal.com",
       "startDate": "2023-09-01",
       "endDate": "2024-09-01",
-      "summary": "Leading front-end development for gaming platforms.",
+      "summary": "Pilotage du développement frontend pour des plateformes de jeux.",
       "highlights": [
-        "Developed UI for Lotsaloot™ jackpot system.",
-        "Enhanced player engagement with tiered reward logic.",
-        "Collaborated across teams to increase retention metrics."
+        "Développement de l'UI pour le système de jackpot Lotsaloot™.",
+        "Amélioration de l'engagement des joueurs via une logique de récompenses par paliers.",
+        "Collaboration inter-équipes pour améliorer les métriques de rétention."
       ],
-      "location": "Swieqi, Malta, Remote"
+      "location": "Swieqi, Malte, à distance"
     },
     {
       "name": "Shiba Inu",
@@ -67,40 +64,36 @@
       "url": "https://shibatoken.com",
       "startDate": "2023-01-01",
       "endDate": "2023-08-01",
-      "summary": "Led technical development for the Shiba Inu ecosystem.",
+      "summary": "Pilotage du développement technique pour l'écosystème Shiba Inu.",
       "highlights": [
-        "Led 12-member team, boosted productivity by 30%.",
-        "Reduced bugs by 25% and raised code quality 40%.",
-        "Served 5M users and 3k concurrent visitors."
+        "Management d'une équipe de 12 personnes, productivité augmentée de 30%.",
+        "Réduction des bugs de 25% et amélioration de la qualité du code de 40%.",
+        "Service pour 5M d'utilisateurs et 3 000 visiteurs simultanés."
       ],
       "location": "Remote"
     },
     {
       "name": "Ajna Labs",
-      "position": "Lead Frontend Engineer",
+      "position": "Ingénieur Frontend Lead",
       "url": "https://www.ajna.finance",
       "startDate": "2022-08-01",
       "endDate": "2023-08-01",
-      "summary": "Leading front-end development for DeFi applications.",
+      "summary": "Pilotage du développement frontend pour des applications DeFi.",
       "highlights": [
-        "Deployed SPA with $20M+ liquidity.",
-        "Created SDK reducing integration time 50%.",
-        "Released ecosystem-wide design library increasing dev speed 25%."
+        "Déploiement d'une SPA avec plus de 20M$ de liquidité.",
+        "Création d'un SDK réduisant le temps d'intégration de 50%.",
+        "Publication d'une librairie de design à l'échelle de l'écosystème, accélérant le développement de 25%."
       ],
       "location": "Remote"
     },
     {
       "name": "Linum Labs",
-      "position": "Lead Frontend Engineer",
+      "position": "Ingénieur Frontend Lead",
       "url": "https://linumlabs.com",
       "startDate": "2021-08-01",
       "endDate": "2022-07-01",
-      "summary": "Leading Web3 and crypto application development.",
-      "highlights": [
-        "Supervised 10+ decentralized projects.",
-        "Mentored 4 frontend developers.",
-        "Improved scalability and UI consistency."
-      ],
+      "summary": "Pilotage du développement d'applications Web3 et crypto.",
+      "highlights": ["Supervision de plus de 10 projets décentralisés.", "Mentorat de 4 développeurs frontend.", "Amélioration de la scalabilité et de la cohérence UI."],
       "location": "Remote"
     },
     {
@@ -109,11 +102,8 @@
       "url": "https://omniadefi.com",
       "startDate": "2021-01-01",
       "endDate": "2021-07-01",
-      "summary": "Building DeFi infrastructure and smart contract integrations.",
-      "highlights": [
-        "Built vesting and farming dashboard integrated with Ethereum.",
-        "Developed smart contract interaction layers for DeFi operations."
-      ],
+      "summary": "Développement d'infrastructures DeFi et d'intégrations de smart contracts.",
+      "highlights": ["Création d'un dashboard de vesting et de farming intégré à Ethereum.", "Développement de couches d'interaction smart contracts pour les opérations DeFi."],
       "location": "Remote"
     },
     {
@@ -122,11 +112,8 @@
       "url": "https://www.hcltech.com",
       "startDate": "2014-12-01",
       "endDate": "2015-07-01",
-      "summary": "Delivering enterprise software solutions.",
-      "highlights": [
-        "Delivered enterprise-grade Web2 refactoring projects.",
-        "Optimized legacy systems for cloud-readiness."
-      ],
+      "summary": "Livraison de solutions logicielles pour l'entreprise.",
+      "highlights": ["Livraison de projets de refactorisation Web2 de niveau enterprise.", "Optimisation de systèmes legacy pour la préparation au cloud."],
       "location": "The Hague, Netherlands"
     },
     {
@@ -135,11 +122,8 @@
       "url": "https://www.elsevier.com",
       "startDate": "2013-01-01",
       "endDate": "2014-12-01",
-      "summary": "Building scientific data platforms (Reaxys 2 Web App).",
-      "highlights": [
-        "Contributed to scientific web apps for chemical data systems.",
-        "Developed Angular-based interfaces for cross-platform tablets."
-      ],
+      "summary": "Développement de plateformes de données scientifiques (Reaxys 2 Web App).",
+      "highlights": ["Contribution à des applications web scientifiques pour des systèmes de données chimiques.", "Développement d'interfaces Angular pour tablettes multi-plateformes."],
       "location": "Amsterdam, Netherlands"
     },
     {
@@ -148,47 +132,41 @@
       "url": "https://www.adforum.com",
       "startDate": "2012-01-01",
       "endDate": "2013-01-01",
-      "summary": "Building marketplace for advertising industry.",
-      "highlights": [
-        "Built multilingual advertising marketplace with 3M+ visitors/month.",
-        "Improved SEO and user engagement on high-traffic portals."
-      ],
+      "summary": "Développement d'une marketplace pour l'industrie de la publicité.",
+      "highlights": ["Création d'une marketplace publicitaire multilingue avec 3M+ visiteurs/mois.", "Amélioration du SEO et de l'engagement utilisateur sur des portails à fort trafic."],
       "location": "Paris, France"
     }
   ],
   "volunteer": [
     {
       "organization": "The Web3 Ninja",
-      "position": "Peer Mentor",
+      "position": "Mentor (pairs)",
       "url": "https://theweb3ninja.com",
       "startDate": "2024-01-01",
       "endDate": "",
-      "summary": "Mentoring developers transitioning to Web3 and helping career changers break into tech.",
+      "summary": "Mentorat de développeurs en transition vers le Web3 et accompagnement de reconversions vers la tech.",
       "highlights": [
-        "Helped ~12 peers, 5 got positions in first 1-4 months",
-        "Helped a 32-year-old in his job switch career",
-        "Positioned 2 interns to their first junior positions in 2023"
+        "Accompagné ~12 pairs, 5 ont trouvé un poste en 1 à 4 mois",
+        "Accompagné une personne de 32 ans dans une reconversion",
+        "Aidés 2 stagiaires à obtenir leur premier poste junior en 2023"
       ]
     },
     {
       "organization": "Steunactie",
-      "position": "Fundraising Manager",
+      "position": "Responsable de collecte de fonds",
       "url": "https://www.steunactie.nl",
       "startDate": "2023-01-01",
       "endDate": "",
-      "summary": "Dedicating time to help people in need around Africa and the Middle East with crowdfunding initiatives.",
-      "highlights": [
-        "Help Abdul Karim Heal: A War Child's Fight for Life",
-        "Save Elias & His Family: From Tent to Safety"
-      ]
+      "summary": "Temps dédié à l'aide aux personnes dans le besoin en Afrique et au Moyen-Orient via des campagnes de financement participatif.",
+      "highlights": ["Aider Abdul Karim à guérir : le combat d'un enfant de guerre pour la vie", "Sauver Elias et sa famille : de la tente à la sécurité"]
     },
     {
       "organization": "CyberGrandpa",
-      "position": "Member of Consulting Staff",
+      "position": "Membre de l'équipe de conseil",
       "url": "https://cybergrandpa.space",
       "startDate": "2022-01-01",
       "endDate": "",
-      "summary": "Trusted Guide to Online Safety and Protection from Scams, Phishing, and Malware. Expert Cybersecurity Services on subscription."
+      "summary": "Guide de confiance pour la sécurité en ligne et la protection contre les arnaques, le phishing et les malwares. Services de cybersécurité par abonnement."
     }
   ],
   "education": [
@@ -211,34 +189,34 @@
       "summary": "Récompensé pour avoir mentoré plus de 50 développeurs juniors en développement web et React, menant à des transitions de carrière réussies."
     },
     {
-      "title": "Refactored Legacy SPA Saving ~€50,000",
+      "title": "Refactorisation d'une SPA legacy : ~50 000€ économisés",
       "date": "2023-01-01",
-      "awarder": "Client Success",
-      "summary": "Improved code efficiency and reduced technical debt."
+      "awarder": "Succès client",
+      "summary": "Amélioration de l'efficacité du code et réduction de la dette technique."
     },
     {
-      "title": "Improved Code Quality by 40%",
+      "title": "Qualité du code améliorée de 40%",
       "date": "2023-01-01",
-      "awarder": "Team Achievement",
-      "summary": "Reduced bugs by 25% and implemented better workflows and code standards."
+      "awarder": "Réussite d'équipe",
+      "summary": "Réduction des bugs de 25% et mise en place de meilleurs workflows et standards de code."
     },
     {
-      "title": "Mentored 5+ Developers to New Positions",
+      "title": "Mentorat de 5+ développeurs vers de nouveaux postes",
       "date": "2024-01-01",
       "awarder": "Mentorship",
-      "summary": "Provided mentorship and career guidance to junior developers."
+      "summary": "Mentorat et accompagnement de carrière pour des développeurs juniors."
     },
     {
-      "title": "Authored Ecosystem-Wide Style Guides",
+      "title": "Rédaction de guides de style à l'échelle de l'écosystème",
       "date": "2022-01-01",
-      "awarder": "Technical Leadership",
-      "summary": "Created development standards for better code quality and consistency."
+      "awarder": "Leadership technique",
+      "summary": "Création de standards de développement pour améliorer la qualité et la cohérence du code."
     },
     {
-      "title": "Delivered Cybersecurity Extensions",
+      "title": "Livraison d'extensions de cybersécurité",
       "date": "2022-01-01",
       "awarder": "Open Source",
-      "summary": "Built open-source tools to protect users from phishing and fraud."
+      "summary": "Création d'outils open-source pour protéger les utilisateurs du phishing et de la fraude."
     }
   ],
   "certificates": [
@@ -512,69 +490,34 @@
       "fluency": "Compétence Native ou Bilingue"
     },
     {
-      "language": "Portuguese",
-      "fluency": "Elementary proficiency"
+      "language": "Portugais",
+      "fluency": "Compétence élémentaire"
     },
     {
-      "language": "French",
-      "fluency": "Elementary proficiency"
+      "language": "Français",
+      "fluency": "Compétence élémentaire"
     },
     {
       "language": "Zulu",
-      "fluency": "Elementary proficiency"
+      "fluency": "Compétence élémentaire"
     }
   ],
   "interests": [
     {
       "name": "Technologie",
-      "keywords": [
-        "Développement Web",
-        "Blockchain",
-        "AI/ML",
-        "IoT",
-        "Cybersecurity",
-        "Open Source",
-        "AI",
-        "Clean Code",
-        "Scalability",
-        "Architecture",
-        "Problem-Solving"
-      ]
+      "keywords": ["Développement Web", "Blockchain", "AI/ML", "IoT", "Cybersecurity", "Open Source", "AI", "Clean Code", "Scalability", "Architecture", "Problem-Solving"]
     },
     {
       "name": "Loisirs",
-      "keywords": [
-        "Photographie",
-        "Voyage",
-        "Jeux vidéo",
-        "Cuisine",
-        "Lecture",
-        "Teaching",
-        "Education"
-      ]
+      "keywords": ["Photographie", "Voyage", "Jeux vidéo", "Cuisine", "Lecture", "Enseignement", "Éducation"]
     },
     {
-      "name": "Mindset & Values",
-      "keywords": [
-        "Innovation",
-        "Strategy",
-        "Systems Thinking",
-        "Adaptability",
-        "Growth",
-        "Ethics",
-        "Empathy",
-        "Continuous Learning"
-      ]
+      "name": "État d'esprit & valeurs",
+      "keywords": ["Innovation", "Stratégie", "Pensée systémique", "Adaptabilité", "Croissance", "Éthique", "Empathie", "Apprentissage continu"]
     },
     {
-      "name": "Culture & Expression",
-      "keywords": [
-        "Global Mindset",
-        "Languages",
-        "Research",
-        "Writing",
-        "Creativity"
-      ]
+      "name": "Culture & expression",
+      "keywords": ["Vision globale", "Langues", "Recherche", "Écriture", "Créativité"]
     }
   ],
   "references": [],
@@ -587,20 +530,11 @@
         "Conçu une interface haute performance gérant plus de 1 million $ en transactions",
         "Développé un SDK utilisé par plus de 10 développeurs externes pour des intégrations personnalisées"
       ],
-      "keywords": [
-        "React",
-        "TypeScript",
-        "Ethers.js",
-        "Solidity",
-        "DeFi",
-        "Web3"
-      ],
+      "keywords": ["React", "TypeScript", "Ethers.js", "Solidity", "DeFi", "Web3"],
       "startDate": "2022-01-01",
       "endDate": "2022-12-01",
       "url": "https://ajna.finance",
-      "roles": [
-        "Chef Frontend"
-      ],
+      "roles": ["Chef Frontend"],
       "entity": "Ajna Labs",
       "type": "application"
     },
@@ -612,18 +546,11 @@
         "Amélioration des temps de chargement des pages de 35% avec le code splitting et le lazy loading",
         "Mentorat d'une équipe de 4 développeurs sur les patterns React modernes"
       ],
-      "keywords": [
-        "React",
-        "TypeScript",
-        "Optimisation des Performances",
-        "Refactorisation de Code"
-      ],
+      "keywords": ["React", "TypeScript", "Optimisation des Performances", "Refactorisation de Code"],
       "startDate": "2023-01-01",
       "endDate": "2023-12-01",
       "url": "https://mode.network",
-      "roles": [
-        "Chef Frontend"
-      ],
+      "roles": ["Chef Frontend"],
       "entity": "Mode Network",
       "type": "application"
     },
@@ -635,19 +562,11 @@
         "Optimisation du rendu WebGL pour 60 FPS sur des appareils bas de gamme",
         "Intégration de passerelles de paiement sécurisées pour des transactions quotidiennes de plus de 100 000 $"
       ],
-      "keywords": [
-        "React",
-        "WebGL",
-        "WebSocket",
-        "Jeux",
-        "Multijoueur"
-      ],
+      "keywords": ["React", "WebGL", "WebSocket", "Jeux", "Multijoueur"],
       "startDate": "2022-01-01",
       "endDate": "2024-01-01",
       "url": "https://gamesglobal.com",
-      "roles": [
-        "Ingénieur Frontend"
-      ],
+      "roles": ["Ingénieur Frontend"],
       "entity": "Games Global",
       "type": "application"
     },
@@ -659,20 +578,11 @@
         "Intégration de smart contracts pour des locations et paiements automatisés",
         "Optimisation de l'interface utilisateur pour des aperçus d'actifs 3D complexes avec Three.js"
       ],
-      "keywords": [
-        "React",
-        "TypeScript",
-        "Three.js",
-        "NFT",
-        "Web3",
-        "DeFi"
-      ],
+      "keywords": ["React", "TypeScript", "Three.js", "NFT", "Web3", "DeFi"],
       "startDate": "2021-01-01",
       "endDate": "2022-01-01",
       "url": "https://enterdao.xyz",
-      "roles": [
-        "Développeur Frontend"
-      ],
+      "roles": ["Développeur Frontend"],
       "entity": "EnterDAO",
       "type": "application"
     },
@@ -684,21 +594,11 @@
         "Intégration de données blockchain en temps réel avec le protocole The Graph",
         "Conception d'une interface utilisateur responsive pour les investisseurs sur desktop et mobile"
       ],
-      "keywords": [
-        "React",
-        "GraphQL",
-        "The Graph",
-        "DeFi",
-        "Web3",
-        "Flask",
-        "Ethereum"
-      ],
+      "keywords": ["React", "GraphQL", "The Graph", "DeFi", "Web3", "Flask", "Ethereum"],
       "startDate": "2021-01-01",
       "endDate": "2022-01-01",
       "url": "https://omnia-defi.com",
-      "roles": [
-        "Développeur Frontend"
-      ],
+      "roles": ["Développeur Frontend"],
       "entity": "Omnia DeFi",
       "type": "application"
     },
@@ -710,18 +610,11 @@
         "Optimisation pour le SEO, atteignant le top 3 pour des termes clés",
         "Intégration de l'authentification de portefeuille web3 pour des fonctionnalités de démonstration"
       ],
-      "keywords": [
-        "React",
-        "Next.js",
-        "SEO",
-        "Authentification Web3"
-      ],
+      "keywords": ["React", "Next.js", "SEO", "Authentification Web3"],
       "startDate": "2021-01-01",
       "endDate": "2021-12-01",
       "url": "https://lokr.io",
-      "roles": [
-        "Développeur Frontend"
-      ],
+      "roles": ["Développeur Frontend"],
       "entity": "Lokr.io",
       "type": "website"
     },
@@ -733,18 +626,11 @@
         "Intégration de plus de 5 passerelles de paiement pour la conversion fiat-to-crypto",
         "Conception d'une authentification utilisateur sécurisée avec vérification KYC"
       ],
-      "keywords": [
-        "React",
-        "Node.js",
-        "Passerelle de Paiement",
-        "Cryptomonnaie"
-      ],
+      "keywords": ["React", "Node.js", "Passerelle de Paiement", "Cryptomonnaie"],
       "startDate": "2020-01-01",
       "endDate": "2021-01-01",
       "url": "https://alt.cash",
-      "roles": [
-        "Développeur Full Stack"
-      ],
+      "roles": ["Développeur Full Stack"],
       "entity": "AltCash",
       "type": "application"
     },
@@ -756,18 +642,11 @@
         "Mise en œuvre d'une détection de fraude basée sur l'IA avec une précision de 85%",
         "Conception d'une interface intuitive pour les utilisateurs âgés non techniques"
       ],
-      "keywords": [
-        "JavaScript",
-        "Extension de Navigateur",
-        "Machine Learning",
-        "UX"
-      ],
+      "keywords": ["JavaScript", "Extension de Navigateur", "Machine Learning", "UX"],
       "startDate": "2019-01-01",
       "endDate": "2020-01-01",
       "url": "https://github.com/xdemocle/cybergrandpa",
-      "roles": [
-        "Développeur Principal"
-      ],
+      "roles": ["Développeur Principal"],
       "entity": "Projet Personnel",
       "type": "application"
     },
@@ -779,18 +658,11 @@
         "Amélioration de la productivité des utilisateurs en optimisant la disposition du contenu",
         "Maintien de la compatibilité à travers les mises à jour de l'interface LinkedIn"
       ],
-      "keywords": [
-        "JavaScript",
-        "CSS",
-        "Extension de Navigateur",
-        "Amélioration UI"
-      ],
+      "keywords": ["JavaScript", "CSS", "Extension de Navigateur", "Amélioration UI"],
       "startDate": "2018-01-01",
       "endDate": "2019-01-01",
       "url": "https://github.com/xdemocle/linkedin-full-width",
-      "roles": [
-        "Créateur"
-      ],
+      "roles": ["Créateur"],
       "entity": "Projet Personnel",
       "type": "application"
     },
@@ -802,18 +674,11 @@
         "Intégration d'un portefeuille blockchain pour des micro-récompenses en ETH",
         "Optimisation des performances pour un gameplay fluide sur mobile"
       ],
-      "keywords": [
-        "React",
-        "Développement de Jeux",
-        "API Telegram",
-        "Web3"
-      ],
+      "keywords": ["React", "Développement de Jeux", "API Telegram", "Web3"],
       "startDate": "2023-01-01",
       "endDate": "2023-12-01",
       "url": "https://t.me/tetris_crypto_bot",
-      "roles": [
-        "Développeur Principal"
-      ],
+      "roles": ["Développeur Principal"],
       "entity": "Projet Personnel",
       "type": "application"
     }

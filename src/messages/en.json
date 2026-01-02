@@ -185,8 +185,7 @@
     "showAllRecommendations": "Show all recommendations",
     "workedWith": "{name} worked with {person} in the same team",
     "managed": "{name} managed {person} directly",
-    "exceptionalDeveloper": "Rocco is an exceptional frontend developer with a keen eye for detail and a talent for creating elegant user interfaces. His ability to translate complex requirements into intuitive designs is remarkable. He consistently delivered high-quality code on our shared projects and was always willing to help others on the team.",
-    "impressiveSkills": "I had the pleasure of managing Rocco on several critical projects. His technical skills in frontend development are truly impressive, particularly in React and modern JavaScript. He's proactive, reliable, and has an exceptional ability to solve complex problems. His work consistently exceeded client expectations, and he was a valuable asset to our team."
+    "exceptionalDeveloper": "Rocco is an exceptional frontend developer with a keen eye for detail and a talent for creating elegant user interfaces. His ability to translate complex requirements into intuitive designs is remarkable. He consistently delivered high-quality code on our shared projects and was always willing to help others on the team."
   },
   "Volunteering": {
     "title": "Volunteering",
@@ -266,11 +265,6 @@
     "research": "Research",
     "writing": "Writing",
     "creativity": "Creativity"
-  },
-  "ProfileLanguage": {
-    "title": "Profile language",
-    "whoViewersAlsoViewed": "Who your viewers also viewed",
-    "privateToYou": "Private to you"
   },
   "Footer": {
     "linkedinProfile": "LinkedIn Profile",
@@ -526,195 +520,11 @@
   },
   "ProfileData": {
     "personal": {
-      "title": "Software Engineer / Tech Lead",
-      "headline": "Blockchain & Dapps | Agentic AI | Cybersecurity",
-      "location": "Greater Foggia Metropolitan Area, Apulia, Italy",
-      "about": "Software engineer with over 20 years of experience in front-end engineering, 5 years in Web3 integrations, and hands-on full-stack development. Expert in React, Svelte, TypeScript, Node.js, Next.js, TailwindCSS, MongoDB, and cloud-native solutions. I build decentralized apps merging blockchain, AI, and real-world utility, with a leadership focus on mentorship, scalable design, and clean code."
-    },
-    "experience": {
-      "exp1": {
-        "company": "The Web3 Ninja",
-        "position": "Lead Software Engineer, Web3",
-        "type": "B2B, Part Time",
-        "dateRange": "10/2024 - Present",
-        "location": "Apulia, Italy, Remote",
-        "description": "Leading Web3 integration projects and mentoring junior developers.",
-        "highlights": [
-          "Mentored 5 interns, placed 3 as junior devs.",
-          "Built 3 DApps and APIs improving transaction speed by 15%.",
-          "Reduced gas fees via optimized blockchain integration."
-        ]
-      },
-      "exp2": {
-        "company": "Games Global",
-        "position": "Lead Frontend Engineer",
-        "dateRange": "09/2023 - 09/2024",
-        "location": "Swieqi, Malta, Remote",
-        "description": "Leading front-end development for gaming platforms.",
-        "highlights": [
-          "Developed UI for Lotsaloot™ jackpot system.",
-          "Enhanced player engagement with tiered reward logic.",
-          "Collaborated across teams to increase retention metrics."
-        ]
-      },
-      "exp3": {
-        "company": "Shiba Inu",
-        "position": "Tech Lead, Web3",
-        "dateRange": "01/2023 - 08/2023",
-        "description": "Led technical development for the Shiba Inu ecosystem.",
-        "highlights": [
-          "Led 12-member team, boosted productivity by 30%.",
-          "Reduced bugs by 25% and raised code quality 40%.",
-          "Served 5M users and 3k concurrent visitors."
-        ]
-      },
-      "exp4": {
-        "company": "Ajna Labs",
-        "position": "Lead Frontend Engineer",
-        "dateRange": "08/2022 - 08/2023",
-        "description": "Leading front-end development for DeFi applications.",
-        "highlights": [
-          "Deployed SPA with $20M+ liquidity.",
-          "Created SDK reducing integration time 50%.",
-          "Released ecosystem-wide design library increasing dev speed 25%."
-        ]
-      },
-      "exp5": {
-        "company": "Linum Labs",
-        "position": "Lead Frontend Engineer",
-        "dateRange": "08/2021 - 07/2022",
-        "description": "Leading Web3 and crypto application development.",
-        "highlights": [
-          "Supervised 10+ decentralized projects.",
-          "Mentored 4 frontend developers.",
-          "Improved scalability and UI consistency."
-        ]
-      },
-      "exp6": {
-        "company": "Omnia DeFi",
-        "position": "Lead Software Engineer, Web3",
-        "dateRange": "01/2021 - 07/2021",
-        "description": "Building DeFi infrastructure and smart contract integrations.",
-        "highlights": [
-          "Built vesting and farming dashboard integrated with Ethereum.",
-          "Developed smart contract interaction layers for DeFi operations."
-        ]
-      },
-      "exp7": {
-        "company": "HCLTech",
-        "position": "Lead Software Engineer",
-        "dateRange": "12/2014 - 07/2015",
-        "location": "The Hague, Netherlands",
-        "description": "Delivering enterprise software solutions.",
-        "highlights": [
-          "Delivered enterprise-grade Web2 refactoring projects.",
-          "Optimized legacy systems for cloud-readiness."
-        ]
-      },
-      "exp8": {
-        "company": "Elsevier (Reaxys 2 Web App)",
-        "position": "Software Engineer",
-        "dateRange": "2013 - 2014",
-        "description": "Building scientific data platforms.",
-        "highlights": [
-          "Contributed to scientific web apps for chemical data systems.",
-          "Developed Angular-based interfaces for cross-platform tablets."
-        ]
-      },
-      "exp9": {
-        "company": "AdForum",
-        "position": "Software Engineer",
-        "dateRange": "2012 - 2013",
-        "description": "Building marketplace for advertising industry.",
-        "highlights": [
-          "Built multilingual advertising marketplace with 3M+ visitors/month.",
-          "Improved SEO and user engagement on high-traffic portals."
-        ]
-      }
-    },
-    "projects": {
-      "proj1": {
-        "name": "Ajna Labs",
-        "description": "DeFi DApp and SDK powering $20M+ liquidity."
-      },
-      "proj2": {
-        "name": "Mode Network",
-        "description": "Large-scale React codebase refactoring and performance tuning."
-      },
-      "proj3": {
-        "name": "CyberGrandpa Anti-Fraud",
-        "description": "Cross-browser extension preventing phishing and fraud exposure."
-      },
-      "proj4": {
-        "name": "Tetris with Crypto Rewards",
-        "description": "Telegram Mini App awarding TON tokens to leaderboard players."
-      },
-      "proj5": {
-        "name": "LinkedIn Full Width",
-        "description": "Chrome extension enabling full-width LinkedIn view."
-      }
-    },
-    "skills": {
-      "categories": {
-        "frontend": "Frontend",
-        "backend": "Backend",
-        "devopsCloud": "DevOps & Cloud",
-        "toolsTesting": "Tools & Testing",
-        "web3": "Web3",
-        "ai": "AI",
-        "softSkills": "Soft Skills",
-        "languages": "Languages"
-      }
+      "headline": "Blockchain & Dapps | Agentic AI | Cybersecurity"
     },
     "education": {
       "edu1": {
-        "institution": "Athena Institute",
-        "degree": "Higher Diploma, Accounting & Business",
-        "location": "Foggia, Italy",
-        "dateRange": "2010 - 2012"
-      }
-    },
-    "certifications": {
-      "cert1": {
-        "name": "AWS Cloud Practitioner",
-        "issuer": "Coursera",
-        "dateIssued": "2023"
-      },
-      "cert2": {
-        "name": "Build a JavaScript AI App with OpenAI API",
-        "issuer": "LinkedIn Learning",
-        "dateIssued": "2024"
-      },
-      "cert3": {
-        "name": "Practical GitHub Project Management & Collaboration",
-        "issuer": "LinkedIn Learning",
-        "dateIssued": "2023"
-      }
-    },
-    "achievements": {
-      "ach1": {
-        "title": "Delivered software accessed by 5M+ users monthly",
-        "description": "Led development of widely used platforms and applications."
-      },
-      "ach2": {
-        "title": "Refactored legacy SPA saving €50,000 in maintenance costs",
-        "description": "Improved code efficiency and reduced technical debt at iControlApp."
-      },
-      "ach3": {
-        "title": "Increased code quality 40%, reduced bugs 25%",
-        "description": "Implemented better workflows and code standards."
-      },
-      "ach4": {
-        "title": "Boosted team productivity 30% via structured mentorship",
-        "description": "Provided mentorship and career guidance to junior developers."
-      },
-      "ach5": {
-        "title": "Launched DeFi apps with 20% engagement increase",
-        "description": "Created development standards for better code quality and consistency."
-      },
-      "ach6": {
-        "title": "Created consistent style guides for multiple ecosystems",
-        "description": "Built tools to protect users from phishing and fraud."
+        "location": "Foggia, Italy"
       }
     }
   }

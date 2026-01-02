@@ -186,8 +186,7 @@
     "showAllRecommendations": "إظهار جميع التوصيات",
     "workedWith": "عمل {name} مع {person} في نفس الفريق",
     "managed": "أدار {name} {person} مباشرة",
-    "exceptionalDeveloper": "روكو هو مطور واجهة أمامية استثنائي مع عين حادة للتفاصيل وموهبة في إنشاء واجهات مستخدم أنيقة. قدرته على ترجمة المتطلبات المعقدة إلى تصاميم بديهية رائعة. لقد قدم باستمرار كود عالي الجودة في مشاريعنا المشتركة وكان دائماً مستعداً لمساعدة الآخرين في الفريق.",
-    "impressiveSkills": "كان لي متعة إدارة روكو في عدة مشاريع حرجة. مهاراته التقنية في تطوير الواجهة الأمامية مثيرة للإعجاب حقاً، خاصة في React و JavaScript الحديث. إنه استباقي وموثوق ولديه قدرة استثنائية على حل المشاكل المعقدة. عمله تجاوز باستمرار توقعات العملاء وكان أصلاً قيماً لفريقنا."
+    "exceptionalDeveloper": "روكو هو مطور واجهة أمامية استثنائي مع عين حادة للتفاصيل وموهبة في إنشاء واجهات مستخدم أنيقة. قدرته على ترجمة المتطلبات المعقدة إلى تصاميم بديهية رائعة. لقد قدم باستمرار كود عالي الجودة في مشاريعنا المشتركة وكان دائماً مستعداً لمساعدة الآخرين في الفريق."
   },
   "Volunteering": {
     "title": "العمل التطوعي",
@@ -267,11 +266,6 @@
     "research": "البحث",
     "writing": "الكتابة",
     "creativity": "الإبداع"
-  },
-  "ProfileLanguage": {
-    "title": "لغة الملف الشخصي",
-    "whoViewersAlsoViewed": "من شاهد زوارك أيضاً",
-    "privateToYou": "خاص بك"
   },
   "Projects": {
     "title": "المشاريع",
@@ -527,195 +521,11 @@
   },
   "ProfileData": {
     "personal": {
-      "title": "مهندس برمجيات / قائد تقني",
-      "headline": "Blockchain & Dapps | الذكاء الاصطناعي الوكيل | الأمن السيبراني",
-      "location": "مالقة، الأندلس، إسبانيا",
-      "about": "مهندس برمجيات مع أكثر من 20 عامًا من الخبرة في هندسة الواجهة الأمامية، 5 سنوات في تكاملات Web3 وتطوير full-stack عملي. خبير في React، Svelte، TypeScript، Node.js، Next.js، TailwindCSS، MongoDB وحلول cloud-native. أبني تطبيقات لامركزية تدمج blockchain والذكاء الاصطناعي والفائدة الحقيقية، مع التركيز على القيادة والإرشاد والتصميم القابل للتوسع والكود النظيف."
-    },
-    "experience": {
-      "exp1": {
-        "company": "The Web3 Ninja",
-        "position": "Lead Software Engineer, Web3",
-        "type": "B2B، دوام جزئي",
-        "dateRange": "10/2024 - الحاضر",
-        "location": "أبوليا، إيطاليا، عن بُعد",
-        "description": "قيادة مشاريع تكامل Web3 وإرشاد المطورين المبتدئين.",
-        "highlights": [
-          "إرشاد 5 متدربين، 3 تم تعيينهم كمطورين مبتدئين.",
-          "بناء 3 DApps وAPIs مع تحسين سرعة المعاملات بنسبة 15%.",
-          "تقليل رسوم الغاز عبر تكامل blockchain محسّن."
-        ]
-      },
-      "exp2": {
-        "company": "Games Global",
-        "position": "Lead Frontend Engineer",
-        "dateRange": "09/2023 - 09/2024",
-        "location": "سويقي، مالطا، عن بُعد",
-        "description": "قيادة تطوير الواجهة الأمامية لمنصات الألعاب.",
-        "highlights": [
-          "تطوير واجهة مستخدم لنظام جائزة Lotsaloot™.",
-          "تحسين مشاركة اللاعبين بمنطق مكافأة متدرج.",
-          "التعاون بين الفرق لزيادة مقاييس الاحتفاظ."
-        ]
-      },
-      "exp3": {
-        "company": "Shiba Inu",
-        "position": "Tech Lead, Web3",
-        "dateRange": "01/2023 - 08/2023",
-        "description": "قدت التطوير التقني لنظام Shiba Inu البيئي.",
-        "highlights": [
-          "قيادة فريق من 12 عضو، زيادة الإنتاجية 30%.",
-          "تقليل الأخطاء 25% وتحسين جودة الكود 40%.",
-          "خدمة 5 مليون مستخدم و3 آلاف زائر متزامن."
-        ]
-      },
-      "exp4": {
-        "company": "Ajna Labs",
-        "position": "Lead Frontend Engineer",
-        "dateRange": "08/2022 - 08/2023",
-        "description": "قيادة تطوير الواجهة الأمامية لتطبيقات DeFi.",
-        "highlights": [
-          "نشر SPA بسيولة $20M+.",
-          "إنشاء SDK مع تقليل وقت التكامل 50%.",
-          "إصدار مكتبة تصميم للنظام البيئي مع زيادة سرعة التطوير 25%."
-        ]
-      },
-      "exp5": {
-        "company": "Linum Labs",
-        "position": "Lead Frontend Engineer",
-        "dateRange": "08/2021 - 07/2022",
-        "description": "قيادة تطوير تطبيقات Web3 والعملات المشفرة.",
-        "highlights": [
-          "الإشراف على 10+ مشروع لامركزي.",
-          "إرشاد 4 مطوري frontend.",
-          "تحسين قابلية التوسع واتساق UI."
-        ]
-      },
-      "exp6": {
-        "company": "Omnia DeFi",
-        "position": "Lead Software Engineer, Web3",
-        "dateRange": "01/2021 - 07/2021",
-        "description": "بناء بنية تحتية DeFi وتكاملات العقود الذكية.",
-        "highlights": [
-          "بناء لوحة معلومات vesting وfarming متكاملة مع Ethereum.",
-          "تطوير طبقات تفاعل مع العقود الذكية لعمليات DeFi."
-        ]
-      },
-      "exp7": {
-        "company": "HCLTech",
-        "position": "Lead Software Engineer",
-        "dateRange": "12/2014 - 07/2015",
-        "location": "لاهاي، هولندا",
-        "description": "تقديم حلول برمجية للمؤسسات.",
-        "highlights": [
-          "تنفيذ مشاريع إعادة هيكلة Web2 على مستوى المؤسسات.",
-          "تحسين الأنظمة القديمة للجاهزية السحابية."
-        ]
-      },
-      "exp8": {
-        "company": "Elsevier (Reaxys 2 Web App)",
-        "position": "Software Engineer",
-        "dateRange": "2013 - 2014",
-        "description": "بناء منصات البيانات العلمية.",
-        "highlights": [
-          "المساهمة في تطبيقات ويب علمية لأنظمة بيانات كيميائية.",
-          "تطوير واجهات قائمة على Angular للأجهزة اللوحية متعددة المنصات."
-        ]
-      },
-      "exp9": {
-        "company": "AdForum",
-        "position": "Software Engineer",
-        "dateRange": "2012 - 2013",
-        "description": "بناء سوق لصناعة الإعلان.",
-        "highlights": [
-          "بناء سوق إعلاني متعدد اللغات مع 3 مليون+ زائر/شهر.",
-          "تحسين SEO ومشاركة المستخدم على بوابات عالية الزيارات."
-        ]
-      }
-    },
-    "projects": {
-      "proj1": {
-        "name": "Ajna Labs",
-        "description": "تطبيق DeFi و SDK يدعمان أكثر من $20M من السيولة."
-      },
-      "proj2": {
-        "name": "Mode Network",
-        "description": "إعادة هيكلة واسعة النطاق لكود React وتحسين الأداء."
-      },
-      "proj3": {
-        "name": "CyberGrandpa Anti-Fraud",
-        "description": "إضافة متعددة المتصفحات تمنع التصيد الاحتيالي والتعرض للاحتيال."
-      },
-      "proj4": {
-        "name": "Tetris with Crypto Rewards",
-        "description": "تطبيق Telegram صغير يكافئ اللاعبين في لوحة الصدارة برموز TON."
-      },
-      "proj5": {
-        "name": "LinkedIn Full Width",
-        "description": "إضافة Chrome تتيح عرض LinkedIn بالعرض الكامل."
-      }
-    },
-    "skills": {
-      "categories": {
-        "frontend": "الواجهة الأمامية",
-        "backend": "الواجهة الخلفية",
-        "devopsCloud": "DevOps والسحابة",
-        "toolsTesting": "الأدوات والاختبار",
-        "web3": "Web3",
-        "ai": "الذكاء الاصطناعي",
-        "softSkills": "مهارات شخصية",
-        "languages": "اللغات"
-      }
+      "headline": "Blockchain & Dapps | الذكاء الاصطناعي الوكيل | الأمن السيبراني"
     },
     "education": {
       "edu1": {
-        "institution": "Athena Institute",
-        "degree": "دبلوم عالي، المحاسبة والأعمال",
-        "location": "فودجا، إيطاليا",
-        "dateRange": "2010 - 2012"
-      }
-    },
-    "certifications": {
-      "cert1": {
-        "name": "AWS Cloud Practitioner",
-        "issuer": "Coursera",
-        "dateIssued": "2023"
-      },
-      "cert2": {
-        "name": "بناء تطبيق ذكاء اصطناعي JavaScript مع OpenAI API",
-        "issuer": "LinkedIn Learning",
-        "dateIssued": "2024"
-      },
-      "cert3": {
-        "name": "إدارة مشاريع GitHub العملية والتعاون",
-        "issuer": "LinkedIn Learning",
-        "dateIssued": "2023"
-      }
-    },
-    "achievements": {
-      "ach1": {
-        "title": "تم تسليم برامج يصل إليها 5 ملايين+ مستخدم شهريًا",
-        "description": "قدت تطوير منصات وتطبيقات مستخدمة على نطاق واسع."
-      },
-      "ach2": {
-        "title": "إعادة هيكلة SPA قديم موفرًا €50.000 في تكاليف الصيانة",
-        "description": "حسّنت كفاءة الكود وخفضت الديون التقنية في iControlApp."
-      },
-      "ach3": {
-        "title": "زيادة جودة الكود 40%، تقليل الأخطاء 25%",
-        "description": "نفذت سير عمل أفضل ومعايير كود."
-      },
-      "ach4": {
-        "title": "زيادة إنتاجية الفريق 30% عبر الإرشاد المنظم",
-        "description": "قدمت الإرشاد والتوجيه المهني للمطورين المبتدئين."
-      },
-      "ach5": {
-        "title": "إطلاق تطبيقات DeFi مع زيادة المشاركة 20%",
-        "description": "أنشأت معايير تطوير لجودة واتساق أفضل للكود."
-      },
-      "ach6": {
-        "title": "إنشاء أدلة أسلوب متسقة لأنظمة بيئية متعددة",
-        "description": "بنيت أدوات لحماية المستخدمين من التصيد الاحتيالي والاحتيال."
+        "location": "فودجا، إيطاليا"
       }
     }
   }

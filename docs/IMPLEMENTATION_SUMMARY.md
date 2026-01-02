@@ -25,7 +25,6 @@
 
 #### Personal Info
 
-- ✅ Added `phone: '+39 379 263 0288'`
 - ✅ Updated `about` section with latest summary
 - ✅ Refined `headline` to "Blockchain & Dapps | Agentic AI | Cybersecurity"
 

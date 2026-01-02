@@ -4,7 +4,6 @@
     "label": "Lead Software Engineer, Web3",
     "image": "/assets/ui/rocco-me-nft.png",
     "email": "hello@rocco.me",
-    "phone": "+39 379 263 0288",
     "url": "https://rocco.me",
     "summary": "Software engineer with over 20 years of front-end experience, 5 years in Web3, and hands-on full-stack and AI agent integration expertise. I design, refactor, and ship products that merge blockchain transparency with real user value, from DeFi and RWA platforms to secure browser extensions and gamified apps. I lead small agile teams with a focus on mentorship, code quality, long-term sustainability and not just delivery speed.",
     "location": {
@@ -17,6 +16,16 @@
         "network": "GitHub",
         "username": "xdemocle",
         "url": "https://github.com/xdemocle"
+      },
+      {
+        "network": "LinkedIn",
+        "username": "roccorusso",
+        "url": "https://linkedin.com/in/roccorusso"
+      },
+      {
+        "network": "Twitter",
+        "username": "xdemocle",
+        "url": "https://twitter.com/xdemocle"
       }
     ]
   },
@@ -28,11 +37,7 @@
       "startDate": "2024-10-01",
       "endDate": "",
       "summary": "Leading Web3 integration projects and mentoring junior developers.",
-      "highlights": [
-        "Mentored 5 interns, placed 3 as junior devs.",
-        "Built 3 DApps and APIs improving transaction speed by 15%.",
-        "Reduced gas fees via optimized blockchain integration."
-      ],
+      "highlights": ["Mentored 5 interns, placed 3 as junior devs.", "Built 3 DApps and APIs improving transaction speed by 15%.", "Reduced gas fees via optimized blockchain integration."],
       "location": "Apulia, Italy, Remote"
     },
     {
@@ -42,11 +47,7 @@
       "startDate": "2023-09-01",
       "endDate": "2024-09-01",
       "summary": "Leading front-end development for gaming platforms.",
-      "highlights": [
-        "Developed UI for Lotsaloot™ jackpot system.",
-        "Enhanced player engagement with tiered reward logic.",
-        "Collaborated across teams to increase retention metrics."
-      ],
+      "highlights": ["Developed UI for Lotsaloot™ jackpot system.", "Enhanced player engagement with tiered reward logic.", "Collaborated across teams to increase retention metrics."],
       "location": "Swieqi, Malta, Remote"
     },
     {
@@ -56,11 +57,7 @@
       "startDate": "2023-01-01",
       "endDate": "2023-08-01",
       "summary": "Led technical development for the Shiba Inu ecosystem.",
-      "highlights": [
-        "Led 12-member team, boosted productivity by 30%.",
-        "Reduced bugs by 25% and raised code quality 40%.",
-        "Served 5M users and 3k concurrent visitors."
-      ],
+      "highlights": ["Led 12-member team, boosted productivity by 30%.", "Reduced bugs by 25% and raised code quality 40%.", "Served 5M users and 3k concurrent visitors."],
       "location": "Remote"
     },
     {
@@ -70,11 +67,7 @@
       "startDate": "2022-08-01",
       "endDate": "2023-08-01",
       "summary": "Leading front-end development for DeFi applications.",
-      "highlights": [
-        "Deployed SPA with $20M+ liquidity.",
-        "Created SDK reducing integration time 50%.",
-        "Released ecosystem-wide design library increasing dev speed 25%."
-      ],
+      "highlights": ["Deployed SPA with $20M+ liquidity.", "Created SDK reducing integration time 50%.", "Released ecosystem-wide design library increasing dev speed 25%."],
       "location": "Remote"
     },
     {
@@ -84,11 +77,7 @@
       "startDate": "2021-08-01",
       "endDate": "2022-07-01",
       "summary": "Leading Web3 and crypto application development.",
-      "highlights": [
-        "Supervised 10+ decentralized projects.",
-        "Mentored 4 frontend developers.",
-        "Improved scalability and UI consistency."
-      ],
+      "highlights": ["Supervised 10+ decentralized projects.", "Mentored 4 frontend developers.", "Improved scalability and UI consistency."],
       "location": "Remote"
     },
     {
@@ -98,10 +87,7 @@
       "startDate": "2021-01-01",
       "endDate": "2021-07-01",
       "summary": "Building DeFi infrastructure and smart contract integrations.",
-      "highlights": [
-        "Built vesting and farming dashboard integrated with Ethereum.",
-        "Developed smart contract interaction layers for DeFi operations."
-      ],
+      "highlights": ["Built vesting and farming dashboard integrated with Ethereum.", "Developed smart contract interaction layers for DeFi operations."],
       "location": "Remote"
     },
     {
@@ -111,10 +97,7 @@
       "startDate": "2014-12-01",
       "endDate": "2015-07-01",
       "summary": "Delivering enterprise software solutions.",
-      "highlights": [
-        "Delivered enterprise-grade Web2 refactoring projects.",
-        "Optimized legacy systems for cloud-readiness."
-      ],
+      "highlights": ["Delivered enterprise-grade Web2 refactoring projects.", "Optimized legacy systems for cloud-readiness."],
       "location": "The Hague, Netherlands"
     },
     {
@@ -124,10 +107,7 @@
       "startDate": "2013-01-01",
       "endDate": "2014-12-01",
       "summary": "Building scientific data platforms (Reaxys 2 Web App).",
-      "highlights": [
-        "Contributed to scientific web apps for chemical data systems.",
-        "Developed Angular-based interfaces for cross-platform tablets."
-      ],
+      "highlights": ["Contributed to scientific web apps for chemical data systems.", "Developed Angular-based interfaces for cross-platform tablets."],
       "location": "Amsterdam, Netherlands"
     },
     {
@@ -137,10 +117,7 @@
       "startDate": "2012-01-01",
       "endDate": "2013-01-01",
       "summary": "Building marketplace for advertising industry.",
-      "highlights": [
-        "Built multilingual advertising marketplace with 3M+ visitors/month.",
-        "Improved SEO and user engagement on high-traffic portals."
-      ],
+      "highlights": ["Built multilingual advertising marketplace with 3M+ visitors/month.", "Improved SEO and user engagement on high-traffic portals."],
       "location": "Paris, France"
     }
   ],
@@ -152,11 +129,7 @@
       "startDate": "2024-01-01",
       "endDate": "",
       "summary": "Mentoring developers transitioning to Web3 and helping career changers break into tech.",
-      "highlights": [
-        "Helped ~12 peers, 5 got positions in first 1-4 months",
-        "Helped a 32-year-old in his job switch career",
-        "Positioned 2 interns to their first junior positions in 2023"
-      ]
+      "highlights": ["Helped ~12 peers, 5 got positions in first 1-4 months", "Helped a 32-year-old in his job switch career", "Positioned 2 interns to their first junior positions in 2023"]
     },
     {
       "organization": "Steunactie",
@@ -165,10 +138,7 @@
       "startDate": "2023-01-01",
       "endDate": "",
       "summary": "Dedicating time to help people in need around Africa and the Middle East with crowdfunding initiatives.",
-      "highlights": [
-        "Help Abdul Karim Heal: A War Child's Fight for Life",
-        "Save Elias & His Family: From Tent to Safety"
-      ]
+      "highlights": ["Help Abdul Karim Heal: A War Child's Fight for Life", "Save Elias & His Family: From Tent to Safety"]
     },
     {
       "organization": "CyberGrandpa",
@@ -488,54 +458,19 @@
   "interests": [
     {
       "name": "Tech & Profession",
-      "keywords": [
-        "Blockchain",
-        "Web3",
-        "Cybersecurity",
-        "React",
-        "TypeScript",
-        "Open Source",
-        "AI",
-        "Clean Code",
-        "Scalability",
-        "Architecture",
-        "Problem-Solving"
-      ]
+      "keywords": ["Blockchain", "Web3", "Cybersecurity", "React", "TypeScript", "Open Source", "AI", "Clean Code", "Scalability", "Architecture", "Problem-Solving"]
     },
     {
       "name": "Collaboration & Leadership",
-      "keywords": [
-        "Mentorship",
-        "Leadership",
-        "Remote Work",
-        "Collaboration",
-        "Community",
-        "Teaching",
-        "Education"
-      ]
+      "keywords": ["Mentorship", "Leadership", "Remote Work", "Collaboration", "Community", "Teaching", "Education"]
     },
     {
       "name": "Mindset & Values",
-      "keywords": [
-        "Innovation",
-        "Strategy",
-        "Systems Thinking",
-        "Adaptability",
-        "Growth",
-        "Ethics",
-        "Empathy",
-        "Continuous Learning"
-      ]
+      "keywords": ["Innovation", "Strategy", "Systems Thinking", "Adaptability", "Growth", "Ethics", "Empathy", "Continuous Learning"]
     },
     {
       "name": "Culture & Expression",
-      "keywords": [
-        "Global Mindset",
-        "Languages",
-        "Research",
-        "Writing",
-        "Creativity"
-      ]
+      "keywords": ["Global Mindset", "Languages", "Research", "Writing", "Creativity"]
     }
   ],
   "references": [],
@@ -545,20 +480,9 @@
       "startDate": "2022-08-01",
       "endDate": "2023-08-01",
       "description": "DeFi protocol with $20M+ in liquidity. Built proprietary SDK to facilitate seamless integration with decentralized smart contracts, as well as scalable front-end architectures.",
-      "highlights": [
-        "Deployed SPA managing $20M+ in liquidity",
-        "Created SDK reducing integration time by 50%",
-        "Released ecosystem-wide design library"
-      ],
+      "highlights": ["Deployed SPA managing $20M+ in liquidity", "Created SDK reducing integration time by 50%", "Released ecosystem-wide design library"],
       "url": "https://www.ajna.finance",
-      "keywords": [
-        "React",
-        "TypeScript",
-        "Solidity",
-        "Web3.js",
-        "Ethers.js",
-        "SDK"
-      ],
+      "keywords": ["React", "TypeScript", "Solidity", "Web3.js", "Ethers.js", "SDK"],
       "roles": ["Lead Frontend Engineer"]
     },
     {
@@ -566,11 +490,7 @@
       "startDate": "2023-01-01",
       "endDate": "2023-12-01",
       "description": "Comprehensive architectural refactor of a large-scale codebase built with Next.js, React Hooks, and TailwindCSS for an EVM chain platform.",
-      "highlights": [
-        "Refactored large-scale Next.js application",
-        "Improved code organization and performance",
-        "Implemented modern React patterns"
-      ],
+      "highlights": ["Refactored large-scale Next.js application", "Improved code organization and performance", "Implemented modern React patterns"],
       "url": "https://www.mode.network",
       "keywords": ["Next.js", "React Hooks", "TailwindCSS", "TypeScript"],
       "roles": ["Frontend Consultant"]
@@ -580,11 +500,7 @@
       "startDate": "2023-09-01",
       "endDate": "2024-09-01",
       "description": "Implemented an enhanced user interface for a jackpot system deployed across diverse iGaming platforms. Responsive UI for player engagement. Entirely in Vanilla.",
-      "highlights": [
-        "Built jackpot system UI in vanilla JavaScript",
-        "Optimized for high-traffic gaming platforms",
-        "Implemented real-time updates and animations"
-      ],
+      "highlights": ["Built jackpot system UI in vanilla JavaScript", "Optimized for high-traffic gaming platforms", "Implemented real-time updates and animations"],
       "url": "https://www.bet365.com",
       "keywords": ["JavaScript", "HTML5", "CSS3", "Canvas API", "WebGL"],
       "roles": ["Lead Frontend Engineer"]
@@ -594,11 +510,7 @@
       "startDate": "2021-08-01",
       "endDate": "2022-07-01",
       "description": "Contributed to codebase optimization and iterative refactoring initiatives across both user-facing and governance modules.",
-      "highlights": [
-        "Optimized metaverse rental platform",
-        "Improved governance module performance",
-        "Enhanced user experience"
-      ],
+      "highlights": ["Optimized metaverse rental platform", "Improved governance module performance", "Enhanced user experience"],
       "url": "https://www.enterdao.xyz",
       "keywords": ["React", "TypeScript", "Web3", "Solidity", "GraphQL"],
       "roles": ["Frontend Developer"]
@@ -608,21 +520,9 @@
       "startDate": "2021-01-01",
       "endDate": "2021-07-01",
       "description": "Dashboard for investors with vesting, farming, and rewards system connected to Ethereum smart contracts. Working across a stack of Node.js, React.js, Next.js, and some basics tasks with Python, Django, and Flask frameworks.",
-      "highlights": [
-        "Built full-stack DeFi dashboard",
-        "Integrated Ethereum smart contracts",
-        "Implemented vesting and farming features"
-      ],
+      "highlights": ["Built full-stack DeFi dashboard", "Integrated Ethereum smart contracts", "Implemented vesting and farming features"],
       "url": "",
-      "keywords": [
-        "Node.js",
-        "React.js",
-        "Next.js",
-        "Python",
-        "Django",
-        "Flask",
-        "Ethereum"
-      ],
+      "keywords": ["Node.js", "React.js", "Next.js", "Python", "Django", "Flask", "Ethereum"],
       "roles": ["Lead Software Engineer"]
     },
     {
@@ -630,11 +530,7 @@
       "startDate": "2021-06-01",
       "endDate": "2021-12-01",
       "description": "Optimization and refactoring of the main website for best browser performances. Next.js and CSS3 Animations",
-      "highlights": [
-        "Optimized website performance",
-        "Implemented smooth CSS3 animations",
-        "Improved load times and SEO"
-      ],
+      "highlights": ["Optimized website performance", "Implemented smooth CSS3 animations", "Improved load times and SEO"],
       "url": "",
       "keywords": ["Next.js", "CSS3 Animations", "Performance Optimization"],
       "roles": ["Frontend Consultant"]
@@ -644,11 +540,7 @@
       "startDate": "2020-01-01",
       "endDate": "2021-01-01",
       "description": "Another open source project aiming to showcase a one way exchanger to allow small buyers of crypto coins/tokens with Fiat Onramp and Bittrex or Binance API.",
-      "highlights": [
-        "Built crypto exchange platform",
-        "Integrated Fiat onramp",
-        "Connected to major exchange APIs"
-      ],
+      "highlights": ["Built crypto exchange platform", "Integrated Fiat onramp", "Connected to major exchange APIs"],
       "url": "",
       "keywords": ["React", "Node.js", "Crypto APIs", "Fiat Onramp"],
       "roles": ["Full Stack Developer"]
@@ -658,18 +550,9 @@
       "startDate": "2022-01-01",
       "endDate": "",
       "description": "Open-source cross-browser web extension engineered to enhance digital safety by mitigating exposure to phishing and fraudulent activities.",
-      "highlights": [
-        "Built cross-browser security extension",
-        "Implemented phishing detection",
-        "Released as open source"
-      ],
+      "highlights": ["Built cross-browser security extension", "Implemented phishing detection", "Released as open source"],
       "url": "https://github.com/CyberGrandpas/cybergrandpa-web-extension-antifraud",
-      "keywords": [
-        "JavaScript",
-        "Browser Extensions",
-        "Security",
-        "Anti-Fraud"
-      ],
+      "keywords": ["JavaScript", "Browser Extensions", "Security", "Anti-Fraud"],
       "roles": ["Lead Developer"]
     },
     {
@@ -677,11 +560,7 @@
       "startDate": "2019-01-01",
       "endDate": "",
       "description": "Small but viral Chrome extension that makes LinkedIn website display in full width mode.",
-      "highlights": [
-        "Viral Chrome extension with thousands of users",
-        "Simple CSS injection for better UX",
-        "Maintained and updated regularly"
-      ],
+      "highlights": ["Viral Chrome extension with thousands of users", "Simple CSS injection for better UX", "Maintained and updated regularly"],
       "url": "https://chromewebstore.google.com/detail/linkedin-full-width/pijfcmadcbkcjdmajckndpccemdgebhn",
       "keywords": ["JavaScript", "Browser Extensions", "CSS"],
       "roles": ["Solo Developer"]
@@ -691,18 +570,9 @@
       "startDate": "2024-01-01",
       "endDate": "",
       "description": "Arcade game for Telegram Mini Apps with leaderboard and TON token prizes.",
-      "highlights": [
-        "Built Telegram Mini App game",
-        "Integrated TON blockchain rewards",
-        "Implemented competitive leaderboard"
-      ],
+      "highlights": ["Built Telegram Mini App game", "Integrated TON blockchain rewards", "Implemented competitive leaderboard"],
       "url": "https://github.com/xdemocle/tetris-mini-app",
-      "keywords": [
-        "JavaScript",
-        "Telegram Mini Apps",
-        "TON Blockchain",
-        "Canvas API"
-      ],
+      "keywords": ["JavaScript", "Telegram Mini Apps", "TON Blockchain", "Canvas API"],
       "roles": ["Solo Developer"]
     }
   ]

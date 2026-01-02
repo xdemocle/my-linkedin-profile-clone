@@ -2,17 +2,14 @@
   "basics": {
     "name": "Rocco Russo",
     "label": "Ingegnere Software Frontend",
-    "image": "/assets/png/profile.png",
-    "email": "rocco.russo.dev@gmail.com",
-    "phone": "+34 604 06 87 00",
-    "url": "https://xdemocle.eu",
+    "image": "/assets/ui/rocco-me-nft.png",
+    "email": "hello@rocco.me",
+    "url": "https://rocco.me",
     "summary": "Ingegnere Software Frontend con oltre 8 anni di esperienza nello sviluppo web. Costruisco applicazioni web ad alte prestazioni e accessibili con React, TypeScript e framework moderni. Appassionato di codice pulito, UX e risoluzione di problemi del mondo reale attraverso la tecnologia.",
     "location": {
-      "address": "",
-      "postalCode": "",
-      "city": "Málaga",
-      "countryCode": "ES",
-      "region": "Andalusia"
+      "city": "Foggia",
+      "region": "Apulia",
+      "countryCode": "IT"
     },
     "profiles": [
       {
@@ -164,36 +161,33 @@
   "volunteer": [
     {
       "organization": "The Web3 Ninja",
-      "position": "Peer Mentor",
+      "position": "Mentor tra pari",
       "url": "https://theweb3ninja.com",
       "startDate": "2024-01-01",
       "endDate": "",
-      "summary": "Mentoring developers transitioning to Web3 and helping career changers break into tech.",
+      "summary": "Mentoring di sviluppatori in transizione verso il Web3 e supporto a chi cambia carriera per entrare nel settore tech.",
       "highlights": [
-        "Helped ~12 peers, 5 got positions in first 1-4 months",
-        "Helped a 32-year-old in his job switch career",
-        "Positioned 2 interns to their first junior positions in 2023"
+        "Supportati ~12 colleghi, 5 hanno trovato lavoro nei primi 1-4 mesi",
+        "Supportata una persona di 32 anni nel cambio di carriera",
+        "Aiutati 2 stagisti a ottenere il loro primo ruolo junior nel 2023"
       ]
     },
     {
       "organization": "Steunactie",
-      "position": "Fundraising Manager",
+      "position": "Responsabile raccolta fondi",
       "url": "https://www.steunactie.nl",
       "startDate": "2023-01-01",
       "endDate": "",
-      "summary": "Dedicating time to help people in need around Africa and the Middle East with crowdfunding initiatives.",
-      "highlights": [
-        "Help Abdul Karim Heal: A War Child's Fight for Life",
-        "Save Elias & His Family: From Tent to Safety"
-      ]
+      "summary": "Dedico tempo ad aiutare persone in difficoltà in Africa e Medio Oriente tramite iniziative di crowdfunding.",
+      "highlights": ["Aiuta Abdul Karim a guarire: la lotta per la vita di un bambino di guerra", "Salva Elias e la sua famiglia: dalla tenda alla sicurezza"]
     },
     {
       "organization": "CyberGrandpa",
-      "position": "Member of Consulting Staff",
+      "position": "Membro del team di consulenza",
       "url": "https://cybergrandpa.space",
       "startDate": "2022-01-01",
       "endDate": "",
-      "summary": "Trusted Guide to Online Safety and Protection from Scams, Phishing, and Malware. Expert Cybersecurity Services on subscription."
+      "summary": "Guida affidabile alla sicurezza online e alla protezione da truffe, phishing e malware. Servizi di cybersecurity in abbonamento."
     }
   ],
   "education": [
@@ -517,69 +511,34 @@
       "fluency": "Competenza Nativa o Bilingue"
     },
     {
-      "language": "Portuguese",
-      "fluency": "Elementary proficiency"
+      "language": "Portoghese",
+      "fluency": "Competenza elementare"
     },
     {
-      "language": "French",
-      "fluency": "Elementary proficiency"
+      "language": "Francese",
+      "fluency": "Competenza elementare"
     },
     {
       "language": "Zulu",
-      "fluency": "Elementary proficiency"
+      "fluency": "Competenza elementare"
     }
   ],
   "interests": [
     {
       "name": "Tecnologia",
-      "keywords": [
-        "Sviluppo Web",
-        "Blockchain",
-        "AI/ML",
-        "IoT",
-        "Cybersecurity",
-        "Open Source",
-        "AI",
-        "Clean Code",
-        "Scalability",
-        "Architecture",
-        "Problem-Solving"
-      ]
+      "keywords": ["Sviluppo Web", "Blockchain", "AI/ML", "IoT", "Cybersecurity", "Open Source", "AI", "Clean Code", "Scalability", "Architecture", "Problem-Solving"]
     },
     {
       "name": "Hobby",
-      "keywords": [
-        "Fotografia",
-        "Viaggi",
-        "Gaming",
-        "Cucina",
-        "Lettura",
-        "Teaching",
-        "Education"
-      ]
+      "keywords": ["Fotografia", "Viaggi", "Gaming", "Cucina", "Lettura", "Insegnamento", "Formazione"]
     },
     {
-      "name": "Mindset & Values",
-      "keywords": [
-        "Innovation",
-        "Strategy",
-        "Systems Thinking",
-        "Adaptability",
-        "Growth",
-        "Ethics",
-        "Empathy",
-        "Continuous Learning"
-      ]
+      "name": "Mentalità e valori",
+      "keywords": ["Innovazione", "Strategia", "Pensiero sistemico", "Adattabilità", "Crescita", "Etica", "Empatia", "Apprendimento continuo"]
     },
     {
-      "name": "Culture & Expression",
-      "keywords": [
-        "Global Mindset",
-        "Languages",
-        "Research",
-        "Writing",
-        "Creativity"
-      ]
+      "name": "Cultura ed espressione",
+      "keywords": ["Mentalità globale", "Lingue", "Ricerca", "Scrittura", "Creatività"]
     }
   ],
   "references": [],
@@ -592,20 +551,11 @@
         "Progettato un'interfaccia ad alte prestazioni che gestisce oltre $1M in transazioni",
         "Sviluppato un SDK utilizzato da oltre 10 sviluppatori esterni per integrazioni personalizzate"
       ],
-      "keywords": [
-        "React",
-        "TypeScript",
-        "Ethers.js",
-        "Solidity",
-        "DeFi",
-        "Web3"
-      ],
+      "keywords": ["React", "TypeScript", "Ethers.js", "Solidity", "DeFi", "Web3"],
       "startDate": "2022-01-01",
       "endDate": "2022-12-01",
       "url": "https://ajna.finance",
-      "roles": [
-        "Frontend Lead"
-      ],
+      "roles": ["Frontend Lead"],
       "entity": "Ajna Labs",
       "type": "application"
     },
@@ -617,18 +567,11 @@
         "Migliorato i tempi di caricamento delle pagine del 35% con code splitting e lazy loading",
         "Mentorato un team di 4 sviluppatori su pattern React moderni"
       ],
-      "keywords": [
-        "React",
-        "TypeScript",
-        "Ottimizzazione delle Prestazioni",
-        "Rifattorizzazione del Codice"
-      ],
+      "keywords": ["React", "TypeScript", "Ottimizzazione delle Prestazioni", "Rifattorizzazione del Codice"],
       "startDate": "2023-01-01",
       "endDate": "2023-12-01",
       "url": "https://mode.network",
-      "roles": [
-        "Frontend Lead"
-      ],
+      "roles": ["Frontend Lead"],
       "entity": "Mode Network",
       "type": "application"
     },
@@ -640,19 +583,11 @@
         "Ottimizzato il rendering WebGL per 60 FPS su dispositivi di fascia bassa",
         "Integrati gateway di pagamento sicuri per transazioni giornaliere di oltre $100K"
       ],
-      "keywords": [
-        "React",
-        "WebGL",
-        "WebSocket",
-        "Gaming",
-        "Multiplayer"
-      ],
+      "keywords": ["React", "WebGL", "WebSocket", "Gaming", "Multiplayer"],
       "startDate": "2022-01-01",
       "endDate": "2024-01-01",
       "url": "https://gamesglobal.com",
-      "roles": [
-        "Ingegnere Frontend"
-      ],
+      "roles": ["Ingegnere Frontend"],
       "entity": "Games Global",
       "type": "application"
     },
@@ -664,20 +599,11 @@
         "Integrati smart contract per leasing e pagamenti automatizzati",
         "Ottimizzata interfaccia utente per anteprime di asset 3D complessi con Three.js"
       ],
-      "keywords": [
-        "React",
-        "TypeScript",
-        "Three.js",
-        "NFT",
-        "Web3",
-        "DeFi"
-      ],
+      "keywords": ["React", "TypeScript", "Three.js", "NFT", "Web3", "DeFi"],
       "startDate": "2021-01-01",
       "endDate": "2022-01-01",
       "url": "https://enterdao.xyz",
-      "roles": [
-        "Sviluppatore Frontend"
-      ],
+      "roles": ["Sviluppatore Frontend"],
       "entity": "EnterDAO",
       "type": "application"
     },
@@ -689,21 +615,11 @@
         "Integrati dati blockchain in tempo reale con il protocollo The Graph",
         "Progettata interfaccia utente responsive per investitori desktop e mobile"
       ],
-      "keywords": [
-        "React",
-        "GraphQL",
-        "The Graph",
-        "DeFi",
-        "Web3",
-        "Flask",
-        "Ethereum"
-      ],
+      "keywords": ["React", "GraphQL", "The Graph", "DeFi", "Web3", "Flask", "Ethereum"],
       "startDate": "2021-01-01",
       "endDate": "2022-01-01",
       "url": "https://omnia-defi.com",
-      "roles": [
-        "Sviluppatore Frontend"
-      ],
+      "roles": ["Sviluppatore Frontend"],
       "entity": "Omnia DeFi",
       "type": "application"
     },
@@ -715,18 +631,11 @@
         "Ottimizzato per SEO, raggiungendo il top 3 per termini chiave",
         "Integrata autenticazione wallet web3 per funzionalità demo"
       ],
-      "keywords": [
-        "React",
-        "Next.js",
-        "SEO",
-        "Autenticazione Web3"
-      ],
+      "keywords": ["React", "Next.js", "SEO", "Autenticazione Web3"],
       "startDate": "2021-01-01",
       "endDate": "2021-12-01",
       "url": "https://lokr.io",
-      "roles": [
-        "Sviluppatore Frontend"
-      ],
+      "roles": ["Sviluppatore Frontend"],
       "entity": "Lokr.io",
       "type": "website"
     },
@@ -738,18 +647,11 @@
         "Integrati oltre 5 gateway di pagamento per conversione fiat-to-crypto",
         "Progettata autenticazione utente sicura con verifica KYC"
       ],
-      "keywords": [
-        "React",
-        "Node.js",
-        "Gateway di Pagamento",
-        "Criptovaluta"
-      ],
+      "keywords": ["React", "Node.js", "Gateway di Pagamento", "Criptovaluta"],
       "startDate": "2020-01-01",
       "endDate": "2021-01-01",
       "url": "https://alt.cash",
-      "roles": [
-        "Sviluppatore Full Stack"
-      ],
+      "roles": ["Sviluppatore Full Stack"],
       "entity": "AltCash",
       "type": "application"
     },
@@ -761,18 +663,11 @@
         "Implementato rilevamento frodi basato su ML con precisione dell'85%",
         "Progettata interfaccia intuitiva per utenti anziani non tecnici"
       ],
-      "keywords": [
-        "JavaScript",
-        "Estensione Browser",
-        "Machine Learning",
-        "UX"
-      ],
+      "keywords": ["JavaScript", "Estensione Browser", "Machine Learning", "UX"],
       "startDate": "2019-01-01",
       "endDate": "2020-01-01",
       "url": "https://github.com/xdemocle/cybergrandpa",
-      "roles": [
-        "Sviluppatore Principale"
-      ],
+      "roles": ["Sviluppatore Principale"],
       "entity": "Progetto Personale",
       "type": "application"
     },
@@ -784,18 +679,11 @@
         "Aumentata la produttività utente ottimizzando il layout del contenuto",
         "Mantenuta compatibilità attraverso aggiornamenti UI di LinkedIn"
       ],
-      "keywords": [
-        "JavaScript",
-        "CSS",
-        "Estensione Browser",
-        "Miglioramento UI"
-      ],
+      "keywords": ["JavaScript", "CSS", "Estensione Browser", "Miglioramento UI"],
       "startDate": "2018-01-01",
       "endDate": "2019-01-01",
       "url": "https://github.com/xdemocle/linkedin-full-width",
-      "roles": [
-        "Creatore"
-      ],
+      "roles": ["Creatore"],
       "entity": "Progetto Personale",
       "type": "application"
     },
@@ -807,18 +695,11 @@
         "Integrato wallet blockchain per micro-ricompense in ETH",
         "Ottimizzate prestazioni per un gameplay fluido su mobile"
       ],
-      "keywords": [
-        "React",
-        "Sviluppo Giochi",
-        "API Telegram",
-        "Web3"
-      ],
+      "keywords": ["React", "Sviluppo Giochi", "API Telegram", "Web3"],
       "startDate": "2023-01-01",
       "endDate": "2023-12-01",
       "url": "https://t.me/tetris_crypto_bot",
-      "roles": [
-        "Sviluppatore Principale"
-      ],
+      "roles": ["Sviluppatore Principale"],
       "entity": "Progetto Personale",
       "type": "application"
     }
