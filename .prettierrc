@@ -4,5 +4,18 @@
   "trailingComma": "es5",
   "semi": true,
   "arrowParens": "avoid",
-  "endOfLine": "auto"
+  "endOfLine": "auto",
+  "overrides": [
+    {
+      "files": ["*.json", "*.json5"],
+      "options": {
+        "trailingComma": "none",
+        "tabWidth": 2,
+        "printWidth": 200,
+        "bracketSpacing": false,
+        "arrowParens": "always",
+        "endOfLine": "lf"
+      }
+    }
+  ]
 }

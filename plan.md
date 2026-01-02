@@ -185,7 +185,6 @@ src/
 
 #### Profile Header & Personal Info
 
-- ✅ Added phone: `+39 379 263 0288`
 - ✅ Updated title, location, website, GitHub, email
 - ✅ Updated about/summary with 2025 resume text
 
