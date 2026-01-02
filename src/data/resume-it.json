@@ -541,7 +541,99 @@
       "keywords": ["Mentalità globale", "Lingue", "Ricerca", "Scrittura", "Creatività"]
     }
   ],
-  "references": [],
+  "references": [
+    {
+      "name": "Hiroshi Tanaka",
+      "reference": "Nella mia esperienza lavorando con Rocco, sono rimasto costantemente colpito dalla sua unica combinazione di professionalità e calore. Coltiva senza sforzo un'atmosfera collaborativa che è allo stesso tempo leggera e concentrata. La conoscenza di Rocco nell'ingegneria del software è vasta, ma ciò che lo distingue davvero è la sua accessibilità. Nonostante la sua esperienza, non risulta mai intimidatorio. Al contrario, è sempre desideroso di condividere, guidare e supportare. È davvero un privilegio lavorare al fianco di qualcuno con una combinazione così rara di qualità.",
+      "position": "Senior Software Engineer presso Guideline",
+      "relationship": "Rapporto diretto",
+      "date": "2023-09-01"
+    },
+    {
+      "name": "Sofia Andersson",
+      "reference": "Rocco è il futuro",
+      "position": "Archeologo I fascia (DM 244/2019)",
+      "relationship": "Cliente",
+      "date": "2023-01-27"
+    },
+    {
+      "name": "Mateo Fernández",
+      "reference": "Rocco è un ottimo sviluppatore frontend che rende reali qualsiasi design per gli utenti finali. È competente: fa sempre domande per capire i piccoli dettagli che faranno la differenza per un grande prodotto, propone soluzioni e tecnologie migliori. Il codice è sempre pulito, organizzato e ben rifattorizzato. Inoltre, Rocco è sempre disponibile quando necessario ed è molto amichevole e supporta sempre gli altri",
+      "position": "Senior Solidity Engineer",
+      "relationship": "Manager",
+      "date": "2022-12-16"
+    },
+    {
+      "name": "Lars Nielsen",
+      "reference": "Rocco è il tipo di persona che vuoi nella tua squadra, altamente qualificato e senza alcuna paura di tuffarsi nella parte più profonda della piscina. Ha riarchitettato la nostra piattaforma web da zero in pochi mesi, qualcosa che era considerato impossibile da diverse persone prima di Rocco. Oltre alla sua abilità tecnica, è una persona affabile che ha rapidamente costruito un legame personale con il nostro team, con il suo umorismo e la sua grande attitudine. Non posso raccomandare Rocco abbastanza!",
+      "position": "CEO di software orientato al prodotto, costruendo software aziendale di nuova generazione per il commercio",
+      "relationship": "Manager",
+      "date": "2020-06-05"
+    },
+    {
+      "name": "Emma van der Berg",
+      "reference": "Quando l'azienda ha finito le persone per fare un progetto Angular + Gulp e mi hanno chiesto se conoscevo qualcuno che potesse aiutare, sapevo che Rocco era la persona che avrebbe salvato la situazione. Rocco è riuscito a ottenere risultati sorprendenti in un lasso di tempo molto limitato, e anche quando è stato messo sotto molto stress, ha mantenuto la sua attenzione ai dettagli e non ha mai perso la concentrazione.",
+      "position": "Full stack developer",
+      "relationship": "Collega",
+      "date": "2015-08-08"
+    },
+    {
+      "name": "Rajesh Kumar",
+      "reference": "Rocco è un eccellente sviluppatore Front End con molta conoscenza delle tecnologie Front End. Conosce molti strumenti che supportano lo sviluppo molto più facile e veloce. Qualunque sia lo strumento che Rocco sta usando, seguirà sempre gli standard. È un buon membro del team e sempre dedicato al lavoro che ho notato quando lavoravo sullo stesso progetto. Finirà i suoi compiti lavorando ore extra.",
+      "position": "Technical Architect presso HCL Technologies",
+      "relationship": "Collega",
+      "date": "2015-07-29"
+    },
+    {
+      "name": "Ingrid Schmidt",
+      "reference": "Rocco è un ottimo sviluppatore front end senior. Nel mio team ha fatto la configurazione del framework per il tema Drupal per il nuovo sito web. Farà del suo meglio per finire il lavoro con il miglior risultato. Rocco è un dipendente devoto e una persona fantastica con cui lavorare. Amo il suo duro lavoro e la sua energia felice. Come product owner è fantastico lavorare con Rocco perché sai che porterà a termine il lavoro.",
+      "position": "Senior Product Owner",
+      "relationship": "Collega",
+      "date": "2015-07-26"
+    },
+    {
+      "name": "Lukas Novak",
+      "reference": "Abbiamo trascorso del tempo divertente con Rocco mentre lavoravamo su un'app Phonegap basata su CoffeeScript e Backbone. Persegue codice pulito e separazione delle preoccupazioni nel suo lavoro frontend, che è decorato da commenti espressivi. Cerca sempre di essere aggiornato con gli ultimi framework.",
+      "position": "Fullstack Go/TS/LLM",
+      "relationship": "Collega",
+      "date": "2015-07-22"
+    },
+    {
+      "name": "Carlos Mendoza",
+      "reference": "Rocco è una persona molto attenta ai dettagli. Si assicura che tutto funzioni secondo le specifiche e si prepara per questo. È anche il collega perfetto con cui lavorare. Cerca sempre di aiutare gli altri quando può e si assicura che tu abbia ricevuto tutte le informazioni necessarie.",
+      "position": "Staff Security Engineer presso Bird",
+      "relationship": "Collega",
+      "date": "2015-06-15"
+    },
+    {
+      "name": "Pierre Dubois",
+      "reference": "Rocco ha uno standard altamente professionale riguardo allo sviluppo front-end e agli strumenti di sviluppo automatizzati. È un piacere e molto divertente lavorare con Rocco. È onesto, dice quello che pensa, può essere testardo a volte ma riesce a far sorridere tutti. Rocco ha stabilito un percorso molto chiaro per se stesso, \"imparare, continuare a migliorare e mettere in pratica le sue competenze\". Ho imparato molto da Rocco. I suoi contributi ai team sono di alta qualità e hanno creato una piattaforma sostenibile per lo sviluppo front-end. Spero di lavorare di nuovo con Rocco un giorno e di incontrare più persone come lui.",
+      "position": "Information / DevOps Engineer",
+      "relationship": "Collega",
+      "date": "2015-06-02"
+    },
+    {
+      "name": "Marco Rossi",
+      "reference": "Rocco è un consulente IT altamente motivato e qualificato. Ha un forte atteggiamento verso le sfide quotidiane e presta attenzione a ottenere risultati finali di alta qualità risparmiando il più tempo possibile. Ecco perché si aggiorna costantemente alle tecnologie più recenti, principalmente Front-end, per ottenere i massimi risultati in termini di tempo-qualità. È anche una brava persona ed è stato un piacere lavorare al suo fianco sia professionalmente che personalmente.",
+      "position": "PHP Symfony/Drupal Back-end Developer @European Commission DIGIT",
+      "relationship": "Collega",
+      "date": "2015-03-30"
+    },
+    {
+      "name": "Jakub Kowalski",
+      "reference": "È stato un vero piacere lavorare con Rocco sui progetti in Youwin. Ha una grande conoscenza in ogni area dello sviluppo web: partendo dalla configurazione degli ambienti di sviluppo e di esecuzione, server web e sistemi di caching passando attraverso lo sviluppo backend fino alle vaste competenze JavaScript, HTML, HTML5 e CSS per fornire il frontend. Rocco è una persona che può essere lasciata sola con grandi compiti poiché può gestire l'intero processo da solo, ma allo stesso tempo con la sua mente aperta e il potenziale di condividere e acquisire conoscenze è un grande giocatore di squadra che ama consultare opinioni per fornire prodotti della migliore qualità. Razionale e orientato all'agile può lavorare in un ambiente che funziona a qualsiasi ritmo. Grande mente, grande amico, persona sociale con tutte le competenze di cui un'azienda di sviluppo web potrebbe mai aver bisogno. Rocco è la scelta migliore per un fantastico team di sviluppatori brillanti poiché con lui puoi andare oltre gli standard.",
+      "position": "Head of development presso Praetorian Technology",
+      "relationship": "Collega",
+      "date": "2013-11-08"
+    },
+    {
+      "name": "Oliver Müller",
+      "reference": "Rocco mi ha aiutato a far crescere la mia carriera di sviluppatore offrendomi l'opportunità di apprendere competenze del mondo reale attraverso progetti reali. La quantità di conoscenze che ho acquisito durante il mio stage mi ha aiutato a crescere da stagista a sviluppatore junior e ad ottenere un lavoro in un'azienda IoT dopo i 3 mesi. È molto esperto e mi ha instillato buoni principi per i quali sono molto grato. Lo consiglio vivamente se vuoi un ingegnere software e leader molto competente.",
+      "position": "Ingegnere Software | Sviluppo Software | Prodotto",
+      "relationship": "Rapporto diretto",
+      "date": "2025-10-09"
+    }
+  ],
   "projects": [
     {
       "name": "Ajna Labs - DApp DeFi + SDK",

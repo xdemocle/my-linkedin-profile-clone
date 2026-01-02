@@ -12,6 +12,7 @@ import type {
   Certification,
   Education,
   Experience,
+  Interest,
   PersonalInfo,
   ProfileData,
   Project,
@@ -226,6 +227,13 @@ export function useJSONResumeAdapter(): ProfileData {
         description: award.summary || "",
       })) || [];
 
+    // Map interests to Interest[]
+    const interests: Interest[] =
+      resume.interests?.map(interest => ({
+        name: interest.name || "",
+        keywords: interest.keywords || [],
+      })) || [];
+
     return {
       personal,
       experience,
@@ -234,6 +242,7 @@ export function useJSONResumeAdapter(): ProfileData {
       education,
       certifications,
       achievements,
+      interests,
     };
   }, [resume, tPersonal, tAchievements, tCertifications, tEducation, locale]);
 }

@@ -80,6 +80,11 @@ export interface Achievement {
   description: string;
 }
 
+export interface Interest {
+  name: string;
+  keywords: string[];
+}
+
 export interface ProfileData {
   personal: PersonalInfo;
   experience: Experience[];
@@ -88,6 +93,7 @@ export interface ProfileData {
   education: Education[];
   certifications: Certification[];
   achievements: Achievement[];
+  interests: Interest[];
 }
 
 export interface EducationResult {
