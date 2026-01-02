@@ -1,5 +1,5 @@
 import { LOCALE_DEFAULT, LOCALES, WEBSITE_URL } from "@/constants";
-import { useProfileData } from "@/hooks";
+import { useJSONResumeAdapter } from "@/hooks";
 import { useLocale } from "@/hooks/useLocale";
 import { useEffect } from "react";
 
@@ -21,7 +21,7 @@ export function SEO({
   noindex = false,
 }: SEOProps) {
   const { locale } = useLocale();
-  const { personal } = useProfileData();
+  const { personal } = useJSONResumeAdapter();
 
   // Default values from profile data
   const defaultTitle = `${personal.name} | ${personal.title}`;

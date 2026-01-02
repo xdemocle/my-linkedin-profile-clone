@@ -2,7 +2,7 @@ import { PageLayout } from "@/components/layout/PageLayout";
 import { LinkTranslated } from "@/components/LinkTranslated";
 import { SEO } from "@/components/SEO";
 import { StructuredData } from "@/components/StructuredData";
-import { useProfileData } from "@/hooks";
+import { useJSONResumeAdapter } from "@/hooks";
 import {
   ArrowLeftIcon,
   ExternalLinkIcon,
@@ -16,7 +16,7 @@ import { ProjectIconWrapper } from "../lib/iconComponents";
 
 export function ProjectsPage() {
   const t = useTranslations("Projects");
-  const { personal, projects } = useProfileData();
+  const { personal, projects } = useJSONResumeAdapter();
 
   const seoDescription =
     "Explore my portfolio of projects including DeFi protocols, blockchain applications, and full-stack web development work.";

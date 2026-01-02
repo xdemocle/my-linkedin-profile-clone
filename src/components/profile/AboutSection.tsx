@@ -1,5 +1,5 @@
 import { SUBSTACK_PROFILE_URL } from "@/constants";
-import { useProfileData } from "@/hooks";
+import { useJSONResumeAdapter } from "@/hooks";
 import { RowSpacingIcon } from "@radix-ui/react-icons";
 import { useState } from "react";
 import { useTranslations } from "use-intl";
@@ -15,7 +15,7 @@ export function AboutSection() {
   const [open, setOpen] = useState(false);
   const t = useTranslations("About");
   const c = useTranslations("Common");
-  const profileData = useProfileData();
+  const profileData = useJSONResumeAdapter();
   const { personal } = profileData;
 
   return (

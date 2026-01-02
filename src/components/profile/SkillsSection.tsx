@@ -1,4 +1,4 @@
-import { useProfileData } from "@/hooks";
+import { useJSONResumeAdapter } from "@/hooks";
 import { ArrowRightIcon } from "@radix-ui/react-icons";
 import { useTranslations } from "use-intl";
 import { LinkTranslated } from "../LinkTranslated";
@@ -14,7 +14,7 @@ import { Progress } from "../ui/progress";
 
 export function SkillsSection() {
   const t = useTranslations("Skills");
-  const { skills } = useProfileData();
+  const { skills } = useJSONResumeAdapter();
 
   // Get top 3 skills from the first 3 categories
   const topSkillsByCategory = skills.slice(0, 3).map(category => ({

@@ -2,7 +2,7 @@ import { PageLayout } from "@/components/layout/PageLayout";
 import { SEO } from "@/components/SEO";
 import { StructuredData } from "@/components/StructuredData";
 import { Progress } from "@/components/ui/progress";
-import { useProfileData } from "@/hooks";
+import { useJSONResumeAdapter } from "@/hooks";
 import { ArrowLeftIcon } from "@radix-ui/react-icons";
 import { useTranslations } from "use-intl";
 import { LinkTranslated } from "../components/LinkTranslated";
@@ -17,7 +17,7 @@ import { Card, CardContent, CardHeader } from "../components/ui/card";
 
 export function SkillsPage() {
   const t = useTranslations("Skills");
-  const { personal, skills } = useProfileData();
+  const { personal, skills } = useJSONResumeAdapter();
 
   return (
     <PageLayout>

@@ -1,7 +1,7 @@
 import { PageLayout } from "@/components/layout/PageLayout";
 import { SEO } from "@/components/SEO";
 import { StructuredData } from "@/components/StructuredData";
-import { useProfileData } from "@/hooks";
+import { useJSONResumeAdapter } from "@/hooks";
 import { ArrowLeftIcon } from "@radix-ui/react-icons";
 import { useTranslations } from "use-intl";
 import { LinkTranslated } from "../components/LinkTranslated";
@@ -29,7 +29,7 @@ const recommendationKeys = [
 export function RecommendationsPage() {
   const t = useTranslations("Recommendations");
   const tData = useTranslations("SampleData.recommendations");
-  const { personal } = useProfileData();
+  const { personal } = useJSONResumeAdapter();
 
   return (
     <PageLayout>
@@ -64,7 +64,7 @@ export function RecommendationsPage() {
             <div key={key} className="mb-8 last:mb-0">
               {index > 0 && <Separator className="my-8" />}
               <div className="flex gap-2 md:gap-4">
-                <Avatar className="w-10 h-10 md:w-12 md:h-12 flex-shrink-0">
+                <Avatar className="w-10 h-10 md:w-12 md:h-12 shrink-0">
                   <AvatarImage src="https://github.com/shadcn.png" />
                   <AvatarFallback>{tData(`${key}.name`)[0]}</AvatarFallback>
                 </Avatar>

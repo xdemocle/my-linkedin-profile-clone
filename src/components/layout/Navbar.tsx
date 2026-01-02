@@ -14,7 +14,7 @@ import { Search } from "./Search";
 export function Navbar() {
   const { isSearchOpen, isMobile, isMenuOpen, setIsMenuOpen, navLinks } =
     useApp();
-  // const { personal } = useProfileData();
+  // const { personal } = useJSONResumeAdapter();
 
   const handleMenuClick = () => {
     setIsMenuOpen(!isMenuOpen);

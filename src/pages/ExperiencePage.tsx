@@ -1,6 +1,6 @@
 import { SEO } from "@/components/SEO";
 import { StructuredData } from "@/components/StructuredData";
-import { useProfileData } from "@/hooks";
+import { useJSONResumeAdapter } from "@/hooks";
 import { ArrowLeftIcon } from "@radix-ui/react-icons";
 import { useTranslations } from "use-intl";
 import { PageLayout } from "../components/layout/PageLayout";
@@ -13,7 +13,7 @@ import { Separator } from "../components/ui/separator";
 
 export function ExperiencePage() {
   const t = useTranslations("Experience");
-  const { personal, experience } = useProfileData();
+  const { personal, experience } = useJSONResumeAdapter();
 
   return (
     <PageLayout addToSidebar={<ExperienceKeyAchievements />}>

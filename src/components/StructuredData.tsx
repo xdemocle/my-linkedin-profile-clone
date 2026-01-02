@@ -1,8 +1,7 @@
-import { WEBSITE_URL } from "@/constants";
-import { useProfileData } from "@/hooks";
+import { LOCALE_DEFAULT, WEBSITE_URL } from "@/constants";
+import { useJSONResumeAdapter } from "@/hooks";
 import { useEffect } from "react";
 import { useLocale } from "use-intl";
-import { LOCALE_DEFAULT } from "@/constants";
 
 interface StructuredDataProps {
   type?: "person" | "organization" | "breadcrumb";
@@ -32,7 +31,7 @@ export function StructuredData({
   type = "person",
   breadcrumbs,
 }: StructuredDataProps) {
-  const { personal, experience, skills } = useProfileData();
+  const { personal, experience, skills } = useJSONResumeAdapter();
   const locale = useLocale();
 
   useEffect(() => {

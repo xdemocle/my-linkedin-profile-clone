@@ -1,6 +1,6 @@
 import { ArrowRightIcon, ExternalLinkIcon } from "@radix-ui/react-icons";
 import { useTranslations } from "use-intl";
-import { useProfileData } from "../../hooks/useProfileData";
+import { useJSONResumeAdapter } from "../../hooks/useJSONResumeAdapter";
 import { ProjectIconWrapper } from "../../lib/iconComponents";
 import { LinkTranslated } from "../LinkTranslated";
 import { Badge } from "../ui/badge";
@@ -9,7 +9,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "../ui/card";
 
 export function ProjectsSection() {
   const t = useTranslations("Projects");
-  const { projects } = useProfileData();
+  const { projects } = useJSONResumeAdapter();
 
   // Get top 3 featured projects (sorted by metadata.order)
   const featuredProjects = projects

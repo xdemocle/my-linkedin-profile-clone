@@ -1,6 +1,6 @@
 import { ArrowRightIcon } from "@radix-ui/react-icons";
 import { useTranslations } from "use-intl";
-import { useProfileData } from "../../hooks/useProfileData";
+import { useJSONResumeAdapter } from "../../hooks/useJSONResumeAdapter";
 import { LinkTranslated } from "../LinkTranslated";
 import { Avatar, AvatarFallback, AvatarImage } from "../ui/avatar";
 import { Button } from "../ui/button";
@@ -9,7 +9,7 @@ import { Separator } from "../ui/separator";
 
 export function ExperienceSection() {
   const t = useTranslations("Experience");
-  const { experience } = useProfileData();
+  const { experience } = useJSONResumeAdapter();
 
   // Get top 3 experiences (sorted by metadata.order)
   const topExperiences = experience

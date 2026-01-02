@@ -3,7 +3,7 @@ import { cn } from "@/lib/utils";
 import { ExternalLinkIcon } from "@radix-ui/react-icons";
 import { GhostIcon } from "lucide-react";
 import { useTranslations } from "use-intl";
-import { useProfileData } from "../../hooks/useProfileData";
+import { useJSONResumeAdapter } from "../../hooks/useJSONResumeAdapter";
 import { ShareProfile } from "../ShareProfile";
 import { Avatar, AvatarFallback, AvatarImage } from "../ui/avatar";
 import { Button } from "../ui/button";
@@ -19,14 +19,14 @@ import {
 export function ProfileHeader() {
   const t = useTranslations("ProfileHeader");
   const tCommon = useTranslations("Common");
-  const { personal } = useProfileData();
+  const { personal } = useJSONResumeAdapter();
 
   return (
     <Card className="pt-0">
       {/* Cover Photo Carousel */}
       <Carousel
         orientation="horizontal"
-        className="bg-muted relative rounded-t-sm overflow-hidden border-b-1 border-primary/70"
+        className="bg-muted relative rounded-t-sm overflow-hidden border-b border-primary/70"
       >
         <CarouselContent>
           <CarouselItem className="h-36 md:h-48">
