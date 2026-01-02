@@ -38,7 +38,10 @@ export function useJSONResumeAdapter(): ProfileData {
     es: resumeDataES as JSONResume,
   };
 
-  const resume = resumeDataMap[locale] || (resumeDataEN as JSONResume);
+  const resume = useMemo(() => {
+    const localeResume = resumeDataMap[locale] || (resumeDataEN as JSONResume);
+    return deepMerge(resumeDataEN as JSONResume, localeResume);
+  }, [locale]);
 
   return useMemo(() => {
     // Map basics to PersonalInfo
@@ -251,4 +254,41 @@ function getLevelFromString(level: string): number {
   };
 
   return levelMap[level.toLowerCase()] || 70;
+}
+
+function deepMerge<T>(base: T, override: T): T {
+  if (Array.isArray(base) && Array.isArray(override)) {
+    if (override.length === 0 && base.length > 0) {
+      return base;
+    }
+
+    return override as T;
+  }
+
+  if (
+    typeof base === "object" &&
+    base !== null &&
+    typeof override === "object" &&
+    override !== null &&
+    !Array.isArray(base) &&
+    !Array.isArray(override)
+  ) {
+    const result: Record<string, unknown> = {
+      ...(base as Record<string, unknown>),
+    };
+    for (const [key, overrideValue] of Object.entries(
+      override as Record<string, unknown>
+    )) {
+      const baseValue = (base as Record<string, unknown>)[key];
+      if (baseValue === undefined) {
+        result[key] = overrideValue;
+        continue;
+      }
+
+      result[key] = deepMerge(baseValue, overrideValue);
+    }
+    return result as T;
+  }
+
+  return (override ?? base) as T;
 }

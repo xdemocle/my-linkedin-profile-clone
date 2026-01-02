@@ -25,6 +25,7 @@
     "build:cf": "bun install --frozen-lockfile && vite build",
     "lint": "eslint .",
     "prettier": "prettier --write .",
+    "check:resume-sync": "node scripts/check-resume-sync.ts",
     "preview": "bun run build && wrangler pages dev",
     "deploy": "bun run build && wrangler pages deploy",
     "cf-typegen": "wrangler types",
