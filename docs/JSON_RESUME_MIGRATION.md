@@ -50,7 +50,7 @@ The JSON Resume schema includes these main sections:
 ### Option 1: Use the Adapter (Recommended for existing code)
 
 ```typescript
-import { useProfileData } from '@/hooks';
+import { useProfileData } from "@/hooks";
 
 function MyComponent() {
   const { personal, experience, projects, skills } = useProfileData();
@@ -61,7 +61,7 @@ function MyComponent() {
 ### Option 2: Use JSON Resume Directly (Recommended for new code)
 
 ```typescript
-import { useJSONResumeAdapter } from '@/hooks';
+import { useJSONResumeAdapter } from "@/hooks";
 
 function MyComponent() {
   const profileData = useJSONResumeAdapter();
@@ -72,8 +72,8 @@ function MyComponent() {
 ### Option 3: Access Raw JSON Resume Data
 
 ```typescript
-import resumeData from '@/data/resume.json';
-import type { JSONResume } from '@/types/json-resume';
+import resumeData from "@/data/resume.json";
+import type { JSONResume } from "@/types/json-resume";
 
 function MyComponent() {
   const resume = resumeData as JSONResume;
@@ -202,7 +202,11 @@ Use bullet points for achievements:
 
 ```json
 {
-  "highlights": ["Led team of 5 developers", "Increased performance by 40%", "Reduced bugs by 25%"]
+  "highlights": [
+    "Led team of 5 developers",
+    "Increased performance by 40%",
+    "Reduced bugs by 25%"
+  ]
 }
 ```
 

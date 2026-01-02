@@ -35,7 +35,7 @@ Full TypeScript definitions for the JSON Resume schema.
 ### Primary Hook: `useJSONResumeAdapter()`
 
 ```typescript
-import { useJSONResumeAdapter } from '@/hooks';
+import { useJSONResumeAdapter } from "@/hooks";
 
 function Component() {
   const data = useJSONResumeAdapter();
@@ -46,7 +46,7 @@ function Component() {
 ### Legacy Hook: `useProfileData()`
 
 ```typescript
-import { useProfileData } from '@/hooks';
+import { useProfileData } from "@/hooks";
 
 function Component() {
   const data = useProfileData();
