@@ -1,4 +1,3 @@
-import mdx from "@mdx-js/rollup";
 import tailwindcss from "@tailwindcss/vite";
 import react from "@vitejs/plugin-react-swc";
 import fs from "fs/promises";
@@ -32,7 +31,7 @@ const additionalPrerenderRoutes = [
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [
-    { enforce: "pre", ...mdx() },
+    // { enforce: "pre" },
     react(),
     tailwindcss(),
     vitePrerenderPlugin({

@@ -108,7 +108,6 @@ Example: `bunx --bun shadcn@latest add button`
 - **ESLint 9.36.0** with modern flat configuration
 - **Wrangler 4.40.2** for Cloudflare deployment
 - **vite-prerender-plugin** for static site generation
-- **MDX 3.1.1** with @mdx-js/rollup and @mdx-js/react for MDX content support
 - **use-intl** for internationalization (i18n)
 - **beautiful-react-hooks** for custom React hooks
 
@@ -133,31 +132,6 @@ Current components available (based on Radix UI dependencies):
 - Carousel (with Embla Carousel integration)
 - Form components (with React Hook Form + Zod integration)
 - Accordion, Badge, Card
-
-## MDX Support
-
-The project includes **MDX** support for writing content with React components embedded in Markdown:
-
-- **@mdx-js/rollup 3.1.1** - Rollup plugin for processing MDX files
-- **@mdx-js/react 3.1.1** - React runtime for MDX components
-- **Configuration**: MDX plugin configured with `enforce: 'pre'` in Vite
-- **TypeScript**: Full TypeScript support with type declarations in `src/mdx.d.ts`
-- **Usage**: Import and use `.mdx` files as React components
-- **File Extension**: Use `.mdx` extension for files containing JSX/React components in Markdown
-
-### MDX Example Usage
-
-```tsx
-import MyContent from "./content/example.mdx";
-
-function Page() {
-  return (
-    <div>
-      <MyContent />
-    </div>
-  );
-}
-```
 
 ## Internationalization (i18n)
 
