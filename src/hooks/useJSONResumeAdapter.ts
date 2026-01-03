@@ -26,24 +26,25 @@ import type {
  */
 export function useJSONResumeAdapter(): ProfileData {
   const tPersonal = useTranslations("ProfileData.personal");
-  const tAchievements = useTranslations("ProfileData.achievements");
-  const tCertifications = useTranslations("ProfileData.certifications");
   const tEducation = useTranslations("ProfileData.education");
   const locale = useLocale();
 
   // Dynamically load resume data based on locale
-  const resumeDataMap: Record<string, JSONResume> = {
-    en: resumeDataEN as JSONResume,
-    it: resumeDataIT as JSONResume,
-    fr: resumeDataFR as JSONResume,
-    ar: resumeDataAR as JSONResume,
-    es: resumeDataES as JSONResume,
-  };
+  const resumeDataMap = useMemo(
+    (): Record<string, JSONResume> => ({
+      en: resumeDataEN as JSONResume,
+      it: resumeDataIT as JSONResume,
+      fr: resumeDataFR as JSONResume,
+      ar: resumeDataAR as JSONResume,
+      es: resumeDataES as JSONResume,
+    }),
+    []
+  );
 
   const resume = useMemo(() => {
     const localeResume = resumeDataMap[locale] || (resumeDataEN as JSONResume);
     return deepMerge(resumeDataEN as JSONResume, localeResume);
-  }, [locale]);
+  }, [locale, resumeDataMap]);
 
   return useMemo(() => {
     // Map basics to PersonalInfo
@@ -259,7 +260,7 @@ export function useJSONResumeAdapter(): ProfileData {
       interests,
       references,
     };
-  }, [resume, tPersonal, tAchievements, tCertifications, tEducation, locale]);
+  }, [resume, tPersonal, tEducation, locale]);
 }
 
 /**

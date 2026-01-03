@@ -121,9 +121,6 @@ export function Router() {
         <Route path={getPageUrlFromPath(locale, "skills")}>
           <Redirect to={`/${locale}/skills`} />
         </Route>
-        <Route path={getPageUrlFromPath(locale, "recommendations")}>
-          <Redirect to={`/${locale}/recommendations`} />
-        </Route>
 
         {/* Default route in a switch - 404 page */}
         <Route>

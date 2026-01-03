@@ -1,4 +1,4 @@
-import { useState, useEffect, useCallback } from "react";
+import { useCallback, useEffect, useState } from "react";
 
 type ScrollDirection = "up" | "down" | "none";
 
@@ -18,7 +18,7 @@ export function useScrollDirection({
   const [prevScrollY, setPrevScrollY] = useState(0);
   const [visible, setVisible] = useState(initiallyVisible);
   const [isScrolling, setIsScrolling] = useState(false);
-  const [lastActivity, setLastActivity] = useState(Date.now());
+  const [lastActivity, setLastActivity] = useState(() => Date.now());
 
   // Reset idle timer when scrolling happens
   const resetIdleTimer = useCallback(() => {
