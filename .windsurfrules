@@ -1,7 +1,191 @@
-- never add css to style attribute
-- use tailwindcss v4 for styling only
-- always follow latest v4 guidelines for tailwindcss
-- never use inline styles
-- use shadcn/ui
-- use bun as package manager
-- no SSR, yes SSG
+# Windsurf Rules
+
+Development guidelines and best practices for this project.
+
+## Project Overview
+
+This is a LinkedIn profile clone built with React, TypeScript, and Vite. The project is configured for deployment on Cloudflare Pages and uses Bun as the package manager.
+
+## Development Commands
+
+- `bun run dev` - Start development server with hot reload
+- `bun run build` - Build for production (outputs to `dist/client/`)
+- `bun run lint` - Run ESLint on the codebase
+- `bun run preview` - Build and preview using Wrangler Pages locally
+- `bun run deploy` - Build and deploy to Cloudflare Pages
+- `bun run cf-typegen` - Generate Cloudflare worker types
+
+## Adding shadcn/ui Components
+
+Use this command pattern to add new shadcn/ui components:
+
+```bash
+bunx --bun shadcn@latest add [component-name]
+```
+
+Example: `bunx --bun shadcn@latest add button`
+
+## Project Structure
+
+- **src/** - Main source code directory
+  - **app.tsx** - Main React component (currently basic Vite template)
+  - **main.tsx** - Application entry point with prerender function
+  - **components/ui/** - shadcn/ui component library
+    - **button.tsx** - Reusable button component with Radix UI Slot
+    - **button.variants.ts** - Button variant definitions using CVA
+  - **lib/utils.ts** - Utility functions including `cn` for class merging
+  - **index.css** - Global CSS styles with Tailwind CSS
+  - **vite-env.d.ts** - Vite environment type definitions
+- **public/** - Public static files served directly
+  - **assets/** - Organized assets with ico/, png/, css/, images/ subdirectories
+- **dist/client/** - Build output directory for Vite
+
+## Build System
+
+- **Vite** with React SWC for fast builds and HMR
+- **Tailwind CSS v4** with @tailwindcss/vite plugin for styling
+- **vite-prerender-plugin** for static site generation
+- Custom build plugin that exits process on completion
+- Sourcemaps enabled for debugging
+- Outputs to `dist/client/` for Cloudflare Pages compatibility
+
+## Deployment
+
+- Configured for **Cloudflare Pages** deployment via Wrangler
+- Build output directory: `./dist/client`
+- Observability enabled for monitoring
+- Uses compatibility date: 2025-09-15
+
+## Code Style
+
+- **Indentation**: 2 spaces
+- **Quotes**: Single quotes (Prettier configuration)
+- **Line width**: 80 characters (Prettier configuration)
+- **Naming conventions**:
+  - Components: PascalCase
+  - Functions/variables: camelCase
+- **ESLint**: Modern flat configuration format
+
+## Styling Guidelines
+
+**CRITICAL RULES** - Always follow these:
+
+- ✅ **Use Tailwind CSS v4 for styling only** - Never add CSS to style attribute
+- ✅ **Always follow latest v4 guidelines for Tailwind CSS** - Use modern Tailwind v4 syntax
+- ✅ **Never use inline styles** - All styling must be done through Tailwind classes
+- ✅ **Use shadcn/ui components** - Prefer shadcn/ui for consistent design system
+- ✅ **Use Bun as package manager** - Always use `bun` commands instead of `npm` or `yarn`
+
+## Package Manager
+
+- Uses **Bun** (v1.2.15+) as the primary package manager
+- Node.js requirement: >=22.19.0
+- All package operations should use `bun` instead of `npm`
+
+## Key Configuration Files
+
+- **vite.config.ts** - Vite configuration with React SWC, Tailwind CSS, prerender plugin
+- **components.json** - shadcn/ui configuration for component generation and aliases
+- **wrangler.jsonc** - Cloudflare Pages deployment configuration
+- **tsconfig.json** - Root TypeScript configuration with path aliases (`@/*` maps to `./src/*`)
+- **tsconfig.app.json** - App-specific TypeScript config (ES2022, strict mode)
+- **tsconfig.node.json** - Node-specific TypeScript config (ES2023)
+- **eslint.config.js** - Modern flat ESLint configuration
+- **.prettierrc** - Prettier configuration for code formatting
+- **worker-configuration.d.ts** - Generated Cloudflare worker types
+
+## Technology Stack
+
+- **React 19.1.1** with React DOM
+- **TypeScript 5.9.2** with strict mode enabled
+- **Vite 7.1.2** with React SWC plugin for fast builds
+- **Tailwind CSS 4.1.13** for utility-first styling
+- **shadcn/ui** component system with Radix UI primitives
+- **Class Variance Authority** for component variant management
+- **React Hook Form 7.63.0** with Zod validation for form handling
+- **Embla Carousel** for carousel/slider components
+- **Lucide React** for iconography
+- **ESLint 9.36.0** with modern flat configuration
+- **Wrangler 4.40.2** for Cloudflare deployment
+- **vite-prerender-plugin** for static site generation
+- **MDX 3.1.1** with @mdx-js/rollup and @mdx-js/react for MDX content support
+- **use-intl** for internationalization (i18n)
+- **beautiful-react-hooks** for custom React hooks
+
+## Component Architecture
+
+The project uses **shadcn/ui** component architecture with extensive Radix UI integration:
+
+- Components are built with **Radix UI** primitives for accessibility and interaction patterns
+- **Class Variance Authority (CVA)** manages component variants and styling
+- **Tailwind CSS** provides utility classes with custom design tokens
+- Path aliases (`@/components`, `@/lib/utils`) simplify imports
+- The `cn()` utility function merges Tailwind classes using `clsx` and `tailwind-merge`
+
+### Installed shadcn/ui Components
+
+Current components available (based on Radix UI dependencies):
+
+- Aspect Ratio, Avatar, Button, Collapsible, Dialog
+- Dropdown Menu, Hover Card, Label, Navigation Menu
+- Popover, Scroll Area, Separator, Slot (for composition)
+- Tabs, Toggle, Tooltip
+- Carousel (with Embla Carousel integration)
+- Form components (with React Hook Form + Zod integration)
+- Accordion, Badge, Card
+
+## MDX Support
+
+The project includes **MDX** support for writing content with React components embedded in Markdown:
+
+- **@mdx-js/rollup 3.1.1** - Rollup plugin for processing MDX files
+- **@mdx-js/react 3.1.1** - React runtime for MDX components
+- **Configuration**: MDX plugin configured with `enforce: 'pre'` in Vite
+- **TypeScript**: Full TypeScript support with type declarations in `src/mdx.d.ts`
+- **Usage**: Import and use `.mdx` files as React components
+- **File Extension**: Use `.mdx` extension for files containing JSX/React components in Markdown
+
+### MDX Example Usage
+
+```tsx
+import MyContent from "./content/example.mdx";
+
+function Page() {
+  return (
+    <div>
+      <MyContent />
+    </div>
+  );
+}
+```
+
+## Internationalization (i18n)
+
+- **use-intl** for multi-language support
+- **5 Languages Supported**: English (en), Italian (it), French (fr), Spanish (es), Arabic (ar)
+- **Message Files**: `src/messages/{locale}.json`
+- **JSON Resume Format**: Resume data stored in `src/data/resume-{locale}.json`
+- **Translation Keys**: All UI text uses translation keys for consistency
+- **RTL Support**: Arabic language with right-to-left text direction
+
+### Translation Update Process
+
+1. Add keys to English (`src/messages/en.json`) first
+2. Immediately update all other language files with appropriate translations
+3. Use culturally appropriate terminology for each language
+4. Test all languages to ensure no missing keys
+5. Update corresponding JSON Resume files for resume data
+
+## Data Structure
+
+- **Profile Data**: Uses JSON Resume schema (`src/data/resume-{locale}.json`)
+- **Static Assets**: Company logos and images in `public/assets/`
+- **Hooks**: Custom hooks in `src/hooks/` for data adaptation and state management
+- **Types**: TypeScript interfaces in `src/types/` for type safety
+
+## Performance Considerations
+
+- **Static Site Generation**: 49 prerendered pages (5 languages × 5 routes + home)
+- **Code Splitting**: Consider dynamic imports for large components
+- **Image Optimization**: Use local PNG assets instead of external URLs
+- **CSS**: Tailwind CSS v4 with tree-shaking for minimal bundle size

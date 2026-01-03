@@ -110,7 +110,30 @@ src/
 - [ ] Router component fully tested
 - [ ] CI/CD integration with test automation
 
-## Future Enhancements
+## Development Priorities
+
+### High Priority Tasks
+
+1. **Complete Testing Implementation** (Current Focus)
+   - [ ] 90%+ test coverage on routing logic
+   - [ ] All locale switching scenarios covered
+   - [ ] URL generation/parsing edge cases handled
+   - [ ] Router component fully tested
+   - [ ] CI/CD integration with test automation
+
+2. **Content Management**
+   - [ ] Dynamic profile data layer
+   - [ ] Inline editing capabilities
+   - [ ] Content synchronization pipeline
+
+### Medium Priority Tasks
+
+- [ ] Functional navbar search
+- [ ] Real profile analytics data
+- [ ] Enhanced mobile navigation patterns
+- [ ] Optimized touch interactions
+
+### Future Enhancements
 
 - **ExpandContentAutomation**
   Introduce a content pipeline for profile data to sync with external resume sources (e.g., Notion, Airtable, or LinkedIn export).
@@ -127,3 +150,4 @@ src/
 ---
 
 **See `changelog.md` for completed work and historical updates.**
+**See `.windsurfrules.md` for development guidelines and best practices.**
