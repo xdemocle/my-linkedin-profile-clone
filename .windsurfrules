@@ -1,5 +1,5 @@
 - never add css to style attribute
-- use tailwindcss for styling only
+- use tailwindcss v4 for styling only
 - always follow latest v4 guidelines for tailwindcss
 - never use inline styles
 - use shadcn/ui
