@@ -13,9 +13,9 @@ export function Footer() {
   return (
     <Card className="shadow-xs mt-10">
       <CardContent>
-        <div className="text-xs text-muted-foreground space-y-3">
+        <div className="flex lg:flex-row flex-col justify-center lg:justify-between space-y-5 lg:space-y-0 text-muted-foreground text-xs">
           {/* Navigation Links */}
-          <div className="flex flex-wrap gap-2">
+          <div className="flex flex-wrap justify-center lg:justify-between gap-2 text-center">
             {navLinks.map((link, index) => (
               <React.Fragment key={link.href}>
                 {index > 0 && <span>•</span>}
@@ -27,12 +27,12 @@ export function Footer() {
           </div>
 
           {/* External Links */}
-          <div className="flex flex-wrap gap-2 pt-2 border-t">
+          <div className="flex flex-wrap justify-center lg:justify-between gap-2 pt-2 md:pt-0 border-t md:border-t-0">
             <a
               href={LINKEDIN_PROFILE_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-primary flex items-center gap-1"
+              className="flex items-center gap-1 hover:text-primary"
             >
               {tFooter("linkedinProfile")}
               <ExternalLinkIcon className="size-3" />
@@ -42,15 +42,13 @@ export function Footer() {
               href={WEBSITE_ROCCOME_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-primary flex items-center gap-1"
+              className="flex items-center gap-1 hover:text-primary"
             >
               {tFooter("personalWebsite")}
               <ExternalLinkIcon className="size-3" />
             </a>
-          </div>
-
-          {/* Copyright */}
-          <div className="pt-2 border-t">
+            <span>•</span>
+            {/* Copyright */}
             <p>{tFooter("copyright", { year: new Date().getFullYear() })}</p>
           </div>
         </div>
