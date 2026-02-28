@@ -4,6 +4,7 @@ import { StructuredData } from "@/components/StructuredData";
 import { Progress } from "@/components/ui/progress";
 import { useJSONResumeAdapter } from "@/hooks";
 import { ArrowLeftIcon } from "@radix-ui/react-icons";
+import { useState } from "react";
 import { useTranslations } from "use-intl";
 import { LinkTranslated } from "../components/LinkTranslated";
 import {
@@ -18,6 +19,9 @@ import { Card, CardContent, CardHeader } from "../components/ui/card";
 export function SkillsPage() {
   const t = useTranslations("Skills");
   const { personal, skills } = useJSONResumeAdapter();
+  const [expandedCategories, setExpandedCategories] = useState<
+    Record<number, boolean>
+  >({});
 
   return (
     <PageLayout>
@@ -34,13 +38,13 @@ export function SkillsPage() {
         ]}
       />
       {/* Header */}
-      <CardHeader className="mt-8 flex items-center justify-start flex-col text-center sm:flex-row sm:text-left">
+      <CardHeader className="flex sm:flex-row flex-col justify-start items-center mt-8 sm:text-left text-center">
         <Button variant="outline" size="icon" asChild>
           <LinkTranslated href="/">
             <ArrowLeftIcon className="size-5" />
           </LinkTranslated>
         </Button>
-        <h1 className="text-3xl font-bold ml-3">
+        <h1 className="ml-3 font-bold text-3xl">
           {personal.name} | {t("title")}
         </h1>
       </CardHeader>
@@ -48,30 +52,60 @@ export function SkillsPage() {
       {/* Skills by Category with Accordion */}
       <Card className="shadow-xs">
         <CardContent>
-          <Accordion type="single" collapsible className="w-full">
-            {skills.map((category, categoryIndex) => (
-              <AccordionItem
-                key={categoryIndex}
-                value={`category-${categoryIndex}`}
-              >
-                <AccordionTrigger>{category.category}</AccordionTrigger>
-                <AccordionContent>
-                  <div className="space-y-4 grid grid-cols-max lg:grid-cols-2 gap-6">
-                    {category.items.map((skill, skillIndex) => (
-                      <div key={skillIndex} className="space-y-2">
-                        <div className="flex items-center justify-between">
-                          <span className="font-medium">{skill.name}</span>
-                          <span className="text-sm text-muted-foreground">
-                            {skill.level}%
-                          </span>
+          <Accordion
+            type="single"
+            collapsible
+            className="w-full"
+            defaultValue="category-0"
+          >
+            {skills.map((category, categoryIndex) => {
+              const isExpanded = expandedCategories[categoryIndex] || false;
+              const displayedSkills = isExpanded
+                ? category.items
+                : category.items.slice(0, 8);
+              const hasMore = category.items.length > 8;
+
+              return (
+                <AccordionItem
+                  key={categoryIndex}
+                  value={`category-${categoryIndex}`}
+                >
+                  <AccordionTrigger>{category.category}</AccordionTrigger>
+                  <AccordionContent>
+                    <div className="gap-6 space-y-4 grid grid-cols-max lg:grid-cols-2">
+                      {displayedSkills.map((skill, skillIndex) => (
+                        <div key={skillIndex} className="space-y-2">
+                          <div className="flex justify-between items-center">
+                            <span className="font-medium">{skill.name}</span>
+                            <span className="text-muted-foreground text-sm">
+                              {skill.level}%
+                            </span>
+                          </div>
+                          <Progress value={skill.level} />
                         </div>
-                        <Progress value={skill.level} />
+                      ))}
+                    </div>
+                    {hasMore && (
+                      <div className="mt-6 text-center">
+                        <Button
+                          variant="link"
+                          onClick={() =>
+                            setExpandedCategories(prev => ({
+                              ...prev,
+                              [categoryIndex]: !prev[categoryIndex],
+                            }))
+                          }
+                        >
+                          {isExpanded
+                            ? "Show Less"
+                            : `Load More (${category.items.length - 8} more)`}
+                        </Button>
                       </div>
-                    ))}
-                  </div>
-                </AccordionContent>
-              </AccordionItem>
-            ))}
+                    )}
+                  </AccordionContent>
+                </AccordionItem>
+              );
+            })}
           </Accordion>
         </CardContent>
       </Card>
