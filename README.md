@@ -24,7 +24,7 @@ Software Engineer / Tech Lead | Blockchain & Dapps | Agentic AI | Cybersecurity 
 📧 [hello@rocco.me](mailto:hello@rocco.me)
 
 **Summary:**  
-Software engineer with over **20 years of front-end experience**, **5 years in Web3**, and hands-on full-stack and AI agent integration expertise. I design, refactor, and ship products that merge **blockchain transparency** with **real user value**, from DeFi and RWA platforms to secure browser extensions and gamified apps. I lead small agile teams with a focus on mentorship, code quality, and long-term sustainability — not just delivery speed.
+Software engineer with over **10+ years of front-end experience**, **5 years in Web3**, and hands-on full-stack and AI agent integration expertise. I design, refactor, and ship products that merge **blockchain transparency** with **real user value**, from DeFi and RWA platforms to secure browser extensions and gamified apps. I lead small agile teams with a focus on mentorship, code quality, and long-term sustainability — not just delivery speed.
 
 ---
 

@@ -94,7 +94,7 @@ export default defineConfig({
                   name: "Rocco Russo",
                   jobTitle: "Software Engineer / Tech Lead",
                   description:
-                    "Software engineer with over 20 years of experience in front-end engineering, Web3 integrations, and full-stack development.",
+                    "Software engineer with over 10+ years of experience in front-end engineering, Web3 integrations, and full-stack development.",
                   url: WEBSITE_URL,
                   image: `${WEBSITE_URL}/assets/png/profile.png`,
                   sameAs: [

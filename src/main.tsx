@@ -75,7 +75,7 @@ export async function prerender(data: PrerenderData) {
     // Generate SEO meta tags based on page type
     let title = "Rocco Russo | Software Engineer / Tech Lead";
     const description =
-      "Software engineer with over 20 years of experience in front-end engineering, Web3 integrations, and full-stack development.";
+      "Software engineer with over 10+ years of experience in front-end engineering, Web3 integrations, and full-stack development.";
     let structuredData = "";
 
     if (pageType === "home") {
@@ -154,7 +154,7 @@ export async function prerender(data: PrerenderData) {
 
     // Return a minimal result to avoid breaking the build
     return {
-      html: `<div class="min-h-screen flex items-center justify-center"><div class="p-4 text-center"><h1 class="text-xl font-bold mb-2">LinkedIn Profile</h1><p>Welcome to the ${locale} version</p></div></div>`,
+      html: `<div class="flex justify-center items-center min-h-screen"><div class="p-4 text-center"><h1 class="mb-2 font-bold text-xl">LinkedIn Profile</h1><p>Welcome to the ${locale} version</p></div></div>`,
       links: new Set(),
       head: {
         lang: locale,
