@@ -9,6 +9,7 @@ function isObject(value: Json): value is { [key: string]: Json } {
 
 function loadJson(filePath: string): Json {
   const raw = readFileSync(filePath, "utf8");
+
   return JSON.parse(raw) as Json;
 }
 

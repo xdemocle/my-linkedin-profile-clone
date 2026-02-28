@@ -31,7 +31,9 @@ export function SEO({
   const pageTitle = title || defaultTitle;
   const pageDescription = description || defaultDescription;
   const pageImage = image.startsWith("http") ? image : `${siteUrl}${image}`;
-  const canonicalUrl = `${siteUrl}${locale === LOCALE_DEFAULT ? "" : `/${locale}`}${path}`;
+  // Ensure path has trailing slash
+  const normalizedPath = path && !path.endsWith("/") ? `${path}/` : path || "/";
+  const canonicalUrl = `${siteUrl}${locale === LOCALE_DEFAULT ? "" : `/${locale}`}${normalizedPath}`;
 
   useEffect(() => {
     // Update document title
@@ -110,7 +112,7 @@ export function SEO({
       const alternate = document.createElement("link");
       alternate.rel = "alternate";
       alternate.hreflang = lang;
-      alternate.href = `${siteUrl}${lang === LOCALE_DEFAULT ? "" : `/${lang}`}${path}`;
+      alternate.href = `${siteUrl}${lang === LOCALE_DEFAULT ? "" : `/${lang}`}${normalizedPath}`;
       document.head.appendChild(alternate);
     });
 
@@ -118,7 +120,7 @@ export function SEO({
     const xDefault = document.createElement("link");
     xDefault.rel = "alternate";
     xDefault.hreflang = "x-default";
-    xDefault.href = `${siteUrl}${path}`;
+    xDefault.href = `${siteUrl}${normalizedPath}`;
     document.head.appendChild(xDefault);
 
     // Update language attribute on html element
@@ -130,6 +132,7 @@ export function SEO({
     canonicalUrl,
     locale,
     path,
+    normalizedPath,
     type,
     noindex,
     personal.name,

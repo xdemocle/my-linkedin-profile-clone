@@ -9,10 +9,10 @@
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://linkedin-roccorusso.work/" />
-    <xhtml:link rel="alternate" hreflang="it" href="https://linkedin-roccorusso.work/it" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://linkedin-roccorusso.work/fr" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://linkedin-roccorusso.work/es" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://linkedin-roccorusso.work/ar" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://linkedin-roccorusso.work/it/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://linkedin-roccorusso.work/fr/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://linkedin-roccorusso.work/es/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://linkedin-roccorusso.work/ar/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://linkedin-roccorusso.work/" />
   </url>
 
@@ -21,11 +21,11 @@
     <lastmod>2025-10-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://linkedin-roccorusso.work/experience" />
-    <xhtml:link rel="alternate" hreflang="it" href="https://linkedin-roccorusso.work/it/experience" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://linkedin-roccorusso.work/fr/experience" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://linkedin-roccorusso.work/es/experience" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://linkedin-roccorusso.work/ar/experience" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://linkedin-roccorusso.work/experience/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://linkedin-roccorusso.work/it/experience/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://linkedin-roccorusso.work/fr/experience/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://linkedin-roccorusso.work/es/experience/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://linkedin-roccorusso.work/ar/experience/" />
   </url>
 
   <url>
@@ -33,11 +33,11 @@
     <lastmod>2025-10-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://linkedin-roccorusso.work/projects" />
-    <xhtml:link rel="alternate" hreflang="it" href="https://linkedin-roccorusso.work/it/projects" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://linkedin-roccorusso.work/fr/projects" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://linkedin-roccorusso.work/es/projects" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://linkedin-roccorusso.work/ar/projects" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://linkedin-roccorusso.work/projects/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://linkedin-roccorusso.work/it/projects/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://linkedin-roccorusso.work/fr/projects/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://linkedin-roccorusso.work/es/projects/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://linkedin-roccorusso.work/ar/projects/" />
   </url>
 
   <url>
@@ -45,11 +45,11 @@
     <lastmod>2025-10-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://linkedin-roccorusso.work/skills" />
-    <xhtml:link rel="alternate" hreflang="it" href="https://linkedin-roccorusso.work/it/skills" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://linkedin-roccorusso.work/fr/skills" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://linkedin-roccorusso.work/es/skills" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://linkedin-roccorusso.work/ar/skills" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://linkedin-roccorusso.work/skills/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://linkedin-roccorusso.work/it/skills/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://linkedin-roccorusso.work/fr/skills/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://linkedin-roccorusso.work/es/skills/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://linkedin-roccorusso.work/ar/skills/" />
   </url>
 
   <url>
@@ -58,15 +58,15 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en"
-      href="https://linkedin-roccorusso.work/recommendations" />
+      href="https://linkedin-roccorusso.work/recommendations/" />
     <xhtml:link rel="alternate" hreflang="it"
-      href="https://linkedin-roccorusso.work/it/recommendations" />
+      href="https://linkedin-roccorusso.work/it/recommendations/" />
     <xhtml:link rel="alternate" hreflang="fr"
-      href="https://linkedin-roccorusso.work/fr/recommendations" />
+      href="https://linkedin-roccorusso.work/fr/recommendations/" />
     <xhtml:link rel="alternate" hreflang="es"
-      href="https://linkedin-roccorusso.work/es/recommendations" />
+      href="https://linkedin-roccorusso.work/es/recommendations/" />
     <xhtml:link rel="alternate" hreflang="ar"
-      href="https://linkedin-roccorusso.work/ar/recommendations" />
+      href="https://linkedin-roccorusso.work/ar/recommendations/" />
   </url>
 
   <!-- Italian -->

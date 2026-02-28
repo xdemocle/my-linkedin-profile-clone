@@ -35,7 +35,9 @@ export function generateSEOMeta(options: SEOMetaOptions): string {
   const pageTitle = title || defaultTitle;
   const pageDescription = description || defaultDescription;
   const pageImage = image.startsWith("http") ? image : `${WEBSITE_URL}${image}`;
-  const canonicalUrl = `${WEBSITE_URL}${locale === LOCALE_DEFAULT ? "" : `/${locale}`}${path}`;
+  // Ensure path has trailing slash
+  const normalizedPath = path && !path.endsWith("/") ? `${path}/` : path || "/";
+  const canonicalUrl = `${WEBSITE_URL}${locale === LOCALE_DEFAULT ? "" : `/${locale}`}${normalizedPath}`;
 
   const metaTags: string[] = [];
 
@@ -83,7 +85,7 @@ export function generateSEOMeta(options: SEOMetaOptions): string {
 
   // Hreflang tags
   LOCALES.forEach(lang => {
-    const hrefUrl = `${WEBSITE_URL}${lang === LOCALE_DEFAULT ? "" : `/${lang}`}${path}`;
+    const hrefUrl = `${WEBSITE_URL}${lang === LOCALE_DEFAULT ? "" : `/${lang}`}${normalizedPath}`;
     metaTags.push(
       `<link rel="alternate" hreflang="${lang}" href="${hrefUrl}" />`
     );
@@ -91,7 +93,7 @@ export function generateSEOMeta(options: SEOMetaOptions): string {
 
   // x-default hreflang
   metaTags.push(
-    `<link rel="alternate" hreflang="x-default" href="${WEBSITE_URL}${path}" />`
+    `<link rel="alternate" hreflang="x-default" href="${WEBSITE_URL}${normalizedPath}" />`
   );
 
   return metaTags.join("\n    ");
@@ -144,7 +146,7 @@ export function generateStructuredData(
       name: personalName,
       jobTitle: jobTitle,
       description: about,
-      url: WEBSITE_URL,
+      url: `${WEBSITE_URL}/`,
       image: `${WEBSITE_URL}/assets/png/profile.png`,
       sameAs: [
         "https://github.com/xdemocle",
