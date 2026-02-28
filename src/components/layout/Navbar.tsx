@@ -32,8 +32,8 @@ export function Navbar() {
   };
 
   return (
-    <header className="border-b bg-card/95 backdrop-blur-sm fixed top-0 left-0 right-0 z-50 shadow-xs">
-      <div className="mx-auto px-2 sm:px-4 flex items-center z-0 my-1.5 md:my-0 max-w-7xl">
+    <header className="top-0 right-0 left-0 z-50 fixed bg-card/95 shadow-xs backdrop-blur-sm border-b">
+      <div className="z-0 flex items-center mx-auto my-1.5 md:my-0 px-2 sm:px-4 max-w-7xl">
         {/* Logo */}
         <LinkTranslated href="/">
           <Logo />
@@ -49,7 +49,7 @@ export function Navbar() {
               variant="ghost"
               size="icon"
               key={`${link.href}-${link.label}`}
-              className="rounded-none size-12 w-20 py-7 hidden md:flex flex-col gap-1 group"
+              className="group hidden md:flex flex-col gap-1 py-2 rounded-none w-20 h-auto"
               aria-label={link.label}
               asChild
             >
@@ -70,7 +70,7 @@ export function Navbar() {
           >
             <Separator
               orientation="vertical"
-              className="w-px h-4 mx-2 bg-foreground hidden md:block"
+              className="hidden md:block bg-foreground mx-2 w-px h-4"
             />
 
             <Button
@@ -78,8 +78,9 @@ export function Navbar() {
               size="icon"
               aria-label="Enlarge/Stretch screen"
               onClick={handleEnlargeLayoutClick}
+              className="hidden lg:flex"
             >
-              <Avatar className="size-5.5 rounded-none">
+              <Avatar className="rounded-none size-5.5">
                 <AvatarImage
                   src="/assets/ui/logo-linkedin-xl.png"
                   alt="Browser Extension: Linkedin XL"
@@ -99,7 +100,7 @@ export function Navbar() {
               <Button
                 variant="ghost"
                 size="icon"
-                className="flex md:hidden"
+                className="md:hidden flex"
                 aria-label="Menu"
               >
                 {isMenuOpen ? (
@@ -117,7 +118,7 @@ export function Navbar() {
       <ScrollProgress
         color="var(--ring)"
         height={2}
-        className="z-1 top-full absolute"
+        className="top-full z-1 absolute"
       />
     </header>
   );
