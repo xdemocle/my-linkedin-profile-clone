@@ -18,8 +18,6 @@ export const X_PROFILE_URL = "https://x.com/xdemocle";
 
 export const HUGGING_FACE_PROFILE_URL = "https://huggingface.co/xdemocle";
 
-export const DRIBBBLE_PROFILE_URL = "https://dribbble.com/xdemocle";
-
 export const CV_REQUEST_URL =
   "mailto:hello@rocco.me?subject=New+CV+request+from+website";
 
@@ -32,7 +30,6 @@ export const WELLFOUNDED_LABEL = "Wellfound";
 export const GITHUB_LABEL = "GitHub";
 export const X_LABEL = "X";
 export const HUGGING_FACE_LABEL = "Hugging Face";
-export const DRIBBBLE_LABEL = "Dribbble";
 export const CV_REQUEST_LABEL = "CV";
 export const EMAIL_LABEL = "Email";
 
@@ -68,9 +65,5 @@ export const SOCIAL_LINKS = [
   {
     href: HUGGING_FACE_PROFILE_URL,
     label: HUGGING_FACE_LABEL,
-  },
-  {
-    href: DRIBBBLE_PROFILE_URL,
-    label: DRIBBBLE_LABEL,
   },
 ];

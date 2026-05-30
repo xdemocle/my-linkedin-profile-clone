@@ -54,6 +54,21 @@ export default defineConfig({
 
         const WEBSITE_URL = "https://linkedin-roccorusso.work";
 
+        // Concise, page-specific meta descriptions (<160 chars) injected into
+        // every prerendered page. Without this, all pages inherit the single
+        // long (346 char) description from index.html → "description too long".
+        const descriptions: Record<string, string> = {
+          home: "Rocco Russo — software engineer and tech lead with 10+ years in React, TypeScript, Web3 and DeFi, building scalable apps for 5M+ monthly users.",
+          experience:
+            "The professional experience of Rocco Russo: 10+ years leading frontend, Web3 and full-stack teams across DeFi, blockchain and high-traffic web apps.",
+          projects:
+            "Selected projects by Rocco Russo across DeFi, blockchain, smart contracts and modern web apps built with React, TypeScript and Next.js.",
+          skills:
+            "Technical skills of Rocco Russo: React, TypeScript, Next.js, Web3, smart contracts, DeFi, frontend architecture and AI integrations.",
+          recommendations:
+            "Professional recommendations and testimonials for Rocco Russo — software engineer and tech lead specialising in frontend, Web3 and DeFi.",
+        };
+
         for (const lang of LOCALES) {
           for (const route of routes) {
             const isDefault = lang === LOCALE_DEFAULT;
@@ -64,25 +79,49 @@ export default defineConfig({
             try {
               let html = await fs.readFile(filePath, "utf-8");
 
-              // Generate hreflang tags
+              // All indexable URLs use a trailing slash so they match the
+              // served directory structure and the sitemap. Without it the
+              // canonical/hreflang targets 301-redirect (breaks SEO audits).
+              const trail = `${routePath}/`;
+
+              // Generate hreflang tags (absolute, trailing slash)
               const hreflangTags = LOCALES.map(l => {
-                const href = `${WEBSITE_URL}${l === LOCALE_DEFAULT ? "" : `/${l}`}${routePath}`;
+                const href = `${WEBSITE_URL}${l === LOCALE_DEFAULT ? "" : `/${l}`}${trail}`;
                 return `<link rel="alternate" hreflang="${l}" href="${href}" />`;
               });
               hreflangTags.push(
-                `<link rel="alternate" hreflang="x-default" href="${WEBSITE_URL}${routePath}" />`
+                `<link rel="alternate" hreflang="x-default" href="${WEBSITE_URL}${trail}" />`
               );
 
-              // Generate canonical URL
-              const canonicalUrl = `${WEBSITE_URL}${langPrefix}${routePath}`;
+              // Generate canonical URL (absolute, trailing slash)
+              const canonicalUrl = `${WEBSITE_URL}${langPrefix}${trail}`;
 
-              // Replace existing canonical tag with the correct one for this page
-              const canonicalRegex = /<link rel="canonical" href="[^"]*" >/;
+              // Replace existing canonical tag (tolerant of `" >` and `" />`)
+              const canonicalRegex = /<link rel="canonical"[^>]*>/;
               if (canonicalRegex.test(html)) {
                 html = html.replace(
                   canonicalRegex,
-                  `<link rel="canonical" href="${canonicalUrl}" >`
+                  `<link rel="canonical" href="${canonicalUrl}" />`
                 );
+              }
+
+              // Replace the long, shared meta description with a concise,
+              // page-specific one (<160 chars). Fixes "description too long".
+              const pageDescription = descriptions[route.type];
+              if (pageDescription) {
+                html = html
+                  .replace(
+                    /<meta name="description"[\s\S]*?\/?>/,
+                    `<meta name="description" content="${pageDescription}" />`
+                  )
+                  .replace(
+                    /<meta property="og:description"[\s\S]*?\/?>/,
+                    `<meta property="og:description" content="${pageDescription}" />`
+                  )
+                  .replace(
+                    /<meta name="twitter:description"[\s\S]*?\/?>/,
+                    `<meta name="twitter:description" content="${pageDescription}" />`
+                  );
               }
 
               // Generate structured data
@@ -95,7 +134,7 @@ export default defineConfig({
                   jobTitle: "Software Engineer / Tech Lead",
                   description:
                     "Software engineer with over 10+ years of experience in front-end engineering, Web3 integrations, and full-stack development.",
-                  url: WEBSITE_URL,
+                  url: `${WEBSITE_URL}/`,
                   image: `${WEBSITE_URL}/assets/png/profile.png`,
                   sameAs: [
                     "https://github.com/xdemocle",
@@ -133,14 +172,14 @@ export default defineConfig({
                       "@type": "ListItem",
                       position: 1,
                       name: "Home",
-                      item: `${WEBSITE_URL}${langPrefix}`,
+                      item: `${WEBSITE_URL}${langPrefix}/`,
                     },
                     {
                       "@type": "ListItem",
                       position: 2,
                       name:
                         routeNames[route.type as keyof typeof routeNames] || "",
-                      item: `${WEBSITE_URL}${langPrefix}${routePath}`,
+                      item: `${WEBSITE_URL}${langPrefix}${routePath}/`,
                     },
                   ],
                 };
