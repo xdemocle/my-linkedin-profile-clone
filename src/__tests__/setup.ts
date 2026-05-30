@@ -35,25 +35,17 @@ Object.defineProperty(window, "location", {
   },
 });
 
-// Mock ResizeObserver
-vi.stubGlobal(
-  "ResizeObserver",
-  vi.fn().mockImplementation(() => ({
-    observe: vi.fn(),
-    unobserve: vi.fn(),
-    disconnect: vi.fn(),
-  }))
-);
-
-// Mock IntersectionObserver
-vi.stubGlobal(
-  "IntersectionObserver",
-  vi.fn().mockImplementation(() => ({
-    observe: vi.fn(),
-    unobserve: vi.fn(),
-    disconnect: vi.fn(),
-  }))
-);
+// Mock ResizeObserver / IntersectionObserver (jsdom doesn't implement them).
+// Use a constructable class so libraries that call `new ResizeObserver()`
+// (e.g. embla-carousel) work under vitest 4's spy.
+class MockObserver {
+  observe = vi.fn();
+  unobserve = vi.fn();
+  disconnect = vi.fn();
+  takeRecords = vi.fn(() => []);
+}
+vi.stubGlobal("ResizeObserver", MockObserver);
+vi.stubGlobal("IntersectionObserver", MockObserver);
 
 beforeAll(() => {
   // Reset all mocks before each test suite
