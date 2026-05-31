@@ -31,8 +31,8 @@ export function SEO({
   const pageTitle = title || defaultTitle;
   const pageDescription = description || defaultDescription;
   const pageImage = image.startsWith("http") ? image : `${siteUrl}${image}`;
-  // Ensure path has trailing slash
-  const normalizedPath = path && !path.endsWith("/") ? `${path}/` : path || "/";
+  // Slash-free path: leading slash, no trailing slash; empty for the home.
+  const normalizedPath = path ? `/${path.replace(/^\/+|\/+$/g, "")}` : "";
   const canonicalUrl = `${siteUrl}${locale === LOCALE_DEFAULT ? "" : `/${locale}`}${normalizedPath}`;
 
   useEffect(() => {

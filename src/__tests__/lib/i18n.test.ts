@@ -47,19 +47,19 @@ describe("i18n utilities", () => {
 
     it("should handle double slashes correctly", () => {
       // This tests the replaceAll('//', '/') logic
-      expect(getPageUrlFromPath("it", "/")).toBe("/it/");
+      expect(getPageUrlFromPath("it", "/")).toBe("/it");
       expect(getPageUrlFromPath("en", "/")).toBe("/");
-      expect(getPageUrlFromPath("fr", "")).toBe("/fr/");
+      expect(getPageUrlFromPath("fr", "")).toBe("/fr");
     });
 
     it("should handle special characters in page names", () => {
       expect(getPageUrlFromPath("it", "page-with-dashes")).toBe(
-        "/it/page-with-dashes/"
+        "/it/page-with-dashes"
       );
       expect(getPageUrlFromPath("en", "page_with_underscores")).toBe(
-        "/page_with_underscores/"
+        "/page_with_underscores"
       );
-      expect(getPageUrlFromPath("fr", "page123")).toBe("/fr/page123/");
+      expect(getPageUrlFromPath("fr", "page123")).toBe("/fr/page123");
     });
   });
 
@@ -119,11 +119,11 @@ describe("i18n utilities", () => {
 
       // Other locales home pages
       const itHomeUrl = getPageUrlFromPath("it", "");
-      expect(itHomeUrl).toBe("/it/");
+      expect(itHomeUrl).toBe("/it");
       expect(getLocaleFromPath(itHomeUrl)).toBe("it");
 
       const arHomeUrl = getPageUrlFromPath("ar", "");
-      expect(arHomeUrl).toBe("/ar/");
+      expect(arHomeUrl).toBe("/ar");
       expect(getLocaleFromPath(arHomeUrl)).toBe("ar");
     });
 

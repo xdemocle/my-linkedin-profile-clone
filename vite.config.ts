@@ -79,22 +79,22 @@ export default defineConfig({
             try {
               let html = await fs.readFile(filePath, "utf-8");
 
-              // All indexable URLs use a trailing slash so they match the
-              // served directory structure and the sitemap. Without it the
-              // canonical/hreflang targets 301-redirect (breaks SEO audits).
-              const trail = `${routePath}/`;
+              // Slash-free URL convention: canonical/hreflang have NO trailing
+              // slash. The host serves /experience directly (the HTML is
+              // flattened to experience.html post-build) and 301s /experience/
+              // to it; the home is the bare origin. Everything must agree.
 
-              // Generate hreflang tags (absolute, trailing slash)
+              // Generate hreflang tags (absolute, slash-free)
               const hreflangTags = LOCALES.map(l => {
-                const href = `${WEBSITE_URL}${l === LOCALE_DEFAULT ? "" : `/${l}`}${trail}`;
+                const href = `${WEBSITE_URL}${l === LOCALE_DEFAULT ? "" : `/${l}`}${routePath}`;
                 return `<link rel="alternate" hreflang="${l}" href="${href}" />`;
               });
               hreflangTags.push(
-                `<link rel="alternate" hreflang="x-default" href="${WEBSITE_URL}${trail}" />`
+                `<link rel="alternate" hreflang="x-default" href="${WEBSITE_URL}${routePath}" />`
               );
 
-              // Generate canonical URL (absolute, trailing slash)
-              const canonicalUrl = `${WEBSITE_URL}${langPrefix}${trail}`;
+              // Generate canonical URL (absolute, slash-free)
+              const canonicalUrl = `${WEBSITE_URL}${langPrefix}${routePath}`;
 
               // Replace existing canonical tag (tolerant of `" >` and `" />`)
               const canonicalRegex = /<link rel="canonical"[^>]*>/;
@@ -104,6 +104,17 @@ export default defineConfig({
                   `<link rel="canonical" href="${canonicalUrl}" />`
                 );
               }
+
+              // Keep og:url / twitter:url in sync with the canonical
+              html = html
+                .replace(
+                  /<meta property="og:url"[^>]*>/,
+                  `<meta property="og:url" content="${canonicalUrl}" />`
+                )
+                .replace(
+                  /<meta name="twitter:url"[^>]*>/,
+                  `<meta name="twitter:url" content="${canonicalUrl}" />`
+                );
 
               // Replace the long, shared meta description with a concise,
               // page-specific one (<160 chars). Fixes "description too long".
@@ -134,7 +145,7 @@ export default defineConfig({
                   jobTitle: "Software Engineer / Tech Lead",
                   description:
                     "Software engineer with over 10+ years of experience in front-end engineering, Web3 integrations, and full-stack development.",
-                  url: `${WEBSITE_URL}/`,
+                  url: WEBSITE_URL,
                   image: `${WEBSITE_URL}/assets/png/profile.png`,
                   sameAs: [
                     "https://github.com/xdemocle",
@@ -172,14 +183,14 @@ export default defineConfig({
                       "@type": "ListItem",
                       position: 1,
                       name: "Home",
-                      item: `${WEBSITE_URL}${langPrefix}/`,
+                      item: `${WEBSITE_URL}${langPrefix}`,
                     },
                     {
                       "@type": "ListItem",
                       position: 2,
                       name:
                         routeNames[route.type as keyof typeof routeNames] || "",
-                      item: `${WEBSITE_URL}${langPrefix}${routePath}/`,
+                      item: `${WEBSITE_URL}${langPrefix}${routePath}`,
                     },
                   ],
                 };
@@ -229,31 +240,9 @@ export default defineConfig({
         // Ensure each language directory has an index.html file
         const languages = LOCALES;
 
-        // Create _redirects file
-        const redirectsContent = [
-          "# Handle language routes with trailing slash",
-        ];
-
-        // Add language-specific redirects to add trailing slash
-        for (const lang of languages) {
-          if (lang !== LOCALE_DEFAULT) {
-            redirectsContent.push(`/${lang}  /${lang}/     301`);
-          }
-        }
-
-        // Add catch-all for routes without trailing slash (but NOT for other languages)
-        // This ensures /en/* routes work but doesn't interfere with /fr/*, /it/*, etc.
-        redirectsContent.push(`/experience  /experience/     301`);
-        redirectsContent.push(`/projects  /projects/     301`);
-        redirectsContent.push(`/skills  /skills/     301`);
-        redirectsContent.push(`/recommendations  /recommendations/     301`);
-
-        await fs.writeFile(
-          "dist/client/_redirects",
-          redirectsContent.join("\n")
-        );
-
-        console.log("Created _redirects file for Cloudflare Pages");
+        // NOTE: _redirects is generated AFTER the build by
+        // scripts/flatten-html.ts — it emits the reverse trailing-slash 301s
+        // (/experience/ → /experience) for the flattened slash-free HTML.
 
         // Create _headers file for Cloudflare Pages
         let headersContent = [
@@ -287,6 +276,8 @@ export default defineConfig({
               await fs.access(langIndexPath);
 
               headersContent += [
+                `/${lang}`,
+                `  Content-Language: ${lang}`,
                 `/${lang}/*`,
                 `  Content-Language: ${lang}\n\n`,
               ].join("\n");

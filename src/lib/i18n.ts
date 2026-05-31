@@ -52,9 +52,9 @@ export const getPageUrlFromPath = (locale: Locale, page: string) => {
   // Clean up any double slashes
   url = url.replace(/\/+/g, "/");
 
-  // Ensure trailing slash
-  if (!url.endsWith("/")) {
-    url += "/";
+  // Slash-free URL convention: strip the trailing slash (but keep the root "/")
+  if (url.length > 1) {
+    url = url.replace(/\/+$/, "");
   }
 
   return url;

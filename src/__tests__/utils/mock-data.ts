@@ -52,15 +52,15 @@ export const mockUrlTestCases = [
 export const mockUrlGenerationCases = [
   // Default locale (English) - should not have prefix
   { locale: "en" as Locale, page: "", expected: "/" },
-  { locale: "en" as Locale, page: "experience", expected: "/experience/" },
+  { locale: "en" as Locale, page: "experience", expected: "/experience" },
 
   // Other locales - should have prefix
-  { locale: "it" as Locale, page: "", expected: "/it/" },
-  { locale: "it" as Locale, page: "experience", expected: "/it/experience/" },
-  { locale: "es" as Locale, page: "projects", expected: "/es/projects/" },
+  { locale: "it" as Locale, page: "", expected: "/it" },
+  { locale: "it" as Locale, page: "experience", expected: "/it/experience" },
+  { locale: "es" as Locale, page: "projects", expected: "/es/projects" },
 
   // Edge cases
-  { locale: "it" as Locale, page: "/", expected: "/it/" },
+  { locale: "it" as Locale, page: "/", expected: "/it" },
   { locale: "en" as Locale, page: "/", expected: "/" },
 ];
 
