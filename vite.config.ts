@@ -54,6 +54,21 @@ export default defineConfig({
 
         const WEBSITE_URL = "https://linkedin-roccorusso.work";
 
+        // Concise, page-specific meta descriptions (<160 chars) injected into
+        // every prerendered page. Without this, all pages inherit the single
+        // long (346 char) description from index.html → "description too long".
+        const descriptions: Record<string, string> = {
+          home: "Rocco Russo — software engineer and tech lead with 10+ years in React, TypeScript, Web3 and DeFi, building scalable apps for 5M+ monthly users.",
+          experience:
+            "The professional experience of Rocco Russo: 10+ years leading frontend, Web3 and full-stack teams across DeFi, blockchain and high-traffic web apps.",
+          projects:
+            "Selected projects by Rocco Russo across DeFi, blockchain, smart contracts and modern web apps built with React, TypeScript and Next.js.",
+          skills:
+            "Technical skills of Rocco Russo: React, TypeScript, Next.js, Web3, smart contracts, DeFi, frontend architecture and AI integrations.",
+          recommendations:
+            "Professional recommendations and testimonials for Rocco Russo — software engineer and tech lead specialising in frontend, Web3 and DeFi.",
+        };
+
         for (const lang of LOCALES) {
           for (const route of routes) {
             const isDefault = lang === LOCALE_DEFAULT;
@@ -64,7 +79,12 @@ export default defineConfig({
             try {
               let html = await fs.readFile(filePath, "utf-8");
 
-              // Generate hreflang tags
+              // Slash-free URL convention: canonical/hreflang have NO trailing
+              // slash. The host serves /experience directly (the HTML is
+              // flattened to experience.html post-build) and 301s /experience/
+              // to it; the home is the bare origin. Everything must agree.
+
+              // Generate hreflang tags (absolute, slash-free)
               const hreflangTags = LOCALES.map(l => {
                 const href = `${WEBSITE_URL}${l === LOCALE_DEFAULT ? "" : `/${l}`}${routePath}`;
                 return `<link rel="alternate" hreflang="${l}" href="${href}" />`;
@@ -73,16 +93,46 @@ export default defineConfig({
                 `<link rel="alternate" hreflang="x-default" href="${WEBSITE_URL}${routePath}" />`
               );
 
-              // Generate canonical URL
+              // Generate canonical URL (absolute, slash-free)
               const canonicalUrl = `${WEBSITE_URL}${langPrefix}${routePath}`;
 
-              // Replace existing canonical tag with the correct one for this page
-              const canonicalRegex = /<link rel="canonical" href="[^"]*" >/;
+              // Replace existing canonical tag (tolerant of `" >` and `" />`)
+              const canonicalRegex = /<link rel="canonical"[^>]*>/;
               if (canonicalRegex.test(html)) {
                 html = html.replace(
                   canonicalRegex,
-                  `<link rel="canonical" href="${canonicalUrl}" >`
+                  `<link rel="canonical" href="${canonicalUrl}" />`
                 );
+              }
+
+              // Keep og:url / twitter:url in sync with the canonical
+              html = html
+                .replace(
+                  /<meta property="og:url"[^>]*>/,
+                  `<meta property="og:url" content="${canonicalUrl}" />`
+                )
+                .replace(
+                  /<meta name="twitter:url"[^>]*>/,
+                  `<meta name="twitter:url" content="${canonicalUrl}" />`
+                );
+
+              // Replace the long, shared meta description with a concise,
+              // page-specific one (<160 chars). Fixes "description too long".
+              const pageDescription = descriptions[route.type];
+              if (pageDescription) {
+                html = html
+                  .replace(
+                    /<meta name="description"[\s\S]*?\/?>/,
+                    `<meta name="description" content="${pageDescription}" />`
+                  )
+                  .replace(
+                    /<meta property="og:description"[\s\S]*?\/?>/,
+                    `<meta property="og:description" content="${pageDescription}" />`
+                  )
+                  .replace(
+                    /<meta name="twitter:description"[\s\S]*?\/?>/,
+                    `<meta name="twitter:description" content="${pageDescription}" />`
+                  );
               }
 
               // Generate structured data
@@ -190,31 +240,9 @@ export default defineConfig({
         // Ensure each language directory has an index.html file
         const languages = LOCALES;
 
-        // Create _redirects file
-        const redirectsContent = [
-          "# Handle language routes with trailing slash",
-        ];
-
-        // Add language-specific redirects to add trailing slash
-        for (const lang of languages) {
-          if (lang !== LOCALE_DEFAULT) {
-            redirectsContent.push(`/${lang}  /${lang}/     301`);
-          }
-        }
-
-        // Add catch-all for routes without trailing slash (but NOT for other languages)
-        // This ensures /en/* routes work but doesn't interfere with /fr/*, /it/*, etc.
-        redirectsContent.push(`/experience  /experience/     301`);
-        redirectsContent.push(`/projects  /projects/     301`);
-        redirectsContent.push(`/skills  /skills/     301`);
-        redirectsContent.push(`/recommendations  /recommendations/     301`);
-
-        await fs.writeFile(
-          "dist/client/_redirects",
-          redirectsContent.join("\n")
-        );
-
-        console.log("Created _redirects file for Cloudflare Pages");
+        // NOTE: _redirects is generated AFTER the build by
+        // scripts/flatten-html.ts — it emits the reverse trailing-slash 301s
+        // (/experience/ → /experience) for the flattened slash-free HTML.
 
         // Create _headers file for Cloudflare Pages
         let headersContent = [
@@ -248,6 +276,8 @@ export default defineConfig({
               await fs.access(langIndexPath);
 
               headersContent += [
+                `/${lang}`,
+                `  Content-Language: ${lang}`,
                 `/${lang}/*`,
                 `  Content-Language: ${lang}\n\n`,
               ].join("\n");

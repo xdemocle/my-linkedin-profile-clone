@@ -190,7 +190,7 @@
       "roles": ["Frontend Developer"],
       "startDate": "2021-08-01",
       "type": "application",
-      "url": "https://www.enterdao.xyz"
+      "url": "https://web.archive.org/web/20260307152418/http://enterdao.xyz/"
     },
     {
       "description": "Dashboard for investors with vesting, farming, and rewards system connected to Ethereum smart contracts. Working across a stack of Node.js, React.js, Next.js, and some basics tasks with Python, Django, and Flask frameworks.",

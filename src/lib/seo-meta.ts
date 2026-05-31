@@ -35,8 +35,8 @@ export function generateSEOMeta(options: SEOMetaOptions): string {
   const pageTitle = title || defaultTitle;
   const pageDescription = description || defaultDescription;
   const pageImage = image.startsWith("http") ? image : `${WEBSITE_URL}${image}`;
-  // Ensure path has trailing slash
-  const normalizedPath = path && !path.endsWith("/") ? `${path}/` : path || "/";
+  // Slash-free path: leading slash, no trailing slash; empty for the home.
+  const normalizedPath = path ? `/${path.replace(/^\/+|\/+$/g, "")}` : "";
   const canonicalUrl = `${WEBSITE_URL}${locale === LOCALE_DEFAULT ? "" : `/${locale}`}${normalizedPath}`;
 
   const metaTags: string[] = [];

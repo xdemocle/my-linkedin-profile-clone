@@ -6,44 +6,8 @@ import { IntlProvider } from "use-intl";
 import { Router } from "wouter";
 import { LocaleProvider } from "../../contexts/LocaleContext";
 import { ThemeProvider } from "../../contexts/ThemeContextProvider";
-
-// Mock messages for use-intl provider
-const mockMessages = {
-  Navigation: {
-    home: "Home",
-    search: "Search",
-    experience: "Experience",
-    projects: "Projects",
-  },
-  NotFound: {
-    title: "Page Not Found",
-    description: "The page you are looking for does not exist.",
-    goHome: "Go Home",
-    goBack: "Go Back",
-    funMessage: "Oops! This page seems to have vanished into the digital void.",
-  },
-  Profile: {
-    title: "Profile",
-    about: "About",
-    experience: "Experience",
-    education: "Education",
-    skills: "Skills",
-    name: "John Doe",
-    headline: "Software Developer",
-    location: "San Francisco, CA",
-    connections: "connections",
-  },
-  Experience: {
-    title: "Experience",
-    current: "Present",
-    duration: "duration",
-  },
-  Projects: {
-    title: "Projects",
-    viewProject: "View Project",
-    sourceCode: "Source Code",
-  },
-};
+import { AppProvider } from "../../contexts/AppContextProvider";
+import { getLocaleMessages } from "../../lib/i18n";
 
 interface CustomRenderOptions extends Omit<RenderOptions, "wrapper"> {
   initialLocale?: Locale;
@@ -62,9 +26,12 @@ function AllTheProviders({
   return (
     <Router base="" hook={() => [initialPath, () => {}]}>
       <ThemeProvider>
-        <IntlProvider locale={initialLocale} messages={mockMessages}>
+        <IntlProvider
+          locale={initialLocale}
+          messages={getLocaleMessages(initialLocale)}
+        >
           <LocaleProvider prerenderLocale={initialLocale}>
-            {children}
+            <AppProvider>{children}</AppProvider>
           </LocaleProvider>
         </IntlProvider>
       </ThemeProvider>
