@@ -1,0 +1,17 @@
+# Rocco Russo
+
+> Software engineer and tech lead with 10+ years in React, TypeScript, Web3 and DeFi. Personal site for sharing experience, projects and credentials.
+
+## Profile
+
+- [Home](https://linkedin-roccorusso.work): Profile overview — experience, projects, skills and endorsements.
+- [Experience](https://linkedin-roccorusso.work/experience): Full work history, roles, and key achievements.
+- [Projects](https://linkedin-roccorusso.work/projects): Featured side projects and open-source work.
+- [Skills](https://linkedin-roccorusso.work/skills): Tech stack with proficiency levels and endorsements.
+- [Recommendations](https://linkedin-roccorusso.work/recommendations): References from peers and collaborators.
+
+## Contact
+
+- [Personal site](https://rocco.me): Primary portfolio and writing.
+- [GitHub](https://github.com/xdemocle): Open source contributions.
+- [LinkedIn](https://www.linkedin.com/in/roccorusso): Professional network profile.

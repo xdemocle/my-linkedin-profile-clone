@@ -32,14 +32,22 @@ export function ProfileHeader() {
           <CarouselItem className="h-36 md:h-48">
             <img
               src="/assets/ui/banner-1.jpg"
-              alt="Cover banner-1.jpg"
+              alt="Rocco Russo profile cover — banner 1"
+              width={1024}
+              height={288}
+              fetchPriority="high"
+              decoding="async"
               className="w-full h-full object-cover"
             />
           </CarouselItem>
           <CarouselItem className="h-36 md:h-48">
             <img
               src="/assets/ui/banner-2.jpg"
-              alt="Cover banner-2.jpg"
+              alt="Rocco Russo profile cover — banner 2"
+              width={1024}
+              height={288}
+              loading="lazy"
+              decoding="async"
               className="w-full h-full object-cover"
             />
           </CarouselItem>

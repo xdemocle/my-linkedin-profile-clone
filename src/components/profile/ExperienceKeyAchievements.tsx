@@ -16,7 +16,7 @@ export function ExperienceKeyAchievements() {
   return (
     <Card className="shadow-xs">
       <CardContent className="p-6">
-        <h2 className="text-xl font-semibold mb-4">{t("keyAchievements")}</h2>
+        <h3 className="text-xl font-semibold mb-4">{t("keyAchievements")}</h3>
         <div className="space-y-6">
           {achievements.map((achievement, index) => (
             <div key={index} className="flex gap-3">

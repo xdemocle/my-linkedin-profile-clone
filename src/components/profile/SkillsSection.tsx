@@ -65,7 +65,10 @@ export function SkillsSection() {
                         </span>
                       </div>
                       <div className="w-full bg-secondary rounded-full h-2">
-                        <Progress value={skill.level} />
+                        <Progress
+                          value={skill.level}
+                          aria-label={`${skill.name} proficiency`}
+                        />
                       </div>
                     </div>
                   ))}

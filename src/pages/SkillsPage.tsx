@@ -81,7 +81,10 @@ export function SkillsPage() {
                               {skill.level}%
                             </span>
                           </div>
-                          <Progress value={skill.level} />
+                          <Progress
+                            value={skill.level}
+                            aria-label={`${skill.name} proficiency`}
+                          />
                         </div>
                       ))}
                     </div>

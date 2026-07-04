@@ -10,6 +10,9 @@ function Progress({
   return (
     <ProgressPrimitive.Root
       data-slot="progress"
+      // Radix Progress auto-sets aria-valuenow from `value`, but does NOT
+      // supply an accessible name → Lighthouse flags aria-progressbar-name.
+      // Callers must pass `aria-label` (or wrap with aria-labelledby).
       className={cn(
         "bg-primary/20 relative h-2 w-full overflow-hidden rounded-full",
         className

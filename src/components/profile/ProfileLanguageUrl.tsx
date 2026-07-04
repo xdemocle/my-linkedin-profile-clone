@@ -68,7 +68,7 @@ export function ProfileLanguageUrl() {
               value={locale}
               onValueChange={value => handleLocaleChange(value as Locale)}
             >
-              <SelectTrigger className="w-full">
+              <SelectTrigger className="w-full" aria-label={t("selectLanguage")}>
                 <SelectValue placeholder={t("selectLanguage")} />
               </SelectTrigger>
               <SelectContent>

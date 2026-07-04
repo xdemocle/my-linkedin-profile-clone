@@ -105,6 +105,25 @@ export default defineConfig({
                 );
               }
 
+              // Preload the LCP image with fetchpriority="high" so the
+              // browser kicks off the request before parsing CSS. The
+              // prerender plugin auto-emits the basic preload when it
+              // sees the <img fetchpriority="high"> in the DOM, but
+              // the priority hint doesn't always survive the rewrite
+              // → we patch it in here too.
+              const lcpPreloadRegex =
+                /<link rel="preload" as="image" href="\/assets\/ui\/banner-1\.jpg"[^>]*>/;
+              const lcpPreloadReplacement =
+                '<link rel="preload" as="image" href="/assets/ui/banner-1.jpg" fetchpriority="high" />';
+              if (lcpPreloadRegex.test(html)) {
+                html = html.replace(lcpPreloadRegex, lcpPreloadReplacement);
+              } else {
+                html = html.replace(
+                  "</head>",
+                  `    ${lcpPreloadReplacement}\n  </head>`
+                );
+              }
+
               // Keep og:url / twitter:url in sync with the canonical
               html = html
                 .replace(

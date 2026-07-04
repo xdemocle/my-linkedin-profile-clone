@@ -15,9 +15,9 @@ export function ProfileInterests() {
       <CardContent className="pt-0 space-y-4">
         {interests.map((interest, catIndex) => (
           <div key={catIndex}>
-            <h4 className="text-xs font-semibold text-muted-foreground mb-2">
+            <h3 className="text-xs font-semibold text-muted-foreground mb-2">
               {interest.name}
-            </h4>
+            </h3>
             <div className="flex flex-wrap gap-1.5">
               {interest.keywords.map((keyword, itemIndex) => (
                 <Badge key={itemIndex} variant="outline" className="text-xs">
