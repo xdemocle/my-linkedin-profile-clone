@@ -1,4 +1,7 @@
-import { LINKEDIN_PROFILE_URL, WEBSITE_ROCCOME_URL } from "@/constants";
+import {
+  LINKEDIN_SHUTDOWN_BLOG_URL,
+  WEBSITE_ROCCOME_URL,
+} from "@/constants";
 import { useApp } from "@/hooks";
 import { ExternalLinkIcon } from "@radix-ui/react-icons";
 import React from "react";
@@ -29,7 +32,7 @@ export function Footer() {
           {/* External Links */}
           <div className="flex flex-wrap justify-center lg:justify-between gap-2 pt-2 md:pt-0 border-t md:border-t-0">
             <a
-              href={LINKEDIN_PROFILE_URL}
+              href={LINKEDIN_SHUTDOWN_BLOG_URL}
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-1 hover:text-primary"

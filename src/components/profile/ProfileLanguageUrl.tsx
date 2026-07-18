@@ -1,11 +1,10 @@
-import { ClipboardCopyIcon } from "@radix-ui/react-icons";
+import { ExternalLinkIcon } from "@radix-ui/react-icons";
 import { useTranslations } from "use-intl";
 import { useLocation } from "wouter";
 import { LOCALES, type Locale } from "../../constants/i18n";
-import { LINKEDIN_PROFILE_URL } from "../../constants/webinfo";
+import { LINKEDIN_SHUTDOWN_BLOG_URL } from "../../constants/webinfo";
 import { useLocale } from "../../hooks/useLocale";
 import { getLocaleConfig } from "../../lib/i18n";
-import { Button } from "../ui/button";
 import { Card, CardContent } from "../ui/card";
 import {
   Select,
@@ -15,14 +14,10 @@ import {
   SelectValue,
 } from "../ui/select";
 import { Separator } from "../ui/separator";
-import { useToast } from "../ui/use-toast";
 
 export function ProfileLanguageUrl() {
   const { locale, setLocale } = useLocale();
   const t = useTranslations("ProfileLanguageUrl");
-  const { toast } = useToast();
-
-  const profileUrl = LINKEDIN_PROFILE_URL;
 
   const [location, setLocation] = useLocation();
 
@@ -44,15 +39,6 @@ export function ProfileLanguageUrl() {
       // If there's no locale prefix, add it
       setLocation(`/${newLocale}${location === "/" ? "" : location}`);
     }
-  };
-
-  const copyToClipboard = () => {
-    navigator.clipboard.writeText(`${profileUrl}`).then(() => {
-      toast({
-        description: t("urlCopied"),
-        duration: 2000,
-      });
-    });
   };
 
   return (
@@ -86,27 +72,23 @@ export function ProfileLanguageUrl() {
 
           <Separator />
 
-          {/* Public Profile URL Section */}
+          {/* Public profile & URL — points to the blog post that explains
+              why the LinkedIn profile was shut down. Title text is kept as
+              "Public profile & URL" so it still reads as the same row in
+              the right sidebar. */}
           <div>
-            <h3 className="text-base font-medium mb-2">{t("publicProfile")}</h3>
-            <div className="flex items-center justify-between">
-              <a
-                href={profileUrl}
-                className="text-sm text-muted-foreground break-all flex-1 underline hover:no-underline"
-              >
-                {profileUrl}
-              </a>
-              <div className="flex gap-1">
-                <Button
-                  variant="ghost"
-                  size="sm"
-                  onClick={copyToClipboard}
-                  aria-label={t("copyUrl")}
-                >
-                  <ClipboardCopyIcon className="size-5! text-primary" />
-                </Button>
-              </div>
-            </div>
+            <h3 className="text-base font-medium mb-2">
+              {t("publicProfile")}
+            </h3>
+            <a
+              href={LINKEDIN_SHUTDOWN_BLOG_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sm text-primary hover:underline font-medium inline-flex items-center gap-1"
+            >
+              Read why I shut down LinkedIn
+              <ExternalLinkIcon className="size-3.5" />
+            </a>
           </div>
         </div>
       </CardContent>

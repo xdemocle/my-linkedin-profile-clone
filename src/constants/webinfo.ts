@@ -4,6 +4,12 @@ export const WEBSITE_ROCCOME_URL = "https://rocco.me";
 
 export const LINKEDIN_PROFILE_URL = "https://www.linkedin.com/in/roccorusso";
 
+// /blog/2026-07-18-why-i-shut-down-linkedin — explains why the LinkedIn
+// profile was shut down. Used in the sidebar "Public profile & URL" row
+// and the footer LinkedIn link.
+export const LINKEDIN_SHUTDOWN_BLOG_URL =
+  "https://rocco.me/blog/2026-07-18-why-i-shut-down-linkedin";
+
 export const SUBSTACK_PROFILE_URL = "https://xdemocle.substack.com";
 
 export const CALENDLY_PROFILE_URL = "https://calendly.com/rocco-russo";
