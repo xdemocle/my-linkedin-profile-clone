@@ -39,11 +39,10 @@ export const HUGGING_FACE_LABEL = "Hugging Face";
 export const CV_REQUEST_LABEL = "CV";
 export const EMAIL_LABEL = "Email";
 
-export const SOCIAL_LINKS = [
-  {
-    href: LINKEDIN_PROFILE_URL,
-    label: LINKEDIN_LABEL,
-  },
+export const SOCIAL_LINKS: { href: string; label: string }[] = [
+  // LinkedIn entry removed on 2026-07-18: the profile was shut down
+  // (see https://rocco.me/blog/2026-07-18-why-i-shut-down-linkedin).
+  // Re-add here only if/when a new LinkedIn profile exists.
   {
     href: SUBSTACK_PROFILE_URL,
     label: SUBSTACK_LABEL,
